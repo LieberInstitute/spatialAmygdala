@@ -1,0 +1,72 @@
+**** Job starts ****
+Fri Aug  4 10:59:52 AM EDT 2023
+**** JHPCE info ****
+User: rmiller
+Job id: 4506s
+Job name: splitSlide_slurm.sh
+Hostname: 
+Task id: 1
+MATLAB is selecting SOFTWARE OPENGL rendering.
+
+                            < M A T L A B (R) >
+                  Copyright 1984-2023 The MathWorks, Inc.
+             R2023a Update 3 (9.14.0.2286388) 64-bit (glnxa64)
+                                May 25, 2023
+
+ 
+For online documentation, see https://www.mathworks.com/support
+For product information, visit www.mathworks.com.
+ 
+The multiplane tif has 7 images
+Starting parallel pool (parpool) using the 'Processes' profile ...
+[Warning: The system time zone setting, 'US/Eastern', does not specify a single
+time zone unambiguously. It will be treated as 'America/New_York'. See the <a
+href="matlab:doc('datetime.TimeZone')">datetime.TimeZone property</a> for
+details about specifying time zones.] 
+[> In verifyTimeZone (line 38)
+In datetime (line 569)
+In parallel.internal.cluster.DefaultProperties.getNewJobPropStruct (line 17)
+In parallel.internal.types.JobProp>iGetDefaults (line 63)
+In parallel.internal.types.JobProp (line 57)
+In parallel.internal.cluster/FileStorage/getSortedJobIDsFromDisk
+In parallel.internal.cluster/FileStorage/getJobSIds (line 590)
+In parallel.internal.cluster/CJSSupport/getJobsForCluster (line 283)
+In parallel.internal.cluster.CJSSupport>@(x,y)obj.getJobsForCluster(x,y{1})
+(line 72)
+In parallel.internal.cluster/CJSSupport/getJobs (line 72)
+In parallel.cluster/CJSCluster/getJobs (line 555)
+In parallel/Cluster/hGetJobs (line 937)
+In parallel.internal.cluster.hetfun (line 54)
+In parallel.Cluster/findJob (line 64)
+In parallel.internal.pool/AbstractInteractiveClient/findJobsOnCluster (line 31)
+In parallel.internal.pool/AbstractInteractiveClient/pRemoveOldJobs (line 206)
+In parallel.internal.pool/AbstractInteractiveClient/start (line 104)
+In parallel.internal.pool.AbstractClusterPool>iStartClient (line 874)
+In parallel.internal.pool.AbstractClusterPool.hBuildPool (line 636)
+In parallel.internal.pool.doParpool (line 22)
+In parpool (line 118)
+In parallel.internal.parpool.getOrCreateCurrentPool (line 13)
+In parallel.internal.pool.PoolArrayManager.getOrAutoCreateWithCleanup (line 44)
+In pctTryCreatePoolIfNecessary (line 28)
+In parallel_function (line 423)
+In splitSlide (line 7)
+] 
+Connected to parallel pool with 2 workers.
+Imported image 2 of the multiplane tif
+Elapsed time is 0.552935 seconds.
+Imported image 4 of the multiplane tif
+Elapsed time is 0.459470 seconds.
+Imported image 5 of the multiplane tif
+Elapsed time is 0.033681 seconds.
+Imported image 6 of the multiplane tif
+Elapsed time is 0.010027 seconds.
+Imported image 7 of the multiplane tif
+Elapsed time is 0.026618 seconds.
+Imported image 1 of the multiplane tif
+Elapsed time is 639.546801 seconds.
+Imported image 3 of the multiplane tif
+Elapsed time is 6.365876 seconds.
+Saving the multiplane tif to mat file
+Elapsed time is 377.332479 seconds.
+Splitting whole slide into individual capture areas
+slurmstepd: error: *** JOB 4506 ON compute-152 CANCELLED AT 2023-08-04T11:24:17 ***

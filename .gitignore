@@ -2,3 +2,12 @@
 .Rhistory
 .RData
 .Ruserdata
+
+
+*.tif
+*.rda
+
+# Data directories
+/raw-data/*
+/processed-data/*
+/code/costa_rds/*
