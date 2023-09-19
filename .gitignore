@@ -6,8 +6,11 @@
 
 *.tif
 *.rda
+*.Rdata
+$.rds
 
 # Data directories
 /raw-data/*
-/processed-data/*
+/processed-data/01_spaceranger/*
+/processed-data/Images/VistoSeg/*
 /code/costa_rds/*
