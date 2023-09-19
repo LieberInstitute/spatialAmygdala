@@ -1,5 +1,5 @@
 #!/bin/bash
-#SBATCH --mem=256G
+#SBATCH --mem=300G
 #SBATCH --job-name=build_spe
 #SBATCH -o logs/build_spe.txt
 #SBATCH -e logs/build_spe.txt
