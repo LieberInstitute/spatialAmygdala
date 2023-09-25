@@ -272,3 +272,5 @@ pdf(width=10, height=5, here(plot_dir,"Violin_QC_mito.pdf"))
 plotColData(spe, x="sample_id", y="subsets_mito_percent", colour_by="discard") + 
   scale_y_log10() + ggtitle("Mitochondrial Percent")
 dev.off()
+
+save(spe, file=here(processed_dir, "spe_discarded.Rdata"))
