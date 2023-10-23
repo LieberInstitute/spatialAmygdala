@@ -6,7 +6,7 @@ A1 <- subset(REDCap, select = c("slide", "species_a1", "sample_a1", "serial_a1",
 B1 <- subset(REDCap, select = c("slide", "species_b1", "sample_b1", "serial_b1","region_b1", "project_b1"))
 C1 <- subset(REDCap, select = c("slide", "species_c1", "sample_c1", "serial_c1","region_c1", "project_c1"))
 D1 <- subset(REDCap, select = c("slide", "species_d1", "sample_d1", "serial_d1","region_d1", "project_d1"))
-colnames(A1) <- colnames(B1) <- colnames(C1) <- colnames(D1) <- c("slide", "species", "sample", "serial","region", "project")
+colnames(A1) <- colnames(B1) <- colnames(C1) <- colnames(D1) <- c("slide", "species", "brain", "serial","region", "project")
 A1$array <- "A1"
 B1$array <- "B1"
 C1$array <- "C1"
@@ -17,7 +17,7 @@ REDCap_table <- REDCap_table[order(REDCap_table$slide), ]
 
 REDCap_AMY <- REDCap_table[which(REDCap_table$project == "spatialAMY_LIBD4125"), ]
 
-Brain_nums <- unique(REDCap_AMY$sample)
+Brain_nums <- unique(REDCap_AMY$brain)
 write.table(Brain_nums, file = (here::here("raw-data", "sample_info_visium", "ALLbrains.txt")), row.names = FALSE, col.names = FALSE)
 
 Samples <- unique(paste0(REDCap_AMY$slide, "_", REDCap_AMY$array))
