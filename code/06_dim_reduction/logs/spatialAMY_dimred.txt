@@ -1,10 +1,10 @@
 **** Job starts ****
-Mon Oct 23 04:22:45 PM EDT 2023
+Wed Oct 25 10:08:17 AM EDT 2023
 **** JHPCE info ****
 User: mtotty
 Job id: 
 Job name: 
-Hostname: compute-127
+Hostname: compute-150
 Loading conda_R/4.3
 
 Currently Loaded Modules:
@@ -17,11 +17,11 @@ class: SpatialExperiment
 dim: 28412 28483 
 metadata(0):
 assays(2): counts logcounts
-rownames(28412): GFAP MT-CO3 ... AC004835.1 PRORY
+rownames(28412): GFAP MBP ... AC004835.1 PRORY
 rowData names(7): source type ... Symbol.uniq poisson_deviance
 colnames(28483): AAACAAGTATCTCCCA-1 AAACACCAATAACTGC-1 ...
   TTGTTTCATTAGTCTA-1 TTGTTTCCATACAACT-1
-colData names(43): sample_id in_tissue ... discard sizeFactor
+colData names(37): sample_id in_tissue ... discard sizeFactor
 reducedDimNames(3): 10x_pca 10x_tsne 10x_umap
 mainExpName: NULL
 altExpNames(0):
@@ -29,8 +29,8 @@ spatialCoords names(2) : pxl_col_in_fullres pxl_row_in_fullres
 imgData names(4): sample_id image_id data scaleFactor
 null device 
           1 
-running nullResiduals - 2023-10-23 16:24:12.902085
-running PCA - 2023-10-23 16:24:15.362332
+running nullResiduals - 2023-10-25 10:09:44.264986
+running PCA - 2023-10-25 10:09:46.544814
 null device 
           1 
 null device 
@@ -39,9 +39,9 @@ null device
 null device 
           1 
 Running runUMAP()
-[1] "2023-10-23 16:24:32 EDT"
-[1] "2023-10-23 16:24:53 EDT"
+[1] "2023-10-25 10:10:00 EDT"
+[1] "2023-10-25 10:10:22 EDT"
 null device 
           1 
 **** Job ends ****
-Mon Oct 23 04:26:58 PM EDT 2023
+Wed Oct 25 10:12:15 AM EDT 2023

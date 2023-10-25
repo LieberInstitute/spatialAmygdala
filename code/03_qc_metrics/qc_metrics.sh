@@ -1,8 +1,8 @@
 #!/bin/bash
 #SBATCH --mem=80G
-#SBATCH --job-name=build_spe
-#SBATCH -o logs/build_spe.txt
-#SBATCH -e logs/build_spe.txt
+#SBATCH --job-name=qc_metrics
+#SBATCH -o logs/qc_metrics.txt
+#SBATCH -e logs/qc_metrics.txt
 echo "**** Job starts ****"
 date
 
@@ -20,7 +20,7 @@ module load conda_R
 module list
 
 ## Edit with your job command
-Rscript build_spe.R
+Rscript qc_metrics.R
 
 echo "**** Job ends ****"
 date

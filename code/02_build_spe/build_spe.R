@@ -13,7 +13,7 @@ load(here::here("code", "REDCap", "REDCap_AMY.rda"))
 
 sample_info <- data.frame(slide = as.factor(REDCap_AMY$slide))
 sample_info$array <- as.factor(REDCap_AMY$array)
-sample_info$brnum <- as.factor(sapply(strsplit(REDCap_AMY$sample, "-"), `[`, 1))
+sample_info$brnum <- as.factor(sapply(strsplit(REDCap_AMY$brain, "-"), `[`, 1))
 sample_info$species <- as.factor(REDCap_AMY$species)
 sample_info$replicate <- as.factor(REDCap_AMY$serial)
 sample_info$sample_id <- paste(sample_info$slide, sample_info$array, sep = "_")
