@@ -1,0 +1,29 @@
+**** Job starts ****
+Fri Oct 27 04:07:51 PM EDT 2023
+**** SLURM info ****
+User: mtotty
+Job id: 649434
+Job name: precast_vis
+Hostname: compute-114
+Task id: 2
+Loading conda_R/4.3
+
+Currently Loaded Modules:
+  1) JHPCE_ROCKY9_DEFAULT_ENV   3) conda/3-23.3.1
+  2) JHPCE_tools/3.0            4) conda_R/4.3
+
+ 
+
+Using bouth housekeeping gene and PRECAST results to obtain the batch corrected gene expressions.
+Start integration...
+2023-10-27 16:16:34.794608 : ***** Data integration finished!, 0.767 mins elapsed.
+Put the data into a new Seurat object...
+2023-10-27 16:16:39.154863 : ***** New Seurat object is generated!, 0.073 mins elapsed.
+Overwriting 'spe$key'. Set 'overwrite = FALSE' if you do not want to overwrite it.
+Warning message:
+In dir.create(outdir, recursive = TRUE) :
+  '/dcs04/lieber/marmaypag/spatialAMY_LIBD4125/spatialAmygdala/processed-data/08_clustering/PRECAST/HVGs/cluster_csv/PRECAST_clusters_2/PRECAST_cluster' already exists
+null device 
+          1 
+**** Job ends ****
+Fri Oct 27 04:17:36 PM EDT 2023

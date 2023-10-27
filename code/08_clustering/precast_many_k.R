@@ -7,11 +7,10 @@ suppressPackageStartupMessages({
     library("sessioninfo")
     library("SpatialExperiment")
     library("PRECAST")
-    library("tictoc")
 })
 
 #start from spe without batch correction
-load(here("processed-data", "03_qc_metrics", "spe_discarded.Rdata"))
+load(here("processed-data", "04_normalization", "spe_norm.Rdata"))
 
 colnames(spe) <- spe$key
 
@@ -31,7 +30,7 @@ seuList <- unique(spe$sample_id) |>
     })
 
 set.seed(1)
-preobj <- CreatePRECASTObject(seuList = seuList, gene.number=2000, selectGenesMethod='HVGs',
+preobj <- CreatePRECASTObject(seuList = seuList, gene.number=4000, selectGenesMethod='HVGs',
                               premin.spots = 1, premin.features=1, postmin.spots=1, postmin.features=1)
 preobj@seulist
 
@@ -39,10 +38,8 @@ PRECASTObj <- AddAdjList(preobj, platform = "Visium")
 
 PRECASTObj <- AddParSetting(PRECASTObj, Sigma_equal = FALSE,  maxIter = 30, verbose = TRUE)
 
-K <- as.numeric(Sys.getenv("SGE_TASK_ID"))
+K <- as.numeric(Sys.getenv("SLURM_ARRAY_TASK_ID"))
 
-tic()
 PRECASTObj <- PRECAST(PRECASTObj, K = K)
-toc()
 
-save(PRECASTObj, file = here("processed-data", "05_clustering", "PRECAST", paste0("PRECASTObj_",K,".Rdata")))
+save(PRECASTObj, file = here("processed-data", "08_clustering", "PRECAST","HVGs","Rdata_objects", paste0("PRECASTObj_",K,".Rdata")))

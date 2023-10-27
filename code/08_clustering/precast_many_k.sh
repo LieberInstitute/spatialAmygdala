@@ -1,22 +1,19 @@
 #!/bin/bash
-#$ -cwd
-#$ -l mem_free=50G,h_vmem=50G,h_fsize=80G
-#$ -N precast_captureArea_k_many
-#$ -o logs/precast_k.$TASK_ID.txt
-#$ -e logs/precast_k.$TASK_ID.txt
-#$ -m e
-#$ -t 5-20
-#$ -tc 10
+#SBATCH --job-name=precast_many_k
+#SBATCH --output=logs_precast/R-%x.%a.txt
+#SBATCH --error=logs_precast/R-%x.%a.txt
+#SBATCH --array=2-20
+#SBATCH --mem=50G
+#SBATCH --mail-type=END
+#SBATCH --cpus-per-task=1 # specify number of CPUs needed for the job, adjust as needed
 
-echo "**** Job starts ****"
-date
 
-echo "**** JHPCE info ****"
+echo "**** SLURM info ****"
 echo "User: ${USER}"
-echo "Job id: ${JOB_ID}"
-echo "Job name: ${JOB_NAME}"
-echo "Hostname: ${HOSTNAME}"
-echo "Task id: ${SGE_TASK_ID}"
+echo "Job id: ${SLURM_JOB_ID}"
+echo "Job name: ${SLURM_JOB_NAME}"
+echo "Hostname: ${SLURMD_NODENAME}"
+echo "Task id: ${SLURM_ARRAY_TASK_ID}"
 
 ## Load the R module (absent since the JHPCE upgrade to CentOS v7)
 module load conda_R

@@ -1,15 +1,16 @@
 **** Job starts ****
-Wed Oct 25 09:20:21 AM EDT 2023
+Fri Oct 27 12:23:33 PM EDT 2023
 **** JHPCE info ****
 User: mtotty
 Job id: 
 Job name: 
-Hostname: compute-150
+Hostname: compute-141
 Task id: 
 Loading conda_R/4.3
 
 Currently Loaded Modules:
-  1) JHPCE_tools/3.0   2) conda/3-23.3.1   3) conda_R/4.3
+  1) JHPCE_ROCKY9_DEFAULT_ENV   3) conda/3-23.3.1
+  2) JHPCE_tools/3.0            4) conda_R/4.3
 
  
 
@@ -141,7 +142,7 @@ null device
           1 
 qc_lib_size
 FALSE  TRUE 
-28938   947 
+29814    71 
 `geom_smooth()` using formula = 'y ~ x'
 `stat_bin()` using `bins = 30`. Pick better value with `binwidth`.
 `stat_bin()` using `bins = 30`. Pick better value with `binwidth`.
@@ -161,7 +162,7 @@ null device
           1 
 qc_detected
 FALSE  TRUE 
-28622  1263 
+29786    99 
 null device 
           1 
 qc_mito
@@ -183,4 +184,4 @@ Warning messages:
 null device 
           1 
 **** Job ends ****
-Wed Oct 25 09:25:23 AM EDT 2023
+Fri Oct 27 12:27:51 PM EDT 2023

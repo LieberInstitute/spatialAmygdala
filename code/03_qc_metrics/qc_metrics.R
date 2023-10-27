@@ -129,7 +129,7 @@ dev.off()
 
 
 # get library size cutoff
-qc_lib_size <- colData(spe)$sum < 150 # this is arbitrary
+qc_lib_size <- colData(spe)$sum < 50 # this is arbitrary
 table(qc_lib_size)
 
 # add library size info
@@ -189,7 +189,7 @@ dev.off()
 
 
 # ====== select QC threshold for unqie detected genes ========
-qc_detected <- colData(spe)$detected < 150 # this is arbitrary
+qc_detected <- colData(spe)$detected < 50 # this is arbitrary
 table(qc_detected)
 #FALSE  TRUE 
 #27649  2236

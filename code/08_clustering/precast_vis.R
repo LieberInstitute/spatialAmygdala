@@ -4,7 +4,6 @@ suppressPackageStartupMessages({
     library("sessioninfo")
     library("SpatialExperiment")
     library("PRECAST")
-    library("tictoc")
     library("dplyr")
     library("purrr")
     library("tidyverse")
@@ -13,7 +12,7 @@ suppressPackageStartupMessages({
     library("ggspavis")
 })
 
-load(here("processed-data", "03_qc_metrics", "spe_discarded.Rdata"))
+load(here("processed-data", "04_normalization", "spe_norm.Rdata"))
 colnames(spe) <- spe$key
 
 # drop duplicated colData, if any
@@ -21,8 +20,8 @@ duplicated_cols <- duplicated(colnames(colData(spe)))
 filtered_colData <- colData(spe)[, !duplicated_cols]
 colData(spe) <- filtered_colData
 
-K <- as.numeric(Sys.getenv("SGE_TASK_ID"))
-load(file = here("processed-data", "05_clustering", "PRECAST", paste0("PRECASTObj_",K,".Rdata")))
+K <- as.numeric(Sys.getenv("SLURM_ARRAY_TASK_ID"))
+load(file = here("processed-data", "08_clustering", "PRECAST","HVGs", "Rdata_objects", paste0("PRECASTObj_",K,".Rdata")))
 
 PRECASTObj <- SelectModel(PRECASTObj)
 seuInt <- IntegrateSpaData(PRECASTObj, species = "Human")
@@ -45,11 +44,11 @@ precast_name <- paste0("PRECAST_clusters_", K)
 cluster_export(
     spe,
     "PRECAST_cluster",
-    cluster_dir = here::here("processed-data", "05_clustering", "PRECAST", precast_name)
+    cluster_dir = here::here("processed-data", "08_clustering", "PRECAST","HVGs", "cluster_csv", precast_name)
 )
 
 
-pdf(file = here::here("plots", "05_clustering", "PRECAST", paste0(precast_name, ".pdf")), width = 21, height = 12)
+pdf(file = here::here("plots", "08_clustering", "PRECAST", paste0(precast_name, ".pdf")), width = 21, height = 12)
 
 p1 <- vis_clus(spe = spe, sampleid = unique(colData(spe)$sample_id)[1], clustervar = "PRECAST_cluster",point_size = 1.5)
 p2 <- vis_clus(spe = spe, sampleid = unique(colData(spe)$sample_id)[2], clustervar = "PRECAST_cluster",point_size = 1.5)
