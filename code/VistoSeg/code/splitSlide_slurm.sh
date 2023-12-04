@@ -2,7 +2,7 @@
 #SBATCH --mem=80G
 #SBATCH -o logs/slurm-o_splitSlide.txt 
 #SBATCH -e logs/slurm-e_splitSlide.txt
-#SBATCH --array=1
+#SBATCH --array=1-4
 
 echo "**** Job starts ****"
 date
@@ -19,7 +19,7 @@ echo "Task id: ${SLURM_ARRAY_TASK_ID}"
 module load matlab/R2023a
 
 ## Load toolbox for VistoSeg
-toolbox='/dcs04/lieber/marmaypag/spatialdACC_LIBD4125/spatialdACC/code/VistoSeg/code/'
+toolbox='/dcs04/lieber/marmaypag/spatialAMY_LIBD4125/spatialAmygdala/code/VistoSeg/code'
 samplelist="splitSlide_54list.txt"
 
 ## Read inputs from splitSlide_list.txt file
