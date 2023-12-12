@@ -108,6 +108,9 @@ unique(spe.subset$spatial.cluster)
 #reset levels of spatial clusters
 spe.subset$spatial.cluster <- factor(spe.subset$spatial.cluster, levels = c("LA.1", "LA.2", "aBA", "BA", "vmBA", "GABA.n"))
 
+# collapse LA.1 and LA.2 into one cluster by changing labels to LA
+spe.subset$spatial.cluster <- plyr::mapvalues(spe.subset$spatial.cluster, from = c("LA.1", "LA.2"), to = c("LA", "LA"))
+
 # find marker genes
 marker.info <- findMarkers(spe.subset, spe.subset$spatial.cluster, test="binom", direction="up", lfc=2)
 marker.info
@@ -146,17 +149,6 @@ for (i in 1:length(cluster_id)) {
 # ========= Volano plots ==========
 library(EnhancedVolcano)
 
-# subset spe to just spatial clusters that contain the stirng LA or BL
-spe.subset <- spe[,grepl("LA|BA", spe$spatial.cluster)]
-
-unique(spe.subset$spatial.cluster)
-# [1] vmBA   LA.2   LA.1   aBA    GABA.n BA    
-# Levels: WM.1 aBA LA.1 BA vmBA GABA.n LA.2 EC WM.2 Endo
-
-#reset levels of spatial clusters
-spe.subset$spatial.cluster <- factor(spe.subset$spatial.cluster, levels = c("LA.1", "LA.2", "aBA", "BA", "vmBA", "GABA.n"))
-
-
 # find marker genes
 marker.info <- findMarkers(spe.subset, spe.subset$spatial.cluster, test="binom", direction="up")
 marker.info
@@ -176,7 +168,10 @@ for(cluster_id in unique(spe.subset$spatial.cluster)){
         x = 'summary.logFC',
         y = 'p.value',
         title = paste('Volcano plot of Cluster', cluster_id, 'markers'),
-        FCcutoff = 1
+        FCcutoff = 2,
+        pCutoff = 10e-50,
+        drawConnectors = TRUE,
+        widthConnectors = 0.75
     )
     
     
