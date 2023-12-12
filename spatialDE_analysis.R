@@ -12,7 +12,7 @@ suppressPackageStartupMessages({
 })
 
 # Save directories
-plot_dir = here("plots", "09_xenium_panel")
+plot_dir = here("plots", "09_xenium_panel", "amygdala_subregions")
 processed_dir = here("processed-data","09_xenium_panel")
 
 load(here("processed-data","08_clustering", "BayesSpace", "spe_clusters_k10.Rdata"), verbose = TRUE)
@@ -99,23 +99,27 @@ mt <- grep("^MT-", rownames(spe))
 spe <- spe[-mt,]
 
 
+# subset spe to just spatial clusters that contain the string LA or BL
+spe.subset <- spe[,grepl("LA|BA", spe$spatial.cluster)]
+unique(spe.subset$spatial.cluster)
+# [1] vmBA   LA.2   LA.1   aBA    GABA.n BA    
+# Levels: WM.1 aBA LA.1 BA vmBA GABA.n LA.2 EC WM.2 Endo
+
+#reset levels of spatial clusters
+spe.subset$spatial.cluster <- factor(spe.subset$spatial.cluster, levels = c("LA.1", "LA.2", "aBA", "BA", "vmBA", "GABA.n"))
+
 # find marker genes
-marker.info <- scoreMarkers(spe, spe$spatial.cluster)
+marker.info <- findMarkers(spe.subset, spe.subset$spatial.cluster, test="binom", direction="up", lfc=2)
 marker.info
 
-# ======= Visualize marker genes =======
-
-# Note: There are many different metrics given to us by marker.info. Some are more sensitive to the magnitude
-# of expression than others. For our purposes, we likely want genes that have decent overall express. 
-# let's plot a few different metrics to see which works best
-
-cluster_id <- levels(unique(spe$spatial.cluster))
+# get cluster id for loop
+cluster_id <- unique(levels(spe.subset$spatial.cluster))
 
 # loop through cluster ids
 for (i in 1:length(cluster_id)) {
     
     # just look at top 5 genes for one spatial cluster as a sanity check
-    chosen <- marker.info[[cluster_id[i]]]
+    chosen <- marker.info[[i]]
 
     plot_dir = here("plots", "09_xenium_panel", "amygdala_subregions", cluster_id[i])
     
@@ -127,78 +131,57 @@ for (i in 1:length(cluster_id)) {
     # output for keeping track with loop
     print(paste("Now printing marker genes for:", cluster_id[i]))
     
-    # mean AUC
-    mean_AUC <- chosen[order(chosen$mean.AUC, decreasing=TRUE),]
-    head(mean_AUC[,1:4]) # showing basic stats only, for brevity.
-    
-    # median AUC
-    median_AUC <- chosen[order(chosen$median.AUC, decreasing=TRUE),]
-    head(median_AUC[,1:4]) # showing basic stats only, for brevity.
-    
-    # mean Cohen d
-    mean_Cohen_d <- chosen[order(chosen$mean.logFC.cohen, decreasing=TRUE),]
-    head(mean_Cohen_d[,1:4]) # showing basic stats only, for brevity.
-    
-    # median Cohen d
-    median_Cohen_d <- chosen[order(chosen$median.logFC.cohen, decreasing=TRUE),]
-    head(median_Cohen_d[,1:4]) # showing basic stats only, for brevity.
-    
-    # min Cohen d
-    min_Cohen_d <- chosen[order(chosen$min.logFC.cohen, decreasing=TRUE),]
-    head(min_Cohen_d[,1:4]) # showing basic stats only, for brevity.
-    
-    # min AUC
-    min_AUC <- chosen[order(chosen$min.AUC, decreasing=TRUE),]
-    head(min_AUC[,1:4]) # showing basic stats only, for brevity.
     
     # visualize mean AUC
-    features <- c(rownames(mean_AUC[1:5,]))
-    p <- plotExpression(spe, features=features, x='spatial.cluster', colour_by='spatial.cluster', show_violin=TRUE, show_median=TRUE, ncol=1)
+    top10 <- c(rownames(chosen[1:10,]))
+    p <- scater::plotExpression(spe, features=top10, x='spatial.cluster', colour_by='spatial.cluster', show_violin=TRUE, show_median=TRUE, ncol=2)
     
-    pdf(width=7, height=7, here(plot_dir, "expressionPlots_mean_AUC.pdf"))
+    pdf(width=7, height=7, here(plot_dir, "expressionPlots_Top10.pdf"))
     print(p)
     dev.off()
     
-    # visualize median AUC
-    features <- c(rownames(median_AUC[1:5,]))
-    p <- plotExpression(spe, features=features, x='spatial.cluster', colour_by='spatial.cluster', show_violin=TRUE, show_median=TRUE, ncol=1)
-    
-    pdf(width=7, height=7, here(plot_dir, "expressionPlots_median_AUC.pdf"))
-    print(p)
-    dev.off()
-    
-    # visualize mean Cohen d
-    features <- c(rownames(mean_Cohen_d[1:5,]))
-    p <- plotExpression(spe, features=features, x='spatial.cluster', colour_by='spatial.cluster', show_violin=TRUE, show_median=TRUE, ncol=1)
-    
-    pdf(width=7, height=7, here(plot_dir, "expressionPlots_aBA_mean_Cohen_d.pdf"))
-    print(p)
-    dev.off()
-    
-    # visualize median Cohen d
-    features <- c(rownames(median_Cohen_d[1:5,]))
-    p <- plotExpression(spe, features=features, x='spatial.cluster', colour_by='spatial.cluster', show_violin=TRUE, show_median=TRUE, ncol=1)
-    
-    pdf(width=7, height=7, here(plot_dir, "expressionPlots_aBA_median_Cohen_d.pdf"))
-    print(p)
-    dev.off()
-    
-    # visualize min Cohen d
-    features <- c(rownames(min_Cohen_d[1:5,]))
-    p <- plotExpression(spe, features=features, x='spatial.cluster', colour_by='spatial.cluster', show_violin=TRUE, show_median=TRUE, ncol=1)
-    
-    pdf(width=7, height=7, here(plot_dir, "expressionPlots_aBA_min_Cohen_d.pdf"))
-    print(p)
-    dev.off()
-    
-    # visualize min AUC
-    features <- c(rownames(min_AUC[1:5,]))
-    p <- plotExpression(spe, features=features, x='spatial.cluster', colour_by='spatial.cluster', show_violin=TRUE, show_median=TRUE, ncol=1)
-    
-    pdf(width=7, height=7, here(plot_dir, "expressionPlots_aBA_min_AUC.pdf"))
-    print(p)
-    dev.off()
 }
     
 
+# ========= Volano plots ==========
+library(EnhancedVolcano)
+
+# subset spe to just spatial clusters that contain the stirng LA or BL
+spe.subset <- spe[,grepl("LA|BA", spe$spatial.cluster)]
+
+unique(spe.subset$spatial.cluster)
+# [1] vmBA   LA.2   LA.1   aBA    GABA.n BA    
+# Levels: WM.1 aBA LA.1 BA vmBA GABA.n LA.2 EC WM.2 Endo
+
+#reset levels of spatial clusters
+spe.subset$spatial.cluster <- factor(spe.subset$spatial.cluster, levels = c("LA.1", "LA.2", "aBA", "BA", "vmBA", "GABA.n"))
+
+
+# find marker genes
+marker.info <- findMarkers(spe.subset, spe.subset$spatial.cluster, test="binom", direction="up")
+marker.info
+
+# Loop through each unique cluster ID
+for(cluster_id in unique(spe.subset$spatial.cluster)){
     
+    # set plot dir
+    plot_dir = here("plots", "09_xenium_panel", "amygdala_subregions", cluster_id)
+    
+    # Filter the all_markers data frame for the current cluster
+    cluster_markers <- as.data.frame(marker.info[[cluster_id]])
+    
+    volcano_plot <- EnhancedVolcano(
+        cluster_markers,
+        lab = row.names(cluster_markers),
+        x = 'summary.logFC',
+        y = 'p.value',
+        title = paste('Volcano plot of Cluster', cluster_id, 'markers'),
+        FCcutoff = 1
+    )
+    
+    
+    # Optionally, save the volcano plot to a file
+    ggsave(filename = here(plot_dir, paste0("volcano_plot_cluster_", cluster_id, ".png")), plot = volcano_plot)
+    
+}
+
