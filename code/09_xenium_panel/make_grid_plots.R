@@ -53,6 +53,21 @@ colnames(colData(spe))
 
 # Let's start with broad marker genes
 
+# read in xlsx file from processed_dir
+custom_markers <- readxl::read_xlsx(here(processed_dir, "Amygdala_Xenium_panel.xlsx"))
+
+
+# read csv
+SVGs <- read.csv(here("processed-data","05_feature_selection", "nnSVG_summary.csv"), header = TRUE, stringsAsFactors = FALSE)
+#   gene_id gene_name gene_type overall_rank average_rank n_withinTop100
+# 1     MBP       MBP      gene          1.5        2.000              8
+# 2     AVP       AVP      gene          1.5        2.000              1
+# 3    NGFR      NGFR      gene          3.0        5.000              1
+# 4    ENC1      ENC1      gene          4.0        5.750              8
+# 5  SNAP25    SNAP25      gene          5.0        7.625              8
+# 6    GFAP      GFAP      gene          6.0        7.875              8
+
+
 broad_markers <- c("SNAP25", "SYT1",     # neurons
              'SLC17A7', "SLC17A6", # excitatory neurons
              "GAD1", "GAD2",       # inhibitory neurons
@@ -75,6 +90,39 @@ amy_markers <- c("PRKCB", "CYP26B1", "HPCAL1","CAPS", "RGS4", "NEFM")
 
 
 # ============ plot grids ============
+# custom markers
+for (i in 1:length(custom_markers$Gene)){
+    p_list <- vis_grid_gene(
+        spe,
+        geneid= custom_markers$Gene[i],
+        spatial = FALSE,
+        auto_crop = TRUE,
+        return_plots = TRUE,
+        pdf_file = NULL,
+    )
+    plot_list_reordered <- c(p_list[5], p_list[6], p_list[4],
+                             p_list[7], p_list[8], p_list[3],
+                             p_list[1], p_list[2])
+    cowplot::plot_grid(plotlist = plot_list_reordered, ncol = 3)
+    ggsave(here(plot_dir, "custom_markers", paste0(custom_markers$Region[i],"_", custom_markers$Gene[i], ".pdf")), width = 20, height = 20)
+}
+
+# nnSVGs
+for (i in 1:length(SVGs$gene_id)){
+    p_list <- vis_grid_gene(
+        spe,
+        geneid= SVGs$gene_id[i],
+        spatial = FALSE,
+        auto_crop = TRUE,
+        return_plots = TRUE,
+        pdf_file = NULL,
+    )
+    plot_list_reordered <- c(p_list[5], p_list[6], p_list[4],
+                             p_list[7], p_list[8], p_list[3],
+                             p_list[1], p_list[2])
+    cowplot::plot_grid(plotlist = plot_list_reordered, ncol = 3)
+    ggsave(here(plot_dir, "nnSVGs", paste0("Rank", SVGs$overall_rank[i],"_", SVGs$gene_id[i], ".pdf")), width = 20, height = 20)
+}
 
 # plot broad celltype markers
 for (i in 1:length(broad_markers)){
