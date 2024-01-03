@@ -1,0 +1,3 @@
+awk: fatal: cannot open file `raw-mkdir.txt' for reading: No such file or directory
+mv: 'slurm-1390396_1.out' and './logs/slurm-1390396_1.out' are the same file
+mv: 'slurm-1390396_2.out' and './logs/slurm-1390396_2.out' are the same file

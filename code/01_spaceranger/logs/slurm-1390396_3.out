@@ -1,0 +1,14 @@
+awk: fatal: cannot open file `raw-mkdir.txt' for reading: No such file or directory
+mv: cannot stat 'slurm-1390396_10.out': No such file or directory
+mv: cannot stat 'slurm-1390396_11.out': No such file or directory
+mv: cannot stat 'slurm-1390396_12.out': No such file or directory
+mv: cannot stat 'slurm-1390396_13.out': No such file or directory
+mv: cannot stat 'slurm-1390396_14.out': No such file or directory
+mv: cannot stat 'slurm-1390396_15.out': No such file or directory
+mv: cannot stat 'slurm-1390396_16.out': No such file or directory
+mv: cannot stat 'slurm-1390396_4.out': No such file or directory
+mv: cannot stat 'slurm-1390396_5.out': No such file or directory
+mv: cannot stat 'slurm-1390396_6.out': No such file or directory
+mv: cannot stat 'slurm-1390396_7.out': No such file or directory
+mv: cannot stat 'slurm-1390396_8.out': No such file or directory
+mv: cannot stat 'slurm-1390396_9.out': No such file or directory
