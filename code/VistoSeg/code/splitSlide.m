@@ -51,7 +51,7 @@ IMG3 = imresize(Img3,0.7);
 imwrite(IMG3,[fullfile(path1,name1),'_C1',ext1])
 clear Img3 IMG3
 
-Img4 = Img(:,round(x/N)*3:end,:);
+Img4 = Img(:,round(x/N)*3-1000:end,:);
 %imshow(Img4)
 Img4 = imrotate(Img4,360-D1);
 save([fullfile(path1,name1),'_D1.mat'],'Img4','-v7.3');

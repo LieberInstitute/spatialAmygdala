@@ -2,7 +2,7 @@
 #SBATCH --mem=80G
 #SBATCH -o logs/slurm-o_splitSlide.txt 
 #SBATCH -e logs/slurm-e_splitSlide.txt
-#SBATCH --array=1-4
+#SBATCH --array=1
 
 echo "**** Job starts ****"
 date

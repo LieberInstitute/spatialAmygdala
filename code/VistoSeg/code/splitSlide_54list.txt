@@ -1,4 +1,3 @@
-/dcs04/lieber/marmaypag/spatialAMY_LIBD4125/spatialAmygdala/raw-data/images/V13F27-347.tif	0	0	0	0
 /dcs04/lieber/marmaypag/spatialAMY_LIBD4125/spatialAmygdala/raw-data/images/V13F27-354.tif	0	0	0	0
 /dcs04/lieber/marmaypag/spatialAMY_LIBD4125/spatialAmygdala/raw-data/images/V13F27-359.tif	0	0	0	0
 /dcs04/lieber/marmaypag/spatialAMY_LIBD4125/spatialAmygdala/raw-data/images/V13F27-366.tif	0	0	0	0
