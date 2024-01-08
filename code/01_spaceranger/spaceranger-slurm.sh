@@ -1,8 +1,8 @@
 #!/bin/bash
 #SBATCH --mem=80G
 #SBATCH -n 8
-#SBATCH --job-name=spaceranger
-#SBATCH -o logs/spaceranger_slurm_230914o.txt
+#SBATCH --job-name=amy-spaceranger
+#SBATCH -o logs/spaceranger_slurm_240108o.txt
 #SBATCH --array=1-16:4
 
 echo "**** Job starts ****"
@@ -46,7 +46,7 @@ spaceranger count \
     --image=/dcs04/lieber/marmaypag/spatialAMY_LIBD4125/spatialAmygdala/processed-data/Images/VistoSeg/${SAMPLE}.tif \
     --slide=${SLIDE} \
     --area=${CAPTUREAREA} \
-    --loupe-alignment=/dcs04/lieber/marmaypag/spatialHYP_LIBD4195/spatial_HYP/processed-data/01_spaceranger/Images/loupe/${SAM}.json \
+    --loupe-alignment=/dcs04/lieber/marmaypag/spatialAMY_LIBD4125/spatialAmygdala/processed-data/Images/loupe/${SAM}.json \
     --jobmode=local \
     --localcores=8 \
     --localmem=64
