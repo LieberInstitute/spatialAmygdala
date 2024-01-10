@@ -17,7 +17,7 @@ sample_info$brnum <- as.factor(sapply(strsplit(REDCap_AMY$brain, "-"), `[`, 1))
 sample_info$species <- as.factor(REDCap_AMY$species)
 sample_info$replicate <- as.factor(REDCap_AMY$serial)
 sample_info$sample_id <- paste(sample_info$slide, sample_info$array, sep = "_")
-sample_info$sample_path = file.path(here::here("processed-data", "01_spaceranger", "first_donor"), sample_info$sample_id, "outs")
+sample_info$sample_path = file.path(here::here("processed-data", "01_spaceranger"), sample_info$sample_id, "outs")
 
 head(sample_info)
 
