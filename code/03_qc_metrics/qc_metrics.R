@@ -140,68 +140,90 @@ dev.off()
 
  # ========= Spotplots ============
 #
-# left off here. This is the next step
-#
-#
-#
-#
-#
 
-# expr_chrM
-pdf(width=20, height=10, here(plot_dir,"Spotplot_expr_chrM.pdf"))
-sample_ids <- unique(spe$sample_id)
-plots <- lapply(sample_ids[1:8], function(sampleid) {
-  vis_gene(
-    spe = spe,
-    geneid = "expr_chrM",
-    sampleid = sampleid
-  )
-})
+spe.amy <- spe
+unique(spe.amy$brnum)
+
+# drop unused levels
+spe.amy$brnum <- droplevels(spe.amy$brnum)
+
+for (i in 1:length(unique(spe.amy$brnum))) {
+
+    print(i)
+    #subset to brnum only
+    brain <- as.character(unique(spe.amy$brnum)[[i]])
+    spe <- spe.amy[,spe.amy$brnum == brain]
+    
+    # expr_chrM
+    pdf(width=20, height=10, here(plot_dir, paste0("Spotplot_mito_", brain,".pdf")))
+    sample_ids <- unique(spe$sample_id)
+    plots <- lapply(sample_ids[1:8], function(sampleid) {
+      vis_gene(
+        spe = spe,
+        geneid = "expr_chrM",
+        sampleid = sampleid,
+        point_size=1.5
+      )
+    })
+    print((plots[[1]] | plots[[2]] | plots[[3]] | plots[[4]]) / (plots[[5]] | plots[[6]] | plots[[7]] | plots[[8]]))
+    dev.off()
+    
+    # umi
+    pdf(width=20, height=10, here(plot_dir,paste0("Spotplot_sum_umi_", brain,".pdf")))
+    sample_ids <- unique(spe$sample_id)
+    plots <- lapply(sample_ids[1:8], function(sampleid) {
+      vis_gene(
+        spe = spe,
+        geneid = "sum_umi",
+        sampleid = sampleid,
+        point_size=1.5
+      )
+    })
+    print((plots[[1]] | plots[[2]] | plots[[3]] | plots[[4]]) / (plots[[5]] | plots[[6]] | plots[[7]] | plots[[8]]))
+    dev.off()
+    
+    # umi
+    pdf(width=20, height=10, here(plot_dir,paste0("Spotplot_mito_ratio_", brain,".pdf")))
+    sample_ids <- unique(spe$sample_id)
+    plots <- lapply(sample_ids[1:8], function(sampleid) {
+      vis_gene(
+        spe = spe,
+        geneid = "expr_chrM_ratio",
+        sampleid = sampleid,
+        point_size=1.5
+      )
+    })
+    print((plots[[1]] | plots[[2]] | plots[[3]] | plots[[4]]) / (plots[[5]] | plots[[6]] | plots[[7]] | plots[[8]]))
+    dev.off()
+    
+    # umi
+    pdf(width=20, height=10, here(plot_dir,paste0("Spotplot_sum_gene_", brain,".pdf")))
+    sample_ids <- unique(spe$sample_id)
+    plots <- lapply(sample_ids[1:8], function(sampleid) {
+      vis_gene(
+        spe = spe,
+        geneid = "sum_gene",
+        sampleid = sampleid,
+        point_size=1.5
+      )
+    })
+    print((plots[[1]] | plots[[2]] | plots[[3]] | plots[[4]]) / (plots[[5]] | plots[[6]] | plots[[7]] | plots[[8]]))
+    dev.off()
+
+}
+
+pdf(width=20, height=10, here(plot_dir,"Spotplot_mito_all.pdf"))
 (plots[[1]] | plots[[2]] | plots[[3]] | plots[[4]]) / (plots[[5]] | plots[[6]] | plots[[7]] | plots[[8]])
 dev.off()
-
-# umi
-pdf(width=20, height=10, here(plot_dir,"Spotplot_sum_umi.pdf"))
-sample_ids <- unique(spe$sample_id)
-plots <- lapply(sample_ids[1:8], function(sampleid) {
-  vis_gene(
-    spe = spe,
-    geneid = "sum_umi",
-    sampleid = sampleid
-  )
-})
-(plots[[1]] | plots[[2]] | plots[[3]] | plots[[4]]) / (plots[[5]] | plots[[6]] | plots[[7]] | plots[[8]])
-dev.off()
-
-# umi
-pdf(width=20, height=10, here(plot_dir,"Spotplot_expr_chrM_ratio.pdf"))
-sample_ids <- unique(spe$sample_id)
-plots <- lapply(sample_ids[1:8], function(sampleid) {
-  vis_gene(
-    spe = spe,
-    geneid = "expr_chrM_ratio",
-    sampleid = sampleid
-  )
-})
-(plots[[1]] | plots[[2]] | plots[[3]] | plots[[4]]) / (plots[[5]] | plots[[6]] | plots[[7]] | plots[[8]])
-dev.off()
-
-# umi
-pdf(width=20, height=10, here(plot_dir,"Spotplot_sum_gene.pdf"))
-sample_ids <- unique(spe$sample_id)
-plots <- lapply(sample_ids[1:8], function(sampleid) {
-  vis_gene(
-    spe = spe,
-    geneid = "sum_gene",
-    sampleid = sampleid
-  )
-})
-(plots[[1]] | plots[[2]] | plots[[3]] | plots[[4]]) / (plots[[5]] | plots[[6]] | plots[[7]] | plots[[8]])
-dev.off()
-
 
 # =============== Calculate QC Metrics =================
-# to perform standard QC in similar fashion to snRNA-seq data we'll use the scater package
+#
+#
+# will wait to use SpotSweeper rather than waste time on hard thresholds
+#
+#
+#
+#
 
 library(scater)
 library(ggspavis)
