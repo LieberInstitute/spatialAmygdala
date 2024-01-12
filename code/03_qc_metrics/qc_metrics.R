@@ -8,13 +8,18 @@ library(patchwork)
 
 
 # Save directories
-plot_dir = here("plots", "03_qc_metrics")
+plot_dir = here("plots", "03_qc_metrics", "batch_2")
 processed_dir = here("processed-data","03_qc_metrics")
 
 
 # Load AMY data
+load(here("processed-data", "02_build_spe", "spe_raw-1st.Rdata"), verbose = TRUE)
+spe.1 <- spe
+
+
+
 load(here("processed-data", "02_build_spe", "spe_raw.Rdata"), verbose = TRUE)
-spe
+spe.2 <- spe
 # class: SpatialExperiment 
 # dim: 28412 39936 
 # metadata(0):
@@ -30,10 +35,117 @@ spe
 #     spatialCoords names(2) : pxl_col_in_fullres pxl_row_in_fullres
 # imgData names(4): sample_id image_id data scaleFactor
 
+
+# get common genes
+common_genes <- intersect(rownames(spe.1), rownames(spe.2))
+spe.1 <- spe.1[common_genes,]
+spe.2 <- spe.2[common_genes,]
+
+# combine
+spe <- cbind(spe.1, spe.2)
+
 # drop out of tissue spots
 spe <- spe[, spe$in_tissue]
 
 # visualize some QC metrics
+unique(colnames(colData(spe)))
+# [1] "sample_id"              "in_tissue"              "array_row"             
+# [4] "array_col"              "10x_graphclust"         "10x_kmeans_10_clusters"
+# [7] "10x_kmeans_2_clusters"  "10x_kmeans_3_clusters"  "10x_kmeans_4_clusters" 
+# [10] "10x_kmeans_5_clusters"  "10x_kmeans_6_clusters"  "10x_kmeans_7_clusters" 
+# [13] "10x_kmeans_8_clusters"  "10x_kmeans_9_clusters"  "key"                   
+# [16] "sum_umi"                "sum_gene"               "expr_chrM"             
+# [19] "expr_chrM_ratio"        "ManualAnnotation"       "slide"                 
+# [22] "array"                  "brnum"                  "species"               
+# [25] "replicate"              "overlaps_tissue"  
+
+
+unique(spe$brnum)
+# [1] Br9469      Br6471      85v_AMY_SVB
+
+# replace 85v_AMY_SVB with Br6471
+spe$brnum[spe$brnum == "85v_AMY_SVB"] <- "Br6471"
+
+
+#  ====== Violin plots of qc metrics across samples ======
+
+# mito ratio
+pdf(width=10, height=5, here(plot_dir,"Violin_mito_ratio.pdf"))
+p1 <- plotColData(spe, x="sample_id", y="expr_chrM_ratio", colour_by="brnum") + 
+    #scale_y_log10() + 
+    ggtitle("Mitochondrial Percent") +
+    geom_hline(aes(yintercept = 0.3), linetype="dashed", color = "red") +
+    #coord_flip() + 
+    facet_wrap(~spe$brnum, 
+               scales = "free_x",
+               switch = "x",
+               nrow=1) +
+    theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1),
+          legend.position = "none")
+
+p1
+dev.off()
+
+# sum umi
+pdf(width=10, height=5, here(plot_dir,"Violin_sum_umi.pdf"))
+p2 <- plotColData(spe, x="sample_id", y="sum_umi", colour_by="brnum") + 
+    scale_y_log10() + 
+    ggtitle("Sum UMI") +
+    geom_hline(aes(yintercept = 1000), linetype="dashed", color = "red") +
+    #coord_flip() + 
+    facet_wrap(~spe$brnum, 
+               scales = "free_x",
+               switch = "x",
+               nrow=1) +
+    theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1),
+          legend.position = "none")
+
+p2
+dev.off()
+
+# sum gene
+pdf(width=10, height=5, here(plot_dir,"Violin_sum_gene.pdf"))
+p3 <- plotColData(spe, x="sample_id", y="sum_gene", colour_by="brnum") + 
+    scale_y_log10() + 
+    ggtitle("Sum Gene") +
+    geom_hline(aes(yintercept = 1000), linetype="dashed", color = "red") +
+    #coord_flip() + 
+    facet_wrap(~spe$brnum, 
+               scales = "free_x",
+               switch = "x",
+               nrow=1) +
+    theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1),
+          legend.position = "none")
+
+p3
+dev.off()
+
+pdf(width=10, height=10, here(plot_dir,"Violin_all_metrics.pdf"))
+p1 <- p1 + theme(axis.title.x=element_blank(),
+                 axis.text.x=element_blank(),
+                 axis.ticks.x=element_blank()
+                 )
+
+p2 <- p2 + theme(axis.title.x=element_blank(),
+                axis.text.x=element_blank(),
+                axis.ticks.x=element_blank()
+                )
+
+p1/p2/p3
+dev.off()
+
+
+
+
+
+ # ========= Spotplots ============
+#
+# left off here. This is the next step
+#
+#
+#
+#
+#
 
 # expr_chrM
 pdf(width=20, height=10, here(plot_dir,"Spotplot_expr_chrM.pdf"))
