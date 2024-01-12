@@ -1,85 +1,49 @@
 **** Job starts ****
-Mon Oct 23 05:33:24 PM EDT 2023
+Thu Jan 11 12:31:38 PM EST 2024
 **** JHPCE info ****
-User: mtotty
-Job id: 
-Job name: 
-Hostname: compute-119
+User: rmiller
+Job id: 1531857
+Job name: amy-build_spe
+Hostname: 
 Task id: 
-**** Job starts ****
-Mon Oct 23 05:33:24 PM EDT 2023
-**** JHPCE info ****
-User: mtotty
-Job id: 
-Job name: 
-Hostname: compute-119
-Task id: 
-Loading conda_R/4.3
-Loading conda_R/4.3
+Loading conda_R/4.3.x
 
 Currently Loaded Modules:
-  1) JHPCE_tools/3.0   2) conda/3-23.3.1   3) conda_R/4.3
+  1) JHPCE_ROCKY9_DEFAULT_ENV   3) ruby/3.2.2     5) conda/3-23.3.1
+  2) JHPCE_tools/3.0            4) rmate/1.5.10   6) conda_R/4.3.x
 
  
 
-
-Currently Loaded Modules:
-  1) JHPCE_tools/3.0   2) conda/3-23.3.1   3) conda_R/4.3
-
- 
-
-       slide  array  brnum      slide species array replicate  brnum     sample_id species
-1 replicate V13M06-387     sample_id    A1
-1 Br8325 V13M06-387   human    A1         N Br8325 V13M06-387_A1   human
-2         N V13M06-387 V13M06-387_A1    B1
-2 Br8325 V13M06-387   human    B1         N Br8325 V13M06-387_B1   human
-3         N V13M06-387 V13M06-387_B1    C1
-3 Br8325 V13M06-387   human    C1         N Br8325 V13M06-387_C1   human
-4         N V13M06-387 V13M06-387_C1    D1
-4 Br8325 V13M06-387   human    D1         N Br8325 V13M06-387_D1   human
-5         N V13M06-388 V13M06-387_D1    A1
-5 Br8325 V13M06-388   human    A1         N Br8325 V13M06-388_A1   human
-6         N V13M06-388 V13M06-388_A1    B1
-6 Br8325 V13M06-388   human    B1         N Br8325 V13M06-388_B1   human
-         N  V13M06-388_B1                                                                                                              sample_path
-
-1                                                                                                               sample_path
-1 /dcs04/lieber/marmaypag/spatialAMY_LIBD4125/spatialAmygdala/processed-data/01_spaceranger/first_donor/V13M06-387_A1/outs
-2 /dcs04/lieber/marmaypag/spatialAMY_LIBD4125/spatialAmygdala/processed-data/01_spaceranger/first_donor/V13M06-387_A1/outs
-2 /dcs04/lieber/marmaypag/spatialAMY_LIBD4125/spatialAmygdala/processed-data/01_spaceranger/first_donor/V13M06-387_B1/outs
-3 /dcs04/lieber/marmaypag/spatialAMY_LIBD4125/spatialAmygdala/processed-data/01_spaceranger/first_donor/V13M06-387_B1/outs
-3 /dcs04/lieber/marmaypag/spatialAMY_LIBD4125/spatialAmygdala/processed-data/01_spaceranger/first_donor/V13M06-387_C1/outs
-4 /dcs04/lieber/marmaypag/spatialAMY_LIBD4125/spatialAmygdala/processed-data/01_spaceranger/first_donor/V13M06-387_C1/outs
-4 /dcs04/lieber/marmaypag/spatialAMY_LIBD4125/spatialAmygdala/processed-data/01_spaceranger/first_donor/V13M06-387_D1/outs
-5 /dcs04/lieber/marmaypag/spatialAMY_LIBD4125/spatialAmygdala/processed-data/01_spaceranger/first_donor/V13M06-387_D1/outs
-5 /dcs04/lieber/marmaypag/spatialAMY_LIBD4125/spatialAmygdala/processed-data/01_spaceranger/first_donor/V13M06-388_A1/outs /dcs04/lieber/marmaypag/spatialAMY_LIBD4125/spatialAmygdala/processed-data/01_spaceranger/first_donor/V13M06-388_A1/outs
-6
-6 /dcs04/lieber/marmaypag/spatialAMY_LIBD4125/spatialAmygdala/processed-data/01_spaceranger/first_donor/V13M06-388_B1/outs /dcs04/lieber/marmaypag/spatialAMY_LIBD4125/spatialAmygdala/processed-data/01_spaceranger/first_donor/V13M06-388_B1/outs
-
-[1][1] "2023-10-23 17:33:42 EDT"
- "2023-10-23 17:33:42 EDT"
-2023-10-23 17:33:42.851388 SpatialExperiment::read10xVisium: reading basic data from SpaceRanger
-2023-10-23 17:33:42.851384 SpatialExperiment::read10xVisium: reading basic data from SpaceRanger
-2023-10-23 17:34:49.035589 read10xVisiumAnalysis: reading analysis output from SpaceRanger
-2023-10-23 17:34:49.073357 read10xVisiumAnalysis: reading analysis output from SpaceRanger
-2023-10-23 17:34:54.433939 add10xVisiumAnalysis: adding analysis output from SpaceRanger
-2023-10-23 17:34:54.434147 add10xVisiumAnalysis: adding analysis output from SpaceRanger
-2023-10-23 17:34:55.468024 rtracklayer::import: reading the reference GTF file
-2023-10-23 17:34:55.468033 rtracklayer::import: reading the reference GTF file
-2023-10-23 17:35:31.265805 adding gene information to the SPE object
-2023-10-23 17:35:31.293525 adding gene information to the SPE object
-2023-10-23 17:35:31.356555 adding information used by spatialLIBD
-2023-10-23 17:35:31.382594 adding information used by spatialLIBD
-[1] "2023-10-23 17:35:33 EDT"
-[1] "2023-10-23 17:35:33 EDT"
+       slide array  brnum species replicate     sample_id
+1 V13F27-349    A1 Br9469   human         N V13F27-349_A1
+2 V13F27-349    B1 Br9469   human         N V13F27-349_B1
+3 V13F27-349    C1 Br9469   human         N V13F27-349_C1
+4 V13F27-349    D1 Br9469   human         N V13F27-349_D1
+5 V13F27-354    A1 Br6471   human         N V13F27-354_A1
+6 V13F27-354    B1 Br6471   human         N V13F27-354_B1
+                                                                                                   sample_path
+1 /dcs04/lieber/marmaypag/spatialAMY_LIBD4125/spatialAmygdala/processed-data/01_spaceranger/V13F27-349_A1/outs
+2 /dcs04/lieber/marmaypag/spatialAMY_LIBD4125/spatialAmygdala/processed-data/01_spaceranger/V13F27-349_B1/outs
+3 /dcs04/lieber/marmaypag/spatialAMY_LIBD4125/spatialAmygdala/processed-data/01_spaceranger/V13F27-349_C1/outs
+4 /dcs04/lieber/marmaypag/spatialAMY_LIBD4125/spatialAmygdala/processed-data/01_spaceranger/V13F27-349_D1/outs
+5 /dcs04/lieber/marmaypag/spatialAMY_LIBD4125/spatialAmygdala/processed-data/01_spaceranger/V13F27-354_A1/outs
+6 /dcs04/lieber/marmaypag/spatialAMY_LIBD4125/spatialAmygdala/processed-data/01_spaceranger/V13F27-354_B1/outs
+[1] "2024-01-11 12:31:57 EST"
+2024-01-11 12:31:57.892184 SpatialExperiment::read10xVisium: reading basic data from SpaceRanger
+2024-01-11 12:34:04.20085 read10xVisiumAnalysis: reading analysis output from SpaceRanger
+2024-01-11 12:34:13.353268 add10xVisiumAnalysis: adding analysis output from SpaceRanger
+2024-01-11 12:34:16.120042 rtracklayer::import: reading the reference GTF file
+2024-01-11 12:34:53.91853 adding gene information to the SPE object
+2024-01-11 12:34:54.069727 adding information used by spatialLIBD
+[1] "2024-01-11 12:34:57 EST"
 class: SpatialExperiment 
-dim: 36601 39936 
+dim: 36601 79872 
 metadata(0):
 assays(1): counts
 rownames(36601): ENSG00000243485 ENSG00000237613 ... ENSG00000278817
   ENSG00000277196
 rowData names(7): source type ... gene_type gene_search
-colnames(39936): AAACAACGAATAGTTC-1 AAACAAGTATCTCCCA-1 ...
+colnames(79872): AAACAACGAATAGTTC-1 AAACAAGTATCTCCCA-1 ...
   TTGTTTGTATTACACG-1 TTGTTTGTGTAAATTC-1
 colData names(20): sample_id in_tissue ... expr_chrM_ratio
   ManualAnnotation
@@ -89,29 +53,13 @@ altExpNames(0):
 spatialCoords names(2) : pxl_col_in_fullres pxl_row_in_fullres
 imgData names(4): sample_id image_id data scaleFactor
 class: SpatialExperiment 
-dim: 36601 39936 
+dim: 36601 79872 
 metadata(0):
 assays(1): counts
 rownames(36601): ENSG00000243485 ENSG00000237613 ... ENSG00000278817
   ENSG00000277196
 rowData names(7): source type ... gene_type gene_search
-colnames(39936): AAACAACGAATAGTTC-1 AAACAAGTATCTCCCA-1 ...
-  TTGTTTGTATTACACG-1 TTGTTTGTGTAAATTC-1
-colData names(20): sample_id in_tissue ... expr_chrM_ratio
-  ManualAnnotation
-reducedDimNames(3): 10x_pca 10x_tsne 10x_umap
-mainExpName: NULL
-altExpNames(0):
-spatialCoords names(2) : pxl_col_in_fullres pxl_row_in_fullres
-imgData names(4): sample_id image_id data scaleFactor
-class: SpatialExperiment 
-dim: 36601 39936 
-metadata(0):
-assays(1): counts
-rownames(36601): ENSG00000243485 ENSG00000237613 ... ENSG00000278817
-  ENSG00000277196
-rowData names(7): source type ... gene_type gene_search
-colnames(39936): AAACAACGAATAGTTC-1 AAACAAGTATCTCCCA-1 ...
+colnames(79872): AAACAACGAATAGTTC-1 AAACAAGTATCTCCCA-1 ...
   TTGTTTGTATTACACG-1 TTGTTTGTGTAAATTC-1
 colData names(25): sample_id in_tissue ... species replicate
 reducedDimNames(3): 10x_pca 10x_tsne 10x_umap
@@ -119,25 +67,8 @@ mainExpName: NULL
 altExpNames(0):
 spatialCoords names(2) : pxl_col_in_fullres pxl_row_in_fullres
 imgData names(4): sample_id image_id data scaleFactor
-[1] 8189
-[1] 22.37371
-class: SpatialExperiment 
-dim: 36601 39936 
-metadata(0):
-assays(1): counts
-rownames(36601): ENSG00000243485 ENSG00000237613 ... ENSG00000278817
-  ENSG00000277196
-rowData names(7): source type ... gene_type gene_search
-colnames(39936): AAACAACGAATAGTTC-1 AAACAAGTATCTCCCA-1 ...
-  TTGTTTGTATTACACG-1 TTGTTTGTGTAAATTC-1
-colData names(25): sample_id in_tissue ... species replicate
-reducedDimNames(3): 10x_pca 10x_tsne 10x_umap
-mainExpName: NULL
-altExpNames(0):
-spatialCoords names(2) : pxl_col_in_fullres pxl_row_in_fullres
-imgData names(4): sample_id image_id data scaleFactor
-[1] 8189
-[1] 22.37371
+[1] 7695
+[1] 21.02402
 GRanges object with 6 ranges and 24 metadata columns:
       seqnames      ranges strand |   source       type     score     phase
          <Rle>   <IRanges>  <Rle> | <factor>   <factor> <numeric> <integer>
@@ -328,13 +259,13 @@ GRanges object with 6 ranges and 5 metadata columns:
   -------
   seqinfo: 40 sequences from an unspecified genome; no seqlengths
 class: SpatialExperiment 
-dim: 28412 39936 
+dim: 28906 79872 
 metadata(0):
 assays(1): counts
-rownames(28412): ENSG00000243485 ENSG00000238009 ... ENSG00000278817
+rownames(28906): ENSG00000243485 ENSG00000238009 ... ENSG00000278817
   ENSG00000277196
 rowData names(5): source type gene_id gene_version gene_name
-colnames(39936): AAACAACGAATAGTTC-1 AAACAAGTATCTCCCA-1 ...
+colnames(79872): AAACAACGAATAGTTC-1 AAACAAGTATCTCCCA-1 ...
   TTGTTTGTATTACACG-1 TTGTTTGTGTAAATTC-1
 colData names(25): sample_id in_tissue ... species replicate
 reducedDimNames(3): 10x_pca 10x_tsne 10x_umap
@@ -342,245 +273,27 @@ mainExpName: NULL
 altExpNames(0):
 spatialCoords names(2) : pxl_col_in_fullres pxl_row_in_fullres
 imgData names(4): sample_id image_id data scaleFactor
-GRanges object with 6 ranges and 24 metadata columns:
-      seqnames      ranges strand |   source       type     score     phase
-         <Rle>   <IRanges>  <Rle> | <factor>   <factor> <numeric> <integer>
-  [1]     chr1 29554-31109      + |   HAVANA gene              NA      <NA>
-  [2]     chr1 29554-31097      + |   HAVANA transcript        NA      <NA>
-  [3]     chr1 29554-30039      + |   HAVANA exon              NA      <NA>
-  [4]     chr1 30564-30667      + |   HAVANA exon              NA      <NA>
-  [5]     chr1 30976-31097      + |   HAVANA exon              NA      <NA>
-  [6]     chr1 30267-31109      + |   HAVANA transcript        NA      <NA>
-              gene_id gene_version   gene_type   gene_name       level
-          <character>  <character> <character> <character> <character>
-  [1] ENSG00000243485            5      lncRNA MIR1302-2HG           2
-  [2] ENSG00000243485            5      lncRNA MIR1302-2HG           2
-  [3] ENSG00000243485            5      lncRNA MIR1302-2HG           2
-  [4] ENSG00000243485            5      lncRNA MIR1302-2HG           2
-  [5] ENSG00000243485            5      lncRNA MIR1302-2HG           2
-  [6] ENSG00000243485            5      lncRNA MIR1302-2HG           2
-          hgnc_id         tag          havana_gene   transcript_id
-      <character> <character>          <character>     <character>
-  [1]  HGNC:52482  ncRNA_host OTTHUMG00000000959.2            <NA>
-  [2]  HGNC:52482       basic OTTHUMG00000000959.2 ENST00000473358
-  [3]  HGNC:52482       basic OTTHUMG00000000959.2 ENST00000473358
-  [4]  HGNC:52482       basic OTTHUMG00000000959.2 ENST00000473358
-  [5]  HGNC:52482       basic OTTHUMG00000000959.2 ENST00000473358
-  [6]  HGNC:52482       basic OTTHUMG00000000959.2 ENST00000469289
-      transcript_version transcript_type transcript_name
-             <character>     <character>     <character>
-  [1]               <NA>            <NA>            <NA>
-  [2]                  1          lncRNA MIR1302-2HG-202
-  [3]                  1          lncRNA MIR1302-2HG-202
-  [4]                  1          lncRNA MIR1302-2HG-202
-  [5]                  1          lncRNA MIR1302-2HG-202
-  [6]                  1          lncRNA MIR1302-2HG-201
-      transcript_support_level    havana_transcript exon_number         exon_id
-                   <character>          <character> <character>     <character>
-  [1]                     <NA>                 <NA>        <NA>            <NA>
-  [2]                        5 OTTHUMT00000002840.1        <NA>            <NA>
-  [3]                        5 OTTHUMT00000002840.1           1 ENSE00001947070
-  [4]                        5 OTTHUMT00000002840.1           2 ENSE00001922571
-  [5]                        5 OTTHUMT00000002840.1           3 ENSE00001827679
-  [6]                        5 OTTHUMT00000002841.2        <NA>            <NA>
-      exon_version  protein_id      ccdsid         ont
-       <character> <character> <character> <character>
-  [1]         <NA>        <NA>        <NA>        <NA>
-  [2]         <NA>        <NA>        <NA>        <NA>
-  [3]            1        <NA>        <NA>        <NA>
-  [4]            1        <NA>        <NA>        <NA>
-  [5]            1        <NA>        <NA>        <NA>
-  [6]         <NA>        <NA>        <NA>        <NA>
-  -------
-  seqinfo: 40 sequences from an unspecified genome; no seqlengths
 class: SpatialExperiment 
-dim: 28412 39936 
+dim: 28906 79872 
 metadata(0):
 assays(1): counts
-rownames(28412): MIR1302-2HG AL627309.1 ... AC007325.4 AC007325.2
+rownames(28906): MIR1302-2HG AL627309.1 ... AC007325.4 AC007325.2
 rowData names(6): source type ... gene_name Symbol.uniq
-colnames(39936): AAACAACGAATAGTTC-1 AAACAAGTATCTCCCA-1 ...
+colnames(79872): AAACAACGAATAGTTC-1 AAACAAGTATCTCCCA-1 ...
   TTGTTTGTATTACACG-1 TTGTTTGTGTAAATTC-1
 colData names(25): sample_id in_tissue ... species replicate
-GRanges object with 6 ranges and 24 metadata columns:
-                  seqnames        ranges strand |   source     type     score
-                     <Rle>     <IRanges>  <Rle> | <factor> <factor> <numeric>
-  ENSG00000243485     chr1   29554-31109      + |   HAVANA     gene        NA
-  ENSG00000237613     chr1   34554-36081      - |   HAVANA     gene        NA
-  ENSG00000186092     chr1   65419-71585      + |   HAVANA     gene        NA
-  ENSG00000238009     chr1  89295-133723      - |   HAVANA     gene        NA
-  ENSG00000239945     chr1   89551-91105      - |   HAVANA     gene        NA
-  ENSG00000239906     chr1 139790-140339      - |   HAVANA     gene        NA
-                      phase         gene_id gene_version      gene_type
-                  <integer>     <character>  <character>    <character>
-  ENSG00000243485      <NA> ENSG00000243485            5         lncRNA
-  ENSG00000237613      <NA> ENSG00000237613            2         lncRNA
-  ENSG00000186092      <NA> ENSG00000186092            6 protein_coding
-  ENSG00000238009      <NA> ENSG00000238009            6         lncRNA
-  ENSG00000239945      <NA> ENSG00000239945            1         lncRNA
-  ENSG00000239906      <NA> ENSG00000239906            1         lncRNA
-                    gene_name       level     hgnc_id               tag
-                  <character> <character> <character>       <character>
-  ENSG00000243485 MIR1302-2HG           2  HGNC:52482        ncRNA_host
-  ENSG00000237613     FAM138A           2  HGNC:32334              <NA>
-  ENSG00000186092       OR4F5           2  HGNC:14825              <NA>
-  ENSG00000238009  AL627309.1           2        <NA> overlapping_locus
-  ENSG00000239945  AL627309.3           2        <NA> overlapping_locus
-  ENSG00000239906  AL627309.2           2        <NA>              <NA>
-                           havana_gene transcript_id transcript_version
-                           <character>   <character>        <character>
-  ENSG00000243485 OTTHUMG00000000959.2          <NA>               <NA>
-  ENSG00000237613 OTTHUMG00000000960.1          <NA>               <NA>
-  ENSG00000186092 OTTHUMG00000001094.4          <NA>               <NA>
-  ENSG00000238009 OTTHUMG00000001096.2          <NA>               <NA>
-  ENSG00000239945 OTTHUMG00000001097.2          <NA>               <NA>
-  ENSG00000239906 OTTHUMG00000002481.1          <NA>               <NA>
-                  transcript_type transcript_name transcript_support_level
-                      <character>     <character>              <character>
-  ENSG00000243485            <NA>            <NA>                     <NA>
-  ENSG00000237613            <NA>            <NA>                     <NA>
-  ENSG00000186092            <NA>            <NA>                     <NA>
-  ENSG00000238009            <NA>            <NA>                     <NA>
-  ENSG00000239945            <NA>            <NA>                     <NA>
-  ENSG00000239906            <NA>            <NA>                     <NA>
-                  havana_transcript exon_number     exon_id exon_version
-                        <character> <character> <character>  <character>
-  ENSG00000243485              <NA>        <NA>        <NA>         <NA>
-  ENSG00000237613              <NA>        <NA>        <NA>         <NA>
-  ENSG00000186092              <NA>        <NA>        <NA>         <NA>
-  ENSG00000238009              <NA>        <NA>        <NA>         <NA>
-  ENSG00000239945              <NA>        <NA>        <NA>         <NA>
-  ENSG00000239906              <NA>        <NA>        <NA>         <NA>
-                   protein_id      ccdsid         ont
-                  <character> <character> <character>
-  ENSG00000243485        <NA>        <NA>        <NA>
-  ENSG00000237613        <NA>        <NA>        <NA>
-  ENSG00000186092        <NA>        <NA>        <NA>
-  ENSG00000238009        <NA>        <NA>        <NA>
-  ENSG00000239945        <NA>        <NA>        <NA>
-  ENSG00000239906        <NA>        <NA>        <NA>
-  -------
-  seqinfo: 40 sequences from an unspecified genome; no seqlengths
-GRanges object with 6 ranges and 24 metadata columns:
-                  seqnames            ranges strand |   source     type
-                     <Rle>         <IRanges>  <Rle> | <factor> <factor>
-  ENSG00000116237     chr1   6221193-6235972      - |   HAVANA     gene
-  ENSG00000237436     chr1   6783892-6784843      - |   HAVANA     gene
-  ENSG00000171735     chr1   6785454-7769706      + |   HAVANA     gene
-  ENSG00000237402     chr1   7368942-7370270      + |   HAVANA     gene
-  ENSG00000198793     chr1 11106535-11262551      - |   HAVANA     gene
-  ENSG00000225602     chr1 11143898-11149537      + |   HAVANA     gene
-                      score     phase         gene_id gene_version
-                  <numeric> <integer>     <character>  <character>
-  ENSG00000116237        NA      <NA> ENSG00000116237           16
-  ENSG00000237436        NA      <NA> ENSG00000237436            1
-  ENSG00000171735        NA      <NA> ENSG00000171735           19
-  ENSG00000237402        NA      <NA> ENSG00000237402            1
-  ENSG00000198793        NA      <NA> ENSG00000198793           13
-  ENSG00000225602        NA      <NA> ENSG00000225602            5
-                       gene_type   gene_name       level     hgnc_id
-                     <character> <character> <character> <character>
-  ENSG00000116237 protein_coding        ICMT           2   HGNC:5350
-  ENSG00000237436         lncRNA   CAMTA1-DT           2  HGNC:53020
-  ENSG00000171735 protein_coding      CAMTA1           1  HGNC:18806
-  ENSG00000237402         lncRNA  CAMTA1-IT1           1  HGNC:41446
-  ENSG00000198793 protein_coding        MTOR           2   HGNC:3942
-  ENSG00000225602         lncRNA    MTOR-AS1           2  HGNC:40242
-                                tag          havana_gene transcript_id
-                        <character>          <character>   <character>
-  ENSG00000116237              <NA> OTTHUMG00000001254.3          <NA>
-  ENSG00000237436              <NA> OTTHUMG00000001213.1          <NA>
-  ENSG00000171735 overlapping_locus OTTHUMG00000001212.7          <NA>
-  ENSG00000237402 overlapping_locus OTTHUMG00000001217.1          <NA>
-  ENSG00000198793              <NA> OTTHUMG00000002001.4          <NA>
-  ENSG00000225602              <NA> OTTHUMG00000002003.1          <NA>
-                  transcript_version transcript_type transcript_name
-                         <character>     <character>     <character>
-  ENSG00000116237               <NA>            <NA>            <NA>
-  ENSG00000237436               <NA>            <NA>            <NA>
-  ENSG00000171735               <NA>            <NA>            <NA>
-  ENSG00000237402               <NA>            <NA>            <NA>
-  ENSG00000198793               <NA>            <NA>            <NA>
-  ENSG00000225602               <NA>            <NA>            <NA>
-                  transcript_support_level havana_transcript exon_number
-                               <character>       <character> <character>
-  ENSG00000116237                     <NA>              <NA>        <NA>
-  ENSG00000237436                     <NA>              <NA>        <NA>
-  ENSG00000171735                     <NA>              <NA>        <NA>
-  ENSG00000237402                     <NA>              <NA>        <NA>
-  ENSG00000198793                     <NA>              <NA>        <NA>
-  ENSG00000225602                     <NA>              <NA>        <NA>
-                      exon_id exon_version  protein_id      ccdsid         ont
-                  <character>  <character> <character> <character> <character>
-  ENSG00000116237        <NA>         <NA>        <NA>        <NA>        <NA>
-  ENSG00000237436        <NA>         <NA>        <NA>        <NA>        <NA>
-  ENSG00000171735        <NA>         <NA>        <NA>        <NA>        <NA>
-  ENSG00000237402        <NA>         <NA>        <NA>        <NA>        <NA>
-  ENSG00000198793        <NA>         <NA>        <NA>        <NA>        <NA>
-  ENSG00000225602        <NA>         <NA>        <NA>        <NA>        <NA>
-  -------
-  seqinfo: 40 sequences from an unspecified genome; no seqlengths
-[1]  1  4  7 14 15 16
-GRanges object with 6 ranges and 5 metadata columns:
-                  seqnames        ranges strand |   source     type
-                     <Rle>     <IRanges>  <Rle> | <factor> <factor>
-  ENSG00000243485     chr1   29554-31109      + |   HAVANA     gene
-  ENSG00000237613     chr1   34554-36081      - |   HAVANA     gene
-  ENSG00000186092     chr1   65419-71585      + |   HAVANA     gene
-  ENSG00000238009     chr1  89295-133723      - |   HAVANA     gene
-  ENSG00000239945     chr1   89551-91105      - |   HAVANA     gene
-  ENSG00000239906     chr1 139790-140339      - |   HAVANA     gene
-                          gene_id gene_version   gene_name
-                      <character>  <character> <character>
-  ENSG00000243485 ENSG00000243485            5 MIR1302-2HG
-  ENSG00000237613 ENSG00000237613            2     FAM138A
-  ENSG00000186092 ENSG00000186092            6       OR4F5
-  ENSG00000238009 ENSG00000238009            6  AL627309.1
-  ENSG00000239945 ENSG00000239945            1  AL627309.3
-  ENSG00000239906 ENSG00000239906            1  AL627309.2
-  -------
-  seqinfo: 40 sequences from an unspecified genome; no seqlengths
-reducedDimNames(3): 10x_pca 10x_tsne 10x_umap
-mainExpName: NULL
-class: SpatialExperiment 
-dim: 28412 39936 
-metadata(0):
-assays(1): counts
-rownames(28412): ENSG00000243485 ENSG00000238009 ... ENSG00000278817
-  ENSG00000277196
-rowData names(5): source type gene_id gene_version gene_name
-colnames(39936): AAACAACGAATAGTTC-1 AAACAAGTATCTCCCA-1 ...
-  TTGTTTGTATTACACG-1 TTGTTTGTGTAAATTC-1
-colData names(25): sample_id in_tissue ... species replicate
-altExpNames(0):
-spatialCoords names(2) : pxl_col_in_fullres pxl_row_in_fullres
-imgData names(4): sample_id image_id data scaleFactor
 reducedDimNames(3): 10x_pca 10x_tsne 10x_umap
 mainExpName: NULL
 altExpNames(0):
 spatialCoords names(2) : pxl_col_in_fullres pxl_row_in_fullres
 imgData names(4): sample_id image_id data scaleFactor
 class: SpatialExperiment 
-dim: 28412 39936 
+dim: 28906 79872 
 metadata(0):
 assays(1): counts
-rownames(28412): MIR1302-2HG AL627309.1 ... AC007325.4 AC007325.2
+rownames(28906): MIR1302-2HG AL627309.1 ... AC007325.4 AC007325.2
 rowData names(6): source type ... gene_name Symbol.uniq
-colnames(39936): AAACAACGAATAGTTC-1 AAACAAGTATCTCCCA-1 ...
-  TTGTTTGTATTACACG-1 TTGTTTGTGTAAATTC-1
-colData names(25): sample_id in_tissue ... species replicate
-reducedDimNames(3): 10x_pca 10x_tsne 10x_umap
-mainExpName: NULL
-altExpNames(0):
-spatialCoords names(2) : pxl_col_in_fullres pxl_row_in_fullres
-imgData names(4): sample_id image_id data scaleFactor
-class: SpatialExperiment 
-dim: 28412 39936 
-metadata(0):
-assays(1): counts
-rownames(28412): MIR1302-2HG AL627309.1 ... AC007325.4 AC007325.2
-rowData names(6): source type ... gene_name Symbol.uniq
-colnames(39936): AAACAACGAATAGTTC-1 AAACAAGTATCTCCCA-1 ...
+colnames(79872): AAACAACGAATAGTTC-1 AAACAAGTATCTCCCA-1 ...
   TTGTTTGTATTACACG-1 TTGTTTGTGTAAATTC-1
 colData names(26): sample_id in_tissue ... replicate overlaps_tissue
 reducedDimNames(3): 10x_pca 10x_tsne 10x_umap
@@ -588,34 +301,17 @@ mainExpName: NULL
 altExpNames(0):
 spatialCoords names(2) : pxl_col_in_fullres pxl_row_in_fullres
 imgData names(4): sample_id image_id data scaleFactor
+2.51 GB
+[1] 28906 74434
+2.49 GB
 class: SpatialExperiment 
-dim: 28412 39936 
+dim: 28906 74434 
 metadata(0):
 assays(1): counts
-rownames(28412): MIR1302-2HG AL627309.1 ... AC007325.4 AC007325.2
+rownames(28906): MIR1302-2HG AL627309.1 ... AC007325.4 AC007325.2
 rowData names(6): source type ... gene_name Symbol.uniq
-colnames(39936): AAACAACGAATAGTTC-1 AAACAAGTATCTCCCA-1 ...
+colnames(74434): AAACAACGAATAGTTC-1 AAACAAGTATCTCCCA-1 ...
   TTGTTTGTATTACACG-1 TTGTTTGTGTAAATTC-1
-colData names(26): sample_id in_tissue ... replicate overlaps_tissue
-reducedDimNames(3): 10x_pca 10x_tsne 10x_umap
-mainExpName: NULL
-altExpNames(0):
-spatialCoords names(2) : pxl_col_in_fullres pxl_row_in_fullres
-imgData names(4): sample_id image_id data scaleFactor
-1.60 GB
-1.60 GB
-[1] 28412 29885
-[1] 28412 29885
-1.52 GB
-1.52 GB
-class: SpatialExperiment 
-dim: 28412 29885 
-metadata(0):
-assays(1): counts
-rownames(28412): MIR1302-2HG AL627309.1 ... AC007325.4 AC007325.2
-rowData names(6): source type ... gene_name Symbol.uniq
-colnames(29885): AAACAAGTATCTCCCA-1 AAACACCAATAACTGC-1 ...
-  TTGTTTCATTAGTCTA-1 TTGTTTCCATACAACT-1
 colData names(26): sample_id in_tissue ... replicate overlaps_tissue
 reducedDimNames(3): 10x_pca 10x_tsne 10x_umap
 mainExpName: NULL
@@ -623,370 +319,180 @@ altExpNames(0):
 spatialCoords names(2) : pxl_col_in_fullres pxl_row_in_fullres
 imgData names(4): sample_id image_id data scaleFactor
 [1] "Reproducibility information:"
-[1] "2023-10-23 17:42:26 EDT"
-   user  system elapsed 
-503.345   6.019 540.159 
-class: SpatialExperiment 
-dim: 28412 29885 
-metadata(0):
-assays(1): counts
-rownames(28412): MIR1302-2HG AL627309.1 ... AC007325.4 AC007325.2
-rowData names(6): source type ... gene_name Symbol.uniq
-colnames(29885): AAACAAGTATCTCCCA-1 AAACACCAATAACTGC-1 ...
-  TTGTTTCATTAGTCTA-1 TTGTTTCCATACAACT-1
-colData names(26): sample_id in_tissue ... replicate overlaps_tissue
-reducedDimNames(3): 10x_pca 10x_tsne 10x_umap
-mainExpName: NULL
+[1] "2024-01-11 12:51:24 EST"
+    user   system  elapsed 
+1145.015   14.344 1184.071 
 ─ Session info ───────────────────────────────────────────────────────────────────────────────────────────────────────
  setting  value
- version  R version 4.3.1 Patched (2023-07-19 r84711)
+ version  R version 4.3.2 Patched (2023-11-13 r85524)
  os       Rocky Linux 9.2 (Blue Onyx)
  system   x86_64, linux-gnu
  ui       X11
  language (EN)
  collate  en_US.UTF-8
  ctype    en_US.UTF-8
- tz       America/New_York
- date     2023-10-23
- pandoc   3.1.3 @ /jhpce/shared/community/core/conda_R/4.3/bin/pandoc
+ tz       US/Eastern
+ date     2024-01-11
+ pandoc   3.1.3 @ /jhpce/shared/community/core/conda_R/4.3.x/bin/pandoc
 
 ─ Packages ───────────────────────────────────────────────────────────────────────────────────────────────────────────
  package                * version   date (UTC) lib source
- abind                    1.4-5     2016-07-21 [2] CRAN (R 4.3.1)
- AnnotationDbi            1.62.2    2023-07-02 [2] Bioconductor
- AnnotationHub            3.8.0     2023-04-25 [2] Bioconductor
- attempt                  0.3.1     2020-05-03 [2] CRAN (R 4.3.1)
- beachmat                 2.16.0    2023-04-25 [2] Bioconductor
- beeswarm                 0.4.0     2021-06-01 [2] CRAN (R 4.3.1)
- benchmarkme              1.0.8     2022-06-12 [2] CRAN (R 4.3.1)
- benchmarkmeData          1.0.4     2020-04-23 [2] CRAN (R 4.3.1)
- Biobase                * 2.60.0    2023-04-25 [2] Bioconductor
- BiocFileCache            2.8.0     2023-04-25 [2] Bioconductor
- BiocGenerics           * 0.46.0    2023-04-25 [2] Bioconductor
- BiocIO                   1.10.0    2023-04-25 [2] Bioconductor
- BiocManager              1.30.22   2023-08-08 [2] CRAN (R 4.3.1)
- BiocNeighbors            1.18.0    2023-04-25 [2] Bioconductor
- BiocParallel             1.34.2    2023-05-22 [2] Bioconductor
- BiocSingular             1.16.0    2023-04-25 [2] Bioconductor
- BiocVersion              3.17.1    2022-11-04 [2] Bioconductor
- Biostrings               2.68.1    2023-05-16 [2] Bioconductor
- bit                      4.0.5     2022-11-15 [2] CRAN (R 4.3.1)
- bit64                    4.0.5     2020-08-30 [2] CRAN (R 4.3.1)
- bitops                   1.0-7     2021-04-24 [2] CRAN (R 4.3.1)
- blob                     1.2.4     2023-03-17 [2] CRAN (R 4.3.1)
- bslib                    0.5.1     2023-08-11 [2] CRAN (R 4.3.1)
- cachem                   1.0.8     2023-05-01 [2] CRAN (R 4.3.1)
- cli                      3.6.1     2023-03-23 [2] CRAN (R 4.3.1)
- codetools                0.2-19    2023-02-01 [3] CRAN (R 4.3.1)
- colorspace               2.1-0     2023-01-23 [2] CRAN (R 4.3.1)
- config                   0.3.2     2023-08-30 [2] CRAN (R 4.3.1)
- cowplot                  1.1.1     2020-12-30 [2] CRAN (R 4.3.1)
- crayon                   1.5.2     2022-09-29 [2] CRAN (R 4.3.1)
- curl                     5.0.2     2023-08-14 [2] CRAN (R 4.3.1)
- data.table               1.14.8    2023-02-17 [1] CRAN (R 4.3.1)
- DBI                      1.1.3     2022-06-18 [2] CRAN (R 4.3.1)
- dbplyr                   2.3.3     2023-07-07 [2] CRAN (R 4.3.1)
- DelayedArray             0.26.7    2023-07-28 [2] Bioconductor
- DelayedMatrixStats       1.22.6    2023-08-28 [2] Bioconductor
- digest                   0.6.33    2023-07-07 [2] CRAN (R 4.3.1)
- doParallel               1.0.17    2022-02-07 [2] CRAN (R 4.3.1)
- dotCall64                1.0-2     2022-10-03 [2] CRAN (R 4.3.1)
- dplyr                    1.1.3     2023-09-03 [2] CRAN (R 4.3.1)
- dqrng                    0.3.1     2023-08-30 [2] CRAN (R 4.3.1)
- DropletUtils             1.20.0    2023-04-25 [2] Bioconductor
- DT                       0.29      2023-08-29 [2] CRAN (R 4.3.1)
- edgeR                    3.42.4    2023-05-31 [2] Bioconductor
- ellipsis                 0.3.2     2021-04-29 [2] CRAN (R 4.3.1)
- ExperimentHub            2.8.1     2023-07-12 [2] Bioconductor
- fansi                    1.0.4     2023-01-22 [2] CRAN (R 4.3.1)
- fastmap                  1.1.1     2023-02-24 [2] CRAN (R 4.3.1)
- fields                   15.2      2023-08-17 [2] CRAN (R 4.3.1)
- filelock                 1.0.2     2018-10-05 [2] CRAN (R 4.3.1)
- foreach                  1.5.2     2022-02-02 [2] CRAN (R 4.3.1)
- generics                 0.1.3     2022-07-05 [2] CRAN (R 4.3.1)
- GenomeInfoDb           * 1.36.3    2023-09-07 [2] Bioconductor
- GenomeInfoDbData         1.2.10    2023-07-20 [2] Bioconductor
- GenomicAlignments        1.36.0    2023-04-25 [2] Bioconductor
- GenomicRanges          * 1.52.0    2023-04-25 [2] Bioconductor
- ggbeeswarm               0.7.2     2023-04-29 [2] CRAN (R 4.3.1)
- ggplot2                  3.4.3     2023-08-14 [2] CRAN (R 4.3.1)
- ggrepel                  0.9.3     2023-02-03 [2] CRAN (R 4.3.1)
- glue                     1.6.2     2022-02-24 [2] CRAN (R 4.3.1)
- golem                    0.4.1     2023-06-05 [2] CRAN (R 4.3.1)
- gridExtra                2.3       2017-09-09 [2] CRAN (R 4.3.1)
- gtable                   0.3.4     2023-08-21 [2] CRAN (R 4.3.1)
- HDF5Array                1.28.1    2023-05-01 [2] Bioconductor
- here                   * 1.0.1     2020-12-13 [2] CRAN (R 4.3.1)
- htmltools                0.5.6     2023-08-10 [2] CRAN (R 4.3.1)
- htmlwidgets              1.6.2     2023-03-17 [2] CRAN (R 4.3.1)
- httpuv                   1.6.11    2023-05-11 [2] CRAN (R 4.3.1)
- httr                     1.4.7     2023-08-15 [2] CRAN (R 4.3.1)
- interactiveDisplayBase   1.38.0    2023-04-25 [2] Bioconductor
- IRanges                * 2.34.1    2023-06-22 [2] Bioconductor
- irlba                    2.3.5.1   2022-10-03 [2] CRAN (R 4.3.1)
- iterators                1.0.14    2022-02-05 [2] CRAN (R 4.3.1)
- jquerylib                0.1.4     2021-04-26 [2] CRAN (R 4.3.1)
- jsonlite                 1.8.7     2023-06-29 [2] CRAN (R 4.3.1)
- KEGGREST                 1.40.0    2023-04-25 [2] Bioconductor
- later                    1.3.1     2023-05-02 [2] CRAN (R 4.3.1)
- lattice                  0.21-8    2023-04-05 [3] CRAN (R 4.3.1)
- lazyeval                 0.2.2     2019-03-15 [2] CRAN (R 4.3.1)
- lifecycle                1.0.3     2022-10-07 [2] CRAN (R 4.3.1)
- limma                    3.56.2    2023-06-04 [2] Bioconductor
- lobstr                 * 1.1.2     2022-06-22 [2] CRAN (R 4.3.1)
- locfit                   1.5-9.8   2023-06-11 [2] CRAN (R 4.3.1)
- magick                   2.7.5     2023-08-07 [2] CRAN (R 4.3.1)
- magrittr                 2.0.3     2022-03-30 [2] CRAN (R 4.3.1)
- maps                     3.4.1     2022-10-30 [2] CRAN (R 4.3.1)
- Matrix                   1.6-1.1   2023-09-18 [3] CRAN (R 4.3.1)
- MatrixGenerics         * 1.12.3    2023-07-30 [2] Bioconductor
- matrixStats            * 1.0.0     2023-06-02 [2] CRAN (R 4.3.1)
- memoise                  2.0.1     2021-11-26 [2] CRAN (R 4.3.1)
- mime                     0.12      2021-09-28 [2] CRAN (R 4.3.1)
- munsell                  0.5.0     2018-06-12 [2] CRAN (R 4.3.1)
- paletteer                1.5.0     2022-10-19 [2] CRAN (R 4.3.1)
- pillar                   1.9.0     2023-03-22 [2] CRAN (R 4.3.1)
- pkgconfig                2.0.3     2019-09-22 [2] CRAN (R 4.3.1)
- plotly                   4.10.2    2023-06-03 [2] CRAN (R 4.3.1)
- png                      0.1-8     2022-11-29 [2] CRAN (R 4.3.1)
- prettyunits              1.1.1     2020-01-24 [2] CRAN (R 4.3.1)
- promises                 1.2.1     2023-08-10 [2] CRAN (R 4.3.1)
- purrr                    1.0.2     2023-08-10 [2] CRAN (R 4.3.1)
- R.methodsS3              1.8.2     2022-06-13 [2] CRAN (R 4.3.1)
- R.oo                     1.25.0    2022-06-12 [2] CRAN (R 4.3.1)
- R.utils                  2.12.2    2022-11-11 [2] CRAN (R 4.3.1)
- R6                       2.5.1     2021-08-19 [2] CRAN (R 4.3.1)
- rappdirs                 0.3.3     2021-01-31 [2] CRAN (R 4.3.1)
- RColorBrewer             1.1-3     2022-04-03 [2] CRAN (R 4.3.1)
- Rcpp                     1.0.11    2023-07-06 [2] CRAN (R 4.3.1)
- RCurl                    1.98-1.12 2023-03-27 [2] CRAN (R 4.3.1)
- rematch2                 2.1.2     2020-05-01 [2] CRAN (R 4.3.1)
- restfulr                 0.0.15    2022-06-16 [2] CRAN (R 4.3.1)
- rhdf5                    2.44.0    2023-04-25 [2] Bioconductor
- rhdf5filters             1.12.1    2023-04-30 [2] Bioconductor
- Rhdf5lib                 1.22.1    2023-09-10 [2] Bioconductor
- rjson                    0.2.21    2022-01-09 [2] CRAN (R 4.3.1)
- rlang                    1.1.1     2023-04-28 [2] CRAN (R 4.3.1)
- rprojroot                2.0.3     2022-04-02 [2] CRAN (R 4.3.1)
- Rsamtools                2.16.0    2023-04-25 [2] Bioconductor
- RSQLite                  2.3.1     2023-04-03 [2] CRAN (R 4.3.1)
- rsvd                     1.0.5     2021-04-16 [2] CRAN (R 4.3.1)
- rtracklayer            * 1.60.1    2023-08-15 [2] Bioconductor
- S4Arrays                 1.0.6     2023-08-30 [2] Bioconductor
- S4Vectors              * 0.38.1    2023-05-02 [2] Bioconductor
- sass                     0.4.7     2023-07-15 [2] CRAN (R 4.3.1)
- ScaledMatrix             1.8.1     2023-05-03 [2] Bioconductor
- scales                   1.2.1     2022-08-20 [2] CRAN (R 4.3.1)
- scater                   1.28.0    2023-04-25 [2] Bioconductor
- scuttle                  1.10.2    2023-08-03 [2] Bioconductor
- sessioninfo            * 1.2.2     2021-12-06 [2] CRAN (R 4.3.1)
- shiny                    1.7.5     2023-08-12 [2] CRAN (R 4.3.1)
- shinyWidgets             0.8.0     2023-08-30 [2] CRAN (R 4.3.1)
- SingleCellExperiment   * 1.22.0    2023-04-25 [2] Bioconductor
- spam                     2.9-1     2022-08-07 [2] CRAN (R 4.3.1)
- sparseMatrixStats        1.12.2    2023-07-02 [2] Bioconductor
- SpatialExperiment      * 1.10.0    2023-04-25 [2] Bioconductor
- spatialLIBD            * 1.12.0    2023-04-27 [2] Bioconductor
- statmod                  1.5.0     2023-01-06 [2] CRAN (R 4.3.1)
- SummarizedExperiment   * 1.30.2    2023-06-06 [2] Bioconductor
- tibble                   3.2.1     2023-03-20 [2] CRAN (R 4.3.1)
- tidyr                    1.3.0     2023-01-24 [2] CRAN (R 4.3.1)
- tidyselect               1.2.0     2022-10-10 [2] CRAN (R 4.3.1)
- utf8                     1.2.3     2023-01-31 [2] CRAN (R 4.3.1)
- vctrs                    0.6.3     2023-06-14 [2] CRAN (R 4.3.1)
- vipor                    0.4.5     2017-03-22 [2] CRAN (R 4.3.1)
- viridis                  0.6.4     2023-07-22 [2] CRAN (R 4.3.1)
- viridisLite              0.4.2     2023-05-02 [2] CRAN (R 4.3.1)
- XML                      3.99-0.14 2023-03-19 [2] CRAN (R 4.3.1)
- xtable                   1.8-4     2019-04-21 [2] CRAN (R 4.3.1)
- XVector                  0.40.0    2023-04-25 [2] Bioconductor
- yaml                     2.3.7     2023-01-23 [2] CRAN (R 4.3.1)
- zlibbioc                 1.46.0    2023-04-25 [2] Bioconductor
+ abind                    1.4-5     2016-07-21 [2] CRAN (R 4.3.2)
+ AnnotationDbi            1.64.1    2023-11-03 [2] Bioconductor
+ AnnotationHub            3.10.0    2023-10-24 [2] Bioconductor
+ attempt                  0.3.1     2020-05-03 [2] CRAN (R 4.3.2)
+ beachmat                 2.18.0    2023-10-24 [2] Bioconductor
+ beeswarm                 0.4.0     2021-06-01 [2] CRAN (R 4.3.2)
+ benchmarkme              1.0.8     2022-06-12 [2] CRAN (R 4.3.2)
+ benchmarkmeData          1.0.4     2020-04-23 [2] CRAN (R 4.3.2)
+ Biobase                * 2.62.0    2023-10-24 [2] Bioconductor
+ BiocFileCache            2.10.1    2023-10-26 [2] Bioconductor
+ BiocGenerics           * 0.48.1    2023-11-01 [2] Bioconductor
+ BiocIO                   1.12.0    2023-10-24 [2] Bioconductor
+ BiocManager              1.30.22   2023-08-08 [2] CRAN (R 4.3.2)
+ BiocNeighbors            1.20.0    2023-10-24 [2] Bioconductor
+ BiocParallel             1.36.0    2023-10-24 [2] Bioconductor
+ BiocSingular             1.18.0    2023-10-24 [2] Bioconductor
+ BiocVersion              3.18.0    2023-04-25 [2] Bioconductor
+ Biostrings               2.70.1    2023-10-25 [2] Bioconductor
+ bit                      4.0.5     2022-11-15 [2] CRAN (R 4.3.2)
+ bit64                    4.0.5     2020-08-30 [2] CRAN (R 4.3.2)
+ bitops                   1.0-7     2021-04-24 [2] CRAN (R 4.3.2)
+ blob                     1.2.4     2023-03-17 [2] CRAN (R 4.3.2)
+ bslib                    0.5.1     2023-08-11 [2] CRAN (R 4.3.2)
+ cachem                   1.0.8     2023-05-01 [2] CRAN (R 4.3.2)
+ cli                      3.6.1     2023-03-23 [2] CRAN (R 4.3.2)
+ codetools                0.2-19    2023-02-01 [3] CRAN (R 4.3.2)
+ colorspace               2.1-0     2023-01-23 [2] CRAN (R 4.3.2)
+ config                   0.3.2     2023-08-30 [2] CRAN (R 4.3.2)
+ cowplot                  1.1.1     2020-12-30 [2] CRAN (R 4.3.2)
+ crayon                   1.5.2     2022-09-29 [2] CRAN (R 4.3.2)
+ curl                     5.1.0     2023-10-02 [2] CRAN (R 4.3.2)
+ data.table               1.14.8    2023-02-17 [2] CRAN (R 4.3.2)
+ DBI                      1.1.3     2022-06-18 [2] CRAN (R 4.3.2)
+ dbplyr                   2.4.0     2023-10-26 [2] CRAN (R 4.3.2)
+ DelayedArray             0.28.0    2023-10-24 [2] Bioconductor
+ DelayedMatrixStats       1.24.0    2023-10-24 [2] Bioconductor
+ digest                   0.6.33    2023-07-07 [2] CRAN (R 4.3.2)
+ doParallel               1.0.17    2022-02-07 [2] CRAN (R 4.3.2)
+ dotCall64                1.1-0     2023-10-17 [2] CRAN (R 4.3.2)
+ dplyr                    1.1.3     2023-09-03 [2] CRAN (R 4.3.2)
+ dqrng                    0.3.1     2023-08-30 [2] CRAN (R 4.3.2)
+ DropletUtils             1.22.0    2023-10-24 [2] Bioconductor
+ DT                       0.30      2023-10-05 [2] CRAN (R 4.3.2)
+ edgeR                    4.0.1     2023-10-29 [2] Bioconductor
+ ellipsis                 0.3.2     2021-04-29 [2] CRAN (R 4.3.2)
+ ExperimentHub            2.10.0    2023-10-24 [2] Bioconductor
+ fansi                    1.0.5     2023-10-08 [2] CRAN (R 4.3.2)
+ fastmap                  1.1.1     2023-02-24 [2] CRAN (R 4.3.2)
+ fields                   15.2      2023-08-17 [2] CRAN (R 4.3.2)
+ filelock                 1.0.2     2018-10-05 [2] CRAN (R 4.3.2)
+ foreach                  1.5.2     2022-02-02 [2] CRAN (R 4.3.2)
+ generics                 0.1.3     2022-07-05 [2] CRAN (R 4.3.2)
+ GenomeInfoDb           * 1.38.1    2023-11-08 [2] Bioconductor
+ GenomeInfoDbData         1.2.11    2023-11-15 [2] Bioconductor
+ GenomicAlignments        1.38.0    2023-10-24 [2] Bioconductor
+ GenomicRanges          * 1.54.1    2023-10-29 [2] Bioconductor
+ ggbeeswarm               0.7.2     2023-04-29 [2] CRAN (R 4.3.2)
+ ggplot2                  3.4.4     2023-10-12 [2] CRAN (R 4.3.2)
+ ggrepel                  0.9.4     2023-10-13 [2] CRAN (R 4.3.2)
+ glue                     1.6.2     2022-02-24 [2] CRAN (R 4.3.2)
+ golem                    0.4.1     2023-06-05 [2] CRAN (R 4.3.2)
+ gridExtra                2.3       2017-09-09 [2] CRAN (R 4.3.2)
+ gtable                   0.3.4     2023-08-21 [2] CRAN (R 4.3.2)
+ HDF5Array                1.30.0    2023-10-24 [2] Bioconductor
+ here                   * 1.0.1     2020-12-13 [2] CRAN (R 4.3.2)
+ htmltools                0.5.7     2023-11-03 [2] CRAN (R 4.3.2)
+ htmlwidgets              1.6.2     2023-03-17 [2] CRAN (R 4.3.2)
+ httpuv                   1.6.12    2023-10-23 [2] CRAN (R 4.3.2)
+ httr                     1.4.7     2023-08-15 [2] CRAN (R 4.3.2)
+ interactiveDisplayBase   1.40.0    2023-10-24 [2] Bioconductor
+ IRanges                * 2.36.0    2023-10-24 [2] Bioconductor
+ irlba                    2.3.5.1   2022-10-03 [2] CRAN (R 4.3.2)
+ iterators                1.0.14    2022-02-05 [2] CRAN (R 4.3.2)
+ jquerylib                0.1.4     2021-04-26 [2] CRAN (R 4.3.2)
+ jsonlite                 1.8.7     2023-06-29 [2] CRAN (R 4.3.2)
+ KEGGREST                 1.42.0    2023-10-24 [2] Bioconductor
+ later                    1.3.1     2023-05-02 [2] CRAN (R 4.3.2)
+ lattice                  0.22-5    2023-10-24 [3] CRAN (R 4.3.2)
+ lazyeval                 0.2.2     2019-03-15 [2] CRAN (R 4.3.2)
+ lifecycle                1.0.4     2023-11-07 [2] CRAN (R 4.3.2)
+ limma                    3.58.1    2023-10-31 [2] Bioconductor
+ lobstr                 * 1.1.2     2022-06-22 [2] CRAN (R 4.3.2)
+ locfit                   1.5-9.8   2023-06-11 [2] CRAN (R 4.3.2)
+ magick                   2.8.1     2023-10-22 [2] CRAN (R 4.3.2)
+ magrittr                 2.0.3     2022-03-30 [2] CRAN (R 4.3.2)
+ maps                     3.4.1.1   2023-11-03 [2] CRAN (R 4.3.2)
+ Matrix                   1.6-3     2023-11-14 [3] CRAN (R 4.3.2)
+ MatrixGenerics         * 1.14.0    2023-10-24 [2] Bioconductor
+ matrixStats            * 1.1.0     2023-11-07 [2] CRAN (R 4.3.2)
+ memoise                  2.0.1     2021-11-26 [2] CRAN (R 4.3.2)
+ mime                     0.12      2021-09-28 [2] CRAN (R 4.3.2)
+ munsell                  0.5.0     2018-06-12 [2] CRAN (R 4.3.2)
+ paletteer                1.5.0     2022-10-19 [2] CRAN (R 4.3.2)
+ pillar                   1.9.0     2023-03-22 [2] CRAN (R 4.3.2)
+ pkgconfig                2.0.3     2019-09-22 [2] CRAN (R 4.3.2)
+ plotly                   4.10.3    2023-10-21 [2] CRAN (R 4.3.2)
+ png                      0.1-8     2022-11-29 [2] CRAN (R 4.3.2)
+ prettyunits              1.2.0     2023-09-24 [2] CRAN (R 4.3.2)
+ promises                 1.2.1     2023-08-10 [2] CRAN (R 4.3.2)
+ purrr                    1.0.2     2023-08-10 [2] CRAN (R 4.3.2)
+ R.methodsS3              1.8.2     2022-06-13 [2] CRAN (R 4.3.2)
+ R.oo                     1.25.0    2022-06-12 [2] CRAN (R 4.3.2)
+ R.utils                  2.12.2    2022-11-11 [2] CRAN (R 4.3.2)
+ R6                       2.5.1     2021-08-19 [2] CRAN (R 4.3.2)
+ rappdirs                 0.3.3     2021-01-31 [2] CRAN (R 4.3.2)
+ RColorBrewer             1.1-3     2022-04-03 [2] CRAN (R 4.3.2)
+ Rcpp                     1.0.11    2023-07-06 [2] CRAN (R 4.3.2)
+ RCurl                    1.98-1.13 2023-11-02 [2] CRAN (R 4.3.2)
+ rematch2                 2.1.2     2020-05-01 [2] CRAN (R 4.3.2)
+ restfulr                 0.0.15    2022-06-16 [2] CRAN (R 4.3.2)
+ rhdf5                    2.46.0    2023-10-24 [2] Bioconductor
+ rhdf5filters             1.14.1    2023-11-06 [2] Bioconductor
+ Rhdf5lib                 1.24.0    2023-10-24 [2] Bioconductor
+ rjson                    0.2.21    2022-01-09 [2] CRAN (R 4.3.2)
+ rlang                    1.1.2     2023-11-04 [2] CRAN (R 4.3.2)
+ rprojroot                2.0.4     2023-11-05 [2] CRAN (R 4.3.2)
+ Rsamtools                2.18.0    2023-10-24 [2] Bioconductor
+ RSQLite                  2.3.3     2023-11-04 [2] CRAN (R 4.3.2)
+ rsvd                     1.0.5     2021-04-16 [2] CRAN (R 4.3.2)
+ rtracklayer            * 1.62.0    2023-10-24 [2] Bioconductor
+ S4Arrays                 1.2.0     2023-10-24 [2] Bioconductor
+ S4Vectors              * 0.40.1    2023-10-26 [2] Bioconductor
+ sass                     0.4.7     2023-07-15 [2] CRAN (R 4.3.2)
+ ScaledMatrix             1.10.0    2023-10-24 [2] Bioconductor
+ scales                   1.2.1     2022-08-20 [2] CRAN (R 4.3.2)
+ scater                   1.30.0    2023-10-24 [2] Bioconductor
+ scuttle                  1.12.0    2023-10-24 [2] Bioconductor
+ sessioninfo            * 1.2.2     2021-12-06 [2] CRAN (R 4.3.2)
+ shiny                    1.7.5.1   2023-10-14 [2] CRAN (R 4.3.2)
+ shinyWidgets             0.8.0     2023-08-30 [2] CRAN (R 4.3.2)
+ SingleCellExperiment   * 1.24.0    2023-10-24 [2] Bioconductor
+ spam                     2.10-0    2023-10-23 [2] CRAN (R 4.3.2)
+ SparseArray              1.2.2     2023-11-07 [2] Bioconductor
+ sparseMatrixStats        1.14.0    2023-10-24 [2] Bioconductor
+ SpatialExperiment      * 1.12.0    2023-10-24 [2] Bioconductor
+ spatialLIBD            * 1.13.4    2023-05-25 [2] Bioconductor
+ statmod                  1.5.0     2023-01-06 [2] CRAN (R 4.3.2)
+ SummarizedExperiment   * 1.32.0    2023-10-24 [2] Bioconductor
+ tibble                   3.2.1     2023-03-20 [2] CRAN (R 4.3.2)
+ tidyr                    1.3.0     2023-01-24 [2] CRAN (R 4.3.2)
+ tidyselect               1.2.0     2022-10-10 [2] CRAN (R 4.3.2)
+ utf8                     1.2.4     2023-10-22 [2] CRAN (R 4.3.2)
+ vctrs                    0.6.4     2023-10-12 [2] CRAN (R 4.3.2)
+ vipor                    0.4.5     2017-03-22 [2] CRAN (R 4.3.2)
+ viridis                  0.6.4     2023-07-22 [2] CRAN (R 4.3.2)
+ viridisLite              0.4.2     2023-05-02 [2] CRAN (R 4.3.2)
+ XML                      3.99-0.15 2023-11-02 [2] CRAN (R 4.3.2)
+ xtable                   1.8-4     2019-04-21 [2] CRAN (R 4.3.2)
+ XVector                  0.42.0    2023-10-24 [2] Bioconductor
+ yaml                     2.3.7     2023-01-23 [2] CRAN (R 4.3.2)
+ zlibbioc                 1.48.0    2023-10-24 [2] Bioconductor
 
- [1] /users/mtotty/R/4.3
- [2] /jhpce/shared/community/core/conda_R/4.3/R/lib64/R/site-library
- [3] /jhpce/shared/community/core/conda_R/4.3/R/lib64/R/library
-
-──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
-altExpNames(0):
-spatialCoords names(2) : pxl_col_in_fullres pxl_row_in_fullres
-imgData names(4): sample_id image_id data scaleFactor
-[1] "Reproducibility information:"
-[1] "2023-10-23 17:42:28 EDT"
-   user  system elapsed 
-504.464   5.839 541.330 
-**** Job ends ****
-Mon Oct 23 05:42:28 PM EDT 2023
-─ Session info ───────────────────────────────────────────────────────────────────────────────────────────────────────
- setting  value
- version  R version 4.3.1 Patched (2023-07-19 r84711)
- os       Rocky Linux 9.2 (Blue Onyx)
- system   x86_64, linux-gnu
- ui       X11
- language (EN)
- collate  en_US.UTF-8
- ctype    en_US.UTF-8
- tz       America/New_York
- date     2023-10-23
- pandoc   3.1.3 @ /jhpce/shared/community/core/conda_R/4.3/bin/pandoc
-
-─ Packages ───────────────────────────────────────────────────────────────────────────────────────────────────────────
- package                * version   date (UTC) lib source
- abind                    1.4-5     2016-07-21 [2] CRAN (R 4.3.1)
- AnnotationDbi            1.62.2    2023-07-02 [2] Bioconductor
- AnnotationHub            3.8.0     2023-04-25 [2] Bioconductor
- attempt                  0.3.1     2020-05-03 [2] CRAN (R 4.3.1)
- beachmat                 2.16.0    2023-04-25 [2] Bioconductor
- beeswarm                 0.4.0     2021-06-01 [2] CRAN (R 4.3.1)
- benchmarkme              1.0.8     2022-06-12 [2] CRAN (R 4.3.1)
- benchmarkmeData          1.0.4     2020-04-23 [2] CRAN (R 4.3.1)
- Biobase                * 2.60.0    2023-04-25 [2] Bioconductor
- BiocFileCache            2.8.0     2023-04-25 [2] Bioconductor
- BiocGenerics           * 0.46.0    2023-04-25 [2] Bioconductor
- BiocIO                   1.10.0    2023-04-25 [2] Bioconductor
- BiocManager              1.30.22   2023-08-08 [2] CRAN (R 4.3.1)
- BiocNeighbors            1.18.0    2023-04-25 [2] Bioconductor
- BiocParallel             1.34.2    2023-05-22 [2] Bioconductor
- BiocSingular             1.16.0    2023-04-25 [2] Bioconductor
- BiocVersion              3.17.1    2022-11-04 [2] Bioconductor
- Biostrings               2.68.1    2023-05-16 [2] Bioconductor
- bit                      4.0.5     2022-11-15 [2] CRAN (R 4.3.1)
- bit64                    4.0.5     2020-08-30 [2] CRAN (R 4.3.1)
- bitops                   1.0-7     2021-04-24 [2] CRAN (R 4.3.1)
- blob                     1.2.4     2023-03-17 [2] CRAN (R 4.3.1)
- bslib                    0.5.1     2023-08-11 [2] CRAN (R 4.3.1)
- cachem                   1.0.8     2023-05-01 [2] CRAN (R 4.3.1)
- cli                      3.6.1     2023-03-23 [2] CRAN (R 4.3.1)
- codetools                0.2-19    2023-02-01 [3] CRAN (R 4.3.1)
- colorspace               2.1-0     2023-01-23 [2] CRAN (R 4.3.1)
- config                   0.3.2     2023-08-30 [2] CRAN (R 4.3.1)
- cowplot                  1.1.1     2020-12-30 [2] CRAN (R 4.3.1)
- crayon                   1.5.2     2022-09-29 [2] CRAN (R 4.3.1)
- curl                     5.0.2     2023-08-14 [2] CRAN (R 4.3.1)
- data.table               1.14.8    2023-02-17 [1] CRAN (R 4.3.1)
- DBI                      1.1.3     2022-06-18 [2] CRAN (R 4.3.1)
- dbplyr                   2.3.3     2023-07-07 [2] CRAN (R 4.3.1)
- DelayedArray             0.26.7    2023-07-28 [2] Bioconductor
- DelayedMatrixStats       1.22.6    2023-08-28 [2] Bioconductor
- digest                   0.6.33    2023-07-07 [2] CRAN (R 4.3.1)
- doParallel               1.0.17    2022-02-07 [2] CRAN (R 4.3.1)
- dotCall64                1.0-2     2022-10-03 [2] CRAN (R 4.3.1)
- dplyr                    1.1.3     2023-09-03 [2] CRAN (R 4.3.1)
- dqrng                    0.3.1     2023-08-30 [2] CRAN (R 4.3.1)
- DropletUtils             1.20.0    2023-04-25 [2] Bioconductor
- DT                       0.29      2023-08-29 [2] CRAN (R 4.3.1)
- edgeR                    3.42.4    2023-05-31 [2] Bioconductor
- ellipsis                 0.3.2     2021-04-29 [2] CRAN (R 4.3.1)
- ExperimentHub            2.8.1     2023-07-12 [2] Bioconductor
- fansi                    1.0.4     2023-01-22 [2] CRAN (R 4.3.1)
- fastmap                  1.1.1     2023-02-24 [2] CRAN (R 4.3.1)
- fields                   15.2      2023-08-17 [2] CRAN (R 4.3.1)
- filelock                 1.0.2     2018-10-05 [2] CRAN (R 4.3.1)
- foreach                  1.5.2     2022-02-02 [2] CRAN (R 4.3.1)
- generics                 0.1.3     2022-07-05 [2] CRAN (R 4.3.1)
- GenomeInfoDb           * 1.36.3    2023-09-07 [2] Bioconductor
- GenomeInfoDbData         1.2.10    2023-07-20 [2] Bioconductor
- GenomicAlignments        1.36.0    2023-04-25 [2] Bioconductor
- GenomicRanges          * 1.52.0    2023-04-25 [2] Bioconductor
- ggbeeswarm               0.7.2     2023-04-29 [2] CRAN (R 4.3.1)
- ggplot2                  3.4.3     2023-08-14 [2] CRAN (R 4.3.1)
- ggrepel                  0.9.3     2023-02-03 [2] CRAN (R 4.3.1)
- glue                     1.6.2     2022-02-24 [2] CRAN (R 4.3.1)
- golem                    0.4.1     2023-06-05 [2] CRAN (R 4.3.1)
- gridExtra                2.3       2017-09-09 [2] CRAN (R 4.3.1)
- gtable                   0.3.4     2023-08-21 [2] CRAN (R 4.3.1)
- HDF5Array                1.28.1    2023-05-01 [2] Bioconductor
- here                   * 1.0.1     2020-12-13 [2] CRAN (R 4.3.1)
- htmltools                0.5.6     2023-08-10 [2] CRAN (R 4.3.1)
- htmlwidgets              1.6.2     2023-03-17 [2] CRAN (R 4.3.1)
- httpuv                   1.6.11    2023-05-11 [2] CRAN (R 4.3.1)
- httr                     1.4.7     2023-08-15 [2] CRAN (R 4.3.1)
- interactiveDisplayBase   1.38.0    2023-04-25 [2] Bioconductor
- IRanges                * 2.34.1    2023-06-22 [2] Bioconductor
- irlba                    2.3.5.1   2022-10-03 [2] CRAN (R 4.3.1)
- iterators                1.0.14    2022-02-05 [2] CRAN (R 4.3.1)
- jquerylib                0.1.4     2021-04-26 [2] CRAN (R 4.3.1)
- jsonlite                 1.8.7     2023-06-29 [2] CRAN (R 4.3.1)
- KEGGREST                 1.40.0    2023-04-25 [2] Bioconductor
- later                    1.3.1     2023-05-02 [2] CRAN (R 4.3.1)
- lattice                  0.21-8    2023-04-05 [3] CRAN (R 4.3.1)
- lazyeval                 0.2.2     2019-03-15 [2] CRAN (R 4.3.1)
- lifecycle                1.0.3     2022-10-07 [2] CRAN (R 4.3.1)
- limma                    3.56.2    2023-06-04 [2] Bioconductor
- lobstr                 * 1.1.2     2022-06-22 [2] CRAN (R 4.3.1)
- locfit                   1.5-9.8   2023-06-11 [2] CRAN (R 4.3.1)
- magick                   2.7.5     2023-08-07 [2] CRAN (R 4.3.1)
- magrittr                 2.0.3     2022-03-30 [2] CRAN (R 4.3.1)
- maps                     3.4.1     2022-10-30 [2] CRAN (R 4.3.1)
- Matrix                   1.6-1.1   2023-09-18 [3] CRAN (R 4.3.1)
- MatrixGenerics         * 1.12.3    2023-07-30 [2] Bioconductor
- matrixStats            * 1.0.0     2023-06-02 [2] CRAN (R 4.3.1)
- memoise                  2.0.1     2021-11-26 [2] CRAN (R 4.3.1)
- mime                     0.12      2021-09-28 [2] CRAN (R 4.3.1)
- munsell                  0.5.0     2018-06-12 [2] CRAN (R 4.3.1)
- paletteer                1.5.0     2022-10-19 [2] CRAN (R 4.3.1)
- pillar                   1.9.0     2023-03-22 [2] CRAN (R 4.3.1)
- pkgconfig                2.0.3     2019-09-22 [2] CRAN (R 4.3.1)
- plotly                   4.10.2    2023-06-03 [2] CRAN (R 4.3.1)
- png                      0.1-8     2022-11-29 [2] CRAN (R 4.3.1)
- prettyunits              1.1.1     2020-01-24 [2] CRAN (R 4.3.1)
- promises                 1.2.1     2023-08-10 [2] CRAN (R 4.3.1)
- purrr                    1.0.2     2023-08-10 [2] CRAN (R 4.3.1)
- R.methodsS3              1.8.2     2022-06-13 [2] CRAN (R 4.3.1)
- R.oo                     1.25.0    2022-06-12 [2] CRAN (R 4.3.1)
- R.utils                  2.12.2    2022-11-11 [2] CRAN (R 4.3.1)
- R6                       2.5.1     2021-08-19 [2] CRAN (R 4.3.1)
- rappdirs                 0.3.3     2021-01-31 [2] CRAN (R 4.3.1)
- RColorBrewer             1.1-3     2022-04-03 [2] CRAN (R 4.3.1)
- Rcpp                     1.0.11    2023-07-06 [2] CRAN (R 4.3.1)
- RCurl                    1.98-1.12 2023-03-27 [2] CRAN (R 4.3.1)
- rematch2                 2.1.2     2020-05-01 [2] CRAN (R 4.3.1)
- restfulr                 0.0.15    2022-06-16 [2] CRAN (R 4.3.1)
- rhdf5                    2.44.0    2023-04-25 [2] Bioconductor
- rhdf5filters             1.12.1    2023-04-30 [2] Bioconductor
- Rhdf5lib                 1.22.1    2023-09-10 [2] Bioconductor
- rjson                    0.2.21    2022-01-09 [2] CRAN (R 4.3.1)
- rlang                    1.1.1     2023-04-28 [2] CRAN (R 4.3.1)
- rprojroot                2.0.3     2022-04-02 [2] CRAN (R 4.3.1)
- Rsamtools                2.16.0    2023-04-25 [2] Bioconductor
- RSQLite                  2.3.1     2023-04-03 [2] CRAN (R 4.3.1)
- rsvd                     1.0.5     2021-04-16 [2] CRAN (R 4.3.1)
- rtracklayer            * 1.60.1    2023-08-15 [2] Bioconductor
- S4Arrays                 1.0.6     2023-08-30 [2] Bioconductor
- S4Vectors              * 0.38.1    2023-05-02 [2] Bioconductor
- sass                     0.4.7     2023-07-15 [2] CRAN (R 4.3.1)
- ScaledMatrix             1.8.1     2023-05-03 [2] Bioconductor
- scales                   1.2.1     2022-08-20 [2] CRAN (R 4.3.1)
- scater                   1.28.0    2023-04-25 [2] Bioconductor
- scuttle                  1.10.2    2023-08-03 [2] Bioconductor
- sessioninfo            * 1.2.2     2021-12-06 [2] CRAN (R 4.3.1)
- shiny                    1.7.5     2023-08-12 [2] CRAN (R 4.3.1)
- shinyWidgets             0.8.0     2023-08-30 [2] CRAN (R 4.3.1)
- SingleCellExperiment   * 1.22.0    2023-04-25 [2] Bioconductor
- spam                     2.9-1     2022-08-07 [2] CRAN (R 4.3.1)
- sparseMatrixStats        1.12.2    2023-07-02 [2] Bioconductor
- SpatialExperiment      * 1.10.0    2023-04-25 [2] Bioconductor
- spatialLIBD            * 1.12.0    2023-04-27 [2] Bioconductor
- statmod                  1.5.0     2023-01-06 [2] CRAN (R 4.3.1)
- SummarizedExperiment   * 1.30.2    2023-06-06 [2] Bioconductor
- tibble                   3.2.1     2023-03-20 [2] CRAN (R 4.3.1)
- tidyr                    1.3.0     2023-01-24 [2] CRAN (R 4.3.1)
- tidyselect               1.2.0     2022-10-10 [2] CRAN (R 4.3.1)
- utf8                     1.2.3     2023-01-31 [2] CRAN (R 4.3.1)
- vctrs                    0.6.3     2023-06-14 [2] CRAN (R 4.3.1)
- vipor                    0.4.5     2017-03-22 [2] CRAN (R 4.3.1)
- viridis                  0.6.4     2023-07-22 [2] CRAN (R 4.3.1)
- viridisLite              0.4.2     2023-05-02 [2] CRAN (R 4.3.1)
- XML                      3.99-0.14 2023-03-19 [2] CRAN (R 4.3.1)
- xtable                   1.8-4     2019-04-21 [2] CRAN (R 4.3.1)
- XVector                  0.40.0    2023-04-25 [2] Bioconductor
- yaml                     2.3.7     2023-01-23 [2] CRAN (R 4.3.1)
- zlibbioc                 1.46.0    2023-04-25 [2] Bioconductor
-
- [1] /users/mtotty/R/4.3
- [2] /jhpce/shared/community/core/conda_R/4.3/R/lib64/R/site-library
- [3] /jhpce/shared/community/core/conda_R/4.3/R/lib64/R/library
+ [1] /users/rmiller/R/4.3.x
+ [2] /jhpce/shared/community/core/conda_R/4.3.x/R/lib64/R/site-library
+ [3] /jhpce/shared/community/core/conda_R/4.3.x/R/lib64/R/library
 
 ──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
 **** Job ends ****
-Mon Oct 23 05:42:29 PM EDT 2023
+Thu Jan 11 12:51:26 PM EST 2024

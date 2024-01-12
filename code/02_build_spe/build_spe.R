@@ -21,6 +21,16 @@ sample_info$sample_path = file.path(here::here("processed-data", "01_spaceranger
 
 head(sample_info)
 
+### if you need to subset samples. can remove if you want all samples and all samples have spaceranger count info
+#subset by slide_id list
+list4spe = c('V13F27-349', 'V13F27-354', 'V13F27-359', 'V13F27-366')
+#df[df$var1 %in% c('value1', 'value2', 'value3'), ]
+sample_info = sample_info[sample_info$slide %in% list4spe,]
+
+### subset by row number instead of by value
+#sample_info = sample_info[c(4:6,15:17,1:3,7:14),]
+#sample_info1 = sample_info[c(1:16),]
+
 ## Build basic SPE
 Sys.time()
 spe <- read10xVisiumWrapper(
