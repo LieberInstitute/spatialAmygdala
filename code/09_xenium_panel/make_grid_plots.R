@@ -32,29 +32,53 @@ spe
 #     spatialCoords names(2) : pxl_col_in_fullres pxl_row_in_fullres
 # imgData names(4): sample_id image_id data scaleFactor
 
+
+load(here("processed-data", "02_build_spe", "spe_raw.Rdata"), verbose = TRUE)
+spe.2 <- spe
+
+
+
 # Drop any duplicate coolData
 colData(spe) <- colData(spe)[ , !duplicated(colnames(colData(spe)))]
 colnames(colData(spe))
-# [1] "sample_id"              "in_tissue"              "array_row"             
-# [4] "array_col"              "10x_graphclust"         "10x_kmeans_10_clusters"
-# [7] "10x_kmeans_2_clusters"  "10x_kmeans_3_clusters"  "10x_kmeans_4_clusters" 
-# [10] "10x_kmeans_5_clusters"  "10x_kmeans_6_clusters"  "10x_kmeans_7_clusters" 
-# [13] "10x_kmeans_8_clusters"  "10x_kmeans_9_clusters"  "key"                   
-# [16] "sum_umi"                "sum_gene"               "expr_chrM"             
-# [19] "expr_chrM_ratio"        "ManualAnnotation"       "slide"                 
-# [22] "array"                  "brnum"                  "species"               
-# [25] "replicate"              "overlaps_tissue"        "sum"                   
-# [28] "detected"               "subsets_mito_sum"       "subsets_mito_detected" 
-# [31] "subsets_mito_percent"   "total"                  "qc_lib_size"           
-# [34] "qc_mito"                "qc_detected"            "discard"               
-# [37] "sizeFactor"             "row"                    "col"                   
-# [40] "cluster.init"           "spatial.cluster"     
+
+
+
+# ==== combine SPEs ====
+
+# get common genes
+common_genes <- intersect(rownames(spe.1), rownames(spe.2))
+spe.1 <- spe.1[common_genes,]
+spe.2 <- spe.2[common_genes,]
+
+# combine
+spe <- cbind(spe.1, spe.2)
+
+# drop out of tissue spots
+spe <- spe[, spe$in_tissue]
+
+# visualize some QC metrics
+unique(colnames(colData(spe)))
+
+unique(spe$brnum)
+# [1] Br9469      Br6471      85v_AMY_SVB
+
+# replace 85v_AMY_SVB with Br6471
+spe$brnum[spe$brnum == "85v_AMY_SVB"] <- "Br6471"
+
+
+# normalize
+library(scuttle)
+spe <- computeLibraryFactors(spe)
+spe <- logNormCounts(spe)
+
+
 
 
 # Let's start with broad marker genes
 
 # read in xlsx file from processed_dir
-custom_markers <- readxl::read_xlsx(here(processed_dir, "Amygdala_Xenium_panel.xlsx"))
+custom_markers <- read.csv(here(processed_dir, "Amygdala_Xenium_panel_2.0_final.csv"), header = TRUE, stringsAsFactors = FALSE)
 
 
 # read csv
@@ -173,4 +197,44 @@ for (i in 1:length(amy_markers)){
                              p_list[1], p_list[2])
     cowplot::plot_grid(plotlist = plot_list_reordered, ncol = 3)
     ggsave(here(plot_dir, "amygdala_subregions", paste0(amy_markers[i], ".pdf")), width = 20, height = 20)
+}
+
+
+
+
+# ======== plotting all brains ======
+
+# ========= Spotplots ============
+#
+
+rm(spe.1)
+rm(spe.2)
+#spe.amy <-spe
+spe <- spe.amy
+
+# drop unused levels
+spe$brnum <- droplevels(spe$brnum)
+
+for (i in 1:length(unique(spe.amy$brnum))) {
+    
+    print(i)
+    #subset to brnum only
+    brain <- as.character(unique(spe.amy$brnum)[[i]])
+    spe <- spe.amy[,spe.amy$brnum == brain]
+    
+    for (j in 1:length(custom_markers$Gene)){
+        p_list <- vis_grid_gene(
+            spe,
+            geneid= custom_markers$Gene[j],
+            spatial = FALSE,
+            auto_crop = TRUE,
+            return_plots = TRUE,
+            pdf_file = NULL,
+        )
+        plot_list_reordered <- c(p_list[5], p_list[6], p_list[4],
+                                 p_list[7], p_list[8], p_list[3],
+                                 p_list[1], p_list[2])
+        cowplot::plot_grid(plotlist = plot_list_reordered, ncol = 3)
+        ggsave(here(plot_dir, "custom_markers", brain,paste0(custom_markers$Region[j],"_", custom_markers$Gene[j], ".pdf")), width = 20, height = 20)
+    }
 }
