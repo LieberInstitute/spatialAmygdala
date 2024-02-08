@@ -1,0 +1,37 @@
+**** Job starts ****
+Thu Feb  8 02:01:38 PM EST 2024
+**** JHPCE info ****
+User: mtippani
+Job id: 1949387s
+Job name: svs2tif.sh
+Hostname: 
+Task id: 1
+MATLAB is selecting SOFTWARE OPENGL rendering.
+
+                            < M A T L A B (R) >
+                  Copyright 1984-2023 The MathWorks, Inc.
+             R2023a Update 3 (9.14.0.2286388) 64-bit (glnxa64)
+                                May 25, 2023
+
+ 
+For online documentation, see https://www.mathworks.com/support
+For product information, visit www.mathworks.com.
+ 
+{Error using javaMethod
+Cannot initialize Java Virtual Machine.
+MATLAB Java services cannot be initialized.
+
+Error in bfCheckJavaMemory (line 45)
+runtime = javaMethod('getRuntime', 'java.lang.Runtime');
+
+Error in bfGetReader (line 55)
+bfCheckJavaMemory();
+
+Error in svs2tif (line 8)
+reader = bfGetReader(svsFilePath);
+
+Error in run (line 91)
+evalin('caller', strcat(script, ';'));
+} 
+>> **** Job ends ****
+Thu Feb  8 02:01:50 PM EST 2024
