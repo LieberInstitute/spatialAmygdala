@@ -40,5 +40,6 @@ for startX = 1:sizeX/4:sizeX
         img = imresize(uint8(img), 0.7);
         save(fullfile(ot,[fname(1:end-7),array{A},'.mat']),'img','-v7.3'); 
         imwrite(img, fullfile(ot,[fname(1:end-7),array{A},'.tif']))
+        disp([array(A), 'done'])
        A=A+1;
 end
