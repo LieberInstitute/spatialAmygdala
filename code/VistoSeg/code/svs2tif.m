@@ -17,13 +17,20 @@ for startX = 1:sizeX/4:sizeX
     endX = min(startX + sizeX/4 - 1, sizeX);
     width = endX - startX + 1;
         img = [];
-       
+       for startY = 1:4000:sizeY
+        endY = min(startY + 4000 - 1, sizeY);
+        height = endY - startY + 1;
+        imageData1 = bfGetPlane(reader, 1, startX, startY, width, height);
+        imageData2 = bfGetPlane(reader, 2, startX, startY, width, height);
+        imageData3 = bfGetPlane(reader, 3, startX, startY, width, height);
+        img(startY:endY, 1:width, :) = uint8(cat(3,imageData1,imageData2,imageData3));
+       end
           %  Read the chunk
-            imageData1 = bfGetPlane(reader, 1, startX, 1, width, sizeY);
-            imageData2 = bfGetPlane(reader, 2, startX, 1, width, sizeY);
-            imageData3 = bfGetPlane(reader, 3, startX, 1, width, sizeY);
-            Concatenate the chunk to the output image
-            img = uint8(cat(3,imageData1,imageData2,imageData3));
+            % imageData1 = bfGetPlane(reader, 1, startX, 1, width, sizeY);
+            % imageData2 = bfGetPlane(reader, 2, startX, 1, width, sizeY);
+            % imageData3 = bfGetPlane(reader, 3, startX, 1, width, sizeY);
+            % Concatenate the chunk to the output image
+            % img = uint8(cat(3,imageData1,imageData2,imageData3));
 
        
         save(fullfile(ot,[fname(1:end-7),array{A},'.mat']),'img','-v7.3'); 
