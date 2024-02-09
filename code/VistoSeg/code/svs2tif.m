@@ -12,3 +12,21 @@ reader = bfGetReader(fullfile(dt,fname));
 sizeX = reader.getSizeX();
 sizeY = reader.getSizeY();
 numPlanes = reader.getImageCount();
+
+for startX = 1:sizeX/4:sizeX
+    endX = min(startX + sizeX/4 - 1, sizeX);
+    width = endX - startX + 1;
+        img = [];
+       
+          %  Read the chunk
+            imageData1 = bfGetPlane(reader, 1, startX, 1, width, sizeY);
+            imageData2 = bfGetPlane(reader, 2, startX, 1, width, sizeY);
+            imageData3 = bfGetPlane(reader, 3, startX, 1, width, sizeY);
+            Concatenate the chunk to the output image
+            img = uint8(cat(3,imageData1,imageData2,imageData3));
+
+       
+        save(fullfile(ot,[fname(1:end-7),array{A},'.mat']),'img','-v7.3'); 
+        imwrite(img, fullfile(ot,[fname(1:end-7),array{A},'.tif']))
+       A=A+1;
+end
