@@ -2,8 +2,8 @@
 #SBATCH --mem=80G
 #SBATCH -n 8
 #SBATCH --job-name=amy-spaceranger
-#SBATCH -o logs/spaceranger_slurm_240108o.txt
-#SBATCH --array=1-2
+#SBATCH -o logs/spaceranger_slurm_240131o.txt
+#SBATCH --array=1-11
 
 echo "**** Job starts ****"
 date

@@ -1,8 +1,8 @@
 **** Job starts ****
-Tue Jan  9 10:12:04 AM EST 2024
+Thu Feb  8 11:11:46 PM EST 2024
 **** JHPCE info ****
 User: rmiller
-Job id: 1500975s
+Job id: 1953258s
 Job name: splitSlide_slurm.sh
 Hostname: 
 Task id: 1
@@ -53,24 +53,23 @@ In splitSlide (line 7)
 ] 
 Connected to parallel pool with 2 workers.
 Imported image 2 of the multiplane tif
-Elapsed time is 0.582068 seconds.
+Elapsed time is 0.584702 seconds.
 Imported image 4 of the multiplane tif
-Elapsed time is 1.613490 seconds.
+Elapsed time is 0.604657 seconds.
 Imported image 5 of the multiplane tif
-Elapsed time is 0.120723 seconds.
+Elapsed time is 0.054294 seconds.
 Imported image 6 of the multiplane tif
-Elapsed time is 0.056912 seconds.
+Elapsed time is 0.031185 seconds.
 Imported image 7 of the multiplane tif
-Elapsed time is 0.128898 seconds.
+Elapsed time is 0.065077 seconds.
 Imported image 1 of the multiplane tif
-Elapsed time is 1113.419279 seconds.
+Elapsed time is 775.383540 seconds.
 Imported image 3 of the multiplane tif
-Elapsed time is 28.604382 seconds.
+Elapsed time is 12.626307 seconds.
 Saving the multiplane tif to mat file
-Elapsed time is 1023.964442 seconds.
+Elapsed time is 674.565492 seconds.
 Splitting whole slide into individual capture areas
-Elapsed time is 1993.018513 seconds.
-IdleTimeout has been reached.
-Parallel pool using the 'Processes' profile is shutting down.
->> **** Job ends ****
-Tue Jan  9 11:23:25 AM EST 2024
+Elapsed time is 1113.711021 seconds.
+>> Parallel pool using the 'Processes' profile is shutting down.
+**** Job ends ****
+Thu Feb  8 11:56:53 PM EST 2024
