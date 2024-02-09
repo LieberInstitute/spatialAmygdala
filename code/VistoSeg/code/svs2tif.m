@@ -5,8 +5,8 @@ addpath(genpath('/dcs04/lieber/marmaypag/spatialAMY_LIBD4125/spatialAmygdala/cod
 % Specify the path to your .svs file
 dt = '/dcs04/lieber/marmaypag/spatialAMY_LIBD4125/spatialAmygdala/raw-data/images/';
 ot = '/dcs04/lieber/marmaypag/spatialAMY_LIBD4125/spatialAmygdala/processed-data/Images/VistoSeg/';
+fname = 'V13Y24-345_40x.svs';
 %fname = 'V13Y24-346_40x.svs';
-fname = 'V13Y24-346_40x.svs';
 % Open the .svs file using BioFormats
 reader = bfGetReader(fullfile(dt,fname));
 
@@ -40,6 +40,6 @@ for startX = 1:sizeX/4:sizeX
         img = imresize(uint8(img), 0.7);
         save(fullfile(ot,[fname(1:end-7),array{A},'.mat']),'img','-v7.3'); 
         imwrite(img, fullfile(ot,[fname(1:end-7),array{A},'.tif']))
-        disp([array(A), 'done'])
+        disp([array{A}, ' done'])
        A=A+1;
 end
