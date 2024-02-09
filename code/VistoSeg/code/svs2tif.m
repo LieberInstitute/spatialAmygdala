@@ -12,7 +12,10 @@ reader = bfGetReader(fullfile(dt,fname));
 sizeX = reader.getSizeX();
 sizeY = reader.getSizeY();
 numPlanes = reader.getImageCount();
+array = {'A1','B1','C1','D1'};
+% Loop through chunks and read the image
 
+A=1;
 for startX = 1:sizeX/4:sizeX
     endX = min(startX + sizeX/4 - 1, sizeX);
     width = endX - startX + 1;
