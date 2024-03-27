@@ -16,7 +16,7 @@ plot_dir = here("plots", "05_feature_selection")
 processed_dir = here("processed-data", "05_feature_selection")
 
 # load object
-load(here("processed-data","03_qc_metrics","spe_discarded.Rdata"))
+load(here("processed-data","03_qc_metrics","spe_local_outliers.Rdata"))
 spe
 # class: SpatialExperiment 
 # dim: 28412 29885 

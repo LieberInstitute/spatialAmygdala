@@ -5,21 +5,19 @@ library(here)
 library(spatialLIBD)
 library(scater)
 library(patchwork)
+library(ggpubr)
+library(SpotSweeper)
 
 
 # Save directories
-plot_dir = here("plots", "03_qc_metrics", "batch_2")
+plot_dir = here("plots", "03_qc_metrics")
 processed_dir = here("processed-data","03_qc_metrics")
 
 
-# Load AMY data
+# ===== First round of samples (#1) =====
 load(here("processed-data", "02_build_spe", "spe_raw-1st.Rdata"), verbose = TRUE)
 spe.1 <- spe
-
-
-
-load(here("processed-data", "02_build_spe", "spe_raw.Rdata"), verbose = TRUE)
-spe.2 <- spe
+spe.1
 # class: SpatialExperiment 
 # dim: 28412 39936 
 # metadata(0):
@@ -35,14 +33,80 @@ spe.2 <- spe
 #     spatialCoords names(2) : pxl_col_in_fullres pxl_row_in_fullres
 # imgData names(4): sample_id image_id data scaleFactor
 
+unique(spe.1$brnum)
+# [1] Br8325
+# Levels: Br8325
 
+unique(spe.1$sample_id)
+# [1] "V13M06-387_A1" "V13M06-387_B1" "V13M06-387_C1" "V13M06-387_D1"
+# [5] "V13M06-388_A1" "V13M06-388_B1" "V13M06-388_C1" "V13M06-388_D1"
+
+
+# ===== Second round of samples (#2-3) =====
+load(here("processed-data", "02_build_spe", "spe_raw-2nd.Rdata"), verbose = TRUE)
+spe.2 <- spe
+spe.2
+# class: SpatialExperiment 
+# dim: 28906 79872 
+# metadata(0):
+#     assays(1): counts
+# rownames(28906): MIR1302-2HG AL627309.1 ... AC007325.4 AC007325.2
+# rowData names(6): source type ... gene_name Symbol.uniq
+# colnames(79872): AAACAACGAATAGTTC-1 AAACAAGTATCTCCCA-1 ...
+# TTGTTTGTATTACACG-1 TTGTTTGTGTAAATTC-1
+# colData names(26): sample_id in_tissue ... replicate overlaps_tissue
+# reducedDimNames(3): 10x_pca 10x_tsne 10x_umap
+# mainExpName: NULL
+# altExpNames(0):
+#     spatialCoords names(2) : pxl_col_in_fullres pxl_row_in_fullres
+# imgData names(4): sample_id image_id data scaleFactor
+
+unique(spe.2$brnum)
+# [1] Br9469      Br6471      85v_AMY_SVB
+# 11 Levels: 65v_AMY_SVB 66v_AMY_SVB 67v_AMY_SVB 68v_AMY_SVB ... Br9469
+
+unique(spe.2$sample_id)
+# [1] "V13F27-349_A1" "V13F27-349_B1" "V13F27-349_C1" "V13F27-349_D1"
+# [5] "V13F27-354_A1" "V13F27-354_B1" "V13F27-354_C1" "V13F27-354_D1"
+# [9] "V13F27-359_A1" "V13F27-359_B1" "V13F27-359_C1" "V13F27-359_D1"
+# [13] "V13F27-366_A1" "V13F27-366_B1" "V13F27-366_C1" "V13F27-366_D1"
+
+# ===== Third round of samples (#4-5) =====
+load(here("processed-data", "02_build_spe", "spe_raw-3rd.Rdata"), verbose = TRUE)
+spe.3 <- spe
+spe.3
+# class: SpatialExperiment 
+# dim: 29335 74880 
+# metadata(0):
+#     assays(1): counts
+# rownames(29335): MIR1302-2HG AL627309.1 ... AC007325.4 AC007325.2
+# rowData names(6): source type ... gene_name Symbol.uniq
+# colnames(74880): AAACAACGAATAGTTC-1 AAACAAGTATCTCCCA-1 ...
+# TTGTTTGTATTACACG-1 TTGTTTGTGTAAATTC-1
+# colData names(26): sample_id in_tissue ... replicate overlaps_tissue
+# reducedDimNames(3): 10x_pca 10x_tsne 10x_umap
+# mainExpName: NULL
+# altExpNames(0):
+#     spatialCoords names(2) : pxl_col_in_fullres pxl_row_in_fullres
+# imgData names(4): sample_id image_id data scaleFactor
+
+unique(spe.3$brnum)
+# [1] Br2743 Br6423
+# 11 Levels: 65v_AMY_SVB 66v_AMY_SVB 67v_AMY_SVB 68v_AMY_SVB ... Br9469
+
+
+
+# =========== Merging SCE objects ===========
 # get common genes
-common_genes <- intersect(rownames(spe.1), rownames(spe.2))
+common_genes <- intersect( intersect(rownames(spe.1), rownames(spe.2)), 
+                          rownames(spe.3))
 spe.1 <- spe.1[common_genes,]
 spe.2 <- spe.2[common_genes,]
+spe.3 <- spe.3[common_genes,]
 
 # combine
-spe <- cbind(spe.1, spe.2)
+spe <- cbind( cbind(spe.1, spe.2), 
+             spe.3)
 
 # drop out of tissue spots
 spe <- spe[, spe$in_tissue]
@@ -61,16 +125,24 @@ unique(colnames(colData(spe)))
 
 
 unique(spe$brnum)
-# [1] Br9469      Br6471      85v_AMY_SVB
+# [1] Br8325      Br9469      Br6471      85v_AMY_SVB Br2743      Br6423     
+# 11 Levels: Br8325 65v_AMY_SVB 66v_AMY_SVB 67v_AMY_SVB ... Br9469
 
 # replace 85v_AMY_SVB with Br6471
 spe$brnum[spe$brnum == "85v_AMY_SVB"] <- "Br6471"
 
+# reset levels
+spe$brnum <- factor(spe$brnum)
+
+# check
+unique(spe$brnum)
+# [1] Br8325 Br9469 Br6471 Br2743 Br6423
+# Levels: Br8325 Br2743 Br6423 Br6471 Br9469
 
 #  ====== Violin plots of qc metrics across samples ======
 
 # mito ratio
-pdf(width=10, height=5, here(plot_dir,"Violin_mito_ratio.pdf"))
+pdf(width=15, height=5, here(plot_dir,"Violin_mito_ratio.pdf"))
 p1 <- plotColData(spe, x="sample_id", y="expr_chrM_ratio", colour_by="brnum") + 
     #scale_y_log10() + 
     ggtitle("Mitochondrial Percent") +
@@ -87,7 +159,7 @@ p1
 dev.off()
 
 # sum umi
-pdf(width=10, height=5, here(plot_dir,"Violin_sum_umi.pdf"))
+pdf(width=15, height=5, here(plot_dir,"Violin_sum_umi.pdf"))
 p2 <- plotColData(spe, x="sample_id", y="sum_umi", colour_by="brnum") + 
     scale_y_log10() + 
     ggtitle("Sum UMI") +
@@ -104,7 +176,7 @@ p2
 dev.off()
 
 # sum gene
-pdf(width=10, height=5, here(plot_dir,"Violin_sum_gene.pdf"))
+pdf(width=15, height=5, here(plot_dir,"Violin_sum_gene.pdf"))
 p3 <- plotColData(spe, x="sample_id", y="sum_gene", colour_by="brnum") + 
     scale_y_log10() + 
     ggtitle("Sum Gene") +
@@ -120,7 +192,7 @@ p3 <- plotColData(spe, x="sample_id", y="sum_gene", colour_by="brnum") +
 p3
 dev.off()
 
-pdf(width=10, height=10, here(plot_dir,"Violin_all_metrics.pdf"))
+pdf(width=15, height=10, here(plot_dir,"Violin_all_metrics.pdf"))
 p1 <- p1 + theme(axis.title.x=element_blank(),
                  axis.text.x=element_blank(),
                  axis.ticks.x=element_blank()
@@ -140,7 +212,7 @@ dev.off()
 
  # ========= Spotplots ============
 #
-
+spe
 spe.amy <- spe
 unique(spe.amy$brnum)
 
@@ -154,67 +226,43 @@ for (i in 1:length(unique(spe.amy$brnum))) {
     brain <- as.character(unique(spe.amy$brnum)[[i]])
     spe <- spe.amy[,spe.amy$brnum == brain]
     
-    # expr_chrM
-    pdf(width=20, height=10, here(plot_dir, paste0("Spotplot_mito_", brain,".pdf")))
+    # mito percent
+    pdf(width=20, height=10, here(plot_dir,"Spotplots","mito_percent", paste0("MitoPerc_", brain,".pdf")))
     sample_ids <- unique(spe$sample_id)
-    plots <- lapply(sample_ids[1:8], function(sampleid) {
-      vis_gene(
-        spe = spe,
-        geneid = "expr_chrM",
-        sampleid = sampleid,
-        point_size=1.5
-      )
-    })
-    print((plots[[1]] | plots[[2]] | plots[[3]] | plots[[4]]) / (plots[[5]] | plots[[6]] | plots[[7]] | plots[[8]]))
-    dev.off()
-    
-    # umi
-    pdf(width=20, height=10, here(plot_dir,paste0("Spotplot_sum_umi_", brain,".pdf")))
-    sample_ids <- unique(spe$sample_id)
-    plots <- lapply(sample_ids[1:8], function(sampleid) {
-      vis_gene(
-        spe = spe,
-        geneid = "sum_umi",
-        sampleid = sampleid,
-        point_size=1.5
-      )
-    })
-    print((plots[[1]] | plots[[2]] | plots[[3]] | plots[[4]]) / (plots[[5]] | plots[[6]] | plots[[7]] | plots[[8]]))
-    dev.off()
-    
-    # umi
-    pdf(width=20, height=10, here(plot_dir,paste0("Spotplot_mito_ratio_", brain,".pdf")))
-    sample_ids <- unique(spe$sample_id)
-    plots <- lapply(sample_ids[1:8], function(sampleid) {
-      vis_gene(
+    plots <- vis_grid_gene(
         spe = spe,
         geneid = "expr_chrM_ratio",
-        sampleid = sampleid,
-        point_size=1.5
+        point_size=1.5,
+        return_plots=TRUE
       )
-    })
-    print((plots[[1]] | plots[[2]] | plots[[3]] | plots[[4]]) / (plots[[5]] | plots[[6]] | plots[[7]] | plots[[8]]))
+    print(cowplot::plot_grid(plotlist = plots, ncol = 4))
     dev.off()
     
-    # umi
-    pdf(width=20, height=10, here(plot_dir,paste0("Spotplot_sum_gene_", brain,".pdf")))
+    # libary size
+    pdf(width=20, height=10, here(plot_dir,"Spotplots","library_size", paste0("Umi_", brain,".pdf")))
     sample_ids <- unique(spe$sample_id)
-    plots <- lapply(sample_ids[1:8], function(sampleid) {
-      vis_gene(
+    plots <- vis_grid_gene(
+        spe = spe,
+        geneid = "sum_umi",
+        point_size=1.5,
+        return_plots=TRUE
+      )
+    print(cowplot::plot_grid(plotlist = plots, ncol = 4))
+    dev.off()
+    
+    # unique genes
+    pdf(width=20, height=10, here(plot_dir,"Spotplots","unique_genes", paste0("Genes_", brain,".pdf")))
+    sample_ids <- unique(spe$sample_id)
+    plots <- vis_grid_gene(
         spe = spe,
         geneid = "sum_gene",
-        sampleid = sampleid,
-        point_size=1.5
+        point_size=1.5,
+        return_plots=TRUE
       )
-    })
-    print((plots[[1]] | plots[[2]] | plots[[3]] | plots[[4]]) / (plots[[5]] | plots[[6]] | plots[[7]] | plots[[8]]))
+    print(cowplot::plot_grid(plotlist = plots, ncol = 4))
     dev.off()
 
 }
-
-pdf(width=20, height=10, here(plot_dir,"Spotplot_mito_all.pdf"))
-(plots[[1]] | plots[[2]] | plots[[3]] | plots[[4]]) / (plots[[5]] | plots[[6]] | plots[[7]] | plots[[8]])
-dev.off()
 
 # =============== Calculate QC Metrics =================
 #
@@ -225,8 +273,10 @@ dev.off()
 #
 #
 
-library(scater)
-library(ggspavis)
+library(SpotSweeper)
+
+spe <- spe.amy
+rm(spe.amy)
 
 # identify mitochondrial genes
 is_mito <- grepl("(^MT-)|(^mt-)", rowData(spe)$gene_name)
@@ -239,7 +289,7 @@ rowData(spe)$gene_name[is_mito]
 
 
 # calculate per-spot QC metrics and store in colData
-spe <- addPerCellQC(spe, subsets = list(mito = is_mito))
+spe.amy <- addPerCellQC(spe, subsets = list(mito = is_mito))
 colnames(colData(spe))
 # [1] "sample_id"              "in_tissue"              "array_row"              "array_col"              "10x_graphclust"         "10x_kmeans_10_clusters"
 # [7] "10x_kmeans_2_clusters"  "10x_kmeans_3_clusters"  "10x_kmeans_4_clusters"  "10x_kmeans_5_clusters"  "10x_kmeans_6_clusters"  "10x_kmeans_7_clusters" 
@@ -249,162 +299,127 @@ colnames(colData(spe))
 # [31] "subsets_mito_detected"  "subsets_mito_percent"   "total"    
 
 
-# ====================== Library Size ========================
+# ======= SpotSweeper ======
+# library size
+spe <- localOutliers(spe, metric="sum_umi",direction="lower", log=TRUE)
 
-# histogram of library sizes
-pdf(here(plot_dir, "Histogram_LibrarySize.pdf"))
-hist(colData(spe)$sum, breaks = 80, xlim=c(0,15000))
+# unique genes
+spe <- localOutliers(spe, metric="sum_gene", direction="lower", log=TRUE)
+
+# mitochondrial percent
+spe <- localOutliers(spe, metric="expr_chrM_ratio", direction="higher", log=FALSE)
+
+
+# combine all outliers into "local_outliers" column
+spe$local_outliers <- as.logical(spe$sum_umi_outliers) | 
+    as.logical(spe$sum_gene_outliers) | 
+    as.logical(spe$expr_chrM_ratio_outliers)
+
+# save spe
+save(spe, file = here(processed_dir, "spe_local_outliers.Rdata"))
+
+# load
+load(here(processed_dir, "spe_local_outliers.Rdata"))
+spe
+
+
+# ======= Visualzing QC =========
+
+table(spe$local_outliers)
+# FALSE   TRUE 
+# 170858    669 
+
+# percent
+table(spe$local_outliers)/ncol(spe)*100
+# FALSE       TRUE 
+# 99.6099739  0.3900261 
+
+# subset by brnum, then plot PDF of all samples
+for (i in 1:length(unique(spe$brnum))) {
+    brain <- as.character(unique(spe$brnum)[[i]])
+    spe.tmp <- spe[,spe$brnum == brain]
+    
+
+    plotOutliersPDF(spe.tmp,
+                    metric="sum_umi_log2",
+                    outliers="local_outliers",
+                    point_size=2,
+                    stroke=0.8,
+                    fname=here(plot_dir,"Spotplots", "local_outliers", paste0("LocalOutliers_", brain, ".pdf")))
+
+}
+
+# number of local outliers per brnum
+table(spe$brnum, spe$local_outliers)
+#        FALSE  TRUE
+# Br8325 29775   110
+# Br2743 32690   165
+# Br6423 34222   131
+# Br6471 37601   194
+# Br9469 36570    69
+
+
+# violin plots
+
+
+# mito ratio
+pdf(width=15, height=5, here(plot_dir,"Violin_mito_ratio_z.pdf"))
+p1 <- plotColData(spe, x="sample_id", y="expr_chrM_ratio_z", colour_by="local_outliers") + 
+    ggtitle("Mitochondrial Percent") +
+    geom_hline(aes(yintercept = 3), linetype="dashed", color = "red") +
+    #coord_flip() + 
+    facet_wrap(~spe$brnum, 
+               scales = "free_x",
+               switch = "x",
+               nrow=1) +
+    theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1),
+          legend.position = "none")
+
+p1
 dev.off()
 
-# histogram of mitochondrial read proportions
-pdf(here(plot_dir, "Histogram_MitoPercent.pdf"))
-hist(colData(spe)$subsets_mito_percent, breaks = 20)
+# sum umi
+pdf(width=15, height=5, here(plot_dir,"Violin_sum_umi_z.pdf"))
+p2 <- plotColData(spe, x="sample_id", y="sum_umi_z", colour_by="local_outliers") + 
+    ggtitle("Sum UMI") +
+    geom_hline(aes(yintercept = -3), linetype="dashed", color = "red") +
+    #coord_flip() + 
+    facet_wrap(~spe$brnum, 
+               scales = "free_x",
+               switch = "x",
+               nrow=1) +
+    theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1),
+          legend.position = "none")
+
+p2
 dev.off()
 
+# sum gene
+pdf(width=15, height=5, here(plot_dir,"Violin_sum_gene_z.pdf"))
+p3 <- plotColData(spe, x="sample_id", y="sum_gene_z", colour_by="local_outliers") + 
+    ggtitle("Sum Gene") +
+    geom_hline(aes(yintercept = -3), linetype="dashed", color = "red") +
+    #coord_flip() + 
+    facet_wrap(~spe$brnum, 
+               scales = "free_x",
+               switch = "x",
+               nrow=1) +
+    theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1),
+          legend.position = "none")
 
-# get library size cutoff
-qc_lib_size <- colData(spe)$sum < 50 # this is arbitrary
-table(qc_lib_size)
-
-# add library size info
-colData(spe)$qc_lib_size <- qc_lib_size
-
-# check spatial pattern of discarded spots
-pdf(here(plot_dir,"LibrarySize_vs_SumGenes.pdf"))
-plotQC(spe, type = "scatter", 
-       discard = "qc_lib_size",
-       metric_x="sum_gene"
-       )
+p3
 dev.off()
 
-# pdf(here(plot_dir,"LibrarySize_vs_Count.pdf"))
-# plotQC(spe, type = "scatter", 
-#        discard = "qc_lib_size",
-#        metric_x="count"
-# )
-# dev.off()
-
-# check spatial pattern of discarded spots
-pdf(here(plot_dir,"MitoPercent_vs_SumGenes.pdf"))
-plotQC(spe, type = "scatter", 
-       metric_y="subsets_mito_percent",
-       metric_x="sum_gene",
-       threshold_x = 150,
+pdf(width=15, height=10, here(plot_dir,"Violin_all_metrics_z.pdf"))
+p1 <- p1 + theme(axis.title.x=element_blank(),
+                 axis.text.x=element_blank(),
+                 axis.ticks.x=element_blank()
 )
-dev.off()
 
-# check spatial pattern of discarded spots
-pdf(here(plot_dir,"MitoPercent_vs_SumUMI.pdf"))
-plotQC(spe, type = "scatter", 
-       metric_y="subsets_mito_percent",
-       metric_x="sum_umi",
-       threshold_x = 150,
+p2 <- p2 + theme(axis.title.x=element_blank(),
+                 axis.text.x=element_blank(),
+                 axis.ticks.x=element_blank()
 )
+
+p1/p2/p3
 dev.off()
-
-# ====== select QC threshold for library size (total genes) ========
-#FALSE  TRUE 
-#28090  1795 
-
-colData(spe)$qc_lib_size <- qc_lib_size
-
-# Spotplots
-pdf(width=20, height=10, here(plot_dir,"Spotplot_QC_lib_size_250.pdf"))
-sample_ids <- unique(spe$sample_id)
-plots <- lapply(sample_ids[1:8], function(sampleid) {
-  vis_clus(
-    spe = spe,
-    clustervar = "qc_lib_size",
-    sampleid = sampleid
-  )
-})
-(plots[[1]] | plots[[2]] | plots[[3]] | plots[[4]]) / (plots[[5]] | plots[[6]] | plots[[7]] | plots[[8]])
-dev.off()
-
-
-# ====== select QC threshold for unqie detected genes ========
-qc_detected <- colData(spe)$detected < 50 # this is arbitrary
-table(qc_detected)
-#FALSE  TRUE 
-#27649  2236
-
-colData(spe)$qc_detected <- qc_detected
-
-# Spotplots
-pdf(width=20, height=10, here(plot_dir,"Spotplot_QC_detected_100.pdf"))
-sample_ids <- unique(spe$sample_id)
-plots <- lapply(sample_ids[1:8], function(sampleid) {
-  vis_clus(
-    spe = spe,
-    clustervar = "qc_detected",
-    sampleid = sampleid
-  )
-})
-(plots[[1]] | plots[[2]] | plots[[3]] | plots[[4]]) / (plots[[5]] | plots[[6]] | plots[[7]] | plots[[8]])
-dev.off()
-
-
-# ====== select QC threshold for mito percent ========
-qc_mito <- colData(spe)$subsets_mito_percent > 30 # this is arbitrary
-table(qc_mito)
-# FALSE  TRUE 
-# 29736   149 
-
-colData(spe)$qc_mito <- qc_mito
-
-# Spotplots
-pdf(width=20, height=10, here(plot_dir,"Spotplot_QC_mito_25.pdf"))
-sample_ids <- unique(spe$sample_id)
-plots <- lapply(sample_ids[1:8], function(sampleid) {
-  vis_clus(
-    spe = spe,
-    clustervar = "qc_mito",
-    sampleid = sampleid
-  )
-})
-(plots[[1]] | plots[[2]] | plots[[3]] | plots[[4]]) / (plots[[5]] | plots[[6]] | plots[[7]] | plots[[8]])
-dev.off()
-
-# mito percent
-pdf(width=20, height=10, here(plot_dir,"Spotplot_mito_percent.pdf"))
-sample_ids <- unique(spe$sample_id)
-plots <- lapply(sample_ids[1:8], function(sampleid) {
-  vis_gene(
-    spe = spe,
-    geneid = "subsets_mito_percent",
-    sampleid = sampleid
-  )
-})
-(plots[[1]] | plots[[2]] | plots[[3]] | plots[[4]]) / (plots[[5]] | plots[[6]] | plots[[7]] | plots[[8]])
-dev.off()
-
-# Graph based clustering
-pdf(width=20, height=10, here(plot_dir,"Spotplot_10x_graphclust.pdf"))
-sample_ids <- unique(spe$sample_id)
-plots <- lapply(sample_ids[1:8], function(sampleid) {
-  vis_clus(
-    spe = spe,
-    clustervar = "10x_graphclust",
-    sampleid = sampleid
-  )
-})
-(plots[[1]] | plots[[2]] | plots[[3]] | plots[[4]]) / (plots[[5]] | plots[[6]] | plots[[7]] | plots[[8]])
-dev.off()
-
-
-# =========== Violin plots of QC metrics per sample =========
-
-discard <- qc_lib_size | qc_detected | qc_mito
-spe$discard <- discard
-
-pdf(width=10, height=5, here(plot_dir,"Violin_QC_sum.pdf"))
-plotColData(spe, x="sample_id", y="sum", colour_by="discard") + 
-  scale_y_log10() + ggtitle("Total count")
-dev.off()
-
-pdf(width=10, height=5, here(plot_dir,"Violin_QC_mito.pdf"))
-plotColData(spe, x="sample_id", y="subsets_mito_percent", colour_by="discard") + 
-  scale_y_log10() + ggtitle("Mitochondrial Percent")
-dev.off()
-
-save(spe, file=here(processed_dir, "spe_discarded.Rdata"))

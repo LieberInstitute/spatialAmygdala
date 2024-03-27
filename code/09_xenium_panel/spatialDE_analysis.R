@@ -194,7 +194,7 @@ for(cluster_id in unique(spe.subset$spatial.cluster)){
 # ======== Getting nnSVGs to round out the final list =========
 
 # read in current list
-custom_markers <- read.csv(here(processed_dir, "Amygdala_Xenium_panel_2.0.csv"), header = TRUE, stringsAsFactors = FALSE)
+custom_markers <- read.csv(here(processed_dir, "Amygdala_Xenium_panel_3.0.csv"), header = TRUE, stringsAsFactors = FALSE)
 head(custom_markers)
 # # A tibble: 6 × 2
 # Region Gene   
@@ -237,9 +237,6 @@ head(top_genes)
 # remove any custom_markers that are in base_panel
 custom_markers <- custom_markers[!custom_markers$Gene %in% base_panel$Genes,]
 
-#change TAC2 <- TAC3
-custom_markers$Gene[custom_markers$Gene == "TAC2"] <- "TAC3"
-custom_markers$Gene[custom_markers$Gene == "OLFM1"] <- "GULP1"
 
 # add gene Ensemble_ID column (rowData(spe)$gene_id) for all custom_markers
 custom_markers$Ensembl_ID <- rowData(spe)$gene_id[match(custom_markers$Gene, rowData(spe)$gene_name)]
@@ -249,4 +246,4 @@ colnames(custom_markers)[1] <- "Annotation"
 custom_markers
 
 # save as final xenium probe lsit
-write.csv(custom_markers, here(processed_dir, "Amygdala_Xenium_panel_2.0_final.csv"), row.names = FALSE)
+write.csv(custom_markers, here(processed_dir, "Amygdala_Xenium_panel_4.0_final.csv"), row.names = FALSE)
