@@ -3,7 +3,7 @@
 #SBATCH -n 8
 #SBATCH --job-name=amy-spaceranger
 #SBATCH -o logs/spaceranger_slurm_240131o.txt
-#SBATCH --array=1-11
+#SBATCH --array=1-4
 
 echo "**** Job starts ****"
 date
