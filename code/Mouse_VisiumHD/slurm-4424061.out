@@ -1,0 +1,56 @@
+**** Job starts ****
+Sat Apr 13 12:15:17 PM EDT 2024
+**** JHPCE info ****
+User: mtotty
+Job id: 
+Job name: 
+Hostname: compute-105
+Task id: 
+Loading conda_R/4.3.x
+
+Currently Loaded Modules:
+  1) JHPCE_ROCKY9_DEFAULT_ENV   3) conda/3-23.3.1
+  2) JHPCE_tools/3.0            4) conda_R/4.3.x
+
+ 
+
+Attaching SeuratObject
+‘SeuratObject’ was built with package ‘Matrix’ 1.6.3 but the current
+version is 1.6.4; it is recomended that you reinstall ‘SeuratObject’ as
+the ABI for ‘Matrix’ may have changed
+Seurat v4 was just loaded with SeuratObject v5; disabling v5 assays and
+validation routines, and ensuring assays work in strict v3/v4
+compatibility mode
+
+Attaching package: ‘dplyr’
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+here() starts at /dcs04/lieber/marmaypag/spatialAMY_LIBD4125/spatialAmygdala
+Error in type.convert.default(data[[i]], as.is = as.is[i], dec = dec,  : 
+  invalid multibyte string at '<af>5ܖj)<b2><af>	<bb><f0>-<cc><ee>1<bf><fa>5l<b2><aa>[<ed><ad>Q<b8><cf>A=|Gr풿<fc><96>t8<cb>k'
+Calls: Load10X_Spatial ... read.csv -> read.table -> type.convert -> type.convert.default
+In addition: Warning messages:
+1: In read.table(file = file, header = header, sep = sep, quote = quote,  :
+  line 1 appears to contain embedded nulls
+2: In read.table(file = file, header = header, sep = sep, quote = quote,  :
+  line 2 appears to contain embedded nulls
+3: In read.table(file = file, header = header, sep = sep, quote = quote,  :
+  line 3 appears to contain embedded nulls
+4: In read.table(file = file, header = header, sep = sep, quote = quote,  :
+  line 4 appears to contain embedded nulls
+5: In read.table(file = file, header = header, sep = sep, quote = quote,  :
+  line 5 appears to contain embedded nulls
+6: In scan(file = file, what = what, sep = sep, quote = quote, dec = dec,  :
+  EOF within quoted string
+7: In scan(file = file, what = what, sep = sep, quote = quote, dec = dec,  :
+  embedded nul(s) found in input
+Execution halted
+**** Job ends ****
+Sat Apr 13 12:17:13 PM EDT 2024

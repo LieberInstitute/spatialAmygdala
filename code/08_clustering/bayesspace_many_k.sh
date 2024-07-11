@@ -3,7 +3,7 @@
 #SBATCH --output=logs_bayesspace/%x.%a.txt
 #SBATCH --error=logs_bayesspace/%x.%a.txt
 #SBATCH --array=2-20
-#SBATCH --mem=50G
+#SBATCH --mem=150G
 #SBATCH --mail-type=END
 #SBATCH --cpus-per-task=1 # specify the number of CPUs needed for the job, adjust as needed
 

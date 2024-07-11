@@ -27,7 +27,7 @@ clear I
 tic
 disp('Splitting whole slide into individual capture areas')
 
-Img1 = Img(:,1:round(x/N),:);
+Img1 = Img(:,1:1400+round(x/N),:);
 %imshow(Img1)
 Img1 = imrotate(Img1,360-A1);
 save([fullfile(path1,name1),'_A1.mat'],'Img1','-v7.3');

@@ -23,9 +23,13 @@ head(sample_info)
 
 ### if you need to subset samples. can remove if you want all samples and all samples have spaceranger count info
 #subset by slide_id list
-list4spe = c('V13Y24-345','V13Y24-346', 'V13Y24-347','V13Y24-348')
+list4spe = c('V13Y24-368','V13Y24-369')
+# list4spe = c('V13Y24-345','V13Y24-346', 'V13Y24-347','V13Y24-348')
+
+
 #df[df$var1 %in% c('value1', 'value2', 'value3'), ]
 sample_info = sample_info[sample_info$slide %in% list4spe,]
+sample_info
 
 ### subset by row number instead of by value
 #sample_info = sample_info[c(4:6,15:17,1:3,7:14),]

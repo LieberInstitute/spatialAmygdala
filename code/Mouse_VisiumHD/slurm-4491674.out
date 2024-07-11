@@ -1,0 +1,67 @@
+**** Job starts ****
+Sun Apr 14 11:01:07 AM EDT 2024
+**** JHPCE info ****
+User: mtotty
+Job id: 
+Job name: 
+Hostname: compute-098
+Task id: 
+Loading conda_R/4.3.x
+
+Currently Loaded Modules:
+  1) JHPCE_ROCKY9_DEFAULT_ENV   3) conda/3-23.3.1
+  2) JHPCE_tools/3.0            4) conda_R/4.3.x
+
+ 
+
+Loading required package: SeuratObject
+Loading required package: sp
+
+Attaching package: ‘SeuratObject’
+
+The following objects are masked from ‘package:base’:
+
+    intersect, t
+
+
+Attaching package: ‘dplyr’
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+here() starts at /dcs04/lieber/marmaypag/spatialAMY_LIBD4125/spatialAmygdala
+An object of class Seurat 
+19059 features across 393543 samples within 1 assay 
+Active assay: Spatial (19059 features, 0 variable features)
+ 1 layer present: counts
+ 1 spatial field of view present: slice1
+[1] "orig.ident"       "nCount_Spatial"   "nFeature_Spatial"
+Warning: Default search for "data" layer in "Spatial" assay yielded no results; utilizing "counts" layer instead.
+Rasterizing points since number of points exceeds 100,000.
+To disable this behavior set `raster=FALSE`
+null device 
+          1 
+Normalizing layer: counts
+Performing log-normalization
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Finding variable features for layer counts
+Calculating gene variances
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Calculating feature variances of standardized and clipped values
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Centering and scaling data matrix
+/var/spool/slurm/d/job4491674/slurm_script: line 26: 3099241 Killed                  Rscript Seurat_clustering.R
+**** Job ends ****
+Sun Apr 14 11:09:30 AM EDT 2024
+slurmstepd: error: Detected 1 oom-kill event(s) in StepId=4491674.batch. Some of your processes may have been killed by the cgroup out-of-memory handler.
