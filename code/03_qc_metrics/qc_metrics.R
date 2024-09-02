@@ -1,5 +1,3 @@
-## qrsh -l mem_free=30G,h_vmem=30G -now n
-
 library(SpatialExperiment)
 library(here)
 library(spatialLIBD)
@@ -94,19 +92,25 @@ unique(spe.3$brnum)
 # [1] Br2743 Br6423
 # 11 Levels: 65v_AMY_SVB 66v_AMY_SVB 67v_AMY_SVB 68v_AMY_SVB ... Br9469
 
+# ===== Third round of samples (#6) =====
+load(here("processed-data", "02_build_spe", "spe_raw-4th.Rdata"), verbose = TRUE)
+spe.4 <- spe
+spe.4
 
+unique(spe.4$brnum)
+#[1] Br6660
 
 # =========== Merging SCE objects ===========
 # get common genes
-common_genes <- intersect( intersect(rownames(spe.1), rownames(spe.2)), 
-                          rownames(spe.3))
+common_genes <- Reduce(intersect, list(rownames(spe.1), rownames(spe.2), rownames(spe.3), rownames(spe.4)))
+
 spe.1 <- spe.1[common_genes,]
 spe.2 <- spe.2[common_genes,]
 spe.3 <- spe.3[common_genes,]
+spe.4 <- spe.4[common_genes,]
 
 # combine
-spe <- cbind( cbind(spe.1, spe.2), 
-             spe.3)
+spe <- Reduce(cbind, list(spe.1, spe.2, spe.3,spe.4))
 
 # drop out of tissue spots
 spe <- spe[, spe$in_tissue]
@@ -136,13 +140,17 @@ spe$brnum <- factor(spe$brnum)
 
 # check
 unique(spe$brnum)
-# [1] Br8325 Br9469 Br6471 Br2743 Br6423
-# Levels: Br8325 Br2743 Br6423 Br6471 Br9469
+# [1] Br8325 Br9469 Br6471 Br2743 Br6423 Br6660
+# Levels: Br8325 Br2743 Br6423 Br6471 Br6660 Br9469
 
-#  ====== Violin plots of qc metrics across samples ======
+# save combined object as rds
+saveRDS(spe, here(processed_dir, "spe_combined_noQC.Rds"))
+
+
+#  ========= Violin plots of qc metrics across samples ==========
 
 # mito ratio
-pdf(width=15, height=5, here(plot_dir,"Violin_mito_ratio.pdf"))
+png(width=15, height=5, here(plot_dir,"Violin_mito_ratio.png"), res=300, units="in")
 p1 <- plotColData(spe, x="sample_id", y="expr_chrM_ratio", colour_by="brnum") + 
     #scale_y_log10() + 
     ggtitle("Mitochondrial Percent") +
@@ -159,7 +167,7 @@ p1
 dev.off()
 
 # sum umi
-pdf(width=15, height=5, here(plot_dir,"Violin_sum_umi.pdf"))
+png(width=15, height=5, here(plot_dir,"Violin_sum_umi.png"), res=300, units="in")
 p2 <- plotColData(spe, x="sample_id", y="sum_umi", colour_by="brnum") + 
     scale_y_log10() + 
     ggtitle("Sum UMI") +
@@ -176,7 +184,7 @@ p2
 dev.off()
 
 # sum gene
-pdf(width=15, height=5, here(plot_dir,"Violin_sum_gene.pdf"))
+png(width=15, height=5, here(plot_dir,"Violin_sum_gene.png"), res=300, units="in")
 p3 <- plotColData(spe, x="sample_id", y="sum_gene", colour_by="brnum") + 
     scale_y_log10() + 
     ggtitle("Sum Gene") +
@@ -192,7 +200,7 @@ p3 <- plotColData(spe, x="sample_id", y="sum_gene", colour_by="brnum") +
 p3
 dev.off()
 
-pdf(width=15, height=10, here(plot_dir,"Violin_all_metrics.pdf"))
+png(width=15, height=10, here(plot_dir,"Violin_all_metrics.png"), res=300, units="in")
 p1 <- p1 + theme(axis.title.x=element_blank(),
                  axis.text.x=element_blank(),
                  axis.ticks.x=element_blank()
@@ -227,37 +235,40 @@ for (i in 1:length(unique(spe.amy$brnum))) {
     spe <- spe.amy[,spe.amy$brnum == brain]
     
     # mito percent
-    pdf(width=20, height=10, here(plot_dir,"Spotplots","mito_percent", paste0("MitoPerc_", brain,".pdf")))
+    png(width=20, height=10, here(plot_dir,"Spotplots","mito_percent", paste0("MitoPerc_", brain,".png")), res=300, units="in")
     sample_ids <- unique(spe$sample_id)
     plots <- vis_grid_gene(
         spe = spe,
         geneid = "expr_chrM_ratio",
         point_size=1.5,
-        return_plots=TRUE
+        return_plots=TRUE,
+        assay="counts"
       )
     print(cowplot::plot_grid(plotlist = plots, ncol = 4))
     dev.off()
     
     # libary size
-    pdf(width=20, height=10, here(plot_dir,"Spotplots","library_size", paste0("Umi_", brain,".pdf")))
+    png(width=20, height=10, here(plot_dir,"Spotplots","library_size", paste0("Umi_", brain,".png")), res=300, units="in")
     sample_ids <- unique(spe$sample_id)
     plots <- vis_grid_gene(
         spe = spe,
         geneid = "sum_umi",
         point_size=1.5,
-        return_plots=TRUE
+        return_plots=TRUE,
+        assay="counts"
       )
     print(cowplot::plot_grid(plotlist = plots, ncol = 4))
     dev.off()
     
     # unique genes
-    pdf(width=20, height=10, here(plot_dir,"Spotplots","unique_genes", paste0("Genes_", brain,".pdf")))
+    png(width=20, height=10, here(plot_dir,"Spotplots","unique_genes", paste0("Genes_", brain,".png")), res=300, units="in")
     sample_ids <- unique(spe$sample_id)
     plots <- vis_grid_gene(
         spe = spe,
         geneid = "sum_gene",
         point_size=1.5,
-        return_plots=TRUE
+        return_plots=TRUE,
+        assay="counts"
       )
     print(cowplot::plot_grid(plotlist = plots, ncol = 4))
     dev.off()
@@ -288,17 +299,6 @@ rowData(spe)$gene_name[is_mito]
 # [1] "MT-ND1"  "MT-ND2"  "MT-CO1"  "MT-CO2"  "MT-ATP8" "MT-ATP6" "MT-CO3"  "MT-ND3"  "MT-ND4L" "MT-ND4"  "MT-ND5"  "MT-ND6"  "MT-CYB" 
 
 
-# calculate per-spot QC metrics and store in colData
-spe.amy <- addPerCellQC(spe, subsets = list(mito = is_mito))
-colnames(colData(spe))
-# [1] "sample_id"              "in_tissue"              "array_row"              "array_col"              "10x_graphclust"         "10x_kmeans_10_clusters"
-# [7] "10x_kmeans_2_clusters"  "10x_kmeans_3_clusters"  "10x_kmeans_4_clusters"  "10x_kmeans_5_clusters"  "10x_kmeans_6_clusters"  "10x_kmeans_7_clusters" 
-# [13] "10x_kmeans_8_clusters"  "10x_kmeans_9_clusters"  "key"                    "sum_umi"                "sum_gene"               "expr_chrM"             
-# [19] "expr_chrM_ratio"        "ManualAnnotation"       "subject"                "region"                 "sex"                    "age"                   
-# [25] "diagnosis"              "sample_id_complete"     "count"                  "sum"                    "detected"               "subsets_mito_sum"      
-# [31] "subsets_mito_detected"  "subsets_mito_percent"   "total"    
-
-
 # ======= SpotSweeper ======
 # library size
 spe <- localOutliers(spe, metric="sum_umi",direction="lower", log=TRUE)
@@ -327,21 +327,21 @@ spe
 
 table(spe$local_outliers)
 # FALSE   TRUE 
-# 170858    669 
+#207745    867 
 
 # percent
 table(spe$local_outliers)/ncol(spe)*100
-# FALSE       TRUE 
-# 99.6099739  0.3900261 
+#      FALSE       TRUE 
+# 99.5843959  0.4156041 
 
-# subset by brnum, then plot PDF of all samples
+# subset by brnum, then plot pdf of all samples
 for (i in 1:length(unique(spe$brnum))) {
     brain <- as.character(unique(spe$brnum)[[i]])
     spe.tmp <- spe[,spe$brnum == brain]
     
 
-    plotOutliersPDF(spe.tmp,
-                    metric="sum_umi_log2",
+    plotQCpdf(spe.tmp,
+                    metric="sum_umi_log",
                     outliers="local_outliers",
                     point_size=2,
                     stroke=0.8,
@@ -351,19 +351,19 @@ for (i in 1:length(unique(spe$brnum))) {
 
 # number of local outliers per brnum
 table(spe$brnum, spe$local_outliers)
-#        FALSE  TRUE
-# Br8325 29775   110
-# Br2743 32690   165
-# Br6423 34222   131
-# Br6471 37601   194
-# Br9469 36570    69
+#          FALSE  TRUE
+#   Br8325 29776   109
+#   Br2743 32691   164
+#   Br6423 34222   131
+#   Br6471 37602   193
+#   Br6660 36884   201
+#   Br9469 36570    69
 
 
-# violin plots
-
+#  ======= Violin plots ========
 
 # mito ratio
-pdf(width=15, height=5, here(plot_dir,"Violin_mito_ratio_z.pdf"))
+png(width=15, height=5, here(plot_dir,"Violin_mito_ratio_z.png"), res=300, units="in")
 p1 <- plotColData(spe, x="sample_id", y="expr_chrM_ratio_z", colour_by="local_outliers") + 
     ggtitle("Mitochondrial Percent") +
     geom_hline(aes(yintercept = 3), linetype="dashed", color = "red") +
@@ -379,7 +379,7 @@ p1
 dev.off()
 
 # sum umi
-pdf(width=15, height=5, here(plot_dir,"Violin_sum_umi_z.pdf"))
+png(width=15, height=5, here(plot_dir,"Violin_sum_umi_z.png"), res=300, units="in")
 p2 <- plotColData(spe, x="sample_id", y="sum_umi_z", colour_by="local_outliers") + 
     ggtitle("Sum UMI") +
     geom_hline(aes(yintercept = -3), linetype="dashed", color = "red") +
@@ -395,7 +395,7 @@ p2
 dev.off()
 
 # sum gene
-pdf(width=15, height=5, here(plot_dir,"Violin_sum_gene_z.pdf"))
+png(width=15, height=5, here(plot_dir,"Violin_sum_gene_z.png"), res=300, units="in")
 p3 <- plotColData(spe, x="sample_id", y="sum_gene_z", colour_by="local_outliers") + 
     ggtitle("Sum Gene") +
     geom_hline(aes(yintercept = -3), linetype="dashed", color = "red") +
@@ -410,7 +410,7 @@ p3 <- plotColData(spe, x="sample_id", y="sum_gene_z", colour_by="local_outliers"
 p3
 dev.off()
 
-pdf(width=15, height=10, here(plot_dir,"Violin_all_metrics_z.pdf"))
+png(width=15, height=10, here(plot_dir,"Violin_all_metrics_z.png"), res=300, units="in")
 p1 <- p1 + theme(axis.title.x=element_blank(),
                  axis.text.x=element_blank(),
                  axis.ticks.x=element_blank()

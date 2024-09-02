@@ -2,8 +2,8 @@
 #SBATCH --mem=80G
 #SBATCH -n 8
 #SBATCH --job-name=amy-spaceranger
-#SBATCH -o logs/spaceranger-240410_%a.o.txt
-#SBATCH --array=1-8
+#SBATCH -o logs/spaceranger-240829_%a.o.txt
+#SBATCH --array=1-24%6
 
 echo "**** Job starts ****"
 date
@@ -16,13 +16,13 @@ echo "Hostname: ${SLURM_NODENAME}"
 echo "Task id: ${SLURM_ARRAY_TASK_ID}"
 
 ## load SpaceRanger
-module load spaceranger/2.1.0
+module load spaceranger/3.0.0
 
 ## List current modules for reproducibility
 module list
 
 ## Locate file
-SAMPLE=$(awk "NR==${SLURM_ARRAY_TASK_ID}" samples_list.txt)
+SAMPLE=$(awk "NR==${SLURM_ARRAY_TASK_ID}" 24-08-samples_list.txt)
 echo "Processing sample ${SAMPLE}"
 date
 
@@ -49,7 +49,8 @@ spaceranger count \
     --loupe-alignment=/dcs04/lieber/marmaypag/spatialAMY_LIBD4125/spatialAmygdala/processed-data/Images/loupe/${SAM}.json \
     --jobmode=local \
     --localcores=8 \
-    --localmem=64 
+    --localmem=64  \
+    --create-bam=false
 
 ## Move output
 echo "Moving results to new location"

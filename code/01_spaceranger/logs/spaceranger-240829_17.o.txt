@@ -1,0 +1,38 @@
+**** Job starts ****
+Fri Aug 30 06:41:07 PM EDT 2024
+**** JHPCE info ****
+User: rmiller
+Job id: 9598141
+Job name: amy-spaceranger
+Hostname: 
+Task id: 17
+Loading LIBD SLURM module for spaceranger/3.0.0
+Reference files, for use with the '--transcriptome' argument, can be accessed
+or downloaded into /dcs04/lieber/lcolladotor/annotationFiles_LIBD001/10x. 
+
+Currently Loaded Modules:
+  1) JHPCE_ROCKY9_DEFAULT_ENV   2) JHPCE_tools/3.0   3) spaceranger/3.0.0
+
+ 
+
+Processing sample V13B23-406_A1
+Fri Aug 30 06:41:07 PM EDT 2024
+Slide: V13B23-406, capture area: A1
+
+
+ERROR: No input FASTQs were found for the requested parameters.
+
+If your files came from bcl2fastq or mkfastq:
+ - Make sure you are specifying the correct --sample(s), i.e. matching the sample sheet
+ - Make sure your files follow the correct naming convention, e.g. SampleName_S1_L001_R1_001.fastq.gz (and the R2 version)
+ - Make sure your --fastqs points to the correct location.
+ - Make sure your --lanes, if any, are correctly specified.
+
+Refer to the "Specifying Input FASTQs" page at https://support.10xgenomics.com/ for more details.
+
+
+Moving results to new location
+Fri Aug 30 06:41:07 PM EDT 2024
+mv: cannot stat 'V13B23-406_A1': No such file or directory
+**** Job ends ****
+Fri Aug 30 06:41:07 PM EDT 2024
