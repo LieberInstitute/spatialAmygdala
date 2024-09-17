@@ -2,7 +2,7 @@ setwd('/dcs04/lieber/marmaypag/spatialAMY_LIBD4125/spatialAmygdala/')
 
 library("here")
 
-REDCap <- read.csv(file.path(here::here("raw-data", "sample_info", "Visium_DATA_2024-01-10_1103.csv")), header = TRUE, stringsAsFactors = FALSE)
+REDCap <- read.csv(file.path(here::here("raw-data", "sample_info", "Visium_DATA_2024-09-09_1533.csv")), header = TRUE, stringsAsFactors = FALSE)
 A1 <- subset(REDCap, select = c("slide", "species_a1", "sample_a1", "serial_a1","region_a1", "project_a1"))
 B1 <- subset(REDCap, select = c("slide", "species_b1", "sample_b1", "serial_b1","region_b1", "project_b1"))
 C1 <- subset(REDCap, select = c("slide", "species_c1", "sample_c1", "serial_c1","region_c1", "project_c1"))
@@ -24,7 +24,7 @@ write.table(Brain_nums, file = (here::here("raw-data", "sample_info", "ALLbrains
 Samples <- unique(paste0(REDCap_AMY$slide, "_", REDCap_AMY$array))
 write.table(Samples, file = (here::here("raw-data", "sample_info", "ALLsamples.txt")), row.names = FALSE, col.names = FALSE)
 
-save(REDCap_AMY, file = (here::here("code", "REDCap", "REDCap_AMY.rda")))
+save(REDCap_AMY, file = (here::here("code", "REDCap", "REDCap_AMY-2.rda")))
 
 ## https://jhu-genomics.slack.com/archives/CR9NYA0BF/p1650383126365919
 ## /dcs04/lieber/lcolladotor/rawDataTDSC_LIBD001/raw-data/2022-04-12_SPag033122/

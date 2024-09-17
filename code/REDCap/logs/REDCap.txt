@@ -1,19 +1,19 @@
 **** Job starts ****
-Fri Feb  9 01:56:07 AM EST 2024
+Mon Sep  9 04:59:22 PM EDT 2024
 **** JHPCE info ****
-User: rmiller
+User: mtotty
 Job id: 
 Job name: 
-Hostname: compute-100
+Hostname: compute-161
 Task id: 
-Loading conda_R/4.3.x
+Loading conda_R/4.4
 
 Currently Loaded Modules:
-  1) JHPCE_ROCKY9_DEFAULT_ENV   3) ruby/3.2.2     5) conda/3-23.3.1
-  2) JHPCE_tools/3.0            4) rmate/1.5.10   6) conda_R/4.3.x
+  1) JHPCE_ROCKY9_DEFAULT_ENV   3) conda/3-24.3.0
+  2) JHPCE_tools/3.0            4) conda_R/4.4
 
  
 
 here() starts at /dcs04/lieber/marmaypag/spatialAMY_LIBD4125/spatialAmygdala
 **** Job ends ****
-Fri Feb  9 01:56:11 AM EST 2024
+Mon Sep  9 04:59:23 PM EDT 2024

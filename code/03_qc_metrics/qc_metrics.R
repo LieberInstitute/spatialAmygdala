@@ -92,7 +92,7 @@ unique(spe.3$brnum)
 # [1] Br2743 Br6423
 # 11 Levels: 65v_AMY_SVB 66v_AMY_SVB 67v_AMY_SVB 68v_AMY_SVB ... Br9469
 
-# ===== Third round of samples (#6) =====
+# ===== Fourth round of samples (#6) =====
 load(here("processed-data", "02_build_spe", "spe_raw-4th.Rdata"), verbose = TRUE)
 spe.4 <- spe
 spe.4
@@ -100,17 +100,43 @@ spe.4
 unique(spe.4$brnum)
 #[1] Br6660
 
+
+
+# ===== Fifth round of samples (#6) =====
+load(here("processed-data", "02_build_spe", "spe_raw-5th.Rdata"), verbose = TRUE)
+spe.5 <- spe
+spe.5
+# class: SpatialExperiment 
+# dim: 28637 109824 
+# metadata(0):
+# assays(1): counts
+# rownames(28637): MIR1302-2HG AL627309.1 ... AC007325.4 AC007325.2
+# rowData names(6): source type ... gene_name Symbol.uniq
+# colnames(109824): AAACAACGAATAGTTC-1 AAACAAGTATCTCCCA-1 ...
+#   TTGTTTGTATTACACG-1 TTGTTTGTGTAAATTC-1
+# colData names(26): sample_id in_tissue ... replicate overlaps_tissue
+# reducedDimNames(3): 10x_pca 10x_tsne 10x_umap
+# mainExpName: NULL
+# altExpNames(0):
+# spatialCoords names(2) : pxl_col_in_fullres pxl_row_in_fullres
+# imgData names(4): sample_id image_id data scaleFactor
+
+unique(spe.5$brnum)
+# [1] Br9206 Br9017 Br9280 Br9192 BR9192
+# 16 Levels: 65v_AMY_SVB 66v_AMY_SVB 67v_AMY_SVB 68v_AMY_SVB ... Br9469
+
 # =========== Merging SCE objects ===========
 # get common genes
-common_genes <- Reduce(intersect, list(rownames(spe.1), rownames(spe.2), rownames(spe.3), rownames(spe.4)))
+common_genes <- Reduce(intersect, list(rownames(spe.1), rownames(spe.2), rownames(spe.3), rownames(spe.4), rownames(spe.4), rownames(spe.5)))
 
 spe.1 <- spe.1[common_genes,]
 spe.2 <- spe.2[common_genes,]
 spe.3 <- spe.3[common_genes,]
 spe.4 <- spe.4[common_genes,]
+spe.5 <- spe.5[common_genes,]
 
 # combine
-spe <- Reduce(cbind, list(spe.1, spe.2, spe.3,spe.4))
+spe <- Reduce(cbind, list(spe.1, spe.2, spe.3,spe.4, spe.5))
 
 # drop out of tissue spots
 spe <- spe[, spe$in_tissue]
@@ -134,14 +160,35 @@ unique(spe$brnum)
 
 # replace 85v_AMY_SVB with Br6471
 spe$brnum[spe$brnum == "85v_AMY_SVB"] <- "Br6471"
+spe$brnum[spe$brnum == "Br9192"] <- "BR9192"
+
 
 # reset levels
 spe$brnum <- factor(spe$brnum)
 
 # check
 unique(spe$brnum)
-# [1] Br8325 Br9469 Br6471 Br2743 Br6423 Br6660
-# Levels: Br8325 Br2743 Br6423 Br6471 Br6660 Br9469
+# [1] Br8325 Br9469 Br6471 Br2743 Br6423 Br6660 Br9206 Br9017 Br9280 BR9192
+# 10 Levels: Br8325 Br2743 Br6423 Br6471 Br6660 Br9469 Br9017 BR9192 ... Br9280
+
+length(unique(spe$sample_id))
+# [1] 69
+
+spe
+# class: SpatialExperiment 
+# dim: 25814 309099 
+# metadata(0):
+# assays(1): counts
+# rownames(25814): MIR1302-2HG AL627309.1 ... AC007325.4 AC007325.2
+# rowData names(6): source type ... gene_name Symbol.uniq
+# colnames(309099): AAACAAGTATCTCCCA-1 AAACACCAATAACTGC-1 ...
+#   TTGTTTCCATACAACT-1 TTGTTTGTGTAAATTC-1
+# colData names(26): sample_id in_tissue ... replicate overlaps_tissue
+# reducedDimNames(3): 10x_pca 10x_tsne 10x_umap
+# mainExpName: NULL
+# altExpNames(0):
+# spatialCoords names(2) : pxl_col_in_fullres pxl_row_in_fullres
+# imgData names(4): sample_id image_id data scaleFactor
 
 # save combined object as rds
 saveRDS(spe, here(processed_dir, "spe_combined_noQC.Rds"))

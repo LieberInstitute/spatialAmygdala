@@ -2,8 +2,10 @@
 #SBATCH --mem=80G
 #SBATCH -n 8
 #SBATCH --job-name=amy-spaceranger
-#SBATCH -o logs/spaceranger-240829_%a.o.txt
-#SBATCH --array=1-24%6
+#SBATCH -o logs/spaceranger-240910_%a.o.txt
+#SBATCH --array=1-2
+
+# 4%6
 
 echo "**** Job starts ****"
 date
@@ -22,7 +24,7 @@ module load spaceranger/3.0.0
 module list
 
 ## Locate file
-SAMPLE=$(awk "NR==${SLURM_ARRAY_TASK_ID}" 24-08-samples_list.txt)
+SAMPLE=$(awk "NR==${SLURM_ARRAY_TASK_ID}" 02_24-09_sample_list.txt)
 echo "Processing sample ${SAMPLE}"
 date
 

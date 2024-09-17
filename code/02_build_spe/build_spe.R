@@ -9,7 +9,7 @@ suppressPackageStartupMessages({
 })
 
 ## Define some info for the samples
-load(here::here("code", "REDCap", "REDCap_AMY.rda"))
+load(here::here("code", "REDCap", "REDCap_AMY-2.rda"))
 
 sample_info <- data.frame(slide = as.factor(REDCap_AMY$slide))
 sample_info$array <- as.factor(REDCap_AMY$array)
@@ -23,7 +23,8 @@ head(sample_info)
 
 ### if you need to subset samples. can remove if you want all samples and all samples have spaceranger count info
 #subset by slide_id list
-list4spe = c('V13Y24-368','V13Y24-369')
+list4spe = c('V13Y24-366','V13Y24-367','V13B23-274','V13B23-405','V13B23-406','V13B23-407')
+# list4spe = c('V13Y24-368','V13Y24-369')
 # list4spe = c('V13Y24-345','V13Y24-346', 'V13Y24-347','V13Y24-348')
 
 
