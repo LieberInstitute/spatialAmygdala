@@ -4,7 +4,7 @@
 #SBATCH --job-name=02_build_spe
 #SBATCH -o /dcs04/lieber/marmaypag/spatialAMY_LIBD4125/spatialAmygdala/code/visium_stitching/NacUtils/logs/02_build_spe_%a.log
 #SBATCH -e /dcs04/lieber/marmaypag/spatialAMY_LIBD4125/spatialAmygdala/code/visium_stitching/NacUtils/logs/02_build_spe_%a.log
-#SBATCH --array=6-6%5
+#SBATCH --array=4-10%5
 
 echo "**** Job starts ****"
 date
