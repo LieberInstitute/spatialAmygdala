@@ -1,12 +1,11 @@
 **** Job starts ****
-Mon Jul  1 05:58:40 PM EDT 2024
+Thu Sep 19 02:41:50 PM EDT 2024
 **** JHPCE info ****
 User: mtippani
-Job id: 8046392
+Job id: 9716420
 Job name: 02_build_spe
-Node name: compute-095
+Node name: compute-124
 Task id: 5
-Unloading conda_R/devel
 Loading conda_R/devel
 
 Currently Loaded Modules:
@@ -27,9 +26,16 @@ here() starts at /dcs04/lieber/marmaypag/spatialAMY_LIBD4125/spatialAmygdala
 ✖ dplyr::filter() masks stats::filter()
 ✖ dplyr::lag()    masks stats::lag()
 ℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
+Registered S3 methods overwritten by 'spatstat.geom':
+  method         from           
+  mean.ecdf      spatstat.univar
+  mean.ewcdf     spatstat.univar
+  print.ewcdf    spatstat.univar
+  quantile.ewcdf spatstat.univar
 Registered S3 method overwritten by 'imager':
   method      from
   plot.imlist     
+There were 32 warnings (use warnings() to see them)
 
 Attaching package: ‘Matrix’
 
@@ -194,38 +200,38 @@ The following object is masked from ‘package:rhdf5’:
     h5ls
 
 Loading required package: scuttle
-2024-07-01 17:59:22.292481 - Processing ImageJ outputs
+2024-09-19 14:42:12.074411 - Processing ImageJ outputs
 Warning messages:
 1: In read_xml.character(this_sample_info$imagej_xml_path[1]) :
   Attribute o_width of element t2_patch: already defined [501]
 2: In read_xml.character(this_sample_info$imagej_xml_path[1]) :
   Attribute o_height of element t2_patch: already defined [501]
-2024-07-01 17:59:36.695131 - Building raw SPE
+2024-09-19 14:42:22.246298 - Building raw SPE
 Building SpatialExperiment using capture area as sample ID
 Overwriting imgData(spe) with merged images (one per group)
-2024-07-01 18:01:04.482404 - Adding overlap info
+2024-09-19 14:43:12.064982 - Adding overlap info
 sizeFactors() summary:
 Length  Class   Mode 
      0   NULL   NULL 
-2024-07-01 18:01:15.523176 - Running logNormCounts()
+2024-09-19 14:44:08.477668 - Running logNormCounts()
 null device 
           1 
 ─ Session info ───────────────────────────────────────────────────────────────
  setting  value
- version  R Under development (unstable) (2024-06-30 r86854)
- os       Rocky Linux 9.2 (Blue Onyx)
+ version  R Under development (unstable) (2024-09-18 r87177)
+ os       Rocky Linux 9.4 (Blue Onyx)
  system   x86_64, linux-gnu
  ui       X11
  language (EN)
  collate  en_US.UTF-8
  ctype    en_US.UTF-8
  tz       US/Eastern
- date     2024-07-01
+ date     2024-09-19
  pandoc   3.1.3 @ /jhpce/shared/community/core/conda_R/devel/bin/pandoc
 
 ─ Packages ───────────────────────────────────────────────────────────────────
  package              * version   date (UTC) lib source
- abind                * 1.4-5     2016-07-21 [2] CRAN (R 4.4.0)
+ abind                * 1.4-8     2024-09-12 [2] CRAN (R 4.5.0)
  AnnotationDbi          1.67.0    2024-05-01 [1] Bioconductor 3.20 (R 4.5.0)
  AnnotationHub          3.13.0    2024-05-01 [1] Bioconductor 3.20 (R 4.5.0)
  attempt                0.3.1     2020-05-03 [1] CRAN (R 4.2.0)
@@ -245,7 +251,7 @@ null device
  Biostrings             2.73.1    2024-06-02 [1] Bioconductor 3.20 (R 4.5.0)
  bit                    4.0.5     2022-11-15 [2] CRAN (R 4.4.0)
  bit64                  4.0.5     2020-08-30 [2] CRAN (R 4.4.0)
- bitops                 1.0-7     2021-04-24 [2] CRAN (R 4.4.0)
+ bitops                 1.0-8     2024-07-29 [2] CRAN (R 4.5.0)
  blob                   1.2.4     2023-03-17 [2] CRAN (R 4.4.0)
  bluster                1.14.0    2024-04-30 [2] Bioconductor 3.19 (R 4.5.0)
  bmp                    0.3       2017-09-11 [1] CRAN (R 4.5.0)
@@ -254,7 +260,7 @@ null device
  cli                    3.6.3     2024-06-21 [1] CRAN (R 4.5.0)
  cluster                2.1.6     2023-12-01 [3] CRAN (R 4.5.0)
  codetools              0.2-20    2024-03-31 [3] CRAN (R 4.5.0)
- colorspace             2.1-0     2023-01-23 [2] CRAN (R 4.4.0)
+ colorspace             2.1-1     2024-07-26 [2] CRAN (R 4.5.0)
  config                 0.3.2     2023-08-30 [1] CRAN (R 4.4.0)
  cowplot                1.1.3     2024-01-22 [2] CRAN (R 4.4.0)
  crayon                 1.5.3     2024-06-20 [1] CRAN (R 4.5.0)
@@ -276,14 +282,14 @@ null device
  ExperimentHub          2.13.0    2024-05-01 [1] Bioconductor 3.20 (R 4.5.0)
  fansi                  1.0.6     2023-12-08 [2] CRAN (R 4.4.0)
  farver                 2.1.2     2024-05-13 [2] CRAN (R 4.5.0)
- fastDummies            1.7.3     2023-07-06 [2] CRAN (R 4.4.0)
+ fastDummies            1.7.4     2024-08-16 [2] CRAN (R 4.5.0)
  fastmap                1.2.0     2024-05-15 [2] CRAN (R 4.5.0)
  fields                 16.2      2024-06-27 [2] CRAN (R 4.5.0)
  filelock               1.0.3     2023-12-11 [2] CRAN (R 4.4.0)
  fitdistrplus           1.1-11    2023-04-25 [1] CRAN (R 4.5.0)
  forcats              * 1.0.0     2023-01-29 [2] CRAN (R 4.4.0)
  foreach                1.5.2     2022-02-02 [2] CRAN (R 4.4.0)
- future                 1.33.2    2024-03-26 [2] CRAN (R 4.5.0)
+ future                 1.34.0    2024-07-29 [2] CRAN (R 4.5.0)
  future.apply           1.11.2    2024-03-28 [2] CRAN (R 4.5.0)
  generics               0.1.3     2022-07-05 [2] CRAN (R 4.4.0)
  GenomeInfoDb         * 1.41.1    2024-05-24 [1] Bioconductor 3.20 (R 4.5.0)
@@ -335,23 +341,23 @@ null device
  MASS                   7.3-61    2024-06-13 [3] CRAN (R 4.5.0)
  Matrix               * 1.7-0     2024-04-26 [2] CRAN (R 4.5.0)
  MatrixGenerics       * 1.17.0    2024-05-01 [1] Bioconductor 3.20 (R 4.5.0)
- matrixStats          * 1.3.0     2024-04-11 [2] CRAN (R 4.5.0)
+ matrixStats          * 1.4.1     2024-09-08 [2] CRAN (R 4.5.0)
  memoise                2.0.1     2021-11-26 [2] CRAN (R 4.4.0)
  metapod                1.12.0    2024-04-30 [2] Bioconductor 3.19 (R 4.5.0)
  mime                   0.12      2021-09-28 [2] CRAN (R 4.4.0)
  miniUI                 0.1.1.1   2018-05-18 [2] CRAN (R 4.4.0)
  munsell                0.5.1     2024-04-01 [1] CRAN (R 4.4.0)
- nlme                   3.1-165   2024-06-06 [3] CRAN (R 4.5.0)
+ nlme                   3.1-166   2024-08-14 [3] CRAN (R 4.5.0)
  paletteer              1.6.0     2024-01-21 [1] CRAN (R 4.4.0)
- parallelly             1.37.1    2024-02-29 [2] CRAN (R 4.5.0)
- patchwork              1.2.0     2024-01-08 [2] CRAN (R 4.4.0)
+ parallelly             1.38.0    2024-07-27 [2] CRAN (R 4.5.0)
+ patchwork              1.3.0     2024-09-16 [2] CRAN (R 4.5.0)
  pbapply                1.7-2     2023-06-27 [1] CRAN (R 4.4.0)
  pillar                 1.9.0     2023-03-22 [2] CRAN (R 4.4.0)
  pkgconfig              2.0.3     2019-09-22 [2] CRAN (R 4.4.0)
  plotly                 4.10.4    2024-01-13 [2] CRAN (R 4.4.0)
  plyr                   1.8.9     2023-10-02 [2] CRAN (R 4.4.0)
  png                    0.1-8     2022-11-29 [2] CRAN (R 4.4.0)
- polyclip               1.10-6    2023-09-27 [2] CRAN (R 4.4.0)
+ polyclip               1.10-7    2024-07-23 [2] CRAN (R 4.5.0)
  progressr              0.14.0    2023-08-10 [2] CRAN (R 4.4.0)
  promises               1.3.0     2024-04-05 [1] CRAN (R 4.4.0)
  purrr                * 1.0.2     2023-08-10 [1] CRAN (R 4.5.0)
@@ -359,7 +365,7 @@ null device
  R.oo                   1.26.0    2024-01-24 [2] CRAN (R 4.4.0)
  R.utils                2.12.3    2023-11-18 [2] CRAN (R 4.4.0)
  R6                     2.5.1     2021-08-19 [2] CRAN (R 4.4.0)
- RANN                   2.6.1     2019-01-08 [2] CRAN (R 4.4.0)
+ RANN                   2.6.2     2024-08-25 [2] CRAN (R 4.5.0)
  rappdirs               0.3.3     2021-01-31 [2] CRAN (R 4.4.0)
  RColorBrewer           1.1-3     2022-04-03 [2] CRAN (R 4.4.0)
  Rcpp                   1.0.12    2024-01-09 [1] CRAN (R 4.4.0)
@@ -375,12 +381,12 @@ null device
  rhdf5                * 2.49.0    2024-05-01 [1] Bioconductor 3.20 (R 4.5.0)
  rhdf5filters           1.17.0    2024-05-01 [1] Bioconductor 3.20 (R 4.5.0)
  Rhdf5lib               1.27.0    2024-05-01 [1] Bioconductor 3.20 (R 4.5.0)
- rjson                  0.2.21    2022-01-09 [2] CRAN (R 4.4.0)
+ rjson                  0.2.23    2024-09-16 [2] CRAN (R 4.5.0)
  rlang                  1.1.4     2024-06-04 [1] CRAN (R 4.5.0)
  ROCR                   1.0-11    2020-05-02 [2] CRAN (R 4.4.0)
  rprojroot              2.0.4     2023-11-05 [2] CRAN (R 4.4.0)
  Rsamtools              2.21.0    2024-05-01 [1] Bioconductor 3.20 (R 4.5.0)
- RSpectra               0.16-1    2022-04-24 [2] CRAN (R 4.4.0)
+ RSpectra               0.16-2    2024-07-18 [2] CRAN (R 4.5.0)
  RSQLite                2.3.7     2024-05-27 [1] CRAN (R 4.5.0)
  rsvd                   1.0.5     2021-04-16 [2] CRAN (R 4.4.0)
  rtracklayer            1.65.0    2024-05-01 [1] Bioconductor 3.20 (R 4.5.0)
@@ -409,11 +415,12 @@ null device
  SpatialExperiment    * 1.15.1    2024-06-20 [1] Github (drighelli/SpatialExperiment@528b628)
  spatialLIBD            1.17.2    2024-06-20 [1] Github (LieberInstitute/spatialLIBD@e0947a2)
  spatstat.data          3.1-2     2024-06-21 [1] CRAN (R 4.5.0)
- spatstat.explore       3.2-7     2024-03-21 [2] CRAN (R 4.5.0)
+ spatstat.explore       3.3-2     2024-08-21 [2] CRAN (R 4.5.0)
  spatstat.geom          3.2-9     2024-02-28 [1] CRAN (R 4.5.0)
  spatstat.random        3.2-3     2024-02-29 [1] CRAN (R 4.5.0)
  spatstat.sparse        3.1-0     2024-06-21 [1] CRAN (R 4.5.0)
- spatstat.utils         3.0-5     2024-06-17 [1] CRAN (R 4.5.0)
+ spatstat.univar        3.0-1     2024-09-05 [2] CRAN (R 4.5.0)
+ spatstat.utils         3.1-0     2024-08-17 [1] CRAN (R 4.5.0)
  statmod                1.5.0     2023-01-06 [2] CRAN (R 4.4.0)
  stringi                1.8.4     2024-05-06 [2] CRAN (R 4.5.0)
  stringr              * 1.5.1     2023-11-14 [2] CRAN (R 4.4.0)
@@ -436,12 +443,12 @@ null device
  viridisLite            0.4.2     2023-05-02 [1] CRAN (R 4.4.0)
  visiumStitched       * 0.99.0    2024-06-20 [1] Github (LieberInstitute/visiumStitched@8c5c935)
  vroom                  1.6.5     2023-12-05 [1] CRAN (R 4.5.0)
- withr                  3.0.0     2024-01-16 [2] CRAN (R 4.4.0)
+ withr                  3.0.1     2024-07-31 [2] CRAN (R 4.5.0)
  XML                    3.99-0.17 2024-06-25 [2] CRAN (R 4.5.0)
  xml2                   1.3.6     2023-12-04 [2] CRAN (R 4.4.0)
  xtable                 1.8-4     2019-04-21 [2] CRAN (R 4.4.0)
  XVector                0.45.0    2024-05-01 [1] Bioconductor 3.20 (R 4.5.0)
- yaml                   2.3.8     2023-12-11 [2] CRAN (R 4.4.0)
+ yaml                   2.3.10    2024-07-26 [2] CRAN (R 4.5.0)
  zlibbioc               1.51.1    2024-06-05 [1] Bioconductor 3.20 (R 4.5.0)
  zoo                    1.8-12    2023-04-13 [2] CRAN (R 4.4.0)
 
@@ -451,4 +458,4 @@ null device
 
 ──────────────────────────────────────────────────────────────────────────────
 **** Job ends ****
-Mon Jul  1 06:01:34 PM EDT 2024
+Thu Sep 19 02:44:22 PM EDT 2024
