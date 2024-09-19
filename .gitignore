@@ -15,4 +15,5 @@
 /processed-data/01_spaceranger/*
 /processed-data/Images/*
 /processed-data/snRNA-seq/*
-/processed-data/visium_stitching/*
+/processed-data/visium_stitching/Br8325/*
+/processed-data/visium_stitching/combined_Br8325/*
