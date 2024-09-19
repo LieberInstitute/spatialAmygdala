@@ -53,10 +53,10 @@ spe = add_overlap_info(spe, "sum_umi")
 
 #   Filter SPE: take only spots in tissue, drop spots with 0 counts for all
 #   genes, and drop genes with 0 counts in every spot
-spe <- spe[
-    rowSums(assays(spe)$counts) > 0,
-    (colSums(assays(spe)$counts) > 0) & spe$in_tissue
-]
+#spe <- spe[
+#    rowSums(assays(spe)$counts) > 0,
+#    (colSums(assays(spe)$counts) > 0) & spe$in_tissue
+#]
 
 # message(Sys.time(), " - Running quickCluster()")
 # spe$scran_quick_cluster <- quickCluster(
