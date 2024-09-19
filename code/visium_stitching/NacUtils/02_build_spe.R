@@ -17,7 +17,6 @@ library(BiocParallel)
 
 info_path = here('processed-data', 'visium_stitching', 'NacUtils', paste0(group,'.csv'))
 coords_dir = here('processed-data', 'visium_stitching', 'NacUtils', 'spe_inputs')
-spe_dir = here('processed-data', 'visium_stitching', 'NacUtils', 'spe')
 plot_dir = here('plots', 'visium_stitching', 'NacUtils')
 
 wm_genes = c("MBP", "GFAP")
@@ -46,17 +45,14 @@ colnames(spe) = spe$key
 message(Sys.time(), " - Adding overlap info")
 spe$sum_umi = Matrix::colSums(assays(spe)$counts)
 spe = add_overlap_info(spe, "sum_umi")
-
+saveRDS(spe,here(coords_dir, paste0("spe_",group,'.rds')))
 ################################################################################
 #   Filter, log normalize, and save
 ################################################################################
 
 #   Filter SPE: take only spots in tissue, drop spots with 0 counts for all
 #   genes, and drop genes with 0 counts in every spot
-#spe <- spe[
-#    rowSums(assays(spe)$counts) > 0,
-#    (colSums(assays(spe)$counts) > 0) & spe$in_tissue
-#]
+spe <- spe[rowSums(assays(spe)$counts) > 0,(colSums(assays(spe)$counts) > 0) & spe$in_tissue]
 
 # message(Sys.time(), " - Running quickCluster()")
 # spe$scran_quick_cluster <- quickCluster(
@@ -99,6 +95,7 @@ p = spot_plot(
     is_discrete = FALSE, assayname = 'logcounts', minCount = 0,
     multi_gene_method = 'pca', spatial = TRUE
 )
+
 
 pdf(file.path(plot_dir, paste0(group,'_WM.pdf')), width = 8, height = 12)
 print(p)
