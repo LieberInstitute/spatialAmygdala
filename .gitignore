@@ -9,6 +9,7 @@
 *.Rdata
 *.rds
 *.csv
+*trakem2*
 
 # Data directories
 /raw-data/*
