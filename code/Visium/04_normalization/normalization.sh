@@ -1,10 +1,11 @@
 #!/bin/bash
-#$ -cwd
-#$ -l mem_free=20G,h_vmem=20G,h_fsize=80G
-#$ -N spatialAMY_normalization
-#$ -o logs/normalization.txt
-#$ -e logs/normalization.txt
-#$ -m e
+#SBATCH --job-name=spatialAMY_norm
+#SBATCH --output=logs/spatialAMY_norm.txt
+#SBATCH --error=logs/spatialAMY_norm.txt
+#SBATCH --mem=128G
+#SBATCH --mail-type=FAIL
+#SBATCH --mail-type=END
+#SBATCH --mail-user=mtotty2@jh.edu
 
 echo "**** Job starts ****"
 date
@@ -17,7 +18,7 @@ echo "Hostname: ${HOSTNAME}"
 echo "Task id: ${SGE_TASK_ID}"
 
 ## Load the R module (absent since the JHPCE upgrade to CentOS v7)
-module load conda_R
+module load conda_R/4.3
 
 ## List current modules for reproducibility
 module list

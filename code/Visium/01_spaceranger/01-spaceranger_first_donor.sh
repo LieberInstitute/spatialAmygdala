@@ -68,5 +68,3 @@ date
 ## available from http://research.libd.org/sgejobs/
 
 
-
-/dcs04/lieber/marmaypag/spatialAMY_LIBD4125/spatialAmygdala/raw-data/FASTQ/

@@ -1,16 +1,16 @@
 **** Job starts ****
-/var/spool/slurm/d/job3485292/slurm_script: line 7: datelog: command not found
+/var/spool/slurm/d/job10530774/slurm_script: line 7: datelog: command not found
 **** JHPCE info ****
 User: mtotty
 Job id: 
 Job name: 
-Hostname: compute-065
+Hostname: compute-124
 Task id: 
-Loading conda_R/4.3.x
+Loading conda_R/4.4
 
 Currently Loaded Modules:
-  1) JHPCE_ROCKY9_DEFAULT_ENV   3) conda/3-23.3.1
-  2) JHPCE_tools/3.0            4) conda_R/4.3.x
+  1) JHPCE_ROCKY9_DEFAULT_ENV   3) conda/3-24.3.0
+  2) JHPCE_tools/3.0            4) conda_R/4.4
 
  
 
@@ -55,8 +55,8 @@ The following objects are masked from ‘package:base’:
     colnames, dirname, do.call, duplicated, eval, evalq, Filter, Find,
     get, grep, grepl, intersect, is.unsorted, lapply, Map, mapply,
     match, mget, order, paste, pmax, pmax.int, pmin, pmin.int,
-    Position, rank, rbind, Reduce, rownames, sapply, setdiff, sort,
-    table, tapply, union, unique, unsplit, which.max, which.min
+    Position, rank, rbind, Reduce, rownames, sapply, setdiff, table,
+    tapply, union, unique, unsplit, which.max, which.min
 
 Loading required package: S4Vectors
 
@@ -97,38 +97,39 @@ Registered S3 method overwritten by 'ggside':
   +.gg   ggplot2
 Loading required package: scuttle
 class: SpatialExperiment 
-dim: 26771 171527 
+dim: 36601 227302 
 metadata(0):
-assays(1): counts
-rownames(26771): MIR1302-2HG AL627309.1 ... AC007325.4 AC007325.2
-rowData names(6): source type ... gene_name Symbol.uniq
-colnames(171527): AAACAAGTATCTCCCA-1 AAACACCAATAACTGC-1 ...
-  TTGTTTCATTAGTCTA-1 TTGTTTCCATACAACT-1
-colData names(35): sample_id in_tissue ... expr_chrM_ratio_z
-  local_outliers
-reducedDimNames(3): 10x_pca 10x_tsne 10x_umap
+assays(2): counts logcounts
+rownames(36601): ENSG00000243485 ENSG00000237613 ... ENSG00000278817
+  ENSG00000277196
+rowData names(1): symbol
+colnames(227302): AAACAAGTATCTCCCA-1_V13Y24-346_A1
+  AAACAATCTACTAGCA-1_V13Y24-346_A1 ... TTGTTTCATTAGTCTA-1_V13B23-407_C1
+  TTGTTTCCATACAACT-1_V13B23-407_C1
+colData names(37): in_tissue array_row ... subsets_mito_percent_z
+  sizeFactor
+reducedDimNames(0):
 mainExpName: NULL
 altExpNames(0):
 spatialCoords names(2) : pxl_col_in_fullres pxl_row_in_fullres
 imgData names(4): sample_id image_id data scaleFactor
 
-V13F27-349_A1 V13F27-349_B1 V13F27-349_C1 V13F27-349_D1 V13F27-354_A1 
-         4751          4202          4897          4812          4992 
-V13F27-354_B1 V13F27-354_C1 V13F27-354_D1 V13F27-359_A1 V13F27-359_B1 
-         4681          4723          4918          4014          4517 
-V13F27-359_C1 V13F27-359_D1 V13F27-366_A1 V13F27-366_B1 V13F27-366_C1 
-         4798          4648          4972          3735          4834 
-V13F27-366_D1 V13M06-387_A1 V13M06-387_B1 V13M06-387_C1 V13M06-387_D1 
-         4940          3694          3882          3453          3280 
-V13M06-388_A1 V13M06-388_B1 V13M06-388_C1 V13M06-388_D1 V13Y24-345_A1 
-         3986          3571          3999          4020          4981 
-V13Y24-345_B1 V13Y24-345_C1 V13Y24-345_D1 V13Y24-346_A1 V13Y24-346_B1 
-         4490          4505          4991          4740          4488 
-V13Y24-346_D1 V13Y24-347_A1 V13Y24-347_B1 V13Y24-347_C1 V13Y24-347_D1 
-         4660          4268          4464          4313          3852 
-V13Y24-348_A1 V13Y24-348_B1 V13Y24-348_C1 V13Y24-348_D1 
-         4143          4700          4636          3977 
+Br2743 Br6423 Br6471 Br6660 Br8325 Br9192 Br9280 
+ 32854  34353  37795  37085  29885  28608  26722 
 Gene filtering: removing mitochondrial genes
 removed 13 mitochondrial genes
-Gene filtering: retaining genes with at least 3 counts in at least 0.5% (n = 19) of spatial locations
-removed 22951 out of 26758 genes due to low expression
+Gene filtering: retaining genes with at least 3 counts in at least 0.5% (n = 165) of spatial locations
+removed 34162 out of 36588 genes due to low expression
+Gene filtering: removing mitochondrial genes
+removed 13 mitochondrial genes
+Gene filtering: retaining genes with at least 3 counts in at least 0.5% (n = 172) of spatial locations
+removed 31834 out of 36588 genes due to low expression
+Gene filtering: removing mitochondrial genes
+removed 13 mitochondrial genes
+Gene filtering: retaining genes with at least 3 counts in at least 0.5% (n = 189) of spatial locations
+removed 33563 out of 36588 genes due to low expression
+Gene filtering: removing mitochondrial genes
+removed 13 mitochondrial genes
+Gene filtering: retaining genes with at least 3 counts in at least 0.5% (n = 186) of spatial locations
+removed 32319 out of 36588 genes due to low expression
+slurmstepd: error: *** JOB 10530774 ON compute-124 CANCELLED AT 2024-11-13T11:46:00 DUE TO TIME LIMIT ***

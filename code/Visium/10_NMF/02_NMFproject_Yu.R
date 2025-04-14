@@ -1,31 +1,20 @@
 library(SpatialExperiment)
-library(scater)
 library(RcppML)
-library(ggspavis)
 library(here)
-library(scRNAseq)
 library(Matrix)
-library(scran)
-library(scuttle)
 library(ggplot2)
-library(pheatmap)
-library(RColorBrewer)
-library(igraph)
-library(bluster)
 library(patchwork)
-library(cowplot)
 library(projectR)
-library(spatialLIBD)
 
 plot_dir <- here("plots","10_NMF", "NMF_Yu")
-processed_dir <- here("processed-data", "10_NMF")
+processed_dir <- here("processed-data", "Visium","10_NMF")
 
 # load NMF results
 load(here(processed_dir,"NMF_Yu", "RcppML_NMF_Yu.rda"))
 #x
 
 # load Spatial object
-load(here("processed-data","08_clustering", "BayesSpace", "spe_clusters_k10.Rdata"))
+load(here("processed-data","Visium","08_clustering", "BayesSpace", "spe_clusters_k10.Rdata"))
 spe
 # class: SpatialExperiment 
 # dim: 28412 29885 
@@ -42,7 +31,7 @@ spe
 # imgData names(4): sample_id image_id data scaleFactor
 
 # load Single Nucleus object
-load(here("processed-data", "snRNA-seq", "yu_sce_gtf.rda"))
+load(here("processed-data", "snRNAseq", "yu_sce_gtf.rda"))
 sce <- sce.amy
 sce
 

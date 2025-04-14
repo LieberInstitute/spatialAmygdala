@@ -1,11 +1,12 @@
 suppressPackageStartupMessages(library("here"))
 suppressPackageStartupMessages(library("scran"))
 
-load(here("processed-data", "03_qc_metrics", "spe_local_outliers.Rdata"), verbose = TRUE)
+load(here("processed-data", "Visium", "03_qc_metrics", "spe_stitched_local_outliers.Rdata"), verbose = TRUE)
 spe
 
 # discard out of tissue spots
 spe <- spe[,colData(spe)$in_tissue]
+
 
 # Discard bad spots
 spe <- spe[,!colData(spe)$local_outliers]
@@ -13,8 +14,8 @@ spe <- spe[,!colData(spe)$local_outliers]
 # drop mito genes
 spe <- spe[!grepl("^MT-", rownames(spe)),]
 
-# drop bad brnum Br9469
-spe <- spe[,colData(spe)$brnum != "Br9469"]
+# drop bad brnum Br9469, Br9017", "Br9206"
+spe <- spe[,!grepl("Br9469|Br9017|Br9206", colData(spe)$brnum)]
 
 # calculate library size factors
 spe <- computeLibraryFactors(spe)
@@ -26,15 +27,15 @@ summary(sizeFactors(spe))
 # Voyager vingette is doing the below. I'll try it. https://pachterlab.github.io/voyager/articles/vig2_visium.html
 
 dim(spe)
-#[1]  26758 134288
+#[1]  36601 227303
 
 spe<- spe[, sizeFactors(spe) > 0]
 dim(spe)
-#[1]  26758 134287
+#[1]  36601 227302
 
 
 spe <- logNormCounts(spe)
 
 # This actually worked. It looks like only one spot was causing the issue
 
-save(spe, file = here::here("processed-data", "04_normalization", "spe_norm.Rdata"))
+save(spe, file = here::here("processed-data", "04_normalization", "spe_stitched_norm.Rdata"))

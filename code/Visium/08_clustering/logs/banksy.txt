@@ -1,0 +1,27 @@
+**** Job starts ****
+Tue Oct 22 09:47:17 PM EDT 2024
+**** JHPCE info ****
+User: mtotty
+Job id: 
+Job name: 
+Hostname: compute-119
+Loading objects:
+  spe
+class: SpatialExperiment 
+dim: 25801 308044 
+metadata(0):
+assays(2): counts logcounts
+rownames(25801): MIR1302-2HG AL627309.1 ... AC007325.4 AC007325.2
+rowData names(6): source type ... gene_name Symbol.uniq
+colnames(308044): AAACAAGTATCTCCCA-1 AAACACCAATAACTGC-1 ...
+  TTGTTTCCATACAACT-1 TTGTTTGTGTAAATTC-1
+colData names(36): sample_id in_tissue ... local_outliers sizeFactor
+reducedDimNames(4): 10x_pca 10x_tsne 10x_umap PCA
+mainExpName: NULL
+altExpNames(0):
+spatialCoords names(2) : pxl_col_in_fullres pxl_row_in_fullres
+imgData names(4): sample_id image_id data scaleFactor
+List of length 8
+names(8): 10x_pca 10x_tsne 10x_umap ... UMAP_M1_lam0.4 UMAP_Harmony_BANKSY
+**** Job ends ****
+Tue Oct 22 11:44:35 PM EDT 2024

@@ -1,26 +1,14 @@
 library(SpatialExperiment)
-library(scater)
 library(RcppML)
-library(ggspavis)
 library(here)
-library(scRNAseq)
 library(Matrix)
-library(scran)
-library(scuttle)
-library(ggplot2)
-library(pheatmap)
-library(RColorBrewer)
-library(igraph)
-library(bluster)
-library(patchwork)
-library(cowplot)
 
 
 plot_dir <- here("plots","10_NMF", "NMF_LIBD")
-processed_dir <- here("processed-data", "snRNA-seq")
+processed_dir <- here("processed-data", "snRNAseq")
 
 # get toy brain data
-load(here(processed_dir, "BLA_sce_annotated.rda"))
+sce <- readRDS(here(processed_dir, "sce.human_all_genes.rds"))
 sce
 
 # get logcounts
@@ -45,4 +33,4 @@ end_time <- Sys.time()
 print(end_time - start_time)
 # Time difference of 19.1871 mins
 
-save(x,file=here("processed-data","10_NMF", "NMF_LIBD","RcppML_NMF_LIBD.rda"))
+save(x,file=here("processed-data", "Visium","10_NMF", "NMF_LIBD","RcppML_NMF_LIBD_human_allGenes.rda"))

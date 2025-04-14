@@ -1,8 +1,8 @@
 #!/bin/bash
-#SBATCH --job-name=spatialAMY_dimred
-#SBATCH --output=logs/spatialAMY_dimred.txt
-#SBATCH --error=logs/spatialAMY_dimred.txt
-#SBATCH --mem=80G
+#SBATCH --job-name=spatialAMY_dimred_GLM-PCA
+#SBATCH --output=logs/spatialAMY_dimred_GLM-PCA.txt
+#SBATCH --error=logs/spatialAMY_dimred_GLM-PCA.txt
+#SBATCH --mem=250G
 #SBATCH --mail-type=FAIL
 #SBATCH --mail-type=END
 #SBATCH --mail-user=mtotty2@jh.edu
@@ -18,8 +18,8 @@ echo "Job name: ${JOB_NAME}"
 echo "Hostname: ${HOSTNAME}"
 
 
-## Load the R module (absent since the JHPCE upgrade to CentOS v7)
-module load conda_R
+## Load the R module 
+module load conda_R/4.4
 
 ## List current modules for reproducibility
 module list

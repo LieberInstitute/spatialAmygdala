@@ -10,7 +10,7 @@ suppressPackageStartupMessages({
 })
 
 #start from spe without batch correction
-load(here("processed-data", "04_normalization", "spe_norm.Rdata"))
+load(here("processed-data", "04_normalization", "spe_stitched_norm.Rdata"))
 
 colnames(spe) <- spe$key
 

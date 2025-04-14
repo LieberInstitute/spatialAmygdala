@@ -1,0 +1,36 @@
+**** Job starts ****
+Mon Nov 18 07:48:13 PM EST 2024
+**** JHPCE info ****
+User: mtotty
+Job id: 10786427
+Job name: 02_segmentation_b2c
+Node name: compute-154
+Task id: 
+Loading LIBD SLURM module for bin2cell/0.3.0
+
+Currently Loaded Modules:
+  1) JHPCE_ROCKY9_DEFAULT_ENV   3) conda/3-24.3.0
+  2) JHPCE_tools/3.0            4) bin2cell/0.3.0
+
+ 
+
+2024-11-18 19:49:36.819261: I tensorflow/core/util/port.cc:110] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2024-11-18 19:49:36.822086: I tensorflow/tsl/cuda/cudart_stub.cc:28] Could not find cuda drivers on your machine, GPU will not be used.
+2024-11-18 19:49:36.858789: I tensorflow/tsl/cuda/cudart_stub.cc:28] Could not find cuda drivers on your machine, GPU will not be used.
+2024-11-18 19:49:36.859062: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F AVX512_VNNI AVX512_BF16 AVX_VNNI AMX_TILE AMX_INT8 AMX_BF16 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2024-11-18 19:49:38.013607: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+[ WARN:0@83.419] global loadsave.cpp:241 findDecoder imread_('/dcs04/lieber/marmaypag/spatialAMY_LIBD4125/spatialAmygdala/processed-data/VisiumHD/03_bin2cell/stardist/he_AmyHD.tiff'): can't open/read file: check file path/integrity
+anndata.py (1840): Variable names are not unique. To make them unique, call `.var_names_make_unique`.
+_utils.py (313): Matplotlib is currently using agg, which is a non-GUI backend, so cannot show the figure.
+Traceback (most recent call last):
+  File "02_segmentation_b2c.py", line 46, in <module>
+    b2c.stardist(
+  File "/jhpce/shared/libd/core/bin2cell/0.3.0/bin2cell_env/lib/python3.8/site-packages/bin2cell/bin2cell.py", line 117, in stardist
+    img = load_image(image_path, gray=(stardist_model=="2D_versatile_fluo"), dtype=np.float16)
+  File "/jhpce/shared/libd/core/bin2cell/0.3.0/bin2cell_env/lib/python3.8/site-packages/bin2cell/bin2cell.py", line 59, in load_image
+    img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
+cv2.error: OpenCV(4.10.0) /io/opencv/modules/imgproc/src/color.cpp:196: error: (-215:Assertion failed) !_src.empty() in function 'cvtColor'
+
+**** Job ends ****
+Mon Nov 18 07:49:40 PM EST 2024

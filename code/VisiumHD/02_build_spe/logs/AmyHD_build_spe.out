@@ -1,0 +1,25 @@
+**** Job starts ****
+Fri Nov 15 11:25:34 AM EST 2024
+**** SLURM info ****
+User: mtotty
+Job id: 10587532
+Job name: AmyHD_build_spe
+Hostname: compute-160
+Task id: 
+class: SpatialExperiment 
+dim: 18085 9652564 
+metadata(0):
+assays(2): '' counts
+rownames(18085): ENSG00000187634 ENSG00000188976 ... ENSG00000198695
+  ENSG00000198727
+rowData names(1): symbol
+colnames(9652564): s_002um_02058_00301-1 s_002um_00700_02130-1 ...
+  s_002um_02189_01783-1 s_002um_03010_00102-1
+colData names(5): barcode in_tissue array_row array_col sample_id
+reducedDimNames(0):
+mainExpName: NULL
+altExpNames(0):
+spatialCoords names(2) : xcoord ycoord
+imgData names(0):
+**** Job ends ****
+Fri Nov 15 11:34:05 AM EST 2024

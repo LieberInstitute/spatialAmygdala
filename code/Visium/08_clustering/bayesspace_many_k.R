@@ -11,7 +11,7 @@ suppressPackageStartupMessages({
     library("patchwork")
 })
 
-load(here("processed-data", "07_batch_correction", "spe_mnn.Rdata"))
+load(here("processed-data","Visium", "07_batch_correction", "spe_harmony.Rdata"))
 dim(spe)
 
 k <- as.numeric(Sys.getenv("SLURM_ARRAY_TASK_ID"))
@@ -27,7 +27,7 @@ metadata(spe)$BayesSpace.data <- list(platform = "Visium", is.enhanced = FALSE)
 message("Running spatialCluster()")
 Sys.time()
 set.seed(2)
-spe <- spatialCluster(spe, use.dimred = "pp-GLM-PCA", q = k, nrep=10000, burn.in=100, gamma=3)
+spe <- spatialCluster(spe, use.dimred = "HARMONY", q = k, nrep=10000, burn.in=100, gamma=3)
 Sys.time()
 
 bayesSpace_name <- paste0("BayesSpace_", k)
@@ -36,21 +36,18 @@ colnames(colData(spe))[ncol(colData(spe))] <- bayesSpace_name
 cluster_export(
     spe,
     bayesSpace_name,
-    cluster_dir = here::here("processed-data", "08_clustering", "BayesSpace","HVGs","cluster_csv")
+    cluster_dir = here::here("processed-data","Visium", "08_clustering", "BayesSpace","HVGs","cluster_csv")
 )
 
 clustV <- bayesSpace_name
 
-pdf(file = here::here("plots", "08_clustering", "BayesSpace", paste0(bayesSpace_name, ".pdf")), width = 21, height = 20)
 
-p1 <- vis_clus(spe = spe, sampleid = unique(colData(spe)$sample_id)[1], clustervar = clustV, point_size = 2)
-p2 <- vis_clus(spe = spe, sampleid = unique(colData(spe)$sample_id)[2], clustervar = clustV, point_size = 2)
-p3 <- vis_clus(spe = spe, sampleid = unique(colData(spe)$sample_id)[3], clustervar = clustV, point_size = 2)
-p4 <- vis_clus(spe = spe, sampleid = unique(colData(spe)$sample_id)[4], clustervar = clustV, point_size = 2)
-p5 <- vis_clus(spe = spe, sampleid = unique(colData(spe)$sample_id)[5], clustervar = clustV, point_size = 2)
-p6 <- vis_clus(spe = spe, sampleid = unique(colData(spe)$sample_id)[6], clustervar = clustV, point_size = 2)
-p7 <- vis_clus(spe = spe, sampleid = unique(colData(spe)$sample_id)[7], clustervar = clustV, point_size = 2)
-p8 <- vis_clus(spe = spe, sampleid = unique(colData(spe)$sample_id)[8], clustervar = clustV, point_size = 2)
-
-(p1|p2|p3|p4)/(p5|p6|p7|p8)
+# loop through each sample_id and create a pdf on a separete page
+pdf(file = here::here("plots", "08_clustering", "BayesSpace", paste0(precast_name, ".pdf")), width = 10, height = 10)
+for (sample_id in unique(colData(spe)$sample_id)) {
+    spe.subset <- spe[, colData(spe)$sample_id == sample_id]
+    p <- make_escheR(spe.subset) |>
+        add_fill(var=clustV)
+    print(p)
+}
 dev.off()

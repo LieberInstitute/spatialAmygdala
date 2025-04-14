@@ -10,9 +10,10 @@ suppressPackageStartupMessages({
     library("spatialLIBD")
     library("gridExtra")
     library("ggspavis")
+    library("escheR")
 })
 
-load(here("processed-data", "04_normalization", "spe_norm.Rdata"))
+load(here("processed-data", "04_normalization", "spe_stitched_norm.Rdata"))
 colnames(spe) <- spe$key
 
 # drop duplicated colData, if any
@@ -48,16 +49,28 @@ cluster_export(
 )
 
 
-pdf(file = here::here("plots", "08_clustering", "PRECAST", paste0(precast_name, ".pdf")), width = 21, height = 12)
+# pdf(file = here::here("plots", "08_clustering", "PRECAST", paste0(precast_name, ".pdf")), width = 30, height = 15)
 
-p1 <- vis_clus(spe = spe, sampleid = unique(colData(spe)$sample_id)[1], clustervar = "PRECAST_cluster",point_size = 1.5)
-p2 <- vis_clus(spe = spe, sampleid = unique(colData(spe)$sample_id)[2], clustervar = "PRECAST_cluster",point_size = 1.5)
-p3 <- vis_clus(spe = spe, sampleid = unique(colData(spe)$sample_id)[3], clustervar = "PRECAST_cluster",point_size = 1.5)
-p4 <- vis_clus(spe = spe, sampleid = unique(colData(spe)$sample_id)[4], clustervar = "PRECAST_cluster",point_size = 1.5)
-p5 <- vis_clus(spe = spe, sampleid = unique(colData(spe)$sample_id)[5], clustervar = "PRECAST_cluster",point_size = 1.5)
-p6 <- vis_clus(spe = spe, sampleid = unique(colData(spe)$sample_id)[6], clustervar = "PRECAST_cluster",point_size = 1.5)
-p7 <- vis_clus(spe = spe, sampleid = unique(colData(spe)$sample_id)[7], clustervar = "PRECAST_cluster",point_size = 1.5)
-p8 <- vis_clus(spe = spe, sampleid = unique(colData(spe)$sample_id)[8], clustervar = "PRECAST_cluster",point_size = 1.5)
+# p1 <- vis_clus(spe = spe, sampleid = unique(colData(spe)$sample_id)[1], clustervar = "PRECAST_cluster",point_size = 1.5)
+# p2 <- vis_clus(spe = spe, sampleid = unique(colData(spe)$sample_id)[2], clustervar = "PRECAST_cluster",point_size = 1.5)
+# p3 <- vis_clus(spe = spe, sampleid = unique(colData(spe)$sample_id)[3], clustervar = "PRECAST_cluster",point_size = 1.5)
+# p4 <- vis_clus(spe = spe, sampleid = unique(colData(spe)$sample_id)[4], clustervar = "PRECAST_cluster",point_size = 1.5)
+# p5 <- vis_clus(spe = spe, sampleid = unique(colData(spe)$sample_id)[5], clustervar = "PRECAST_cluster",point_size = 1.5)
+# p6 <- vis_clus(spe = spe, sampleid = unique(colData(spe)$sample_id)[6], clustervar = "PRECAST_cluster",point_size = 1.5)
+# p7 <- vis_clus(spe = spe, sampleid = unique(colData(spe)$sample_id)[7], clustervar = "PRECAST_cluster",point_size = 1.5)
 
-(p1|p2|p3|p4)/(p5|p6|p7|p8)
+
+
+# (p1|p2|p3|p4)/(p5|p6|p7)
+# dev.off()
+
+
+# loop through each sample_id and create a pdf on a separete page
+pdf(file = here::here("plots", "08_clustering", "PRECAST", paste0(precast_name, ".pdf")), width = 10, height = 10)
+for (sample_id in unique(colData(spe)$sample_id)) {
+    spe.subset <- spe[, colData(spe)$sample_id == sample_id]
+    p <- make_escheR(spe.subset) |>
+        add_fill(var="PRECAST_cluster")
+    print(p)
+}
 dev.off()

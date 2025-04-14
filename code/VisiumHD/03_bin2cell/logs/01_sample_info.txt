@@ -1,0 +1,18 @@
+**** Job starts ****
+Sun Nov 24 12:55:04 PM EST 2024
+**** JHPCE info ****
+User: mtotty
+Job id: 10876537
+Job name: 01_sample_info
+Node name: compute-169
+Task id: 
+Loading conda_R/4.4
+
+Currently Loaded Modules:
+  1) JHPCE_ROCKY9_DEFAULT_ENV   3) conda/3-24.3.0
+  2) JHPCE_tools/3.0            4) conda_R/4.4
+
+ 
+
+**** Job ends ****
+Sun Nov 24 12:55:05 PM EST 2024

@@ -1,0 +1,12 @@
+Loading LIBD SLURM module for bin2cell/0.3.0
+
+Currently Loaded Modules:
+  1) JHPCE_ROCKY9_DEFAULT_ENV   3) conda/3-24.3.0
+  2) JHPCE_tools/3.0            4) bin2cell/0.3.0
+
+ 
+
+anndata.py (1840): Variable names are not unique. To make them unique, call `.var_names_make_unique`.
+anndata.py (1840): Variable names are not unique. To make them unique, call `.var_names_make_unique`.
+anndata.py (1840): Variable names are not unique. To make them unique, call `.var_names_make_unique`.
+anndata.py (1840): Variable names are not unique. To make them unique, call `.var_names_make_unique`.

@@ -1,16 +1,17 @@
 **** Job starts ****
-Fri Oct 27 12:23:33 PM EDT 2023
+Mon Feb 24 05:01:43 PM EST 2025
 **** JHPCE info ****
 User: mtotty
 Job id: 
 Job name: 
-Hostname: compute-141
+Hostname: compute-124
 Task id: 
-Loading conda_R/4.3
+Unloading conda_R/4.4
+Loading conda_R/4.4
 
 Currently Loaded Modules:
-  1) JHPCE_ROCKY9_DEFAULT_ENV   3) conda/3-23.3.1
-  2) JHPCE_tools/3.0            4) conda_R/4.3
+  1) JHPCE_ROCKY9_DEFAULT_ENV   3) git-status-size/github   5) conda_R/4.4
+  2) JHPCE_tools/3.0            4) conda/3-24.3.0
 
  
 
@@ -55,7 +56,7 @@ The following objects are masked from ‘package:base’:
     colnames, dirname, do.call, duplicated, eval, evalq, Filter, Find,
     get, grep, grepl, intersect, is.unsorted, lapply, Map, mapply,
     match, mget, order, paste, pmax, pmax.int, pmin, pmin.int,
-    Position, rank, rbind, Reduce, rownames, sapply, setdiff, sort,
+    Position, rank, rbind, Reduce, rownames, sapply, saveRDS, setdiff,
     table, tapply, union, unique, unsplit, which.max, which.min
 
 Loading required package: S4Vectors
@@ -93,95 +94,113 @@ The following objects are masked from ‘package:matrixStats’:
 here() starts at /dcs04/lieber/marmaypag/spatialAMY_LIBD4125/spatialAmygdala
 Loading required package: scuttle
 Loading required package: ggplot2
-Loading objects:
-  spe
 class: SpatialExperiment 
-dim: 28412 39936 
+dim: 36601 354432 
 metadata(0):
 assays(1): counts
-rownames(28412): MIR1302-2HG AL627309.1 ... AC007325.4 AC007325.2
-rowData names(6): source type ... gene_name Symbol.uniq
-colnames(39936): AAACAACGAATAGTTC-1 AAACAAGTATCTCCCA-1 ...
-  TTGTTTGTATTACACG-1 TTGTTTGTGTAAATTC-1
-colData names(26): sample_id in_tissue ... replicate overlaps_tissue
-reducedDimNames(3): 10x_pca 10x_tsne 10x_umap
+rownames(36601): ENSG00000243485 ENSG00000237613 ... ENSG00000278817
+  ENSG00000277196
+rowData names(7): source type ... gene_type gene_search
+colnames(354432): AAACAACGAATAGTTC-1_V13Y24-346_A1
+  AAACAAGTATCTCCCA-1_V13Y24-346_A1 ... TTGTTTGTATTACACG-1_V13F27-349_D1
+  TTGTTTGTGTAAATTC-1_V13F27-349_D1
+colData names(31): sample_id in_tissue ... overlap_key
+  exclude_overlapping
+reducedDimNames(0):
 mainExpName: NULL
 altExpNames(0):
 spatialCoords names(2) : pxl_col_in_fullres pxl_row_in_fullres
 imgData names(4): sample_id image_id data scaleFactor
-null device 
-          1 
-null device 
-          1 
-null device 
-          1 
-null device 
-          1 
-Registered S3 method overwritten by 'ggside':
-  method from   
-  +.gg   ggplot2
-is_mito
-FALSE  TRUE 
-28399    13 
- [1] "MT-ND1"  "MT-ND2"  "MT-CO1"  "MT-CO2"  "MT-ATP8" "MT-ATP6" "MT-CO3" 
- [8] "MT-ND3"  "MT-ND4L" "MT-ND4"  "MT-ND5"  "MT-ND6"  "MT-CYB" 
- [1] "sample_id"              "in_tissue"              "array_row"             
- [4] "array_col"              "10x_graphclust"         "10x_kmeans_10_clusters"
- [7] "10x_kmeans_2_clusters"  "10x_kmeans_3_clusters"  "10x_kmeans_4_clusters" 
-[10] "10x_kmeans_5_clusters"  "10x_kmeans_6_clusters"  "10x_kmeans_7_clusters" 
-[13] "10x_kmeans_8_clusters"  "10x_kmeans_9_clusters"  "key"                   
-[16] "sum_umi"                "sum_gene"               "expr_chrM"             
-[19] "expr_chrM_ratio"        "ManualAnnotation"       "slide"                 
-[22] "array"                  "brnum"                  "species"               
-[25] "replicate"              "overlaps_tissue"        "sum"                   
-[28] "detected"               "subsets_mito_sum"       "subsets_mito_detected" 
-[31] "subsets_mito_percent"   "total"                 
-null device 
-          1 
-null device 
-          1 
-qc_lib_size
-FALSE  TRUE 
-29814    71 
-`geom_smooth()` using formula = 'y ~ x'
-`stat_bin()` using `bins = 30`. Pick better value with `binwidth`.
-`stat_bin()` using `bins = 30`. Pick better value with `binwidth`.
-null device 
-          1 
-`geom_smooth()` using formula = 'y ~ x'
-`stat_bin()` using `bins = 30`. Pick better value with `binwidth`.
-`stat_bin()` using `bins = 30`. Pick better value with `binwidth`.
-null device 
-          1 
-`geom_smooth()` using formula = 'y ~ x'
-`stat_bin()` using `bins = 30`. Pick better value with `binwidth`.
-`stat_bin()` using `bins = 30`. Pick better value with `binwidth`.
-null device 
-          1 
-null device 
-          1 
-qc_detected
-FALSE  TRUE 
-29786    99 
-null device 
-          1 
-qc_mito
-FALSE  TRUE 
-29736   149 
-null device 
-          1 
-null device 
-          1 
-null device 
-          1 
+ [1] "sample_id"                   "in_tissue"                  
+ [3] "X10x_graphclust"             "X10x_kmeans_10_clusters"    
+ [5] "X10x_kmeans_2_clusters"      "X10x_kmeans_3_clusters"     
+ [7] "X10x_kmeans_4_clusters"      "X10x_kmeans_5_clusters"     
+ [9] "X10x_kmeans_6_clusters"      "X10x_kmeans_7_clusters"     
+[11] "X10x_kmeans_8_clusters"      "X10x_kmeans_9_clusters"     
+[13] "key"                         "sum_umi"                    
+[15] "sum_gene"                    "expr_chrM"                  
+[17] "expr_chrM_ratio"             "ManualAnnotation"           
+[19] "capture_area"                "group"                      
+[21] "barcode"                     "array_row_original"         
+[23] "array_col_original"          "array_row"                  
+[25] "array_col"                   "pxl_col_in_fullres_rounded" 
+[27] "pxl_row_in_fullres_rounded"  "pxl_row_in_fullres_original"
+[29] "pxl_col_in_fullres_original" "overlap_key"                
+[31] "exclude_overlapping"        
+Warning message:
+The `switch` argument of `facet_wrap()` is deprecated as of ggplot2 2.2.0.
+ℹ Please use the `strip.position` argument instead. 
+Warning messages:
+1: Removed 2 rows containing non-finite outside the scale range
+(`stat_ydensity()`). 
+2: Removed 2 rows containing missing values or values outside the scale range
+(`position_quasirandom()`). 
 null device 
           1 
 Warning messages:
-1: Transformation introduced infinite values in continuous y-axis 
-2: Transformation introduced infinite values in continuous y-axis 
-3: Removed 3 rows containing non-finite values (`stat_ydensity()`). 
-4: Removed 3 rows containing missing values (`geom_point()`). 
+1: In scale_y_log10() : log-10 transformation introduced infinite values.
+2: In scale_y_log10() : log-10 transformation introduced infinite values.
+3: Removed 2 rows containing non-finite outside the scale range
+(`stat_ydensity()`). 
+4: Removed 2 rows containing missing values or values outside the scale range
+(`geom_point()`). 
 null device 
           1 
+Warning messages:
+1: In scale_y_log10() : log-10 transformation introduced infinite values.
+2: In scale_y_log10() : log-10 transformation introduced infinite values.
+3: Removed 2 rows containing non-finite outside the scale range
+(`stat_ydensity()`). 
+4: Removed 2 rows containing missing values or values outside the scale range
+(`geom_point()`). 
+null device 
+          1 
+Warning messages:
+1: Removed 2 rows containing non-finite outside the scale range
+(`stat_ydensity()`). 
+2: Removed 2 rows containing missing values or values outside the scale range
+(`position_quasirandom()`). 
+3: In scale_y_log10() : log-10 transformation introduced infinite values.
+4: In scale_y_log10() : log-10 transformation introduced infinite values.
+5: Removed 2 rows containing non-finite outside the scale range
+(`stat_ydensity()`). 
+6: Removed 2 rows containing missing values or values outside the scale range
+(`geom_point()`). 
+7: In scale_y_log10() : log-10 transformation introduced infinite values.
+8: In scale_y_log10() : log-10 transformation introduced infinite values.
+9: Removed 2 rows containing non-finite outside the scale range
+(`stat_ydensity()`). 
+10: Removed 2 rows containing missing values or values outside the scale range
+(`geom_point()`). 
+null device 
+          1 
+null device 
+          1 
+null device 
+          1 
+null device 
+          1 
+null device 
+          1 
+null device 
+          1 
+null device 
+          1 
+        
+         FALSE  TRUE
+  Br2743 32659   196
+  Br6423 34217   136
+  Br6471 37567   228
+  Br6660 36847   238
+  Br8325 29753   132
+  Br9017 26335    47
+  Br9192 28553    55
+  Br9206 26798    52
+  Br9280 26585   137
+  Br9469 36577    62
+Error in retrieveCellInfo(object, x, search = "colData") : 
+  cannot find 'array_id'
+Calls: plotColData -> retrieveCellInfo
+Execution halted
 **** Job ends ****
-Fri Oct 27 12:27:51 PM EDT 2023
+Mon Feb 24 05:38:42 PM EST 2025

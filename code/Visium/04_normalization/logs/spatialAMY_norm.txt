@@ -1,0 +1,38 @@
+**** Job starts ****
+Sat Oct 19 10:47:19 PM EDT 2024
+**** JHPCE info ****
+User: mtotty
+Job id: 
+Job name: 
+Hostname: compute-166
+Task id: 
+Loading conda_R/4.3
+
+Currently Loaded Modules:
+  1) JHPCE_ROCKY9_DEFAULT_ENV   3) conda/3-23.3.1
+  2) JHPCE_tools/3.0            4) conda_R/4.3
+
+ 
+
+Loading objects:
+  spe
+Loading required package: SpatialExperiment
+class: SpatialExperiment 
+dim: 25814 309099 
+metadata(0):
+assays(1): counts
+rownames(25814): MIR1302-2HG AL627309.1 ... AC007325.4 AC007325.2
+rowData names(6): source type ... gene_name Symbol.uniq
+colnames(309099): AAACAAGTATCTCCCA-1 AAACACCAATAACTGC-1 ...
+  TTGTTTCCATACAACT-1 TTGTTTGTGTAAATTC-1
+colData names(35): sample_id in_tissue ... expr_chrM_ratio_z
+  local_outliers
+reducedDimNames(3): 10x_pca 10x_tsne 10x_umap
+mainExpName: NULL
+altExpNames(0):
+     Min.   1st Qu.    Median      Mean   3rd Qu.      Max. 
+ 0.000418  0.194200  0.694943  1.000000  1.464642 18.558813 
+[1]  25801 308044
+[1]  25801 308044
+**** Job ends ****
+Sat Oct 19 11:08:24 PM EDT 2024
