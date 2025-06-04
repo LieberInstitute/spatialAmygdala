@@ -12,8 +12,8 @@ plot_dir = here("plots", "Visium", "03_qc_metrics", "stitched")
 processed_dir = here("processed-data","Visium","03_qc_metrics")
 
 # save combined object as rds
-spe <- readRDS(here(processed_dir, "spe_stitched_combined_noQC.Rds"))
-spe
+spe <- readRDS(here(processed_dir, "spe_stitched_combined_noQC.rds"))
+spe 
 
 # ========= Add QC metrics to spe ==========
 colnames(colData(spe))
@@ -114,21 +114,21 @@ plotQCpdf(spe,
         outliers=NULL,
         point_size=.7,
         stroke=0.8,
-        fname=here(plot_dir,"Spotplots", paste0("sum_umi_Spotplots.pdf")))
+        fname=here(plot_dir,"Spotplots", "sum_umi_Spotplots.pdf"))
 
 plotQCpdf(spe,
         metric="sum_gene",
         outliers=NULL,
         point_size=.7,
         stroke=0.8,
-        fname=here(plot_dir,"Spotplots", paste0("sum_gene_Spotplots.pdf")))
+        fname=here(plot_dir,"Spotplots", "sum_gene_Spotplots.pdf"))
 
 plotQCpdf(spe,
         metric="expr_chrM_ratio",
         outliers=NULL,
         point_size=.7,
         stroke=0.8,
-        fname=here(plot_dir,"Spotplots", paste0("Mito_Spotplots.pdf")))
+        fname=here(plot_dir,"Spotplots","Mito_Spotplots.pdf"))
 
 
 # =============== Calculate QC Metrics =================
@@ -155,8 +155,8 @@ save(spe, file = here(processed_dir, "spe_stitched_local_outliers.Rdata"))
 
 
 # load
-load(here(processed_dir, "spe_stitched_local_outliers.Rdata"))
-spe
+# load(here(processed_dir, "spe_stitched_local_outliers.Rdata"))
+# spe
 
 
 # ======= Visualzing QC =========
@@ -166,31 +166,31 @@ plotQCpdf(spe,
         outliers="local_outliers",
         point_size=.7,
         stroke=0.8,
-        fname=here(plot_dir,"Spotplots", paste0("sum_umi_Spotplots_outliers.pdf")))
+        fname=here(plot_dir,"Spotplots", "sum_umi_Spotplots_outliers.pdf"))
 
 plotQCpdf(spe,
         metric="sum_gene",
         outliers="local_outliers",
         point_size=.7,
         stroke=0.8,
-        fname=here(plot_dir,"Spotplots", paste0("sum_gene_Spotplots_outliers.pdf")))
+        fname=here(plot_dir,"Spotplots", "sum_gene_Spotplots_outliers.pdf"))
 
 plotQCpdf(spe,
         metric="expr_chrM_ratio",
         outliers="local_outliers",
         point_size=.7,
         stroke=0.8,
-        fname=here(plot_dir,"Spotplots", paste0("Mito_Spotplots_outliers.pdf")))
+        fname=here(plot_dir,"Spotplots", "Mito_Spotplots_outliers.pdf"))
 
 
 
 # number of local outliers per sample_id
 table(spe$sample_id, spe$local_outliers)
 #          FALSE  TRUE
-#   Br2743 32665   190
+#   Br2743 32659   196
 #   Br6423 34217   136
-#   Br6471 37578   217
-#   Br6660 36860   225
+#   Br6471 37567   228
+#   Br6660 36847   238
 #   Br8325 29753   132
 #   Br9017 26335    47
 #   Br9192 28553    55
