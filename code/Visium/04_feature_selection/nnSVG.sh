@@ -1,8 +1,9 @@
 #!/bin/bash
 #SBATCH --mem=150G
-#SBATCH --job-name=nnSVG
-#SBATCH -o logs/nnSVG.txt
-#SBATCH -e logs/nnSVG.txt
+#SBATCH --cpus-per-task=10
+#SBATCH --job-name=nnSVG_parallel
+#SBATCH -o logs/nnSVG_parallel.txt
+#SBATCH -e logs/nnSVG_parallel.txt
 echo "**** Job starts ****"
 datelog
 

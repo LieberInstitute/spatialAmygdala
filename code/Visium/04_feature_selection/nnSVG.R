@@ -8,30 +8,30 @@ library("nnSVG")
 library("scran")
 
 # save directiories
-plot_dir = here("plots", "05_feature_selection")
-processed_dir = here("processed-data", "05_feature_selection")
+plot_dir = here("plots", "04_feature_selection")
+processed_dir = here("processed-data", "04_feature_selection")
 
 # load object
-load(here("processed-data","04_normalization","spe_stitched_norm.Rdata"))
+load(here("processed-data","Visium","03_qc_metrics","spe_stitched_local_outliers.Rdata"))
 spe
 # class: SpatialExperiment 
-# dim: 36601 227302 
+# dim: 36601 317174 
 # metadata(0):
-# assays(2): counts logcounts
+# assays(1): counts
 # rownames(36601): ENSG00000243485 ENSG00000237613 ... ENSG00000278817
 #   ENSG00000277196
-# rowData names(1): symbol
-# colnames(227302): AAACAAGTATCTCCCA-1_V13Y24-346_A1
-#   AAACAATCTACTAGCA-1_V13Y24-346_A1 ... TTGTTTCATTAGTCTA-1_V13B23-407_C1
-#   TTGTTTCCATACAACT-1_V13B23-407_C1
-# colData names(37): in_tissue array_row ... subsets_mito_percent_z
-#   sizeFactor
+# rowData names(7): source type ... gene_type gene_search
+# colnames(317174): AAACAAGTATCTCCCA-1_V13Y24-346_A1
+#   AAACAATCTACTAGCA-1_V13Y24-346_A1 ... TTGTTTGTATTACACG-1_V13F27-349_D1
+#   TTGTTTGTGTAAATTC-1_V13F27-349_D1
+# colData names(40): sample_id in_tissue ... expr_chrM_ratio_z
+#   local_outliers
 # reducedDimNames(0):
 # mainExpName: NULL
 # altExpNames(0):
 # spatialCoords names(2) : pxl_col_in_fullres pxl_row_in_fullres
-# imgData names(4): sample_id image_id data scaleFactor
 
+rownames(spe) <- rowData(spe)$gene_name
 
 # -------- Spatially aware feature selection -------
 # because we have multiple samples (arrays combined into donors) we will need to run nnSVG
@@ -46,11 +46,17 @@ table(colData(spe)$sample_id)
 # run nnSVG once per sample and store lists of top SVGs
 sample_ids <-unique(colData(spe)$sample_id)
 
-rownames(spe) <- rowData(spe)$symbol
-rowData(spe)$gene_name <- rowData(spe)$symbol
-
 res_list <- as.list(rep(NA, length(sample_ids)))
 names(res_list) <- sample_ids
+
+
+# lognormalization
+# calculate library size factorsAdd commentMore actions
+spe <- computeLibraryFactors(spe)
+spe<- spe[, sizeFactors(spe) > 0]
+dim(spe)
+
+spe <- logNormCounts(spe)
 
 for (s in seq_along(sample_ids)) {
     
@@ -79,7 +85,7 @@ for (s in seq_along(sample_ids)) {
     
     # run nnSVG
     set.seed(123)
-    spe_sub <- nnSVG(spe_sub)
+    spe_sub <- nnSVG(spe_sub, n_threads=10)
     
     # store results for this sample
     res_list[[s]] <- rowData(spe_sub)

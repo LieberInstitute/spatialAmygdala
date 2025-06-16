@@ -1,0 +1,173 @@
+**** Job starts ****
+/var/spool/slurm/d/job17287762/slurm_script: line 8: datelog: command not found
+**** JHPCE info ****
+User: mtotty
+Job id: 
+Job name: 
+Hostname: compute-093
+Task id: 
+Loading conda_R/4.4
+
+Currently Loaded Modules:
+  1) JHPCE_ROCKY9_DEFAULT_ENV   3) conda/3-24.3.0
+  2) JHPCE_tools/3.0            4) conda_R/4.4
+
+ 
+
+Loading required package: SingleCellExperiment
+Loading required package: SummarizedExperiment
+Loading required package: MatrixGenerics
+Loading required package: matrixStats
+
+Attaching package: ‘MatrixGenerics’
+
+The following objects are masked from ‘package:matrixStats’:
+
+    colAlls, colAnyNAs, colAnys, colAvgsPerRowSet, colCollapse,
+    colCounts, colCummaxs, colCummins, colCumprods, colCumsums,
+    colDiffs, colIQRDiffs, colIQRs, colLogSumExps, colMadDiffs,
+    colMads, colMaxs, colMeans2, colMedians, colMins, colOrderStats,
+    colProds, colQuantiles, colRanges, colRanks, colSdDiffs, colSds,
+    colSums2, colTabulates, colVarDiffs, colVars, colWeightedMads,
+    colWeightedMeans, colWeightedMedians, colWeightedSds,
+    colWeightedVars, rowAlls, rowAnyNAs, rowAnys, rowAvgsPerColSet,
+    rowCollapse, rowCounts, rowCummaxs, rowCummins, rowCumprods,
+    rowCumsums, rowDiffs, rowIQRDiffs, rowIQRs, rowLogSumExps,
+    rowMadDiffs, rowMads, rowMaxs, rowMeans2, rowMedians, rowMins,
+    rowOrderStats, rowProds, rowQuantiles, rowRanges, rowRanks,
+    rowSdDiffs, rowSds, rowSums2, rowTabulates, rowVarDiffs, rowVars,
+    rowWeightedMads, rowWeightedMeans, rowWeightedMedians,
+    rowWeightedSds, rowWeightedVars
+
+Loading required package: GenomicRanges
+Loading required package: stats4
+Loading required package: BiocGenerics
+
+Attaching package: ‘BiocGenerics’
+
+The following objects are masked from ‘package:stats’:
+
+    IQR, mad, sd, var, xtabs
+
+The following objects are masked from ‘package:base’:
+
+    anyDuplicated, aperm, append, as.data.frame, basename, cbind,
+    colnames, dirname, do.call, duplicated, eval, evalq, Filter, Find,
+    get, grep, grepl, intersect, is.unsorted, lapply, Map, mapply,
+    match, mget, order, paste, pmax, pmax.int, pmin, pmin.int,
+    Position, rank, rbind, Reduce, rownames, sapply, saveRDS, setdiff,
+    table, tapply, union, unique, unsplit, which.max, which.min
+
+Loading required package: S4Vectors
+
+Attaching package: ‘S4Vectors’
+
+The following object is masked from ‘package:utils’:
+
+    findMatches
+
+The following objects are masked from ‘package:base’:
+
+    expand.grid, I, unname
+
+Loading required package: IRanges
+Loading required package: GenomeInfoDb
+Loading required package: Biobase
+Welcome to Bioconductor
+
+    Vignettes contain introductory material; view with
+    'browseVignettes()'. To cite Bioconductor, see
+    'citation("Biobase")', and for packages 'citation("pkgname")'.
+
+
+Attaching package: ‘Biobase’
+
+The following object is masked from ‘package:MatrixGenerics’:
+
+    rowMedians
+
+The following objects are masked from ‘package:matrixStats’:
+
+    anyMissing, rowMedians
+
+Warning message:
+replacing previous import ‘S4Arrays::read_block’ by ‘DelayedArray::read_block’ when loading ‘SummarizedExperiment’ 
+here() starts at /dcs04/lieber/marmaypag/spatialAMY_LIBD4125/spatialAmygdala
+Loading required package: ggplot2
+Registered S3 method overwritten by 'ggside':
+  method from   
+  +.gg   ggplot2
+Loading required package: scuttle
+class: SpatialExperiment 
+dim: 36601 317174 
+metadata(0):
+assays(1): counts
+rownames(36601): ENSG00000243485 ENSG00000237613 ... ENSG00000278817
+  ENSG00000277196
+rowData names(7): source type ... gene_type gene_search
+colnames(317174): AAACAAGTATCTCCCA-1_V13Y24-346_A1
+  AAACAATCTACTAGCA-1_V13Y24-346_A1 ... TTGTTTGTATTACACG-1_V13F27-349_D1
+  TTGTTTGTGTAAATTC-1_V13F27-349_D1
+colData names(40): sample_id in_tissue ... expr_chrM_ratio_z
+  local_outliers
+reducedDimNames(0):
+mainExpName: NULL
+altExpNames(0):
+spatialCoords names(2) : pxl_col_in_fullres pxl_row_in_fullres
+imgData names(4): sample_id image_id data scaleFactor
+
+Br2743 Br6423 Br6471 Br6660 Br8325 Br9017 Br9192 Br9206 Br9280 Br9469 
+ 32855  34353  37795  37085  29885  26382  28608  26850  26722  36639 
+[1]  36601 317173
+Gene filtering: removing mitochondrial genes
+removed 13 mitochondrial genes
+Gene filtering: retaining genes with at least 3 counts in at least 0.5% (n = 165) of spatial locations
+removed 34162 out of 36588 genes due to low expression
+Gene filtering: removing mitochondrial genes
+removed 13 mitochondrial genes
+Gene filtering: retaining genes with at least 3 counts in at least 0.5% (n = 172) of spatial locations
+removed 31834 out of 36588 genes due to low expression
+Gene filtering: removing mitochondrial genes
+removed 13 mitochondrial genes
+Gene filtering: retaining genes with at least 3 counts in at least 0.5% (n = 189) of spatial locations
+removed 33563 out of 36588 genes due to low expression
+Gene filtering: removing mitochondrial genes
+removed 13 mitochondrial genes
+Gene filtering: retaining genes with at least 3 counts in at least 0.5% (n = 186) of spatial locations
+removed 32319 out of 36588 genes due to low expression
+Gene filtering: removing mitochondrial genes
+removed 13 mitochondrial genes
+Gene filtering: retaining genes with at least 3 counts in at least 0.5% (n = 150) of spatial locations
+removed 32574 out of 36588 genes due to low expression
+Gene filtering: removing mitochondrial genes
+removed 13 mitochondrial genes
+Gene filtering: retaining genes with at least 3 counts in at least 0.5% (n = 132) of spatial locations
+removed 35694 out of 36588 genes due to low expression
+Gene filtering: removing mitochondrial genes
+removed 13 mitochondrial genes
+Gene filtering: retaining genes with at least 3 counts in at least 0.5% (n = 144) of spatial locations
+removed 34163 out of 36588 genes due to low expression
+Gene filtering: removing mitochondrial genes
+removed 13 mitochondrial genes
+Gene filtering: retaining genes with at least 3 counts in at least 0.5% (n = 135) of spatial locations
+removed 36186 out of 36588 genes due to low expression
+Gene filtering: removing mitochondrial genes
+removed 13 mitochondrial genes
+Gene filtering: retaining genes with at least 3 counts in at least 0.5% (n = 134) of spatial locations
+removed 35382 out of 36588 genes due to low expression
+Gene filtering: removing mitochondrial genes
+removed 13 mitochondrial genes
+Gene filtering: retaining genes with at least 3 counts in at least 0.5% (n = 184) of spatial locations
+removed 35707 out of 36588 genes due to low expression
+Warning messages:
+1: In asMethod(object) :
+  sparse->dense coercion: allocating vector of size 1.2 GiB
+2: In asMethod(object) :
+  sparse->dense coercion: allocating vector of size 1.2 GiB
+Br2743 Br6423 Br6471 Br6660 Br8325 Br9017 Br9192 Br9206 Br9280 Br9469 
+  2426   4754   3025   4269   4014    894   2425    402   1206    881 
+[1] 4967   10
+Error: subscript contains invalid names
+Execution halted
+**** Job ends ****
+Thu Jun 12 08:17:25 PM EDT 2025

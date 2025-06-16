@@ -1,0 +1,1384 @@
+Loading conda_R/4.4
+here() starts at /dcs04/lieber/marmaypag/spatialAMY_LIBD4125/spatialAmygdala
+Loading required package: SingleCellExperiment
+Loading required package: SummarizedExperiment
+Loading required package: MatrixGenerics
+Loading required package: matrixStats
+
+Attaching package: ‘MatrixGenerics’
+
+The following objects are masked from ‘package:matrixStats’:
+
+    colAlls, colAnyNAs, colAnys, colAvgsPerRowSet, colCollapse,
+    colCounts, colCummaxs, colCummins, colCumprods, colCumsums,
+    colDiffs, colIQRDiffs, colIQRs, colLogSumExps, colMadDiffs,
+    colMads, colMaxs, colMeans2, colMedians, colMins, colOrderStats,
+    colProds, colQuantiles, colRanges, colRanks, colSdDiffs, colSds,
+    colSums2, colTabulates, colVarDiffs, colVars, colWeightedMads,
+    colWeightedMeans, colWeightedMedians, colWeightedSds,
+    colWeightedVars, rowAlls, rowAnyNAs, rowAnys, rowAvgsPerColSet,
+    rowCollapse, rowCounts, rowCummaxs, rowCummins, rowCumprods,
+    rowCumsums, rowDiffs, rowIQRDiffs, rowIQRs, rowLogSumExps,
+    rowMadDiffs, rowMads, rowMaxs, rowMeans2, rowMedians, rowMins,
+    rowOrderStats, rowProds, rowQuantiles, rowRanges, rowRanks,
+    rowSdDiffs, rowSds, rowSums2, rowTabulates, rowVarDiffs, rowVars,
+    rowWeightedMads, rowWeightedMeans, rowWeightedMedians,
+    rowWeightedSds, rowWeightedVars
+
+Loading required package: GenomicRanges
+Loading required package: stats4
+Loading required package: BiocGenerics
+
+Attaching package: ‘BiocGenerics’
+
+The following objects are masked from ‘package:stats’:
+
+    IQR, mad, sd, var, xtabs
+
+The following objects are masked from ‘package:base’:
+
+    anyDuplicated, aperm, append, as.data.frame, basename, cbind,
+    colnames, dirname, do.call, duplicated, eval, evalq, Filter, Find,
+    get, grep, grepl, intersect, is.unsorted, lapply, Map, mapply,
+    match, mget, order, paste, pmax, pmax.int, pmin, pmin.int,
+    Position, rank, rbind, Reduce, rownames, sapply, setdiff, table,
+    tapply, union, unique, unsplit, which.max, which.min
+
+Loading required package: S4Vectors
+
+Attaching package: ‘S4Vectors’
+
+The following object is masked from ‘package:utils’:
+
+    findMatches
+
+The following objects are masked from ‘package:base’:
+
+    expand.grid, I, unname
+
+Loading required package: IRanges
+Loading required package: GenomeInfoDb
+Loading required package: Biobase
+Welcome to Bioconductor
+
+    Vignettes contain introductory material; view with
+    'browseVignettes()'. To cite Bioconductor, see
+    'citation("Biobase")', and for packages 'citation("pkgname")'.
+
+
+Attaching package: ‘Biobase’
+
+The following object is masked from ‘package:MatrixGenerics’:
+
+    rowMedians
+
+The following objects are masked from ‘package:matrixStats’:
+
+    anyMissing, rowMedians
+
+Loading required package: SeuratObject
+Loading required package: sp
+
+Attaching package: ‘sp’
+
+The following object is masked from ‘package:IRanges’:
+
+    %over%
+
+
+Attaching package: ‘SeuratObject’
+
+The following object is masked from ‘package:SummarizedExperiment’:
+
+    Assays
+
+The following object is masked from ‘package:GenomicRanges’:
+
+    intersect
+
+The following object is masked from ‘package:GenomeInfoDb’:
+
+    intersect
+
+The following object is masked from ‘package:IRanges’:
+
+    intersect
+
+The following object is masked from ‘package:S4Vectors’:
+
+    intersect
+
+The following object is masked from ‘package:BiocGenerics’:
+
+    intersect
+
+The following objects are masked from ‘package:base’:
+
+    intersect, t
+
+
+Attaching package: ‘Seurat’
+
+The following object is masked from ‘package:SummarizedExperiment’:
+
+    Assays
+
+Loading required package: scuttle
+Loading required package: Rcpp
+Computing neighbors...
+Spatial mode is kNN_median
+Parameters: k_geom=6
+Done
+Computing neighbors...
+Spatial mode is kNN_median
+Parameters: k_geom=6
+Done
+Computing harmonic m = 0
+Using 6 neighbors
+Done
+Computing harmonic m = 1
+Using 6 neighbors
+Centering
+Done
+Computing neighbors...
+Spatial mode is kNN_median
+Parameters: k_geom=6
+Done
+Computing neighbors...
+Spatial mode is kNN_median
+Parameters: k_geom=6
+Done
+Computing harmonic m = 0
+Using 6 neighbors
+Done
+Computing harmonic m = 1
+Using 6 neighbors
+Centering
+Done
+Computing neighbors...
+Spatial mode is kNN_median
+Parameters: k_geom=6
+Done
+Computing neighbors...
+Spatial mode is kNN_median
+Parameters: k_geom=6
+Done
+Computing harmonic m = 0
+Using 6 neighbors
+Done
+Computing harmonic m = 1
+Using 6 neighbors
+Centering
+Done
+Computing neighbors...
+Spatial mode is kNN_median
+Parameters: k_geom=6
+Done
+Computing neighbors...
+Spatial mode is kNN_median
+Parameters: k_geom=6
+Done
+Computing harmonic m = 0
+Using 6 neighbors
+Done
+Computing harmonic m = 1
+Using 6 neighbors
+Centering
+Done
+Computing neighbors...
+Spatial mode is kNN_median
+Parameters: k_geom=6
+Done
+Computing neighbors...
+Spatial mode is kNN_median
+Parameters: k_geom=6
+Done
+Computing harmonic m = 0
+Using 6 neighbors
+Done
+Computing harmonic m = 1
+Using 6 neighbors
+Centering
+Done
+Computing neighbors...
+Spatial mode is kNN_median
+Parameters: k_geom=6
+Done
+Computing neighbors...
+Spatial mode is kNN_median
+Parameters: k_geom=6
+Done
+Computing harmonic m = 0
+Using 6 neighbors
+Done
+Computing harmonic m = 1
+Using 6 neighbors
+Centering
+Done
+Computing neighbors...
+Spatial mode is kNN_median
+Parameters: k_geom=6
+Done
+Computing neighbors...
+Spatial mode is kNN_median
+Parameters: k_geom=6
+Done
+Computing harmonic m = 0
+Using 6 neighbors
+Done
+Computing harmonic m = 1
+Using 6 neighbors
+Centering
+Done
+Computing neighbors...
+Spatial mode is kNN_median
+Parameters: k_geom=6
+Done
+Computing neighbors...
+Spatial mode is kNN_median
+Parameters: k_geom=6
+Done
+Computing harmonic m = 0
+Using 6 neighbors
+Done
+Computing harmonic m = 1
+Using 6 neighbors
+Centering
+Done
+Computing neighbors...
+Spatial mode is kNN_median
+Parameters: k_geom=6
+Done
+Computing neighbors...
+Spatial mode is kNN_median
+Parameters: k_geom=6
+Done
+Computing harmonic m = 0
+Using 6 neighbors
+Done
+Computing harmonic m = 1
+Using 6 neighbors
+Centering
+Done
+Computing neighbors...
+Spatial mode is kNN_median
+Parameters: k_geom=6
+Done
+Computing neighbors...
+Spatial mode is kNN_median
+Parameters: k_geom=6
+Done
+Computing harmonic m = 0
+Using 6 neighbors
+Done
+Computing harmonic m = 1
+Using 6 neighbors
+Centering
+Done
+Computing neighbors...
+Spatial mode is kNN_median
+Parameters: k_geom=6
+Done
+Computing neighbors...
+Spatial mode is kNN_median
+Parameters: k_geom=6
+Done
+Computing harmonic m = 0
+Using 6 neighbors
+Done
+Computing harmonic m = 1
+Using 6 neighbors
+Centering
+Done
+Computing neighbors...
+Spatial mode is kNN_median
+Parameters: k_geom=6
+Done
+Computing neighbors...
+Spatial mode is kNN_median
+Parameters: k_geom=6
+Done
+Computing harmonic m = 0
+Using 6 neighbors
+Done
+Computing harmonic m = 1
+Using 6 neighbors
+Centering
+Done
+Computing neighbors...
+Spatial mode is kNN_median
+Parameters: k_geom=6
+Done
+Computing neighbors...
+Spatial mode is kNN_median
+Parameters: k_geom=6
+Done
+Computing harmonic m = 0
+Using 6 neighbors
+Done
+Computing harmonic m = 1
+Using 6 neighbors
+Centering
+Done
+Computing neighbors...
+Spatial mode is kNN_median
+Parameters: k_geom=6
+Done
+Computing neighbors...
+Spatial mode is kNN_median
+Parameters: k_geom=6
+Done
+Computing harmonic m = 0
+Using 6 neighbors
+Done
+Computing harmonic m = 1
+Using 6 neighbors
+Centering
+Done
+Computing neighbors...
+Spatial mode is kNN_median
+Parameters: k_geom=6
+Done
+Computing neighbors...
+Spatial mode is kNN_median
+Parameters: k_geom=6
+Done
+Computing harmonic m = 0
+Using 6 neighbors
+Done
+Computing harmonic m = 1
+Using 6 neighbors
+Centering
+Done
+Computing neighbors...
+Spatial mode is kNN_median
+Parameters: k_geom=6
+Done
+Computing neighbors...
+Spatial mode is kNN_median
+Parameters: k_geom=6
+Done
+Computing harmonic m = 0
+Using 6 neighbors
+Done
+Computing harmonic m = 1
+Using 6 neighbors
+Centering
+Done
+Computing neighbors...
+Spatial mode is kNN_median
+Parameters: k_geom=6
+Done
+Computing neighbors...
+Spatial mode is kNN_median
+Parameters: k_geom=6
+Done
+Computing harmonic m = 0
+Using 6 neighbors
+Done
+Computing harmonic m = 1
+Using 6 neighbors
+Centering
+Done
+Computing neighbors...
+Spatial mode is kNN_median
+Parameters: k_geom=6
+Done
+Computing neighbors...
+Spatial mode is kNN_median
+Parameters: k_geom=6
+Done
+Computing harmonic m = 0
+Using 6 neighbors
+Done
+Computing harmonic m = 1
+Using 6 neighbors
+Centering
+Done
+Computing neighbors...
+Spatial mode is kNN_median
+Parameters: k_geom=6
+Done
+Computing neighbors...
+Spatial mode is kNN_median
+Parameters: k_geom=6
+Done
+Computing harmonic m = 0
+Using 6 neighbors
+Done
+Computing harmonic m = 1
+Using 6 neighbors
+Centering
+Done
+Computing neighbors...
+Spatial mode is kNN_median
+Parameters: k_geom=6
+Done
+Computing neighbors...
+Spatial mode is kNN_median
+Parameters: k_geom=6
+Done
+Computing harmonic m = 0
+Using 6 neighbors
+Done
+Computing harmonic m = 1
+Using 6 neighbors
+Centering
+Done
+Computing neighbors...
+Spatial mode is kNN_median
+Parameters: k_geom=6
+Done
+Computing neighbors...
+Spatial mode is kNN_median
+Parameters: k_geom=6
+Done
+Computing harmonic m = 0
+Using 6 neighbors
+Done
+Computing harmonic m = 1
+Using 6 neighbors
+Centering
+Done
+Computing neighbors...
+Spatial mode is kNN_median
+Parameters: k_geom=6
+Done
+Computing neighbors...
+Spatial mode is kNN_median
+Parameters: k_geom=6
+Done
+Computing harmonic m = 0
+Using 6 neighbors
+Done
+Computing harmonic m = 1
+Using 6 neighbors
+Centering
+Done
+Computing neighbors...
+Spatial mode is kNN_median
+Parameters: k_geom=6
+Done
+Computing neighbors...
+Spatial mode is kNN_median
+Parameters: k_geom=6
+Done
+Computing harmonic m = 0
+Using 6 neighbors
+Done
+Computing harmonic m = 1
+Using 6 neighbors
+Centering
+Done
+Computing neighbors...
+Spatial mode is kNN_median
+Parameters: k_geom=6
+Done
+Computing neighbors...
+Spatial mode is kNN_median
+Parameters: k_geom=6
+Done
+Computing harmonic m = 0
+Using 6 neighbors
+Done
+Computing harmonic m = 1
+Using 6 neighbors
+Centering
+Done
+Computing neighbors...
+Spatial mode is kNN_median
+Parameters: k_geom=6
+Done
+Computing neighbors...
+Spatial mode is kNN_median
+Parameters: k_geom=6
+Done
+Computing harmonic m = 0
+Using 6 neighbors
+Done
+Computing harmonic m = 1
+Using 6 neighbors
+Centering
+Done
+Computing neighbors...
+Spatial mode is kNN_median
+Parameters: k_geom=6
+Done
+Computing neighbors...
+Spatial mode is kNN_median
+Parameters: k_geom=6
+Done
+Computing harmonic m = 0
+Using 6 neighbors
+Done
+Computing harmonic m = 1
+Using 6 neighbors
+Centering
+Done
+Computing neighbors...
+Spatial mode is kNN_median
+Parameters: k_geom=6
+Done
+Computing neighbors...
+Spatial mode is kNN_median
+Parameters: k_geom=6
+Done
+Computing harmonic m = 0
+Using 6 neighbors
+Done
+Computing harmonic m = 1
+Using 6 neighbors
+Centering
+Done
+Computing neighbors...
+Spatial mode is kNN_median
+Parameters: k_geom=6
+Done
+Computing neighbors...
+Spatial mode is kNN_median
+Parameters: k_geom=6
+Done
+Computing harmonic m = 0
+Using 6 neighbors
+Done
+Computing harmonic m = 1
+Using 6 neighbors
+Centering
+Done
+Computing neighbors...
+Spatial mode is kNN_median
+Parameters: k_geom=6
+Done
+Computing neighbors...
+Spatial mode is kNN_median
+Parameters: k_geom=6
+Done
+Computing harmonic m = 0
+Using 6 neighbors
+Done
+Computing harmonic m = 1
+Using 6 neighbors
+Centering
+Done
+Computing neighbors...
+Spatial mode is kNN_median
+Parameters: k_geom=6
+Done
+Computing neighbors...
+Spatial mode is kNN_median
+Parameters: k_geom=6
+Done
+Computing harmonic m = 0
+Using 6 neighbors
+Done
+Computing harmonic m = 1
+Using 6 neighbors
+Centering
+Done
+Computing neighbors...
+Spatial mode is kNN_median
+Parameters: k_geom=6
+Done
+Computing neighbors...
+Spatial mode is kNN_median
+Parameters: k_geom=6
+Done
+Computing harmonic m = 0
+Using 6 neighbors
+Done
+Computing harmonic m = 1
+Using 6 neighbors
+Centering
+Done
+Computing neighbors...
+Spatial mode is kNN_median
+Parameters: k_geom=6
+Done
+Computing neighbors...
+Spatial mode is kNN_median
+Parameters: k_geom=6
+Done
+Computing harmonic m = 0
+Using 6 neighbors
+Done
+Computing harmonic m = 1
+Using 6 neighbors
+Centering
+Done
+Computing neighbors...
+Spatial mode is kNN_median
+Parameters: k_geom=6
+Done
+Computing neighbors...
+Spatial mode is kNN_median
+Parameters: k_geom=6
+Done
+Computing harmonic m = 0
+Using 6 neighbors
+Done
+Computing harmonic m = 1
+Using 6 neighbors
+Centering
+Done
+Computing neighbors...
+Spatial mode is kNN_median
+Parameters: k_geom=6
+Done
+Computing neighbors...
+Spatial mode is kNN_median
+Parameters: k_geom=6
+Done
+Computing harmonic m = 0
+Using 6 neighbors
+Done
+Computing harmonic m = 1
+Using 6 neighbors
+Centering
+Done
+Computing neighbors...
+Spatial mode is kNN_median
+Parameters: k_geom=6
+Done
+Computing neighbors...
+Spatial mode is kNN_median
+Parameters: k_geom=6
+Done
+Computing harmonic m = 0
+Using 6 neighbors
+Done
+Computing harmonic m = 1
+Using 6 neighbors
+Centering
+Done
+Computing neighbors...
+Spatial mode is kNN_median
+Parameters: k_geom=6
+Done
+Computing neighbors...
+Spatial mode is kNN_median
+Parameters: k_geom=6
+Done
+Computing harmonic m = 0
+Using 6 neighbors
+Done
+Computing harmonic m = 1
+Using 6 neighbors
+Centering
+Done
+Computing neighbors...
+Spatial mode is kNN_median
+Parameters: k_geom=6
+Done
+Computing neighbors...
+Spatial mode is kNN_median
+Parameters: k_geom=6
+Done
+Computing harmonic m = 0
+Using 6 neighbors
+Done
+Computing harmonic m = 1
+Using 6 neighbors
+Centering
+Done
+Computing neighbors...
+Spatial mode is kNN_median
+Parameters: k_geom=6
+Done
+Computing neighbors...
+Spatial mode is kNN_median
+Parameters: k_geom=6
+Done
+Computing harmonic m = 0
+Using 6 neighbors
+Done
+Computing harmonic m = 1
+Using 6 neighbors
+Centering
+Done
+Computing neighbors...
+Spatial mode is kNN_median
+Parameters: k_geom=6
+Done
+Computing neighbors...
+Spatial mode is kNN_median
+Parameters: k_geom=6
+Done
+Computing harmonic m = 0
+Using 6 neighbors
+Done
+Computing harmonic m = 1
+Using 6 neighbors
+Centering
+Done
+Computing neighbors...
+Spatial mode is kNN_median
+Parameters: k_geom=6
+Done
+Computing neighbors...
+Spatial mode is kNN_median
+Parameters: k_geom=6
+Done
+Computing harmonic m = 0
+Using 6 neighbors
+Done
+Computing harmonic m = 1
+Using 6 neighbors
+Centering
+Done
+Computing neighbors...
+Spatial mode is kNN_median
+Parameters: k_geom=6
+Done
+Computing neighbors...
+Spatial mode is kNN_median
+Parameters: k_geom=6
+Done
+Computing harmonic m = 0
+Using 6 neighbors
+Done
+Computing harmonic m = 1
+Using 6 neighbors
+Centering
+Done
+Computing neighbors...
+Spatial mode is kNN_median
+Parameters: k_geom=6
+Done
+Computing neighbors...
+Spatial mode is kNN_median
+Parameters: k_geom=6
+Done
+Computing harmonic m = 0
+Using 6 neighbors
+Done
+Computing harmonic m = 1
+Using 6 neighbors
+Centering
+Done
+Computing neighbors...
+Spatial mode is kNN_median
+Parameters: k_geom=6
+Done
+Computing neighbors...
+Spatial mode is kNN_median
+Parameters: k_geom=6
+Done
+Computing harmonic m = 0
+Using 6 neighbors
+Done
+Computing harmonic m = 1
+Using 6 neighbors
+Centering
+Done
+Computing neighbors...
+Spatial mode is kNN_median
+Parameters: k_geom=6
+Done
+Computing neighbors...
+Spatial mode is kNN_median
+Parameters: k_geom=6
+Done
+Computing harmonic m = 0
+Using 6 neighbors
+Done
+Computing harmonic m = 1
+Using 6 neighbors
+Centering
+Done
+Computing neighbors...
+Spatial mode is kNN_median
+Parameters: k_geom=6
+Done
+Computing neighbors...
+Spatial mode is kNN_median
+Parameters: k_geom=6
+Done
+Computing harmonic m = 0
+Using 6 neighbors
+Done
+Computing harmonic m = 1
+Using 6 neighbors
+Centering
+Done
+Computing neighbors...
+Spatial mode is kNN_median
+Parameters: k_geom=6
+Done
+Computing neighbors...
+Spatial mode is kNN_median
+Parameters: k_geom=6
+Done
+Computing harmonic m = 0
+Using 6 neighbors
+Done
+Computing harmonic m = 1
+Using 6 neighbors
+Centering
+Done
+Computing neighbors...
+Spatial mode is kNN_median
+Parameters: k_geom=6
+Done
+Computing neighbors...
+Spatial mode is kNN_median
+Parameters: k_geom=6
+Done
+Computing harmonic m = 0
+Using 6 neighbors
+Done
+Computing harmonic m = 1
+Using 6 neighbors
+Centering
+Done
+Computing neighbors...
+Spatial mode is kNN_median
+Parameters: k_geom=6
+Done
+Computing neighbors...
+Spatial mode is kNN_median
+Parameters: k_geom=6
+Done
+Computing harmonic m = 0
+Using 6 neighbors
+Done
+Computing harmonic m = 1
+Using 6 neighbors
+Centering
+Done
+Computing neighbors...
+Spatial mode is kNN_median
+Parameters: k_geom=6
+Done
+Computing neighbors...
+Spatial mode is kNN_median
+Parameters: k_geom=6
+Done
+Computing harmonic m = 0
+Using 6 neighbors
+Done
+Computing harmonic m = 1
+Using 6 neighbors
+Centering
+Done
+Computing neighbors...
+Spatial mode is kNN_median
+Parameters: k_geom=6
+Done
+Computing neighbors...
+Spatial mode is kNN_median
+Parameters: k_geom=6
+Done
+Computing harmonic m = 0
+Using 6 neighbors
+Done
+Computing harmonic m = 1
+Using 6 neighbors
+Centering
+Done
+Computing neighbors...
+Spatial mode is kNN_median
+Parameters: k_geom=6
+Done
+Computing neighbors...
+Spatial mode is kNN_median
+Parameters: k_geom=6
+Done
+Computing harmonic m = 0
+Using 6 neighbors
+Done
+Computing harmonic m = 1
+Using 6 neighbors
+Centering
+Done
+Computing neighbors...
+Spatial mode is kNN_median
+Parameters: k_geom=6
+Done
+Computing neighbors...
+Spatial mode is kNN_median
+Parameters: k_geom=6
+Done
+Computing harmonic m = 0
+Using 6 neighbors
+Done
+Computing harmonic m = 1
+Using 6 neighbors
+Centering
+Done
+Computing neighbors...
+Spatial mode is kNN_median
+Parameters: k_geom=6
+Done
+Computing neighbors...
+Spatial mode is kNN_median
+Parameters: k_geom=6
+Done
+Computing harmonic m = 0
+Using 6 neighbors
+Done
+Computing harmonic m = 1
+Using 6 neighbors
+Centering
+Done
+Computing neighbors...
+Spatial mode is kNN_median
+Parameters: k_geom=6
+Done
+Computing neighbors...
+Spatial mode is kNN_median
+Parameters: k_geom=6
+Done
+Computing harmonic m = 0
+Using 6 neighbors
+Done
+Computing harmonic m = 1
+Using 6 neighbors
+Centering
+Done
+Computing neighbors...
+Spatial mode is kNN_median
+Parameters: k_geom=6
+Done
+Computing neighbors...
+Spatial mode is kNN_median
+Parameters: k_geom=6
+Done
+Computing harmonic m = 0
+Using 6 neighbors
+Done
+Computing harmonic m = 1
+Using 6 neighbors
+Centering
+Done
+Computing neighbors...
+Spatial mode is kNN_median
+Parameters: k_geom=6
+Done
+Computing neighbors...
+Spatial mode is kNN_median
+Parameters: k_geom=6
+Done
+Computing harmonic m = 0
+Using 6 neighbors
+Done
+Computing harmonic m = 1
+Using 6 neighbors
+Centering
+Done
+Computing neighbors...
+Spatial mode is kNN_median
+Parameters: k_geom=6
+Done
+Computing neighbors...
+Spatial mode is kNN_median
+Parameters: k_geom=6
+Done
+Computing harmonic m = 0
+Using 6 neighbors
+Done
+Computing harmonic m = 1
+Using 6 neighbors
+Centering
+Done
+Computing neighbors...
+Spatial mode is kNN_median
+Parameters: k_geom=6
+Done
+Computing neighbors...
+Spatial mode is kNN_median
+Parameters: k_geom=6
+Done
+Computing harmonic m = 0
+Using 6 neighbors
+Done
+Computing harmonic m = 1
+Using 6 neighbors
+Centering
+Done
+Computing neighbors...
+Spatial mode is kNN_median
+Parameters: k_geom=6
+Done
+Computing neighbors...
+Spatial mode is kNN_median
+Parameters: k_geom=6
+Done
+Computing harmonic m = 0
+Using 6 neighbors
+Done
+Computing harmonic m = 1
+Using 6 neighbors
+Centering
+Done
+Computing neighbors...
+Spatial mode is kNN_median
+Parameters: k_geom=6
+Done
+Computing neighbors...
+Spatial mode is kNN_median
+Parameters: k_geom=6
+Done
+Computing harmonic m = 0
+Using 6 neighbors
+Done
+Computing harmonic m = 1
+Using 6 neighbors
+Centering
+Done
+Computing neighbors...
+Spatial mode is kNN_median
+Parameters: k_geom=6
+Done
+Computing neighbors...
+Spatial mode is kNN_median
+Parameters: k_geom=6
+Done
+Computing harmonic m = 0
+Using 6 neighbors
+Done
+Computing harmonic m = 1
+Using 6 neighbors
+Centering
+Done
+Computing neighbors...
+Spatial mode is kNN_median
+Parameters: k_geom=6
+Done
+Computing neighbors...
+Spatial mode is kNN_median
+Parameters: k_geom=6
+Done
+Computing harmonic m = 0
+Using 6 neighbors
+Done
+Computing harmonic m = 1
+Using 6 neighbors
+Centering
+Done
+Computing neighbors...
+Spatial mode is kNN_median
+Parameters: k_geom=6
+Done
+Computing neighbors...
+Spatial mode is kNN_median
+Parameters: k_geom=6
+Done
+Computing harmonic m = 0
+Using 6 neighbors
+Done
+Computing harmonic m = 1
+Using 6 neighbors
+Centering
+Done
+Computing neighbors...
+Spatial mode is kNN_median
+Parameters: k_geom=6
+Done
+Computing neighbors...
+Spatial mode is kNN_median
+Parameters: k_geom=6
+Done
+Computing harmonic m = 0
+Using 6 neighbors
+Done
+Computing harmonic m = 1
+Using 6 neighbors
+Centering
+Done
+Computing neighbors...
+Spatial mode is kNN_median
+Parameters: k_geom=6
+Done
+Computing neighbors...
+Spatial mode is kNN_median
+Parameters: k_geom=6
+Done
+Computing harmonic m = 0
+Using 6 neighbors
+Done
+Computing harmonic m = 1
+Using 6 neighbors
+Centering
+Done
+Computing neighbors...
+Spatial mode is kNN_median
+Parameters: k_geom=6
+Done
+Computing neighbors...
+Spatial mode is kNN_median
+Parameters: k_geom=6
+Done
+Computing harmonic m = 0
+Using 6 neighbors
+Done
+Computing harmonic m = 1
+Using 6 neighbors
+Centering
+Done
+Computing neighbors...
+Spatial mode is kNN_median
+Parameters: k_geom=6
+Done
+Computing neighbors...
+Spatial mode is kNN_median
+Parameters: k_geom=6
+Done
+Computing harmonic m = 0
+Using 6 neighbors
+Done
+Computing harmonic m = 1
+Using 6 neighbors
+Centering
+Done
+Computing neighbors...
+Spatial mode is kNN_median
+Parameters: k_geom=6
+Done
+Computing neighbors...
+Spatial mode is kNN_median
+Parameters: k_geom=6
+Done
+Computing harmonic m = 0
+Using 6 neighbors
+Done
+Computing harmonic m = 1
+Using 6 neighbors
+Centering
+Done
+Computing neighbors...
+Spatial mode is kNN_median
+Parameters: k_geom=6
+Done
+Computing neighbors...
+Spatial mode is kNN_median
+Parameters: k_geom=6
+Done
+Computing harmonic m = 0
+Using 6 neighbors
+Done
+Computing harmonic m = 1
+Using 6 neighbors
+Centering
+Done
+Scaling logcounts
+Group: V13M06-387_A1
+Group: V13M06-387_B1
+Group: V13M06-387_C1
+Group: V13M06-387_D1
+Group: V13M06-388_A1
+Group: V13M06-388_B1
+Group: V13M06-388_C1
+Group: V13M06-388_D1
+Group: V13F27-349_A1
+Group: V13F27-349_B1
+Group: V13F27-349_C1
+Group: V13F27-349_D1
+Group: V13F27-354_A1
+Group: V13F27-354_B1
+Group: V13F27-354_C1
+Group: V13F27-354_D1
+Group: V13F27-359_A1
+Group: V13F27-359_B1
+Group: V13F27-359_C1
+Group: V13F27-359_D1
+Group: V13F27-366_A1
+Group: V13F27-366_B1
+Group: V13F27-366_C1
+Group: V13F27-366_D1
+Group: V13Y24-345_A1
+Group: V13Y24-345_B1
+Group: V13Y24-345_C1
+Group: V13Y24-345_D1
+Group: V13Y24-346_A1
+Group: V13Y24-346_B1
+Group: V13Y24-346_D1
+Group: V13Y24-347_A1
+Group: V13Y24-347_B1
+Group: V13Y24-347_C1
+Group: V13Y24-347_D1
+Group: V13Y24-348_A1
+Group: V13Y24-348_B1
+Group: V13Y24-348_C1
+Group: V13Y24-348_D1
+Group: V13Y24-368_A1
+Group: V13Y24-368_B1
+Group: V13Y24-368_C1
+Group: V13Y24-368_D1
+Group: V13Y24-369_A1
+Group: V13Y24-369_B1
+Group: V13Y24-369_C1
+Group: V13Y24-369_D1
+Group: V13B23-274_A1
+Group: V13B23-274_B1
+Group: V13B23-274_C1
+Group: V13B23-405_A1
+Group: V13B23-405_B1
+Group: V13B23-405_C1
+Group: V13B23-405_D1
+Group: V13B23-406_A1
+Group: V13B23-406_C1
+Group: V13B23-406_D1
+Group: V13B23-407_A1
+Group: V13B23-407_B1
+Group: V13B23-407_C1
+Group: V13B23-407_D1
+Group: V13Y24-366_A1
+Group: V13Y24-366_B1
+Group: V13Y24-366_C1
+Group: V13Y24-366_D1
+Group: V13Y24-367_A1
+Group: V13Y24-367_B1
+Group: V13Y24-367_C1
+Group: V13Y24-367_D1
+Scaling harmonic m = 0
+Group: V13M06-387_A1
+Group: V13M06-387_B1
+Group: V13M06-387_C1
+Group: V13M06-387_D1
+Group: V13M06-388_A1
+Group: V13M06-388_B1
+Group: V13M06-388_C1
+Group: V13M06-388_D1
+Group: V13F27-349_A1
+Group: V13F27-349_B1
+Group: V13F27-349_C1
+Group: V13F27-349_D1
+Group: V13F27-354_A1
+Group: V13F27-354_B1
+Group: V13F27-354_C1
+Group: V13F27-354_D1
+Group: V13F27-359_A1
+Group: V13F27-359_B1
+Group: V13F27-359_C1
+Group: V13F27-359_D1
+Group: V13F27-366_A1
+Group: V13F27-366_B1
+Group: V13F27-366_C1
+Group: V13F27-366_D1
+Group: V13Y24-345_A1
+Group: V13Y24-345_B1
+Group: V13Y24-345_C1
+Group: V13Y24-345_D1
+Group: V13Y24-346_A1
+Group: V13Y24-346_B1
+Group: V13Y24-346_D1
+Group: V13Y24-347_A1
+Group: V13Y24-347_B1
+Group: V13Y24-347_C1
+Group: V13Y24-347_D1
+Group: V13Y24-348_A1
+Group: V13Y24-348_B1
+Group: V13Y24-348_C1
+Group: V13Y24-348_D1
+Group: V13Y24-368_A1
+Group: V13Y24-368_B1
+Group: V13Y24-368_C1
+Group: V13Y24-368_D1
+Group: V13Y24-369_A1
+Group: V13Y24-369_B1
+Group: V13Y24-369_C1
+Group: V13Y24-369_D1
+Group: V13B23-274_A1
+Group: V13B23-274_B1
+Group: V13B23-274_C1
+Group: V13B23-405_A1
+Group: V13B23-405_B1
+Group: V13B23-405_C1
+Group: V13B23-405_D1
+Group: V13B23-406_A1
+Group: V13B23-406_C1
+Group: V13B23-406_D1
+Group: V13B23-407_A1
+Group: V13B23-407_B1
+Group: V13B23-407_C1
+Group: V13B23-407_D1
+Group: V13Y24-366_A1
+Group: V13Y24-366_B1
+Group: V13Y24-366_C1
+Group: V13Y24-366_D1
+Group: V13Y24-367_A1
+Group: V13Y24-367_B1
+Group: V13Y24-367_C1
+Group: V13Y24-367_D1
+Scaling harmonic m = 1
+Group: V13M06-387_A1
+Group: V13M06-387_B1
+Group: V13M06-387_C1
+Group: V13M06-387_D1
+Group: V13M06-388_A1
+Group: V13M06-388_B1
+Group: V13M06-388_C1
+Group: V13M06-388_D1
+Group: V13F27-349_A1
+Group: V13F27-349_B1
+Group: V13F27-349_C1
+Group: V13F27-349_D1
+Group: V13F27-354_A1
+Group: V13F27-354_B1
+Group: V13F27-354_C1
+Group: V13F27-354_D1
+Group: V13F27-359_A1
+Group: V13F27-359_B1
+Group: V13F27-359_C1
+Group: V13F27-359_D1
+Group: V13F27-366_A1
+Group: V13F27-366_B1
+Group: V13F27-366_C1
+Group: V13F27-366_D1
+Group: V13Y24-345_A1
+Group: V13Y24-345_B1
+Group: V13Y24-345_C1
+Group: V13Y24-345_D1
+Group: V13Y24-346_A1
+Group: V13Y24-346_B1
+Group: V13Y24-346_D1
+Group: V13Y24-347_A1
+Group: V13Y24-347_B1
+Group: V13Y24-347_C1
+Group: V13Y24-347_D1
+Group: V13Y24-348_A1
+Group: V13Y24-348_B1
+Group: V13Y24-348_C1
+Group: V13Y24-348_D1
+Group: V13Y24-368_A1
+Group: V13Y24-368_B1
+Group: V13Y24-368_C1
+Group: V13Y24-368_D1
+Group: V13Y24-369_A1
+Group: V13Y24-369_B1
+Group: V13Y24-369_C1
+Group: V13Y24-369_D1
+Group: V13B23-274_A1
+Group: V13B23-274_B1
+Group: V13B23-274_C1
+Group: V13B23-405_A1
+Group: V13B23-405_B1
+Group: V13B23-405_C1
+Group: V13B23-405_D1
+Group: V13B23-406_A1
+Group: V13B23-406_C1
+Group: V13B23-406_D1
+Group: V13B23-407_A1
+Group: V13B23-407_B1
+Group: V13B23-407_C1
+Group: V13B23-407_D1
+Group: V13Y24-366_A1
+Group: V13Y24-366_B1
+Group: V13Y24-366_C1
+Group: V13Y24-366_D1
+Group: V13Y24-367_A1
+Group: V13Y24-367_B1
+Group: V13Y24-367_C1
+Group: V13Y24-367_D1
+Using seed=1000
+Warning message:
+In asMethod(object) :
+  sparse->dense coercion: allocating vector of size 9.4 GiB
+There were 11 warnings (use warnings() to see them)
+Using seed=1000
+Using seed=1000
+NA --> clust_M1_lam0.4_k50_res0.7
+Error in `[.data.frame`(clust_df, , curr_many) : 
+  undefined columns selected
+Calls: connectClusters -> mapToSeed -> [ -> [.data.frame
+Execution halted

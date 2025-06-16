@@ -1,16 +1,17 @@
 **** Job starts ****
-/var/spool/slurm/d/job10530774/slurm_script: line 7: datelog: command not found
+/var/spool/slurm/d/job17274240/slurm_script: line 7: datelog: command not found
 **** JHPCE info ****
 User: mtotty
 Job id: 
 Job name: 
-Hostname: compute-124
+Hostname: compute-169
 Task id: 
+Unloading conda_R/4.4
 Loading conda_R/4.4
 
 Currently Loaded Modules:
-  1) JHPCE_ROCKY9_DEFAULT_ENV   3) conda/3-24.3.0
-  2) JHPCE_tools/3.0            4) conda_R/4.4
+  1) JHPCE_ROCKY9_DEFAULT_ENV   3) git-status-size/github   5) conda_R/4.4
+  2) JHPCE_tools/3.0            4) conda/3-24.3.0
 
  
 
@@ -55,8 +56,8 @@ The following objects are masked from ‘package:base’:
     colnames, dirname, do.call, duplicated, eval, evalq, Filter, Find,
     get, grep, grepl, intersect, is.unsorted, lapply, Map, mapply,
     match, mget, order, paste, pmax, pmax.int, pmin, pmin.int,
-    Position, rank, rbind, Reduce, rownames, sapply, setdiff, table,
-    tapply, union, unique, unsplit, which.max, which.min
+    Position, rank, rbind, Reduce, rownames, sapply, saveRDS, setdiff,
+    table, tapply, union, unique, unsplit, which.max, which.min
 
 Loading required package: S4Vectors
 
@@ -90,6 +91,8 @@ The following objects are masked from ‘package:matrixStats’:
 
     anyMissing, rowMedians
 
+Warning message:
+replacing previous import ‘S4Arrays::read_block’ by ‘DelayedArray::read_block’ when loading ‘SummarizedExperiment’ 
 here() starts at /dcs04/lieber/marmaypag/spatialAMY_LIBD4125/spatialAmygdala
 Loading required package: ggplot2
 Registered S3 method overwritten by 'ggside':
@@ -97,39 +100,4 @@ Registered S3 method overwritten by 'ggside':
   +.gg   ggplot2
 Loading required package: scuttle
 class: SpatialExperiment 
-dim: 36601 227302 
-metadata(0):
-assays(2): counts logcounts
-rownames(36601): ENSG00000243485 ENSG00000237613 ... ENSG00000278817
-  ENSG00000277196
-rowData names(1): symbol
-colnames(227302): AAACAAGTATCTCCCA-1_V13Y24-346_A1
-  AAACAATCTACTAGCA-1_V13Y24-346_A1 ... TTGTTTCATTAGTCTA-1_V13B23-407_C1
-  TTGTTTCCATACAACT-1_V13B23-407_C1
-colData names(37): in_tissue array_row ... subsets_mito_percent_z
-  sizeFactor
-reducedDimNames(0):
-mainExpName: NULL
-altExpNames(0):
-spatialCoords names(2) : pxl_col_in_fullres pxl_row_in_fullres
-imgData names(4): sample_id image_id data scaleFactor
-
-Br2743 Br6423 Br6471 Br6660 Br8325 Br9192 Br9280 
- 32854  34353  37795  37085  29885  28608  26722 
-Gene filtering: removing mitochondrial genes
-removed 13 mitochondrial genes
-Gene filtering: retaining genes with at least 3 counts in at least 0.5% (n = 165) of spatial locations
-removed 34162 out of 36588 genes due to low expression
-Gene filtering: removing mitochondrial genes
-removed 13 mitochondrial genes
-Gene filtering: retaining genes with at least 3 counts in at least 0.5% (n = 172) of spatial locations
-removed 31834 out of 36588 genes due to low expression
-Gene filtering: removing mitochondrial genes
-removed 13 mitochondrial genes
-Gene filtering: retaining genes with at least 3 counts in at least 0.5% (n = 189) of spatial locations
-removed 33563 out of 36588 genes due to low expression
-Gene filtering: removing mitochondrial genes
-removed 13 mitochondrial genes
-Gene filtering: retaining genes with at least 3 counts in at least 0.5% (n = 186) of spatial locations
-removed 32319 out of 36588 genes due to low expression
-slurmstepd: error: *** JOB 10530774 ON compute-124 CANCELLED AT 2024-11-13T11:46:00 DUE TO TIME LIMIT ***
+dim: 36601 3slurmstepd: error: *** JOB 17274240 ON compute-169 CANCELLED AT 2025-06-12T13:10:18 ***
