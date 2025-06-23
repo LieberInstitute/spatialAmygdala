@@ -17,6 +17,8 @@ spe <- computeLibraryFactors(spe)
 spe <- spe[, sizeFactors(spe) > 0]
 spe <- logNormCounts(spe)
 
+rownames(spe) <- rowData(spe)$gene_name
+
 set.seed(195)
 message("running PCA - ", Sys.time())
 spe <- scater::runPCA(spe, 
@@ -26,5 +28,5 @@ spe <- scater::runPCA(spe,
                       scale = TRUE, name = "PCA")
 
 # save
-save(spe, file = here::here("processed-data", "05_dim_reduction", "spe_stitched_pca.Rdata"))
+save(spe, file = here::here("processed-data", "Visium", "05_dim_reduction", "spe_stitched_pca.Rdata"))
 

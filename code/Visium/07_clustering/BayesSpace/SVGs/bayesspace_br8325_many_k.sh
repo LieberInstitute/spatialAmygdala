@@ -1,7 +1,7 @@
 #!/bin/bash
-#SBATCH --job-name=bayesSpace_k_many
-#SBATCH --output=logs/br9280_bayesspace_%x.%a.txt
-#SBATCH --error=logs/br9280_bayesspace_%x.%a.txt
+#SBATCH --job-name=bayesSpace_SVGs
+#SBATCH --output=logs/br8325_bayesspace_%x.%a.txt
+#SBATCH --error=logs/br8325_bayesspace_%x.%a.txt
 #SBATCH --array=2-20
 #SBATCH --mem=50G
 #SBATCH --mail-type=END
@@ -25,7 +25,7 @@ module load conda_R
 module list
 
 ## Edit with your job command
-Rscript bayesspace_br9280_many_k.R
+Rscript bayesspace_br8325_many_k.R
 
 echo "**** Job ends ****"
 date

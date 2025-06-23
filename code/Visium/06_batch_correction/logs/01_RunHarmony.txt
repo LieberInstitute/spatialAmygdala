@@ -1,0 +1,220 @@
+**** Job starts ****
+Mon Jun 16 10:02:34 AM EDT 2025
+**** JHPCE info ****
+User: mtotty
+Job id: 
+Job name: 
+Hostname: compute-158
+Unloading conda_R/4.4
+Loading conda_R/4.4
+
+Currently Loaded Modules:
+  1) JHPCE_ROCKY9_DEFAULT_ENV   3) git-status-size/github   5) conda_R/4.4
+  2) JHPCE_tools/3.0            4) conda/3-24.3.0
+
+ 
+
+here() starts at /dcs04/lieber/marmaypag/spatialAMY_LIBD4125/spatialAmygdala
+Loading required package: SummarizedExperiment
+Loading required package: MatrixGenerics
+Loading required package: matrixStats
+
+Attaching package: ‘MatrixGenerics’
+
+The following objects are masked from ‘package:matrixStats’:
+
+    colAlls, colAnyNAs, colAnys, colAvgsPerRowSet, colCollapse,
+    colCounts, colCummaxs, colCummins, colCumprods, colCumsums,
+    colDiffs, colIQRDiffs, colIQRs, colLogSumExps, colMadDiffs,
+    colMads, colMaxs, colMeans2, colMedians, colMins, colOrderStats,
+    colProds, colQuantiles, colRanges, colRanks, colSdDiffs, colSds,
+    colSums2, colTabulates, colVarDiffs, colVars, colWeightedMads,
+    colWeightedMeans, colWeightedMedians, colWeightedSds,
+    colWeightedVars, rowAlls, rowAnyNAs, rowAnys, rowAvgsPerColSet,
+    rowCollapse, rowCounts, rowCummaxs, rowCummins, rowCumprods,
+    rowCumsums, rowDiffs, rowIQRDiffs, rowIQRs, rowLogSumExps,
+    rowMadDiffs, rowMads, rowMaxs, rowMeans2, rowMedians, rowMins,
+    rowOrderStats, rowProds, rowQuantiles, rowRanges, rowRanks,
+    rowSdDiffs, rowSds, rowSums2, rowTabulates, rowVarDiffs, rowVars,
+    rowWeightedMads, rowWeightedMeans, rowWeightedMedians,
+    rowWeightedSds, rowWeightedVars
+
+Loading required package: GenomicRanges
+Loading required package: stats4
+Loading required package: BiocGenerics
+
+Attaching package: ‘BiocGenerics’
+
+The following objects are masked from ‘package:stats’:
+
+    IQR, mad, sd, var, xtabs
+
+The following objects are masked from ‘package:base’:
+
+    anyDuplicated, aperm, append, as.data.frame, basename, cbind,
+    colnames, dirname, do.call, duplicated, eval, evalq, Filter, Find,
+    get, grep, grepl, intersect, is.unsorted, lapply, Map, mapply,
+    match, mget, order, paste, pmax, pmax.int, pmin, pmin.int,
+    Position, rank, rbind, Reduce, rownames, sapply, saveRDS, setdiff,
+    table, tapply, union, unique, unsplit, which.max, which.min
+
+Loading required package: S4Vectors
+
+Attaching package: ‘S4Vectors’
+
+The following object is masked from ‘package:utils’:
+
+    findMatches
+
+The following objects are masked from ‘package:base’:
+
+    expand.grid, I, unname
+
+Loading required package: IRanges
+Loading required package: GenomeInfoDb
+Loading required package: Biobase
+Welcome to Bioconductor
+
+    Vignettes contain introductory material; view with
+    'browseVignettes()'. To cite Bioconductor, see
+    'citation("Biobase")', and for packages 'citation("pkgname")'.
+
+
+Attaching package: ‘Biobase’
+
+The following object is masked from ‘package:MatrixGenerics’:
+
+    rowMedians
+
+The following objects are masked from ‘package:matrixStats’:
+
+    anyMissing, rowMedians
+
+Warning message:
+replacing previous import ‘S4Arrays::read_block’ by ‘DelayedArray::read_block’ when loading ‘SummarizedExperiment’ 
+Loading required package: scuttle
+Loading required package: ggplot2
+Loading required package: Rcpp
+Loading required package: SpatialExperiment
+class: SpatialExperiment 
+dim: 36601 317173 
+metadata(0):
+assays(2): counts logcounts
+rownames(36601): MIR1302-2HG FAM138A ... AC007325.4 AC007325.2
+rowData names(7): source type ... gene_type gene_search
+colnames(317173): AAACAAGTATCTCCCA-1_V13Y24-346_A1
+  AAACAATCTACTAGCA-1_V13Y24-346_A1 ... TTGTTTGTATTACACG-1_V13F27-349_D1
+  TTGTTTGTGTAAATTC-1_V13F27-349_D1
+colData names(41): sample_id in_tissue ... local_outliers sizeFactor
+reducedDimNames(1): PCA
+mainExpName: NULL
+altExpNames(0):
+ [1] "sample_id"                   "in_tissue"                  
+ [3] "X10x_graphclust"             "X10x_kmeans_10_clusters"    
+ [5] "X10x_kmeans_2_clusters"      "X10x_kmeans_3_clusters"     
+ [7] "X10x_kmeans_4_clusters"      "X10x_kmeans_5_clusters"     
+ [9] "X10x_kmeans_6_clusters"      "X10x_kmeans_7_clusters"     
+[11] "X10x_kmeans_8_clusters"      "X10x_kmeans_9_clusters"     
+[13] "key"                         "sum_umi"                    
+[15] "sum_gene"                    "expr_chrM"                  
+[17] "expr_chrM_ratio"             "ManualAnnotation"           
+[19] "capture_area"                "group"                      
+[21] "barcode"                     "array_row_original"         
+[23] "array_col_original"          "array_row"                  
+[25] "array_col"                   "pxl_col_in_fullres_rounded" 
+[27] "pxl_row_in_fullres_rounded"  "pxl_row_in_fullres_original"
+[29] "pxl_col_in_fullres_original" "overlap_key"                
+[31] "exclude_overlapping"         "sum_umi_log"                
+[33] "sum_umi_outliers"            "sum_umi_z"                  
+[35] "sum_gene_log"                "sum_gene_outliers"          
+[37] "sum_gene_z"                  "expr_chrM_ratio_outliers"   
+[39] "expr_chrM_ratio_z"           "local_outliers"             
+[41] "sizeFactor"                 
+ [1] V13Y24-346_A1 V13Y24-346_B1 V13Y24-346_D1 V13Y24-345_A1 V13Y24-345_B1
+ [6] V13Y24-345_C1 V13Y24-345_D1 V13Y24-347_A1 V13Y24-347_B1 V13Y24-347_C1
+[11] V13Y24-347_D1 V13Y24-348_A1 V13Y24-348_B1 V13Y24-348_C1 V13Y24-348_D1
+[16] V13F27-354_A1 V13F27-354_B1 V13F27-354_C1 V13F27-354_D1 V13F27-366_A1
+[21] V13F27-366_B1 V13F27-366_C1 V13F27-366_D1 V13Y24-368_A1 V13Y24-368_B1
+[26] V13Y24-368_C1 V13Y24-368_D1 V13Y24-369_A1 V13Y24-369_B1 V13Y24-369_C1
+[31] V13Y24-369_D1 V13M06-387_A1 V13M06-387_B1 V13M06-387_C1 V13M06-387_D1
+[36] V13M06-388_A1 V13M06-388_B1 V13M06-388_C1 V13M06-388_D1 V13B23-407_A1
+[41] V13B23-407_D1 V13B23-405_A1 V13B23-405_B1 V13B23-405_C1 V13B23-405_D1
+[46] V13Y24-366_A1 V13Y24-366_B1 V13Y24-366_C1 V13Y24-366_D1 V13Y24-367_A1
+[51] V13Y24-367_B1 V13Y24-367_C1 V13Y24-367_D1 V13B23-274_A1 V13B23-274_B1
+[56] V13B23-274_C1 V13B23-274_D1 V13B23-406_A1 V13B23-406_B1 V13B23-406_C1
+[61] V13B23-406_D1 V13B23-407_B1 V13B23-407_C1 V13F27-359_A1 V13F27-359_B1
+[66] V13F27-359_C1 V13F27-359_D1 V13F27-349_A1 V13F27-349_B1 V13F27-349_C1
+[71] V13F27-349_D1
+71 Levels: V13Y24-345_A1 V13Y24-345_B1 V13Y24-345_C1 ... V13F27-359_D1
+ [1] "V13Y24-346" "V13Y24-345" "V13Y24-347" "V13Y24-348" "V13F27-354"
+ [6] "V13F27-366" "V13Y24-368" "V13Y24-369" "V13M06-387" "V13M06-388"
+[11] "V13B23-407" "V13B23-405" "V13Y24-366" "V13Y24-367" "V13B23-274"
+[16] "V13B23-406" "V13F27-359" "V13F27-349"
+running Harmony (sample + slide) - 2025-06-16 10:05:13.983588
+Transposing data matrix
+Initializing state using k-means centroids initialization
+Harmony 1/10
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Harmony 2/10
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Harmony 3/10
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Harmony converged after 3 iterations
+Warning messages:
+1: Quick-TRANSfer stage steps exceeded maximum (= 15858650) 
+2: Quick-TRANSfer stage steps exceeded maximum (= 15858650) 
+3: Quick-TRANSfer stage steps exceeded maximum (= 15858650) 
+4: Quick-TRANSfer stage steps exceeded maximum (= 15858650) 
+5: Quick-TRANSfer stage steps exceeded maximum (= 15858650) 
+6: Quick-TRANSfer stage steps exceeded maximum (= 15858650) 
+running Harmony (sample) - 2025-06-16 10:10:23.787105
+Transposing data matrix
+Initializing state using k-means centroids initialization
+Harmony 1/10
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Harmony 2/10
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Harmony 3/10
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Harmony converged after 3 iterations
+Warning messages:
+1: Quick-TRANSfer stage steps exceeded maximum (= 15858650) 
+2: Quick-TRANSfer stage steps exceeded maximum (= 15858650) 
+3: Quick-TRANSfer stage steps exceeded maximum (= 15858650) 
+4: Quick-TRANSfer stage steps exceeded maximum (= 15858650) 
+5: Quick-TRANSfer stage steps exceeded maximum (= 15858650) 
+6: Quick-TRANSfer stage steps exceeded maximum (= 15858650) 
+7: Quick-TRANSfer stage steps exceeded maximum (= 15858650) 
+8: Quick-TRANSfer stage steps exceeded maximum (= 15858650) 
+**** Job ends ****
+Mon Jun 16 10:24:32 AM EDT 2025
