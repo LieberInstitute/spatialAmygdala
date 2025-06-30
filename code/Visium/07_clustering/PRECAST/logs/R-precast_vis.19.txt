@@ -1,10 +1,10 @@
 **** Job starts ****
-Thu Nov 14 12:18:29 PM EST 2024
+Mon Jun 23 09:03:50 PM EDT 2025
 **** SLURM info ****
 User: mtotty
-Job id: 10580005
+Job id: 17720386
 Job name: precast_vis
-Hostname: compute-116
+Hostname: compute-111
 Task id: 19
 Loading conda_R/4.4
 
@@ -14,22 +14,13 @@ Currently Loaded Modules:
 
  
 
-The total number of spots exceeds 8e4, thus the subsampling schema will be used to speed up computation.
-IntegrateSRTData: the subsampling schema will be used to speed up computation since subsample_rate is smaller than 1.
-Using only PRECAST results to obtain the batch corrected gene expressions since species is unknown or the genelist in PRECASTObj has less than 5 overlapp with the housekeeping genes of given species.
-Start integration...
-2024-11-14 12:27:47.222077 : ***** Data integration finished!, 4.508 mins elapsed.
-Put the data into a new Seurat object...
-2024-11-14 12:28:22.546469 : ***** New Seurat object is generated!, 0.589 mins elapsed.
-Warning messages:
-1: In asMethod(object) :
-  sparse->dense coercion: allocating vector of size 1.0 GiB
-2: In asMethod(object) :
-  sparse->dense coercion: allocating vector of size 1.1 GiB
-3: In asMethod(object) :
-  sparse->dense coercion: allocating vector of size 1.1 GiB
-Overwriting 'spe$key'. Set 'overwrite = FALSE' if you do not want to overwrite it.
-null device 
-          1 
+Warning message:
+replacing previous import ‘S4Arrays::read_block’ by ‘DelayedArray::read_block’ when loading ‘SummarizedExperiment’ 
+Error in readChar(con, 5L, useBytes = TRUE) : cannot open the connection
+Calls: load -> readChar
+In addition: Warning message:
+In readChar(con, 5L, useBytes = TRUE) :
+  cannot open compressed file '/dcs04/lieber/marmaypag/spatialAMY_LIBD4125/spatialAmygdala/processed-data/Visium/07_clustering/PRECAST/SVGs/PRECASTObj_19.Rdata', probable reason 'No such file or directory'
+Execution halted
 **** Job ends ****
-Thu Nov 14 12:29:46 PM EST 2024
+Mon Jun 23 09:20:11 PM EDT 2025

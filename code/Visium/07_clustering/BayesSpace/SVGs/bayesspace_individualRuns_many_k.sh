@@ -1,9 +1,9 @@
 #!/bin/bash
-#SBATCH --job-name=bayesSpace_k_many
-#SBATCH --output=logs_bayesspace/%x.%a.txt
-#SBATCH --error=logs_bayesspace/%x.%a.txt
+#SBATCH --job-name=BS_individualRuns
+#SBATCH --output=logs/individualRuns_%x.%a.txt
+#SBATCH --error=logs/individualRuns_%x.%a.txt
 #SBATCH --array=2-20
-#SBATCH --mem=150G
+#SBATCH --mem=50G
 #SBATCH --mail-type=END
 #SBATCH --cpus-per-task=1 # specify the number of CPUs needed for the job, adjust as needed
 
@@ -25,7 +25,7 @@ module load conda_R
 module list
 
 ## Edit with your job command
-Rscript bayesspace_many_k.R
+Rscript bayesspace_individualRuns_many_k.R
 
 echo "**** Job ends ****"
 date

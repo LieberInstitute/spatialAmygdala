@@ -1,8 +1,8 @@
 **** SLURM info ****
 User: mtotty
-Job id: 10535694
+Job id: 17718164
 Job name: precast_many_k
-Hostname: compute-169
+Hostname: compute-121
 Task id: 2
 Loading conda_R/4.4
 
@@ -12,6 +12,12 @@ Currently Loaded Modules:
 
  
 
+Warning message:
+replacing previous import ‘S4Arrays::read_block’ by ‘DelayedArray::read_block’ when loading ‘SummarizedExperiment’ 
+[1]  36601 317173
+Warning: Data is of class matrix. Coercing to dgCMatrix.
+Warning: Data is of class matrix. Coercing to dgCMatrix.
+Warning: Data is of class matrix. Coercing to dgCMatrix.
 Warning: Data is of class matrix. Coercing to dgCMatrix.
 Warning: Data is of class matrix. Coercing to dgCMatrix.
 Warning: Data is of class matrix. Coercing to dgCMatrix.
@@ -31,79 +37,22 @@ Warning messages:
 5: In asMethod(object) :
   sparse->dense coercion: allocating vector of size 8.1 GiB
 6: In asMethod(object) :
-  sparse->dense coercion: allocating vector of size 7.8 GiB
+  sparse->dense coercion: allocating vector of size 7.2 GiB
 7: In asMethod(object) :
+  sparse->dense coercion: allocating vector of size 7.8 GiB
+8: In asMethod(object) :
   sparse->dense coercion: allocating vector of size 7.3 GiB
+9: In asMethod(object) :
+  sparse->dense coercion: allocating vector of size 7.3 GiB
+10: In asMethod(object) :
+  sparse->dense coercion: allocating vector of size 10.0 GiB
 Filter spots and features from Raw count data...
  
  
-2024-11-13 08:10:55.21101 : ***** Filtering step for raw count data finished!, 0.348 mins elapsed.
+2025-06-23 13:05:20.720525 : ***** Filtering step for raw count data finished!, 0.423 mins elapsed.
 Select the variable genes for each data batch...
-Finding variable features for layer counts
-Calculating gene variances
-0%   10   20   30   40   50   60   70   80   90   100%
-[----|----|----|----|----|----|----|----|----|----|
-**************************************************|
-Calculating feature variances of standardized and clipped values
-0%   10   20   30   40   50   60   70   80   90   100%
-[----|----|----|----|----|----|----|----|----|----|
-**************************************************|
-Finding variable features for layer counts
-Calculating gene variances
-0%   10   20   30   40   50   60   70   80   90   100%
-[----|----|----|----|----|----|----|----|----|----|
-**************************************************|
-Calculating feature variances of standardized and clipped values
-0%   10   20   30   40   50   60   70   80   90   100%
-[----|----|----|----|----|----|----|----|----|----|
-**************************************************|
-Finding variable features for layer counts
-Calculating gene variances
-0%   10   20   30   40   50   60   70   80   90   100%
-[----|----|----|----|----|----|----|----|----|----|
-**************************************************|
-Calculating feature variances of standardized and clipped values
-0%   10   20   30   40   50   60   70   80   90   100%
-[----|----|----|----|----|----|----|----|----|----|
-**************************************************|
-Finding variable features for layer counts
-Calculating gene variances
-0%   10   20   30   40   50   60   70   80   90   100%
-[----|----|----|----|----|----|----|----|----|----|
-**************************************************|
-Calculating feature variances of standardized and clipped values
-0%   10   20   30   40   50   60   70   80   90   100%
-[----|----|----|----|----|----|----|----|----|----|
-**************************************************|
-Finding variable features for layer counts
-Calculating gene variances
-0%   10   20   30   40   50   60   70   80   90   100%
-[----|----|----|----|----|----|----|----|----|----|
-**************************************************|
-Calculating feature variances of standardized and clipped values
-0%   10   20   30   40   50   60   70   80   90   100%
-[----|----|----|----|----|----|----|----|----|----|
-**************************************************|
-Finding variable features for layer counts
-Calculating gene variances
-0%   10   20   30   40   50   60   70   80   90   100%
-[----|----|----|----|----|----|----|----|----|----|
-**************************************************|
-Calculating feature variances of standardized and clipped values
-0%   10   20   30   40   50   60   70   80   90   100%
-[----|----|----|----|----|----|----|----|----|----|
-**************************************************|
-Finding variable features for layer counts
-Calculating gene variances
-0%   10   20   30   40   50   60   70   80   90   100%
-[----|----|----|----|----|----|----|----|----|----|
-**************************************************|
-Calculating feature variances of standardized and clipped values
-0%   10   20   30   40   50   60   70   80   90   100%
-[----|----|----|----|----|----|----|----|----|----|
-**************************************************|
-Select common top variable genes  for multiple samples...
-2024-11-13 08:11:45.999399 : ***** Gene selection finished!, 0.846 mins elapsed.
+CreatePRECASTObject: remove genes:SLC18A3  OTP  with low count reads in seuList.
+2025-06-23 13:05:20.742224 : ***** Gene selection finished!, 0 mins elapsed.
 Filter spots and features from SVGs(HVGs) count data...
 Normalizing layer: counts
 Performing log-normalization
@@ -140,47 +89,80 @@ Performing log-normalization
 0%   10   20   30   40   50   60   70   80   90   100%
 [----|----|----|----|----|----|----|----|----|----|
 **************************************************|
-2024-11-13 08:12:14.011454 : ***** Filtering step for count data with variable genes finished!, 0.344 mins elapsed.
+Normalizing layer: counts
+Performing log-normalization
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Normalizing layer: counts
+Performing log-normalization
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Normalizing layer: counts
+Performing log-normalization
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+2025-06-23 13:06:02.669463 : ***** Filtering step for count data with variable genes finished!, 0.518 mins elapsed.
 $Br2743
 An object of class Seurat 
-4000 features across 32853 samples within 1 assay 
-Active assay: RNA (4000 features, 2443 variable features)
+1998 features across 32853 samples within 1 assay 
+Active assay: RNA (1998 features, 0 variable features)
  2 layers present: counts, data
 
 $Br6423
 An object of class Seurat 
-4000 features across 34353 samples within 1 assay 
-Active assay: RNA (4000 features, 2560 variable features)
+1998 features across 34353 samples within 1 assay 
+Active assay: RNA (1998 features, 0 variable features)
  2 layers present: counts, data
 
 $Br6471
 An object of class Seurat 
-4000 features across 37795 samples within 1 assay 
-Active assay: RNA (4000 features, 2304 variable features)
+1998 features across 37795 samples within 1 assay 
+Active assay: RNA (1998 features, 0 variable features)
  2 layers present: counts, data
 
 $Br6660
 An object of class Seurat 
-4000 features across 37082 samples within 1 assay 
-Active assay: RNA (4000 features, 2453 variable features)
+1998 features across 37082 samples within 1 assay 
+Active assay: RNA (1998 features, 0 variable features)
  2 layers present: counts, data
 
 $Br8325
 An object of class Seurat 
-4000 features across 29885 samples within 1 assay 
-Active assay: RNA (4000 features, 2517 variable features)
+1998 features across 29885 samples within 1 assay 
+Active assay: RNA (1998 features, 0 variable features)
+ 2 layers present: counts, data
+
+$Br9017
+An object of class Seurat 
+1998 features across 26382 samples within 1 assay 
+Active assay: RNA (1998 features, 0 variable features)
  2 layers present: counts, data
 
 $Br9192
 An object of class Seurat 
-4000 features across 28608 samples within 1 assay 
-Active assay: RNA (4000 features, 2342 variable features)
+1998 features across 28608 samples within 1 assay 
+Active assay: RNA (1998 features, 0 variable features)
+ 2 layers present: counts, data
+
+$Br9206
+An object of class Seurat 
+1998 features across 26850 samples within 1 assay 
+Active assay: RNA (1998 features, 0 variable features)
  2 layers present: counts, data
 
 $Br9280
 An object of class Seurat 
-4000 features across 26722 samples within 1 assay 
-Active assay: RNA (4000 features, 2158 variable features)
+1998 features across 26722 samples within 1 assay 
+Active assay: RNA (1998 features, 0 variable features)
+ 2 layers present: counts, data
+
+$Br9469
+An object of class Seurat 
+1998 features across 36638 samples within 1 assay 
+Active assay: RNA (1998 features, 0 variable features)
  2 layers present: counts, data
 
 Neighbors were identified for 32853 out of 32853 spots.
@@ -188,169 +170,324 @@ Neighbors were identified for 34352 out of 34353 spots.
 Neighbors were identified for 37795 out of 37795 spots.
 Neighbors were identified for 37082 out of 37082 spots.
 Neighbors were identified for 29885 out of 29885 spots.
+Neighbors were identified for 26378 out of 26382 spots.
 Neighbors were identified for 28608 out of 28608 spots.
-Neighbors were identified for 26722 out of 26722 spots.
------Intergrative data info.: 7 samples, 4000 genes X 227298 spots------
+Neighbors were identified for 26850 out of 26850 spots.
+Neighbors were identified for 26721 out of 26722 spots.
+Neighbors were identified for 36635 out of 36638 spots.
+-----Intergrative data info.: 10 samples, 1998 genes X 317168 spots------
 -----PRECAST model setting: error_heter=TRUE, Sigma_equal=FALSE, Sigma_diag=TRUE, mix_prop_heter=TRUE
 Start computing intial values... 
 
 fitting ...
   |                                                                              |                                                                      |   0%  |                                                                              |===================================                                   |  50%  |                                                                              |======================================================================| 100%
-2024-11-13 11:54:11.328 : ***** Initialization finished!, 219.682 mins elapsed.
+2025-06-23 14:04:50.268209 : ***** Initialization finished!, 55.877 mins elapsed.
 ----Fitting PRECAST model----------------
 
 variable initialize finish! 
 predict Y and V! 
-diff Energy = 12.497201 
-diff Energy = 3.890541 
-diff Energy = 1.675552 
-diff Energy = 3.177243 
-diff Energy = 7.100396 
+diff Energy = 8.391855 
+diff Energy = 0.828768 
+diff Energy = 4.164601 
+diff Energy = 13.533092 
+diff Energy = 7.314821 
+diff Energy = 10.523637 
 Finish ICM step! 
-iter = 2, loglik= 919020864.000000, dloglik=1.427952 
+iter = 2, loglik= -180812608.000000, dloglik=0.915803 
 predict Y and V! 
-diff Energy = 5.284052 
-diff Energy = 9.182917 
-diff Energy = 4.403581 
-diff Energy = 0.942221 
-diff Energy = 10.689873 
-diff Energy = 10.340362 
-diff Energy = 22.029934 
+diff Energy = 5.368009 
+diff Energy = 1.480234 
+diff Energy = 8.590443 
+diff Energy = 0.348237 
+diff Energy = 2.624159 
+diff Energy = 2.102111 
+diff Energy = 7.631303 
+diff Energy = 9.380965 
+diff Energy = 8.935751 
 Finish ICM step! 
-iter = 3, loglik= 920770624.000000, dloglik=0.001904 
+iter = 3, loglik= -178825024.000000, dloglik=0.010993 
 predict Y and V! 
-diff Energy = 15.896048 
-diff Energy = 16.509451 
-diff Energy = 16.930897 
-diff Energy = 0.072974 
-diff Energy = 24.168458 
-diff Energy = 39.090019 
-diff Energy = 30.243155 
+diff Energy = 33.535167 
+diff Energy = 28.959409 
+diff Energy = 33.525916 
+diff Energy = 10.359719 
+diff Energy = 19.252047 
+diff Energy = 36.659606 
+diff Energy = 25.395409 
+diff Energy = 13.285092 
+diff Energy = 15.842971 
+diff Energy = 23.671294 
 Finish ICM step! 
-iter = 4, loglik= 921493056.000000, dloglik=0.000785 
+iter = 4, loglik= -178033216.000000, dloglik=0.004428 
 predict Y and V! 
-diff Energy = 7.796024 
-diff Energy = 18.842418 
-diff Energy = 6.333750 
-diff Energy = 6.934416 
-diff Energy = 51.800755 
-diff Energy = 15.066131 
+diff Energy = 14.849751 
+diff Energy = 1.384113 
+diff Energy = 6.582508 
+diff Energy = 9.679049 
+diff Energy = 19.718163 
+diff Energy = 4.841152 
+diff Energy = 20.802107 
+diff Energy = 2.149160 
+diff Energy = 20.650346 
+diff Energy = 5.213651 
 Finish ICM step! 
-iter = 5, loglik= 921853312.000000, dloglik=0.000391 
+iter = 5, loglik= -177600912.000000, dloglik=0.002428 
 predict Y and V! 
-diff Energy = 7.203506 
-diff Energy = 8.037186 
-diff Energy = 7.440536 
-diff Energy = 29.012446 
-diff Energy = 41.896795 
-diff Energy = 12.778613 
+diff Energy = 11.902977 
+diff Energy = 11.842443 
+diff Energy = 10.169167 
+diff Energy = 9.691806 
+diff Energy = 12.618355 
+diff Energy = 43.319006 
+diff Energy = 18.125184 
+diff Energy = 10.158919 
+diff Energy = 11.503049 
+diff Energy = 17.087843 
 Finish ICM step! 
-iter = 6, loglik= 922037248.000000, dloglik=0.000200 
+iter = 6, loglik= -177338480.000000, dloglik=0.001478 
 predict Y and V! 
-diff Energy = 0.740643 
-diff Energy = 13.296803 
-diff Energy = 0.399673 
-diff Energy = 41.819815 
-diff Energy = 14.471977 
-diff Energy = 25.862953 
+diff Energy = 9.804248 
+diff Energy = 9.093165 
+diff Energy = 5.112480 
+diff Energy = 17.552999 
+diff Energy = 17.702511 
+diff Energy = 3.169646 
+diff Energy = 12.500004 
+diff Energy = 8.589066 
 Finish ICM step! 
-iter = 7, loglik= 922145984.000000, dloglik=0.000118 
+iter = 7, loglik= -177175536.000000, dloglik=0.000919 
 predict Y and V! 
-diff Energy = 2.336738 
-diff Energy = 3.472782 
-diff Energy = 12.355515 
-diff Energy = 28.383377 
-diff Energy = 12.606686 
-diff Energy = 0.781741 
+diff Energy = 3.178979 
+diff Energy = 9.777610 
+diff Energy = 1.552182 
+diff Energy = 1.750388 
+diff Energy = 3.194864 
+diff Energy = 15.398351 
+diff Energy = 5.255326 
+diff Energy = 2.756588 
+diff Energy = 1.459114 
+diff Energy = 20.180251 
 Finish ICM step! 
-iter = 8, loglik= 922216832.000000, dloglik=0.000077 
+iter = 8, loglik= -177070960.000000, dloglik=0.000590 
 predict Y and V! 
-diff Energy = 2.303301 
-diff Energy = 11.589354 
-diff Energy = 12.467999 
-diff Energy = 3.405162 
-diff Energy = 15.205451 
-diff Energy = 9.072685 
+diff Energy = 3.650934 
+diff Energy = 3.216585 
+diff Energy = 0.610367 
+diff Energy = 3.439766 
+diff Energy = 0.818262 
+diff Energy = 16.406568 
+diff Energy = 11.489532 
+diff Energy = 4.921294 
+diff Energy = 5.213117 
 Finish ICM step! 
-iter = 9, loglik= 922268992.000000, dloglik=0.000057 
+iter = 9, loglik= -177003824.000000, dloglik=0.000379 
 predict Y and V! 
-diff Energy = 0.992408 
-diff Energy = 4.939216 
-diff Energy = 0.028888 
-diff Energy = 1.315024 
-diff Energy = 11.036552 
-diff Energy = 0.195921 
+diff Energy = 4.419930 
+diff Energy = 4.862463 
+diff Energy = 0.453145 
+diff Energy = 2.344618 
+diff Energy = 1.420827 
+diff Energy = 0.936906 
+diff Energy = 14.964563 
 Finish ICM step! 
-iter = 10, loglik= 922307200.000000, dloglik=0.000041 
+iter = 10, loglik= -176958592.000000, dloglik=0.000256 
 predict Y and V! 
-diff Energy = 0.808849 
-diff Energy = 9.584210 
-diff Energy = 0.055037 
-diff Energy = 15.301191 
-diff Energy = 2.037993 
+diff Energy = 4.411853 
+diff Energy = 1.093242 
+diff Energy = 0.616536 
+diff Energy = 15.959048 
+diff Energy = 0.048537 
+diff Energy = 0.157485 
+diff Energy = 1.518719 
 Finish ICM step! 
-iter = 11, loglik= 922339328.000000, dloglik=0.000035 
+iter = 11, loglik= -176924240.000000, dloglik=0.000194 
 predict Y and V! 
-diff Energy = 1.064979 
-diff Energy = 2.103140 
-diff Energy = 5.807283 
-diff Energy = 2.672142 
-diff Energy = 0.633981 
-diff Energy = 0.485762 
-diff Energy = 0.106514 
+diff Energy = 0.156650 
+diff Energy = 6.783060 
+diff Energy = 1.246967 
+diff Energy = 3.160707 
+diff Energy = 2.206731 
+diff Energy = 3.531186 
+diff Energy = 2.991974 
+diff Energy = 1.508047 
+diff Energy = 5.067182 
 Finish ICM step! 
-iter = 12, loglik= 922365248.000000, dloglik=0.000028 
+iter = 12, loglik= -176896704.000000, dloglik=0.000156 
 predict Y and V! 
-diff Energy = 0.974995 
-diff Energy = 0.828991 
-diff Energy = 0.379932 
-diff Energy = 0.240807 
-diff Energy = 19.029760 
+diff Energy = 0.812630 
+diff Energy = 1.304479 
+diff Energy = 1.547959 
+diff Energy = 6.487284 
+diff Energy = 1.286351 
+diff Energy = 4.691268 
+diff Energy = 4.569791 
 Finish ICM step! 
-iter = 13, loglik= 922386880.000000, dloglik=0.000023 
+iter = 13, loglik= -176875120.000000, dloglik=0.000122 
 predict Y and V! 
-diff Energy = 1.259168 
-diff Energy = 2.358702 
-diff Energy = 0.689334 
-diff Energy = 1.129525 
-diff Energy = 15.227785 
+diff Energy = 0.978033 
+diff Energy = 2.465950 
+diff Energy = 2.091097 
+diff Energy = 0.195083 
+diff Energy = 0.216783 
 Finish ICM step! 
-iter = 14, loglik= 922405504.000000, dloglik=0.000020 
+iter = 14, loglik= -176856800.000000, dloglik=0.000104 
 predict Y and V! 
-diff Energy = 4.841455 
-diff Energy = 4.925889 
-diff Energy = 5.650099 
-diff Energy = 13.049280 
+diff Energy = 0.166523 
+diff Energy = 0.264545 
+diff Energy = 0.547222 
+diff Energy = 0.747425 
+diff Energy = 1.334703 
+diff Energy = 1.023083 
 Finish ICM step! 
-iter = 15, loglik= 922420992.000000, dloglik=0.000017 
+iter = 15, loglik= -176841216.000000, dloglik=0.000088 
 predict Y and V! 
-diff Energy = 1.395060 
-diff Energy = 4.786256 
-diff Energy = 6.521253 
-diff Energy = 4.265418 
+diff Energy = 0.326110 
+diff Energy = 1.582516 
+diff Energy = 0.391698 
+diff Energy = 0.337569 
+diff Energy = 5.757373 
+diff Energy = 5.911013 
 Finish ICM step! 
-iter = 16, loglik= 922434048.000000, dloglik=0.000014 
+iter = 16, loglik= -176827616.000000, dloglik=0.000077 
 predict Y and V! 
-diff Energy = 1.718745 
-diff Energy = 1.047078 
-diff Energy = 3.162876 
-diff Energy = 0.044901 
-diff Energy = 0.956658 
+diff Energy = 0.586186 
+diff Energy = 5.042535 
+diff Energy = 1.242784 
+diff Energy = 9.680133 
+diff Energy = 3.472044 
 Finish ICM step! 
-iter = 17, loglik= 922444672.000000, dloglik=0.000012 
+iter = 17, loglik= -176815280.000000, dloglik=0.000070 
 predict Y and V! 
-diff Energy = 2.992974 
-diff Energy = 3.852559 
-diff Energy = 2.620716 
+diff Energy = 1.799160 
+diff Energy = 0.244051 
+diff Energy = 0.666238 
+diff Energy = 1.187145 
+diff Energy = 3.804618 
+diff Energy = 0.424012 
+diff Energy = 3.532208 
+diff Energy = 3.060318 
+diff Energy = 16.333624 
 Finish ICM step! 
-iter = 18, loglik= 922453120.000000, dloglik=0.000009 
-2024-11-13 12:43:32.954924 : ***** PRECAST model fitting finished!, 49.36 mins elapsed.
-Warning messages:
-1: In asMethod(object) :
-  sparse->dense coercion: allocating vector of size 1.0 GiB
-2: In asMethod(object) :
-  sparse->dense coercion: allocating vector of size 1.1 GiB
-3: In asMethod(object) :
-  sparse->dense coercion: allocating vector of size 1.1 GiB
+iter = 18, loglik= -176803984.000000, dloglik=0.000064 
+predict Y and V! 
+diff Energy = 0.071369 
+diff Energy = 0.633078 
+diff Energy = 7.111971 
+diff Energy = 2.053498 
+diff Energy = 1.005403 
+diff Energy = 3.503211 
+Finish ICM step! 
+iter = 19, loglik= -176793952.000000, dloglik=0.000057 
+predict Y and V! 
+diff Energy = 0.278118 
+diff Energy = 4.493951 
+diff Energy = 4.044098 
+diff Energy = 6.859520 
+diff Energy = 0.814298 
+diff Energy = 0.703711 
+diff Energy = 0.319957 
+diff Energy = 2.874055 
+diff Energy = 14.309686 
+Finish ICM step! 
+iter = 20, loglik= -176784320.000000, dloglik=0.000054 
+predict Y and V! 
+diff Energy = 0.850631 
+diff Energy = 0.540078 
+diff Energy = 10.242553 
+diff Energy = 0.590350 
+diff Energy = 3.289926 
+diff Energy = 6.334238 
+Finish ICM step! 
+iter = 21, loglik= -176776304.000000, dloglik=0.000045 
+predict Y and V! 
+diff Energy = 0.092035 
+diff Energy = 2.838239 
+diff Energy = 2.117000 
+diff Energy = 2.790822 
+diff Energy = 1.140026 
+diff Energy = 10.388045 
+Finish ICM step! 
+iter = 22, loglik= -176768096.000000, dloglik=0.000046 
+predict Y and V! 
+diff Energy = 1.643662 
+diff Energy = 0.078560 
+diff Energy = 0.355637 
+diff Energy = 1.362122 
+diff Energy = 0.413266 
+diff Energy = 4.021518 
+diff Energy = 4.384449 
+Finish ICM step! 
+iter = 23, loglik= -176760272.000000, dloglik=0.000044 
+predict Y and V! 
+diff Energy = 0.413194 
+diff Energy = 2.028920 
+diff Energy = 0.598179 
+diff Energy = 8.327401 
+diff Energy = 6.430610 
+diff Energy = 1.138361 
+diff Energy = 12.078613 
+Finish ICM step! 
+iter = 24, loglik= -176753184.000000, dloglik=0.000040 
+predict Y and V! 
+diff Energy = 0.026428 
+diff Energy = 4.057719 
+diff Energy = 1.179651 
+diff Energy = 1.677963 
+diff Energy = 0.344016 
+diff Energy = 3.756438 
+diff Energy = 1.278994 
+diff Energy = 5.564516 
+Finish ICM step! 
+iter = 25, loglik= -176746704.000000, dloglik=0.000037 
+predict Y and V! 
+diff Energy = 0.038509 
+diff Energy = 0.030079 
+diff Energy = 3.632540 
+diff Energy = 2.373166 
+diff Energy = 1.996942 
+diff Energy = 1.287188 
+diff Energy = 1.533348 
+diff Energy = 16.878113 
+Finish ICM step! 
+iter = 26, loglik= -176740464.000000, dloglik=0.000035 
+predict Y and V! 
+diff Energy = 0.076552 
+diff Energy = 1.756707 
+diff Energy = 0.366445 
+diff Energy = 1.196930 
+diff Energy = 1.019743 
+diff Energy = 1.205589 
+diff Energy = 11.871988 
+Finish ICM step! 
+iter = 27, loglik= -176734656.000000, dloglik=0.000033 
+predict Y and V! 
+diff Energy = 0.009040 
+diff Energy = 3.901977 
+diff Energy = 0.136150 
+diff Energy = 4.250220 
+diff Energy = 3.069834 
+diff Energy = 15.958790 
+Finish ICM step! 
+iter = 28, loglik= -176729264.000000, dloglik=0.000031 
+predict Y and V! 
+diff Energy = 0.482335 
+diff Energy = 0.148099 
+diff Energy = 2.764022 
+diff Energy = 1.024568 
+diff Energy = 2.198982 
+diff Energy = 4.482925 
+diff Energy = 11.936743 
+Finish ICM step! 
+iter = 29, loglik= -176724128.000000, dloglik=0.000029 
+predict Y and V! 
+diff Energy = 0.622530 
+diff Energy = 0.214509 
+diff Energy = 4.863208 
+diff Energy = 1.920387 
+diff Energy = 1.997432 
+diff Energy = 13.351021 
+Finish ICM step! 
+iter = 30, loglik= -176719280.000000, dloglik=0.000027 
+2025-06-23 15:01:30.271985 : ***** PRECAST model fitting finished!, 56.667 mins elapsed.
 **** Job ends ****
-Wed Nov 13 12:45:24 PM EST 2024
+Mon Jun 23 03:04:34 PM EDT 2025

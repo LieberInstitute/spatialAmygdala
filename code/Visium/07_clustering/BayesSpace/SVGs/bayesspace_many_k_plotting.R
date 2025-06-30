@@ -12,7 +12,7 @@ load(here("processed-data","Visium", "06_batch_correction", "spe_harmony.Rdata")
 dim(spe)
 
 # get folders in cluster_Csv
-bs_folders <- list.files(here::here("processed-data","Visium", "07_clustering", "BayesSpace","HVGs","cluster_csv"), full.names = TRUE)
+bs_folders <- list.files(here::here("processed-data","Visium", "07_clustering", "BayesSpace","SVGs","Br2743"), full.names = TRUE)
 bs_folders
 # [1] "/dcs04/lieber/marmaypag/spatialAMY_LIBD4125/spatialAmygdala/processed-data/Visium/08_clustering/BayesSpace/HVGs/cluster_csv/BayesSpace_10"
 # [2] "/dcs04/lieber/marmaypag/spatialAMY_LIBD4125/spatialAmygdala/processed-data/Visium/08_clustering/BayesSpace/HVGs/cluster_csv/BayesSpace_12"

@@ -1,11 +1,12 @@
 #!/bin/bash
 #SBATCH --job-name=precast_many_k
-#SBATCH --output=logs_precast/R-%x.%a.txt
-#SBATCH --error=logs_precast/R-%x.%a.txt
-#SBATCH --array=2-20
-#SBATCH --mem=80G
+#SBATCH --output=logs/R-%x.%a.txt
+#SBATCH --error=logs/R-%x.%a.txt
+#SBATCH --array=2-20%10
+#SBATCH --mem=150G
 #SBATCH --mail-type=END
 #SBATCH --cpus-per-task=1 # specify number of CPUs needed for the job, adjust as needed
+#SBATCH --mail-user=mtotty2@jh.edu
 
 
 echo "**** SLURM info ****"

@@ -13,7 +13,7 @@ suppressPackageStartupMessages({
     library("escheR")
 })
 
-load(here("processed-data", "04_normalization", "spe_stitched_norm.Rdata"))
+load(here("processed-data","Visium", "06_batch_correction", "spe_harmony.Rdata"))
 colnames(spe) <- spe$key
 
 # drop duplicated colData, if any
@@ -22,7 +22,7 @@ filtered_colData <- colData(spe)[, !duplicated_cols]
 colData(spe) <- filtered_colData
 
 K <- as.numeric(Sys.getenv("SLURM_ARRAY_TASK_ID"))
-load(file = here("processed-data", "08_clustering", "PRECAST","HVGs", "Rdata_objects", paste0("PRECASTObj_",K,".Rdata")))
+load(file = here("processed-data", "Visium", "07_clustering", "PRECAST","SVGs", paste0("PRECASTObj_",K,".Rdata")))
 
 PRECASTObj <- SelectModel(PRECASTObj)
 seuInt <- IntegrateSpaData(PRECASTObj, species = "Human")
@@ -45,7 +45,7 @@ precast_name <- paste0("PRECAST_clusters_", K)
 cluster_export(
     spe,
     "PRECAST_cluster",
-    cluster_dir = here::here("processed-data", "08_clustering", "PRECAST","HVGs", "cluster_csv", precast_name)
+    cluster_dir = here::here("processed-data", "Visium", "07_clustering", "PRECAST","SVGs", "cluster_csv", precast_name)
 )
 
 
@@ -66,7 +66,7 @@ cluster_export(
 
 
 # loop through each sample_id and create a pdf on a separete page
-pdf(file = here::here("plots", "08_clustering", "PRECAST", paste0(precast_name, ".pdf")), width = 10, height = 10)
+pdf(file = here::here("plots", "Visium", "07_clustering", "PRECAST", "SVGs", paste0(precast_name, ".pdf")), width = 10, height = 10)
 for (sample_id in unique(colData(spe)$sample_id)) {
     spe.subset <- spe[, colData(spe)$sample_id == sample_id]
     p <- make_escheR(spe.subset) |>

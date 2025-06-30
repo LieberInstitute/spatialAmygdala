@@ -1,10 +1,10 @@
 **** Job starts ****
-Thu Nov 14 12:18:29 PM EST 2024
+Mon Jun 23 09:01:19 PM EDT 2025
 **** SLURM info ****
 User: mtotty
-Job id: 10580002
+Job id: 17720369
 Job name: precast_vis
-Hostname: compute-115
+Hostname: compute-065
 Task id: 16
 Loading conda_R/4.4
 
@@ -14,11 +14,13 @@ Currently Loaded Modules:
 
  
 
-The total number of spots exceeds 8e4, thus the subsampling schema will be used to speed up computation.
-IntegrateSRTData: the subsampling schema will be used to speed up computation since subsample_rate is smaller than 1.
-Using only PRECAST results to obtain the batch corrected gene expressions since species is unknown or the genelist in PRECASTObj has less than 5 overlapp with the housekeeping genes of given species.
-Start integration...
-/var/spool/slurm/d/job10580002/slurm_script: line 27: 1696331 Killed                  Rscript precast_vis.R
+Warning message:
+replacing previous import ‘S4Arrays::read_block’ by ‘DelayedArray::read_block’ when loading ‘SummarizedExperiment’ 
+Error in readChar(con, 5L, useBytes = TRUE) : cannot open the connection
+Calls: load -> readChar
+In addition: Warning message:
+In readChar(con, 5L, useBytes = TRUE) :
+  cannot open compressed file '/dcs04/lieber/marmaypag/spatialAMY_LIBD4125/spatialAmygdala/processed-data/Visium/07_clustering/PRECAST/SVGs/PRECASTObj_16.Rdata', probable reason 'No such file or directory'
+Execution halted
 **** Job ends ****
-Thu Nov 14 12:32:21 PM EST 2024
-slurmstepd: error: Detected 1 oom-kill event(s) in StepId=10580002.batch. Some of your processes may have been killed by the cgroup out-of-memory handler.
+Mon Jun 23 09:09:13 PM EDT 2025

@@ -1,7 +1,7 @@
 #!/bin/bash
 #SBATCH --job-name=precast_vis
-#SBATCH --output=logs_precast/R-%x.%a.txt
-#SBATCH --error=logs_precast/R-%x.%a.txt
+#SBATCH --output=logs/R-%x.%a.txt
+#SBATCH --error=logs/R-%x.%a.txt
 #SBATCH --array=2-20
 #SBATCH --mem=40G
 #SBATCH --mail-type=END

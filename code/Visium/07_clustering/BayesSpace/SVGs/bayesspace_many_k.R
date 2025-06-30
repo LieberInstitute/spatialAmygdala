@@ -17,7 +17,7 @@ dim(spe)
 k <- as.numeric(Sys.getenv("SLURM_ARRAY_TASK_ID"))
 
 
-#spe <- spatialPreprocess(spe, platform="Visium", n.PCs=7, n.HVGs=4000, log.normalize=TRUE)
+# spe <- spatialPreprocess(spe, platform="Visium", n.PCs=30, n.HVGs=2000, log.normalize=TRUE)
 
 colData(spe)$row <- spe$array_row
 colData(spe)$col <- spe$array_col
@@ -27,7 +27,7 @@ metadata(spe)$BayesSpace.data <- list(platform = "Visium", is.enhanced = FALSE)
 message("Running spatialCluster()")
 Sys.time()
 set.seed(2)
-spe <- spatialCluster(spe, use.dimred = "HARMONY", q = k, nrep=10000, burn.in=100, gamma=3)
+spe <- spatialCluster(spe, use.dimred = "PCA-HARMONY_sample", q = k, nrep=10000, burn.in=100, gamma=3)
 Sys.time()
 
 bayesSpace_name <- paste0("BayesSpace_", k)
@@ -36,14 +36,14 @@ colnames(colData(spe))[ncol(colData(spe))] <- bayesSpace_name
 cluster_export(
     spe,
     bayesSpace_name,
-    cluster_dir = here::here("processed-data","Visium", "07_clustering", "BayesSpace","HVGs","cluster_csv")
+    cluster_dir = here::here("processed-data","Visium", "07_clustering", "BayesSpace","SVGs","cluster_csv")
 )
 
 clustV <- bayesSpace_name
 
 
 # loop through each sample_id and create a pdf on a separete page
-pdf(file = here::here("plots", "08_clustering", "BayesSpace", paste0(precast_name, ".pdf")), width = 10, height = 10)
+pdf(file = here::here("plots", "07_clustering", "BayesSpace", paste0(bayesSpace_name, ".pdf")), width = 10, height = 10)
 for (sample_id in unique(colData(spe)$sample_id)) {
     spe.subset <- spe[, colData(spe)$sample_id == sample_id]
     p <- make_escheR(spe.subset) |>

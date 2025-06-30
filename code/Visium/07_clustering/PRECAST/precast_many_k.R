@@ -10,7 +10,14 @@ suppressPackageStartupMessages({
 })
 
 #start from spe without batch correction
-load(here("processed-data", "04_normalization", "spe_stitched_norm.Rdata"))
+load(here("processed-data","Visium", "06_batch_correction", "spe_harmony.Rdata"))
+dim(spe)
+
+#load nnSVG results
+SVGs.df <- read.csv(here("processed-data", "Visium", "04_feature_selection", "nnSVG_summary.csv"))
+genes <- SVGs.df$gene_name[1:2000]
+
+spe <- spe[!duplicated(rownames(spe)), ]
 
 colnames(spe) <- spe$key
 
@@ -30,7 +37,8 @@ seuList <- unique(spe$sample_id) |>
     })
 
 set.seed(1)
-preobj <- CreatePRECASTObject(seuList = seuList, gene.number=4000, selectGenesMethod='HVGs',
+preobj <- CreatePRECASTObject(seuList = seuList, selectGenesMethod=NULL,
+                              customGenelist = genes,
                               premin.spots = 1, premin.features=1, postmin.spots=1, postmin.features=1)
 preobj@seulist
 
@@ -42,4 +50,4 @@ K <- as.numeric(Sys.getenv("SLURM_ARRAY_TASK_ID"))
 
 PRECASTObj <- PRECAST(PRECASTObj, K = K)
 
-save(PRECASTObj, file = here("processed-data", "08_clustering", "PRECAST","HVGs","Rdata_objects", paste0("PRECASTObj_",K,".Rdata")))
+save(PRECASTObj, file = here("processed-data", "Visium", "07_clustering", "PRECAST","SVGs", paste0("PRECASTObj_",K,".Rdata")))

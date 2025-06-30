@@ -1,10 +1,10 @@
 **** Job starts ****
-Thu Nov 14 12:18:29 PM EST 2024
+Mon Jun 23 08:52:53 PM EDT 2025
 **** SLURM info ****
 User: mtotty
-Job id: 10579992
+Job id: 17720287
 Job name: precast_vis
-Hostname: compute-162
+Hostname: compute-065
 Task id: 6
 Loading conda_R/4.4
 
@@ -14,11 +14,17 @@ Currently Loaded Modules:
 
  
 
+Warning message:
+replacing previous import ‘S4Arrays::read_block’ by ‘DelayedArray::read_block’ when loading ‘SummarizedExperiment’ 
 The total number of spots exceeds 8e4, thus the subsampling schema will be used to speed up computation.
 IntegrateSRTData: the subsampling schema will be used to speed up computation since subsample_rate is smaller than 1.
-Using only PRECAST results to obtain the batch corrected gene expressions since species is unknown or the genelist in PRECASTObj has less than 5 overlapp with the housekeeping genes of given species.
+Using bouth housekeeping gene and PRECAST results to obtain the batch corrected gene expressions.
 Start integration...
-/var/spool/slurm/d/job10579992/slurm_script: line 27: 1650238 Killed                  Rscript precast_vis.R
+2025-06-23 21:50:42.558764 : ***** Data integration finished!, 47.107 mins elapsed.
+Put the data into a new Seurat object...
+2025-06-23 21:51:25.168869 : ***** New Seurat object is generated!, 0.709 mins elapsed.
+Overwriting 'spe$key'. Set 'overwrite = FALSE' if you do not want to overwrite it.
+null device 
+          1 
 **** Job ends ****
-Thu Nov 14 12:21:58 PM EST 2024
-slurmstepd: error: Detected 1 oom-kill event(s) in StepId=10579992.batch. Some of your processes may have been killed by the cgroup out-of-memory handler.
+Mon Jun 23 09:55:07 PM EDT 2025

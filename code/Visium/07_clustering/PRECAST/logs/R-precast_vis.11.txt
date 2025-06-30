@@ -1,10 +1,10 @@
 **** Job starts ****
-Thu Nov 14 12:18:29 PM EST 2024
+Mon Jun 23 08:58:36 PM EDT 2025
 **** SLURM info ****
 User: mtotty
-Job id: 10579997
+Job id: 17720328
 Job name: precast_vis
-Hostname: compute-162
+Hostname: compute-165
 Task id: 11
 Loading conda_R/4.4
 
@@ -14,22 +14,17 @@ Currently Loaded Modules:
 
  
 
+Warning message:
+replacing previous import ‘S4Arrays::read_block’ by ‘DelayedArray::read_block’ when loading ‘SummarizedExperiment’ 
 The total number of spots exceeds 8e4, thus the subsampling schema will be used to speed up computation.
 IntegrateSRTData: the subsampling schema will be used to speed up computation since subsample_rate is smaller than 1.
-Using only PRECAST results to obtain the batch corrected gene expressions since species is unknown or the genelist in PRECASTObj has less than 5 overlapp with the housekeeping genes of given species.
+Using bouth housekeeping gene and PRECAST results to obtain the batch corrected gene expressions.
 Start integration...
-2024-11-14 12:23:13.620239 : ***** Data integration finished!, 2.456 mins elapsed.
+2025-06-23 21:07:49.927328 : ***** Data integration finished!, 6.093 mins elapsed.
 Put the data into a new Seurat object...
-2024-11-14 12:23:29.467481 : ***** New Seurat object is generated!, 0.264 mins elapsed.
-Warning messages:
-1: In asMethod(object) :
-  sparse->dense coercion: allocating vector of size 1.0 GiB
-2: In asMethod(object) :
-  sparse->dense coercion: allocating vector of size 1.1 GiB
-3: In asMethod(object) :
-  sparse->dense coercion: allocating vector of size 1.1 GiB
+2025-06-23 21:08:26.100857 : ***** New Seurat object is generated!, 0.602 mins elapsed.
 Overwriting 'spe$key'. Set 'overwrite = FALSE' if you do not want to overwrite it.
 null device 
           1 
 **** Job ends ****
-Thu Nov 14 12:24:39 PM EST 2024
+Mon Jun 23 09:09:49 PM EDT 2025

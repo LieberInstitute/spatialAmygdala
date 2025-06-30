@@ -1,0 +1,185 @@
+**** Job starts ****
+Fri Jun 27 02:59:51 PM EDT 2025
+**** SLURM info ****
+User: mtotty
+Job id: 17854928
+Job name: BS_individualRuns
+Hostname: compute-169
+Task id: 13
+Unloading conda_R/4.4
+Loading conda_R/4.4
+
+Currently Loaded Modules:
+  1) JHPCE_ROCKY9_DEFAULT_ENV   3) git-status-size/github   5) conda_R/4.4
+  2) JHPCE_tools/3.0            4) conda/3-24.3.0
+
+ 
+
+here() starts at /dcs04/lieber/marmaypag/spatialAMY_LIBD4125/spatialAmygdala
+Loading required package: SingleCellExperiment
+Loading required package: SummarizedExperiment
+Loading required package: MatrixGenerics
+Loading required package: matrixStats
+
+Attaching package: ‘MatrixGenerics’
+
+The following objects are masked from ‘package:matrixStats’:
+
+    colAlls, colAnyNAs, colAnys, colAvgsPerRowSet, colCollapse,
+    colCounts, colCummaxs, colCummins, colCumprods, colCumsums,
+    colDiffs, colIQRDiffs, colIQRs, colLogSumExps, colMadDiffs,
+    colMads, colMaxs, colMeans2, colMedians, colMins, colOrderStats,
+    colProds, colQuantiles, colRanges, colRanks, colSdDiffs, colSds,
+    colSums2, colTabulates, colVarDiffs, colVars, colWeightedMads,
+    colWeightedMeans, colWeightedMedians, colWeightedSds,
+    colWeightedVars, rowAlls, rowAnyNAs, rowAnys, rowAvgsPerColSet,
+    rowCollapse, rowCounts, rowCummaxs, rowCummins, rowCumprods,
+    rowCumsums, rowDiffs, rowIQRDiffs, rowIQRs, rowLogSumExps,
+    rowMadDiffs, rowMads, rowMaxs, rowMeans2, rowMedians, rowMins,
+    rowOrderStats, rowProds, rowQuantiles, rowRanges, rowRanks,
+    rowSdDiffs, rowSds, rowSums2, rowTabulates, rowVarDiffs, rowVars,
+    rowWeightedMads, rowWeightedMeans, rowWeightedMedians,
+    rowWeightedSds, rowWeightedVars
+
+Loading required package: GenomicRanges
+Loading required package: stats4
+Loading required package: BiocGenerics
+
+Attaching package: ‘BiocGenerics’
+
+The following objects are masked from ‘package:stats’:
+
+    IQR, mad, sd, var, xtabs
+
+The following objects are masked from ‘package:base’:
+
+    anyDuplicated, aperm, append, as.data.frame, basename, cbind,
+    colnames, dirname, do.call, duplicated, eval, evalq, Filter, Find,
+    get, grep, grepl, intersect, is.unsorted, lapply, Map, mapply,
+    match, mget, order, paste, pmax, pmax.int, pmin, pmin.int,
+    Position, rank, rbind, Reduce, rownames, sapply, saveRDS, setdiff,
+    table, tapply, union, unique, unsplit, which.max, which.min
+
+Loading required package: S4Vectors
+
+Attaching package: ‘S4Vectors’
+
+The following object is masked from ‘package:utils’:
+
+    findMatches
+
+The following objects are masked from ‘package:base’:
+
+    expand.grid, I, unname
+
+Loading required package: IRanges
+Loading required package: GenomeInfoDb
+Loading required package: Biobase
+Welcome to Bioconductor
+
+    Vignettes contain introductory material; view with
+    'browseVignettes()'. To cite Bioconductor, see
+    'citation("Biobase")', and for packages 'citation("pkgname")'.
+
+
+Attaching package: ‘Biobase’
+
+The following object is masked from ‘package:MatrixGenerics’:
+
+    rowMedians
+
+The following objects are masked from ‘package:matrixStats’:
+
+    anyMissing, rowMedians
+
+Warning message:
+replacing previous import ‘S4Arrays::read_block’ by ‘DelayedArray::read_block’ when loading ‘SummarizedExperiment’ 
+
+Attaching package: ‘gridExtra’
+
+The following object is masked from ‘package:Biobase’:
+
+    combine
+
+The following object is masked from ‘package:BiocGenerics’:
+
+    combine
+
+[1]  36601 317173
+Processing sample: Br2743
+Running spatialCluster()
+Neighbors were identified for 32854 out of 32854 spots.
+Fitting model...
+Calculating labels using iterations 100 through 10000.
+Overwriting 'spe$key'. Set 'overwrite = FALSE' if you do not want to overwrite it.
+Finished processing sample: Br2743
+Processing sample: Br6423
+Running spatialCluster()
+Neighbors were identified for 34352 out of 34353 spots.
+Fitting model...
+Calculating labels using iterations 100 through 10000.
+Overwriting 'spe$key'. Set 'overwrite = FALSE' if you do not want to overwrite it.
+Finished processing sample: Br6423
+Processing sample: Br6471
+Running spatialCluster()
+Neighbors were identified for 37795 out of 37795 spots.
+Fitting model...
+Calculating labels using iterations 100 through 10000.
+Overwriting 'spe$key'. Set 'overwrite = FALSE' if you do not want to overwrite it.
+Finished processing sample: Br6471
+Processing sample: Br6660
+Running spatialCluster()
+Neighbors were identified for 37085 out of 37085 spots.
+Fitting model...
+Calculating labels using iterations 100 through 10000.
+Overwriting 'spe$key'. Set 'overwrite = FALSE' if you do not want to overwrite it.
+Finished processing sample: Br6660
+Processing sample: Br8325
+Running spatialCluster()
+Neighbors were identified for 29885 out of 29885 spots.
+Fitting model...
+Calculating labels using iterations 100 through 10000.
+Overwriting 'spe$key'. Set 'overwrite = FALSE' if you do not want to overwrite it.
+Finished processing sample: Br8325
+Processing sample: Br9017
+Running spatialCluster()
+Neighbors were identified for 26378 out of 26382 spots.
+Fitting model...
+Calculating labels using iterations 100 through 10000.
+Overwriting 'spe$key'. Set 'overwrite = FALSE' if you do not want to overwrite it.
+Finished processing sample: Br9017
+Processing sample: Br9192
+Running spatialCluster()
+Neighbors were identified for 28608 out of 28608 spots.
+Fitting model...
+Calculating labels using iterations 100 through 10000.
+Overwriting 'spe$key'. Set 'overwrite = FALSE' if you do not want to overwrite it.
+Finished processing sample: Br9192
+Processing sample: Br9206
+Running spatialCluster()
+Neighbors were identified for 26850 out of 26850 spots.
+Fitting model...
+Calculating labels using iterations 100 through 10000.
+Overwriting 'spe$key'. Set 'overwrite = FALSE' if you do not want to overwrite it.
+Finished processing sample: Br9206
+Processing sample: Br9280
+Running spatialCluster()
+Neighbors were identified for 26721 out of 26722 spots.
+Fitting model...
+Calculating labels using iterations 100 through 10000.
+Overwriting 'spe$key'. Set 'overwrite = FALSE' if you do not want to overwrite it.
+Finished processing sample: Br9280
+Processing sample: Br9469
+Running spatialCluster()
+Neighbors were identified for 36636 out of 36639 spots.
+Fitting model...
+Calculating labels using iterations 100 through 10000.
+Overwriting 'spe$key'. Set 'overwrite = FALSE' if you do not want to overwrite it.
+Finished processing sample: Br9469
+Warning messages:
+1: In dir.create(outdir, recursive = TRUE) :
+  '/dcs04/lieber/marmaypag/spatialAMY_LIBD4125/spatialAmygdala/processed-data/Visium/07_clustering/BayesSpace/SVGs/Br2743/BayesSpace_13' already exists
+2: In dir.create(outdir, recursive = TRUE) :
+  '/dcs04/lieber/marmaypag/spatialAMY_LIBD4125/spatialAmygdala/processed-data/Visium/07_clustering/BayesSpace/SVGs/Br8325/BayesSpace_13' already exists
+**** Job ends ****
+Fri Jun 27 09:24:33 PM EDT 2025
