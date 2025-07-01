@@ -1,7 +1,7 @@
 #!/bin/bash
-#SBATCH --job-name=anksy
-#SBATCH --output=logs/banksy.txt
-#SBATCH --error=logs/anksy.txt
+#SBATCH --job-name=BANKSY_9280
+#SBATCH --output=logs/BANKSY_9280.txt
+#SBATCH --error=logs/BANKSY_9280.txt
 #SBATCH --mem=200G
 #SBATCH --mail-type=FAIL
 #SBATCH --mail-type=END
@@ -22,7 +22,7 @@ echo "Hostname: ${HOSTNAME}"
 module load conda_R/4.4
 
 ## Edit with your job command
-Rscript banksy_testing.R
+Rscript banksy_testing_9280.R
 
 echo "**** Job ends ****"
 date

@@ -14,11 +14,12 @@ library("escheR")
 
 
 # Save directories
-plot_dir = here("plots", "08_clustering", "banksy")
-processed_dir = here("processed-data","08_clustering")
+plot_dir = here("plots", "07_clustering", "BANKSY")
+processed_dir = here("processed-data","07_clustering")
 
-load(here("processed-data","Visium", "06_dim_reduction", "spe_stitched_pca.Rdata"), verbose = TRUE)
-spe
+load(here("processed-data","Visium", "06_batch_correction", "spe_harmony.Rdata"))
+dim(spe)
+ 
 # class: SpatialExperiment 
 # dim: 25801 308044 
 # metadata(0):
@@ -34,8 +35,8 @@ spe
 # spatialCoords names(2) : pxl_col_in_fullres pxl_row_in_fullres
 # imgData names(4): sample_id image_id data scaleFactor
 
-# subset to fourth donor (Br9280)
-spe.subset <- spe[, spe$brnum == "Br8325"]
+spe.subset <- spe[, spe$sample_id == "Br8325"]
+
 
 colnames(colData(spe.subset))
 #unique(spe$exclude_overlapping)
@@ -47,12 +48,15 @@ spe.subset <- spe.subset[, !spe.subset$exclude_overlapping & !is.na(spe.subset$e
 # renormalization
 spe.subset <- logNormCounts(spe.subset)
 
-# get HVGs
-dec <- modelGeneVar(spe.subset)
-chosen <- getTopHVGs(dec, n=4000)
+
+# ===== Load SVGs ======
+#load nnSVG results
+SVGs.df <- read.csv(here("processed-data", "Visium", "04_feature_selection", "nnSVG_summary.csv"))
+genes <- SVGs.df$gene_name[1:2000]
+
 
 # subset to hvgs
-spe.subset <- spe.subset[chosen, ]
+spe.subset <- spe.subset[genes, ]
 
 
 # == Banksy ==sq
@@ -66,41 +70,32 @@ spe.subset <- Banksy::computeBanksy(spe.subset, assay_name = aname, k_geom = k_g
 set.seed(1000)
 spe.subset <- Banksy::runBanksyPCA(spe.subset, lambda = lambda, npcs = npcs, group = "capture_area")
 
-# # drop PCA, rename PCA_M0_lam0.4 to PCA
-# reducedDim(spe.subset, "PCA") <- NULL
-# reducedDim(spe.subset, "HARMONY") <- NULL
-# reducedDim(spe.subset, "PCA") <- reducedDim(spe.subset, "PCA_M0_lam0.4")
-# reducedDim(spe.subset, "PCA_M0_lam0.4") <- NULL
 
-# spe.subset <- RunHarmony(spe.subset, "capture_area")
-
-# set.seed(1000)
-# spe.subset$clust_HARMONY_k50_res0.8 <- NULL
-# spe.subset <- Banksy::clusterBanksy(spe.subset, lambda = lambda, npcs = npcs, resolution = 0.4, dimred = "HARMONY")
-
-
-
-# drop PCA, rename PCA_M0_lam0.4 to PCA
+spe.subset <- RunHarmony(spe.subset,  
+                group.by.vars ="slide_id",  
+                reduction = "PCA_M0_lam0.4",
+                reduction.save="HARMONY_M0_lam0.4"
+                )
 
 set.seed(1000)
-#spe.subset$clust_HARMONY_k50_res0.8 <- NULL
-spe.subset <- Banksy::clusterBanksy(spe.subset, lambda = lambda, npcs = npcs, resolution = 0.4, dimred = "PCA_M0_lam0.4")
+spe.subset$clust_HARMONY_k50_res0.8 <- NULL
+spe.subset <- Banksy::clusterBanksy(spe.subset, lambda = lambda, npcs = npcs, resolution = 0.4, dimred = "HARMONY_M0_lam0.4")
 
 # drop duplicate columns
 colData(spe.subset) <- colData(spe.subset)[, !duplicated(colnames(colData(spe.subset)))]
+colnames(colData(spe.subset))
 
-
-pal <- colorRampPalette(RColorBrewer::brewer.pal(9, "Set1"))(length(unique(spe.subset$clust_PCA_M0_lam0.4_k50_res0.4)))
-png(file = here("plots", "Visium", "08_clustering", "banksy", "Br8325_Banksy_lambda_0.4_susbset_multisample_k18_res0.4.png"), width=10, height=10, units="in", res=300)
+pal <- colorRampPalette(RColorBrewer::brewer.pal(9, "Set1"))(length(unique(spe.subset$clust_HARMONY_M0_lam0.4_k50_res0.4)))
+png(file = here("plots", "Visium", "07_clustering", "BANKSY", "Br8325_Banksy_lambda_0.4_susbset_multisample_k18_res0.4_harmony.png"), width=10, height=10, units="in", res=300)
 make_escheR(spe.subset) |>
-    add_fill(var="clust_PCA_M0_lam0.4_k50_res0.4") +
+    add_fill(var="clust_HARMONY_M0_lam0.4_k50_res0.4") +
     scale_fill_manual(values=pal) 
 dev.off()
 
 
 
 
-saveRDS(spe.subset, here("processed-data", "Visium","08_clustering", "Banksy", "Br8325_Banksy_lambda_0.8_stitched.rds"))
+saveRDS(spe.subset, here("processed-data", "Visium","07_clustering", "BANKSY", "Br8325_Banksy_lambda_0.8_harmony.rds"))
 
 
 
