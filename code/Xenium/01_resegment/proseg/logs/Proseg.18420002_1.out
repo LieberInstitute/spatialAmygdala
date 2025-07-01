@@ -1,0 +1,18 @@
+**** Job starts ****
+Sat Jun 28 11:30:42 PM EDT 2025
+**** SLURM info ****
+User: mtotty
+Job ID: 18420003
+Job Name: Proseg
+Hostname: compute-167
+Task ID: 1
+Processing sample output-XETG00117__0023153__Region_1__20240329__171204
+Using 64 threads
+Read 117399528 transcripts
+     295540 cells
+     366 genes
+Estimated full area: 227181140
+Full volume: 4039771400
+Using grid size 290.7965. Chunks: 3000
+**** Job ends ****
+Sun Jun 29 01:55:49 AM EDT 2025

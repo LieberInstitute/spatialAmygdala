@@ -3,7 +3,7 @@ library(SpatialExperiment)
 library(here)
 
 processed_dir <- here("processed-data", "Xenium", "02_build_spe")
-xenium_data <- here("processed-data", "Xenium", "01_resegment")
+xenium_data <- here("processed-data", "Xenium", "01_resegment",  "15um_segmentations")
 
 # get folder names inside xenium data dir
 xenium_names <- list.dirs(xenium_data, full.names = FALSE, recursive = FALSE)
@@ -14,7 +14,7 @@ xenium_names
 # [4] "output-XETG00117__0023154__Region_1__20240329__171203"
 
 
-spe.1 <- readXeniumSXE(here("processed-data","Xenium", "01_resegment", xenium_names[1], "outs"))
+spe.1 <- readXeniumSXE(here("processed-data","Xenium", "01_resegment", "15um_segmentations", xenium_names[1], "outs"))
 spe.1 
 spe.1$brnum <- "Br9206"
 spe.1$sample_id <- xenium_names[1]
@@ -33,7 +33,7 @@ spe.1$sample_id <- xenium_names[1]
 # spatialCoords names(2) : x_centroid y_centroid
 # imgData names(0):
 
-spe.2 <- readXeniumSXE(here("processed-data","Xenium", "01_resegment", xenium_names[2], "outs"))
+spe.2 <- readXeniumSXE(here("processed-data","Xenium", "01_resegment",  "15um_segmentations",xenium_names[2], "outs"))
 spe.2
 spe.2$brnum <- "Br9017"
 spe.2$sample_id <- xenium_names[2]
@@ -52,7 +52,7 @@ spe.2$sample_id <- xenium_names[2]
 # spatialCoords names(2) : x_centroid y_centroid
 # imgData names(0):
 
-spe.3 <- readXeniumSXE(here("processed-data","Xenium", "01_resegment", xenium_names[3], "outs"))
+spe.3 <- readXeniumSXE(here("processed-data","Xenium", "01_resegment", "15um_segmentations", xenium_names[3], "outs"))
 spe.3
 spe.3$brnum <- "Br9192"
 spe.3$sample_id <- xenium_names[3]
@@ -69,7 +69,7 @@ spe.3$sample_id <- xenium_names[3]
 # mainExpName: NULL
 # altExpNames(0):
 
-spe.4 <- readXeniumSXE(here("processed-data","Xenium", "01_resegment", xenium_names[4], "outs"))
+spe.4 <- readXeniumSXE(here("processed-data","Xenium", "01_resegment", "15um_segmentations", xenium_names[4], "outs"))
 spe.4
 spe.4$brnum <- "Br9280"
 spe.4$sample_id <- xenium_names[4]
@@ -110,4 +110,4 @@ spe
 # imgData names(1): sample_id
 
 # save
-save(spe, file = here("processed-data","Xenium", "02_build_spe", "spe_combined.Rdata"))
+save(spe, file = here("processed-data","Xenium", "02_build_spe", "spe_xenium_15um.Rdata"))

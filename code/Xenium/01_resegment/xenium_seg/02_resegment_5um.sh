@@ -1,11 +1,11 @@
 #!/bin/bash
-#SBATCH --job-name=Xenium_resegment
-#SBATCH --output=logs/Xenium_resegment.%A_%a.out
-#SBATCH --error=logs/Xenium_resegment.%A_%a.err
+#SBATCH --job-name=5um_reseg
+#SBATCH --output=logs/Xenium_resegment_5um.%A_%a.out
+#SBATCH --error=logs/Xenium_resegment_5um.%A_%a.err
 #SBATCH --ntasks=1
-#SBATCH --cpus-per-task=16
+#SBATCH --cpus-per-task=64
 #SBATCH --mem=128G
-#SBATCH --array=1-4%4
+#SBATCH --array=1
 
 echo "**** Job starts ****"
 date
@@ -24,17 +24,17 @@ module load xeniumranger/2.0.0
 module list
 
 ## Locate sample
-SAMPLE=$(awk "NR==${SLURM_ARRAY_TASK_ID}" 01_resegment.txt)
+SAMPLE=$(awk "NR==${SLURM_ARRAY_TASK_ID}" reseg_last_sample_only.txt)
 echo "Processing sample ${SAMPLE}"
 echo "${SAMPLE}"
 date
 
 ## Run CellRanger
 xeniumranger resegment --id=${SAMPLE} \
-                       --xenium-bundle=/dcs04/lieber/marmaypag/spatialAMY_LIBD4125/spatialAmygdala/raw-data/Xenium/copied_data/2024-04-02_Psomagen/${SAMPLE} \
-                       --localcores=16 \
+                       --xenium-bundle=/dcs04/lieber/marmaypag/spatialAMY_LIBD4125/spatialAmygdala/raw-data/Xenium/copied_data/${SAMPLE} \
+                       --localcores=64 \
                        --localmem=128 \
-                       --expansion-distance=15
+                       --expansion-distance=5
 
 echo "**** Job ends ****"
 date

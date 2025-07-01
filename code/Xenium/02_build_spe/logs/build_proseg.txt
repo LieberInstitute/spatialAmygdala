@@ -1,0 +1,209 @@
+**** Job starts ****
+Mon Jun 30 03:45:30 PM EDT 2025
+**** JHPCE info ****
+User: mtotty
+Job id: 
+Job name: 
+Hostname: compute-057
+Loading conda_R/4.4
+Warning messages:
+1: replacing previous import ‘S4Arrays::read_block’ by ‘DelayedArray::read_block’ when loading ‘SummarizedExperiment’ 
+2: replacing previous import ‘S4Arrays::read_block’ by ‘DelayedArray::read_block’ when loading ‘HDF5Array’ 
+Loading required package: SingleCellExperiment
+Loading required package: SummarizedExperiment
+Loading required package: MatrixGenerics
+Loading required package: matrixStats
+
+Attaching package: ‘MatrixGenerics’
+
+The following objects are masked from ‘package:matrixStats’:
+
+    colAlls, colAnyNAs, colAnys, colAvgsPerRowSet, colCollapse,
+    colCounts, colCummaxs, colCummins, colCumprods, colCumsums,
+    colDiffs, colIQRDiffs, colIQRs, colLogSumExps, colMadDiffs,
+    colMads, colMaxs, colMeans2, colMedians, colMins, colOrderStats,
+    colProds, colQuantiles, colRanges, colRanks, colSdDiffs, colSds,
+    colSums2, colTabulates, colVarDiffs, colVars, colWeightedMads,
+    colWeightedMeans, colWeightedMedians, colWeightedSds,
+    colWeightedVars, rowAlls, rowAnyNAs, rowAnys, rowAvgsPerColSet,
+    rowCollapse, rowCounts, rowCummaxs, rowCummins, rowCumprods,
+    rowCumsums, rowDiffs, rowIQRDiffs, rowIQRs, rowLogSumExps,
+    rowMadDiffs, rowMads, rowMaxs, rowMeans2, rowMedians, rowMins,
+    rowOrderStats, rowProds, rowQuantiles, rowRanges, rowRanks,
+    rowSdDiffs, rowSds, rowSums2, rowTabulates, rowVarDiffs, rowVars,
+    rowWeightedMads, rowWeightedMeans, rowWeightedMedians,
+    rowWeightedSds, rowWeightedVars
+
+Loading required package: GenomicRanges
+Loading required package: stats4
+Loading required package: BiocGenerics
+
+Attaching package: ‘BiocGenerics’
+
+The following objects are masked from ‘package:stats’:
+
+    IQR, mad, sd, var, xtabs
+
+The following objects are masked from ‘package:base’:
+
+    anyDuplicated, aperm, append, as.data.frame, basename, cbind,
+    colnames, dirname, do.call, duplicated, eval, evalq, Filter, Find,
+    get, grep, grepl, intersect, is.unsorted, lapply, Map, mapply,
+    match, mget, order, paste, pmax, pmax.int, pmin, pmin.int,
+    Position, rank, rbind, Reduce, rownames, sapply, saveRDS, setdiff,
+    table, tapply, union, unique, unsplit, which.max, which.min
+
+Loading required package: S4Vectors
+
+Attaching package: ‘S4Vectors’
+
+The following object is masked from ‘package:utils’:
+
+    findMatches
+
+The following objects are masked from ‘package:base’:
+
+    expand.grid, I, unname
+
+Loading required package: IRanges
+Loading required package: GenomeInfoDb
+Loading required package: Biobase
+Welcome to Bioconductor
+
+    Vignettes contain introductory material; view with
+    'browseVignettes()'. To cite Bioconductor, see
+    'citation("Biobase")', and for packages 'citation("pkgname")'.
+
+
+Attaching package: ‘Biobase’
+
+The following object is masked from ‘package:MatrixGenerics’:
+
+    rowMedians
+
+The following objects are masked from ‘package:matrixStats’:
+
+    anyMissing, rowMedians
+
+here() starts at /dcs04/lieber/marmaypag/spatialAMY_LIBD4125/spatialAmygdala
+Loading required package: SeuratObject
+Loading required package: sp
+
+Attaching package: ‘sp’
+
+The following object is masked from ‘package:IRanges’:
+
+    %over%
+
+‘SeuratObject’ was built with package ‘Matrix’ 1.7.0 but the current
+version is 1.7.1; it is recomended that you reinstall ‘SeuratObject’ as
+the ABI for ‘Matrix’ may have changed
+
+Attaching package: ‘SeuratObject’
+
+The following object is masked from ‘package:SummarizedExperiment’:
+
+    Assays
+
+The following object is masked from ‘package:GenomicRanges’:
+
+    intersect
+
+The following object is masked from ‘package:GenomeInfoDb’:
+
+    intersect
+
+The following object is masked from ‘package:IRanges’:
+
+    intersect
+
+The following object is masked from ‘package:S4Vectors’:
+
+    intersect
+
+The following object is masked from ‘package:BiocGenerics’:
+
+    intersect
+
+The following objects are masked from ‘package:base’:
+
+    intersect, t
+
+
+Attaching package: ‘Seurat’
+
+The following object is masked from ‘package:SummarizedExperiment’:
+
+    Assays
+
+[1] "20240425__170523__0022862"                            
+[2] "20240425__170523__0023004"                            
+[3] "output-XETG00117__0023153__Region_1__20240329__171204"
+[4] "output-XETG00117__0023154__Region_1__20240329__171203"
+class: SpatialExperiment 
+dim: 366 290631 
+metadata(0):
+assays(1): counts
+rownames(366): APOE SPARC ... AVP NKG7
+rowData names(0):
+colnames(290631): 1 2 ... 290630 290631
+colData names(13): cell original_cell_id ... in_tissue brnum
+reducedDimNames(0):
+mainExpName: NULL
+altExpNames(0):
+spatialCoords names(2) : x y
+imgData names(1): sample_id
+class: SpatialExperiment 
+dim: 366 257635 
+metadata(0):
+assays(1): counts
+rownames(366): SPARC CPLX2 ... CCNB2 AVP
+rowData names(0):
+colnames(257635): 1 2 ... 257634 257635
+colData names(13): cell original_cell_id ... in_tissue brnum
+reducedDimNames(0):
+mainExpName: NULL
+altExpNames(0):
+spatialCoords names(2) : x y
+imgData names(1): sample_id
+class: SpatialExperiment 
+dim: 366 295538 
+metadata(0):
+assays(1): counts
+rownames(366): CPLX2 YWHAH ... CDK1 AVP
+rowData names(0):
+colnames(295538): 1 2 ... 295537 295538
+colData names(13): cell original_cell_id ... in_tissue brnum
+reducedDimNames(0):
+mainExpName: NULL
+altExpNames(0):
+spatialCoords names(2) : x y
+imgData names(1): sample_id
+class: SpatialExperiment 
+dim: 366 211736 
+metadata(0):
+assays(1): counts
+rownames(366): CPLX2 YWHAH ... NKG7 AVP
+rowData names(0):
+colnames(211736): 1 2 ... 211735 211736
+colData names(13): cell original_cell_id ... in_tissue brnum
+reducedDimNames(0):
+mainExpName: NULL
+altExpNames(0):
+spatialCoords names(2) : x y
+imgData names(1): sample_id
+class: SpatialExperiment 
+dim: 366 1055540 
+metadata(0):
+assays(1): counts
+rownames(366): APOE SPARC ... AVP NKG7
+rowData names(0):
+colnames(1055540): 1 2 ... 211735 211736
+colData names(13): cell original_cell_id ... in_tissue brnum
+reducedDimNames(0):
+mainExpName: NULL
+altExpNames(0):
+spatialCoords names(2) : x y
+imgData names(1): sample_id
+**** Job ends ****
+Mon Jun 30 05:30:24 PM EDT 2025

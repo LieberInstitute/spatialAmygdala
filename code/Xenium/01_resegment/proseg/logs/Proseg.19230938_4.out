@@ -1,0 +1,13 @@
+**** Job starts ****
+Mon Jun 30 05:22:43 PM EDT 2025
+**** SLURM info ****
+User: mtotty
+Job ID: 19230938
+Job Name: Proseg
+Hostname: compute-121
+Task ID: 4
+Processing sample 20240425__170523__0023004
+Using 64 threads
+**** Job ends ****
+Mon Jun 30 05:22:43 PM EDT 2025
+Total runtime: 0 seconds

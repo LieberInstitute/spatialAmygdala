@@ -1,0 +1,15 @@
+**** Job starts ****
+Sat Jun 28 10:35:24 PM EDT 2025
+**** SLURM info ****
+User: mtotty
+Job ID: 18371002
+Job Name: Xenium_resegment
+Hostname: compute-167
+Task ID: 1
+Processing sample output-XETG00117__0023153__Region_1__20240329__171204
+output-XETG00117__0023153__Region_1__20240329__171204
+Sat Jun 28 10:35:24 PM EDT 2025
+Martian Runtime - v4.0.12
+Serving UI at http://compute-167.cm.cluster:42277?auth=fvLisXNIat-rOy0oSjN_DOJVgjbCkrSuKOE6ccGI2o4
+
+Running preflight checks (please wait)...

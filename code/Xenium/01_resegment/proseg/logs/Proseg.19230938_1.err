@@ -1,0 +1,10 @@
+
+Currently Loaded Modules:
+  1) JHPCE_ROCKY9_DEFAULT_ENV   2) JHPCE_tools/3.0   3) rust/1.76.0
+
+ 
+
+
+thread 'main' panicked at /users/mtotty/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/proseg-2.0.4/src/sampler/transcripts.rs:119:89:
+called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, message: "No such file or directory" }
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace

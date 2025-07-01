@@ -1,0 +1,57 @@
+**** Job starts ****
+Sat Jun 28 10:40:16 PM EDT 2025
+**** SLURM info ****
+User: mtotty
+Job ID: 18377140
+Job Name: Xenium_resegment
+Hostname: compute-167
+Task ID: 3
+Processing sample 20240425__170523__0022862
+20240425__170523__0022862
+Sat Jun 28 10:40:16 PM EDT 2025
+Martian Runtime - v4.0.12
+Serving UI at http://compute-167.cm.cluster:38747?auth=rrbEWWeyDLLLSlbtlqm9W5Yi251m33KcLOE5UPfhctU
+
+Running preflight checks (please wait)...
+
+[error] Pipestance failed. Error log at:
+20240425__170523__0022862/XENIUM_RANGER_CS/XR_PREFLIGHT/fork0/join-u195d60a790/_errors
+
+Log message:
+Traceback (most recent call last):
+  File "/jhpce/shared/libd/core/xeniumranger/2.0.0/xeniumranger-2.0.0/external/martian/adapters/python/martian_shell.py", line 648, in _main
+    stage.main()
+  File "/jhpce/shared/libd/core/xeniumranger/2.0.0/xeniumranger-2.0.0/external/martian/adapters/python/martian_shell.py", line 617, in main
+    self._run(
+  File "/jhpce/shared/libd/core/xeniumranger/2.0.0/xeniumranger-2.0.0/external/martian/adapters/python/martian_shell.py", line 564, in _run
+    cmd()
+  File "/jhpce/shared/libd/core/xeniumranger/2.0.0/xeniumranger-2.0.0/external/martian/adapters/python/martian_shell.py", line 618, in <lambda>
+    lambda: self._module.join(args, outs, chunk_defs, chunk_outs)
+  File "/jhpce/shared/libd/core/xeniumranger/2.0.0/xeniumranger-2.0.0/mro/insitu/stages/xr_preflight/__init__.py", line 50, in join
+    run_xenium_ranger_preflight_checks(
+  File "/jhpce/shared/libd/core/xeniumranger/2.0.0/xeniumranger-2.0.0/lib/python/turing/engine/xenium_ranger/xr_preflight.py", line 84, in run_xenium_ranger_preflight_checks
+    check_import_segmentation_inputs(import_seg_params)
+  File "/jhpce/shared/libd/core/xeniumranger/2.0.0/xeniumranger-2.0.0/lib/python/turing/engine/xenium_ranger/xr_preflight.py", line 136, in check_import_segmentation_inputs
+    check_import_seg_segmentation_files(params)
+  File "/jhpce/shared/libd/core/xeniumranger/2.0.0/xeniumranger-2.0.0/lib/python/turing/engine/xenium_ranger/xr_preflight.py", line 345, in check_import_seg_segmentation_files
+    nuclei_ftype = check_import_seg_filetype(nuclei, is_cell=False)
+  File "/jhpce/shared/libd/core/xeniumranger/2.0.0/xeniumranger-2.0.0/lib/python/turing/engine/xenium_ranger/xr_preflight.py", line 373, in check_import_seg_filetype
+    raise XrInvalidArgumentsError(
+turing.engine.xenium_ranger.xr_common.XrInvalidArgumentsError: Error: Invalid filetype provided for --nuclei.
+
+Valid types are:
+	- .npy, .tif or .tiff (for a label image) and,
+	- .json or .geojson (for GeoJson).
+
+
+Waiting 6 seconds for UI to do final refresh.
+Pipestance failed. Use --noexit option to keep UI running after failure.
+
+2025-06-28 22:46:55 Shutting down.
+Saving pipestance info to "/dcs04/lieber/marmaypag/spatialAMY_LIBD4125/spatialAmygdala/code/Xenium/01_resegment/20240425__170523__0022862/20240425__170523__0022862.mri.tgz"
+For assistance, upload this file to 10x Genomics by running:
+
+xeniumranger upload <your_email> "/dcs04/lieber/marmaypag/spatialAMY_LIBD4125/spatialAmygdala/code/Xenium/01_resegment/20240425__170523__0022862/20240425__170523__0022862.mri.tgz"
+
+**** Job ends ****
+Sat Jun 28 10:46:56 PM EDT 2025

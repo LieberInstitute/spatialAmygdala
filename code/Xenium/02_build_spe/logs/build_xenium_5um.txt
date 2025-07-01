@@ -1,0 +1,164 @@
+**** Job starts ****
+Mon Jun 30 09:41:56 PM EDT 2025
+**** JHPCE info ****
+User: mtotty
+Job id: 
+Job name: 
+Hostname: compute-169
+Loading conda_R/4.4
+Warning messages:
+1: replacing previous import ‘S4Arrays::read_block’ by ‘DelayedArray::read_block’ when loading ‘SummarizedExperiment’ 
+2: replacing previous import ‘S4Arrays::read_block’ by ‘DelayedArray::read_block’ when loading ‘HDF5Array’ 
+Loading required package: SingleCellExperiment
+Loading required package: SummarizedExperiment
+Loading required package: MatrixGenerics
+Loading required package: matrixStats
+
+Attaching package: ‘MatrixGenerics’
+
+The following objects are masked from ‘package:matrixStats’:
+
+    colAlls, colAnyNAs, colAnys, colAvgsPerRowSet, colCollapse,
+    colCounts, colCummaxs, colCummins, colCumprods, colCumsums,
+    colDiffs, colIQRDiffs, colIQRs, colLogSumExps, colMadDiffs,
+    colMads, colMaxs, colMeans2, colMedians, colMins, colOrderStats,
+    colProds, colQuantiles, colRanges, colRanks, colSdDiffs, colSds,
+    colSums2, colTabulates, colVarDiffs, colVars, colWeightedMads,
+    colWeightedMeans, colWeightedMedians, colWeightedSds,
+    colWeightedVars, rowAlls, rowAnyNAs, rowAnys, rowAvgsPerColSet,
+    rowCollapse, rowCounts, rowCummaxs, rowCummins, rowCumprods,
+    rowCumsums, rowDiffs, rowIQRDiffs, rowIQRs, rowLogSumExps,
+    rowMadDiffs, rowMads, rowMaxs, rowMeans2, rowMedians, rowMins,
+    rowOrderStats, rowProds, rowQuantiles, rowRanges, rowRanks,
+    rowSdDiffs, rowSds, rowSums2, rowTabulates, rowVarDiffs, rowVars,
+    rowWeightedMads, rowWeightedMeans, rowWeightedMedians,
+    rowWeightedSds, rowWeightedVars
+
+Loading required package: GenomicRanges
+Loading required package: stats4
+Loading required package: BiocGenerics
+
+Attaching package: ‘BiocGenerics’
+
+The following objects are masked from ‘package:stats’:
+
+    IQR, mad, sd, var, xtabs
+
+The following objects are masked from ‘package:base’:
+
+    anyDuplicated, aperm, append, as.data.frame, basename, cbind,
+    colnames, dirname, do.call, duplicated, eval, evalq, Filter, Find,
+    get, grep, grepl, intersect, is.unsorted, lapply, Map, mapply,
+    match, mget, order, paste, pmax, pmax.int, pmin, pmin.int,
+    Position, rank, rbind, Reduce, rownames, sapply, saveRDS, setdiff,
+    table, tapply, union, unique, unsplit, which.max, which.min
+
+Loading required package: S4Vectors
+
+Attaching package: ‘S4Vectors’
+
+The following object is masked from ‘package:utils’:
+
+    findMatches
+
+The following objects are masked from ‘package:base’:
+
+    expand.grid, I, unname
+
+Loading required package: IRanges
+Loading required package: GenomeInfoDb
+Loading required package: Biobase
+Welcome to Bioconductor
+
+    Vignettes contain introductory material; view with
+    'browseVignettes()'. To cite Bioconductor, see
+    'citation("Biobase")', and for packages 'citation("pkgname")'.
+
+
+Attaching package: ‘Biobase’
+
+The following object is masked from ‘package:MatrixGenerics’:
+
+    rowMedians
+
+The following objects are masked from ‘package:matrixStats’:
+
+    anyMissing, rowMedians
+
+here() starts at /dcs04/lieber/marmaypag/spatialAMY_LIBD4125/spatialAmygdala
+[1] "20240425__170523__0022862"                            
+[2] "20240425__170523__0023004"                            
+[3] "output-XETG00117__0023153__Region_1__20240329__171204"
+[4] "output-XETG00117__0023154__Region_1__20240329__171203"
+class: SpatialExperiment 
+dim: 541 287576 
+metadata(0):
+assays(1): counts
+rownames(541): ENSG00000069431 ENSG00000151388 ...
+  DeprecatedCodeword_0344 DeprecatedCodeword_0373
+rowData names(3): ID Symbol Type
+colnames(287576): aaaaeomf-1 aaaajkhp-1 ... oioapofm-1 oiobghaf-1
+colData names(10): cell_id transcript_counts ... nucleus_area sample_id
+reducedDimNames(0):
+mainExpName: NULL
+altExpNames(0):
+spatialCoords names(2) : x_centroid y_centroid
+imgData names(0):
+class: SpatialExperiment 
+dim: 541 252804 
+metadata(0):
+assays(1): counts
+rownames(541): ENSG00000069431 ENSG00000151388 ...
+  DeprecatedCodeword_0344 DeprecatedCodeword_0373
+rowData names(3): ID Symbol Type
+colnames(252804): aaaafljp-1 aaaagccl-1 ... oikpnobj-1 oikpphoo-1
+colData names(10): cell_id transcript_counts ... nucleus_area sample_id
+reducedDimNames(0):
+mainExpName: NULL
+altExpNames(0):
+spatialCoords names(2) : x_centroid y_centroid
+imgData names(0):
+class: SpatialExperiment 
+dim: 541 279464 
+metadata(0):
+assays(1): counts
+rownames(541): ENSG00000069431 ENSG00000151388 ...
+  DeprecatedCodeword_0344 DeprecatedCodeword_0373
+rowData names(3): ID Symbol Type
+colnames(279464): aaaaahch-1 aaaahdlm-1 ... oindgiil-1 oindpffn-1
+colData names(10): cell_id transcript_counts ... nucleus_area sample_id
+reducedDimNames(0):
+mainExpName: NULL
+altExpNames(0):
+spatialCoords names(2) : x_centroid y_centroid
+imgData names(0):
+class: SpatialExperiment 
+dim: 541 198224 
+metadata(0):
+assays(1): counts
+rownames(541): ENSG00000069431 ENSG00000151388 ...
+  DeprecatedCodeword_0344 DeprecatedCodeword_0373
+rowData names(3): ID Symbol Type
+colnames(198224): aaaabfhe-1 aaaadkgm-1 ... oimbboka-1 oimbcgpk-1
+colData names(10): cell_id transcript_counts ... nucleus_area sample_id
+reducedDimNames(0):
+mainExpName: NULL
+altExpNames(0):
+spatialCoords names(2) : x_centroid y_centroid
+imgData names(0):
+class: SpatialExperiment 
+dim: 541 1018068 
+metadata(0):
+assays(1): counts
+rownames(541): ENSG00000069431 ENSG00000151388 ...
+  DeprecatedCodeword_0344 DeprecatedCodeword_0373
+rowData names(3): ID Symbol Type
+colnames(1018068): aaaaeomf-1 aaaajkhp-1 ... oimbboka-1 oimbcgpk-1
+colData names(11): cell_id transcript_counts ... sample_id brnum
+reducedDimNames(0):
+mainExpName: NULL
+altExpNames(0):
+spatialCoords names(2) : x_centroid y_centroid
+imgData names(1): sample_id
+**** Job ends ****
+Mon Jun 30 09:42:49 PM EDT 2025

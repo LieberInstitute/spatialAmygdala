@@ -6,7 +6,7 @@ library("here")
 library("dplyr")
 library("patchwork")
 library("SingleR")
-library(ggspavis)
+library(Voyager)
 
 # save directories
 processed_dir <- here("processed-data", "Xenium", "06_label_transfer")
@@ -16,6 +16,37 @@ plot_dir <- here("plots", "Xenium", "06_label_transfer")
 # load xenium data
 load(here("processed-data","Xenium", "03_quality_control", "spe_normcounts.Rdata"))
 spe
+
+colnames(spe) <- make.unique(colnames(spe), sep = "-")
+rownames(spatialCoords(spe)) <- colnames(spe)
+
+sfe <- toSpatialFeatureExperiment(spe)
+sfe
+# class: SpatialFeatureExperiment 
+# dim: 541 1018069 
+# metadata(0):
+# assays(3): counts nucleus_normcounts cell_normcounts
+# rownames(541): ENSG00000069431 ENSG00000151388 ...
+#   DeprecatedCodeword_0344 DeprecatedCodeword_0373
+# rowData names(3): ID Symbol Type
+# colnames(1018069): aaaadgkh-1 aaaadlfe-1 ... oihobmbk-1 oihoeehh-1
+# colData names(19): cell_id transcript_counts ... cell_area.sf
+#   nucleus_area.sf
+# reducedDimNames(0):
+# mainExpName: NULL
+# altExpNames(0):
+# spatialCoords names(2) : x_centroid y_centroid
+# imgData names(1): sample_id
+
+# unit:
+# Geometries:
+# colGeometries: centroids (POINT) 
+
+# Graphs:
+# 20240425__170523__0022862: 
+# 20240425__170523__0023004: 
+# output-XETG00117__0023153__Region_1__20240329__171204: 
+# output-XETG00117__0023154__Region_1__20240329__171203: 
 
 # load label predictions
 pred.broad <- read.csv(here("processed-data", "Xenium", "06_label_transfer", "pred_broad_celltype.csv"))
@@ -114,16 +145,16 @@ head(pred.fine)
 # while dropping the correct sizeFactor < 0 cells.
 
 # keep only rowData Type == Gene Expression
-spe <- spe[rowData(spe)$Type == "Gene Expression", ]
+sfe <- sfe[rowData(sfe)$Type == "Gene Expression", ]
 
 # re-normalize the snRNAseq data
-spe <- computeLibraryFactors(spe)
-spe <- spe[, sizeFactors(spe) > 0]
-spe <- logNormCounts(spe)
+sfe <- computeLibraryFactors(sfe)
+sfe <- sfe[, sizeFactors(sfe) > 0]
+sfe <- logNormCounts(sfe)
 
 # add labels
-spe$pred_broad_celltype <- pred.broad$pruned.labels
-spe$pred_fine_celltype <- pred.fine$pruned.labels
+sfe$pred_broad_celltype <- pred.broad$pruned.labels
+sfe$pred_fine_celltype <- pred.fine$pruned.labels
 
 
 
