@@ -1,7 +1,7 @@
 #!/bin/bash
 #SBATCH --mem=80G
-#SBATCH -n 8
-#SBATCH --job-name=HD-spaceranger_CEA
+#SBATCH -n 32
+#SBATCH --job-name=HD_spaceranger
 #SBATCH -o logs/HD-spaceranger-CEA%a.o.txt
 #SBATCH --array=1
 
@@ -22,7 +22,7 @@ module load spaceranger/3.0.0
 module list
 
 ## Locate file
-SAMPLE=$(awk "NR==${SLURM_ARRAY_TASK_ID}" VisiumHD_CEA.txt)
+SAMPLE=$(awk "NR==${SLURM_ARRAY_TASK_ID}" sample_ids.txt)
 echo "Processing sample ${SAMPLE}"
 date
 
@@ -33,7 +33,7 @@ SAM=$(paste <(echo ${SLIDE}) <(echo "-") <(echo ${CAPTUREAREA}) -d '')
 echo "Slide: ${SLIDE}, capture area: ${CAPTUREAREA}"
 
 ## Find FASTQ file path
-FASTQPATH=$(ls -d /dcs04/lieber/marmaypag/spatialAMY_LIBD4125/spatialAmygdala/raw-data/FASTQ/${SAMPLE}/)
+FASTQPATH=$(ls -d /dcs04/lieber/marmaypag/spatialAMY_LIBD4125/spatialAmygdala/raw-data/FASTQ/VisiumHD/${SAMPLE}/)
 
 
 ## Hank from 10x Genomics recommended setting this environment
@@ -46,12 +46,11 @@ spaceranger count \
     --probe-set=/dcs04/lieber/marmaypag/spatialAMY_LIBD4125/spatialAmygdala/raw-data/HD_probe_set/Visium_Human_Transcriptome_Probe_Set_v2.0_GRCh38-2020-A.csv \
     --slide=${SLIDE} \
     --area=${CAPTUREAREA} \
-    --cytaimage=/dcs04/lieber/marmaypag/spatialAMY_LIBD4125/spatialAmygdala/raw-data/images/vis-hd/CAVG10676_2024-08-21_13-19-15_2024-08-21_12-55-59_H1-W369TJK_A1_HDp_s003_AMY.tif \
-    --image=/dcs04/lieber/marmaypag/spatialAMY_LIBD4125/spatialAmygdala/raw-data/images/vis-hd/40x_HE_AMY_s003.tif \
+    --cytaimage=/dcs04/lieber/marmaypag/spatialAMY_LIBD4125/spatialAmygdala/raw-data/images/VisiumHD/CAVG10676_2024-08-21_13-19-15_2024-08-21_12-55-59_H1-W369TJK_A1_HDp_s003_AMY.tif \
+    --image=/dcs04/lieber/marmaypag/spatialAMY_LIBD4125/spatialAmygdala/raw-data/images/VisiumHD/40x_HE_AMY_s003.tif \
     --create-bam=false \
-    --localcores=8 \
+    --localcores=32 \
     --localmem=64 \
-    --loupe-alignment=/dcs04/lieber/marmaypag/spatialAMY_LIBD4125/spatialAmygdala/raw-data/images/vis-hd/H1-W369TJK-A1-fiducials-image-registration.json
 
 
 ## Move output

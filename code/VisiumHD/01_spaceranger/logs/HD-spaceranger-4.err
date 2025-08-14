@@ -1,0 +1,21 @@
+
+Currently Loaded Modules:
+  1) JHPCE_ROCKY9_DEFAULT_ENV   2) JHPCE_tools/3.0
+
+ 
+
+
+
+Thank you for using spaceranger. To help us improve our product,
+anonymized telemetry data has been collected and sent to 10X Genomics.
+This data helps us understand usage patterns, diagnose issues,
+and prioritize improvements.
+
+You can inspect the telemetry metrics sent by looking in
+/users/mtotty/.cache/tenx/telemetry/spaceranger/spaceranger-4.0.1
+
+For more details on what data is collected and how it's used, please visit
+https://10xgen.com/sr-pipeline-telemetry
+
+You can disable telemetry at any time by running the following command:
+	spaceranger telemetry disable
