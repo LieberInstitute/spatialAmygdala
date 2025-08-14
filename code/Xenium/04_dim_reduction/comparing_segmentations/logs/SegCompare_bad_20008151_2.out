@@ -1,0 +1,46 @@
+**** Job starts ****
+Mon Jul 21 02:46:05 PM EDT 2025
+**** JHPCE info ****
+User: mtotty
+Job id: 
+Job name: 
+Hostname: compute-141
+Processing spe_xenium_15um
+class: SpatialExperiment 
+dim: 541 1018069 
+metadata(0):
+assays(1): counts
+rownames(541): ENSG00000069431 ENSG00000151388 ...
+  DeprecatedCodeword_0344 DeprecatedCodeword_0373
+rowData names(3): ID Symbol Type
+colnames(1018069): aaaadgkh-1 aaaadlfe-1 ... oihobmbk-1 oihoeehh-1
+colData names(11): cell_id transcript_counts ... sample_id brnum
+reducedDimNames(0):
+mainExpName: NULL
+altExpNames(0):
+spatialCoords names(2) : x_centroid y_centroid
+imgData names(1): sample_id
+class: SpatialExperiment 
+dim: 366 540381 
+metadata(0):
+assays(3): counts nucleus_normcounts cell_normcounts
+rownames(366): ABCC9 ADAMTS12 ... ZIC2 ZNF536
+rowData names(3): ID Symbol Type
+colnames(540381): aaaadgkh-1 aaaadlfe-1 ... oijepiab-1 oijfcgml-1
+colData names(16): cell_id transcript_counts ... cell_area.sf
+  nucleus_area.sf
+reducedDimNames(0):
+mainExpName: NULL
+altExpNames(0):
+spatialCoords names(2) : x_centroid y_centroid
+imgData names(1): sample_id
+5 x 5 sparse Matrix of class "dgCMatrix"
+         aaaadgkh-1 aaaadlfe-1 aaaaedkg-1 aaaafnjo-1 aaaakcko-1
+ABCC9             .          .          .          .          .
+ADAMTS12          .          .          .          .          .
+ADAMTS16          .          .          .          .          .
+ADAMTS3           .          .          .          .          .
+ADRA1A            .          .          .          .          .
+[1]    366 540381
+**** Job ends ****
+Mon Jul 21 02:46:28 PM EDT 2025

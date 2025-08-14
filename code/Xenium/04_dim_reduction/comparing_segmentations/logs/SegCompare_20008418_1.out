@@ -1,0 +1,62 @@
+**** Job starts ****
+Mon Jul 21 02:48:34 PM EDT 2025
+**** JHPCE info ****
+User: mtotty
+Job id: 
+Job name: 
+Hostname: compute-124
+Processing spe_xenium_5um
+class: SpatialExperiment 
+dim: 541 1018068 
+metadata(0):
+assays(1): counts
+rownames(541): ENSG00000069431 ENSG00000151388 ...
+  DeprecatedCodeword_0344 DeprecatedCodeword_0373
+rowData names(3): ID Symbol Type
+colnames(1018068): aaaaeomf-1 aaaajkhp-1 ... oimbboka-1 oimbcgpk-1
+colData names(11): cell_id transcript_counts ... sample_id brnum
+reducedDimNames(0):
+mainExpName: NULL
+altExpNames(0):
+spatialCoords names(2) : x_centroid y_centroid
+imgData names(1): sample_id
+class: SpatialExperiment 
+dim: 366 477688 
+metadata(0):
+assays(3): counts nucleus_normcounts cell_normcounts
+rownames(366): ABCC9 ADAMTS12 ... ZIC2 ZNF536
+rowData names(3): ID Symbol Type
+colnames(477688): aaaaahch-1 aaaahdlm-1 ... oimbboka-1 oimbcgpk-1
+colData names(16): cell_id transcript_counts ... cell_area.sf
+  nucleus_area.sf
+reducedDimNames(0):
+mainExpName: NULL
+altExpNames(0):
+spatialCoords names(2) : x_centroid y_centroid
+imgData names(1): sample_id
+5 x 5 sparse Matrix of class "dgCMatrix"
+         aaaaahch-1 aaaahdlm-1 aaaajimi-1 aaaajnfk-1 aaaalpeg-1
+ABCC9      .          1.265623   .                 .          .
+ADAMTS12   .          .          .                 .          .
+ADAMTS16   .          .          .                 .          .
+ADAMTS3    .          .          0.924015          .          .
+ADRA1A     1.498627   1.265623   .                 .          .
+[1]    366 477688
+class: SpatialExperiment 
+dim: 366 477688 
+metadata(0):
+assays(3): counts nucleus_normcounts cell_normcounts
+rownames(366): ABCC9 ADAMTS12 ... ZIC2 ZNF536
+rowData names(3): ID Symbol Type
+colnames(477688): aaaaahch-1 aaaahdlm-1 ... oimbboka-1 oimbcgpk-1
+colData names(16): cell_id transcript_counts ... cell_area.sf
+  nucleus_area.sf
+reducedDimNames(4): PCA HARMONY_2 UMAP_HARMONY_2 UMAP_UNCORRECTED
+mainExpName: NULL
+altExpNames(0):
+spatialCoords names(2) : x_centroid y_centroid
+imgData names(1): sample_id
+null device 
+          1 
+**** Job ends ****
+Mon Jul 21 03:10:57 PM EDT 2025

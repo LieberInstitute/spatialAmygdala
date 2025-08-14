@@ -1,0 +1,26 @@
+**** Job starts ****
+Mon Jul  7 08:21:57 PM EDT 2025
+**** JHPCE info ****
+User: mtotty
+Job id: 
+Job name: 
+Hostname: compute-158
+class: SpatialExperiment 
+dim: 366 1039305 
+metadata(0):
+assays(2): counts cell_normcounts
+rownames(366): APOE SPARC ... AVP NKG7
+rowData names(0):
+colnames(1039305): 1 2 ... 203809 203810
+colData names(16): cell original_cell_id ... detected total
+reducedDimNames(3): PCA HARMONY UMAP
+mainExpName: NULL
+altExpNames(0):
+spatialCoords names(2) : x y
+imgData names(1): sample_id
+An object of class Seurat 
+366 features across 1039305 samples within 1 assay 
+Active assay: originalexp (366 features, 0 variable features)
+ 3 dimensional reductions calculated: PCA, HARMONY, UMAP
+**** Job ends ****
+Tue Jul  8 12:08:45 AM EDT 2025

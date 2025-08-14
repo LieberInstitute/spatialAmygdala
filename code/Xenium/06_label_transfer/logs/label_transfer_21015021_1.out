@@ -1,0 +1,34 @@
+**** Running SingleR with de.n = 3 ****
+class: SpatialExperiment 
+dim: 366 1018068 
+metadata(0):
+assays(3): counts nucleus_normcounts cell_normcounts
+rownames(366): ABCC9 ADAMTS12 ... ZIC2 ZNF536
+rowData names(3): ID Symbol Type
+colnames(1018068): aaaaeomf-1 aaaajkhp-1 ... oimbboka-1 oimbcgpk-1
+colData names(16): cell_id transcript_counts ... cell_area.sf
+  nucleus_area.sf
+reducedDimNames(3): PCA HARMONY UMAP
+mainExpName: NULL
+altExpNames(0):
+spatialCoords names(2) : x_centroid y_centroid
+imgData names(1): sample_id
+class: SingleCellExperiment 
+dim: 36601 15511 
+metadata(0):
+assays(1): counts
+rownames(36601): A1BG A1BG-AS1 ... ZYX ZZEF1
+rowData names(7): source type ... gene_type Symbol.uniq
+colnames(15511): cell_2 cell_4 ... cell_16967 cell_16969
+colData names(33): batch orig.ident ... fine_celltype ident
+reducedDimNames(0):
+mainExpName: NULL
+altExpNames(0):
+[1] "SingleCellExperiment"
+attr(,"package")
+[1] "SingleCellExperiment"
+[1] "dgCMatrix"
+attr(,"package")
+[1] "Matrix"
+[1]     366 1018068
+[1]   366 15511

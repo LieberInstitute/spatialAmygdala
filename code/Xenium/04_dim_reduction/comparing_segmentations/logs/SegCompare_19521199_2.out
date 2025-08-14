@@ -1,0 +1,22 @@
+**** Job starts ****
+Wed Jul  2 12:27:16 PM EDT 2025
+**** JHPCE info ****
+User: mtotty
+Job id: 
+Job name: 
+Hostname: compute-054
+Processing spe_xenium_15um
+class: SpatialExperiment 
+dim: 541 1018069 
+metadata(0):
+assays(1): counts
+rownames(541): ENSG00000069431 ENSG00000151388 ...
+  DeprecatedCodeword_0344 DeprecatedCodeword_0373
+rowData names(3): ID Symbol Type
+colnames(1018069): aaaadgkh-1 aaaadlfe-1 ... oihobmbk-1 oihoeehh-1
+colData names(11): cell_id transcript_counts ... sample_id brnum
+reducedDimNames(0):
+mainExpName: NULL
+altExpNames(0):
+spatialCoords names(2) : x_centroid y_centroid
+imgData names(1): sample_id

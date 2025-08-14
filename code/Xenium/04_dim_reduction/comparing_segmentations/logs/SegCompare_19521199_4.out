@@ -1,0 +1,18 @@
+**** Job starts ****
+Wed Jul  2 12:27:16 PM EDT 2025
+**** JHPCE info ****
+User: mtotty
+Job id: 
+Job name: 
+Hostname: compute-054
+Processing spe_proseg_15um
+class: SpatialExperiment 
+dim: 366 1055540 
+metadata(0):
+assays(1): counts
+rownames(366): APOE SPARC ... AVP NKG7
+rowData names(0):
+colnames(1055540): 1 2 ... 211735 211736
+colData names(13): cell original_cell_id ... in_tissue brnum
+reducedDimNames(0):
+mainExpName: NULL

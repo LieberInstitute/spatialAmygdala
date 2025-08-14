@@ -1,19 +1,5 @@
-**** Job starts ****
-Mon Jul 28 03:13:08 PM EDT 2025
-**** JHPCE info ****
-User: mtotty
-Job id: 
-Job name: 
-Hostname: compute-124
-Unloading conda_R/4.4
-Loading conda_R/4.4
-
-Currently Loaded Modules:
-  1) JHPCE_ROCKY9_DEFAULT_ENV   3) git-status-size/github   5) conda_R/4.4
-  2) JHPCE_tools/3.0            4) conda/3-24.3.0
-
- 
-
+Unloading conda_R/4.3
+Loading conda_R/4.3
 Loading required package: SingleCellExperiment
 Loading required package: SummarizedExperiment
 Loading required package: MatrixGenerics
@@ -55,7 +41,7 @@ The following objects are masked from ‘package:base’:
     colnames, dirname, do.call, duplicated, eval, evalq, Filter, Find,
     get, grep, grepl, intersect, is.unsorted, lapply, Map, mapply,
     match, mget, order, paste, pmax, pmax.int, pmin, pmin.int,
-    Position, rank, rbind, Reduce, rownames, sapply, saveRDS, setdiff,
+    Position, rank, rbind, Reduce, rownames, sapply, setdiff, sort,
     table, tapply, union, unique, unsplit, which.max, which.min
 
 Loading required package: S4Vectors
@@ -90,8 +76,6 @@ The following objects are masked from ‘package:matrixStats’:
 
     anyMissing, rowMedians
 
-Warning message:
-replacing previous import ‘S4Arrays::read_block’ by ‘DelayedArray::read_block’ when loading ‘SummarizedExperiment’ 
 Loading required package: ggplot2
 here() starts at /dcs04/lieber/marmaypag/spatialAMY_LIBD4125/spatialAmygdala
 
@@ -133,58 +117,50 @@ The following objects are masked from ‘package:base’:
 
     intersect, setdiff, setequal, union
 
-class: SpatialExperiment 
-dim: 366 1018068 
-metadata(0):
-assays(3): counts nucleus_normcounts cell_normcounts
-rownames(366): ABCC9 ADAMTS12 ... ZIC2 ZNF536
-rowData names(3): ID Symbol Type
-colnames(1018068): aaaaeomf-1 aaaajkhp-1 ... oimbboka-1 oimbcgpk-1
-colData names(16): cell_id transcript_counts ... cell_area.sf
-  nucleus_area.sf
-reducedDimNames(3): PCA HARMONY UMAP
-mainExpName: NULL
-altExpNames(0):
-spatialCoords names(2) : x_centroid y_centroid
-imgData names(1): sample_id
-class: SingleCellExperiment 
-dim: 36601 15511 
-metadata(0):
-assays(1): counts
-rownames(36601): A1BG A1BG-AS1 ... ZYX ZZEF1
-rowData names(7): source type ... gene_type Symbol.uniq
-colnames(15511): cell_2 cell_4 ... cell_16967 cell_16969
-colData names(33): batch orig.ident ... fine_celltype ident
-reducedDimNames(0):
-mainExpName: NULL
-altExpNames(0):
-[1] "SingleCellExperiment"
-attr(,"package")
-[1] "SingleCellExperiment"
-[1] "dgCMatrix"
-attr(,"package")
-[1] "Matrix"
-[1]     366 1018068
-[1]   366 15511
-
-  Excitatory   Inhibitory Non-neuronal 
-      302453        75563       640052 
-
-       aBA_ESR1       aBA_GRIK3          ADARB2       Astrocyte        BA_MOXD6 
-           4075            6624           12381          182842           58582 
-       BA_MYRIP      CALCR_PENK        CCK_CNR1      DLK1_ZFHX3     Endothelial 
-           4699            4068            4725             670           98157 
-      Ependymal         LA_RORB       LA_ZBTB20      LAMP5_EGFR      LAMP5_NOS1 
-           6784           31465            7058            7500            3620 
-      Microglia Oligodendrocyte       PENK_DRD2     PVALB_MYO5B      PVALB_ST18 
-          57103          406467            9039            5916            3699 
-    PVALB_UNC5B   RELN_IL1RAPL2     SATB2_RXFP1   SATB2_SLC17A8     SATB2_SULF1 
-           3809            2841            1899            3796           11325 
- SLC17A6_CARTPT    SLC17A6_SIM1        SST_NOS1       SST_NXPH2        SST_TAC1 
-          14547           20636            8231            2586            2331 
-   SST_TMEM132C    TAC1_PPP1R1B     TSHZ1_CPNE4     TSHZ1_PRKG1       VIP_NRXN1 
-           2665            1003           10532            8695            3500 
-     VIP_SEMA5A 
-           4198 
-**** Job ends ****
-Mon Jul 28 04:11:31 PM EDT 2025
+Loading required package: Rcpp
+Running for object: spe_xenium_15um
+Detected Xenium object — subsetting to Gene Expression probes only.
+Subset dimensions: 366 x 1018069
+Normalizing: spe_xenium_15um
+Using cell_area and nucleus_area for normalization (Xenium object).
+Starting Dim Reduction: spe_xenium_15um
+Transposing data matrix
+Hard k-means centroids initialization
+Harmony 1/10
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Harmony 2/10
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Harmony converged after 2 iterations
+Warning messages:
+1: Quick-TRANSfer stage steps exceeded maximum (= 50903450) 
+2: Quick-TRANSfer stage steps exceeded maximum (= 50903450) 
+3: Quick-TRANSfer stage steps exceeded maximum (= 50903450) 
+4: Quick-TRANSfer stage steps exceeded maximum (= 50903450) 
+5: Quick-TRANSfer stage steps exceeded maximum (= 50903450) 
+6: Quick-TRANSfer stage steps exceeded maximum (= 50903450) 
+7: Quick-TRANSfer stage steps exceeded maximum (= 50903450) 
+8: Quick-TRANSfer stage steps exceeded maximum (= 50903450) 
+9: Quick-TRANSfer stage steps exceeded maximum (= 50903450) 
+10: Quick-TRANSfer stage steps exceeded maximum (= 50903450) 
+Starting Visualizations: spe_xenium_15um
+Scale for colour is already present.
+Adding another scale for colour, which will replace the existing scale.
+Scale for colour is already present.
+Adding another scale for colour, which will replace the existing scale.
+Scale for colour is already present.
+Adding another scale for colour, which will replace the existing scale.
+Scale for colour is already present.
+Adding another scale for colour, which will replace the existing scale.
+Scale for colour is already present.
+Adding another scale for colour, which will replace the existing scale.
+Scale for colour is already present.
+Adding another scale for colour, which will replace the existing scale.
+Scale for colour is already present.
+Adding another scale for colour, which will replace the existing scale.
+Scale for colour is already present.
+Adding another scale for colour, which will replace the existing scale.
+Saving: spe_xenium_15um

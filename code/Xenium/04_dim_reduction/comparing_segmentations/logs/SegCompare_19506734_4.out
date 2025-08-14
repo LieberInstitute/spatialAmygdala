@@ -1,0 +1,63 @@
+**** Job starts ****
+Wed Jul  2 11:18:39 AM EDT 2025
+**** JHPCE info ****
+User: mtotty
+Job id: 
+Job name: 
+Hostname: compute-167
+Processing spe_proseg_15um
+class: SpatialExperiment 
+dim: 366 1055540 
+metadata(0):
+assays(1): counts
+rownames(366): APOE SPARC ... AVP NKG7
+rowData names(0):
+colnames(1055540): 1 2 ... 211735 211736
+colData names(13): cell original_cell_id ... in_tissue brnum
+reducedDimNames(0):
+mainExpName: NULL
+altExpNames(0):
+spatialCoords names(2) : x y
+imgData names(1): sample_id
+class: SpatialExperiment 
+dim: 366 1055540 
+metadata(0):
+assays(2): counts cell_normcounts
+rownames(366): APOE SPARC ... AVP NKG7
+rowData names(0):
+colnames(1055540): 1 2 ... 211735 211736
+colData names(17): cell original_cell_id ... total volume.sf
+reducedDimNames(0):
+mainExpName: NULL
+altExpNames(0):
+spatialCoords names(2) : x y
+imgData names(1): sample_id
+5 x 5 sparse Matrix of class "dgCMatrix"
+              1          2           3         4          5
+APOE  5.4314356 1.84342902 0.009510917 0.3573607 .         
+SPARC 4.9185745 0.03145383 0.732426335 0.7333532 .         
+ENC1  3.2552987 0.06220607 .           1.8758235 .         
+STMN2 0.7092464 1.65443464 0.832282888 2.3829331 0.04313257
+YWHAH 3.1767281 0.50444747 0.028356050 2.0184737 0.07121524
+[1]     366 1055540
+class: SpatialExperiment 
+dim: 366 1055540 
+metadata(0):
+assays(2): counts cell_normcounts
+rownames(366): APOE SPARC ... AVP NKG7
+rowData names(0):
+colnames(1055540): 1 2 ... 211735 211736
+colData names(17): cell original_cell_id ... total volume.sf
+reducedDimNames(3): PCA HARMONY UMAP
+mainExpName: NULL
+altExpNames(0):
+spatialCoords names(2) : x y
+imgData names(1): sample_id
+null device 
+          1 
+null device 
+          1 
+null device 
+          1 
+**** Job ends ****
+Wed Jul  2 11:48:50 AM EDT 2025

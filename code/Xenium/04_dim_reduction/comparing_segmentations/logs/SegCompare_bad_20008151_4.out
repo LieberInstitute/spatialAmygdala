@@ -1,0 +1,44 @@
+**** Job starts ****
+Mon Jul 21 02:46:05 PM EDT 2025
+**** JHPCE info ****
+User: mtotty
+Job id: 
+Job name: 
+Hostname: compute-141
+Processing spe_proseg_15um
+class: SpatialExperiment 
+dim: 366 1055540 
+metadata(0):
+assays(1): counts
+rownames(366): APOE SPARC ... AVP NKG7
+rowData names(0):
+colnames(1055540): 1 2 ... 211735 211736
+colData names(13): cell original_cell_id ... in_tissue brnum
+reducedDimNames(0):
+mainExpName: NULL
+altExpNames(0):
+spatialCoords names(2) : x y
+imgData names(1): sample_id
+class: SpatialExperiment 
+dim: 366 548266 
+metadata(0):
+assays(2): counts cell_normcounts
+rownames(366): APOE SPARC ... AVP NKG7
+rowData names(0):
+colnames(548266): 1 2 ... 257634 257635
+colData names(16): cell original_cell_id ... detected total
+reducedDimNames(0):
+mainExpName: NULL
+altExpNames(0):
+spatialCoords names(2) : x y
+imgData names(1): sample_id
+5 x 5 sparse Matrix of class "dgCMatrix"
+              1          2          3         4          5
+APOE  3.8461174 1.20897632 0.00995043 0.1310383 .         
+SPARC 3.4898379 0.01981263 0.69315718 0.2851814 .         
+ENC1  2.3311913 0.03922110 .          0.8458826 .         
+STMN2 0.5247444 1.08181853 0.77934405 1.1314186 0.02955909
+YWHAH 2.2762584 0.32208625 0.02956880 0.9242729 0.04880969
+[1]    366 548266
+**** Job ends ****
+Mon Jul 21 02:46:27 PM EDT 2025
