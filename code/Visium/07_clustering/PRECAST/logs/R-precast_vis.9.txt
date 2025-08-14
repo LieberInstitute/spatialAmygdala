@@ -1,16 +1,17 @@
 **** Job starts ****
-Mon Jun 23 08:54:37 PM EDT 2025
+Wed Jul  2 02:20:25 PM EDT 2025
 **** SLURM info ****
 User: mtotty
-Job id: 17720301
+Job id: 19542725
 Job name: precast_vis
-Hostname: compute-165
+Hostname: compute-124
 Task id: 9
+Unloading conda_R/4.4
 Loading conda_R/4.4
 
 Currently Loaded Modules:
-  1) JHPCE_ROCKY9_DEFAULT_ENV   3) conda/3-24.3.0
-  2) JHPCE_tools/3.0            4) conda_R/4.4
+  1) JHPCE_ROCKY9_DEFAULT_ENV   3) git-status-size/github   5) conda_R/4.4
+  2) JHPCE_tools/3.0            4) conda/3-24.3.0
 
  
 
@@ -20,11 +21,16 @@ The total number of spots exceeds 8e4, thus the subsampling schema will be used 
 IntegrateSRTData: the subsampling schema will be used to speed up computation since subsample_rate is smaller than 1.
 Using bouth housekeeping gene and PRECAST results to obtain the batch corrected gene expressions.
 Start integration...
-2025-06-23 21:02:00.644437 : ***** Data integration finished!, 4.795 mins elapsed.
+2025-07-02 14:32:48.539489 : ***** Data integration finished!, 8.681 mins elapsed.
 Put the data into a new Seurat object...
-2025-06-23 21:02:49.188219 : ***** New Seurat object is generated!, 0.808 mins elapsed.
+2025-07-02 14:33:14.435069 : ***** New Seurat object is generated!, 0.431 mins elapsed.
 Overwriting 'spe$key'. Set 'overwrite = FALSE' if you do not want to overwrite it.
-null device 
-          1 
+Warning message:
+In dir.create(outdir, recursive = TRUE) :
+  '/dcs04/lieber/marmaypag/spatialAMY_LIBD4125/spatialAmygdala/processed-data/Visium/07_clustering/PRECAST/SVGs/cluster_csv/PRECAST_clusters_9/PRECAST_cluster' already exists
+Error in h(simpleError(msg, call)) : 
+  error in evaluating the argument 'x' in selecting a method for function 'unique': object 'spe.subset' not found
+Calls: <Anonymous> ... <Anonymous> -> .approxfun -> unique -> .handleSimpleError -> h
+Execution halted
 **** Job ends ****
-Mon Jun 23 09:04:22 PM EDT 2025
+Wed Jul  2 02:33:18 PM EDT 2025

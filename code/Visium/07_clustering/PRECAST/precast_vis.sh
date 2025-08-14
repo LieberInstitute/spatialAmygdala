@@ -3,7 +3,7 @@
 #SBATCH --output=logs/R-%x.%a.txt
 #SBATCH --error=logs/R-%x.%a.txt
 #SBATCH --array=2-20
-#SBATCH --mem=40G
+#SBATCH --mem=80G
 #SBATCH --mail-type=END
 #SBATCH --cpus-per-task=1 # specify number of CPUs needed for the job, adjust as needed
 

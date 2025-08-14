@@ -1,0 +1,468 @@
+**** Job starts ****
+Mon Jul 21 03:03:04 PM EDT 2025
+**** SLURM info ****
+User: mtotty
+Job id: 20008938
+Job name: cv
+Hostname: compute-160
+Task id: 
+Loading conda_R/4.3
+
+Currently Loaded Modules:
+  1) JHPCE_ROCKY9_DEFAULT_ENV   3) conda/3-23.3.1
+  2) JHPCE_tools/3.0            4) conda_R/4.3
+
+ 
+
+RcppML v0.5.5 using 'options(RcppML.threads = 0)' (all available threads), 'options(RcppML.verbose = FALSE)'
+Loading required package: SummarizedExperiment
+Loading required package: MatrixGenerics
+Loading required package: matrixStats
+
+Attaching package: ‘MatrixGenerics’
+
+The following objects are masked from ‘package:matrixStats’:
+
+    colAlls, colAnyNAs, colAnys, colAvgsPerRowSet, colCollapse,
+    colCounts, colCummaxs, colCummins, colCumprods, colCumsums,
+    colDiffs, colIQRDiffs, colIQRs, colLogSumExps, colMadDiffs,
+    colMads, colMaxs, colMeans2, colMedians, colMins, colOrderStats,
+    colProds, colQuantiles, colRanges, colRanks, colSdDiffs, colSds,
+    colSums2, colTabulates, colVarDiffs, colVars, colWeightedMads,
+    colWeightedMeans, colWeightedMedians, colWeightedSds,
+    colWeightedVars, rowAlls, rowAnyNAs, rowAnys, rowAvgsPerColSet,
+    rowCollapse, rowCounts, rowCummaxs, rowCummins, rowCumprods,
+    rowCumsums, rowDiffs, rowIQRDiffs, rowIQRs, rowLogSumExps,
+    rowMadDiffs, rowMads, rowMaxs, rowMeans2, rowMedians, rowMins,
+    rowOrderStats, rowProds, rowQuantiles, rowRanges, rowRanks,
+    rowSdDiffs, rowSds, rowSums2, rowTabulates, rowVarDiffs, rowVars,
+    rowWeightedMads, rowWeightedMeans, rowWeightedMedians,
+    rowWeightedSds, rowWeightedVars
+
+Loading required package: GenomicRanges
+Loading required package: stats4
+Loading required package: BiocGenerics
+
+Attaching package: ‘BiocGenerics’
+
+The following object is masked from ‘package:RcppML’:
+
+    sort
+
+The following objects are masked from ‘package:stats’:
+
+    IQR, mad, sd, var, xtabs
+
+The following objects are masked from ‘package:base’:
+
+    anyDuplicated, aperm, append, as.data.frame, basename, cbind,
+    colnames, dirname, do.call, duplicated, eval, evalq, Filter, Find,
+    get, grep, grepl, intersect, is.unsorted, lapply, Map, mapply,
+    match, mget, order, paste, pmax, pmax.int, pmin, pmin.int,
+    Position, rank, rbind, Reduce, rownames, sapply, setdiff, sort,
+    table, tapply, union, unique, unsplit, which.max, which.min
+
+Loading required package: S4Vectors
+
+Attaching package: ‘S4Vectors’
+
+The following object is masked from ‘package:utils’:
+
+    findMatches
+
+The following objects are masked from ‘package:base’:
+
+    expand.grid, I, unname
+
+Loading required package: IRanges
+Loading required package: GenomeInfoDb
+Loading required package: Biobase
+Welcome to Bioconductor
+
+    Vignettes contain introductory material; view with
+    'browseVignettes()'. To cite Bioconductor, see
+    'citation("Biobase")', and for packages 'citation("pkgname")'.
+
+
+Attaching package: ‘Biobase’
+
+The following object is masked from ‘package:MatrixGenerics’:
+
+    rowMedians
+
+The following objects are masked from ‘package:matrixStats’:
+
+    anyMissing, rowMedians
+
+here() starts at /dcs04/lieber/marmaypag/spatialAMY_LIBD4125/spatialAmygdala
+
+Attaching package: ‘Matrix’
+
+The following object is masked from ‘package:S4Vectors’:
+
+    expand
+
+Loading required package: Seurat
+The legacy packages maptools, rgdal, and rgeos, underpinning the sp package,
+which was just loaded, will retire in October 2023.
+Please refer to R-spatial evolution reports for details, especially
+https://r-spatial.org/r/2023/05/15/evolution4.html.
+It may be desirable to make the sf package available;
+package maintainers should consider adding sf to Suggests:.
+The sp package is now running under evolution status 2
+     (status 2 uses the sf package in place of rgdal)
+Attaching SeuratObject
+
+Attaching package: ‘Seurat’
+
+The following object is masked from ‘package:SummarizedExperiment’:
+
+    Assays
+
+Loading required package: dplyr
+
+Attaching package: ‘dplyr’
+
+The following object is masked from ‘package:Biobase’:
+
+    combine
+
+The following objects are masked from ‘package:GenomicRanges’:
+
+    intersect, setdiff, union
+
+The following object is masked from ‘package:GenomeInfoDb’:
+
+    intersect
+
+The following objects are masked from ‘package:IRanges’:
+
+    collapse, desc, intersect, setdiff, slice, union
+
+The following objects are masked from ‘package:S4Vectors’:
+
+    first, intersect, rename, setdiff, setequal, union
+
+The following objects are masked from ‘package:BiocGenerics’:
+
+    combine, intersect, setdiff, union
+
+The following object is masked from ‘package:matrixStats’:
+
+    count
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+Loading required package: RcppEigen
+running with sparse optimization
+k = 5, rep = 1 (1/27):
+
+iter |      tol |  overfit 
+---------------------------
+   1 | 9.28e-01 | 0.00e+00
+   2 | 6.18e-02 |        -
+   3 | 9.79e-03 |        -
+   4 | 5.46e-03 |        -
+   5 | 5.26e-03 |        -
+   6 | 3.24e-03 | 0.00e+00
+   7 | 1.68e-03 |        -
+   8 | 1.02e-03 |        -
+   9 | 7.37e-04 |        -
+test set error: 7.0882e-02
+
+k = 10, rep = 1 (2/27):
+
+iter |      tol |  overfit 
+---------------------------
+   1 | 9.18e-01 | 0.00e+00
+   2 | 9.03e-02 |        -
+   3 | 2.00e-02 |        -
+   4 | 8.11e-03 |        -
+   5 | 4.09e-03 |        -
+   6 | 3.08e-03 | 0.00e+00
+   7 | 3.18e-03 |        -
+   8 | 3.11e-03 |        -
+   9 | 2.57e-03 |        -
+  10 | 1.90e-03 |        -
+  11 | 1.33e-03 | 0.00e+00
+  12 | 9.46e-04 |        -
+test set error: 6.9412e-02
+
+k = 20, rep = 1 (3/27):
+
+iter |      tol |  overfit 
+---------------------------
+   1 | 8.99e-01 | 0.00e+00
+   2 | 1.10e-01 |        -
+   3 | 2.39e-02 |        -
+   4 | 9.27e-03 |        -
+   5 | 5.81e-03 |        -
+   6 | 4.13e-03 | 0.00e+00
+   7 | 2.84e-03 |        -
+   8 | 1.97e-03 |        -
+   9 | 1.35e-03 |        -
+  10 | 9.25e-04 |        -
+test set error: 6.8663e-02
+
+k = 30, rep = 1 (4/27):
+
+iter |      tol |  overfit 
+---------------------------
+   1 | 8.95e-01 | 0.00e+00
+   2 | 1.02e-01 |        -
+   3 | 2.97e-02 |        -
+   4 | 1.15e-02 |        -
+   5 | 6.28e-03 |        -
+   6 | 3.81e-03 | 0.00e+00
+   7 | 2.46e-03 |        -
+   8 | 1.75e-03 |        -
+   9 | 1.40e-03 |        -
+  10 | 1.19e-03 |        -
+  11 | 1.05e-03 | 0.00e+00
+  12 | 9.37e-04 |        -
+test set error: 6.8100e-02
+
+k = 40, rep = 1 (5/27):
+
+iter |      tol |  overfit 
+---------------------------
+   1 | 8.92e-01 | 0.00e+00
+   2 | 1.03e-01 |        -
+   3 | 2.92e-02 |        -
+   4 | 1.24e-02 |        -
+   5 | 7.15e-03 |        -
+   6 | 4.71e-03 | 0.00e+00
+   7 | 3.41e-03 |        -
+   8 | 2.70e-03 |        -
+   9 | 2.25e-03 |        -
+  10 | 1.95e-03 |        -
+  11 | 1.71e-03 | 0.00e+00
+  12 | 1.50e-03 |        -
+  13 | 1.29e-03 |        -
+  14 | 1.11e-03 |        -
+  15 | 9.68e-04 |        -
+test set error: 6.7951e-02
+
+k = 50, rep = 1 (6/27):
+
+iter |      tol |  overfit 
+---------------------------
+   1 | 8.85e-01 | 0.00e+00
+   2 | 1.02e-01 |        -
+   3 | 3.01e-02 |        -
+   4 | 1.34e-02 |        -
+   5 | 7.49e-03 |        -
+   6 | 4.75e-03 | 0.00e+00
+   7 | 3.34e-03 |        -
+   8 | 2.56e-03 |        -
+   9 | 2.05e-03 |        -
+  10 | 1.70e-03 |        -
+  11 | 1.44e-03 | 0.00e+00
+  12 | 1.23e-03 |        -
+  13 | 1.08e-03 |        -
+  14 | 9.88e-04 |        -
+test set error: 6.7802e-02
+
+k = 75, rep = 1 (7/27):
+
+iter |      tol |  overfit 
+---------------------------
+   1 | 8.76e-01 | 0.00e+00
+   2 | 1.00e-01 |        -
+   3 | 3.43e-02 |        -
+   4 | 1.63e-02 |        -
+   5 | 9.04e-03 |        -
+   6 | 5.83e-03 | 0.00e+00
+   7 | 4.21e-03 |        -
+   8 | 3.27e-03 |        -
+   9 | 2.64e-03 |        -
+  10 | 2.19e-03 |        -
+  11 | 1.85e-03 | 0.00e+00
+  12 | 1.59e-03 |        -
+  13 | 1.37e-03 |        -
+  14 | 1.21e-03 |        -
+  15 | 1.07e-03 |        -
+  16 | 9.75e-04 | 0.00e+00
+test set error: 6.7638e-02
+
+k = 100, rep = 1 (8/27):
+
+iter |      tol |  overfit 
+---------------------------
+   1 | 8.71e-01 | 0.00e+00
+   2 | 9.94e-02 |        -
+   3 | 3.36e-02 |        -
+   4 | 1.67e-02 |        -
+   5 | 1.00e-02 |        -
+   6 | 6.78e-03 | 0.00e+00
+   7 | 5.05e-03 |        -
+   8 | 4.01e-03 |        -
+   9 | 3.36e-03 |        -
+  10 | 2.94e-03 |        -
+  11 | 2.67e-03 | 0.00e+00
+  12 | 2.48e-03 |        -
+  13 | 2.31e-03 |        -
+  14 | 2.14e-03 |        -
+  15 | 2.03e-03 |        -
+  16 | 2.13e-03 | 2.19e-05
+  17 | 2.66e-03 |        -
+  18 | 3.77e-03 |        -
+  19 | 4.07e-03 |        -
+  20 | 3.53e-03 |        -
+  21 | 3.39e-03 | 1.16e-04
+test set error: 6.7710e-02
+
+k = 125, rep = 1 (9/27):
+
+iter |      tol |  overfit 
+---------------------------
+   1 | 8.67e-01 | 0.00e+00
+   2 | 9.68e-02 |        -
+   3 | 3.46e-02 |        -
+   4 | 1.75e-02 |        -
+   5 | 1.07e-02 |        -
+   6 | 7.54e-03 | 0.00e+00
+   7 | 5.72e-03 |        -
+   8 | 4.58e-03 |        -
+   9 | 3.86e-03 |        -
+  10 | 3.32e-03 |        -
+  11 | 2.90e-03 | 4.48e-05
+  12 | 2.61e-03 |        -
+  13 | 2.46e-03 |        -
+  14 | 2.43e-03 |        -
+  15 | 2.73e-03 |        -
+  16 | 4.06e-03 | 2.91e-04
+test set error: 6.7791e-02
+
+k = 5, rep = 2 (10/27):
+
+iter |      tol |  overfit 
+---------------------------
+   1 | 9.27e-01 | 0.00e+00
+   2 | 7.02e-02 |        -
+   3 | 1.76e-02 |        -
+   4 | 7.48e-03 |        -
+   5 | 3.45e-03 |        -
+   6 | 1.87e-03 | 0.00e+00
+   7 | 1.16e-03 |        -
+   8 | 8.08e-04 |        -
+test set error: 7.0718e-02
+
+k = 10, rep = 2 (11/27):
+
+iter |      tol |  overfit 
+---------------------------
+   1 | 9.05e-01 | 0.00e+00
+   2 | 1.07e-01 |        -
+   3 | 2.67e-02 |        -
+   4 | 1.14e-02 |        -
+   5 | 6.69e-03 |        -
+   6 | 4.75e-03 | 0.00e+00
+   7 | 3.43e-03 |        -
+   8 | 2.39e-03 |        -
+   9 | 1.65e-03 |        -
+  10 | 1.17e-03 |        -
+  11 | 8.83e-04 | 0.00e+00
+test set error: 6.9377e-02
+
+k = 20, rep = 2 (12/27):
+
+iter |      tol |  overfit 
+---------------------------
+   1 | 9.02e-01 | 0.00e+00
+   2 | 1.04e-01 |        -
+   3 | 2.34e-02 |        -
+   4 | 9.19e-03 |        -
+   5 | 4.70e-03 |        -
+   6 | 2.68e-03 | 0.00e+00
+   7 | 1.70e-03 |        -
+   8 | 1.24e-03 |        -
+   9 | 9.87e-04 |        -
+test set error: 6.8518e-02
+
+k = 30, rep = 2 (13/27):
+
+iter |      tol |  overfit 
+---------------------------
+   1 | 8.93e-01 | 0.00e+00
+   2 | 9.99e-02 |        -
+   3 | 2.46e-02 |        -
+   4 | 1.09e-02 |        -
+   5 | 5.87e-03 |        -
+   6 | 3.79e-03 | 0.00e+00
+   7 | 2.96e-03 |        -
+   8 | 2.40e-03 |        -
+   9 | 1.84e-03 |        -
+  10 | 1.41e-03 |        -
+  11 | 1.11e-03 | 0.00e+00
+  12 | 9.07e-04 |        -
+test set error: 6.8112e-02
+
+k = 40, rep = 2 (14/27):
+
+iter |      tol |  overfit 
+---------------------------
+   1 | 8.86e-01 | 0.00e+00
+   2 | 9.53e-02 |        -
+   3 | 2.63e-02 |        -
+   4 | 1.13e-02 |        -
+   5 | 6.48e-03 |        -
+   6 | 4.57e-03 | 0.00e+00
+   7 | 3.60e-03 |        -
+   8 | 2.99e-03 |        -
+   9 | 2.53e-03 |        -
+  10 | 2.17e-03 |        -
+  11 | 1.88e-03 | 0.00e+00
+  12 | 1.61e-03 |        -
+  13 | 1.37e-03 |        -
+  14 | 1.16e-03 |        -
+  15 | 1.00e-03 |        -
+  16 | 8.78e-04 | 0.00e+00
+test set error: 6.7894e-02
+
+k = 50, rep = 2 (15/27):
+
+iter |      tol |  overfit 
+---------------------------
+   1 | 8.80e-01 | 0.00e+00
+   2 | 9.12e-02 |        -
+   3 | 2.74e-02 |        -
+   4 | 1.28e-02 |        -
+   5 | 7.80e-03 |        -
+   6 | 5.55e-03 | 0.00e+00
+   7 | 4.27e-03 |        -
+   8 | 3.42e-03 |        -
+   9 | 2.80e-03 |        -
+  10 | 2.37e-03 |        -
+  11 | 2.09e-03 | 0.00e+00
+  12 | 1.92e-03 |        -
+  13 | 1.74e-03 |        -
+  14 | 1.54e-03 |        -
+  15 | 1.33e-03 |        -
+  16 | 1.14e-03 | 0.00e+00
+  17 | 9.56e-04 |        -
+test set error: 6.7753e-02
+
+k = 75, rep = 2 (16/27):
+
+iter |      tol |  overfit 
+---------------------------
+   1 | 8.72e-01 | 0.00e+00
+   2 | 9.19e-02 |        -
+   3 | 3.08e-02 |        -
+   4 | 1.53e-02 |        -
+   5 | 9.04e-03 |        -
+   6 | 6.17e-03 | 0.00e+00
+   7 | 4.62e-03 |        -
+   8 | 3.60e-03 |        -
+   9 | 2.85e-03 |        -
+  10 | 2.30e-03 |        -
+  11 | 1.87e-03 | 0.00e+00
+  12 | 1.56e-03 |        -
+slurmstepd: error: *** JOB 20008938 ON compute-160 CANCELLED AT 2025-07-22T15:03:27 DUE TO TIME LIMIT ***

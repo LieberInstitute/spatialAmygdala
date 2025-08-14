@@ -1,26 +1,33 @@
 **** Job starts ****
-Mon Jun 23 08:58:36 PM EDT 2025
+Wed Jul  2 02:20:23 PM EDT 2025
 **** SLURM info ****
 User: mtotty
-Job id: 17720329
+Job id: 19542728
 Job name: precast_vis
-Hostname: compute-165
+Hostname: compute-058
 Task id: 12
+Unloading conda_R/4.4
 Loading conda_R/4.4
 
 Currently Loaded Modules:
-  1) JHPCE_ROCKY9_DEFAULT_ENV   3) conda/3-24.3.0
-  2) JHPCE_tools/3.0            4) conda_R/4.4
+  1) JHPCE_ROCKY9_DEFAULT_ENV   3) git-status-size/github   5) conda_R/4.4
+  2) JHPCE_tools/3.0            4) conda/3-24.3.0
 
  
 
 Warning message:
 replacing previous import ‘S4Arrays::read_block’ by ‘DelayedArray::read_block’ when loading ‘SummarizedExperiment’ 
-Error in readChar(con, 5L, useBytes = TRUE) : cannot open the connection
-Calls: load -> readChar
-In addition: Warning message:
-In readChar(con, 5L, useBytes = TRUE) :
-  cannot open compressed file '/dcs04/lieber/marmaypag/spatialAMY_LIBD4125/spatialAmygdala/processed-data/Visium/07_clustering/PRECAST/SVGs/PRECASTObj_12.Rdata', probable reason 'No such file or directory'
+The total number of spots exceeds 8e4, thus the subsampling schema will be used to speed up computation.
+IntegrateSRTData: the subsampling schema will be used to speed up computation since subsample_rate is smaller than 1.
+Using bouth housekeeping gene and PRECAST results to obtain the batch corrected gene expressions.
+Start integration...
+2025-07-02 15:15:57.084714 : ***** Data integration finished!, 45.589 mins elapsed.
+Put the data into a new Seurat object...
+2025-07-02 15:17:13.086666 : ***** New Seurat object is generated!, 1.267 mins elapsed.
+Overwriting 'spe$key'. Set 'overwrite = FALSE' if you do not want to overwrite it.
+Error in h(simpleError(msg, call)) : 
+  error in evaluating the argument 'x' in selecting a method for function 'unique': object 'spe.subset' not found
+Calls: <Anonymous> ... <Anonymous> -> .approxfun -> unique -> .handleSimpleError -> h
 Execution halted
 **** Job ends ****
-Mon Jun 23 09:01:15 PM EDT 2025
+Wed Jul  2 03:17:24 PM EDT 2025

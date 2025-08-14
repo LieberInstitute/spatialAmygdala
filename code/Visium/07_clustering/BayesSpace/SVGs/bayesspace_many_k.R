@@ -1,4 +1,3 @@
-setwd('/dcs04/lieber/marmaypag/spatialAMY_LIBD4125/spatialAmygdala/')
 suppressPackageStartupMessages({
     library("here")
     library("sessioninfo")
@@ -17,10 +16,48 @@ dim(spe)
 k <- as.numeric(Sys.getenv("SLURM_ARRAY_TASK_ID"))
 
 
-# spe <- spatialPreprocess(spe, platform="Visium", n.PCs=30, n.HVGs=2000, log.normalize=TRUE)
+# ====== Introducing offset ======
 
-colData(spe)$row <- spe$array_row
-colData(spe)$col <- spe$array_col
+# drop low quality samples
+spe <- spe[, !colData(spe)$sample_id %in% c("Br9469", "Br9017", "Br9206")]
+
+# Get unique sample IDs
+sample_ids <- sort(unique(spe$sample_id))
+n_samples <- length(sample_ids)
+
+# Define how many samples per row in the grid
+samples_per_row <- ceiling(sqrt(n_samples))  # e.g., 3 samples => 2x2 grid
+
+# Grid spacing (padding between samples)
+row_spacing <- 600
+col_spacing <- 600
+
+# Offset coordinates into a 2D grid
+for (i in seq_along(sample_ids)) {
+  id <- sample_ids[i]
+  
+  row_idx <- (i - 1) %/% samples_per_row
+  col_idx <- (i - 1) %% samples_per_row
+  
+  sel <- spe$sample_id == id
+  colData(spe)$row[sel] <- spe$array_row[sel] + row_idx * row_spacing
+  colData(spe)$col[sel] <- spe$array_col[sel] + col_idx * col_spacing
+}
+
+spatial_coords <- data.frame(
+    row = colData(spe)$row,
+    col = colData(spe)$col,
+    sample_id = colData(spe)$sample_id
+)
+
+# pdf(here("plots","Visium", "07_clustering", "BayesSpace","SVGs","offset_check.pdf"), width = 10, height = 8)
+# ggplot(spatial_coords, aes(x = col, y = row, color = sample_id)) +
+#     geom_point() +
+#     scale_color_brewer(palette = "Set1") +
+#     labs(title = "Spatial Coordinates with Sample Offsets") +
+#     theme_minimal() +
+#     coord_fixed()
+# dev.off()
 
 metadata(spe)$BayesSpace.data <- list(platform = "Visium", is.enhanced = FALSE)
 
@@ -36,18 +73,6 @@ colnames(colData(spe))[ncol(colData(spe))] <- bayesSpace_name
 cluster_export(
     spe,
     bayesSpace_name,
-    cluster_dir = here::here("processed-data","Visium", "07_clustering", "BayesSpace","SVGs","cluster_csv")
+    cluster_dir = here::here("processed-data","Visium", "07_clustering", "BayesSpace","SVGs","cluster_csv_new")
 )
 
-clustV <- bayesSpace_name
-
-
-# loop through each sample_id and create a pdf on a separete page
-pdf(file = here::here("plots", "07_clustering", "BayesSpace", paste0(bayesSpace_name, ".pdf")), width = 10, height = 10)
-for (sample_id in unique(colData(spe)$sample_id)) {
-    spe.subset <- spe[, colData(spe)$sample_id == sample_id]
-    p <- make_escheR(spe.subset) |>
-        add_fill(var=clustV)
-    print(p)
-}
-dev.off()

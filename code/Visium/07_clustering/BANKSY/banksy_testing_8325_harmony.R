@@ -42,9 +42,6 @@ colnames(colData(spe.subset))
 #unique(spe$exclude_overlapping)
 #[1] FALSE  TRUE    NA
 
-# eclude overlapping and NAs
-spe.subset <- spe.subset[, !spe.subset$exclude_overlapping & !is.na(spe.subset$exclude_overlapping)]
-
 # renormalization
 spe.subset <- logNormCounts(spe.subset)
 
