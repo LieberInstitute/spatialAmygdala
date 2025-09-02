@@ -1,0 +1,183 @@
+**** Job starts ****
+Mon Aug 18 10:06:05 AM EDT 2025
+**** JHPCE info ****
+User: mtotty
+Job id: 
+Job name: 
+Hostname: compute-121
+Unloading conda_R/4.4
+Loading conda_R/4.4
+
+Currently Loaded Modules:
+  1) JHPCE_ROCKY9_DEFAULT_ENV   3) git-status-size/github   5) conda_R/4.4
+  2) JHPCE_tools/3.0            4) conda/3-24.3.0
+
+ 
+
+Loading required package: SingleCellExperiment
+Loading required package: SummarizedExperiment
+Loading required package: MatrixGenerics
+Loading required package: matrixStats
+
+Attaching package: ‘MatrixGenerics’
+
+The following objects are masked from ‘package:matrixStats’:
+
+    colAlls, colAnyNAs, colAnys, colAvgsPerRowSet, colCollapse,
+    colCounts, colCummaxs, colCummins, colCumprods, colCumsums,
+    colDiffs, colIQRDiffs, colIQRs, colLogSumExps, colMadDiffs,
+    colMads, colMaxs, colMeans2, colMedians, colMins, colOrderStats,
+    colProds, colQuantiles, colRanges, colRanks, colSdDiffs, colSds,
+    colSums2, colTabulates, colVarDiffs, colVars, colWeightedMads,
+    colWeightedMeans, colWeightedMedians, colWeightedSds,
+    colWeightedVars, rowAlls, rowAnyNAs, rowAnys, rowAvgsPerColSet,
+    rowCollapse, rowCounts, rowCummaxs, rowCummins, rowCumprods,
+    rowCumsums, rowDiffs, rowIQRDiffs, rowIQRs, rowLogSumExps,
+    rowMadDiffs, rowMads, rowMaxs, rowMeans2, rowMedians, rowMins,
+    rowOrderStats, rowProds, rowQuantiles, rowRanges, rowRanks,
+    rowSdDiffs, rowSds, rowSums2, rowTabulates, rowVarDiffs, rowVars,
+    rowWeightedMads, rowWeightedMeans, rowWeightedMedians,
+    rowWeightedSds, rowWeightedVars
+
+Loading required package: GenomicRanges
+Loading required package: stats4
+Loading required package: BiocGenerics
+
+Attaching package: ‘BiocGenerics’
+
+The following objects are masked from ‘package:stats’:
+
+    IQR, mad, sd, var, xtabs
+
+The following objects are masked from ‘package:base’:
+
+    anyDuplicated, aperm, append, as.data.frame, basename, cbind,
+    colnames, dirname, do.call, duplicated, eval, evalq, Filter, Find,
+    get, grep, grepl, intersect, is.unsorted, lapply, Map, mapply,
+    match, mget, order, paste, pmax, pmax.int, pmin, pmin.int,
+    Position, rank, rbind, Reduce, rownames, sapply, saveRDS, setdiff,
+    table, tapply, union, unique, unsplit, which.max, which.min
+
+Loading required package: S4Vectors
+
+Attaching package: ‘S4Vectors’
+
+The following object is masked from ‘package:utils’:
+
+    findMatches
+
+The following objects are masked from ‘package:base’:
+
+    expand.grid, I, unname
+
+Loading required package: IRanges
+Loading required package: GenomeInfoDb
+Loading required package: Biobase
+Welcome to Bioconductor
+
+    Vignettes contain introductory material; view with
+    'browseVignettes()'. To cite Bioconductor, see
+    'citation("Biobase")', and for packages 'citation("pkgname")'.
+
+
+Attaching package: ‘Biobase’
+
+The following object is masked from ‘package:MatrixGenerics’:
+
+    rowMedians
+
+The following objects are masked from ‘package:matrixStats’:
+
+    anyMissing, rowMedians
+
+Warning message:
+replacing previous import ‘S4Arrays::read_block’ by ‘DelayedArray::read_block’ when loading ‘SummarizedExperiment’ 
+Loading required package: ggplot2
+here() starts at /dcs04/lieber/marmaypag/spatialAMY_LIBD4125/spatialAmygdala
+
+Attaching package: ‘dplyr’
+
+The following object is masked from ‘package:Biobase’:
+
+    combine
+
+The following objects are masked from ‘package:GenomicRanges’:
+
+    intersect, setdiff, union
+
+The following object is masked from ‘package:GenomeInfoDb’:
+
+    intersect
+
+The following objects are masked from ‘package:IRanges’:
+
+    collapse, desc, intersect, setdiff, slice, union
+
+The following objects are masked from ‘package:S4Vectors’:
+
+    first, intersect, rename, setdiff, setequal, union
+
+The following objects are masked from ‘package:BiocGenerics’:
+
+    combine, intersect, setdiff, union
+
+The following object is masked from ‘package:matrixStats’:
+
+    count
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+class: SpatialExperiment 
+dim: 18085 50908 
+metadata(0):
+assays(1): counts
+rownames(18085): SAMD11 NOC2L ... MT-ND6 MT-CYB
+rowData names(1): gene_id
+colnames(50908): cellid_000000004-1 cellid_000000007-1 ...
+  cellid_000060097-1 cellid_000060106-1
+colData names(9): orig.ident nCount_Spatial.008um ... sample_id
+  in_tissue
+reducedDimNames(0):
+mainExpName: NULL
+altExpNames(0):
+spatialCoords names(2) : x y
+imgData names(4): sample_id image_id data scaleFactor
+class: SingleCellExperiment 
+dim: 36601 15511 
+metadata(0):
+assays(1): counts
+rownames(36601): A1BG A1BG-AS1 ... ZYX ZZEF1
+rowData names(7): source type ... gene_type Symbol.uniq
+colnames(15511): cell_2 cell_4 ... cell_16967 cell_16969
+colData names(33): batch orig.ident ... fine_celltype ident
+reducedDimNames(0):
+mainExpName: NULL
+altExpNames(0):
+[1] 18076 50908
+[1] 18076 15511
+
+  Excitatory   Inhibitory Non-neuronal 
+        7656         7430        35822 
+
+       aBA_ESR1       aBA_GRIK3          ADARB2       Astrocyte        BA_MOXD6 
+             98             257              30            6743              83 
+       BA_MYRIP      CALCR_PENK        CCK_CNR1      DLK1_ZFHX3     Endothelial 
+            124              45             266             347            4215 
+      Ependymal         LA_RORB       LA_ZBTB20      LAMP5_EGFR      LAMP5_NOS1 
+             18             301               1             188             179 
+      Microglia Oligodendrocyte       PENK_DRD2     PVALB_MYO5B      PVALB_ST18 
+           2113           21458            2242              30              64 
+    PVALB_UNC5B   RELN_IL1RAPL2     SATB2_SULF1  SLC17A6_CARTPT    SLC17A6_SIM1 
+             86              66            1910              34              18 
+       SST_NOS1       SST_NXPH2        SST_TAC1    SST_TMEM132C    TAC1_PPP1R1B 
+           6957              17            1581              22              95 
+    TSHZ1_CPNE4     TSHZ1_PRKG1       VIP_NRXN1      VIP_SEMA5A 
+            355             855              42              68 
+**** Job ends ****
+Mon Aug 18 10:23:07 AM EDT 2025

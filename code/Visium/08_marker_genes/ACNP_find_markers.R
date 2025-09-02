@@ -9,9 +9,9 @@ suppressPackageStartupMessages({
     library("DeconvoBuddies")
 })
 
-plot_dir <- here("plots", "Visium", "09_marker_genes")
+plot_dir <- here("plots", "Visium", "08_marker_genes")
 
-load(here("processed-data","Visium", "07_batch_correction", "spe_harmony.Rdata"))
+load(here("processed-data","Visium", "06_batch_correction", "spe_harmony.Rdata"))
 dim(spe)
 
 #subset to brnum 9280
@@ -19,7 +19,7 @@ spe <- spe[, colData(spe)$sample_id == "Br8325"]
 spe
 
 # get folders in cluster_Csv
-bs_folders <- list.files(here::here("processed-data","Visium", "08_clustering", "BayesSpace","HVGs","cluster_csv","Br8325"), full.names = TRUE)
+bs_folders <- list.files(here::here("processed-data","Visium", "08_clustering", "BayesSpace","HVGs","Br8325"), full.names = TRUE)
 bs_folders
 # [1] "/dcs04/lieber/marmaypag/spatialAMY_LIBD4125/spatialAmygdala/processed-data/Visium/08_clustering/BayesSpace/HVGs/cluster_csv/BayesSpace_10"
 # [2] "/dcs04/lieber/marmaypag/spatialAMY_LIBD4125/spatialAmygdala/processed-data/Visium/08_clustering/BayesSpace/HVGs/cluster_csv/BayesSpace_12"

@@ -1,17 +1,16 @@
 **** Job starts ****
-Fri Jun 27 02:59:51 PM EDT 2025
+Wed Aug 20 08:56:45 AM EDT 2025
 **** SLURM info ****
 User: mtotty
-Job id: 17854916
+Job id: 21560940
 Job name: BS_individualRuns
-Hostname: compute-159
+Hostname: compute-168
 Task id: 20
-Unloading conda_R/4.4
 Loading conda_R/4.4
 
 Currently Loaded Modules:
-  1) JHPCE_ROCKY9_DEFAULT_ENV   3) git-status-size/github   5) conda_R/4.4
-  2) JHPCE_tools/3.0            4) conda/3-24.3.0
+  1) JHPCE_ROCKY9_DEFAULT_ENV   3) conda/3-24.3.0
+  2) JHPCE_tools/3.0            4) conda_R/4.4
 
  
 
@@ -110,76 +109,4 @@ Processing sample: Br2743
 Running spatialCluster()
 Neighbors were identified for 32854 out of 32854 spots.
 Fitting model...
-Calculating labels using iterations 100 through 10000.
-Overwriting 'spe$key'. Set 'overwrite = FALSE' if you do not want to overwrite it.
-Finished processing sample: Br2743
-Processing sample: Br6423
-Running spatialCluster()
-Neighbors were identified for 34352 out of 34353 spots.
-Fitting model...
-Calculating labels using iterations 100 through 10000.
-Overwriting 'spe$key'. Set 'overwrite = FALSE' if you do not want to overwrite it.
-Finished processing sample: Br6423
-Processing sample: Br6471
-Running spatialCluster()
-Neighbors were identified for 37795 out of 37795 spots.
-Fitting model...
-Calculating labels using iterations 100 through 10000.
-Overwriting 'spe$key'. Set 'overwrite = FALSE' if you do not want to overwrite it.
-Finished processing sample: Br6471
-Processing sample: Br6660
-Running spatialCluster()
-Neighbors were identified for 37085 out of 37085 spots.
-Fitting model...
-Calculating labels using iterations 100 through 10000.
-Overwriting 'spe$key'. Set 'overwrite = FALSE' if you do not want to overwrite it.
-Finished processing sample: Br6660
-Processing sample: Br8325
-Running spatialCluster()
-Neighbors were identified for 29885 out of 29885 spots.
-Fitting model...
-Calculating labels using iterations 100 through 10000.
-Overwriting 'spe$key'. Set 'overwrite = FALSE' if you do not want to overwrite it.
-Finished processing sample: Br8325
-Processing sample: Br9017
-Running spatialCluster()
-Neighbors were identified for 26378 out of 26382 spots.
-Fitting model...
-Calculating labels using iterations 100 through 10000.
-Overwriting 'spe$key'. Set 'overwrite = FALSE' if you do not want to overwrite it.
-Finished processing sample: Br9017
-Processing sample: Br9192
-Running spatialCluster()
-Neighbors were identified for 28608 out of 28608 spots.
-Fitting model...
-Calculating labels using iterations 100 through 10000.
-Overwriting 'spe$key'. Set 'overwrite = FALSE' if you do not want to overwrite it.
-Finished processing sample: Br9192
-Processing sample: Br9206
-Running spatialCluster()
-Neighbors were identified for 26850 out of 26850 spots.
-Fitting model...
-Calculating labels using iterations 100 through 10000.
-Overwriting 'spe$key'. Set 'overwrite = FALSE' if you do not want to overwrite it.
-Finished processing sample: Br9206
-Processing sample: Br9280
-Running spatialCluster()
-Neighbors were identified for 26721 out of 26722 spots.
-Fitting model...
-Calculating labels using iterations 100 through 10000.
-Overwriting 'spe$key'. Set 'overwrite = FALSE' if you do not want to overwrite it.
-Finished processing sample: Br9280
-Processing sample: Br9469
-Running spatialCluster()
-Neighbors were identified for 36636 out of 36639 spots.
-Fitting model...
-Calculating labels using iterations 100 through 10000.
-Overwriting 'spe$key'. Set 'overwrite = FALSE' if you do not want to overwrite it.
-Finished processing sample: Br9469
-Warning messages:
-1: In dir.create(outdir, recursive = TRUE) :
-  '/dcs04/lieber/marmaypag/spatialAMY_LIBD4125/spatialAmygdala/processed-data/Visium/07_clustering/BayesSpace/SVGs/Br2743/BayesSpace_20' already exists
-2: In dir.create(outdir, recursive = TRUE) :
-  '/dcs04/lieber/marmaypag/spatialAMY_LIBD4125/spatialAmygdala/processed-data/Visium/07_clustering/BayesSpace/SVGs/Br8325/BayesSpace_20' already exists
-**** Job ends ****
-Fri Jun 27 09:29:42 PM EDT 2025
+slurmstepd: error: *** JOB 21560940 ON compute-168 CANCELLED AT 2025-08-20T09:27:58 ***

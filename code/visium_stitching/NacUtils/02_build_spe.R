@@ -89,6 +89,8 @@ spe <- logNormCounts(spe)
 #   Plot white matter genes to verify smooth transition across capture areas
 ################################################################################
 
+wm_genes = c("MBP", "GFAP")
+
 wm_genes = rownames(spe)[match(wm_genes, rowData(spe)$symbol)]
 p = spot_plot(
     spe, sample_id = unique(spe$sample_id)[1], var_name = wm_genes,

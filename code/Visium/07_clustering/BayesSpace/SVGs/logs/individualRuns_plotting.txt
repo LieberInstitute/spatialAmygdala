@@ -1,0 +1,18 @@
+**** Job starts ****
+Wed Aug 20 10:10:27 AM EDT 2025
+**** SLURM info ****
+User: mtotty
+Job id: 21561067
+Job name: individ_plotting
+Hostname: compute-169
+Task id: 
+Loading conda_R/4.4
+
+Currently Loaded Modules:
+  1) JHPCE_ROCKY9_DEFAULT_ENV   3) conda/3-24.3.0
+  2) JHPCE_tools/3.0            4) conda_R/4.4
+
+ 
+
+**** Job ends ****
+Wed Aug 20 10:10:28 AM EDT 2025

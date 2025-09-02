@@ -52,22 +52,3 @@ for (i in seq_along(bs_folders)) {
     }
     dev.off()
 }
-
-
-# drop spe$exclude_overlapping and NAs
-spe.test <- spe[, !spe$exclude_overlapping & !is.na(spe$exclude_overlapping)]
-
-for (i in seq_along(bs_folders)) {
-    clustV <- paste0("BS_k", bs_k[i])
-    pal <- colorRampPalette(RColorBrewer::brewer.pal(9, "Set1"))(length(unique(colData(spe.test)[[clustV]])))
-    pdf(file = here::here("plots", "Visium", "07_clustering", "BayesSpace", "Br2743", paste0("LIBD_BS_k", bs_k[i], "_stitched.pdf")), width = 10, height = 10)
-    p <- vis_clus(
-        spe.test,
-        clustervar=clustV,
-        colors = pal,
-        point_size = 3,
-        is_stitched = TRUE,
-        )
-        print(p)
-    dev.off()
-}
