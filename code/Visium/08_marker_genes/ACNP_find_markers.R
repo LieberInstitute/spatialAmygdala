@@ -19,7 +19,7 @@ spe <- spe[, colData(spe)$sample_id == "Br8325"]
 spe
 
 # get folders in cluster_Csv
-bs_folders <- list.files(here::here("processed-data","Visium", "08_clustering", "BayesSpace","HVGs","Br8325"), full.names = TRUE)
+bs_folders <- list.files(here::here("processed-data","Visium", "07_clustering", "BayesSpace","HVGs","Br8325"), full.names = TRUE)
 bs_folders
 # [1] "/dcs04/lieber/marmaypag/spatialAMY_LIBD4125/spatialAmygdala/processed-data/Visium/08_clustering/BayesSpace/HVGs/cluster_csv/BayesSpace_10"
 # [2] "/dcs04/lieber/marmaypag/spatialAMY_LIBD4125/spatialAmygdala/processed-data/Visium/08_clustering/BayesSpace/HVGs/cluster_csv/BayesSpace_12"
@@ -75,7 +75,7 @@ p <- ggplot(df, aes(x = x, y = y, color = factor(cluster))) +
 
 
 # Save the plot
-ggsave(here("plots", "Visium", "09_marker_genes", "Spatial_Clusters_Grid.png"), plot = p, width = 15, height = 10, units = "in", dpi = 300)
+ggsave(here("plots", "Visium", "08_marker_genes", "Spatial_Clusters_Grid_new.png"), plot = p, width = 15, height = 10, units = "in", dpi = 300)
 
 # New annotations fomr BS_k20
 # 1 = Ce
@@ -124,18 +124,12 @@ spe$BS_manual[spe$BS_k20 == 20] <- "WM"
 
 # replotting
 library(escheR)
-pdf(here("plots", "Visium", "09_marker_genes", "Spatial_Clusters_Grid_BS_manual.pdf"), width = 10, height = 10)
+pdf(here("plots", "Visium", "08_marker_genes", "Spatial_Clusters_Grid_BS_manual.pdf"), width = 10, height = 10)
 p <- make_escheR(spe) |>
     add_fill(var="BS_manual", point_size=1.75) +
     scale_fill_manual(values = pal)
 print(p)
 dev.off()
-
-
-
-
-
-
 
 
 
@@ -164,7 +158,7 @@ pal <- c(WM_pal, Ce_pal, Me_pal, HPC_pal, PCo_pal, LA_pal, BLVM_pal, BL_pal, BM_
 names(pal) <- c("WM", "Ce", "Me", "HPC", "PCo", "LA", "BLVM", "BL", "BM", "BADL", "Vascular")
 
 # replotting
-pdf(here("plots", "Visium", "09_marker_genes", "Spatial_Clusters_Grid_BS_manual_custom_palette.pdf"), width = 10, height = 10)
+pdf(here("plots", "Visium", "08_marker_genes", "Spatial_Clusters_Grid_BS_manual_custom_palette.pdf"), width = 10, height = 10)
 p <- make_escheR(spe) |>
     add_fill(var="BS_manual", point_size=1.75) +
     scale_fill_manual(values = pal)
@@ -172,19 +166,123 @@ print(p)
 
 dev.off()
 
+spe.bs <- spe
+
+# ========== Load NMF results for IDing ITCs ==========
+
+load(here("processed-data","Visium", "98_NMF", "spe_NMF_Yu.rda"))
+spe.nmf <- spe
+spe.nmf
+
+# subset to 8325
+spe.nmf <- spe.nmf[, colData(spe.nmf)$sample_id == "Br8325"]
+spe.nmf
 
 
+# in spe.bs, set spots > 0 in NMF 44 + 66 as ITC in spe.bs clusters
+spe.bs$ITC <- "Non-ITC"
+spe.bs$ITC[ (reducedDims(spe.nmf)$NMF_proj[,44] > 1)] <- "ITC"
+table(spe.bs$ITC)
 
+# plot ITC vs Non-ITC, make ITC red and Non-ITC grey
+pal_itc <- c("Non-ITC" = "lightgrey", "ITC" = "red")
+
+pdf(here("plots", "Visium", "08_marker_genes", "Spatial_ITC_vs_NonITC.pdf"), width = 5, height = 5)
+p <- make_escheR(spe.bs) |>
+    add_fill(var="ITC", point_size=1.75) +
+    scale_fill_manual(values = pal_itc)
+print(p)
+dev.off()
+
+# okay > 1 isn't great. Let's try to GMM of k2, where the high value cluster is ITC
+library(mclust)
+gmm_44 <- Mclust(reducedDims(spe.nmf)$NMF_proj[,44], G=2)
+gmm_65 <- Mclust(reducedDims(spe.nmf)$NMF_proj[,65], G=2)
+
+
+# okay now just do 44 + 65
+spe.bs$ITC_gmm2 <- "Non-ITC"
+spe.bs$ITC_gmm2[ (gmm_44$classification == 2) | (gmm_65$classification == 2) ] <- "ITC"
+table(spe.bs$ITC_gmm2)
+
+# make ITC in BS_manual
+spe.bs$BS_manual_ITC <- spe.bs$BS_manual
+spe.bs$BS_manual_ITC[ spe.bs$ITC_gmm2 == "ITC" ] <- "ITC"
+table(spe.bs$BS_manual_ITC)
+
+# replot with custom color sclae +Red for itc
+pal <- c(WM_pal, Ce_pal, Me_pal, HPC_pal, PCo_pal, LA_pal, BLVM_pal, BL_pal, BM_pal, BADL_pal, Vascular_pal, "red")
+names(pal) <- c("WM", "Ce", "Me", "HPC", "PCo", "LA", "BLVM", "BL", "BM", "BADL", "Vascular", "ITC")
+pdf(here("plots", "Visium", "08_marker_genes", "Spatial_Clusters_Grid_BS_manual_ITC_custom_palette.pdf"), width = 10, height = 10)
+p <- make_escheR(spe.bs) |>
+    add_fill(var="BS_manual_ITC", point_size=1.75) +
+    scale_fill_manual(values = pal)
+print(p)
+dev.off()
+
+
+# there are a lot of random spots added. let's try ot smooth the ITC vs non-ITC spots first before meging.
+# let's do this by relabeling each spot is > 4 of its 6 nearest neighbors are ITC as ITC
+library(FNN)
+library(Matrix)
+
+
+coords <- spatialCoords(spe.bs)
+initial_labels <- spe.bs$ITC_gmm2  # "ITC" or "Non-ITC"
+
+# Convert to binary (1 = ITC, 0 = Non-ITC)
+binary_labels <- as.integer(initial_labels == "ITC")
+
+# Get 6-NN
+nn <- get.knn(coords, k = 6)$nn.index
+
+# Count number of ITC neighbors for each spot
+itc_counts <- rowSums(matrix(binary_labels[nn], nrow = nrow(nn)))
+
+# Promote to ITC if ≥ 4 of 6 neighbors are ITC
+smoothed_labels <- ifelse(itc_counts >= 2, "ITC", "Non-ITC")
+
+# Save smoothed labels
+spe.bs$ITC_gmm2_smooth <- smoothed_labels
+spe.bs$BS_manual_ITC_smooth <- ifelse(smoothed_labels == "ITC", "ITC", spe.bs$BS_manual)
+
+# Check table
+table(spe.bs$ITC_gmm2_smooth)
+
+
+# plot
+pal_itc <- c("Non-ITC" = "lightgrey", "ITC" = "red")
+pdf(here("plots", "Visium", "08_marker_genes", "Spatial_ITC_vs_NonITC_GMM_smoothed.pdf"), width = 5, height = 5)
+p <- make_escheR(spe.bs) |>
+    add_fill(var="ITC_gmm2_smooth", point_size=0.5) +
+    scale_fill_manual(values = pal_itc)
+print(p)
+dev.off()
+
+# make ITC in BS_manual
+spe.bs$BS_manual_ITC_smoothed <- spe.bs$BS_manual
+spe.bs$BS_manual_ITC_smoothed[ spe.bs$ITC_gmm2_smooth == "ITC" ] <- "ITC"
+table(spe.bs$BS_manual_ITC_smoothed)
+
+# replot with custom color sclae +Red for itc
+pal <- c(WM_pal, Ce_pal, Me_pal, HPC_pal, PCo_pal, LA_pal, BLVM_pal, BL_pal, BM_pal, BADL_pal, Vascular_pal, "red")
+names(pal) <- c("WM", "Ce", "Me", "HPC", "PCo", "LA", "BLVM", "BL", "BM", "BADL", "Vascular", "ITC")
+pdf(here("plots", "Visium", "08_marker_genes", "Spatial_Clusters_Grid_BS_manual_ITC_smoothed_custom_palette.pdf"), width = 10, height = 10)
+p <- make_escheR(spe.bs) |>
+    add_fill(var="BS_manual_ITC_smoothed", point_size=1.75) +
+    scale_fill_manual(values = pal)
+print(p)
+dev.off()
 # ======== MARKER GENES =========
 
 # renormalize
-spe <- scuttle::logNormCounts(spe)
+spe <- scuttle::logNormCounts(spe.bs)
 
-rownames(spe) <- rowData(spe)$symbol
+rownames(spe.bs) <- rowData(spe.bs)$gene_name
 
 markers <- scran::findMarkers(
-  spe,
-  groups=spe$BS_manual,
+  spe.bs,
+  groups=spe.bs$BS_manual_ITC_smoothed,
   test.type = c("t"),
   pval.type = c("all"),
   full.stats = TRUE,
@@ -202,12 +300,15 @@ top_markers <- lapply(markers, function(x) {
 #  [1] "PENK"    "SYNPR"   "TMEM272" "GAD2"    "SLC32A1" "SLC35F1" "GPR88"  
 #  [8] "NLRP1"   "TSHZ1"   "GAD1"   
 
+# save markers
+saveRDS(markers, file=here("processed-data","Visium","08_marker_genes", "markers_bs_manual_ITC_smoothed.rds"))
+
 
 # plot violins of the top 10 markers for each cluster in top_markers
 for (i in seq_along(top_markers)) {
     cluster_name <- names(top_markers[i])
-    png(here("plots", "Visium", "09_marker_genes", paste0("Markers_cluster_", cluster_name, "_violin.png")), width = 5, height = 10, units = "in", res = 300)
-        p <- scater::plotExpression(spe, features=top_markers[[i]], x="BS_manual", colour_by="BS_manual", ncol=2)
+    png(here("plots", "Visium", "08_marker_genes", paste0("Markers_cluster_", cluster_name, "_violin.png")), width = 5, height = 10, units = "in", res = 300)
+        p <- scater::plotExpression(spe.bs, features=top_markers[[i]], x="BS_manual_ITC_smoothed", colour_by="BS_manual_ITC_smoothed", ncol=2)
         print(p)
     dev.off()
 }
@@ -228,16 +329,15 @@ features <- c("PEX5L", "EDIL3", "STXBP6", "COL25A1",
                 "LAMP5", "NPTX1", "STMN4", "ATP2B4",
                 "NCAM2", "CNR1", "CCK", "GABRD",
                 "PDYN", "CDH13", "ESR1",
-                "PENK", "SYNPR", "GAD2", "TSHZ1", "SST", "PRKCD",
+                "PENK", "SYNPR", "GAD2", "SST", "PRKCD",
                 "CAMK2N1", "TTC9B", "CYP26B1", "SLC30A3", "ARPP19",
-                "CALB2", "CALB1", "CARTPT", "SLC17A6", "GABRE", "OTP")
+                "CALB2", "CALB1", "CARTPT", "SLC17A6", "GABRE", "OTP",
+                "FOXP2", "TSHZ1", "DRD1", "OPRM1", "CPNE4", "PRKG1", "SIM1", "GULP1")
 
-
-spe$BS_manual <- factor(spe$BS_manual)
 
 # grouped heatmap
-pdf(here("plots", "Visium", "09_marker_genes", "grouped_heatmap.pdf"), width = 10, height = 10)
-p <- scater::plotDots(spe, features, group="BS_manual", center=TRUE, scale=TRUE)
+pdf(here("plots", "Visium", "08_marker_genes", "grouped_heatmap.pdf"), width = 10, height = 10)
+p <- scater::plotDots(spe.bs, features, group="BS_manual_ITC_smoothed", center=TRUE, scale=TRUE)
 print(p)
 dev.off()
 
@@ -274,10 +374,13 @@ print(p)
 dev.off()
 
 
-novel <- c("STXBP6", "EDIL3", "NRXN2", "MTPN", "STMN4", "LAMP5", "CNR1", "NCAM2", "PENK", "SYNPR", "CYP26B1", "TTC9B", "CALB2", "CARTPT", "PDYN", "CDH13")
+novel <- c("STXBP6", "EDIL3", "NRXN2", "MTPN", "STMN4", "LAMP5", "CNR1", "NCAM2", "PENK", "NTS", "FOXP2", "TSHZ1", "CYP26B1", "TTC9B", "CALB2", "CARTPT", "PDYN", "CDH13")
 
 # blue to red coloscale
-png(here("plots", "Visium", "09_marker_genes", "amygdala_heatmap_novel_markers.png"), width = 4, height = 5, units = "in", res = 300)
-p <- scater::plotGroupedHeatmap(spe.amy, novel, group="BS_manual", center=TRUE, scale=TRUE, cluster_cols=FALSE, cluster_rows=FALSE, legend=TRUE)
-print(p)
+pdf(here("plots", "Visium", "08_marker_genes", "amygdala_heatmap_novel_markers.pdf"), width = 4, height = 5)
+scater::plotGroupedHeatmap(spe.bs, novel, group="BS_manual_ITC_smoothed", center=TRUE, scale=TRUE, cluster_cols=FALSE, cluster_rows=FALSE, legend=TRUE)
+
 dev.off()
+
+# save RDS
+saveRDS(spe.bs, file=here("processed-data","Visium","08_marker_genes", "spe_bs_8325_ITC.rds"))

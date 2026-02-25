@@ -4,16 +4,16 @@ library(here)
 library(Matrix)
 
 
-plot_dir <- here("plots","10_NMF", "NMF_LIBD")
+plot_dir <- here("plots", "Visium", "98_NMF", "NMF_LIBD")
 processed_dir <- here("processed-data", "snRNAseq")
 
 # get toy brain data
-sce <- readRDS(here(processed_dir, "sce.human_all_genes.rds"))
-sce
+load(here(processed_dir, "sce_FINAL_human.rda"))
+rda.human
+sce <- rda.human
 
 # get logcounts
 logcounts <- logcounts(sce)
-
 
 # run NMF
 print("Starting NMF!")
@@ -33,4 +33,4 @@ end_time <- Sys.time()
 print(end_time - start_time)
 # Time difference of 19.1871 mins
 
-save(x,file=here("processed-data", "Visium","10_NMF", "NMF_LIBD","RcppML_NMF_LIBD_human_allGenes.rda"))
+save(x,file=here("processed-data", "Visium","98_NMF", "NMF_LIBD","RcppML_NMF_LIBD_human_allGenes.rda"))

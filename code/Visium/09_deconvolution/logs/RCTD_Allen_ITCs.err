@@ -1,0 +1,266 @@
+Unloading conda_R/4.5
+Loading conda_R/4.5
+
+Currently Loaded Modules:
+  1) JHPCE_ROCKY9_DEFAULT_ENV   3) git-status-size/github   5) conda_R/4.5
+  2) JHPCE_tools/3.0            4) conda/3-24.3.0
+
+ 
+
+Loading required package: SummarizedExperiment
+Loading required package: MatrixGenerics
+Loading required package: matrixStats
+
+Attaching package: ‘MatrixGenerics’
+
+The following objects are masked from ‘package:matrixStats’:
+
+    colAlls, colAnyNAs, colAnys, colAvgsPerRowSet, colCollapse,
+    colCounts, colCummaxs, colCummins, colCumprods, colCumsums,
+    colDiffs, colIQRDiffs, colIQRs, colLogSumExps, colMadDiffs,
+    colMads, colMaxs, colMeans2, colMedians, colMins, colOrderStats,
+    colProds, colQuantiles, colRanges, colRanks, colSdDiffs, colSds,
+    colSums2, colTabulates, colVarDiffs, colVars, colWeightedMads,
+    colWeightedMeans, colWeightedMedians, colWeightedSds,
+    colWeightedVars, rowAlls, rowAnyNAs, rowAnys, rowAvgsPerColSet,
+    rowCollapse, rowCounts, rowCummaxs, rowCummins, rowCumprods,
+    rowCumsums, rowDiffs, rowIQRDiffs, rowIQRs, rowLogSumExps,
+    rowMadDiffs, rowMads, rowMaxs, rowMeans2, rowMedians, rowMins,
+    rowOrderStats, rowProds, rowQuantiles, rowRanges, rowRanks,
+    rowSdDiffs, rowSds, rowSums2, rowTabulates, rowVarDiffs, rowVars,
+    rowWeightedMads, rowWeightedMeans, rowWeightedMedians,
+    rowWeightedSds, rowWeightedVars
+
+Loading required package: GenomicRanges
+Loading required package: stats4
+Loading required package: BiocGenerics
+Loading required package: generics
+
+Attaching package: ‘generics’
+
+The following objects are masked from ‘package:base’:
+
+    as.difftime, as.factor, as.ordered, intersect, is.element, setdiff,
+    setequal, union
+
+
+Attaching package: ‘BiocGenerics’
+
+The following objects are masked from ‘package:stats’:
+
+    IQR, mad, sd, var, xtabs
+
+The following objects are masked from ‘package:base’:
+
+    anyDuplicated, aperm, append, as.data.frame, basename, cbind,
+    colnames, dirname, do.call, duplicated, eval, evalq, Filter, Find,
+    get, grep, grepl, is.unsorted, lapply, Map, mapply, match, mget,
+    order, paste, pmax, pmax.int, pmin, pmin.int, Position, rank,
+    rbind, Reduce, rownames, sapply, saveRDS, table, tapply, unique,
+    unsplit, which.max, which.min
+
+Loading required package: S4Vectors
+
+Attaching package: ‘S4Vectors’
+
+The following object is masked from ‘package:utils’:
+
+    findMatches
+
+The following objects are masked from ‘package:base’:
+
+    expand.grid, I, unname
+
+Loading required package: IRanges
+Loading required package: GenomeInfoDb
+Loading required package: Biobase
+Welcome to Bioconductor
+
+    Vignettes contain introductory material; view with
+    'browseVignettes()'. To cite Bioconductor, see
+    'citation("Biobase")', and for packages 'citation("pkgname")'.
+
+
+Attaching package: ‘Biobase’
+
+The following object is masked from ‘package:MatrixGenerics’:
+
+    rowMedians
+
+The following objects are masked from ‘package:matrixStats’:
+
+    anyMissing, rowMedians
+
+here() starts at /dcs04/lieber/marmaypag/spatialAMY_LIBD4125/spatialAmygdala
+Warning messages:
+1: In .sparse2dense(e1) :
+  sparse->dense coercion: allocating vector of size 17.4 GiB
+2: In .sparse2dense(e2) :
+  sparse->dense coercion: allocating vector of size 17.4 GiB
+Number of cells in reference: 87639
+Number of genes in reference: 16326
+
+ SLC17A6_CARTPT        SST_NOS1        SST_TAC1       SST_NXPH2    SST_TMEM132C 
+            157             207             356             683             796 
+  RELN_IL1RAPL2        CCK_CNR1      CALCR_PENK       VIP_NRXN1      VIP_SEMA5A 
+            109             709             394             807            1779 
+     LAMP5_EGFR      LAMP5_NOS1     PVALB_UNC5B     PVALB_MYO5B      PVALB_ST18 
+           1838             930             737             972             585 
+      PENK_DRD2    TAC1_PPP1R1B      DLK1_ZFHX3    SLC17A6_SIM1   SATB2_SLC17A8 
+           1616             515             923             340              98 
+    SATB2_SULF1       aBA_GRIK3     SATB2_RXFP1        aBA_ESR1        BA_MYRIP 
+             62             209             143            2445            2667 
+        LA_RORB          ADARB2        BA_MOXD1       LA_ZBTB20       Ependymal 
+           3883             747            3405            1361             953 
+      Astrocyte     Endothelial       Microglia Oligodendrocyte        EMSN_426 
+          10000             402            8454           10000             649 
+       EMSN_227        EMSN_226        EMSN_225        EMSN_230        EMSN_231 
+            256            4294            1645            2259            1681 
+       EMSN_232        EMSN_233        EMSN_234        EMSN_228        EMSN_229 
+           2642            2223            2314            2321            1374 
+       EMSN_222        EMSN_223        EMSN_224 
+           1979            1628            3092 
+Getting regression differentially expressed genes: 
+SLC17A6_CARTPT found DE genes: 112
+SST_NOS1 found DE genes: 105
+SST_TAC1 found DE genes: 42
+SST_NXPH2 found DE genes: 80
+SST_TMEM132C found DE genes: 90
+RELN_IL1RAPL2 found DE genes: 80
+CCK_CNR1 found DE genes: 118
+CALCR_PENK found DE genes: 91
+VIP_NRXN1 found DE genes: 104
+VIP_SEMA5A found DE genes: 88
+LAMP5_EGFR found DE genes: 117
+LAMP5_NOS1 found DE genes: 107
+PVALB_UNC5B found DE genes: 125
+PVALB_MYO5B found DE genes: 80
+PVALB_ST18 found DE genes: 116
+PENK_DRD2 found DE genes: 97
+TAC1_PPP1R1B found DE genes: 115
+DLK1_ZFHX3 found DE genes: 61
+SLC17A6_SIM1 found DE genes: 29
+SATB2_SLC17A8 found DE genes: 118
+SATB2_SULF1 found DE genes: 101
+aBA_GRIK3 found DE genes: 68
+SATB2_RXFP1 found DE genes: 64
+aBA_ESR1 found DE genes: 50
+BA_MYRIP found DE genes: 86
+LA_RORB found DE genes: 82
+ADARB2 found DE genes: 32
+BA_MOXD1 found DE genes: 73
+LA_ZBTB20 found DE genes: 74
+Ependymal found DE genes: 449
+Astrocyte found DE genes: 292
+Endothelial found DE genes: 417
+Microglia found DE genes: 541
+Oligodendrocyte found DE genes: 481
+EMSN_426 found DE genes: 90
+EMSN_227 found DE genes: 113
+EMSN_226 found DE genes: 107
+EMSN_225 found DE genes: 126
+EMSN_230 found DE genes: 113
+EMSN_231 found DE genes: 103
+EMSN_232 found DE genes: 110
+EMSN_233 found DE genes: 102
+EMSN_234 found DE genes: 94
+EMSN_228 found DE genes: 116
+EMSN_229 found DE genes: 90
+EMSN_222 found DE genes: 181
+EMSN_223 found DE genes: 158
+EMSN_224 found DE genes: 133
+Total DE genes: 2405
+Getting bulk differentially expressed genes: 
+SLC17A6_CARTPT found DE genes: 310
+SST_NOS1 found DE genes: 259
+SST_TAC1 found DE genes: 152
+SST_NXPH2 found DE genes: 219
+SST_TMEM132C found DE genes: 234
+RELN_IL1RAPL2 found DE genes: 207
+CCK_CNR1 found DE genes: 267
+CALCR_PENK found DE genes: 205
+VIP_NRXN1 found DE genes: 225
+VIP_SEMA5A found DE genes: 215
+LAMP5_EGFR found DE genes: 258
+LAMP5_NOS1 found DE genes: 275
+PVALB_UNC5B found DE genes: 270
+PVALB_MYO5B found DE genes: 309
+PVALB_ST18 found DE genes: 280
+PENK_DRD2 found DE genes: 267
+TAC1_PPP1R1B found DE genes: 304
+DLK1_ZFHX3 found DE genes: 256
+SLC17A6_SIM1 found DE genes: 140
+SATB2_SLC17A8 found DE genes: 310
+SATB2_SULF1 found DE genes: 264
+aBA_GRIK3 found DE genes: 269
+SATB2_RXFP1 found DE genes: 229
+aBA_ESR1 found DE genes: 226
+BA_MYRIP found DE genes: 257
+LA_RORB found DE genes: 245
+ADARB2 found DE genes: 187
+BA_MOXD1 found DE genes: 241
+LA_ZBTB20 found DE genes: 232
+Ependymal found DE genes: 844
+Astrocyte found DE genes: 570
+Endothelial found DE genes: 918
+Microglia found DE genes: 1038
+Oligodendrocyte found DE genes: 837
+EMSN_426 found DE genes: 259
+EMSN_227 found DE genes: 306
+EMSN_226 found DE genes: 315
+EMSN_225 found DE genes: 310
+EMSN_230 found DE genes: 305
+EMSN_231 found DE genes: 297
+EMSN_232 found DE genes: 338
+EMSN_233 found DE genes: 263
+EMSN_234 found DE genes: 271
+EMSN_228 found DE genes: 288
+EMSN_229 found DE genes: 251
+EMSN_222 found DE genes: 382
+EMSN_223 found DE genes: 358
+EMSN_224 found DE genes: 356
+Total DE genes: 4107
+Warning messages:
+1: In getCounts(spatial_experiment, spatial_name) :
+  Multiple assays in spatial_experiment. Choosing 'counts' assay.
+2: In getCounts(reference_experiment, ref_name) :
+  Multiple assays in reference_experiment. Choosing 'counts' assay.
+3: In maybeDownsample(reference, n_max_cells) :
+  Reference: number of cells per cell type is 23280, larger than maximum allowable of 10000. Downsampling number of cells to: 10000
+4: In asMethod(object) :
+  sparse->dense coercion: allocating vector of size 1.2 GiB
+5: In asMethod(object) :
+  sparse->dense coercion: allocating vector of size 1.0 GiB
+6: In asMethod(object) :
+  sparse->dense coercion: allocating vector of size 1.2 GiB
+fitBulk: decomposing bulk
+chooseSigma: using initial Q_mat with sigma = 1
+Likelihood value: 1000550.73389836
+Sigma value: 0.84
+Likelihood value: 988973.243548563
+Sigma value: 0.69
+Likelihood value: 980532.315177222
+Sigma value: 0.61
+Likelihood value: 977153.988051018
+Sigma value: 0.53
+Likelihood value: 974642.471271188
+Sigma value: 0.45
+Likelihood value: 973050.895396023
+Sigma value: 0.39
+Likelihood value: 972481.546865925
+Sigma value: 0.37
+Likelihood value: 972411.480642255
+Sigma value: 0.36
+Warning messages:
+1: In getCounts(spatial_experiment, spatial_name) :
+  Multiple assays in spatial_experiment. Choosing 'counts' assay.
+2: In asMethod(object) :
+  sparse->dense coercion: allocating vector of size 4.0 GiB
+3: In S4Vectors:::anyMissing(runValue(x_seqnames)) :
+  'S4Vectors:::anyMissing()' is deprecated.
+Use 'anyNA()' instead.
+See help("Deprecated")
+4: In S4Vectors:::anyMissing(runValue(strand(x))) :
+  'S4Vectors:::anyMissing()' is deprecated.
+Use 'anyNA()' instead.
+See help("Deprecated")

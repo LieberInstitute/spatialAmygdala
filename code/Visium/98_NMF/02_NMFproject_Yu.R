@@ -6,28 +6,30 @@ library(ggplot2)
 library(patchwork)
 library(projectR)
 
-plot_dir <- here("plots","10_NMF", "NMF_Yu")
-processed_dir <- here("processed-data", "Visium","10_NMF")
+plot_dir <- here("plots","98_NMF", "NMF_Yu")
+processed_dir <- here("processed-data", "Visium","98_NMF")
 
 # load NMF results
 load(here(processed_dir,"NMF_Yu", "RcppML_NMF_Yu.rda"))
 #x
 
 # load Spatial object
-load(here("processed-data","Visium","08_clustering", "BayesSpace", "spe_clusters_k10.Rdata"))
+load(here("processed-data","Visium","06_batch_correction", "spe_harmony.Rdata"))
 spe
 # class: SpatialExperiment 
-# dim: 28412 29885 
-# metadata(2): BayesSpace.data chain.h5
+# dim: 36601 317173 
+# metadata(0):
 # assays(2): counts logcounts
-# rownames(28412): MIR1302-2HG AL627309.1 ... AC007325.4 AC007325.2
-# rowData names(7): source type ... Symbol.uniq is.HVG
-# colnames(29885): AAACAAGTATCTCCCA-1 AAACACCAATAACTGC-1 ... TTGTTTCATTAGTCTA-1 TTGTTTCCATACAACT-1
-# colData names(47): sample_id in_tissue ... cluster.init spatial.cluster
-# reducedDimNames(4): 10x_pca 10x_tsne 10x_umap PCA
+# rownames(36601): MIR1302-2HG FAM138A ... AC007325.4 AC007325.2
+# rowData names(7): source type ... gene_type gene_search
+# colnames(317173): AAACAAGTATCTCCCA-1_V13Y24-346_A1
+#   AAACAATCTACTAGCA-1_V13Y24-346_A1 ... TTGTTTGTATTACACG-1_V13F27-349_D1
+#   TTGTTTGTGTAAATTC-1_V13F27-349_D1
+# colData names(42): sample_id in_tissue ... sizeFactor slide_id
+# reducedDimNames(3): PCA PCA-HARMONY_sample_slide PCA-HARMONY_sample
 # mainExpName: NULL
 # altExpNames(0):
-#   spatialCoords names(2) : pxl_col_in_fullres pxl_row_in_fullres
+# spatialCoords names(2) : pxl_col_in_fullres pxl_row_in_fullres
 # imgData names(4): sample_id image_id data scaleFactor
 
 # load Single Nucleus object
@@ -51,6 +53,13 @@ spe<- spe[rownames(spe) %in% rownames(sce),]
 # drop any rownames in loadings not in spe
 loadings <- loadings[rownames(loadings) %in% rownames(spe),]
 
+# get common genes
+common_genes <- intersect(rownames(spe), rownames(loadings))
+
+# subset spe and loadings to common genes
+spe <- spe[common_genes, ]
+loadings <- loadings[common_genes, ]
+
 logcounts <- logcounts(spe)
 #data <- as.matrix(logcounts)
 
@@ -62,6 +71,9 @@ colnames(proj) <- paste("NMF", 1:100, sep = "_")
 
 # add to reducedDims
 reducedDim(spe, "NMF_proj") <- proj
+
+# save
+save(spe, file=here("processed-data","Visium","98_NMF", "spe_NMF_Yu.rda"))
 
 spe.temp <- spe
 

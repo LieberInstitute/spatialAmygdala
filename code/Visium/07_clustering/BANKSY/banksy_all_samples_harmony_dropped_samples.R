@@ -78,26 +78,27 @@ spe <- spe[genes, ]
 
 
 # == Banksy ==sq
-lambda <- 0.4
-k_geom <- 18
-npcs <- 20
+lambda <- 0.6
+k_geom <- 36
+npcs <- 40
 aname <- "logcounts"
 
 spe <- Banksy::computeBanksy(spe, assay_name = aname, k_geom = k_geom)
 
 set.seed(1000)
 spe <- Banksy::runBanksyPCA(spe, lambda = lambda, npcs = npcs, group = "capture_area")
+spe
 
 
 spe <- RunHarmony(spe,  
                 group.by.vars =c("sample_id","slide_id"),  
-                reduction = "PCA_M0_lam0.4",
-                reduction.save="HARMONY_M0_lam0.4"
+                reduction = "PCA_M0_lam0.6",
+                reduction.save="HARMONY_M0_lam0.6"
                 )
 
 set.seed(1000)
 spe$clust_HARMONY_k50_res0.8 <- NULL
-spe <- Banksy::clusterBanksy(spe, lambda = lambda, npcs = npcs, resolution = 0.4, dimred = "HARMONY_M0_lam0.4")
+spe <- Banksy::clusterBanksy(spe, lambda = lambda, npcs = npcs, resolution = 0.4, dimred = "HARMONY_M0_lam0.6")
 
 # drop duplicate columns
 colData(spe) <- colData(spe)[, !duplicated(colnames(colData(spe)))]

@@ -2,7 +2,7 @@
 #SBATCH --job-name=bayesSpace_k_many
 #SBATCH --output=logs/%x.%a.txt
 #SBATCH --error=logs/%x.%a.txt
-#SBATCH --array=2-20%10
+#SBATCH --array=21-40%10
 #SBATCH --mem=200G
 #SBATCH --mail-type=END
 #SBATCH --cpus-per-task=1 # specify the number of CPUs needed for the job, adjust as needed

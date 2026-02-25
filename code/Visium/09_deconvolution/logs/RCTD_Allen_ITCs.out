@@ -1,0 +1,77 @@
+**** Job starts ****
+Fri Jan 16 10:50:12 PM EST 2026
+**** SLURM info ****
+User: mtotty
+Job id: 26872961
+Job name: RCTD
+Hostname: compute-175
+Task id: 
+class: SingleCellExperiment 
+dim: 21369 82399 
+metadata(0):
+assays(2): counts logcounts
+rownames(21369): A1BG A1CF ... ZZEF1 ZZZ3
+rowData names(7): source type ... gene_biotype Symbol.uniq
+colnames(82399): cell_85 cell_103 ... cell_107957 cell_107958
+colData names(33): orig.ident nCount_originalexp ... fine_celltype
+  ident
+reducedDimNames(1): umap
+mainExpName: NULL
+altExpNames(0):
+class: SingleCellExperiment 
+dim: 59357 39276 
+metadata(0):
+assays(2): counts logcounts
+rownames(59357): TSPAN6 TNMD ... AC114982.3 AC084756.2
+rowData names(2): gene_symbol gene_id
+colnames(39276): 10X358_7:TATACCTTCATCGCAA 10X190_1:GACCAATGTTTCGGCG
+  ... 10X349_4:GACTCAACAGACCGCT 10X354_7:CGCATGGGTCAGTCGC
+colData names(32): cell_barcode library_label ... sizeFactor
+  louvain_cluster
+reducedDimNames(4): PCA UMAP harmony UMAP_harmony
+mainExpName: NULL
+altExpNames(0):
+
+          Amygdala excitatory         Cerebellar inhibitory 
+                           48                           121 
+              CGE interneuron Eccentric medium spiny neuron 
+                         1894                         28357 
+    LAMP5-LHX6 and Chandelier             Lower rhombic lip 
+                          383                           544 
+              Mammillary body           Medium spiny neuron 
+                          155                            52 
+              MGE interneuron   Midbrain-derived inhibitory 
+                         1734                          1050 
+                Miscellaneous                      Splatter 
+                            1                          2713 
+          Thalamic excitatory             Upper rhombic lip 
+                          731                          1493 
+class: SingleCellExperiment 
+dim: 59357 28357 
+metadata(0):
+assays(2): counts logcounts
+rownames(59357): TSPAN6 TNMD ... AC114982.3 AC084756.2
+rowData names(2): gene_symbol gene_id
+colnames(28357): 10X356_8:ATTACCTAGGAGCAAA 10X356_8:ATCGCCTGTTGGACTT
+  ... 10X349_4:GACTCAACAGACCGCT 10X354_7:CGCATGGGTCAGTCGC
+colData names(32): cell_barcode library_label ... sizeFactor
+  louvain_cluster
+reducedDimNames(4): PCA UMAP harmony UMAP_harmony
+mainExpName: NULL
+altExpNames(0):
+[1] "sizeFactor"    "fine_celltype"
+ [1] SATB2_SULF1     LA_ZBTB20       SATB2_RXFP1     LA_RORB        
+ [5] BA_MOXD1        BA_MYRIP        SLC17A6_SIM1    ADARB2         
+ [9] SATB2_SLC17A8   SLC17A6_CARTPT  aBA_ESR1        aBA_GRIK3      
+[13] SST_NXPH2       VIP_NRXN1       VIP_SEMA5A      PVALB_MYO5B    
+[17] CALCR_PENK      LAMP5_NOS1      LAMP5_EGFR      PVALB_UNC5B    
+[21] PVALB_ST18      SST_TMEM132C    CCK_CNR1        RELN_IL1RAPL2  
+[25] SST_NOS1        SST_TAC1        PENK_DRD2       DLK1_ZFHX3     
+[29] TAC1_PPP1R1B    Oligodendrocyte Microglia       Astrocyte      
+[33] Endothelial     Ependymal       EMSN_426        EMSN_227       
+[37] EMSN_226        EMSN_225        EMSN_230        EMSN_231       
+[41] EMSN_232        EMSN_233        EMSN_234        EMSN_228       
+[45] EMSN_229        EMSN_222        EMSN_223        EMSN_224       
+50 Levels: SLC17A6_CARTPT SST_NOS1 SST_TAC1 SST_NXPH2 ... EMSN_224
+**** Job ends ****
+Sat Jan 17 01:29:12 AM EST 2026

@@ -1,0 +1,309 @@
+**** Job starts ****
+Thu Feb 12 07:52:20 PM EST 2026
+**** SLURM info ****
+User: mtotty
+Job id: 28460586
+Job name: RCTD
+Hostname: compute-175
+Task id: 
+class: SingleCellExperiment 
+dim: 21369 82399 
+metadata(0):
+assays(2): counts logcounts
+rownames(21369): A1BG A1CF ... ZZEF1 ZZZ3
+rowData names(7): source type ... gene_biotype Symbol.uniq
+colnames(82399): cell_85 cell_103 ... cell_107957 cell_107958
+colData names(33): orig.ident nCount_originalexp ... fine_celltype
+  ident
+reducedDimNames(1): umap
+mainExpName: NULL
+altExpNames(0):
+
+ SLC17A6_CARTPT        SST_NOS1        SST_TAC1       SST_NXPH2    SST_TMEM132C 
+            157             207             356             683             796 
+  RELN_IL1RAPL2        CCK_CNR1      CALCR_PENK       VIP_NRXN1      VIP_SEMA5A 
+            109             709             394             807            1779 
+     LAMP5_EGFR      LAMP5_NOS1     PVALB_UNC5B     PVALB_MYO5B      PVALB_ST18 
+           1838             930             737             972             585 
+      PENK_DRD2    TAC1_PPP1R1B     TSHZ1_CPNE4     TSHZ1_PRKG1      DLK1_ZFHX3 
+           1616             515             908            1554             923 
+   SLC17A6_SIM1   SATB2_SLC17A8     SATB2_SULF1       aBA_GRIK3     SATB2_RXFP1 
+            340              98              62             209             143 
+       aBA_ESR1        BA_MYRIP         LA_RORB          ADARB2        BA_MOXD1 
+           2445            2667            3883             747            3405 
+      LA_ZBTB20       Ependymal       Astrocyte     Endothelial       Microglia 
+           1361             953           10000             402            8454 
+Oligodendrocyte 
+          10000 
+starting worker pid=684170 on localhost:11845 at 19:54:42.006
+starting worker pid=684185 on localhost:11845 at 19:54:42.183
+starting worker pid=684200 on localhost:11845 at 19:54:42.361
+starting worker pid=684215 on localhost:11845 at 19:54:42.539
+starting worker pid=684230 on localhost:11845 at 19:54:42.719
+starting worker pid=684245 on localhost:11845 at 19:54:42.893
+starting worker pid=684260 on localhost:11845 at 19:54:43.064
+starting worker pid=684275 on localhost:11845 at 19:54:43.242
+starting worker pid=684290 on localhost:11845 at 19:54:43.418
+starting worker pid=684305 on localhost:11845 at 19:54:43.592
+starting worker pid=684320 on localhost:11845 at 19:54:43.766
+starting worker pid=684335 on localhost:11845 at 19:54:43.943
+starting worker pid=684350 on localhost:11845 at 19:54:44.117
+starting worker pid=684365 on localhost:11845 at 19:54:44.290
+starting worker pid=684380 on localhost:11845 at 19:54:44.465
+starting worker pid=684395 on localhost:11845 at 19:54:44.641
+starting worker pid=684410 on localhost:11845 at 19:54:44.819
+starting worker pid=684425 on localhost:11845 at 19:54:44.992
+starting worker pid=684440 on localhost:11845 at 19:54:45.170
+starting worker pid=684455 on localhost:11845 at 19:54:45.348
+starting worker pid=684470 on localhost:11845 at 19:54:45.523
+starting worker pid=684485 on localhost:11845 at 19:54:45.702
+starting worker pid=684500 on localhost:11845 at 19:54:45.879
+starting worker pid=684515 on localhost:11845 at 19:54:46.056
+starting worker pid=684530 on localhost:11845 at 19:54:51.054
+starting worker pid=684549 on localhost:11845 at 19:54:51.453
+starting worker pid=684564 on localhost:11845 at 19:54:51.630
+starting worker pid=684579 on localhost:11845 at 19:54:51.807
+starting worker pid=684594 on localhost:11845 at 19:54:51.981
+starting worker pid=684609 on localhost:11845 at 19:54:52.157
+starting worker pid=685415 on localhost:11845 at 19:55:29.378
+starting worker pid=685430 on localhost:11845 at 19:55:29.558
+starting worker pid=685445 on localhost:11845 at 19:55:29.731
+starting worker pid=685460 on localhost:11845 at 19:55:29.908
+starting worker pid=685475 on localhost:11845 at 19:55:30.087
+starting worker pid=685490 on localhost:11845 at 19:55:30.263
+starting worker pid=685505 on localhost:11845 at 19:55:36.039
+starting worker pid=685520 on localhost:11845 at 19:55:36.473
+starting worker pid=685536 on localhost:11845 at 19:55:36.651
+starting worker pid=685551 on localhost:11845 at 19:55:36.830
+starting worker pid=685566 on localhost:11845 at 19:55:37.007
+starting worker pid=685581 on localhost:11845 at 19:55:37.180
+starting worker pid=685596 on localhost:11845 at 19:55:37.359
+starting worker pid=685611 on localhost:11845 at 19:55:37.528
+starting worker pid=685626 on localhost:11845 at 19:55:37.690
+starting worker pid=685641 on localhost:11845 at 19:55:37.864
+starting worker pid=685656 on localhost:11845 at 19:55:38.033
+starting worker pid=685671 on localhost:11845 at 19:55:38.198
+starting worker pid=685686 on localhost:11845 at 19:55:38.364
+starting worker pid=685701 on localhost:11845 at 19:55:38.531
+starting worker pid=685716 on localhost:11845 at 19:55:38.690
+starting worker pid=685731 on localhost:11845 at 19:55:38.842
+starting worker pid=685747 on localhost:11845 at 19:55:39.011
+starting worker pid=685762 on localhost:11845 at 19:55:39.170
+starting worker pid=685777 on localhost:11845 at 19:55:39.336
+starting worker pid=685792 on localhost:11845 at 19:55:39.502
+starting worker pid=685807 on localhost:11845 at 19:55:39.666
+starting worker pid=685822 on localhost:11845 at 19:55:39.829
+starting worker pid=685837 on localhost:11845 at 19:55:43.030
+starting worker pid=685852 on localhost:11845 at 19:55:43.331
+starting worker pid=685923 on localhost:11845 at 19:56:21.036
+starting worker pid=685938 on localhost:11845 at 19:56:21.202
+starting worker pid=685953 on localhost:11845 at 19:56:21.365
+starting worker pid=685968 on localhost:11845 at 19:56:21.524
+starting worker pid=685983 on localhost:11845 at 19:56:21.697
+starting worker pid=685998 on localhost:11845 at 19:56:21.861
+starting worker pid=686013 on localhost:11845 at 19:56:22.025
+starting worker pid=686028 on localhost:11845 at 19:56:22.191
+starting worker pid=686043 on localhost:11845 at 19:56:22.356
+starting worker pid=686058 on localhost:11845 at 19:56:22.527
+starting worker pid=686073 on localhost:11845 at 19:56:22.686
+starting worker pid=686088 on localhost:11845 at 19:56:22.847
+starting worker pid=686103 on localhost:11845 at 19:56:23.015
+starting worker pid=686118 on localhost:11845 at 19:56:23.179
+starting worker pid=686133 on localhost:11845 at 19:56:23.344
+starting worker pid=686148 on localhost:11845 at 19:56:23.508
+starting worker pid=686163 on localhost:11845 at 19:56:23.667
+starting worker pid=686178 on localhost:11845 at 19:56:23.832
+starting worker pid=686193 on localhost:11845 at 19:56:23.997
+starting worker pid=686208 on localhost:11845 at 19:56:24.160
+starting worker pid=686223 on localhost:11845 at 19:56:24.324
+starting worker pid=686238 on localhost:11845 at 19:56:24.491
+starting worker pid=686253 on localhost:11845 at 19:56:24.653
+starting worker pid=686268 on localhost:11845 at 19:56:24.820
+starting worker pid=686283 on localhost:11845 at 19:56:24.985
+starting worker pid=686298 on localhost:11845 at 19:56:25.147
+starting worker pid=686313 on localhost:11845 at 19:56:25.308
+starting worker pid=686328 on localhost:11845 at 19:56:25.468
+starting worker pid=686343 on localhost:11845 at 19:56:25.639
+starting worker pid=686358 on localhost:11845 at 19:56:25.805
+starting worker pid=686423 on localhost:11845 at 19:57:02.384
+starting worker pid=686438 on localhost:11845 at 19:57:02.566
+starting worker pid=686453 on localhost:11845 at 19:57:02.742
+starting worker pid=686468 on localhost:11845 at 19:57:02.920
+starting worker pid=686483 on localhost:11845 at 19:57:03.097
+starting worker pid=686498 on localhost:11845 at 19:57:03.276
+starting worker pid=686513 on localhost:11845 at 19:57:03.453
+starting worker pid=686528 on localhost:11845 at 19:57:03.627
+starting worker pid=686543 on localhost:11845 at 19:57:03.804
+starting worker pid=686558 on localhost:11845 at 19:57:03.982
+starting worker pid=686573 on localhost:11845 at 19:57:04.158
+starting worker pid=686588 on localhost:11845 at 19:57:04.336
+starting worker pid=686603 on localhost:11845 at 19:57:04.511
+starting worker pid=686618 on localhost:11845 at 19:57:04.685
+starting worker pid=686633 on localhost:11845 at 19:57:04.861
+starting worker pid=686648 on localhost:11845 at 19:57:05.041
+starting worker pid=686663 on localhost:11845 at 19:57:05.216
+starting worker pid=686678 on localhost:11845 at 19:57:05.392
+starting worker pid=686693 on localhost:11845 at 19:57:05.571
+starting worker pid=686708 on localhost:11845 at 19:57:05.749
+starting worker pid=686723 on localhost:11845 at 19:57:05.926
+starting worker pid=686738 on localhost:11845 at 19:57:06.104
+starting worker pid=686753 on localhost:11845 at 19:57:06.279
+starting worker pid=686769 on localhost:11845 at 19:57:06.454
+starting worker pid=686784 on localhost:11845 at 19:57:10.371
+starting worker pid=686801 on localhost:11845 at 19:57:10.713
+starting worker pid=686816 on localhost:11845 at 19:57:10.891
+starting worker pid=686831 on localhost:11845 at 19:57:11.067
+starting worker pid=686846 on localhost:11845 at 19:57:11.243
+starting worker pid=686861 on localhost:11845 at 19:57:11.418
+starting worker pid=686922 on localhost:11845 at 19:57:47.854
+starting worker pid=686937 on localhost:11845 at 19:57:48.016
+starting worker pid=686952 on localhost:11845 at 19:57:48.195
+starting worker pid=686967 on localhost:11845 at 19:57:48.357
+starting worker pid=686982 on localhost:11845 at 19:57:48.519
+starting worker pid=686997 on localhost:11845 at 19:57:48.690
+starting worker pid=687012 on localhost:11845 at 19:57:48.858
+starting worker pid=687030 on localhost:11845 at 19:57:49.032
+starting worker pid=687046 on localhost:11845 at 19:57:49.201
+starting worker pid=687061 on localhost:11845 at 19:57:49.364
+starting worker pid=687076 on localhost:11845 at 19:57:49.528
+starting worker pid=687091 on localhost:11845 at 19:57:54.322
+starting worker pid=687107 on localhost:11845 at 19:57:54.685
+starting worker pid=687122 on localhost:11845 at 19:57:54.854
+starting worker pid=687137 on localhost:11845 at 19:57:55.023
+starting worker pid=687152 on localhost:11845 at 19:57:55.184
+starting worker pid=687167 on localhost:11845 at 19:57:55.348
+starting worker pid=687182 on localhost:11845 at 19:57:55.521
+starting worker pid=687197 on localhost:11845 at 19:57:55.695
+starting worker pid=687212 on localhost:11845 at 19:57:55.861
+starting worker pid=687227 on localhost:11845 at 19:57:56.031
+starting worker pid=687242 on localhost:11845 at 19:57:56.199
+starting worker pid=687257 on localhost:11845 at 19:57:56.364
+starting worker pid=687272 on localhost:11845 at 19:57:56.520
+starting worker pid=687287 on localhost:11845 at 19:57:56.689
+starting worker pid=687302 on localhost:11845 at 19:57:56.861
+starting worker pid=687317 on localhost:11845 at 19:57:57.026
+starting worker pid=687332 on localhost:11845 at 19:57:57.194
+starting worker pid=687347 on localhost:11845 at 19:57:57.361
+starting worker pid=687362 on localhost:11845 at 19:57:57.528
+starting worker pid=687621 on localhost:11845 at 19:58:34.392
+starting worker pid=687637 on localhost:11845 at 19:58:34.564
+starting worker pid=687652 on localhost:11845 at 19:58:34.723
+starting worker pid=687667 on localhost:11845 at 19:58:34.890
+starting worker pid=687682 on localhost:11845 at 19:58:35.064
+starting worker pid=687697 on localhost:11845 at 19:58:35.241
+starting worker pid=687712 on localhost:11845 at 19:58:35.407
+starting worker pid=687727 on localhost:11845 at 19:58:35.572
+starting worker pid=687742 on localhost:11845 at 19:58:35.732
+starting worker pid=687757 on localhost:11845 at 19:58:35.907
+starting worker pid=687772 on localhost:11845 at 19:58:36.080
+starting worker pid=687787 on localhost:11845 at 19:58:36.247
+starting worker pid=687802 on localhost:11845 at 19:58:36.408
+starting worker pid=687817 on localhost:11845 at 19:58:36.571
+starting worker pid=687832 on localhost:11845 at 19:58:36.746
+starting worker pid=687847 on localhost:11845 at 19:58:36.914
+starting worker pid=687862 on localhost:11845 at 19:58:37.075
+starting worker pid=687877 on localhost:11845 at 19:58:37.249
+starting worker pid=687892 on localhost:11845 at 19:58:37.411
+starting worker pid=687907 on localhost:11845 at 19:58:37.574
+starting worker pid=687922 on localhost:11845 at 19:58:37.748
+starting worker pid=687937 on localhost:11845 at 19:58:37.913
+starting worker pid=687952 on localhost:11845 at 19:58:38.084
+starting worker pid=687967 on localhost:11845 at 19:58:38.251
+starting worker pid=687982 on localhost:11845 at 19:58:38.418
+starting worker pid=687997 on localhost:11845 at 19:58:45.614
+starting worker pid=688015 on localhost:11845 at 19:58:46.093
+starting worker pid=688030 on localhost:11845 at 19:58:46.258
+starting worker pid=688045 on localhost:11845 at 19:58:46.425
+starting worker pid=688060 on localhost:11845 at 19:58:46.591
+starting worker pid=688127 on localhost:11845 at 19:59:26.882
+starting worker pid=688142 on localhost:11845 at 19:59:27.192
+starting worker pid=688157 on localhost:11845 at 19:59:27.348
+starting worker pid=688172 on localhost:11845 at 19:59:27.499
+starting worker pid=688187 on localhost:11845 at 19:59:27.664
+starting worker pid=688202 on localhost:11845 at 19:59:27.830
+starting worker pid=688219 on localhost:11845 at 19:59:28.004
+starting worker pid=688234 on localhost:11845 at 19:59:28.154
+starting worker pid=688249 on localhost:11845 at 19:59:28.308
+starting worker pid=688264 on localhost:11845 at 19:59:28.476
+starting worker pid=688279 on localhost:11845 at 19:59:28.617
+starting worker pid=688294 on localhost:11845 at 19:59:28.765
+starting worker pid=688310 on localhost:11845 at 19:59:28.907
+starting worker pid=688325 on localhost:11845 at 19:59:29.057
+starting worker pid=688340 on localhost:11845 at 19:59:29.208
+starting worker pid=688355 on localhost:11845 at 19:59:29.374
+starting worker pid=688370 on localhost:11845 at 19:59:29.541
+starting worker pid=688385 on localhost:11845 at 19:59:29.699
+starting worker pid=688400 on localhost:11845 at 19:59:29.870
+starting worker pid=688415 on localhost:11845 at 19:59:30.026
+starting worker pid=688430 on localhost:11845 at 19:59:30.173
+starting worker pid=688445 on localhost:11845 at 19:59:30.328
+starting worker pid=688460 on localhost:11845 at 19:59:30.485
+starting worker pid=688475 on localhost:11845 at 19:59:30.635
+starting worker pid=688490 on localhost:11845 at 19:59:30.804
+starting worker pid=688505 on localhost:11845 at 19:59:30.975
+starting worker pid=688520 on localhost:11845 at 19:59:31.148
+starting worker pid=688535 on localhost:11845 at 19:59:31.317
+starting worker pid=688550 on localhost:11845 at 19:59:31.482
+starting worker pid=688565 on localhost:11845 at 19:59:31.659
+starting worker pid=688647 on localhost:11845 at 20:00:07.762
+starting worker pid=688662 on localhost:11845 at 20:00:07.946
+starting worker pid=688677 on localhost:11845 at 20:00:08.129
+starting worker pid=688692 on localhost:11845 at 20:00:08.310
+starting worker pid=688707 on localhost:11845 at 20:00:08.486
+starting worker pid=688722 on localhost:11845 at 20:00:08.666
+starting worker pid=688737 on localhost:11845 at 20:00:08.844
+starting worker pid=688755 on localhost:11845 at 20:00:09.026
+starting worker pid=688770 on localhost:11845 at 20:00:09.205
+starting worker pid=688785 on localhost:11845 at 20:00:09.382
+starting worker pid=688800 on localhost:11845 at 20:00:09.561
+starting worker pid=688815 on localhost:11845 at 20:00:09.738
+starting worker pid=688830 on localhost:11845 at 20:00:09.915
+starting worker pid=688845 on localhost:11845 at 20:00:10.091
+starting worker pid=688860 on localhost:11845 at 20:00:10.238
+starting worker pid=688875 on localhost:11845 at 20:00:10.413
+starting worker pid=688890 on localhost:11845 at 20:00:10.591
+starting worker pid=688905 on localhost:11845 at 20:00:10.770
+starting worker pid=688920 on localhost:11845 at 20:00:10.945
+starting worker pid=688935 on localhost:11845 at 20:00:11.122
+starting worker pid=688950 on localhost:11845 at 20:00:11.297
+starting worker pid=688965 on localhost:11845 at 20:00:11.473
+starting worker pid=688980 on localhost:11845 at 20:00:11.650
+starting worker pid=688995 on localhost:11845 at 20:00:11.828
+starting worker pid=689010 on localhost:11845 at 20:00:12.003
+starting worker pid=689025 on localhost:11845 at 20:00:12.184
+starting worker pid=689040 on localhost:11845 at 20:00:17.328
+starting worker pid=689179 on localhost:11845 at 20:00:17.714
+starting worker pid=689203 on localhost:11845 at 20:00:17.892
+starting worker pid=689224 on localhost:11845 at 20:00:18.039
+starting worker pid=689532 on localhost:11845 at 20:00:59.106
+starting worker pid=689547 on localhost:11845 at 20:00:59.276
+starting worker pid=689562 on localhost:11845 at 20:00:59.448
+starting worker pid=689577 on localhost:11845 at 20:00:59.627
+starting worker pid=689592 on localhost:11845 at 20:00:59.803
+starting worker pid=689607 on localhost:11845 at 20:00:59.975
+starting worker pid=689622 on localhost:11845 at 20:01:00.156
+starting worker pid=689637 on localhost:11845 at 20:01:00.335
+starting worker pid=689652 on localhost:11845 at 20:01:00.514
+starting worker pid=689667 on localhost:11845 at 20:01:00.682
+starting worker pid=689682 on localhost:11845 at 20:01:00.860
+starting worker pid=689701 on localhost:11845 at 20:01:01.033
+starting worker pid=689716 on localhost:11845 at 20:01:01.206
+starting worker pid=689731 on localhost:11845 at 20:01:01.375
+starting worker pid=689746 on localhost:11845 at 20:01:01.546
+starting worker pid=689761 on localhost:11845 at 20:01:01.709
+starting worker pid=689776 on localhost:11845 at 20:01:01.884
+starting worker pid=689802 on localhost:11845 at 20:01:02.050
+starting worker pid=689817 on localhost:11845 at 20:01:02.218
+starting worker pid=689832 on localhost:11845 at 20:01:02.386
+starting worker pid=689847 on localhost:11845 at 20:01:02.566
+starting worker pid=689862 on localhost:11845 at 20:01:02.739
+starting worker pid=689877 on localhost:11845 at 20:01:02.911
+starting worker pid=689892 on localhost:11845 at 20:01:03.069
+starting worker pid=689907 on localhost:11845 at 20:01:03.242
+starting worker pid=689922 on localhost:11845 at 20:01:03.414
+starting worker pid=689937 on localhost:11845 at 20:01:03.580
+starting worker pid=689952 on localhost:11845 at 20:01:03.757
+starting worker pid=689967 on localhost:11845 at 20:01:11.024
+starting worker pid=689985 on localhost:11845 at 20:01:11.513
+**** Job ends ****
+Thu Feb 12 09:22:06 PM EST 2026

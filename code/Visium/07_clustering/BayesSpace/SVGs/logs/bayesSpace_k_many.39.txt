@@ -1,0 +1,24 @@
+**** Job starts ****
+Mon Sep 15 06:10:52 AM EDT 2025
+**** SLURM info ****
+User: mtotty
+Job id: 22453066
+Job name: bayesSpace_k_many
+Hostname: compute-114
+Task id: 39
+Loading conda_R/4.4
+
+Currently Loaded Modules:
+  1) JHPCE_ROCKY9_DEFAULT_ENV   3) conda/3-24.3.0
+  2) JHPCE_tools/3.0            4) conda_R/4.4
+
+ 
+
+Warning message:
+replacing previous import ‘S4Arrays::read_block’ by ‘DelayedArray::read_block’ when loading ‘SummarizedExperiment’ 
+[1]  36601 317173
+Running spatialCluster()
+[1] "2025-09-15 06:22:12 EDT"
+Neighbors were identified for 227300 out of 227302 spots.
+Fitting model...
+slurmstepd: error: *** JOB 22453066 ON compute-114 CANCELLED AT 2025-09-16T06:11:12 DUE TO TIME LIMIT ***

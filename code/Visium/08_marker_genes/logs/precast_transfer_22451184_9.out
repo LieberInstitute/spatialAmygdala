@@ -1,0 +1,229 @@
+Running label transfer: Br8325 → Br9469
+fitting ...
+  |                                                                              |                                                                      |   0%  |                                                                              |===================================                                   |  50%  |                                                                              |======================================================================| 100%
+variable initialize finish! 
+predict Y and V! 
+diff Energy = 13.673042 
+Finish ICM step! 
+iter = 2, loglik= -17420344.000000, dloglik=0.991888 
+predict Y and V! 
+diff Energy = 39.972457 
+Finish ICM step! 
+iter = 3, loglik= -17264220.000000, dloglik=0.008962 
+predict Y and V! 
+diff Energy = 1.268776 
+Finish ICM step! 
+iter = 4, loglik= -17200932.000000, dloglik=0.003666 
+predict Y and V! 
+diff Energy = 28.798704 
+Finish ICM step! 
+iter = 5, loglik= -17165952.000000, dloglik=0.002034 
+predict Y and V! 
+diff Energy = 1.585317 
+Finish ICM step! 
+iter = 6, loglik= -17145894.000000, dloglik=0.001168 
+predict Y and V! 
+Finish ICM step! 
+iter = 7, loglik= -17132718.000000, dloglik=0.000768 
+predict Y and V! 
+Finish ICM step! 
+iter = 8, loglik= -17123814.000000, dloglik=0.000520 
+predict Y and V! 
+diff Energy = 1.893231 
+Finish ICM step! 
+iter = 9, loglik= -17117502.000000, dloglik=0.000369 
+predict Y and V! 
+diff Energy = 0.322707 
+Finish ICM step! 
+iter = 10, loglik= -17112714.000000, dloglik=0.000280 
+predict Y and V! 
+diff Energy = 1.492115 
+Finish ICM step! 
+iter = 11, loglik= -17108898.000000, dloglik=0.000223 
+predict Y and V! 
+Finish ICM step! 
+iter = 12, loglik= -17105492.000000, dloglik=0.000199 
+predict Y and V! 
+diff Energy = 3.835116 
+Finish ICM step! 
+iter = 13, loglik= -17102688.000000, dloglik=0.000164 
+predict Y and V! 
+diff Energy = 2.909423 
+Finish ICM step! 
+iter = 14, loglik= -17100176.000000, dloglik=0.000147 
+predict Y and V! 
+Finish ICM step! 
+iter = 15, loglik= -17098172.000000, dloglik=0.000117 
+predict Y and V! 
+diff Energy = 0.203125 
+Finish ICM step! 
+iter = 16, loglik= -17096506.000000, dloglik=0.000097 
+predict Y and V! 
+diff Energy = 0.209740 
+Finish ICM step! 
+iter = 17, loglik= -17095070.000000, dloglik=0.000084 
+predict Y and V! 
+diff Energy = 0.258487 
+Finish ICM step! 
+iter = 18, loglik= -17093876.000000, dloglik=0.000070 
+predict Y and V! 
+Finish ICM step! 
+iter = 19, loglik= -17092794.000000, dloglik=0.000063 
+predict Y and V! 
+Finish ICM step! 
+iter = 20, loglik= -17091794.000000, dloglik=0.000059 
+predict Y and V! 
+Finish ICM step! 
+iter = 21, loglik= -17090848.000000, dloglik=0.000055 
+predict Y and V! 
+Finish ICM step! 
+iter = 22, loglik= -17089992.000000, dloglik=0.000050 
+predict Y and V! 
+diff Energy = 9.390875 
+Finish ICM step! 
+iter = 23, loglik= -17089178.000000, dloglik=0.000048 
+predict Y and V! 
+diff Energy = 6.119447 
+Finish ICM step! 
+iter = 24, loglik= -17088416.000000, dloglik=0.000045 
+predict Y and V! 
+diff Energy = 9.800304 
+Finish ICM step! 
+iter = 25, loglik= -17087608.000000, dloglik=0.000047 
+predict Y and V! 
+Finish ICM step! 
+iter = 26, loglik= -17086674.000000, dloglik=0.000055 
+predict Y and V! 
+diff Energy = 6.690914 
+Finish ICM step! 
+iter = 27, loglik= -17085860.000000, dloglik=0.000048 
+predict Y and V! 
+Finish ICM step! 
+iter = 28, loglik= -17084694.000000, dloglik=0.000068 
+predict Y and V! 
+diff Energy = 8.044373 
+Finish ICM step! 
+iter = 29, loglik= -17083350.000000, dloglik=0.000079 
+predict Y and V! 
+diff Energy = 3.274975 
+Finish ICM step! 
+iter = 30, loglik= -17081324.000000, dloglik=0.000119 
+fitting ...
+  |                                                                              |                                                                      |   0%  |                                                                              |===================================                                   |  50%  |                                                                              |======================================================================| 100%
+variable initialize finish! 
+predict Y and V! 
+diff Energy = 485.170658 
+Finish ICM step! 
+iter = 2, loglik= -17419216.000000, dloglik=0.991889 
+predict Y and V! 
+diff Energy = 287.057823 
+Finish ICM step! 
+iter = 3, loglik= -17234528.000000, dloglik=0.010603 
+predict Y and V! 
+diff Energy = 184.845589 
+Finish ICM step! 
+iter = 4, loglik= -17150312.000000, dloglik=0.004886 
+predict Y and V! 
+diff Energy = 139.271477 
+Finish ICM step! 
+iter = 5, loglik= -17113458.000000, dloglik=0.002149 
+predict Y and V! 
+diff Energy = 113.169333 
+Finish ICM step! 
+iter = 6, loglik= -17093626.000000, dloglik=0.001159 
+predict Y and V! 
+diff Energy = 52.239720 
+Finish ICM step! 
+iter = 7, loglik= -17081310.000000, dloglik=0.000721 
+predict Y and V! 
+diff Energy = 15.999557 
+Finish ICM step! 
+iter = 8, loglik= -17072608.000000, dloglik=0.000509 
+predict Y and V! 
+diff Energy = 31.001365 
+Finish ICM step! 
+iter = 9, loglik= -17065366.000000, dloglik=0.000424 
+predict Y and V! 
+diff Energy = 17.221602 
+Finish ICM step! 
+iter = 10, loglik= -17058946.000000, dloglik=0.000376 
+predict Y and V! 
+diff Energy = 16.735943 
+Finish ICM step! 
+iter = 11, loglik= -17053246.000000, dloglik=0.000334 
+predict Y and V! 
+diff Energy = 42.494057 
+Finish ICM step! 
+iter = 12, loglik= -17047928.000000, dloglik=0.000312 
+predict Y and V! 
+diff Energy = 6.670789 
+Finish ICM step! 
+iter = 13, loglik= -17043126.000000, dloglik=0.000282 
+predict Y and V! 
+diff Energy = 22.869027 
+Finish ICM step! 
+iter = 14, loglik= -17038848.000000, dloglik=0.000251 
+predict Y and V! 
+diff Energy = 20.633346 
+Finish ICM step! 
+iter = 15, loglik= -17035666.000000, dloglik=0.000187 
+predict Y and V! 
+diff Energy = 31.772346 
+Finish ICM step! 
+iter = 16, loglik= -17033092.000000, dloglik=0.000151 
+predict Y and V! 
+diff Energy = 9.232985 
+Finish ICM step! 
+iter = 17, loglik= -17030942.000000, dloglik=0.000126 
+predict Y and V! 
+diff Energy = 20.347113 
+Finish ICM step! 
+iter = 18, loglik= -17029142.000000, dloglik=0.000106 
+predict Y and V! 
+diff Energy = 10.653899 
+Finish ICM step! 
+iter = 19, loglik= -17027308.000000, dloglik=0.000108 
+predict Y and V! 
+diff Energy = 3.002420 
+Finish ICM step! 
+iter = 20, loglik= -17025668.000000, dloglik=0.000096 
+predict Y and V! 
+diff Energy = 0.310883 
+Finish ICM step! 
+iter = 21, loglik= -17024066.000000, dloglik=0.000094 
+predict Y and V! 
+diff Energy = 7.997541 
+Finish ICM step! 
+iter = 22, loglik= -17022628.000000, dloglik=0.000084 
+predict Y and V! 
+diff Energy = 2.091329 
+Finish ICM step! 
+iter = 23, loglik= -17021278.000000, dloglik=0.000079 
+predict Y and V! 
+diff Energy = 2.491338 
+Finish ICM step! 
+iter = 24, loglik= -17020058.000000, dloglik=0.000072 
+predict Y and V! 
+diff Energy = 8.134094 
+Finish ICM step! 
+iter = 25, loglik= -17018908.000000, dloglik=0.000068 
+predict Y and V! 
+diff Energy = 4.136442 
+Finish ICM step! 
+iter = 26, loglik= -17017800.000000, dloglik=0.000065 
+predict Y and V! 
+diff Energy = 9.989994 
+Finish ICM step! 
+iter = 27, loglik= -17016744.000000, dloglik=0.000062 
+predict Y and V! 
+diff Energy = 6.602092 
+Finish ICM step! 
+iter = 28, loglik= -17015768.000000, dloglik=0.000057 
+predict Y and V! 
+diff Energy = 5.364641 
+Finish ICM step! 
+iter = 29, loglik= -17014776.000000, dloglik=0.000058 
+predict Y and V! 
+diff Energy = 11.898710 
+Finish ICM step! 
+iter = 30, loglik= -17013810.000000, dloglik=0.000057 

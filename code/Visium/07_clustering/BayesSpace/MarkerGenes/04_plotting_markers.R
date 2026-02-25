@@ -1,0 +1,57 @@
+suppressPackageStartupMessages({
+    library("here")
+    library("sessioninfo")
+    library("SpatialExperiment")
+    library("spatialLIBD")
+    library("RColorBrewer")
+    library("ggplot2")
+    library("patchwork")
+})
+
+spe <- readRDS(here("processed-data","Visium", "06_batch_correction", "spe_harmony_markers.rds"))
+dim(spe)
+
+# get folders in cluster_Csv
+bs_folders <- list.files(here::here("processed-data","Visium", "07_clustering", "BayesSpace","MarkerGenes","cluster_csv_markers"), full.names = TRUE)
+bs_folders
+# [1] "/dcs04/lieber/marmaypag/spatialAMY_LIBD4125/spatialAmygdala/processed-data/Visium/08_clustering/BayesSpace/HVGs/cluster_csv/BayesSpace_10"
+# [2] "/dcs04/lieber/marmaypag/spatialAMY_LIBD4125/spatialAmygdala/processed-data/Visium/08_clustering/BayesSpace/HVGs/cluster_csv/BayesSpace_12"
+
+# get the number of clusters at the end of the folder name
+bs_k <- gsub(".*BayesSpace_", "", bs_folders)
+
+# loop through each folder, open the csv inside, and add clusters to spe colData
+for (i in seq_along(bs_folders)) {
+    bs_folder <- bs_folders[i]
+    bs_csv <- list.files(bs_folder, full.names = TRUE)
+    bs_csv <- bs_csv[grepl("csv", bs_csv)]
+    bs_csv <- bs_csv[1]
+    bs_df <- read.csv(bs_csv)
+
+    colData(spe)[[paste0("BS_k", bs_k[i])]] <- factor(bs_df$cluster)
+}
+
+colnames(colData(spe))
+
+# loop through each "BS_i" column and create a pdf on a separete page for sample_id. One pdf per BS_i
+library("escheR")
+for (i in seq_along(bs_folders)) {
+    clustV <- paste0("BS_k", bs_k[i])
+    pal <- colorRampPalette(RColorBrewer::brewer.pal(9, "Set1"))(length(unique(colData(spe)[[clustV]])))
+    
+    pdf(file = here::here("plots", "Visium", "07_clustering", "BayesSpace", "MarkerGenes", "markers", paste0("BS_k", bs_k[i], "_legend.pdf")), width = 5 * length(unique(spe$sample_id)), height = 5)
+    
+    # Create one plot per sample, then combine in a row
+    plots <- lapply(unique(spe$sample_id), function(sample_id) {
+        spe.subset <- spe[, spe$sample_id == sample_id]
+        make_escheR(spe.subset) |>
+            add_fill(var = clustV, point_size = 1.25) +
+            scale_fill_manual(values = pal) +
+            ggtitle(sample_id) 
+    })
+    
+    combined_plot <- wrap_plots(plots, nrow = 1)
+    print(combined_plot)
+    
+    dev.off()
+}

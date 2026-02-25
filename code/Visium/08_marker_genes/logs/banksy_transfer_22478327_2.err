@@ -1,0 +1,190 @@
+Unloading conda_R/4.4
+Loading conda_R/4.4
+Loading required package: SeuratObject
+Loading required package: sp
+
+Attaching package: ‘SeuratObject’
+
+The following objects are masked from ‘package:base’:
+
+    intersect, t
+
+Loading required package: SingleCellExperiment
+Loading required package: SummarizedExperiment
+Loading required package: MatrixGenerics
+Loading required package: matrixStats
+
+Attaching package: ‘MatrixGenerics’
+
+The following objects are masked from ‘package:matrixStats’:
+
+    colAlls, colAnyNAs, colAnys, colAvgsPerRowSet, colCollapse,
+    colCounts, colCummaxs, colCummins, colCumprods, colCumsums,
+    colDiffs, colIQRDiffs, colIQRs, colLogSumExps, colMadDiffs,
+    colMads, colMaxs, colMeans2, colMedians, colMins, colOrderStats,
+    colProds, colQuantiles, colRanges, colRanks, colSdDiffs, colSds,
+    colSums2, colTabulates, colVarDiffs, colVars, colWeightedMads,
+    colWeightedMeans, colWeightedMedians, colWeightedSds,
+    colWeightedVars, rowAlls, rowAnyNAs, rowAnys, rowAvgsPerColSet,
+    rowCollapse, rowCounts, rowCummaxs, rowCummins, rowCumprods,
+    rowCumsums, rowDiffs, rowIQRDiffs, rowIQRs, rowLogSumExps,
+    rowMadDiffs, rowMads, rowMaxs, rowMeans2, rowMedians, rowMins,
+    rowOrderStats, rowProds, rowQuantiles, rowRanges, rowRanks,
+    rowSdDiffs, rowSds, rowSums2, rowTabulates, rowVarDiffs, rowVars,
+    rowWeightedMads, rowWeightedMeans, rowWeightedMedians,
+    rowWeightedSds, rowWeightedVars
+
+Loading required package: GenomicRanges
+Loading required package: stats4
+Loading required package: BiocGenerics
+
+Attaching package: ‘BiocGenerics’
+
+The following object is masked from ‘package:SeuratObject’:
+
+    intersect
+
+The following objects are masked from ‘package:stats’:
+
+    IQR, mad, sd, var, xtabs
+
+The following objects are masked from ‘package:base’:
+
+    anyDuplicated, aperm, append, as.data.frame, basename, cbind,
+    colnames, dirname, do.call, duplicated, eval, evalq, Filter, Find,
+    get, grep, grepl, intersect, is.unsorted, lapply, Map, mapply,
+    match, mget, order, paste, pmax, pmax.int, pmin, pmin.int,
+    Position, rank, rbind, Reduce, rownames, sapply, saveRDS, setdiff,
+    table, tapply, union, unique, unsplit, which.max, which.min
+
+Loading required package: S4Vectors
+
+Attaching package: ‘S4Vectors’
+
+The following object is masked from ‘package:utils’:
+
+    findMatches
+
+The following objects are masked from ‘package:base’:
+
+    expand.grid, I, unname
+
+Loading required package: IRanges
+
+Attaching package: ‘IRanges’
+
+The following object is masked from ‘package:sp’:
+
+    %over%
+
+Loading required package: GenomeInfoDb
+Loading required package: Biobase
+Welcome to Bioconductor
+
+    Vignettes contain introductory material; view with
+    'browseVignettes()'. To cite Bioconductor, see
+    'citation("Biobase")', and for packages 'citation("pkgname")'.
+
+
+Attaching package: ‘Biobase’
+
+The following object is masked from ‘package:MatrixGenerics’:
+
+    rowMedians
+
+The following objects are masked from ‘package:matrixStats’:
+
+    anyMissing, rowMedians
+
+
+Attaching package: ‘SummarizedExperiment’
+
+The following object is masked from ‘package:Seurat’:
+
+    Assays
+
+The following object is masked from ‘package:SeuratObject’:
+
+    Assays
+
+Warning message:
+replacing previous import ‘S4Arrays::read_block’ by ‘DelayedArray::read_block’ when loading ‘SummarizedExperiment’ 
+
+Attaching package: ‘Matrix’
+
+The following object is masked from ‘package:S4Vectors’:
+
+    expand
+
+here() starts at /dcs04/lieber/marmaypag/spatialAMY_LIBD4125/spatialAmygdala
+Loading required package: ggplot2
+Running label transfer: Br8325 → Br6423
+Running BANKSY embedding...
+Computing neighbors...
+Spatial mode is kNN_median
+Parameters: k_geom=18
+Done
+Computing harmonic m = 0
+Using 18 neighbors
+Done
+Scaling logcounts
+Group: V13M06-387_A1
+Group: V13M06-387_B1
+Group: V13M06-387_C1
+Group: V13M06-387_D1
+Group: V13M06-388_A1
+Group: V13M06-388_B1
+Group: V13M06-388_C1
+Group: V13M06-388_D1
+Group: V13Y24-347_A1
+Group: V13Y24-347_B1
+Group: V13Y24-347_C1
+Group: V13Y24-347_D1
+Group: V13Y24-348_A1
+Group: V13Y24-348_B1
+Group: V13Y24-348_C1
+Group: V13Y24-348_D1
+Scaling harmonic m = 0
+Group: V13M06-387_A1
+Group: V13M06-387_B1
+Group: V13M06-387_C1
+Group: V13M06-387_D1
+Group: V13M06-388_A1
+Group: V13M06-388_B1
+Group: V13M06-388_C1
+Group: V13M06-388_D1
+Group: V13Y24-347_A1
+Group: V13Y24-347_B1
+Group: V13Y24-347_C1
+Group: V13Y24-347_D1
+Group: V13Y24-348_A1
+Group: V13Y24-348_B1
+Group: V13Y24-348_C1
+Group: V13Y24-348_D1
+Finding anchors and transferring labels...
+Warning messages:
+1: `PackageCheck()` was deprecated in SeuratObject 5.0.0.
+ℹ Please use `rlang::check_installed()` instead.
+ℹ The deprecated feature was likely used in the Seurat package.
+  Please report the issue at <https://github.com/satijalab/seurat/issues>. 
+2: The `slot` argument of `SetAssayData()` is deprecated as of SeuratObject 5.0.0.
+ℹ Please use the `layer` argument instead.
+ℹ The deprecated feature was likely used in the Seurat package.
+  Please report the issue at <https://github.com/satijalab/seurat/issues>. 
+3: Keys should be one or more alphanumeric characters followed by an underscore, setting key from PC to PC_ 
+4: Keys should be one or more alphanumeric characters followed by an underscore, setting key from PCA-HARMONY_sample_slide_ to PCAHARMONYsampleslide_ 
+5: Keys should be one or more alphanumeric characters followed by an underscore, setting key from PCA-HARMONY_sample_ to PCAHARMONYsample_ 
+6: Keys should be one or more alphanumeric characters followed by an underscore, setting key from PC to PC_ 
+7: Key ‘PC_’ taken, using ‘pcam0lam04_’ instead 
+Warning messages:
+1: Keys should be one or more alphanumeric characters followed by an underscore, setting key from PC to PC_ 
+2: Keys should be one or more alphanumeric characters followed by an underscore, setting key from PCA-HARMONY_sample_slide_ to PCAHARMONYsampleslide_ 
+3: Keys should be one or more alphanumeric characters followed by an underscore, setting key from PCA-HARMONY_sample_ to PCAHARMONYsample_ 
+4: Keys should be one or more alphanumeric characters followed by an underscore, setting key from PC to PC_ 
+5: Key ‘PC_’ taken, using ‘pcam0lam04_’ instead 
+Warning message:
+Cannot find cell-level meta data named  BS_manual_ITC_smoothed 
+Error in slot(object = reference[[reference.assay]], name = "SCTModel.list") : 
+  no slot of name "SCTModel.list" for this object of class "Assay"
+Calls: FindTransferAnchors -> ValidateParams_FindTransferAnchors -> slot
+Execution halted

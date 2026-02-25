@@ -1,0 +1,28 @@
+**** Job starts ****
+Fri Sep 19 12:11:30 PM EDT 2025
+**** JHPCE info ****
+User: mtotty
+Job id: 
+Job name: 
+Hostname: compute-116
+Unloading conda_R/4.4
+Loading conda_R/4.3
+
+The following have been reloaded with a version change:
+  1) conda/3-24.3.0 => conda/3-23.3.1     2) conda_R/4.4 => conda_R/4.3
+
+
+Currently Loaded Modules:
+  1) JHPCE_ROCKY9_DEFAULT_ENV   3) git-status-size/github   5) conda_R/4.3
+  2) JHPCE_tools/3.0            4) conda/3-23.3.1
+
+ 
+
+Loading required package: SpatialExperiment
+[1]  36601 315891
+List of length 12
+names(12): BADL BL BLVM BM Ce HPC ITC LA Me PCo Vascular WM
+[1] 1200
+running PCA - 2025-09-19 12:13:32.126024
+**** Job ends ****
+Fri Sep 19 12:34:41 PM EDT 2025

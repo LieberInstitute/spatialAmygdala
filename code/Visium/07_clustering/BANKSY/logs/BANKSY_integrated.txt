@@ -1,10 +1,10 @@
 **** Job starts ****
-Wed Jul  2 08:54:46 PM EDT 2025
+Fri Sep  5 10:04:12 PM EDT 2025
 **** JHPCE info ****
 User: mtotty
 Job id: 
 Job name: 
-Hostname: compute-144
+Hostname: compute-151
 Unloading conda_R/4.4
 Loading conda_R/4.4
 here() starts at /dcs04/lieber/marmaypag/spatialAMY_LIBD4125/spatialAmygdala
@@ -95,9 +95,6 @@ The following object is masked from ‘package:IRanges’:
 
     %over%
 
-‘SeuratObject’ was built with package ‘Matrix’ 1.7.0 but the current
-version is 1.7.1; it is recomended that you reinstall ‘SeuratObject’ as
-the ABI for ‘Matrix’ may have changed
 
 Attaching package: ‘SeuratObject’
 
@@ -132,170 +129,25 @@ The following objects are masked from ‘package:base’:
 
 Attaching package: ‘Seurat’
 
-The following object is masked from ‘package:SummarizedExperiment’:
-
-    Assays
-
-Loading required package: scuttle
-Loading required package: Rcpp
-
-Attaching package: ‘data.table’
-
-The following object is masked from ‘package:SummarizedExperiment’:
-
-    shift
-
-The following object is masked from ‘package:GenomicRanges’:
-
-    shift
-
-The following object is masked from ‘package:IRanges’:
-
-    shift
-
-The following objects are masked from ‘package:S4Vectors’:
-
-    first, second
-
-[1]  36601 317173
- [1] "sample_id"                   "in_tissue"                  
- [3] "X10x_graphclust"             "X10x_kmeans_10_clusters"    
- [5] "X10x_kmeans_2_clusters"      "X10x_kmeans_3_clusters"     
- [7] "X10x_kmeans_4_clusters"      "X10x_kmeans_5_clusters"     
- [9] "X10x_kmeans_6_clusters"      "X10x_kmeans_7_clusters"     
-[11] "X10x_kmeans_8_clusters"      "X10x_kmeans_9_clusters"     
-[13] "key"                         "sum_umi"                    
-[15] "sum_gene"                    "expr_chrM"                  
-[17] "expr_chrM_ratio"             "ManualAnnotation"           
-[19] "capture_area"                "group"                      
-[21] "barcode"                     "array_row_original"         
-[23] "array_col_original"          "array_row"                  
-[25] "array_col"                   "pxl_col_in_fullres_rounded" 
-[27] "pxl_row_in_fullres_rounded"  "pxl_row_in_fullres_original"
-[29] "pxl_col_in_fullres_original" "overlap_key"                
-[31] "exclude_overlapping"         "sum_umi_log"                
-[33] "sum_umi_outliers"            "sum_umi_z"                  
-[35] "sum_gene_log"                "sum_gene_outliers"          
-[37] "sum_gene_z"                  "expr_chrM_ratio_outliers"   
-[39] "expr_chrM_ratio_z"           "local_outliers"             
-[41] "sizeFactor"                  "slide_id"                   
-Computing neighbors...
-Spatial mode is kNN_median
-Parameters: k_geom=18
-Done
-Computing harmonic m = 0
-Using 18 neighbors
-Done
-Warning message:
+The following object is masked from ‘package:SummariWarning message:
 In asMethod(object) :
   sparse->dense coercion: allocating vector of size 3.4 GiB
-Scaling logcounts
-Group: V13Y24-346_A1
-Group: V13Y24-346_B1
-Group: V13Y24-346_D1
-Group: V13Y24-345_A1
-Group: V13Y24-345_B1
-Group: V13Y24-345_C1
-Group: V13Y24-345_D1
-Group: V13Y24-347_A1
-Group: V13Y24-347_B1
-Group: V13Y24-347_C1
-Group: V13Y24-347_D1
-Group: V13Y24-348_A1
-Group: V13Y24-348_B1
-Group: V13Y24-348_C1
-Group: V13Y24-348_D1
-Group: V13F27-354_A1
-Group: V13F27-354_B1
-Group: V13F27-354_C1
-Group: V13F27-354_D1
-Group: V13F27-366_A1
-Group: V13F27-366_B1
-Group: V13F27-366_C1
-Group: V13F27-366_D1
-Group: V13Y24-368_A1
-Group: V13Y24-368_B1
-Group: V13Y24-368_C1
-Group: V13Y24-368_D1
-Group: V13Y24-369_A1
-Group: V13Y24-369_B1
-Group: V13Y24-369_C1
-Group: V13Y24-369_D1
-Group: V13M06-387_A1
-Group: V13M06-387_B1
-Group: V13M06-387_C1
-Group: V13M06-387_D1
-Group: V13M06-388_A1
-Group: V13M06-388_B1
-Group: V13M06-388_C1
-Group: V13M06-388_D1
-Group: V13Y24-366_A1
-Group: V13Y24-366_B1
-Group: V13Y24-366_C1
-Group: V13Y24-366_D1
-Group: V13Y24-367_A1
-Group: V13Y24-367_B1
-Group: V13B23-406_A1
-Group: V13B23-406_B1
-Group: V13B23-406_C1
-Group: V13B23-406_D1
-Group: V13B23-407_B1
-Group: V13B23-407_C1
-Scaling harmonic m = 0
-Group: V13Y24-346_A1
-Group: V13Y24-346_B1
-Group: V13Y24-346_D1
-Group: V13Y24-345_A1
-Group: V13Y24-345_B1
-Group: V13Y24-345_C1
-Group: V13Y24-345_D1
-Group: V13Y24-347_A1
-Group: V13Y24-347_B1
-Group: V13Y24-347_C1
-Group: V13Y24-347_D1
-Group: V13Y24-348_A1
-Group: V13Y24-348_B1
-Group: V13Y24-348_C1
-Group: V13Y24-348_D1
-Group: V13F27-354_A1
-Group: V13F27-354_B1
-Group: V13F27-354_C1
-Group: V13F27-354_D1
-Group: V13F27-366_A1
-Group: V13F27-366_B1
-Group: V13F27-366_C1
-Group: V13F27-366_D1
-Group: V13Y24-368_A1
-Group: V13Y24-368_B1
-Group: V13Y24-368_C1
-Group: V13Y24-368_D1
-Group: V13Y24-369_A1
-Group: V13Y24-369_B1
-Group: V13Y24-369_C1
-Group: V13Y24-369_D1
-Group: V13M06-387_A1
-Group: V13M06-387_B1
-Group: V13M06-387_C1
-Group: V13M06-387_D1
-Group: V13M06-388_A1
-Group: V13M06-388_B1
-Group: V13M06-388_C1
-Group: V13M06-388_D1
-Group: V13Y24-366_A1
-Group: V13Y24-366_B1
-Group: V13Y24-366_C1
-Group: V13Y24-366_D1
-Group: V13Y24-367_A1
-Group: V13Y24-367_B1
-Group: V13B23-406_A1
-Group: V13B23-406_B1
-Group: V13B23-406_C1
-Group: V13B23-406_D1
-Group: V13B23-407_B1
-Group: V13B23-407_C1
-Warning message:
-In asMethod(object) :
-  sparse->dense coercion: allocating vector of size 3.4 GiB
+class: SpatialExperiment 
+dim: 2000 227302 
+metadata(1): BANKSY_params
+assays(3): counts logcounts H0
+rownames(2000): MBP AVP ... POLR2E RIMS1
+rowData names(7): source type ... gene_type gene_search
+colnames(227302): AAACAAGTATCTCCCA-1_V13Y24-346_A1
+  AAACAATCTACTAGCA-1_V13Y24-346_A1 ... TTGTTTCATTAGTCTA-1_V13B23-407_C1
+  TTGTTTCCATACAACT-1_V13B23-407_C1
+colData names(42): sample_id in_tissue ... sizeFactor slide_id
+reducedDimNames(4): PCA PCA-HARMONY_sample_slide PCA-HARMONY_sample
+  PCA_M0_lam0.6
+mainExpName: NULL
+altExpNames(0):
+spatialCoords names(2) : sdimx sdimy
+imgData names(4): sample_id image_id data scaleFactor
 Transposing data matrix
 Initializing state using k-means centroids initialization
 Harmony 1/10
@@ -360,6 +212,6 @@ Warning messages:
 [37] "sum_gene_z"                         "expr_chrM_ratio_outliers"          
 [39] "expr_chrM_ratio_z"                  "local_outliers"                    
 [41] "sizeFactor"                         "slide_id"                          
-[43] "clust_HARMONY_M0_lam0.4_k50_res0.4"
+[43] "clust_HARMONY_M0_lam0.6_k50_res0.4"
 **** Job ends ****
-Wed Jul  2 10:57:48 PM EDT 2025
+Fri Sep  5 11:43:47 PM EDT 2025
