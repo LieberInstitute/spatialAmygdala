@@ -1,0 +1,19 @@
+Loading conda_R/4.4
+
+Currently Loaded Modules:
+  1) JHPCE_ROCKY9_DEFAULT_ENV   3) conda/3-24.3.0
+  2) JHPCE_tools/3.0            4) conda_R/4.4
+
+ 
+
+Warning message:
+replacing previous import ‘S4Arrays::read_block’ by ‘DelayedArray::read_block’ when loading ‘SummarizedExperiment’ 
+Error in readRDS(file_rds) : error reading from connection
+In addition: Warning messages:
+1: Missing cluster column: clust_Banksy_k36_res0_6_lam0.8 
+2: Missing cluster column: clust_Banksy_k36_res0_8_lam0.8 
+3: Missing cluster column: clust_Banksy_k36_res1_lam0.8 
+4: Missing cluster column: clust_Banksy_k36_res1_2_lam0.8 
+5: Missing cluster column: clust_Banksy_k36_res1_4_lam0.8 
+6: Missing cluster column: clust_Banksy_k36_res1_6_lam0.8 
+Execution halted

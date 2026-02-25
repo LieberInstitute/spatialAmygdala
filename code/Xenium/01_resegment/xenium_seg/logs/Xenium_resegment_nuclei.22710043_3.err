@@ -1,0 +1,10 @@
+Loading LIBD SLURM module for xeniumranger/2.0.0
+Reference files, for use with the '--transcriptome' argument, can be accessed
+or downloaded into /dcs04/lieber/lcolladotor/annotationFiles_LIBD001/10x. 
+
+Currently Loaded Modules:
+  1) JHPCE_ROCKY9_DEFAULT_ENV   2) JHPCE_tools/3.0   3) xeniumranger/2.0.0
+
+ 
+
+slurmstepd: error: *** JOB 22710046 ON compute-174 CANCELLED AT 2025-09-23T23:36:37 ***

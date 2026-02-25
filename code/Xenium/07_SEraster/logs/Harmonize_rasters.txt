@@ -1,0 +1,60 @@
+**** Job starts ****
+Sat Feb 14 08:15:08 AM EST 2026
+**** JHPCE info ****
+User: mtotty
+Job id: 
+Job name: 
+Hostname: compute-153
+Loading conda_R/4.5
+
+Currently Loaded Modules:
+  1) JHPCE_ROCKY9_DEFAULT_ENV   3) conda/3-24.3.0
+  2) JHPCE_tools/3.0            4) conda_R/4.5
+
+ 
+
+class: SpatialExperiment 
+dim: 366 14553 
+metadata(0):
+assays(1): pixelval
+rownames(366): ABCC9 ADAMTS12 ... ZIC2 ZNF536
+rowData names(0):
+colnames(14553): pixel93 pixel94 ... pixel3219 pixel3220
+colData names(6): num_cell cellID_list ... geometry sample_id
+reducedDimNames(0):
+mainExpName: NULL
+altExpNames(0):
+spatialCoords names(2) : x y
+imgData names(1): sample_id
+null device 
+          1 
+null device 
+          1 
+Transposing data matrix
+Initializing state using k-means centroids initialization
+Harmony 1/10
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Harmony 2/10
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Harmony 3/10
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Harmony converged after 3 iterations
+null device 
+          1 
+**** Job ends ****
+Sat Feb 14 08:16:35 AM EST 2026

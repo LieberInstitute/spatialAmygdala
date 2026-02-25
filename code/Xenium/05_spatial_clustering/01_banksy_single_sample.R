@@ -39,31 +39,31 @@ dim(spe.gex)
 
 # ======== Banksy clustering ========
 
-# subset to fourth donor (Br9280)
-spe.gex.subset <- spe.gex[, spe.gex$brnum == "Br9280"]
-
-
-# == Banksy ==sq
 lambda <- 0.8
 k_geom <- 36
 npcs <- 50
 aname <- "nucleus_normcounts"
+resolution <- 0.8
 
-spe.gex.subset <- Banksy::computeBanksy(spe.gex.subset, assay_name = aname, k_geom = k_geom)
+donors <- sort(unique(spe.gex$brnum))
+donors
 
-set.seed(1000)
-spe.gex.subset <- Banksy::runBanksyPCA(spe.gex.subset, lambda = lambda, npcs = npcs)
+for (d in donors) {
+  message("=== Donor: ", d, " ===")
+  spe.gex.subset <- spe.gex[, spe.gex$brnum == d]
 
-set.seed(1000)
-spe.gex.subset <- Banksy::clusterBanksy(spe.gex.subset, lambda = lambda, npcs = npcs, resolution = 0.8)
+  # compute / PCA / cluster
+  spe.gex.subset <- Banksy::computeBanksy(spe.gex.subset, assay_name = aname, k_geom = k_geom)
 
-saveRDS(spe.gex.subset, here("processed-data", "Xenium","04_clustering", "Banksy", "Br280_Banksy_lambda_0.8_susbset.rds"))
+  set.seed(1000)
+  spe.gex.subset <- Banksy::runBanksyPCA(spe.gex.subset, lambda = lambda, npcs = npcs)
 
+  set.seed(1000)
+  spe.gex.subset <- Banksy::clusterBanksy(spe.gex.subset, lambda = lambda, npcs = npcs, resolution = resolution)
 
-library("escheR")
-pal <- colorRampPalette(RColorBrewer::brewer.pal(9, "Set1"))(length(unique(spe.gex.subset$clust_M0_lam0.8_k50_res0.8)))
-png(file = here("plots", "Xenium", "04_clustering", "Banksy", "Br280_Banksy_lambda_0.8_susbset.png"), width=10, height=10, units="in", res=300)
-make_escheR(spe.gex.subset) |>
-    add_fill(var="clust_M0_lam0.8_k50_res0.8") +
-    scale_fill_manual(values=pal) 
-dev.off()
+  # save RDS (using your existing 04_clustering path for outputs)
+  rds_fn <- here("processed-data", "Xenium","04_clustering", "Banksy",
+                 sprintf("%s_Banksy_lambda_%.1f_subset.rds", d, lambda))
+  saveRDS(spe.gex.subset, rds_fn)
+
+}

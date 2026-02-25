@@ -1,0 +1,20 @@
+Unloading conda_R/4.4
+Loading conda_R/4.4
+
+Currently Loaded Modules:
+  1) JHPCE_ROCKY9_DEFAULT_ENV   3) git-status-size/github   5) conda_R/4.4
+  2) JHPCE_tools/3.0            4) conda/3-24.3.0
+
+ 
+
+Warning message:
+replacing previous import ‘S4Arrays::read_block’ by ‘DelayedArray::read_block’ when loading ‘SummarizedExperiment’ 
+Saved dendrogram: /dcs04/lieber/marmaypag/spatialAMY_LIBD4125/spatialAmygdala/plots/Xenium/06_dendrograms/Dendrogram_Banksy_lambda_0.8_res1.pdf
+Saved dendrogram: /dcs04/lieber/marmaypag/spatialAMY_LIBD4125/spatialAmygdala/plots/Xenium/06_dendrograms/Dendrogram_Banksy_lambda_0.8_res2.pdf
+Warning messages:
+1: Missing cluster column: clust_HARMONY_M0_lam0.8_k50_res0_6 
+2: Missing cluster column: clust_HARMONY_M0_lam0.8_k50_res0_8 
+3: Missing cluster column: clust_HARMONY_M0_lam0.8_k50_res1_2 
+4: Missing cluster column: clust_HARMONY_M0_lam0.8_k50_res1_4 
+5: Missing cluster column: clust_HARMONY_M0_lam0.8_k50_res1_6 
+6: Missing cluster column: clust_HARMONY_M0_lam0.8_k50_res1_8 

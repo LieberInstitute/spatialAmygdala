@@ -1,0 +1,24 @@
+**** Job starts ****
+Fri Feb 13 12:54:36 PM EST 2026
+**** SLURM info ****
+User: mtotty
+Job id: 28610110
+Job name: raster_GEX
+Hostname: compute-177
+Task id: 
+class: SpatialExperiment 
+dim: 366 946896 
+metadata(8): polygons technology ... polygons technology
+assays(3): counts nucleus_normcounts cell_normcounts
+rownames(366): ABCC9 ADAMTS12 ... ZIC2 ZNF536
+rowData names(3): ID Symbol Type
+colnames(946896): aaaaeomf-1 aaaajkhp-1 ... oimbboka-1 oimbcgpk-1
+colData names(33): cell_id transcript_counts ... cell_area.sf
+  nucleus_area.sf
+reducedDimNames(3): PCA HARMONY UMAP
+mainExpName: NULL
+altExpNames(0):
+spatialCoords names(2) : x_centroid y_centroid
+imgData names(1): sample_id
+**** Job ends ****
+Fri Feb 13 12:56:30 PM EST 2026

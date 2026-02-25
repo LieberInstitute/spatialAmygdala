@@ -1,0 +1,15 @@
+**** Job starts ****
+Tue Sep 23 11:31:13 PM EDT 2025
+**** SLURM info ****
+User: mtotty
+Job ID: 22709913
+Job Name: 15um_reseg
+Hostname: compute-127
+Task ID: 1
+Processing sample output-XETG00117__0023153__Region_1__20240329__171204
+output-XETG00117__0023153__Region_1__20240329__171204
+Tue Sep 23 11:31:14 PM EDT 2025
+Martian Runtime - v4.0.12
+Serving UI at http://compute-127.cm.cluster:40991?auth=x2rR0v6UjN0UTANhdK3NbEfTlhmmC5KnaMA3l1NE5zw
+
+Running preflight checks (please wait)...

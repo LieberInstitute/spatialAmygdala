@@ -1,0 +1,7 @@
+**** Job starts ****
+Mon Jan 26 06:57:11 PM EST 2026
+Running on: compute-119
+User: mtotty
+Fatal error: cannot open file 'plot_all_banksy_clusters.R': No such file or directory
+**** Job ends ****
+Mon Jan 26 06:57:12 PM EST 2026

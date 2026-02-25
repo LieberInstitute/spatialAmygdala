@@ -5,24 +5,23 @@ library("scater")
 library("here")
 library("dplyr")
 library("patchwork")
-library(Banksy)
 library("harmony")
 
 # save directories
 processed_dir <- here("processed-data", "Xenium", "04_dim_reduction")
 plot_dir <- here("plots", "Xenium", "04_dim_reduction")
 
-load(here("processed-data","Xenium", "03_quality_control", "spe_normcounts.Rdata"))
+spe <- readRDS(here("processed-data","Xenium", "03_quality_control", "spe_spacetrooper_QCed.rds"))
 spe
-# dim: 541 1018069 
-# metadata(0):
-# assays(3): counts nucleus_normcounts cell_normcounts
-# rownames(541): ENSG00000069431 ENSG00000151388 ...
-#   DeprecatedCodeword_0344 DeprecatedCodeword_0373
+# class: SpatialExperiment 
+# dim: 541 946252 
+# metadata(8): polygons technology ... polygons technology
+# assays(1): counts
+# rownames(541): ABCC9 ADAMTS12 ... DeprecatedCodeword_0344
+#   DeprecatedCodeword_0373
 # rowData names(3): ID Symbol Type
-# colnames(1018069): aaaadgkh-1 aaaadlfe-1 ... oihobmbk-1 oihoeehh-1
-# colData names(19): cell_id transcript_counts ... cell_area.sf
-#   nucleus_area.sf
+# colnames(946252): aaaaeomf-1 aaaajkhp-1 ... oimbboka-1 oimbcgpk-1
+# colData names(31): cell_id transcript_counts ... QC_score low_qcscore
 # reducedDimNames(0):
 # mainExpName: NULL
 # altExpNames(0):
@@ -34,7 +33,7 @@ spe
 gene_expression_idx <- which(rowData(spe)$Type == "Gene Expression")
 spe.gex <- spe[gene_expression_idx,]
 dim(spe.gex)
-# [1]     366 1018069
+# [1]     366 946252
 
 
 # ======== Dim reduction and Harmony batch correction ========
@@ -49,6 +48,11 @@ spe.gex <- RunHarmony(spe.gex, group.by.vars="brnum")
 # runUMAP
 spe.gex <- runUMAP(spe.gex, dimred="HARMONY")
 
+# ======= Copy reduced dims to orignal spe object =======
+reducedDim(spe, "PCA") <- reducedDim(spe.gex, "PCA")
+reducedDim(spe, "HARMONY") <- reducedDim(spe.gex, "HARMONY")
+reducedDim(spe, "UMAP") <- reducedDim(spe.gex, "UMAP")
+
 
 # ======== Visualization ========
 
@@ -62,7 +66,6 @@ png(file.path(plot_dir, "Corrected_PCs_Brnum.png"), width = 8, height = 6, units
 plotReducedDim(spe.gex, dimred="HARMONY", ncomponents=4,
     colour_by="brnum")
 dev.off()
-
 
 # UMAP
 png(file.path(plot_dir, "Corrected_UMAP_Brnum.png"), width = 10, height = 10, units = "in", res = 300)

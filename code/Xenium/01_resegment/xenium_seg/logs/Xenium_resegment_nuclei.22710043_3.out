@@ -1,0 +1,15 @@
+**** Job starts ****
+Tue Sep 23 11:35:19 PM EDT 2025
+**** SLURM info ****
+User: mtotty
+Job ID: 22710046
+Job Name: nuclei_reseg
+Hostname: compute-174
+Task ID: 3
+Processing sample 20240425__170523__0022862
+20240425__170523__0022862
+Tue Sep 23 11:35:19 PM EDT 2025
+Martian Runtime - v4.0.12
+Serving UI at http://compute-174.cm.cluster:46801?auth=CnAz9Qs4B4QRKhho0aXBipPaMiT2V7nE5VCySbCT-hE
+
+Running preflight checks (please wait)...

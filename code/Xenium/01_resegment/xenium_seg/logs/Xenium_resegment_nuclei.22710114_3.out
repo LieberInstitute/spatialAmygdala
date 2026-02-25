@@ -1,0 +1,23 @@
+**** Job starts ****
+Tue Sep 23 11:38:26 PM EDT 2025
+**** SLURM info ****
+User: mtotty
+Job ID: 22710117
+Job Name: nuclei_reseg
+Hostname: compute-174
+Task ID: 3
+Processing sample 20240425__170523__0022862
+20240425__170523__0022862
+Tue Sep 23 11:38:26 PM EDT 2025
+Martian Runtime - v4.0.12
+
+RuntimeError: pipestance 'RESEGMENT' already exists and is locked by another Martian instance. If you are sure no other Martian instance is running, delete the _lock file in /dcs04/lieber/marmaypag/spatialAMY_LIBD4125/spatialAmygdala/code/Xenium/01_resegment/xenium_seg/20240425__170523__0022862 and start Martian again.
+
+2025-09-23 23:38:26 Shutting down.
+Saving pipestance info to "/dcs04/lieber/marmaypag/spatialAMY_LIBD4125/spatialAmygdala/code/Xenium/01_resegment/xenium_seg/20240425__170523__0022862/20240425__170523__0022862.mri.tgz"
+For assistance, upload this file to 10x Genomics by running:
+
+xeniumranger upload <your_email> "/dcs04/lieber/marmaypag/spatialAMY_LIBD4125/spatialAmygdala/code/Xenium/01_resegment/xenium_seg/20240425__170523__0022862/20240425__170523__0022862.mri.tgz"
+
+**** Job ends ****
+Tue Sep 23 11:38:27 PM EDT 2025

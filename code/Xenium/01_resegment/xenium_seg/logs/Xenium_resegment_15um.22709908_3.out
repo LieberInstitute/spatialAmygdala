@@ -1,0 +1,15 @@
+**** Job starts ****
+Tue Sep 23 11:31:13 PM EDT 2025
+**** SLURM info ****
+User: mtotty
+Job ID: 22709915
+Job Name: 15um_reseg
+Hostname: compute-174
+Task ID: 3
+Processing sample 20240425__170523__0022862
+20240425__170523__0022862
+Tue Sep 23 11:31:13 PM EDT 2025
+Martian Runtime - v4.0.12
+Serving UI at http://compute-174.cm.cluster:42171?auth=mzhkc-F552hiSJOOXHI82oK3BnP76thAHUdfBEq70jk
+
+Running preflight checks (please wait)...

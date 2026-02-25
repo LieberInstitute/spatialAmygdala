@@ -5,6 +5,7 @@
 #SBATCH --mem=200G
 #SBATCH --mail-type=FAIL
 #SBATCH --mail-type=END
+#SBATCH --time=72:00:00
 #SBATCH --mail-user=mtotty2@jh.edu
 
 

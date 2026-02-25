@@ -1,0 +1,16 @@
+**** Job starts ****
+Wed Sep 24 08:19:57 PM EDT 2025
+**** SLURM info ****
+User: mtotty
+Job ID: 22741326
+Job Name: nuclei_reseg
+Hostname: compute-174
+Task ID: 2
+Processing sample 
+
+Wed Sep 24 08:19:57 PM EDT 2025
+ERROR: Run ID contains invalid characters. Run IDs may contain
+                upper and lowercase letters A-Z, numbers 0-9, and dash (-),
+                underscore (_) or period (.).
+**** Job ends ****
+Wed Sep 24 08:19:57 PM EDT 2025
