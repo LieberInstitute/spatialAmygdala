@@ -1,0 +1,1766 @@
+Loading conda_R/4.4
+
+Currently Loaded Modules:
+  1) JHPCE_ROCKY9_DEFAULT_ENV   3) conda/3-24.3.0
+  2) JHPCE_tools/3.0            4) conda_R/4.4
+
+ 
+
+here() starts at /dcs04/lieber/marmaypag/spatialAMY_LIBD4125/spatialAmygdala
+Loading required package: SeuratObject
+Loading required package: sp
+
+Attaching package: ‘SeuratObject’
+
+The following objects are masked from ‘package:base’:
+
+    intersect, t
+
+Loading required package: SummarizedExperiment
+Loading required package: MatrixGenerics
+Loading required package: matrixStats
+
+Attaching package: ‘MatrixGenerics’
+
+The following objects are masked from ‘package:matrixStats’:
+
+    colAlls, colAnyNAs, colAnys, colAvgsPerRowSet, colCollapse,
+    colCounts, colCummaxs, colCummins, colCumprods, colCumsums,
+    colDiffs, colIQRDiffs, colIQRs, colLogSumExps, colMadDiffs,
+    colMads, colMaxs, colMeans2, colMedians, colMins, colOrderStats,
+    colProds, colQuantiles, colRanges, colRanks, colSdDiffs, colSds,
+    colSums2, colTabulates, colVarDiffs, colVars, colWeightedMads,
+    colWeightedMeans, colWeightedMedians, colWeightedSds,
+    colWeightedVars, rowAlls, rowAnyNAs, rowAnys, rowAvgsPerColSet,
+    rowCollapse, rowCounts, rowCummaxs, rowCummins, rowCumprods,
+    rowCumsums, rowDiffs, rowIQRDiffs, rowIQRs, rowLogSumExps,
+    rowMadDiffs, rowMads, rowMaxs, rowMeans2, rowMedians, rowMins,
+    rowOrderStats, rowProds, rowQuantiles, rowRanges, rowRanks,
+    rowSdDiffs, rowSds, rowSums2, rowTabulates, rowVarDiffs, rowVars,
+    rowWeightedMads, rowWeightedMeans, rowWeightedMedians,
+    rowWeightedSds, rowWeightedVars
+
+Loading required package: GenomicRanges
+Loading required package: stats4
+Loading required package: BiocGenerics
+
+Attaching package: ‘BiocGenerics’
+
+The following object is masked from ‘package:SeuratObject’:
+
+    intersect
+
+The following objects are masked from ‘package:stats’:
+
+    IQR, mad, sd, var, xtabs
+
+The following objects are masked from ‘package:base’:
+
+    anyDuplicated, aperm, append, as.data.frame, basename, cbind,
+    colnames, dirname, do.call, duplicated, eval, evalq, Filter, Find,
+    get, grep, grepl, intersect, is.unsorted, lapply, Map, mapply,
+    match, mget, order, paste, pmax, pmax.int, pmin, pmin.int,
+    Position, rank, rbind, Reduce, rownames, sapply, saveRDS, setdiff,
+    table, tapply, union, unique, unsplit, which.max, which.min
+
+Loading required package: S4Vectors
+
+Attaching package: ‘S4Vectors’
+
+The following object is masked from ‘package:utils’:
+
+    findMatches
+
+The following objects are masked from ‘package:base’:
+
+    expand.grid, I, unname
+
+Loading required package: IRanges
+
+Attaching package: ‘IRanges’
+
+The following object is masked from ‘package:sp’:
+
+    %over%
+
+Loading required package: GenomeInfoDb
+Loading required package: Biobase
+Welcome to Bioconductor
+
+    Vignettes contain introductory material; view with
+    'browseVignettes()'. To cite Bioconductor, see
+    'citation("Biobase")', and for packages 'citation("pkgname")'.
+
+
+Attaching package: ‘Biobase’
+
+The following object is masked from ‘package:MatrixGenerics’:
+
+    rowMedians
+
+The following objects are masked from ‘package:matrixStats’:
+
+    anyMissing, rowMedians
+
+
+Attaching package: ‘SummarizedExperiment’
+
+The following object is masked from ‘package:Seurat’:
+
+    Assays
+
+The following object is masked from ‘package:SeuratObject’:
+
+    Assays
+
+Warning message:
+replacing previous import ‘S4Arrays::read_block’ by ‘DelayedArray::read_block’ when loading ‘SummarizedExperiment’ 
+Loading required package: harmony
+Loading required package: Rcpp
+Loading required package: ggrepel
+Loading required package: ggplot2
+Loading required package: WGCNA
+Loading required package: dynamicTreeCut
+Loading required package: fastcluster
+
+Attaching package: ‘fastcluster’
+
+The following object is masked from ‘package:stats’:
+
+    hclust
+
+
+
+Attaching package: ‘WGCNA’
+
+The following object is masked from ‘package:IRanges’:
+
+    cor
+
+The following object is masked from ‘package:S4Vectors’:
+
+    cor
+
+The following object is masked from ‘package:stats’:
+
+    cor
+
+Loading required package: dplyr
+
+Attaching package: ‘dplyr’
+
+The following object is masked from ‘package:Biobase’:
+
+    combine
+
+The following objects are masked from ‘package:GenomicRanges’:
+
+    intersect, setdiff, union
+
+The following object is masked from ‘package:GenomeInfoDb’:
+
+    intersect
+
+The following objects are masked from ‘package:IRanges’:
+
+    collapse, desc, intersect, setdiff, slice, union
+
+The following objects are masked from ‘package:S4Vectors’:
+
+    first, intersect, rename, setdiff, setequal, union
+
+The following objects are masked from ‘package:BiocGenerics’:
+
+    combine, intersect, setdiff, union
+
+The following object is masked from ‘package:matrixStats’:
+
+    count
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+Loading required package: igraph
+
+Attaching package: ‘igraph’
+
+The following objects are masked from ‘package:dplyr’:
+
+    as_data_frame, groups, union
+
+The following object is masked from ‘package:GenomicRanges’:
+
+    union
+
+The following object is masked from ‘package:IRanges’:
+
+    union
+
+The following object is masked from ‘package:S4Vectors’:
+
+    union
+
+The following objects are masked from ‘package:BiocGenerics’:
+
+    normalize, path, union
+
+The following object is masked from ‘package:Seurat’:
+
+    components
+
+The following objects are masked from ‘package:stats’:
+
+    decompose, spectrum
+
+The following object is masked from ‘package:base’:
+
+    union
+
+Loading required package: ggraph
+
+Attaching package: ‘ggraph’
+
+The following object is masked from ‘package:sp’:
+
+    geometry
+
+Loading required package: tidygraph
+
+Attaching package: ‘tidygraph’
+
+The following object is masked from ‘package:igraph’:
+
+    groups
+
+The following objects are masked from ‘package:IRanges’:
+
+    active, slice
+
+The following objects are masked from ‘package:S4Vectors’:
+
+    active, rename
+
+The following object is masked from ‘package:stats’:
+
+    filter
+
+Loading required package: UCell
+Loading required package: GeneOverlap
+Warning messages:
+1: replacing previous import ‘GenomicRanges::intersect’ by ‘SeuratObject::intersect’ when loading ‘hdWGCNA’ 
+2: replacing previous import ‘GenomicRanges::union’ by ‘dplyr::union’ when loading ‘hdWGCNA’ 
+3: replacing previous import ‘GenomicRanges::setdiff’ by ‘dplyr::setdiff’ when loading ‘hdWGCNA’ 
+4: replacing previous import ‘dplyr::as_data_frame’ by ‘igraph::as_data_frame’ when loading ‘hdWGCNA’ 
+5: replacing previous import ‘Seurat::components’ by ‘igraph::components’ when loading ‘hdWGCNA’ 
+6: replacing previous import ‘dplyr::groups’ by ‘igraph::groups’ when loading ‘hdWGCNA’ 
+7: replacing previous import ‘dplyr::union’ by ‘igraph::union’ when loading ‘hdWGCNA’ 
+8: replacing previous import ‘GenomicRanges::subtract’ by ‘magrittr::subtract’ when loading ‘hdWGCNA’ 
+9: replacing previous import ‘Matrix::as.matrix’ by ‘proxy::as.matrix’ when loading ‘hdWGCNA’ 
+10: replacing previous import ‘igraph::groups’ by ‘tidygraph::groups’ when loading ‘hdWGCNA’ 
+Warning message:
+The `slot` argument of `GetAssayData()` is deprecated as of SeuratObject 5.0.0.
+ℹ Please use the `layer` argument instead.
+ℹ The deprecated feature was likely used in the hdWGCNA package.
+  Please report the issue to the authors. 
+Normalizing layer: counts
+Performing log-normalization
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Warning message:
+In ConstructNetwork(seurat_obj, tom_name = "Zhou", overwrite_tom = TRUE,  :
+  Overwriting TOM TOM/Zhou_TOM.rda
+Centering and scaling data matrix
+  |                                                                              |                                                                      |   0%  |                                                                              |====                                                                  |   6%  |                                                                              |========                                                              |  11%  |                                                                              |============                                                          |  17%  |                                                                              |================                                                      |  22%  |                                                                              |===================                                                   |  28%  |                                                                              |=======================                                               |  33%  |                                                                              |===========================                                           |  39%  |                                                                              |===============================                                       |  44%  |                                                                              |===================================                                   |  50%  |                                                                              |=======================================                               |  56%  |                                                                              |===========================================                           |  61%  |                                                                              |===============================================                       |  67%  |                                                                              |===================================================                   |  72%  |                                                                              |======================================================                |  78%  |                                                                              |==========================================================            |  83%  |                                                                              |==============================================================        |  89%  |                                                                              |==================================================================    |  94%  |                                                                              |======================================================================| 100%
+Centering and scaling data matrix
+  |                                                                              |                                                                      |   0%  |                                                                              |==========                                                            |  14%  |                                                                              |====================                                                  |  29%  |                                                                              |==============================                                        |  43%  |                                                                              |========================================                              |  57%  |                                                                              |==================================================                    |  71%  |                                                                              |============================================================          |  86%  |                                                                              |======================================================================| 100%
+pcagrey_ 1 
+Positive:  AABR07000398.1, Cst3, AC134224.3, Grm3, Slc1a3, Tubb4a, Sept4, Glul, Usp54, Fgfr2 
+	   Htra1, Zbtb20, Lap3, Nfia, Ppp1r16b, Phlpp1, S100b, Plekhh1, Rnf43, Gatm 
+	   Ptn, Dbi, Prex2, Prtfdc1, Gja1, Wscd1, Atp1a2, Abca1, Tspan2, Gramd2b 
+Negative:  Syt1, Nrxn3, Grin2b, Rims1, Myt1l, Lrrtm4, Mapk10, Grin1, Dok6, Dlgap1 
+	   Gria2, Ryr2, Syn2, Camk2a, Sorbs2, AABR07033882.1, Stxbp5l, Galnt13, Tanc2, Khdrbs2 
+	   Akap6, Gpr158, Trank1, Large1, Ntrk3, RGD1564053, Srrm3, Nlgn1, Scn8a, Arpp21 
+pcagrey_ 2 
+Positive:  Rorb, Gja1, Slc1a2, Atp1a2, Slc1a3, Gramd2b, Cyp7b1, Prex2, Agt, Sfxn5 
+	   Arhgef26, Gldc, Ptprz1, Gli3, Itih3, Ccdc141, Lgi4, Zbtb20, Grin2c, Folh1 
+	   Col11a2, Aqp4, Acsbg1, Cpe, Nwd1, Ntrk2, Mlc1, Gpr37l1, S100b, Slc7a10 
+Negative:  Sept4, Tubb4a, Ano4, Il1rapl1, Ppp1r16b, Slc24a2, Stmn4, Slc44a1, Spock3, Tspan2 
+	   Dnm3, Plekhh1, Ttll5, Slc12a2, Abca2, Slain1, Myo1d, AABR07054469.1, NEWGENE-1310680, Eml2 
+	   Dixdc1, Kcnq3, Pik3c2b, Cntn2, Trim2, Lap3, Adpgk, Abcg1, Cdc42ep2, Jam3 
+pcagrey_ 3 
+Positive:  Gad2, Gad1, Nrxn3, Sv2c, AABR07059679.2, Plppr1, Slc32a1, Lrrtm4, Galnt13, Robo1 
+	   Ptprm, Scg2, Rerg, Hs6st2, Unc5d, Ssbp2, Htr4, Pdgfra, Ptprz1, Htr2c 
+	   Ppfia4, Pid1, Chga, Pld5, Tmem91, Calcrl, Sorcs1, Col5a3, Plcxd3, Apbb1ip 
+Negative:  Ptprd, Slc17a7, Trabd2b, Grm3, Rspo2, AC134224.3, Rtn4r, Neurod6, Thrb, Arap2 
+	   Mical2, Nptxr, Tubb4a, Itgbl1, Sept4, Satb2, Anxa11, Itga8, Phlpp1, Slc24a2 
+	   Galnt14, Ano4, St6gal2, Myo1d, Kcnq3, Pcsk5, Ttll5, Ccn3, Bdnf, Zfpm2 
+pcagrey_ 4 
+Positive:  Ifngr1, Oplah, Il6r, Zfp710, Rnaset2, Arhgap22, Ldlrad4, Apbb1ip, Cst3, Fam102b 
+	   Pltp, Rgs10, Slc17a7, Lgmn, Ophn1, Dock4, Man1c1, P2rx7, Rspo2, B2m 
+	   Trabd2b, Plcl2, Skap2, AABR07028615.1, Alpk1, Rtn4r, Wasf2, Neurod6, Nuak1, Nptxr 
+Negative:  Dnm3, Spock3, Usp54, Ano4, Sept4, Tubb4a, Ppp1r16b, AABR07059258.1, Il1rapl1, Grik2 
+	   Phlpp1, Slc44a1, Ptprd, Grm3, Tspan2, Ncam1, Luzp2, Sorcs1, Slc12a2, Rnf43 
+	   Aatk, Ttll5, Rcan2, Plekhh1, Pde4b, Wscd1, Robo1, Slc24a2, Stmn4, Fgfr2 
+pcagrey_ 5 
+Positive:  Grm3, Gad1, Gad2, Grin2b, Tmem91, Gja1, Scg2, Slc32a1, Prex2, Arhgap26 
+	   Sv2c, Cpq, AABR07059679.2, Id4, Rcan2, Chga, Spock3, Gramd2b, Rps6ka5, Unc5d 
+	   Gli3, Pld5, Agt, AABR07033882.1, Itih3, Bcl11a, Slc1a2, Grin2c, Slc16a11, Fgfr2 
+Negative:  Pdgfra, Arhgap31, Col5a3, C1ql1, Vcan, Megf11, Pstpip2, Emid1, Sema3d, Itga9 
+	   Epn2, AABR07003304.2, Calcrl, Stk32a, Vxn, Agmo, Cntn1, Xylt1, Mmp16, Sema5a 
+	   Sh3bp4, Cntn6, Brinp3, Ntn1, Ptprz1, Plce1, Lrrc4c, Tpm1, Plpp4, Zcchc24 
+Transposing data matrix
+Initializing state using k-means centroids initialization
+Harmony 1/10
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Harmony 2/10
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Harmony 3/10
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Harmony converged after 3 iterations
+Centering and scaling data matrix
+  |                                                                              |                                                                      |   0%  |                                                                              |======================================================================| 100%
+Warning in svd.function(A = t(x = object), nv = npcs, ...) :
+  You're computing too large a percentage of total singular values, use a standard svd instead.
+pcapurple_ 1 
+Positive:  Robo2, Aff3, Gria3, Cacna1a, Pclo, Zfp385b, Grm1, Scn1a, Samd5, Cntn3 
+	   Ctnnd2, Epha7, Cpeb3, Zfp385d, Lmo3, AABR07007642.1, Sgip1, LOC100362814, Sh3rf3, Rbms3 
+	   Efna5, Anxa6, Spats2l, Ptpn9, Slc23a2, Man2a1, Ralgapa2, Myrip, Lin28b, AABR07009919.1 
+Negative:  Igsf11, Sash1, Tjp1, Ell2, RGD1562339, Ptpre, Insyn2a, Slc22a23, Edil3, Srgap1 
+	   Utrn, Asap1, Tbc1d5, Rab30, Rbms1, Trak2, Ppargc1a, Apc, Myo1b, Fut8 
+	   Igsf9b, Tra2a, AABR07060473.1, Tmem229b, Bdh1, Stx3, AABR07032496.1, Ttc39b, Arnt2, Fer 
+pcapurple_ 2 
+Positive:  Edil3, Scn1a, Grm1, Zfp385d, Cntn3, Rbms3, Cacna2d2, Efna5, Spats2l, Myo1b 
+	   Zfp385b, Sgpp2, Cacna1a, AABR07007642.1, Ptpre, Rbms1, Sh3rf3, Robo2, Lin28b, Pclo 
+	   Stx3, AABR07009919.1, Snx10, Gria3, LOC100362814, AABR07060481.1, Tmem229b, Ralgapa2, Lmo3, Man2a1 
+Negative:  Ctnnd2, Igsf11, Asap1, Sash1, Ppargc1a, Utrn, Arnt2, Bdh1, Tjp1, Myrip 
+	   Ell2, Ptpn4, Rab30, Sgip1, Apc, Slc22a23, Cpeb3, RGD1562339, Insyn2a, Anxa6 
+	   Ttc39b, Epha7, Ptpn9, AABR07032496.1, Fer, Srgap1, Samd5, Tbc1d5, Fut8, Trak2 
+pcapurple_ 3 
+Positive:  Rbms3, Zfp385d, Cacna2d2, Utrn, AABR07032496.1, Spats2l, Efna5, Rbms1, AABR07060481.1, Scn1a 
+	   AABR07060473.1, Ptpn4, Ppargc1a, Rab30, Insyn2a, Fut8, Sgip1, Ctnnd2, Srgap1, RGD1562339 
+	   Arnt2, Igsf11, Sgpp2, Cntn3, Sash1, AABR07009919.1, Asap1, Ptpn9, Cpeb3, LOC103693780 
+Negative:  Epha7, Myrip, Aff3, Gria3, Lmo3, Edil3, Ell2, Man2a1, LOC100362814, Fer 
+	   Igsf9b, Lin28b, Ralgapa2, Slc22a23, Anxa6, Robo2, Trak2, Tra2a, Stx3, Tjp1 
+	   Cacna1a, Slc23a2, Tmem229b, Bdh1, Snx10, Tbc1d5, Ptpre, Zfp385b, AABR07007642.1, Pclo 
+pcapurple_ 4 
+Positive:  Sgip1, Cacna1a, Cpeb3, Ctnnd2, Ralgapa2, Ptpn9, Pclo, Slc23a2, Ptpn4, Snx10 
+	   Bdh1, Asap1, AABR07009919.1, LOC100362814, Spats2l, Aff3, LOC103693780, Sh3rf3, Zfp385b, Gria3 
+	   Tmem229b, Rbms3, Lmo3, Stx3, Lin28b, Anxa6, Man2a1, Samd5, Scn1a, AABR07032496.1 
+Negative:  Edil3, Srgap1, Igsf11, Ell2, Slc22a23, Tjp1, Sgpp2, Tbc1d5, Ptpre, Rbms1 
+	   Cntn3, AABR07060481.1, Zfp385d, Tra2a, Sash1, Insyn2a, Myo1b, AABR07007642.1, AABR07060473.1, Fut8 
+	   Apc, Cacna2d2, Igsf9b, Rab30, Ttc39b, Trak2, RGD1562339, Grm1, Epha7, Utrn 
+pcapurple_ 5 
+Positive:  Igsf11, AABR07007642.1, Sh3rf3, Edil3, Rab30, Apc, Arnt2, Samd5, Efna5, Tjp1 
+	   AABR07060481.1, Spats2l, AABR07060473.1, Pclo, Grm1, Cntn3, Sgip1, Cpeb3, Myrip, Sash1 
+	   Slc22a23, Zfp385d, LOC103693780, Cacna2d2, Bdh1, Rbms3, Ell2, AABR07009919.1, Scn1a, Epha7 
+Negative:  Rbms1, Ptpre, Utrn, Myo1b, RGD1562339, Srgap1, Asap1, Fer, Tbc1d5, Ptpn9 
+	   Lmo3, Ttc39b, Igsf9b, Gria3, Sgpp2, Man2a1, Lin28b, Ctnnd2, Robo2, Tmem229b 
+	   Anxa6, Ppargc1a, Aff3, Slc23a2, Tra2a, Insyn2a, AABR07032496.1, Fut8, LOC100362814, Trak2 
+Transposing data matrix
+Initializing state using k-means centroids initialization
+Harmony 1/10
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Harmony converged after 1 iterations
+Centering and scaling data matrix
+  |                                                                              |                                                                      |   0%  |                                                                              |===================================                                   |  50%  |                                                                              |======================================================================| 100%
+pcaturquoise_ 1 
+Positive:  Aldoc, Laptm4a, Sept7, Vbp1, Ddt, Sec11c, Cd81, Slc3a2, Eci3, Selenos 
+	   Tsc22d3, Ctsl, Prdx1, AC096473.3, Clu, Gstp1, Urod, Tmem256, Mpv17l2, Hddc3 
+	   AABR07042936.1, Ptma, Tspan6, Mrpl32, Nudt2, Gtf2b, Nmral1, Tmem223, Ccdc107, AABR07035218.1 
+Negative:  Ly6h, Scg5, Rtn1, Caly, Tubb2a, Atp1b1, Tubb3, Calm1, Ndfip1, Stmn3 
+	   C1qtnf4, Atp6v0c, Zcchc12, Calm2, Hsp90ab1, LOC108348172.1, Ndrg4, Tubb5, Zwint, Basp1 
+	   Aldoa, Pgrmc1, Ndn, LOC108351137, Atp6ap2, Sncb, Bex2, Slc25a4, Bsg, Chgb 
+pcaturquoise_ 2 
+Positive:  Tmsb4x, Cd81, Stmn1, Gstp1, Prdx1, Sec11c, Tuba1a, Sept7, Pebp1, Fth1 
+	   LOC100359583, Aldoc, Itm2b, Ddt, Laptm4a, H3f3c, Mt3, Ctsl, Actb, Rtn4 
+	   Dynll1, Rpl18, Gabarap, Ckb, Vbp1, Fez1, Ywhaq, Cfl1, Ppib, Cox4i1 
+Negative:  Ndrg4, AABR07047221.1, Tusc3, Atp1b1, Chgb, Ly6h, Ddx24, Gaa, Hap1, Rtn1 
+	   Tmem179, C1qtnf4, Dhx36, Cnih2, Usp14, Syt4, Pgrmc1, Camk1, Zcchc12, Syngr3 
+	   Rab6a, Pianp, Psip1, Tmem59l, Lrpap1, Actr2, Il12rb2, Asphd1, Pja2, Prr7 
+pcaturquoise_ 3 
+Positive:  Rtn4, Stmn1, Sept7, Gstp1, Tuba1a, Sec11c, Ywhaq, LOC100359583, Fez1, Faim2 
+	   AABR07042936.1, Hsp90ab1, Lmbrd1, Fth1, Tmem50a, Vbp1, Reep5, Fbxo31, Arl2, Ypel3 
+	   AC096473.3, Taldo1, Atp1b1, Ptma, H3f3a, Fis1, Plppr3, Zfp706, Mtch1, Actb 
+Negative:  Clu, Aldoc, Slc3a2, Laptm4a, Ckb, Rcn2, Itm2b, Mt3, Ldhb, Cd81 
+	   Tsc22d3, Tubb2b, RGD1359290, Eno1, Slc25a5, Son, MGC109340, Timp2, Scp2, Eci3 
+	   Tspan3, Nmt1, Kif5b, Selenos, Gabbr1, Marcks, LOC100361457, AABR07034669.1, Oat, Pgk1 
+pcaturquoise_ 4 
+Positive:  Actr2, Rab6a, Mgst3, AABR07034745.1, Il12rb2, Fahd1, Nmt1, RGD1565784, AABR07034669.1, Higd2a 
+	   Atp6v0b, Sept7, Camk2n1, Ier5l, Mat2b, Fam151b, Dusp14, Lin7b, Ndfip2, Coro1a 
+	   Yrdc, Ube2e3, AABR07012384.1, Bnip3, Serf2, Sbds, Nxpe1, Ttc9b, Pdcd10, AABR07054400.1 
+Negative:  Caly, Gaa, LOC691995, LOC108348172.1, Hap1, Zcchc12, Psap, Nrsn2, Spint2, Resp18 
+	   Pgrmc1, Pnck, Qpct, Ndn, Scg5, Maged1, Ctsb, Tuba1b, Plppr3, Rsph9 
+	   Faim2, Marcks, Fxyd6, Gabbr1, Nsg1, Zwint, Atp6v0c, Ly6h, Pja1, Itm2b 
+pcaturquoise_ 5 
+Positive:  Ywhah, Timp2, Basp1, Ctsl, Zwint, Sncb, Ctsb, Uchl1, Rab3a, Map1lc3a 
+	   Tmsb4x, Tmsb10, Vamp2, Psap, Aldoa, Ldha, Cfl1, Tuba4a, Ctsa, Sh3bgrl3 
+	   Coro1a, Ap2m1, Calm1, Atp6v0c, Mgst3, Calm3, Atp6v1b2, Tubb5, Dynll1, Eef1a2 
+Negative:  Rtn4, Resp18, Caly, Fez1, AABR07047221.1, Sec11c, Slc3a1, Sept7, Gstp1, Qpct 
+	   Pgrmc1, Nxpe1, Ccdc107, Prdx1, Dhx36, Hist3h2ba, Lmbrd1, Psip1, Bmyc, Ddx24 
+	   Ndufc2, Vbp1, Rcn2, AABR07012384.1, LOC100360491, Ggh, LOC297756, LOC100174910, AABR07060778.1, Emc7 
+Transposing data matrix
+Initializing state using k-means centroids initialization
+Harmony 1/10
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Harmony 2/10
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Harmony converged after 2 iterations
+Centering and scaling data matrix
+  |                                                                              |                                                                      |   0%  |                                                                              |======================================================================| 100%
+pcablue_ 1 
+Positive:  Baz2b, Agap1, Slc9a9, RGD1565616, Map4k5, Pkp4, Grk5, Sil1, Lars2, Tmcc1 
+	   Epg5, Usp24, Gabrg1, Snd1, Gnao1, Coro2b, Fam222b, Hmbox1, Cacul1, Lonp2 
+	   Fam120a, Ankib1, Mapk1ip1l, Lcorl, Specc1, Rapgef1, AABR07001519.1, Arhgef17, Chka, Ranbp17 
+Negative:  Ptprn2, Cacna1d, Hcn1, Klhl29, Map2, Negr1, Rapgef4, Mtus2, Shank2, Gabrb1 
+	   Plxna4, Tmem132d, Hecw1, Ppp2r2b, Nalcn, Ank2, Jazf1, Bicdl1, Dgkg, Ptprr 
+	   Xkr6, Syn3, Adam23, Dscaml1, Gmds, Pacs1, Pi4ka, Sbf2, Ppp1r12b, Shank3 
+pcablue_ 2 
+Positive:  Gabrb1, AABR07001519.1, Gabrg1, Chst11, Negr1, Tom1l2, Ncoa1, Chka, Gnao1, Mib1 
+	   Ppp2r2b, RGD1565616, Fam222b, Nt5c2, Ank2, Grid1, Shc3, Mark3, Gnaq, Usp24 
+	   Lonp2, Gbf1, Grk5, Map2, Pde9a, Fam172a, Slc25a12, Epg5, Helz, Jazf1 
+Negative:  Specc1, Apba1, Hecw1, Hcn1, Plxna4, Dst, Rapgef4, Klhl29, Dscaml1, Mtus2 
+	   Cacna1d, Hmgcll1, Bicdl1, Agap1, Shank2, Dgkg, Arfgef3, Map6, Nalcn, Ankib1 
+	   Map4k5, Tmem150c, Adam23, Ankh, Shank3, Ptprr, Epha10, Vps13c, Syn3, Fbxw4 
+pcablue_ 3 
+Positive:  Gabrb1, Gnao1, Tom1l2, Plxna4, Ank2, Klhl29, Pde9a, Bicdl1, Hcn1, Ptprn2 
+	   Mtus2, Flnb, Coro2b, Shank2, Nt5c2, Pi4ka, Slc25a12, Rai1, Shank3, Chchd3 
+	   Cacna1d, AABR07037451.2, Inpp4a, Arhgef17, Armc9, Map6, Hecw1, Mib1, Myo9a, Mark3 
+Negative:  Usp24, Agap1, Chst11, Dscaml1, Lcorl, Tmem132d, Slc9a9, Grk5, Gmds, Specc1 
+	   Fam222b, Grid1, Shc3, Sgms1, Dst, Gabrg1, Baz2b, Jazf1, Helz, Apba1 
+	   Nalcn, Sbf2, Ranbp17, Epha10, Map4k5, Pan3, Cacul1, Sos2, Zdhhc2, Pkp4 
+pcablue_ 4 
+Positive:  Slc9a9, Negr1, Tmem150c, Usp24, Tmem132d, Inpp4a, Sgms1, Map2, Chst11, Ocrl 
+	   Pacs1, Rapgef4, Pde7a, Ptprn2, Helz, Znrf1, Gabrb1, Shank2, Shc3, AABR07058158.1 
+	   Cep112, Nt5c2, Ptprr, Zdhhc2, Cacna1d, Hcn1, Sbf2, Mtus2, Stk38, Shank3 
+Negative:  RGD1565616, Agap1, Baz2b, Map4k5, Gnao1, Tmcc1, Ankib1, Dst, St3gal3, Ank2 
+	   Pkp4, Exoc6b, Ranbp17, Coro2b, Tom1l2, Apba1, AABR07001519.1, Ankh, Arfgef3, Tulp4 
+	   Fbxl17, Hmgcll1, Hectd4, Specc1, Nbas, Fam168a, Vps13c, Fam172a, Faf1, Snd1 
+pcablue_ 5 
+Positive:  Slc9a9, Pkp4, Pan3, Sgms1, Snd1, Zfand3, Gnaq, Kansl1, Fbxw4, Rapgef1 
+	   Atxn7l1, Baz2b, Inpp4a, Fam120a, Specc1, Prr14l, Ankh, Med13l, Fam193a, Gbf1 
+	   Asxl1, Fam172a, Slc39a11, Wdfy3, Pacs1, Cacul1, Mapk1ip1l, Helz, Rbm6, RGD1306271 
+Negative:  Ank2, Agap1, Xkr6, Dscaml1, Gabrg1, Epha10, Tmem132d, Chst11, Ocrl, Grid1 
+	   Hmgcll1, Nalcn, Map2, Ppp2r2b, Zdhhc2, Negr1, Shc3, Hecw1, Apba1, Coro2b 
+	   Ptprr, Jazf1, AABR07037451.2, Cep112, Ptprn2, Adam23, Ranbp17, Mtus2, RGD1565616, Ppp1r12b 
+Transposing data matrix
+Initializing state using k-means centroids initialization
+Harmony 1/10
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Harmony 2/10
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Harmony converged after 2 iterations
+Centering and scaling data matrix
+  |                                                                              |                                                                      |   0%  |                                                                              |======================================================================| 100%
+Warning in svd.function(A = t(x = object), nv = npcs, ...) :
+  You're computing too large a percentage of total singular values, use a standard svd instead.
+Warning in svd.function(A = t(x = object), nv = npcs, ...) :
+  did not converge--results might be invalid!; try increasing work or maxit
+pcadarkorange_ 1 
+Positive:  Rpgrip1l, Atl1, L1cam, Rasal1, AABR07027979.1, Mrap2, Pigl, Nova1, Hs3st5, Spon1 
+	   Ppfibp1 
+Negative:  Zdhhc20, Nedd9, Crim1, Arhgef28, Sdccag8, March1, P3h3, RGD1311744, Map3k5, Smarcd3 
+	   Nsun7 
+pcadarkorange_ 2 
+Positive:  Arhgef28, Spon1, Ppfibp1, Crim1, Nedd9, Map3k5, P3h3, Nsun7, Rasal1, AABR07027979.1 
+	   March1 
+Negative:  Hs3st5, Mrap2, Nova1, RGD1311744, Zdhhc20, L1cam, Smarcd3, Rpgrip1l, Atl1, Sdccag8 
+	   Pigl 
+pcadarkorange_ 3 
+Positive:  March1, Crim1, RGD1311744, Nova1, Nedd9, Hs3st5, Spon1, Mrap2, P3h3, Smarcd3 
+	   Ppfibp1 
+Negative:  Zdhhc20, Sdccag8, Nsun7, AABR07027979.1, Arhgef28, Rasal1, Atl1, Pigl, Map3k5, Rpgrip1l 
+	   L1cam 
+pcadarkorange_ 4 
+Positive:  Ppfibp1, Nova1, Spon1, Smarcd3, P3h3, RGD1311744, Sdccag8, Nsun7, Arhgef28, Zdhhc20 
+	   Mrap2 
+Negative:  Nedd9, Map3k5, Crim1, Rasal1, March1, AABR07027979.1, L1cam, Pigl, Atl1, Rpgrip1l 
+	   Hs3st5 
+pcadarkorange_ 5 
+Positive:  Zdhhc20, March1, Nsun7, Crim1, Ppfibp1, Sdccag8, Spon1, Hs3st5, RGD1311744, Rasal1 
+	   AABR07027979.1 
+Negative:  P3h3, Map3k5, Smarcd3, Pigl, Nedd9, Rpgrip1l, Arhgef28, L1cam, Nova1, Atl1 
+	   Mrap2 
+Transposing data matrix
+Initializing state using k-means centroids initialization
+Harmony 1/10
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Harmony converged after 1 iterations
+Centering and scaling data matrix
+  |                                                                              |                                                                      |   0%  |                                                                              |======================================================================| 100%
+Warning in svd.function(A = t(x = object), nv = npcs, ...) :
+  You're computing too large a percentage of total singular values, use a standard svd instead.
+pcasalmon_ 1 
+Positive:  Clic4, Map7, Cacng4, Sik3, Fam171a1, Smurf2, Mob3b, Zfp566, Mbtd1, Fam117a 
+	   Adar, Wdr66, Cog5, Fam214a, Rhbdl3, Bbx, Cask, Uvrag, Gramd1b, Ccdc180 
+	   Ppp1r13b, Enkur, Ano2, Mov10, Mapkbp1, Rsf1, Syngap1, Wdr7, Kcnn3, Rfx1 
+Negative:  Gria1, Ldb2, Tenm4, AABR07049790.1, Nyap2, Ppfia2, Rgl1, Cnih3, Prkce, Acvr2a 
+	   Ahcyl2, Csnk1g1, Gabra2, Srgap3, Osbpl10, Fam117b, Pdzd4, Rps6ka2, Prickle2, Zfp831 
+	   Iqub, Ascc3, Braf, Tiam1, Abhd6, Adgrb2, Rfx3, Zfhx4, Vwa3a 
+pcasalmon_ 2 
+Positive:  Cask, Cacng4, Gramd1b, Gabra2, Srgap3, Csnk1g1, Ppfia2, Rsf1, Fam117b, Tenm4 
+	   Ascc3, Mbtd1, Zfhx4, Rgl1, Braf, Uvrag, Wdr7, Prkce, AABR07049790.1, Pdzd4 
+	   Acvr2a, Cog5, Gria1, Kcnn3, Ahcyl2, Ldb2, Syngap1, Adgrb2, Mov10, Adar 
+Negative:  Map7, Clic4, Ano2, Mob3b, Sik3, Cnih3, Rps6ka2, Vwa3a, Rhbdl3, Tiam1 
+	   Enkur, Fam117a, Zfp566, Wdr66, Bbx, Rfx1, Ccdc180, Zfp831, Prickle2, Smurf2 
+	   Rfx3, Nyap2, Osbpl10, Iqub, Mapkbp1, Fam171a1, Ppp1r13b, Fam214a, Abhd6 
+pcasalmon_ 3 
+Positive:  Sik3, Zfhx4, Fam214a, Mob3b, Clic4, Map7, Ccdc180, Cacng4, Zfp566, Fam171a1 
+	   Bbx, Srgap3, Gabra2, Ahcyl2, Cog5, Tiam1, Nyap2, Adar, Rfx3, Cask 
+	   Braf, Mbtd1, Acvr2a, Ascc3, Rhbdl3, Ppfia2, Uvrag, Smurf2, Rgl1, Ppp1r13b 
+Negative:  Vwa3a, Cnih3, Enkur, Ano2, Rps6ka2, Adgrb2, Osbpl10, Prickle2, Ldb2, Wdr66 
+	   Zfp831, Fam117a, Kcnn3, Mov10, Syngap1, Fam117b, Prkce, Rfx1, Tenm4, AABR07049790.1 
+	   Csnk1g1, Abhd6, Gria1, Gramd1b, Mapkbp1, Pdzd4, Wdr7, Iqub, Rsf1 
+pcasalmon_ 4 
+Positive:  Map7, Tenm4, Sik3, Uvrag, Csnk1g1, AABR07049790.1, Wdr7, Fam117b, Ppp1r13b, Prickle2 
+	   Prkce, Pdzd4, Gria1, Ascc3, Zfp831, Adar, Zfhx4, Iqub, Osbpl10, Ppfia2 
+	   Ldb2, Rfx1, Rsf1, Mov10, Ahcyl2, Braf, Nyap2, Abhd6, Rgl1, Acvr2a 
+Negative:  Cacng4, Cask, Ano2, Rfx3, Smurf2, Gramd1b, Rhbdl3, Fam117a, Rps6ka2, Mob3b 
+	   Zfp566, Bbx, Cnih3, Cog5, Srgap3, Kcnn3, Tiam1, Vwa3a, Gabra2, Fam214a 
+	   Syngap1, Clic4, Mapkbp1, Wdr66, Mbtd1, Fam171a1, Ccdc180, Enkur, Adgrb2 
+pcasalmon_ 5 
+Positive:  Zfhx4, Rfx3, Rgl1, Rhbdl3, Gabra2, Ccdc180, Zfp831, Abhd6, Ano2, Fam171a1 
+	   Mov10, Smurf2, Kcnn3, Rfx1, Ahcyl2, Srgap3, Fam117a, Adgrb2, AABR07049790.1, Acvr2a 
+	   Pdzd4, Syngap1, Iqub, Ldb2, Mapkbp1, Bbx, Rps6ka2, Ppp1r13b, Nyap2, Zfp566 
+Negative:  Cask, Cacng4, Sik3, Ppfia2, Map7, Osbpl10, Prickle2, Cog5, Wdr7, Uvrag 
+	   Cnih3, Enkur, Mbtd1, Prkce, Braf, Rsf1, Mob3b, Ascc3, Clic4, Csnk1g1 
+	   Gramd1b, Wdr66, Fam214a, Adar, Vwa3a, Fam117b, Tiam1, Gria1, Tenm4 
+Transposing data matrix
+Initializing state using k-means centroids initialization
+Harmony 1/10
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Harmony converged after 1 iterations
+Centering and scaling data matrix
+  |                                                                              |                                                                      |   0%  |                                                                              |======================================================================| 100%
+pcagreen_ 1 
+Positive:  Grm5, Lrrc7, Rbfox1, Celf2, Cnksr2, Cacna1e, Pde10a, Kalrn, Cacnb2, Caln1 
+	   Neto1, Dlg2, Camk4, Dgkb, Kcnab1, Kcnq5, Dock3, Ppp3ca, Baiap2, Prkcb 
+	   Dpp6, Rnf150, Atp2b1, Unc79, Dtnb, Gabra4, Elmod1, Lmo7, Anks1b, Plcb1 
+Negative:  Itgav, Stard13, Prex1, Cdk19, Epb41l2, Strn, Tyro3, Npl, Ppp2r2a, Ramp1 
+	   Kremen1, Inka2, Kcna4, Prkd1, Slc6a6, Hlf, Rarb, Ppp1r1b, Ca12, Arel1 
+	   LOC100360828, Dpy19l3, Ptk2, Tiam2, Mark2, Nexn, Kctd1, Ankrd33b, Pdzd2, Lrrc8c 
+pcagreen_ 2 
+Positive:  Ppp1r1b, Adora2a, Rgs9, Prkd1, Nexn, Mpp7, Gng7, Gpr88, Rarb, Epb41l2 
+	   Pde7b, Stard13, Foxp1, Ramp1, Kremen1, Ca12, Itgav, Vav3, Pde1b, Pdzd2 
+	   Adcy5, Npl, LOC100360828, Prex1, Gnal, Strn, Wipf3, Smad3, Cdk19, Kctd1 
+Negative:  Anks1b, Dlg2, Lrrc7, Kalrn, Cacna1e, Celf2, Unc79, Rbfox1, Caln1, Grm5 
+	   Dock3, Rnf150, Homer1, Cnksr2, Prkcb, Dpp6, Cyfip2, Zfyve28, Sipa1l1, Cttnbp2 
+	   Zdhhc14, Tiam2, Cacnb2, Dtnb, Klhl2, Ankrd33b, Mark2, Ppp3ca, Arhgap32, Ryr3 
+pcagreen_ 3 
+Positive:  Ankrd33b, Rasgrp1, Tyro3, Tiam2, Rtn4rl1, Inka2, LOC100360828, Homer1, Epb41l2, Smad3 
+	   Zfyve28, Kremen1, Npas2, RGD1310819, Hlf, Adcy9, Atp2b1, Foxp1, Cdk19, Baiap2 
+	   AABR07027306.1, Itpr1, Prkcb, Arhgap32, Cnksr2, Klhl2, Mark2, Actn1, Strn, Rnf150 
+Negative:  Pde7b, Pde8b, Dpp6, Gnal, Prkd1, Anks1b, Cacnb2, Vav3, Dgkb, Gng7 
+	   Cyld, Kcnab1, Rbfox1, Gpr88, Unc79, Adcy5, Ryr3, Neto1, Wipf3, Dlg2 
+	   Grm5, Elmod1, Bcr, S100pbp, Dtnb, Ric8b, Cacna1e, Dock3, Ppp1r9a, Rgs9 
+pcagreen_ 4 
+Positive:  Anks1b, Dlg2, Slc6a6, Strn, Cttnbp2, Pdzd2, Zdhhc14, Gng7, Tyro3, Ppp2r2a 
+	   Ppp1r9a, Adcy5, Cyfip2, Stard13, Adora2a, Rgs9, Nexn, Gnal, Foxp1, Sipa1l1 
+	   LOC100360828, Pde1b, Mbnl2, Rbfox1, Pde10a, Klhl2, AABR07027306.1, Gpr88, Ryr3, Lrrc7 
+Negative:  Npas2, Dgkb, Celf2, Plcb1, Kalrn, Ca12, Npl, Pde7b, Caln1, Smpd3 
+	   Prex1, Vav3, Dpy19l3, Ptk2, Rtn4rl1, Pde8b, Hlf, Kctd1, Prkd1, Epb41l2 
+	   Mark2, Bcr, Gabra4, S100pbp, Unc79, Dpp6, Dock3, Rarb, Ppp3ca, Adcy9 
+pcagreen_ 5 
+Positive:  Gpr88, Itpr1, Rarb, Slc6a6, Rgs9, Gnal, Gabra4, Gng7, Atp2b1, Npl 
+	   Ppp3ca, Vav3, Baiap2, Prkcb, Slc24a4, Adcy9, Ppp1r1b, Elmod1, Fbxo34, Lrrc7 
+	   Epb41l2, Mpp7, Actn1, Plcb1, Cnksr2, Arel1, Pde1b, Pde2a, Kcnab1, LOC100360828 
+Negative:  Ryr3, Inka2, Itgav, Prkd1, Prex1, Ramp1, Anks1b, Ptk2, Pde7b, Stard13 
+	   Cttnbp2, Arl15, Neto1, Pdzd2, Ppp2r2a, Dpy19l3, Tyro3, Dgkb, Kcnq5, Cyfip2 
+	   Wipf3, Cacna1e, Cdk19, Npas2, Pde10a, Lrrc8c, Tiam2, Camk4, Ppp1r9a, Arhgap32 
+Transposing data matrix
+Initializing state using k-means centroids initialization
+Harmony 1/10
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Harmony 2/10
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Harmony converged after 2 iterations
+Centering and scaling data matrix
+  |                                                                              |                                                                      |   0%  |                                                                              |======================================================================| 100%
+Warning in svd.function(A = t(x = object), nv = npcs, ...) :
+  You're computing too large a percentage of total singular values, use a standard svd instead.
+pcadarkred_ 1 
+Positive:  Lrfn5, Ahi1, Nell1, Pak3, Cacna1g, Baiap3, Scn5a, Rtn3, Sema4a, Ephb2 
+	   Ptpru, Trappc9, Dhcr24, Enah, Parp8 
+Negative:  Fads2, Parvb, Kndc1, Samd4a, Rnf182, Zfp423, Sqle, Sc5d, Plekha7, Tbc1d1 
+	   Srebf2, Hmgcr, Tnfrsf21, Pnma3, AABR07044049.1 
+pcadarkred_ 2 
+Positive:  Lrfn5, Pak3, Ahi1, Rtn3, Kndc1, Nell1, Tnfrsf21, Cacna1g, Ptpru, Ephb2 
+	   Baiap3, Pnma3, Scn5a, Trappc9, Sc5d 
+Negative:  Fads2, Enah, Zfp423, Samd4a, Parvb, Rnf182, Plekha7, Tbc1d1, Srebf2, Hmgcr 
+	   Sqle, AABR07044049.1, Parp8, Sema4a, Dhcr24 
+pcadarkred_ 3 
+Positive:  Ptpru, Hmgcr, Srebf2, Dhcr24, Sqle, Cacna1g, Sc5d, Tnfrsf21, Plekha7, Trappc9 
+	   Sema4a, Rtn3, Fads2, Parvb, Rnf182 
+Negative:  Samd4a, Scn5a, Baiap3, Zfp423, Ahi1, Pak3, Nell1, Parp8, Ephb2, AABR07044049.1 
+	   Pnma3, Lrfn5, Enah, Tbc1d1, Kndc1 
+pcadarkred_ 4 
+Positive:  Kndc1, Sc5d, Sqle, Srebf2, Baiap3, Scn5a, AABR07044049.1, Dhcr24, Hmgcr, Samd4a 
+	   Pnma3, Parvb, Pak3, Zfp423, Fads2 
+Negative:  Tnfrsf21, Tbc1d1, Ptpru, Enah, Lrfn5, Trappc9, Sema4a, Parp8, Cacna1g, Rnf182 
+	   Ephb2, Ahi1, Nell1, Rtn3, Plekha7 
+pcadarkred_ 5 
+Positive:  Parvb, Sema4a, Tbc1d1, Kndc1, Tnfrsf21, Scn5a, Zfp423, Baiap3, Cacna1g, Nell1 
+	   AABR07044049.1, Plekha7, Ptpru, Pnma3, Fads2 
+Negative:  Parp8, Sqle, Samd4a, Ephb2, Sc5d, Hmgcr, Rnf182, Enah, Lrfn5, Pak3 
+	   Rtn3, Ahi1, Trappc9, Srebf2, Dhcr24 
+Transposing data matrix
+Initializing state using k-means centroids initialization
+Harmony 1/10
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Harmony converged after 1 iterations
+Centering and scaling data matrix
+  |                                                                              |                                                                      |   0%  |                                                                              |======================================================================| 100%
+Warning in svd.function(A = t(x = object), nv = npcs, ...) :
+  You're computing too large a percentage of total singular values, use a standard svd instead.
+Warning in svd.function(A = t(x = object), nv = npcs, ...) :
+  did not converge--results might be invalid!; try increasing work or maxit
+pcacyan_ 1 
+Positive:  Ptprk, Klhdc10, Cfap69, Bbs5, Zmym4, RGD1307443, Usp22, Ankrd13d, Dnah9, Copg2 
+	   Rab36, Fam81a, Taf1d, Plppr2, Iqce, Zer1, Fus, Blvrb, Ppil6, Nnat 
+	   Celf6, AABR07039316.1, Ift122, Stpg1, Scml4, Ankrd6 
+Negative:  Mettl7a, Clmn, Smo, Elovl2, Tmem159, Ak4, Grik4, Sec24d, Gramd1c, AABR07029581.1 
+	   Amotl1, Shisal1, RGD1359634, Tmem234, Ccdc191, Zmiz1, Lasp1, Cmtr1, Ttc8, Dgke 
+	   Nme5, Rsph10b, Unc5a, Kantr, Nrp1, Fip1l1 
+pcacyan_ 2 
+Positive:  Elovl2, Smo, Scml4, Ak4, Ankrd6, Nnat, Nrp1, Zmiz1, Lasp1, Amotl1 
+	   Blvrb, Ift122, Ccdc191, Tmem234, Rab36, Rsph10b, Cmtr1, Zmym4, Gramd1c, Shisal1 
+	   Ttc8, Tmem159, RGD1359634, Ankrd13d, Nme5, Fip1l1 
+Negative:  Mettl7a, AABR07029581.1, Grik4, Clmn, Usp22, Ptprk, Copg2, Zer1, Taf1d, Unc5a 
+	   RGD1307443, Bbs5, Fus, Fam81a, Cfap69, Iqce, Klhdc10, Dnah9, Stpg1, Sec24d 
+	   Ppil6, Celf6, AABR07039316.1, Dgke, Plppr2, Kantr 
+pcacyan_ 3 
+Positive:  Clmn, Mettl7a, Scml4, Elovl2, Ak4, Rsph10b, AABR07029581.1, Nrp1, Tmem159, Smo 
+	   Grik4, Dnah9, Ppil6, Rab36, Amotl1, Stpg1, RGD1307443, Blvrb, Ccdc191, Nme5 
+	   Fam81a, Celf6, Tmem234, Ift122, Unc5a, RGD1359634 
+Negative:  Shisal1, Ankrd6, Zmiz1, Zmym4, Usp22, Plppr2, Fip1l1, Ptprk, Klhdc10, Copg2 
+	   Dgke, Fus, Taf1d, Ttc8, Kantr, Bbs5, Cfap69, Ankrd13d, Lasp1, Gramd1c 
+	   Iqce, Sec24d, Nnat, Cmtr1, Zer1, AABR07039316.1 
+pcacyan_ 4 
+Positive:  Grik4, Shisal1, Amotl1, Zmiz1, Gramd1c, Smo, Fip1l1, Ptprk, Nnat, Tmem159 
+	   Cmtr1, Sec24d, Fus, AABR07029581.1, Zmym4, Ttc8, Clmn, Elovl2, Klhdc10, Mettl7a 
+	   Copg2, Ccdc191, Kantr, Unc5a, Tmem234, Celf6 
+Negative:  Fam81a, Ankrd13d, Blvrb, RGD1307443, Bbs5, Nme5, Usp22, RGD1359634, Iqce, Ppil6 
+	   Dnah9, Rab36, Dgke, Nrp1, Taf1d, Cfap69, Scml4, Ak4, Zer1, Ankrd6 
+	   Plppr2, AABR07039316.1, Stpg1, Ift122, Lasp1, Rsph10b 
+pcacyan_ 5 
+Positive:  Unc5a, Zmiz1, Ak4, Fam81a, Shisal1, Ptprk, Lasp1, Ankrd6, Dnah9, Sec24d 
+	   Plppr2, AABR07029581.1, Clmn, Blvrb, RGD1307443, RGD1359634, Mettl7a, Fip1l1, Gramd1c, Rsph10b 
+	   Cmtr1, Zer1, Nnat, Nme5, Stpg1, Tmem159 
+Negative:  Amotl1, Copg2, Rab36, Celf6, Klhdc10, Ttc8, Elovl2, Scml4, Grik4, Zmym4 
+	   Cfap69, Kantr, AABR07039316.1, Fus, Ccdc191, Smo, Ankrd13d, Iqce, Ift122, Taf1d 
+	   Tmem234, Usp22, Bbs5, Ppil6, Dgke, Nrp1 
+Transposing data matrix
+Initializing state using k-means centroids initialization
+Harmony 1/10
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Harmony converged after 1 iterations
+Centering and scaling data matrix
+  |                                                                              |                                                                      |   0%  |                                                                              |======================================================================| 100%
+Warning in svd.function(A = t(x = object), nv = npcs, ...) :
+  You're computing too large a percentage of total singular values, use a standard svd instead.
+pcagreenyellow_ 1 
+Positive:  Grip1, Col19a1, Ptchd4, Alk, Vwc2, Nxph1, Aak1, Cit, Il1rapl2, Lgi2 
+	   Tcf4, Rnf144b, Tmem178a, Klhl32, Cplx1, Adcy1, Egfr, AABR07025368.1, Cemip, Moxd1 
+	   Arx, Pde3a, Slc6a1, Sox6, Scn1b, Sel1l3, Fgf9, Slc44a5, St5, Tmem131l 
+Negative:  Frmd5, Zeb2, Abtb2, Prr13, Rrbp1, Colgalt2, Zfp536, AABR07003030.2, Bcan, Nacc2 
+	   Nectin2, Syt3, Clec2l, Vegfa, Cerk, Plekho1, AABR07043564.1, Klf6, Nrsn1, Arhgap5 
+	   Slc6a7, Caprin2, Nt5c3b, Ppp1r14b, Inpp5j, Gpr22, Oxct1, Afap1, Haghl, Tcte1 
+pcagreenyellow_ 2 
+Positive:  Sox6, Bcan, Tcf4, Abtb2, Egfr, Vegfa, Nacc2, Slc6a1, St5, Colgalt2 
+	   Moxd1, Zeb2, Rrbp1, Pde3a, Nxph1, AABR07003030.2, Sel1l3, Zfp536, Alk, Arhgap5 
+	   Nectin2, Oxct1, Arx, Frmd5, Vwc2, Cerk, Afap1, Plekho1, Pygo1, Prr13 
+Negative:  Aak1, Il1rapl2, Grip1, Tmem178a, AABR07025368.1, Slc6a7, Cit, Scn1b, Fam174b, Adcy1 
+	   Gpr22, Syt3, Ptchd4, Tmem131l, Cemip, Haghl, Krt222, Nt5c3b, Fgf9, Nrsn1 
+	   Clec2l, Tcte1, Klf6, Cplx1, Col19a1, Rnf144b, Mindy2, Inpp5j, Klhl32, Caprin2 
+pcagreenyellow_ 3 
+Positive:  Bcan, Vegfa, Sox6, Klhl32, Cit, Nacc2, Pygo1, Aak1, Arhgap5, St5 
+	   Moxd1, Ptchd4, Nt5c3b, Oxct1, Sel1l3, Pnkd, Mindy2, Alk, Krt222, Haghl 
+	   Caprin2, Grip1, Tmem131l, Arx, Egfr, Slc6a1, Ppp1r14b, Nrsn1, Fgf9, AABR07025368.1 
+Negative:  Zeb2, AABR07003030.2, Zfp536, Frmd5, AABR07043564.1, Tcf4, Col19a1, Nxph1, Klf6, Pde3a 
+	   Tmem178a, Rnf144b, Il1rapl2, Inpp5j, Adcy1, Prr13, Afap1, Slc6a7, Gpr22, Abtb2 
+	   Scn1b, Lgi2, Plekho1, Cplx1, Clec2l, Nectin2, Cemip, Rrbp1, Cerk, Vwc2 
+pcagreenyellow_ 4 
+Positive:  Tmem178a, Il1rapl2, Slc6a7, Tcf4, Zeb2, Klf6, Sel1l3, Gpr22, Adcy1, Mindy2 
+	   Aak1, Bcan, Vegfa, Colgalt2, Plekho1, St5, Arhgap5, Rnf144b, Tcte1, Rrbp1 
+	   Prr13, Moxd1, Krt222, Col19a1, Scn1b, Clec2l, Fam174b, Sox6, Haghl, Pde3a 
+Negative:  Ptchd4, Alk, AABR07003030.2, Arx, Vwc2, Lgi2, Zfp536, Slc44a5, Fgf9, Klhl32 
+	   Frmd5, Slc6a1, Nxph1, Cit, Pygo1, Cplx1, Nectin2, AABR07043564.1, Grip1, Afap1 
+	   Pnkd, Inpp5j, Syt3, Nrsn1, Cemip, Tmem131l, Ppp1r14b, Caprin2, Nt5c3b, Abtb2 
+pcagreenyellow_ 5 
+Positive:  Abtb2, Pde3a, Nxph1, Sox6, Rnf144b, Ppp1r14b, Slc44a5, Vwc2, Colgalt2, Cit 
+	   Tmem131l, Krt222, Klhl32, Nectin2, Pygo1, Grip1, Il1rapl2, Nt5c3b, Caprin2, Tcte1 
+	   Plekho1, Tcf4, Clec2l, Aak1, Tmem178a, Col19a1, AABR07025368.1, Klf6, Fam174b, Haghl 
+Negative:  Egfr, Sel1l3, Arhgap5, Moxd1, Alk, Oxct1, Arx, AABR07003030.2, Zfp536, Rrbp1 
+	   Vegfa, Fgf9, Cemip, Slc6a1, Ptchd4, AABR07043564.1, Adcy1, Mindy2, Nacc2, Pnkd 
+	   Cplx1, St5, Bcan, Syt3, Frmd5, Zeb2, Nrsn1, Lgi2, Scn1b, Inpp5j 
+Transposing data matrix
+Initializing state using k-means centroids initialization
+Harmony 1/10
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Harmony converged after 1 iterations
+Centering and scaling data matrix
+  |                                                                              |                                                                      |   0%  |                                                                              |======================================================================| 100%
+Warning in svd.function(A = t(x = object), nv = npcs, ...) :
+  You're computing too large a percentage of total singular values, use a standard svd instead.
+Warning in svd.function(A = t(x = object), nv = npcs, ...) :
+  did not converge--results might be invalid!; try increasing work or maxit
+pcalightgreen_ 1 
+Positive:  Grm7, Erc2, Kcnma1, Mctp1, Dapk1, Fstl4, Bcl11b, Plxna2, Epha4, Slc35f3 
+	   Nrg1, Nebl, Ablim2, Strip2, Shisa7, Adarb1, Camkk2, Syt7, Rap1gap, Ap2a2 
+Negative:  Tec, Mcu, Agfg2, Sgk1, Ephb1, Spata13, Mbnl1, Arhgap6, Fam184b, Acap2 
+	   Lpcat2, Ubtd2, Zfhx3, Mapk1, Mipol1, Sec14l1, Prkch, Gulp1, Trerf1 
+pcalightgreen_ 2 
+Positive:  Kcnma1, Erc2, Grm7, Ablim2, Shisa7, Syt7, Acap2, Slc35f3, Mapk1, Dapk1 
+	   Ap2a2, Mctp1, Plxna2, Mcu, Mipol1, Adarb1, Bcl11b, Nrg1, Trerf1, Nebl 
+Negative:  Spata13, Zfhx3, Strip2, Mbnl1, Sgk1, Ephb1, Prkch, Tec, Gulp1, Arhgap6 
+	   Sec14l1, Rap1gap, Lpcat2, Epha4, Fstl4, Fam184b, Agfg2, Ubtd2, Camkk2 
+pcalightgreen_ 3 
+Positive:  Lpcat2, Tec, Mbnl1, Zfhx3, Mctp1, Adarb1, Erc2, Ap2a2, Syt7, Bcl11b 
+	   Plxna2, Shisa7, Acap2, Slc35f3, Grm7, Camkk2, Mapk1, Dapk1, Spata13, Kcnma1 
+Negative:  Ephb1, Gulp1, Sgk1, Agfg2, Nebl, Sec14l1, Mcu, Strip2, Rap1gap, Epha4 
+	   Prkch, Fstl4, Arhgap6, Fam184b, Ablim2, Nrg1, Mipol1, Ubtd2, Trerf1 
+pcalightgreen_ 4 
+Positive:  Sgk1, Spata13, Camkk2, Fam184b, Syt7, Ap2a2, Strip2, Bcl11b, Ablim2, Erc2 
+	   Shisa7, Slc35f3, Fstl4, Rap1gap, Trerf1, Sec14l1, Dapk1, Adarb1, Grm7, Mctp1 
+Negative:  Gulp1, Nebl, Agfg2, Tec, Zfhx3, Acap2, Ephb1, Mcu, Ubtd2, Mapk1 
+	   Mipol1, Prkch, Kcnma1, Lpcat2, Nrg1, Mbnl1, Epha4, Arhgap6, Plxna2 
+pcalightgreen_ 5 
+Positive:  Ephb1, Nrg1, Epha4, Ubtd2, Tec, Adarb1, Ablim2, Mipol1, Sgk1, Prkch 
+	   Trerf1, Grm7, Zfhx3, Dapk1, Plxna2, Bcl11b, Slc35f3, Shisa7, Gulp1, Fstl4 
+Negative:  Mcu, Agfg2, Sec14l1, Rap1gap, Acap2, Camkk2, Mbnl1, Strip2, Spata13, Ap2a2 
+	   Fam184b, Arhgap6, Kcnma1, Nebl, Lpcat2, Syt7, Mctp1, Mapk1, Erc2 
+Transposing data matrix
+Initializing state using k-means centroids initialization
+Harmony 1/10
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Harmony converged after 1 iterations
+Centering and scaling data matrix
+  |                                                                              |                                                                      |   0%  |                                                                              |======================================================================| 100%
+Warning in svd.function(A = t(x = object), nv = npcs, ...) :
+  You're computing too large a percentage of total singular values, use a standard svd instead.
+Warning in svd.function(A = t(x = object), nv = npcs, ...) :
+  did not converge--results might be invalid!; try increasing work or maxit
+pcagrey60_ 1 
+Positive:  Rgs20, Ston2, Arhgef2, Cdh6, Cdk6, Ppm1b, Elmo1, AABR07052441.1, Chn2, Kdm6a 
+	   Cux1, Psd3, Cipc, Lrp12, C2cd2l, Ksr1, Tmtc1, Patj, Dpf1, Agap2 
+	   Ppp1r12a 
+Negative:  Dclk1, Ano3, Nkain2, AABR07035916.1, Nell2, Pcdha13, Synpr, Cacna2d3, Msra, Cacnb4 
+	   Plppr4, Arf3, Camk1d, Otof, Fry, AABR07030521.1, Sez6, Glce, Slc8a2, Icam5 
+	   Kcnh3 
+pcagrey60_ 2 
+Positive:  Rgs20, Ston2, Cacna2d3, Fry, Camk1d, AABR07052441.1, Tmtc1, Ppp1r12a, Cux1, Ksr1 
+	   Sez6, Cdk6, Lrp12, Ppm1b, Patj, Synpr, Kdm6a, AABR07030521.1, Otof, Dpf1 
+	   Kcnh3 
+Negative:  Nkain2, Elmo1, Arhgef2, Chn2, Dclk1, Cipc, AABR07035916.1, Nell2, Psd3, Icam5 
+	   Arf3, C2cd2l, Cacnb4, Agap2, Pcdha13, Msra, Ano3, Glce, Slc8a2, Plppr4 
+	   Cdh6 
+pcagrey60_ 3 
+Positive:  Slc8a2, Arf3, Dclk1, Msra, Plppr4, Icam5, Fry, Nell2, Agap2, Kcnh3 
+	   Pcdha13, Cipc, Dpf1, C2cd2l, Nkain2, Ppp1r12a, Sez6, Cacnb4, AABR07030521.1, Ano3 
+	   Psd3 
+Negative:  Chn2, Elmo1, Cux1, Synpr, Otof, Patj, Cdk6, Ksr1, Kdm6a, Lrp12 
+	   Cdh6, Ston2, Ppm1b, Tmtc1, AABR07035916.1, AABR07052441.1, Arhgef2, Cacna2d3, Rgs20, Camk1d 
+	   Glce 
+pcagrey60_ 4 
+Positive:  Psd3, Arhgef2, Cdh6, AABR07052441.1, Ppp1r12a, Msra, Tmtc1, Nell2, Nkain2, Rgs20 
+	   Elmo1, Ppm1b, Slc8a2, Camk1d, Kdm6a, Ston2, Cipc, Ano3, Cdk6, Cacnb4 
+	   AABR07035916.1 
+Negative:  Ksr1, Sez6, Glce, Dpf1, Icam5, Cux1, Synpr, Cacna2d3, C2cd2l, Arf3 
+	   Chn2, Agap2, Pcdha13, Patj, AABR07030521.1, Otof, Plppr4, Fry, Kcnh3, Lrp12 
+	   Dclk1 
+pcagrey60_ 5 
+Positive:  Cdk6, Camk1d, Icam5, Arhgef2, Kcnh3, C2cd2l, Nell2, Ston2, Slc8a2, Otof 
+	   Kdm6a, Ano3, Msra, Chn2, Lrp12, Ksr1, Arf3, Agap2, Dpf1, Elmo1 
+	   Cipc 
+Negative:  Ppm1b, Cdh6, Pcdha13, Sez6, Glce, Psd3, Cacnb4, Cux1, AABR07035916.1, Fry 
+	   Dclk1, Tmtc1, Cacna2d3, Synpr, Nkain2, Patj, AABR07052441.1, Rgs20, Plppr4, AABR07030521.1 
+	   Ppp1r12a 
+Transposing data matrix
+Initializing state using k-means centroids initialization
+Harmony 1/10
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Harmony converged after 1 iterations
+Centering and scaling data matrix
+  |                                                                              |                                                                      |   0%  |                                                                              |======================================================================| 100%
+Warning in svd.function(A = t(x = object), nv = npcs, ...) :
+  You're computing too large a percentage of total singular values, use a standard svd instead.
+pcared_ 1 
+Positive:  AABR07066379.1, LOC302192, Disp2, Bcat1, Tmx4, Gpr162, Rhbdl1, Pld3, Chd5, Podxl2 
+	   Stmn2, Nap1l5, Ina, Sv2a, Gprasp1, Ywhag, Tmem145, Abhd8, Mfsd4a, Vps37d 
+	   Tcf25, Flywch1, Ube2ql1, Ece2, Atp6v1a, Fam241b, Glrb, Itfg1, Cd200, Gas6 
+Negative:  Atp1b2, Arhgef40, Ctsd, Pak1, Enho, Msmo1, Pcbp4, Camk2g, Fbxo2, Fdft1 
+	   Hes6, Pdgfa, Ccdc28b, Ninj1, Pofut2, Kcna6, Phlda3, Idi1, Arl8a, Cib2 
+	   Dynlt1, Hsbp1, Gyg1, LOC102556337, G6pc3, Map2k2, Efhd2, Mtfp1, Ifitm10, Hmgcs1 
+pcared_ 2 
+Positive:  Bcat1, Pak1, Kcna6, AABR07066379.1, LOC302192, Sv2a, Ina, Disp2, Glrb, Pdgfa 
+	   Tmx4, Gpr162, Chd5, Ywhag, Cd200, Gprasp1, Dusp26, Stmn2, LOC690617, Ube2ql1 
+	   Fam241b, Vps37d, Ece2, Mfsd4a, Rogdi, Arl2bp, Rell2, Emc9, Podxl2, Pcbp4 
+Negative:  Atp1b2, Camk2g, Enho, Msmo1, Arhgef40, Fdft1, Ccdc28b, Hmgcs1, Hes6, Gkap1 
+	   Hmgn3, Fbxo2, Idi1, Ctsd, Prmt2, Slc35g2, Ckap4, G6pc3, Fdps, Efhd2 
+	   Shd, Cib2, Mtfp1, Gyg1, Alg2, Pgp, Slc7a3, Map2k2, LOC102556337, Nap1l5 
+pcared_ 3 
+Positive:  Camk2g, Ece2, Podxl2, Arhgef40, Tmx4, Disp2, AABR07066379.1, Gprasp1, Gkap1, Atp1b2 
+	   Vps37d, Ccdc28b, Emc9, Gpr162, LOC302192, Chd5, Itfg1, Ache, Dynlt1, Abhd8 
+	   Ina, Ifitm10, Inafm1, Rhbdl1, Cd83, Pld3, Gprasp2, Tmem145, Alg2, Cygb 
+Negative:  Pak1, Kcna6, Pcbp4, Pdgfa, Arl8a, Hmgcs1, Msmo1, Fdft1, Hsbp1, Atf4 
+	   Idi1, Fdps, Pgp, Cend1, Rnf14, Fbxo2, Efhd2, Phlda3, Ctsd, Hmgn3 
+	   Mfsd4a, Ninj1, Dusp26, AABR07045680.1, Ywhag, Hes6, Ube2ql1, Mtfp1, Canx, Prkaca 
+pcared_ 4 
+Positive:  Mfsd4a, Ube2ql1, Efhd2, LOC302192, Gpr162, LOC690617, AABR07066379.1, Camk2g, Hmgcs1, Mtfp1 
+	   Chd5, Atp6v1a, Msmo1, Ywhag, Stmn2, Fam241b, Idi1, Vps37d, Prmt2, Disp2 
+	   Fdps, Atp1b2, Ina, Tcf25, Gas6, Pld3, Tmem145, Hes6, Rell2, Abhd8 
+Negative:  Nap1l5, Phlda3, Ece2, Ache, Podxl2, Inafm1, Ifitm10, Ctsd, Pak1, Flywch1 
+	   Cygb, Gprasp1, Cd83, Slc35g2, Slc7a3, Kcna6, Arhgef40, Shd, Alg2, Dusp26 
+	   Pcbp4, Dynlt1, Magee1, Tmem246, Bcat1, Rxylt1, Hmgn3, Tmx4, Canx, Gprasp2 
+pcared_ 5 
+Positive:  Fdft1, Msmo1, Idi1, Hmgcs1, Gkap1, Pak1, Fdps, Rxylt1, Gprasp1, Itfg1 
+	   Slc7a3, Tmx4, Glrb, Podxl2, Camk2g, Pcbp4, Bcat1, Ece2, Disp2, Atp1b2 
+	   Pdgfa, Gprasp2, Cd200, Prmt2, Rhbdl1, Chd5, Gyg1, Ache, Kcna6, Hes6 
+Negative:  Ctsd, Gas6, Cend1, Atf4, Rell2, Ckap4, Hsbp1, Fbxo2, Slc35g2, AABR07045680.1 
+	   Enho, Cygb, Arhgef40, LOC690617, Efhd2, Cib2, Pgp, Mtfp1, Shd, Lynx1 
+	   Ninj1, Gpr162, Pofut2, Arl2bp, Mfsd4a, Tmem145, Hmgn3, Inafm1, Ifitm10, Tmem246 
+Transposing data matrix
+Initializing state using k-means centroids initialization
+Harmony 1/10
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Harmony converged after 1 iterations
+Centering and scaling data matrix
+  |                                                                              |                                                                      |   0%  |                                                                              |======================================================================| 100%
+Warning in svd.function(A = t(x = object), nv = npcs, ...) :
+  You're computing too large a percentage of total singular values, use a standard svd instead.
+pcapink_ 1 
+Positive:  Scd2, Nckap5, Foxn3, Sh3d19, Fermt2, Rab31, Sntb1, Adgrg1, Tram1, Cdk18 
+	   Dennd3, Hdac1, Adarb2, Apbb1, Adcyap1r1, Nelfb, Zfp512, Ubqln1, RGD1309104, Atn1 
+	   Sncaip, Nrip2, Tnks1bp1, Optn, Sfxn1, Stat5b, Chpt1, Grm2, Lrrc4b, Pex14 
+Negative:  Kcnj3, Ppm1e, Cpne4, Tmem130, Cadps2, Fstl5, Frmd3, Nrp2, Gabra3, Cacng2 
+	   Osbpl6, Ntng1, App, Susd4, Sidt1, Cadm3, Glra2, Hpcal4, Kcnk10, Kcnj6 
+	   Tmem266, Fyn, AABR07006724.1, Ncald, Ttc39c, RGD1560034, Usp29, Drc1, Spata7, Crmp1 
+pcapink_ 2 
+Positive:  Tmeff2, Scd2, App, Apbb1, Sh3gl3, Sntg1, Cdk18, Ncald, Nptx1, Ssbp3 
+	   Sh3d19, Hpcal4, Foxn3, Sidt1, Cpne4, Ubqln1, Grm2, Glra2, RGD1560034, Kcnj6 
+	   Cadps2, Kcnj3, Cds1, Lrrc4b, AABR07006724.1, Tmem130, Kcnk10, Pom121, Cacng2, Crmp1 
+Negative:  Nckap5, Adgrg1, Sntb1, Sncaip, Adcyap1r1, Fyn, AABR07001068.1, Chpt1, RGD1309104, Stat5b 
+	   Rab31, Fermt2, Zbtb7c, Grin3a, Dennd3, Plcb4, Osbpl6, Spata7, Ppm1e, Optn 
+	   Atxn10, Sfxn1, Ttc39c, Pex14, Sae1, Fndc3a, Zfp512, Hdac1, Fstl5, Efr3a 
+pcapink_ 3 
+Positive:  Nptx1, Grm2, Kcnj6, Sidt1, Cpne4, Ssbp3, Rab31, Cadps2, Ppm1e, RGD1560034 
+	   Dennd3, Tnks1bp1, Tmem266, Kcnk10, Ncald, Acsl4, Hpcal4, Plxna1, Efr3a, Cdk18 
+	   Osbpl6, Drc1, Kcnj3, AABR07001068.1, AABR07020966.1, Zfp512, Sntb1, Gabra3, Spata7, Atn1 
+Negative:  Adarb2, Sntg1, Grin3a, Sh3d19, Tmeff2, Sncaip, Fndc3a, Usp29, Stat5b, Tmem130 
+	   Ttc39c, Lrrc4b, Plcb4, Fyn, Scd2, App, Frmd3, Usp11, Fstl5, Nrip2 
+	   Nckap5, Chpt1, Adcyap1r1, Atxn10, Ubqln1, Hdac1, Optn, Pcbp3, Apbb1, Sh3gl3 
+pcapink_ 4 
+Positive:  Sh3d19, Rab31, Scd2, Fermt2, Nckap5, Foxn3, Adarb2, Tmeff2, Grin3a, Ncald 
+	   AABR07001068.1, RGD1309104, Kcnk10, Kcnj6, Sntg1, Fyn, Cdk18, Cpne4, Sntb1, Ssbp3 
+	   Cadps2, Optn, Apbb1, Nptx1, Tram1, Ppm1e, Grm2, Hdac1, Plcb4, Sh3gl3 
+Negative:  Tmem130, Usp29, Fstl5, Ttc39c, Pom121, Usp11, Frmd3, Crmp1, Pex14, Stat5b 
+	   Cacng2, Hpcal4, Kcnj3, Atxn10, App, Cadm3, Nrip2, Cds1, Spata7, Sncaip 
+	   AABR07006724.1, Sae1, Sfxn1, Pcbp3, Osbpl6, Ubqln1, Glra2, Fndc3a, Ntng1, Atn1 
+pcapink_ 5 
+Positive:  Sh3d19, Grin3a, Ncald, Adarb2, Fyn, Efr3a, Frmd3, RGD1309104, Dennd3, Ppm1e 
+	   AABR07001068.1, Sntg1, RGD1560034, Pcbp3, Gabra3, Susd4, Acsl4, Sae1, Cadps2, Kcnj3 
+	   Kcnk10, Atxn10, Nptx1, Chpt1, Stat5b, Pex14, Sidt1, Fndc3a, Spata7, Ttc39c 
+Negative:  Zbtb7c, Sntb1, Scd2, Foxn3, Drc1, Sncaip, Optn, Cdk18, Adgrg1, Fermt2 
+	   Apbb1, AABR07020966.1, AABR07006724.1, Tmeff2, Ntng1, Adcyap1r1, Sfxn1, Sh3gl3, Usp29, Hpcal4 
+	   Nrp2, Lrrc4b, Plcb4, Cpne4, Tnks1bp1, Ubqln1, Plxna1, Cacng2, Glra2, Hdac1 
+Transposing data matrix
+Initializing state using k-means centroids initialization
+Harmony 1/10
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Harmony converged after 1 iterations
+Centering and scaling data matrix
+  |                                                                              |                                                                      |   0%  |                                                                              |======================================================================| 100%
+pcabrown_ 1 
+Positive:  LOC361016, Mfge8, Plpp3, Cldn10, Mmd2, Ubc, Aplp1, Sh3bgrl, Ptbp3, Btd 
+	   Nf1x, Sparcl1, Tmem200c, Hopx, Tgfa, Vcl, Tle3, Mt1, Peli2, Maoa 
+	   Map3k20, Ptms, Meis1, Pknox1, Ankrd28, Flrt1, Gdpd5, Mdga1, Snn, Ctbp2 
+Negative:  Foxp2, Grm8, Chst9, Rims2, Cntn5, Sphkap, Nkain3, Slc4a10, Kcnh5, Slc2a13 
+	   Atp2b4, Pbx3, Nsg2, Erbb4, Eya2, Lypd1, Vsnl1, Vwc2l, Cpne5, Syt5 
+	   Oprm1, Nrip3, Sntg2, Cux2, Brinp2, Pcdh19, Slc35f1, Lamp5, Chrna7, Tmem255a 
+pcabrown_ 2 
+Positive:  Aplp1, Pak7, LOC361016, St6galnac3, Slc4a10, Mef2c, Vsnl1, Cntn5, Tmem200c, Grm8 
+	   Brinp2, Hsph1, Syt5, Cx3cl1, Atp1a1, Matr3, Ubc, Rprml, Khdrbs3, Clstn1 
+	   Ptpn3, Snx30, Olfm1, Slc22a17, Slc2a13, Cpne5, Ptms, Tmem132a, Ptbp3, Oprm1 
+Negative:  Plpp3, Cldn10, Sparcl1, Gpm6a, Mfge8, Mmd2, Cdh10, Trpm3, Pard3b, Tox 
+	   Csgalnact1, Nfib, Map3k20, Meis1, Peli2, Sh3bgrl, Sdc2, March3, Vcl, Tspan9 
+	   Adcy2, Hopx, Wls, Ildr2, Nf1x, Sdk2, Chst9, Kcnip3, Btd, Eya2 
+pcabrown_ 3 
+Positive:  Brinp2, Slc4a10, Khdrbs3, Mef2c, Ptpn3, Clstn1, Rims2, Gpm6a, AABR07021704.1, Cdh10 
+	   Olfm1, Cx3cl1, Tmem132a, Akap11, Chrna7, Ildr2, Ipcef1, Lman2l, Cacnb3, Nab1 
+	   Rprml, Nsg2, Matr3, Sulf1, Sept5, Cntn5, Scamp1, Atp2b4, Hdgfl3, Vsnl1 
+Negative:  LOC361016, St6galnac3, Erbb4, Chst9, Aplp1, Foxp2, Eya2, Pak7, Ankrd28, Wls 
+	   Pbx3, Ubc, Meis1, Btd, Tmem200c, Tmem255a, Lypd1, Tgfa, Hacl1, Mpped2 
+	   Tspan9, Kcnh5, Gng4, Sntg2, Cux2, Lamp5, Zadh2, Plpp3, March3, Six3 
+pcabrown_ 4 
+Positive:  Nsg2, Nkain3, Pcdh19, Gpr137c, Rims2, Cntn5, Sdc2, Grm8, Sntg2, Pard3b 
+	   Slc22a17, Tmem255a, Vsnl1, Cpne5, Scamp1, Lamp5, Pbx3, Slc2a13, Matr3, Akap11 
+	   Kcnh5, Gng4, Six3, Hdgfl3, Sesn1, Map2k1, Meis1, Hsph1, Itm2c, Slc35f1 
+Negative:  Nfib, Khdrbs3, Nf1x, Olfm1, Pak7, Ptpn3, St6galnac3, LOC361016, Sulf1, Brinp2 
+	   Ipcef1, Aplp1, Ptpn14, Sept5, Nab1, Chrna7, Ankrd28, Tmem200c, Mef2c, Nrip3 
+	   Hopx, Klhdc8a, Wls, Atp1a1, Ptms, AABR07021704.1, Ubc, March3, Cdh10, Mpped2 
+pcabrown_ 5 
+Positive:  Aplp1, Ptms, Ubc, Prnp, Map2k1, Sparcl1, Rprml, Syt5, Cldn10, Tmem132a 
+	   Itm2c, Atp1a1, Atp2b4, Lamp5, Cpne5, Sept5, Gpm6a, LOC361016, Trpm3, Snn 
+	   Ppp2r1a, Cacnb3, Cx3cl1, Vsnl1, Sdc2, Akap11, Slc39a10, Rxrg, Vcl, Olfm1 
+Negative:  Slc35f1, Tgfa, Ptbp3, Kcnip3, Erbb4, Mpped2, Tox, Nfib, Ankrd28, Tmem255a 
+	   Cux2, Rims2, Gpr137c, Cdh10, Vwc2l, Nkain3, Nf1x, Khdrbs3, Adcy2, Brinp2 
+	   Snx30, Slc4a10, Chrna7, Flrt1, Slc2a13, Ctbp2, Peli2, Nab1, Chst9, Hdgfl3 
+Transposing data matrix
+Initializing state using k-means centroids initialization
+Harmony 1/10
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Harmony 2/10
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Harmony converged after 2 iterations
+Centering and scaling data matrix
+  |                                                                              |                                                                      |   0%  |                                                                              |======================================================================| 100%
+Warning in svd.function(A = t(x = object), nv = npcs, ...) :
+  You're computing too large a percentage of total singular values, use a standard svd instead.
+pcadarkturquoise_ 1 
+Positive:  Trps1, Adam10, Fnip2, Igf1r, Dgkd, Zfp608, Fam13c, Eprs, B4galt5, Pknox2 
+	   Dcx, Ptprt 
+Negative:  Cadps, Gabrb2, AABR07017145.2, Kcnc2, AABR07033184.1, Rgs17, March4, Apba2, Vstm2a, Plppr5 
+	   Amph, Inpp4b 
+pcadarkturquoise_ 2 
+Positive:  Trps1, Zfp608, Ptprt, Dgkd, Igf1r, Asph, Adam10, Pknox2, Fnip2, Plppr5 
+	   Kcnc2, AABR07033184.1 
+Negative:  Fam13c, B4galt5, March4, AABR07017145.2, Cadps, Rgs17, Vstm2a, Apba2, Gabrb2, Inpp4b 
+	   Amph, Eprs 
+pcadarkturquoise_ 3 
+Positive:  AABR07033184.1, Kcnc2, Zfp608, Ptprt, Rgs17, Dcx, Gabrb2, Plppr5, Asph, Vstm2a 
+	   March4, Trps1 
+Negative:  Adam10, Igf1r, Fnip2, Fam13c, Apba2, Amph, B4galt5, AABR07017145.2, Inpp4b, Eprs 
+	   Pknox2, Cadps 
+pcadarkturquoise_ 4 
+Positive:  Fam13c, Pknox2, Dgkd, Zfp608, Eprs, March4, Trps1, Apba2, Amph, Vstm2a 
+	   Asph, B4galt5 
+Negative:  Fnip2, Dcx, Inpp4b, Igf1r, Plppr5, Ptprt, Kcnc2, Gabrb2, AABR07033184.1, Adam10 
+	   Cadps, AABR07017145.2 
+pcadarkturquoise_ 5 
+Positive:  Plppr5, Ptprt, Fam13c, Zfp608, Igf1r, Apba2, Pknox2, Dcx, Cadps, AABR07017145.2 
+	   Amph, AABR07033184.1 
+Negative:  Dgkd, B4galt5, Asph, Inpp4b, Eprs, Rgs17, Adam10, Vstm2a, Fnip2, March4 
+	   Trps1, Gabrb2 
+Transposing data matrix
+Initializing state using k-means centroids initialization
+Harmony 1/10
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Harmony converged after 1 iterations
+Centering and scaling data matrix
+  |                                                                              |                                                                      |   0%  |                                                                              |======================================================================| 100%
+Warning in svd.function(A = t(x = object), nv = npcs, ...) :
+  You're computing too large a percentage of total singular values, use a standard svd instead.
+Warning in svd.function(A = t(x = object), nv = npcs, ...) :
+  did not converge--results might be invalid!; try increasing work or maxit
+pcalightyellow_ 1 
+Positive:  Map4k4, Agpat4, Pnpla7, Pxk, Wwp1, Epb41l4a, Zfhx2, Cyp26b1, Slc6a11, Glis3 
+	   Cdc14a, AABR07025295.1, Spast, Pik3cb, Tmcc3, Mrps6, Eps8, Rnf19a, Fam13a, Epb41l4b 
+Negative:  Hdac9, Cers6, Sox5, Vat1l, Ptpro, Gpc3, Thsd7b, Ubash3b, Palmd, Pdzrn3 
+	   Akap9, Tox2, Hdac4, Ankrd55, Ncdn, Fgfr1, Smarca1, Maml2, Herc3 
+pcalightyellow_ 2 
+Positive:  Glis3, Maml2, Pdzrn3, Cdc14a, Pnpla7, Eps8, Slc6a11, Sox5, Tmcc3, Fgfr1 
+	   Epb41l4a, AABR07025295.1, Fam13a, Hdac4, Wwp1, Map4k4, Hdac9, Cyp26b1, Palmd, Gpc3 
+Negative:  Cers6, Agpat4, Zfhx2, Thsd7b, Epb41l4b, Smarca1, Ptpro, Akap9, Ankrd55, Ncdn 
+	   Tox2, Vat1l, Pxk, Spast, Pik3cb, Rnf19a, Mrps6, Ubash3b, Herc3 
+pcalightyellow_ 3 
+Positive:  Ankrd55, Ubash3b, Tmcc3, Tox2, Vat1l, Ptpro, Eps8, Maml2, Fgfr1, Pxk 
+	   Pik3cb, Ncdn, Cdc14a, Pnpla7, Herc3, Smarca1, Wwp1, Akap9, Fam13a, Cers6 
+Negative:  Sox5, Agpat4, AABR07025295.1, Palmd, Pdzrn3, Cyp26b1, Thsd7b, Zfhx2, Mrps6, Epb41l4b 
+	   Hdac4, Rnf19a, Map4k4, Gpc3, Glis3, Epb41l4a, Slc6a11, Spast, Hdac9 
+pcalightyellow_ 4 
+Positive:  AABR07025295.1, Thsd7b, Cers6, Tox2, Smarca1, Herc3, Eps8, Hdac4, Slc6a11, Akap9 
+	   Rnf19a, Glis3, Spast, Fam13a, Vat1l, Maml2, Epb41l4a, Ncdn, Cdc14a, Pnpla7 
+Negative:  Tmcc3, Map4k4, Epb41l4b, Agpat4, Pxk, Gpc3, Hdac9, Palmd, Ubash3b, Wwp1 
+	   Fgfr1, Pdzrn3, Zfhx2, Sox5, Ptpro, Pik3cb, Mrps6, Cyp26b1, Ankrd55 
+pcalightyellow_ 5 
+Positive:  Epb41l4b, Tox2, Wwp1, Eps8, Epb41l4a, Agpat4, Vat1l, Cdc14a, Slc6a11, Mrps6 
+	   Zfhx2, Ncdn, Ptpro, Glis3, Pdzrn3, Fam13a, Spast, Akap9, Hdac4, Map4k4 
+Negative:  Tmcc3, AABR07025295.1, Thsd7b, Hdac9, Pik3cb, Fgfr1, Sox5, Maml2, Ankrd55, Palmd 
+	   Gpc3, Pxk, Ubash3b, Cyp26b1, Cers6, Rnf19a, Smarca1, Herc3, Pnpla7 
+Transposing data matrix
+Initializing state using k-means centroids initialization
+Harmony 1/10
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Harmony converged after 1 iterations
+Centering and scaling data matrix
+  |                                                                              |                                                                      |   0%  |                                                                              |======================================================================| 100%
+Warning in svd.function(A = t(x = object), nv = npcs, ...) :
+  You're computing too large a percentage of total singular values, use a standard svd instead.
+Warning in svd.function(A = t(x = object), nv = npcs, ...) :
+  did not converge--results might be invalid!; try increasing work or maxit
+pcaroyalblue_ 1 
+Positive:  LOC108348175, Creb5, St18, Frmd4b, Chd7, Prrx1, Mitf, Grk4, Lima1, Yes1 
+	   Slc7a11, Adamts6, Abcd2, Etv1, Rbp4, Calb1 
+Negative:  Nrcam, Rasal2, Cntn4, Pam, LOC100125362, Evi5, Efnb2, March11, Htr2a, Tmem41a 
+	   Adamts17, Rasgrp2, Igsf3, Galnt7, Lrrc4 
+pcaroyalblue_ 2 
+Positive:  Prrx1, Slc7a11, Abcd2, Nrcam, Cntn4, Etv1, LOC108348175, Grk4, Mitf, Chd7 
+	   Adamts17, Lima1, Evi5, Yes1, Galnt7, Adamts6 
+Negative:  St18, Rasal2, Efnb2, Igsf3, Htr2a, Calb1, Tmem41a, LOC100125362, Pam, March11 
+	   Creb5, Rbp4, Rasgrp2, Frmd4b, Lrrc4 
+pcaroyalblue_ 3 
+Positive:  Slc7a11, Abcd2, Nrcam, Prrx1, Evi5, Cntn4, Rasal2, Efnb2, Galnt7, Htr2a 
+	   Rasgrp2, LOC108348175, March11, Adamts17, Tmem41a, Yes1 
+Negative:  Frmd4b, Rbp4, St18, Creb5, Pam, Calb1, Chd7, Mitf, Adamts6, LOC100125362 
+	   Etv1, Lima1, Igsf3, Lrrc4, Grk4 
+pcaroyalblue_ 4 
+Positive:  Calb1, Rbp4, Abcd2, Rasgrp2, Tmem41a, Yes1, Prrx1, Mitf, Galnt7, Evi5 
+	   LOC108348175, Pam, Igsf3, Htr2a, Efnb2, Adamts17 
+Negative:  Etv1, Cntn4, Adamts6, Rasal2, March11, Creb5, St18, Frmd4b, Lima1, LOC100125362 
+	   Grk4, Nrcam, Lrrc4, Chd7, Slc7a11 
+pcaroyalblue_ 5 
+Positive:  Slc7a11, St18, Abcd2, Mitf, Etv1, Calb1, March11, Rbp4, Lrrc4, LOC100125362 
+	   Creb5, Galnt7, LOC108348175, Pam, Cntn4, Htr2a 
+Negative:  Yes1, Lima1, Grk4, Adamts17, Prrx1, Frmd4b, Evi5, Chd7, Rasgrp2, Adamts6 
+	   Rasal2, Tmem41a, Igsf3, Nrcam, Efnb2 
+Transposing data matrix
+Initializing state using k-means centroids initialization
+Harmony 1/10
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Harmony converged after 1 iterations
+Centering and scaling data matrix
+  |                                                                              |                                                                      |   0%  |                                                                              |======================================================================| 100%
+Warning in svd.function(A = t(x = object), nv = npcs, ...) :
+  You're computing too large a percentage of total singular values, use a standard svd instead.
+Warning in svd.function(A = t(x = object), nv = npcs, ...) :
+  did not converge--results might be invalid!; try increasing work or maxit
+pcamidnightblue_ 1 
+Positive:  Eml1, Ss18, Plxnb2, Mpp5, Lsm14a, Wdr13, Dusp18, Nt5dc1, Styxl1, Ccdc112 
+	   Cr1l, Tmed8, AABR07057798.1, Kdelr2, Prrc2b, Wscd2, Tada2a, Armh1, Lrfn2, Zmynd12 
+	   Rbm26, Mok 
+Negative:  Dbn1, AABR07011857.2, Mgat4a, Pcm1, Maco1, Chchd6, Orai2, Cfap74, Radil, Spop 
+	   Klhl7, Srsf7, Prr3, Crocc, Tia1, Dnal1, AABR07001573.2, Zbbx, Cacna1h, Zfp667 
+	   Cd46, Exosc1 
+pcamidnightblue_ 2 
+Positive:  Eml1, Armh1, Styxl1, Orai2, Srsf7, Exosc1, Cfap74, Wdr13, Zbbx, Dbn1 
+	   Dusp18, Radil, Spop, Prr3, Lrfn2, Zmynd12, Cd46, Ss18, Cr1l, Crocc 
+	   Tmed8, Ccdc112 
+Negative:  Plxnb2, Klhl7, Rbm26, Mpp5, AABR07011857.2, AABR07057798.1, Nt5dc1, Pcm1, Lsm14a, Prrc2b 
+	   AABR07001573.2, Mgat4a, Tia1, Maco1, Dnal1, Mok, Zfp667, Cacna1h, Tada2a, Kdelr2 
+	   Chchd6, Wscd2 
+pcamidnightblue_ 3 
+Positive:  Eml1, Mpp5, Cr1l, Nt5dc1, Zbbx, Cd46, AABR07057798.1, Klhl7, Lrfn2, AABR07011857.2 
+	   Lsm14a, Ccdc112, Tmed8, Pcm1, Cacna1h, Tada2a, Dnal1, Chchd6, Wscd2, Spop 
+	   Mok, AABR07001573.2 
+Negative:  Srsf7, Plxnb2, Wdr13, Kdelr2, Dusp18, Prr3, Dbn1, Exosc1, Tia1, Styxl1 
+	   Rbm26, Mgat4a, Crocc, Orai2, Zfp667, Cfap74, Maco1, Zmynd12, Radil, Prrc2b 
+	   Ss18, Armh1 
+pcamidnightblue_ 4 
+Positive:  Ss18, Cr1l, Lrfn2, Dusp18, Cd46, Nt5dc1, AABR07057798.1, Spop, Ccdc112, Prrc2b 
+	   Tia1, Rbm26, Plxnb2, Exosc1, Maco1, Klhl7, Radil, Dbn1, Pcm1, Tada2a 
+	   Orai2, Cfap74 
+Negative:  Mpp5, Wscd2, AABR07001573.2, Mok, Zfp667, Wdr13, Cacna1h, Zmynd12, AABR07011857.2, Styxl1 
+	   Crocc, Dnal1, Zbbx, Eml1, Srsf7, Prr3, Tmed8, Lsm14a, Kdelr2, Chchd6 
+	   Mgat4a, Armh1 
+pcamidnightblue_ 5 
+Positive:  Plxnb2, Ss18, AABR07001573.2, Mpp5, Dusp18, Armh1, Styxl1, Lsm14a, Zbbx, Wscd2 
+	   Mok, Crocc, Cr1l, Lrfn2, Orai2, Zmynd12, AABR07011857.2, Kdelr2, Zfp667, Dnal1 
+	   Eml1, Dbn1 
+Negative:  AABR07057798.1, Tmed8, Tada2a, Maco1, Tia1, Exosc1, Ccdc112, Rbm26, Prrc2b, Radil 
+	   Prr3, Klhl7, Wdr13, Cd46, Pcm1, Nt5dc1, Mgat4a, Srsf7, Cacna1h, Cfap74 
+	   Spop, Chchd6 
+Transposing data matrix
+Initializing state using k-means centroids initialization
+Harmony 1/10
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Harmony converged after 1 iterations
+Centering and scaling data matrix
+  |                                                                              |                                                                      |   0%  |                                                                              |======================================================================| 100%
+pcayellow_ 1 
+Positive:  Snhg11, Xkr4, Epha5, Gria4, Gabbr2, Map1b, Oxr1, Elavl2, Srrm4, Aff2 
+	   Garnl3, Elavl4, Peg3, Iqsec3, Slit1, Sobp, Cntnap4, MAST1, Nmt2, Kcnc1 
+	   Slc8a3, LOC103694210, Myo16, Astn2, Tango2, Kif5a, Dner, Rab3c, Nol4, Clmp 
+Negative:  Fnbp1, Ankrd44, Arhgap23, Msi2, Dip2a, Lgi3, Prr5, Acer3, Asap2, Usp6nl 
+	   Cspg5, Mtss2, Lpp, Psd2, Grip2, Pygb, Ahsa2, Map4, Igdcc4, Glb1 
+	   March8, Strip1, Letm2, Irs1, Cast, Capn5, Srgap2, Snx8, Pank1, Ccdc50 
+pcayellow_ 2 
+Positive:  Snhg11, Map1b, Arhgap23, Oxr1, Dip2a, Rab3c, Xkr4, Lgi3, Mfn1, Grip2 
+	   Slit1, Dock9, Ulk2, LOC103694210, Garnl3, Srrm4, Ankrd44, Kif5a, Unc5c, Clstn3 
+	   Bend6, Mical3, Aff2, Unc13b, MAST1, Atp13a2, Rph3a, Kcnc1, Peg3, Letm2 
+Negative:  Msi2, Asap2, Cspg5, Mtss2, Farp1, Lpp, AABR07070046.1, Psd2, Astn2, Prr5 
+	   Spire1, Kcnip1, Pygb, Pcdh15, Igdcc4, AABR07044668.1, Nol4, Btbd11, AABR07033720.1, Caskin1 
+	   Arhgap12, Pank1, Dscam, Usp6nl, Ccdc136, Irs1, Acss2, Dzip1, Gab2, Map4 
+pcayellow_ 3 
+Positive:  Pcdh15, AABR07044668.1, AABR07033720.1, Dscam, Gria4, Grik1, Pip5k1b, Kcnip1, Ankrd44, Dzip1 
+	   Olfm2, Mtss1, Myo16, Dner, Unc5c, Rnf128, Btbd11, Lrch1, Mtss2, Elfn1 
+	   Capn5, Peg3, Elavl2, Nectin1, Slc8a3, Gab2, Ebf4, Tmem65, Hapln4, Ahsa2 
+Negative:  Slit1, Asap2, Spire1, Msi2, Me1, Gabbr2, Garnl3, Farp1, Cpeb1, LOC103694210 
+	   Psd2, Usp6nl, Fnbp1, AABR07070046.1, Acss2, Epha5, Clmp, Afdn, Sobp, Rph3a 
+	   Igdcc4, Nmt2, Pygb, Unc13b, Oxr1, Srrm4, Map1b, Syt17, Sept9, Prr5 
+pcayellow_ 4 
+Positive:  Pcdh15, AABR07044668.1, Slit1, LOC103694210, Unc13b, AABR07033720.1, Syt17, Epha5, Dscam, Dock9 
+	   Elavl4, Garnl3, Gabbr2, Sobp, Aff2, Olfm2, Sync, Vstm2b, Sept9, Me1 
+	   Mtss2, Map4k3, Cspg5, Cpeb1, Farp1, Oxr1, Srgap2, Astn2, Xkr4, Cast 
+Negative:  Elavl2, Kcnc1, Kcnip1, Btbd11, Pip5k1b, Elfn1, Peg3, Flt3, Snhg11, Grip2 
+	   Hapln4, Dner, Letm2, Fnbp1, Lgi3, Clstn3, Cntnap4, Mtss1, Pygb, Ccdc136 
+	   Grik1, Daam1, Kcna2, Rnf128, Tmem65, Mfn1, Lrch1, Lpp, Msi2, Gria4 
+pcayellow_ 5 
+Positive:  Fnbp1, Arhgap23, Dip2a, Lgi3, Mfn1, Acer3, Dock9, Grip2, Usp6nl, Unc5c 
+	   Grik1, Ankrd44, Letm2, Rab3c, Daam1, March8, Cast, Ulk2, Ccdc136, Map4 
+	   Kcnip1, Elavl2, Capn5, Cntnap4, Elavl4, Elfn1, Clmp, AABR07044668.1, Gab2, Pcdh15 
+Negative:  Snhg11, Gria4, Kcnc1, Map1b, Nmt2, Clstn3, Spire1, Peg3, Slc8a3, Lrch1 
+	   Kif5a, Bend6, Pip5k1b, Nol4, Srgap2, Myo16, Epha5, Caskin1, Dner, Atp13a2 
+	   Snx21, Tango2, MAST1, AABR07070046.1, Kidins220, Sobp, Sgpl1, Gabbr2, Gls2, Dzip1 
+Transposing data matrix
+Initializing state using k-means centroids initialization
+Harmony 1/10
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Harmony 2/10
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Harmony converged after 2 iterations
+Centering and scaling data matrix
+  |                                                                              |                                                                      |   0%  |                                                                              |======================================================================| 100%
+Warning in svd.function(A = t(x = object), nv = npcs, ...) :
+  You're computing too large a percentage of total singular values, use a standard svd instead.
+pcamagenta_ 1 
+Positive:  Opcml, Gabrg3, Scn2a, AABR07021536.1, Rabgap1l, Grb10, Tnr, AABR07031533.1, Dpyd, Cacng8 
+	   Svop, 5330417C22Rik, Unc13c, Ptbp2, Usp46, Ablim3, Lrrn2, Slc16a2, Ptchd1, Shtn1 
+	   AABR07041418.1, Zfr, Rap1gds1, Zmynd11, AABR07041411.1, Tut4, Pbx1, RGD1563680, RGD1306556, Xpr1 
+Negative:  Lix1, Mvb12b, Arsb, Ttyh3, Polk, Pex5l, Dstyk, Zeb1, Ift80, Rasa3 
+	   Por, Sirpa, Grb14, Plxdc2, Slc35d1, Ubac2, AABR07053185.1, Itpk1, Phc2, Tcaf1 
+	   Vps50, Elk1, Wwc1, Col4a3bp, Hacd2, AABR07056636.1, Zdhhc17, Eftud2, Cemip2, Lrrn3 
+pcamagenta_ 2 
+Positive:  Lix1, Ttyh3, Wwc1, Hacd2, Xpr1, Sirpa, Kirrel1, Dpyd, Por, Zeb1 
+	   Kif1b, Rasa3, Plxdc2, Lrrn2, Atp8a1, Crebbp, AABR07053185.1, Pbx1, Ubac2, Slc35d1 
+	   RGD1563680, Polk, Usp46, Tut4, Gabrg3, Dstyk, Phc2, Elk1, Zdhhc17, Zfr 
+Negative:  Pex5l, Grb14, Opcml, AABR07021536.1, Lrrn3, Shtn1, Tnr, Scn2a, Prkacb, AABR07031533.1 
+	   Svop, Stim2, 5330417C22Rik, Rap1gds1, AABR07041418.1, Itpk1, AABR07041411.1, Ptchd1, RGD1306556, Ubxn11 
+	   Slc16a2, Ets2, Grb10, Vps50, Ablim3, Tcaf1, Unc13c, Mvb12b, Chd3, AABR07056636.1 
+pcamagenta_ 3 
+Positive:  Tnr, AABR07021536.1, Zeb1, Rasa3, Opcml, Arsb, Dpyd, Stim2, Grb14, Lrrn2 
+	   Pbx1, Rabgap1l, Wwc1, Crebbp, RGD1306556, Usp46, Cemip2, Ptbp2, Tut4, Dlg3 
+	   Lrrn3, Slc35d1, AABR07031533.1, Zmynd11, Ift80, Ubac2, Scn2a, Itpk1, Rap1gds1, Ets2 
+Negative:  Unc13c, Pex5l, Grb10, Ablim3, Atp8a1, Shtn1, Kif1b, Kirrel1, 5330417C22Rik, AABR07056636.1 
+	   Prkacb, Ptchd1, Plxdc2, Gabrg3, Dstyk, Tcaf1, Col4a3bp, Hacd2, Ubxn11, Slc16a2 
+	   Mvb12b, AABR07041411.1, AABR07041418.1, Svop, RGD1563680, Polk, Cacng8, Vps50, Xpr1, Phc2 
+pcamagenta_ 4 
+Positive:  Pex5l, RGD1306556, Kif1b, Usp46, AABR07031533.1, Wwc1, Cemip2, Grb14, Chd3, Atp8a1 
+	   Pbx1, Rasa3, Ets2, Svop, Ttyh3, Rap1gds1, Dlg3, Hacd2, Dstyk, Ubac2 
+	   Ift80, Lix1, Sirpa, Lrrn2, Eftud2, Itpk1, Crebbp, Zdhhc17, Elk1, Scn2a 
+Negative:  Zeb1, Ablim3, Unc13c, Grb10, RGD1563680, Xpr1, Kirrel1, Gabrg3, Plxdc2, AABR07056636.1 
+	   Ptchd1, Dpyd, AABR07041418.1, AABR07041411.1, Slc16a2, Tnr, Tcaf1, AABR07021536.1, Stim2, Tut4 
+	   AABR07053185.1, Ptbp2, Mvb12b, Opcml, Phc2, Prkacb, Arsb, Polk, Zfr, Col4a3bp 
+pcamagenta_ 5 
+Positive:  Sirpa, Ets2, Svop, RGD1306556, Lrrn2, Scn2a, Ubxn11, Chd3, Gabrg3, Dlg3 
+	   Plxdc2, Eftud2, Cacng8, Rabgap1l, Cemip2, AABR07031533.1, Elk1, Usp46, AABR07056636.1, Grb10 
+	   Ttyh3, Zfr, Wwc1, Ptchd1, Opcml, 5330417C22Rik, Tut4, Stim2, Zmynd11, Ablim3 
+Negative:  Grb14, Atp8a1, Ift80, Kif1b, Pex5l, Dstyk, Zeb1, Mvb12b, Kirrel1, Dpyd 
+	   RGD1563680, Ubac2, Arsb, Itpk1, Hacd2, AABR07053185.1, Prkacb, Col4a3bp, Rasa3, Ptbp2 
+	   Shtn1, Lrrn3, Tnr, Slc35d1, Lix1, Zdhhc17, AABR07021536.1, Polk, Rap1gds1, AABR07041411.1 
+Transposing data matrix
+Initializing state using k-means centroids initialization
+Harmony 1/10
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Harmony converged after 1 iterations
+Centering and scaling data matrix
+  |                                                                              |                                                                      |   0%  |                                                                              |======================================================================| 100%
+Warning in svd.function(A = t(x = object), nv = npcs, ...) :
+  You're computing too large a percentage of total singular values, use a standard svd instead.
+pcasaddlebrown_ 1 
+Positive:  C1qa, C1qb, Tmem176b, C1qc, Tmem176a, Arhgap15, Inpp5d, Anxa3 
+Negative:  Lrp4, Apoe, Ctsh, Mertk, Tgfbr1, Npc2, Sparc, Lyn 
+pcasaddlebrown_ 2 
+Positive:  Arhgap15, Inpp5d, Anxa3, C1qc, C1qb, C1qa, Tmem176a, Tmem176b 
+Negative:  Apoe, Lrp4, Mertk, Ctsh, Sparc, Lyn, Tgfbr1, Npc2 
+pcasaddlebrown_ 3 
+Positive:  Ctsh, Sparc, Apoe, Npc2, Tmem176a, C1qb, Tmem176b, C1qc 
+Negative:  Lrp4, Tgfbr1, Lyn, Arhgap15, Inpp5d, Anxa3, C1qa, Mertk 
+pcasaddlebrown_ 4 
+Positive:  Tgfbr1, Mertk, Lyn, Apoe, Ctsh, Arhgap15, Inpp5d, Anxa3 
+Negative:  Lrp4, Npc2, Tmem176a, Sparc, C1qc, C1qb, Tmem176b, C1qa 
+pcasaddlebrown_ 5 
+Positive:  Ctsh, Lrp4, Lyn, Tgfbr1, Inpp5d, Arhgap15, Tmem176a, C1qc 
+Negative:  Sparc, Mertk, Apoe, Npc2, Anxa3, Tmem176b, C1qb, C1qa 
+Transposing data matrix
+Initializing state using k-means centroids initialization
+Harmony 1/10
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Harmony 2/10
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Harmony 3/10
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Harmony converged after 3 iterations
+Centering and scaling data matrix
+  |                                                                              |                                                                      |   0%  |                                                                              |======================================================================| 100%
+Warning in svd.function(A = t(x = object), nv = npcs, ...) :
+  You're computing too large a percentage of total singular values, use a standard svd instead.
+pcatan_ 1 
+Positive:  Plp1, Mog, Mbp, Apod, Tf, Cnp, Cldn11, Mag, Mal, Ptgds 
+	   Mobp, Car2, Ppp1r14a, Gsn, Hapln2, Ermn, Cryab, AABR07046961.1, Gpd1, Pllp 
+	   Ugt8, Lpar1, Csrp1, Cd9, Opalin, Evi2a, Enpp2, Gjc2, Fa2h, Qdpr 
+Negative:  Cecr2, Olig2, Phgdh, Hepacam, Tnfrsf11a, Rasgrp3, Slc29a3, Pla2g16, Txnip, Gsta6 
+	   Gstt3, Plekhb1, Tanc1, Psat1, Carhsp1, Cmtm5, Sox10, Ndrg1, Olig1, Pde8a 
+	   Gjb1, Pmp22, Gab1, Nkx6-2, Abca8a, Tmem98, Aspa, Plekhg3, AABR07044900.1, Klk6 
+pcatan_ 2 
+Positive:  Olig2, Olig1, Bcas1, Sox10, Cd9, Abca8a, Pllp, Tanc1, Ninj2, Fa2h 
+	   Gab1, Hepacam, Cecr2, Enpp2, Ugt8, Pde8a, Gsta6, Pmp22, Cnp, Phgdh 
+	   Carhsp1, Txnip, Psat1, Cryab, Plekhb1, Apod, Plekhg3, Evi2a, Gjb1, Plp1 
+Negative:  Rasgrp3, Aspa, Hapln2, Klk6, Car2, Tf, Mog, Ppp1r14a, AABR07044900.1, Mobp 
+	   Ndrg1, Gjc2, Ermn, Ptgds, Mag, Mbp, AABR07046961.1, Csrp1, Tmem98, Cldn11 
+	   Gpr37, Gsn, Qdpr, Tnfrsf11a, Gstt3, Pla2g16, Lpar1, Mal, Cmtm5, Nkx6-2 
+pcatan_ 3 
+Positive:  Hepacam, Cecr2, Phgdh, Cmtm5, Psat1, Gstt3, Pla2g16, Gsta6, Csrp1, Gab1 
+	   Plekhb1, Txnip, Pmp22, Gpr37, Tnfrsf11a, Carhsp1, Nkx6-2, Olig1, Qdpr, Car2 
+	   Cryab, Mal, Gjb1, Cd9, Ptgds, Olig2, Slc29a3, Opalin, Cnp, Ndrg1 
+Negative:  Rasgrp3, Fa2h, Plekhg3, AABR07046961.1, Pde8a, Ugt8, Bcas1, Abca8a, Mog, Hapln2 
+	   Sox10, Mbp, Enpp2, Ninj2, Tanc1, Tf, Apod, Mag, Aspa, Mobp 
+	   AABR07044900.1, Ppp1r14a, Gjc2, Tmem98, Plp1, Gpd1, Lpar1, Evi2a, Cldn11, Gsn 
+pcatan_ 4 
+Positive:  Carhsp1, Nkx6-2, Mal, Qdpr, Gpd1, Opalin, Gpr37, Psat1, Csrp1, Cryab 
+	   Cd9, Ptgds, Olig1, Lpar1, Pllp, Ndrg1, Evi2a, Cldn11, Cnp, Pmp22 
+	   Mag, Gstt3, Gsn, Pla2g16, Ermn, Gjc2, Car2, Olig2, Plekhb1, Ppp1r14a 
+Negative:  Rasgrp3, Slc29a3, Cecr2, Tnfrsf11a, Gab1, Pde8a, Aspa, Enpp2, Hapln2, AABR07044900.1 
+	   Klk6, Fa2h, Bcas1, AABR07046961.1, Tanc1, Hepacam, Gsta6, Cmtm5, Txnip, Plekhg3 
+	   Ugt8, Ninj2, Tmem98, Mobp, Apod, Sox10, Mbp, Mog, Abca8a, Tf 
+pcatan_ 5 
+Positive:  Tnfrsf11a, Slc29a3, Rasgrp3, Carhsp1, Aspa, Plekhb1, Evi2a, Pmp22, Olig2, Pla2g16 
+	   Olig1, Psat1, Gjb1, Txnip, Nkx6-2, Phgdh, Ndrg1, Qdpr, Cd9, Pllp 
+	   Klk6, Csrp1, Ptgds, Cryab, Cnp, Gstt3, Gsn, Mal, Gpr37, Sox10 
+Negative:  Gab1, AABR07044900.1, Cecr2, Plekhg3, Hepacam, AABR07046961.1, Pde8a, Tanc1, Fa2h, Tmem98 
+	   Enpp2, Mog, Opalin, Mbp, Ugt8, Mobp, Lpar1, Abca8a, Cmtm5, Hapln2 
+	   Gjc2, Car2, Plp1, Bcas1, Mag, Ninj2, Ppp1r14a, Ermn, Cldn11, Gpd1 
+Transposing data matrix
+Initializing state using k-means centroids initialization
+Harmony 1/10
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Harmony 2/10
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Harmony 3/10
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Harmony converged after 3 iterations
+Centering and scaling data matrix
+  |                                                                              |                                                                      |   0%  |                                                                              |======================================================================| 100%
+Warning in svd.function(A = t(x = object), nv = npcs, ...) :
+  You're computing too large a percentage of total singular values, use a standard svd instead.
+Warning in svd.function(A = t(x = object), nv = npcs, ...) :
+  did not converge--results might be invalid!; try increasing work or maxit
+pcalightcyan_ 1 
+Positive:  Btbd17, Shisa4, Cyp51, Insig1, Mavs, Cd59, Mpg, Calb2, Gnas.1, RGD1565989 
+	   Cfap36, Psmd11, Slc9a6, Ublcp1, Lrp3, Flot2, Pkib, Csnk1d, Zfp84, Pafah1b1 
+	   Zfyve19, Ndufc1 
+Negative:  Ube3a, AABR07069466.1, Cdk10, AC128154.1, Ap3b2, Tacc2, Stx1a, Necab3, Nr2f2, AABR07066700.1 
+	   Kif3a, AABR07072264.4, Nucb1, Klc2, Tspan17, Stradb, Lama4, Lhfpl5, Nr2f1, Pnma2 
+	   Nos1, Carmil3 
+pcalightcyan_ 2 
+Positive:  Ube3a, Tacc2, Cdk10, Ndufc1, Slc9a6, AABR07069466.1, AABR07066700.1, Stradb, Zfyve19, Pafah1b1 
+	   AC128154.1, Ublcp1, Psmd11, Kif3a, Ap3b2, Gnas.1, Nos1, Carmil3, Nucb1, Cfap36 
+	   Klc2, Pnma2 
+Negative:  Nr2f2, Nr2f1, Btbd17, Shisa4, AABR07072264.4, Tspan17, Cyp51, Stx1a, RGD1565989, Pkib 
+	   Insig1, Cd59, Mavs, Calb2, Lama4, Csnk1d, Lhfpl5, Zfp84, Flot2, Necab3 
+	   Lrp3, Mpg 
+pcalightcyan_ 3 
+Positive:  Stx1a, Tspan17, AABR07072264.4, Pkib, Lama4, Nr2f2, AC128154.1, Lhfpl5, Ap3b2, RGD1565989 
+	   Klc2, Pafah1b1, AABR07066700.1, Kif3a, Nucb1, Zfyve19, AABR07069466.1, Cdk10, Csnk1d, Necab3 
+	   Nr2f1, Pnma2 
+Negative:  Btbd17, Cd59, Cyp51, Cfap36, Flot2, Shisa4, Mavs, Ublcp1, Gnas.1, Mpg 
+	   Ndufc1, Slc9a6, Zfp84, Psmd11, Lrp3, Tacc2, Calb2, Nos1, Stradb, Insig1 
+	   Ube3a, Carmil3 
+pcalightcyan_ 4 
+Positive:  Lama4, Shisa4, Necab3, Zfp84, Btbd17, AC128154.1, Stx1a, Cdk10, Ndufc1, Tspan17 
+	   RGD1565989, Tacc2, Mavs, Cyp51, AABR07066700.1, Csnk1d, Zfyve19, Mpg, Stradb, Flot2 
+	   Kif3a, Ap3b2 
+Negative:  Calb2, Nos1, AABR07072264.4, Slc9a6, Pnma2, Pkib, Nr2f2, Carmil3, Lrp3, Gnas.1 
+	   Lhfpl5, Pafah1b1, Nr2f1, Nucb1, Psmd11, Ublcp1, Cfap36, Insig1, Klc2, AABR07069466.1 
+	   Ube3a, Cd59 
+pcalightcyan_ 5 
+Positive:  Insig1, Cyp51, Pafah1b1, Stx1a, Tspan17, Klc2, Gnas.1, AABR07066700.1, Slc9a6, Flot2 
+	   Psmd11, Csnk1d, RGD1565989, Nos1, Pnma2, Ublcp1, Mpg, Ap3b2, Lhfpl5, Pkib 
+	   Kif3a, Cd59 
+Negative:  Tacc2, AABR07072264.4, Nr2f2, Lama4, Carmil3, Calb2, Nr2f1, Cfap36, Mavs, Btbd17 
+	   Shisa4, Zfp84, AC128154.1, Ndufc1, Necab3, Ube3a, Cdk10, AABR07069466.1, Zfyve19, Nucb1 
+	   Lrp3, Stradb 
+Transposing data matrix
+Initializing state using k-means centroids initialization
+Harmony 1/10
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Harmony converged after 1 iterations
+Centering and scaling data matrix
+  |                                                                              |                                                                      |   0%  |                                                                              |======================================================================| 100%
+Warning in svd.function(A = t(x = object), nv = npcs, ...) :
+  You're computing too large a percentage of total singular values, use a standard svd instead.
+Warning in svd.function(A = t(x = object), nv = npcs, ...) :
+  did not converge--results might be invalid!; try increasing work or maxit
+pcadarkgrey_ 1 
+Positive:  Nptn, Chn1, Gucy1a1, Camkv, Atp6ap1l, Snca, Stk32c, Plk2, Gucy1b1, Ca11 
+	   Fkbp1a, Hpca 
+Negative:  Mapk4, Dbp, Pcp4, Rps6ka4, Ppil1, Ddx5, Ctxn1, Gabrd, Rasd2, Kcnj4 
+	   Srpk2, Penk 
+pcadarkgrey_ 2 
+Positive:  Snca, Nptn, Plk2, Stk32c, Ctxn1, Chn1, Camkv, Srpk2, Ca11, Ppil1 
+	   Ddx5, Kcnj4 
+Negative:  Pcp4, Penk, Hpca, Atp6ap1l, Gucy1a1, Rasd2, Mapk4, Dbp, Gabrd, Gucy1b1 
+	   Rps6ka4, Fkbp1a 
+pcadarkgrey_ 3 
+Positive:  Dbp, Mapk4, Ctxn1, Ca11, Ddx5, Pcp4, Plk2, Fkbp1a, Snca, Chn1 
+	   Rps6ka4, Stk32c 
+Negative:  Gucy1a1, Gucy1b1, Penk, Srpk2, Atp6ap1l, Rasd2, Gabrd, Ppil1, Kcnj4, Nptn 
+	   Hpca, Camkv 
+pcadarkgrey_ 4 
+Positive:  Fkbp1a, Ctxn1, Pcp4, Penk, Ddx5, Snca, Camkv, Hpca, Kcnj4, Ca11 
+	   Rps6ka4, Atp6ap1l 
+Negative:  Mapk4, Rasd2, Gucy1a1, Gucy1b1, Srpk2, Chn1, Ppil1, Stk32c, Plk2, Dbp 
+	   Gabrd, Nptn 
+pcadarkgrey_ 5 
+Positive:  Hpca, Plk2, Rasd2, Ctxn1, Gucy1b1, Fkbp1a, Gucy1a1, Snca, Mapk4, Stk32c 
+	   Penk, Chn1 
+Negative:  Ca11, Ppil1, Atp6ap1l, Gabrd, Ddx5, Srpk2, Camkv, Nptn, Pcp4, Dbp 
+	   Rps6ka4, Kcnj4 
+Transposing data matrix
+Initializing state using k-means centroids initialization
+Harmony 1/10
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Harmony converged after 1 iterations
+Centering and scaling data matrix
+  |                                                                              |                                                                      |   0%  |                                                                              |======================================================================| 100%
+Warning in svd.function(A = t(x = object), nv = npcs, ...) :
+  You're computing too large a percentage of total singular values, use a standard svd instead.
+pcablack_ 1 
+Positive:  NEWGENE-1310139, Bin1, Suclg2, Spock1, Sh3pxd2b, Fmnl2, Snx29, Dpysl2, Acaca, Trpc4ap 
+	   Nav1, Rnf180, Nfasc, Fbn1, Pde3b, Ube2h, Ptprf, Bmp6, Arhgef11, Prlr 
+	   Fchsd2, Mapt, Cadm1, Fam193b, Ate1, Snx12, Kif3c, Rnf216, Sfmbt2, Scarb1 
+Negative:  Fgf12, Nmnat2, Cacna1b, Cdk14, RGD1560883, Dnajc6, LOC103690141, Asic2, Bicd1, Snap91 
+	   Slco3a1, Jakmip2, Slc8a1, Clip1, Map2k4, Eml6, Atp8a2, Camta1, Cyp4x1, Trpc5 
+	   Zmynd8, Slc25a27, Magi1, Csmd2, Usp9x, Traf3, Kif26b, Phlpp2, Ankrd17, Trpc4 
+pcablack_ 2 
+Positive:  Fchsd2, Macf1, Sh3pxd2b, Magi1, Tafa5, Dock7, Ttc28, Akt3, Suclg2, Cadm1 
+	   Tnrc6a, Arhgef11, Rnf180, Ptprf, Ube2h, Nav3, Pced1b, Rnf216, Ctif, Eif4g3 
+	   Ppm1h, Bmp6, Scarb1, Pde3b, Acaca, Ate1, Chd6, Dcaf5, Zmynd8, Camta1 
+Negative:  Bin1, Mapt, Spock1, NEWGENE-1310139, Nfasc, Dpysl2, Dnajc6, Slc8a1, Slco3a1, Arhgap39 
+	   Trpc5, LOC103690141, Cdc42bpa, Slc25a27, Fmnl2, Cacna1b, Csmd2, Cdkl1, Limch1, Nav1 
+	   Cdk14, Snap91, Jakmip2, Cyp4x1, Kif26b, Sfmbt2, Bicd1, Vwa5b2, AABR07065531.26, Nmnat2 
+pcablack_ 3 
+Positive:  Pde3b, Nav3, Snx29, Slc8a1, Atp8a2, Fchsd2, Ppm1h, Csmd2, Nav1, Asic2 
+	   Nmnat2, Cyp4x1, Arhgap39, Pgap1, Jakmip2, Pdzrn4, Fbn1, Cacna1b, Rnf216, Nsd3 
+	   Trpc4ap, Akt3, Bicd1, Slco3a1, Traf3, Snap91, Dcaf5, Pced1b, Ankrd17, Slc25a27 
+Negative:  Limch1, Macf1, Tafa5, Cadm1, Bmp6, NEWGENE-1310139, Sh3pxd2b, Tnrc6a, Acaca, Mapt 
+	   Dock7, Ptprf, Ttc28, Arhgef11, Suclg2, Kif26b, Spock1, Cdc42bpa, Ate1, Scn9a 
+	   Dpysl2, Nfasc, Trpc4, Rnf180, Magi1, LOC103690141, Snx12, Scarb1, Eml6, Camta1 
+pcablack_ 4 
+Positive:  Eml6, Pgap1, Scn9a, Camta1, Vwa5b2, Ttc28, Tnrc6a, Trpc4, Nmnat2, Map2k4 
+	   Zfp618, Prlr, Jakmip2, Atp8a2, Slc25a27, AABR07065531.26, Fgf12, Usp13, RGD1560883, Zmynd8 
+	   Slco3a1, Usp9x, Ppm1h, Snap91, Pced1b, Ctif, Traf3, Pdzrn4, Mapt, Dzank1 
+Negative:  Bmp6, Akt3, Trpc5, Cadm1, Suclg2, Cdk14, Snx29, Acaca, Nav3, Csmd2 
+	   Fmnl2, Macf1, Bin1, LOC103690141, Sh3pxd2b, NEWGENE-1310139, Pde3b, Rnf180, Abca3, Nav1 
+	   Eif4g3, Ube2h, Spock1, Arhgap39, Fchsd2, Scarb1, Asic2, Cdkl1, Sfmbt2, Trpc4ap 
+pcablack_ 5 
+Positive:  Bmp6, Limch1, Nav3, Clip1, Cacna1b, Dnajc6, LOC103690141, Trpc5, Dock7, Dzank1 
+	   Arhgap39, Usp9x, Dcaf5, Abca3, Bicd1, Ankrd17, RGD1560883, Slc24a3, Snap91, Cdk14 
+	   Map2k4, Cdkl1, Cyp4x1, Oxsr1, Kif26b, Slco3a1, RGD1305110, Macf1, Snx29, Atp8a2 
+Negative:  Nav1, Pdzrn4, Suclg2, Fbn1, Sh3pxd2b, Fmnl2, Prlr, NEWGENE-1310139, Ttc28, Fchsd2 
+	   Cdc42bpa, Csmd2, Slc8a1, Sfmbt2, Asic2, Kif3c, Pgap1, Zfp618, Arhgef11, Chd6 
+	   Nfasc, Tafa5, Spock1, Bin1, Rnf180, Mapt, Rnf216, Dpysl2, Scn9a, Ctif 
+Transposing data matrix
+Initializing state using k-means centroids initialization
+Harmony 1/10
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Harmony 2/10
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Harmony converged after 2 iterations
+Centering and scaling data matrix
+  |                                                                              |                                                                      |   0%  |                                                                              |======================================================================| 100%
+Warning in svd.function(A = t(x = object), nv = npcs, ...) :
+  You're computing too large a percentage of total singular values, use a standard svd instead.
+Warning in svd.function(A = t(x = object), nv = npcs, ...) :
+  did not converge--results might be invalid!; try increasing work or maxit
+pcaskyblue_ 1 
+Positive:  Meis2, Me3, Cobl, Ngef, Cap2, Lrrk2, Ptk2b, Adamts3, Cdk17 
+Negative:  Klf9, Slc4a4, Pitpnm2, Pard3, Wasf1, Rab40b, Lzts1, Wfs1, Fras1 
+pcaskyblue_ 2 
+Positive:  Slc4a4, Pitpnm2, Klf9, Pard3, Meis2, Ptk2b, Adamts3, Lrrk2, Wfs1 
+Negative:  Cobl, Wasf1, Lzts1, Me3, Rab40b, Fras1, Ngef, Cap2, Cdk17 
+pcaskyblue_ 3 
+Positive:  Pard3, Wfs1, Meis2, Adamts3, Cdk17, Lrrk2, Rab40b, Ngef, Fras1 
+Negative:  Pitpnm2, Cap2, Wasf1, Ptk2b, Klf9, Cobl, Lzts1, Slc4a4, Me3 
+pcaskyblue_ 4 
+Positive:  Pitpnm2, Slc4a4, Cap2, Meis2, Ptk2b, Pard3, Lrrk2, Fras1, Lzts1 
+Negative:  Klf9, Rab40b, Wasf1, Wfs1, Adamts3, Cdk17, Cobl, Ngef, Me3 
+pcaskyblue_ 5 
+Positive:  Lzts1, Wfs1, Ptk2b, Fras1, Rab40b, Klf9, Ngef, Meis2, Pitpnm2 
+Negative:  Adamts3, Wasf1, Lrrk2, Cdk17, Cobl, Pard3, Me3, Cap2, Slc4a4 
+Transposing data matrix
+Initializing state using k-means centroids initialization
+Harmony 1/10
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Harmony 2/10
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Harmony converged after 2 iterations
+Centering and scaling data matrix
+  |                                                                              |                                                                      |   0%  |                                                                              |======================================================================| 100%
+Warning in svd.function(A = t(x = object), nv = npcs, ...) :
+  You're computing too large a percentage of total singular values, use a standard svd instead.
+Warning in svd.function(A = t(x = object), nv = npcs, ...) :
+  did not converge--results might be invalid!; try increasing work or maxit
+pcadarkgreen_ 1 
+Positive:  Dync1i1, Ttc3, Nrxn1, Arhgap44, Galnt16, ST7, Sez6l, Cmip, Sgsm1, Camk2d 
+	   Pds5b, Ak5 
+Negative:  Ssh2, AC095390.2, Iqck, AABR07059168.2, N4bp2, Smarcc2, Nek10, Rngtt, Rbm5, Sfmbt1 
+	   Nsd1, Scaper 
+pcadarkgreen_ 2 
+Positive:  Nrxn1, AC095390.2, AABR07059168.2, Sfmbt1, Iqck, Scaper, Rbm5, Rngtt, Sez6l, ST7 
+	   Nsd1, Smarcc2 
+Negative:  Ssh2, Nek10, Cmip, Camk2d, Ak5, Prkar1b, Sgsm1, Dync1i1, Pds5b, Galnt16 
+	   Arhgap44, Ttc3 
+pcadarkgreen_ 3 
+Positive:  Ak5, Arhgap44, Prkar1b, ST7, Dync1i1, Sgsm1, Rbm5, Ttc3, Smarcc2, Nrxn1 
+	   Sez6l, Sfmbt1 
+Negative:  AC095390.2, N4bp2, Camk2d, Ssh2, Scaper, AABR07059168.2, Cmip, Pds5b, Nsd1, Nek10 
+	   Iqck, Rngtt 
+pcadarkgreen_ 4 
+Positive:  AABR07059168.2, Ssh2, Rngtt, Nsd1, Smarcc2, Cmip, Scaper, ST7, Nrxn1, Arhgap44 
+	   Ak5, Sez6l 
+Negative:  N4bp2, Iqck, Sgsm1, Galnt16, Rbm5, Camk2d, AC095390.2, Pds5b, Nek10, Prkar1b 
+	   Sfmbt1, Ttc3 
+pcadarkgreen_ 5 
+Positive:  N4bp2, Pds5b, Rbm5, Sez6l, Sfmbt1, Rngtt, Ttc3, Sgsm1, Galnt16, AC095390.2 
+	   Nsd1, Scaper 
+Negative:  Iqck, Nek10, AABR07059168.2, Ssh2, Ak5, Smarcc2, Cmip, ST7, Prkar1b, Camk2d 
+	   Nrxn1, Arhgap44 
+Transposing data matrix
+Initializing state using k-means centroids initialization
+Harmony 1/10
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Harmony converged after 1 iterations
+Centering and scaling data matrix
+  |                                                                              |                                                                      |   0%  |                                                                              |======================================================================| 100%
+Warning in svd.function(A = t(x = object), nv = npcs, ...) :
+  You're computing too large a percentage of total singular values, use a standard svd instead.
+pcawhite_ 1 
+Positive:  Kif5c, Klf12, Adcy8, Cep170b, Ggt7, Sept6, Mpdz, Lurap1l, Efemp2 
+Negative:  Sulf2, Prkra, Tmlhe, Aars, Akt1, Csdc2, Epm2aip1, Syt11, Amigo1 
+pcawhite_ 2 
+Positive:  Cep170b, Kif5c, Syt11, Ggt7, Epm2aip1, Amigo1, Sept6, Aars, Akt1 
+Negative:  Sulf2, Tmlhe, Klf12, Adcy8, Csdc2, Efemp2, Prkra, Lurap1l, Mpdz 
+pcawhite_ 3 
+Positive:  Sulf2, Syt11, Aars, Mpdz, Tmlhe, Lurap1l, Cep170b, Ggt7, Akt1 
+Negative:  Csdc2, Adcy8, Klf12, Amigo1, Prkra, Sept6, Efemp2, Kif5c, Epm2aip1 
+pcawhite_ 4 
+Positive:  Prkra, Aars, Epm2aip1, Amigo1, Akt1, Syt11, Csdc2, Sulf2, Tmlhe 
+Negative:  Mpdz, Ggt7, Lurap1l, Sept6, Efemp2, Kif5c, Cep170b, Adcy8, Klf12 
+pcawhite_ 5 
+Positive:  Akt1, Csdc2, Epm2aip1, Tmlhe, Amigo1, Aars, Klf12, Syt11, Sulf2 
+Negative:  Prkra, Mpdz, Sept6, Cep170b, Ggt7, Efemp2, Adcy8, Kif5c, Lurap1l 
+Transposing data matrix
+Initializing state using k-means centroids initialization
+Harmony 1/10
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Harmony converged after 1 iterations
+Centering and scaling data matrix
+  |                                                                              |                                                                      |   0%  |                                                                              |======================================================================| 100%
+Warning in svd.function(A = t(x = object), nv = npcs, ...) :
+  You're computing too large a percentage of total singular values, use a standard svd instead.
+Warning in svd.function(A = t(x = object), nv = npcs, ...) :
+  did not converge--results might be invalid!; try increasing work or maxit
+pcaorange_ 1 
+Positive:  Atrn, Pnisr, AABR07026125.1, Prpf8, Ehmt2, Prrc2a, Glg1, Atp2a2, Cbx6, Capn13 
+	   Ncs1, Celsr2 
+Negative:  Mt-cyb, Mt-atp6, Mt-co3, Mt-co2, Mt-nd4, Mt-nd2, Mt-nd1, Mt-co1, Mt-nd5, Mt-nd4l 
+	   Mt-nd3 
+pcaorange_ 2 
+Positive:  Mt-co3, Mt-co2, Mt-atp6, Mt-co1, Mt-cyb, Mt-nd2, Mt-nd1, Mt-nd3, Mt-nd4, Mt-nd5 
+	   Atrn, Mt-nd4l 
+Negative:  Ncs1, Celsr2, Glg1, Cbx6, Pnisr, Atp2a2, Ehmt2, Prrc2a, AABR07026125.1, Prpf8 
+	   Capn13 
+pcaorange_ 3 
+Positive:  Mt-nd4l, Cbx6, Glg1, Ncs1, Celsr2, Mt-nd3, Mt-nd5, Mt-nd1, Mt-nd4, Mt-nd2 
+	   Mt-cyb, Mt-atp6 
+Negative:  AABR07026125.1, Atrn, Capn13, Pnisr, Atp2a2, Prpf8, Prrc2a, Mt-co3, Mt-co2, Mt-co1 
+	   Ehmt2 
+pcaorange_ 4 
+Positive:  AABR07026125.1, Capn13, Prpf8, Ehmt2, Glg1, Cbx6, Ncs1, Celsr2, Mt-co3, Mt-nd2 
+	   Mt-co2, Mt-cyb 
+Negative:  Atrn, Atp2a2, Pnisr, Mt-nd4l, Mt-nd3, Prrc2a, Mt-nd5, Mt-nd1, Mt-nd4, Mt-atp6 
+	   Mt-co1 
+pcaorange_ 5 
+Positive:  Prpf8, Prrc2a, Atrn, Celsr2, Cbx6, Mt-co1, Mt-cyb, Mt-co3, Ncs1, Mt-co2 
+	   Mt-nd1, Mt-nd4 
+Negative:  Pnisr, Atp2a2, AABR07026125.1, Mt-nd3, Capn13, Mt-nd4l, Ehmt2, Mt-nd5, Glg1, Mt-atp6 
+	   Mt-nd2 
+Transposing data matrix
+Initializing state using k-means centroids initialization
+Harmony 1/10
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Harmony converged after 1 iterations
+Centering and scaling data matrix
+  |                                                                              |                                                                      |   0%  |                                                                              |======================================================================| 100%
+Warning in svd.function(A = t(x = object), nv = npcs, ...) :
+  You're computing too large a percentage of total singular values, use a standard svd instead.
+Warning in svd.function(A = t(x = object), nv = npcs, ...) :
+  did not converge--results might be invalid!; try increasing work or maxit
+pcasteelblue_ 1 
+Positive:  Fgf14, Ksr2, Adgrb3, AABR07060133.1, Mark1, Ank3, Exoc4, Tcf20 
+Negative:  Fto, Smurf1, Dennd1a, Stox2, Nr3c2, Zcchc7, Sptbn1 
+pcasteelblue_ 2 
+Positive:  Fto, Stox2, Nr3c2, Dennd1a, Adgrb3, Zcchc7, Exoc4, AABR07060133.1 
+Negative:  Ank3, Smurf1, Mark1, Ksr2, Tcf20, Fgf14, Sptbn1 
+pcasteelblue_ 3 
+Positive:  Smurf1, Fto, Exoc4, Tcf20, AABR07060133.1, Mark1, Ksr2, Ank3 
+Negative:  Stox2, Nr3c2, Sptbn1, Dennd1a, Adgrb3, Zcchc7, Fgf14 
+pcasteelblue_ 4 
+Positive:  Smurf1, Dennd1a, Stox2, Zcchc7, Nr3c2, Adgrb3, Exoc4, AABR07060133.1 
+Negative:  Fto, Ank3, Tcf20, Mark1, Ksr2, Fgf14, Sptbn1 
+pcasteelblue_ 5 
+Positive:  Nr3c2, Stox2, Tcf20, Smurf1, Fgf14, Ksr2, AABR07060133.1, Mark1 
+Negative:  Dennd1a, Zcchc7, Sptbn1, Fto, Exoc4, Ank3, Adgrb3 
+Transposing data matrix
+Initializing state using k-means centroids initialization
+Harmony 1/10
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Harmony converged after 1 iterations
+There were 50 or more warnings (use warnings() to see the first 50)
+Selecting by kME_Zhou-M1
+Selecting by kME_Zhou-M2
+Selecting by kME_Zhou-M3
+Selecting by kME_Zhou-M4
+Selecting by kME_Zhou-M5
+Selecting by kME_Zhou-M6
+Selecting by kME_Zhou-M7
+Selecting by kME_Zhou-M8
+Selecting by kME_Zhou-M9
+Selecting by kME_Zhou-M10
+Selecting by kME_Zhou-M11
+Selecting by kME_Zhou-M12
+Selecting by kME_Zhou-M13
+Selecting by kME_Zhou-M14
+Selecting by kME_Zhou-M15
+Selecting by kME_Zhou-M16
+Selecting by kME_Zhou-M17
+Selecting by kME_Zhou-M18
+Selecting by kME_Zhou-M19
+Selecting by kME_Zhou-M20
+Selecting by kME_Zhou-M21
+Selecting by kME_Zhou-M22
+Selecting by kME_Zhou-M23
+Selecting by kME_Zhou-M24
+Selecting by kME_Zhou-M25
+Selecting by kME_Zhou-M26
+Selecting by kME_Zhou-M27
+Selecting by kME_Zhou-M28
+Selecting by kME_Zhou-M29
+Selecting by kME_Zhou-M30
+Scale for colour is already present.
+Adding another scale for colour, which will replace the existing scale.

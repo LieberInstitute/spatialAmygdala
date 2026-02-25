@@ -1,0 +1,14 @@
+**** Job starts ****
+Sun Jan 25 11:17:01 AM EST 2026
+**** SLURM info ****
+User: mtotty
+Job id: 27103050
+Job name: ICA
+Hostname: compute-120
+Task id: 
+An object of class Seurat 
+36594 features across 163003 samples within 3 assays 
+Active assay: RNA (17297 features, 0 variable features)
+ 2 layers present: counts, data
+ 2 other assays present: SCT, integrated
+ 2 dimensional reductions calculated: pca, umap

@@ -1,0 +1,14 @@
+name: allen_env
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+dependencies:
+  - python=3.10
+  - scanpy
+  - anndata
+  - pandas
+  - h5py
+  - matplotlib
+  - seaborn
+  - jupyterlab

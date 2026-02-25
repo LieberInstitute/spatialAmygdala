@@ -1,0 +1,176 @@
+**** Job starts ****
+Fri Jan  2 10:01:59 AM EST 2026
+**** SLURM info ****
+User: mtotty
+Job id: 25963519
+Job name: hdWGCNA
+Hostname: compute-114
+Task id: 
+Allowing parallel execution with up to 30 working processes.
+An object of class Seurat 
+36594 features across 163003 samples within 3 assays 
+Active assay: RNA (17297 features, 0 variable features)
+ 2 layers present: counts, data
+ 2 other assays present: SCT, integrated
+ 2 dimensional reductions calculated: pca, umap
+pickSoftThreshold: will use block size 5109.
+ pickSoftThreshold: calculating connectivity for given powers...
+   ..working on genes 1 through 5109 of 8756
+   ..working on genes 5110 through 8756 of 8756
+   Power SFT.R.sq slope truncated.R.sq  mean.k. median.k.  max.k.
+1      1   0.1760 13.40          0.941 4.45e+03  4.46e+03 4790.00
+2      2   0.0407  3.41          0.985 2.30e+03  2.30e+03 2730.00
+3      3   0.0234 -1.63          0.875 1.22e+03  1.20e+03 1650.00
+4      4   0.4330 -4.55          0.872 6.54e+02  6.33e+02 1040.00
+5      5   0.8280 -5.33          0.972 3.59e+02  3.40e+02  706.00
+6      6   0.9040 -4.65          0.990 2.01e+02  1.86e+02  496.00
+7      7   0.9370 -4.04          0.995 1.15e+02  1.02e+02  361.00
+8      8   0.9430 -3.59          0.995 6.69e+01  5.71e+01  271.00
+9      9   0.9550 -3.19          0.996 4.00e+01  3.23e+01  208.00
+10    10   0.9520 -2.94          0.990 2.44e+01  1.84e+01  162.00
+11    12   0.9630 -2.50          0.997 9.83e+00  6.19e+00  104.00
+12    14   0.9440 -2.29          0.982 4.35e+00  2.16e+00   70.30
+13    16   0.9550 -2.07          0.995 2.10e+00  7.73e-01   49.20
+14    18   0.9350 -1.97          0.972 1.10e+00  2.88e-01   35.50
+15    20   0.9480 -1.85          0.985 6.16e-01  1.10e-01   26.20
+16    22   0.9400 -1.79          0.980 3.64e-01  4.29e-02   19.80
+17    24   0.9390 -1.74          0.982 2.25e-01  1.72e-02   15.20
+18    26   0.9460 -1.69          0.992 1.45e-01  7.05e-03   11.80
+19    28   0.9460 -1.64          0.977 9.62e-02  2.91e-03    9.37
+20    30   0.9380 -1.60          0.967 6.58e-02  1.23e-03    7.50
+  Power   SFT.R.sq     slope truncated.R.sq   mean.k. median.k.    max.k.
+1     1 0.17561840 13.423477      0.9412115 4446.3977 4455.7007 4793.8457
+2     2 0.04072388  3.413997      0.9845083 2303.1955 2298.1424 2734.5244
+3     3 0.02339538 -1.625770      0.8753069 1215.8947 1198.5499 1648.3232
+4     4 0.43281199 -4.545248      0.8724348  654.1141  633.3787 1043.7734
+5     5 0.82812458 -5.333654      0.9724202  358.7198  340.3951  706.0535
+6     6 0.90411550 -4.652667      0.9900277  200.6774  185.7287  496.4135
+null device 
+          1 
+Soft power not provided. Automatically using the lowest power that meets 0.8 scale-free topology fit. Using soft_power = 5
+ Calculating consensus modules and module eigengenes block-wise from all genes
+ Calculating topological overlaps block-wise from all genes
+   Flagging genes and samples with too many missing values...
+    ..step 1
+    TOM calculation: adjacency..
+    ..will use 30 parallel threads.
+     Fraction of slow calculations: 0.000000
+    ..connectivity..
+    ..matrix multiplication (system BLAS)..
+    ..normalization..
+    ..done.
+ ..Working on block 1 .
+ ..Working on block 1 .
+ ..merging consensus modules that are too close..
+null device 
+          1 
+[1] "grey"
+[1] "purple"
+[1] "turquoise"
+[1] "blue"
+[1] "darkorange"
+[1] "salmon"
+[1] "green"
+[1] "darkred"
+[1] "cyan"
+[1] "greenyellow"
+[1] "lightgreen"
+[1] "grey60"
+[1] "red"
+[1] "pink"
+[1] "brown"
+[1] "darkturquoise"
+[1] "lightyellow"
+[1] "royalblue"
+[1] "midnightblue"
+[1] "yellow"
+[1] "magenta"
+[1] "saddlebrown"
+[1] "tan"
+[1] "lightcyan"
+[1] "darkgrey"
+[1] "black"
+[1] "skyblue"
+[1] "darkgreen"
+[1] "white"
+[1] "orange"
+[1] "steelblue"
+[1] tan         tan         saddlebrown tan         saddlebrown tan        
+31 Levels: grey purple turquoise blue darkorange salmon green darkred ... steelblue
+null device 
+          1 
+      gene_name  module     color    kME_grey  kME_Zhou-M1 kME_Zhou-M2
+Sash1     Sash1 Zhou-M1    purple -0.03572662  0.013595300 -0.07839472
+Samd5     Samd5 Zhou-M1    purple  0.48763800  0.547818712  0.11498694
+Grm1       Grm1 Zhou-M1    purple  0.57024680  0.610167442  0.23744186
+Utrn       Utrn Zhou-M1    purple  0.06309423  0.143020988 -0.05447933
+Sf3b5     Sf3b5 Zhou-M2 turquoise  0.01678596 -0.004845854  0.12281488
+Fuca2     Fuca2 Zhou-M2 turquoise -0.01378828 -0.021025093  0.06575328
+[1] "Zhou-M1"
+[1] "Zhou-M2"
+[1] "Zhou-M3"
+[1] "Zhou-M4"
+[1] "Zhou-M5"
+[1] "Zhou-M6"
+[1] "Zhou-M7"
+[1] "Zhou-M8"
+[1] "Zhou-M9"
+[1] "Zhou-M10"
+[1] "Zhou-M11"
+[1] "Zhou-M12"
+[1] "Zhou-M13"
+[1] "Zhou-M14"
+[1] "Zhou-M15"
+[1] "Zhou-M16"
+[1] "Zhou-M17"
+[1] "Zhou-M18"
+[1] "Zhou-M19"
+[1] "Zhou-M20"
+[1] "Zhou-M21"
+[1] "Zhou-M22"
+[1] "Zhou-M23"
+[1] "Zhou-M24"
+[1] "Zhou-M25"
+[1] "Zhou-M26"
+[1] "Zhou-M27"
+[1] "Zhou-M28"
+[1] "Zhou-M29"
+[1] "Zhou-M30"
+null device 
+          1 
+[1] "Zhou-M1"
+[1] "Zhou-M2"
+[1] "Zhou-M3"
+[1] "Zhou-M4"
+[1] "Zhou-M5"
+[1] "Zhou-M6"
+[1] "Zhou-M7"
+[1] "Zhou-M8"
+[1] "Zhou-M9"
+[1] "Zhou-M10"
+[1] "Zhou-M11"
+[1] "Zhou-M12"
+[1] "Zhou-M13"
+[1] "Zhou-M14"
+[1] "Zhou-M15"
+[1] "Zhou-M16"
+[1] "Zhou-M17"
+[1] "Zhou-M18"
+[1] "Zhou-M19"
+[1] "Zhou-M20"
+[1] "Zhou-M21"
+[1] "Zhou-M22"
+[1] "Zhou-M23"
+[1] "Zhou-M24"
+[1] "Zhou-M25"
+[1] "Zhou-M26"
+[1] "Zhou-M27"
+[1] "Zhou-M28"
+[1] "Zhou-M29"
+[1] "Zhou-M30"
+null device 
+          1 
+null device 
+          1 
+**** Job ends ****
+Fri Jan  2 05:56:16 PM EST 2026

@@ -1,0 +1,4 @@
+Unloading conda_R/4.4
+Loading conda_R/4.4
+/var/spool/slurm/d/job24389292/slurm_script: line 14: 3493559 Killed                  python loading_h5ad_AnnData_ITCs.py
+slurmstepd: error: Detected 1 oom-kill event(s) in StepId=24389292.batch. Some of your processes may have been killed by the cgroup out-of-memory handler.

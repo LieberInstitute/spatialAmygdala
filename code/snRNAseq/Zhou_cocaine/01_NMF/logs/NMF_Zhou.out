@@ -1,0 +1,16 @@
+**** Job starts ****
+Tue Jan  6 10:20:46 AM EST 2026
+**** SLURM info ****
+User: mtotty
+Job id: 25984761
+Job name: NMF
+Hostname: compute-142
+Task id: 
+An object of class Seurat 
+36594 features across 163003 samples within 3 assays 
+Active assay: RNA (17297 features, 0 variable features)
+ 2 layers present: counts, data
+ 2 other assays present: SCT, integrated
+ 2 dimensional reductions calculated: pca, umap
+**** Job ends ****
+Tue Jan  6 11:38:23 AM EST 2026
