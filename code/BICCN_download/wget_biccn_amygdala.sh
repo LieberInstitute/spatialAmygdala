@@ -20,7 +20,7 @@ medial_url="https://datasets.cellxgene.cziscience.com/bb88b65d-978a-47ba-9cfc-b2
 basolateral_url="https://datasets.cellxgene.cziscience.com/4e124ecc-7885-465c-bab9-4e94d9d40b6a.rds"
 basomedial_url="https://datasets.cellxgene.cziscience.com/5bf5d239-6699-4df5-a9cf-406f533fc178.rds"
 lateral_url="https://datasets.cellxgene.cziscience.com/fa820927-923b-4a90-86a1-7ce0b6b4335f.rds"
-cortical_url-"https://datasets.cellxgene.cziscience.com/96c467f9-e0c5-4d30-98e9-57aefdfd5ddb.rds"
+cortical_url="https://datasets.cellxgene.cziscience.com/96c467f9-e0c5-4d30-98e9-57aefdfd5ddb.rds"
 
 
 # Target file name to save as (optional, can be changed to your preference)
