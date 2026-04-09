@@ -1,0 +1,265 @@
+**** Job starts ****
+Fri Feb 27 09:21:51 AM EST 2026
+**** JHPCE info ****
+User: mtotty
+Job id: 
+Job name: 
+Hostname: compute-144
+Unloading conda_R/4.4
+Loading conda_R/4.5
+
+The following have been reloaded with a version change:
+  1) conda_R/4.4 => conda_R/4.5
+
+
+Currently Loaded Modules:
+  1) JHPCE_ROCKY9_DEFAULT_ENV   3) git-status-size/github   5) conda_R/4.5
+  2) JHPCE_tools/3.0            4) conda/3-24.3.0
+
+ 
+
+
+Attaching package: ‘SpatialFeatureExperiment’
+
+The following object is masked from ‘package:base’:
+
+    scale
+
+Loading required package: SingleCellExperiment
+Loading required package: SummarizedExperiment
+Loading required package: MatrixGenerics
+Loading required package: matrixStats
+
+Attaching package: ‘MatrixGenerics’
+
+The following objects are masked from ‘package:matrixStats’:
+
+    colAlls, colAnyNAs, colAnys, colAvgsPerRowSet, colCollapse,
+    colCounts, colCummaxs, colCummins, colCumprods, colCumsums,
+    colDiffs, colIQRDiffs, colIQRs, colLogSumExps, colMadDiffs,
+    colMads, colMaxs, colMeans2, colMedians, colMins, colOrderStats,
+    colProds, colQuantiles, colRanges, colRanks, colSdDiffs, colSds,
+    colSums2, colTabulates, colVarDiffs, colVars, colWeightedMads,
+    colWeightedMeans, colWeightedMedians, colWeightedSds,
+    colWeightedVars, rowAlls, rowAnyNAs, rowAnys, rowAvgsPerColSet,
+    rowCollapse, rowCounts, rowCummaxs, rowCummins, rowCumprods,
+    rowCumsums, rowDiffs, rowIQRDiffs, rowIQRs, rowLogSumExps,
+    rowMadDiffs, rowMads, rowMaxs, rowMeans2, rowMedians, rowMins,
+    rowOrderStats, rowProds, rowQuantiles, rowRanges, rowRanks,
+    rowSdDiffs, rowSds, rowSums2, rowTabulates, rowVarDiffs, rowVars,
+    rowWeightedMads, rowWeightedMeans, rowWeightedMedians,
+    rowWeightedSds, rowWeightedVars
+
+Loading required package: GenomicRanges
+Loading required package: stats4
+Loading required package: BiocGenerics
+Loading required package: generics
+
+Attaching package: ‘generics’
+
+The following objects are masked from ‘package:base’:
+
+    as.difftime, as.factor, as.ordered, intersect, is.element, setdiff,
+    setequal, union
+
+
+Attaching package: ‘BiocGenerics’
+
+The following objects are masked from ‘package:stats’:
+
+    IQR, mad, sd, var, xtabs
+
+The following objects are masked from ‘package:base’:
+
+    anyDuplicated, aperm, append, as.data.frame, basename, cbind,
+    colnames, dirname, do.call, duplicated, eval, evalq, Filter, Find,
+    get, grep, grepl, is.unsorted, lapply, Map, mapply, match, mget,
+    order, paste, pmax, pmax.int, pmin, pmin.int, Position, rank,
+    rbind, Reduce, rownames, sapply, saveRDS, table, tapply, unique,
+    unsplit, which.max, which.min
+
+Loading required package: S4Vectors
+
+Attaching package: ‘S4Vectors’
+
+The following object is masked from ‘package:utils’:
+
+    findMatches
+
+The following objects are masked from ‘package:base’:
+
+    expand.grid, I, unname
+
+Loading required package: IRanges
+Loading required package: GenomeInfoDb
+Loading required package: Biobase
+Welcome to Bioconductor
+
+    Vignettes contain introductory material; view with
+    'browseVignettes()'. To cite Bioconductor, see
+    'citation("Biobase")', and for packages 'citation("pkgname")'.
+
+
+Attaching package: ‘Biobase’
+
+The following object is masked from ‘package:MatrixGenerics’:
+
+    rowMedians
+
+The following objects are masked from ‘package:matrixStats’:
+
+    anyMissing, rowMedians
+
+Loading required package: ggplot2
+
+Attaching package: ‘ggplot2’
+
+The following object is masked from ‘package:SpatialFeatureExperiment’:
+
+    unit
+
+here() starts at /dcs04/lieber/marmaypag/spatialAMY_LIBD4125/spatialAmygdala
+
+Attaching package: ‘dplyr’
+
+The following object is masked from ‘package:Biobase’:
+
+    combine
+
+The following objects are masked from ‘package:GenomicRanges’:
+
+    intersect, setdiff, union
+
+The following object is masked from ‘package:GenomeInfoDb’:
+
+    intersect
+
+The following objects are masked from ‘package:IRanges’:
+
+    collapse, desc, intersect, setdiff, slice, union
+
+The following objects are masked from ‘package:S4Vectors’:
+
+    first, intersect, rename, setdiff, setequal, union
+
+The following objects are masked from ‘package:BiocGenerics’:
+
+    combine, intersect, setdiff, setequal, union
+
+The following object is masked from ‘package:generics’:
+
+    explain
+
+The following object is masked from ‘package:matrixStats’:
+
+    count
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+
+Attaching package: ‘Matrix’
+
+The following object is masked from ‘package:S4Vectors’:
+
+    expand
+
+Loading required package: GIGrvg
+class: SpatialFeatureExperiment 
+dim: 18085 284986 
+metadata(0):
+assays(1): counts
+rownames(18085): SAMD11 NOC2L ... MT-ND6 MT-CYB
+rowData names(3): ID Symbol Type
+colnames(284986): 4 7 ... 63230-2 63232-2
+colData names(12): Barcode sample_id ... log_detected qc_filter
+reducedDimNames(0):
+mainExpName: NULL
+altExpNames(0):
+spatialCoords names(2) : pxl_col_in_fullres pxl_row_in_fullres
+imgData names(4): sample_id image_id data scaleFactor
+
+unit:
+Geometries:
+colGeometries: centroids (POINT), cellSeg (POLYGON) 
+
+Graphs:
+H1-W369TJK_A1: 
+H1-937FVHX_A1: 
+H1-937FVHX_D1: 
+H1-HW9VGBW_A1: 
+H1-HW9VGBW_D1: [1]  18085 284986
+[1] 13013
+Samples found: Br9280_CeA, Br8325_MeA, Br8325_CeA, Br9280_ITC, Br9280_MeA
+  Sample Br9280_CeA: 50908 spots, 2000 genes
+  Sample Br8325_MeA: 62170 spots, 2000 genes
+  Sample Br8325_CeA: 70153 spots, 2000 genes
+  Sample Br9280_ITC: 51035 spots, 2000 genes
+  Sample Br9280_MeA: 50720 spots, 2000 genes
+***************************************
+  INPUT INFO:
+    - Number of tissue sections: 5 
+    - Number of cells/spots: 50908 62170 70153 51035 50720 
+    - Number of genes: 2000 
+    - Potts interaction parameter estimation method: fix 
+      - Fix Potts interaction parameter to be: 1.5 
+  To list all hyper-parameters, Type listAllHyper(BASS_object)
+***************************************
+***************************************
+  Please refer to the paper for details of the paramters
+  ALL HYPER-PARAMETERS:
+    - Number of cell types C: 30
+    - Number of spatial domains R: 15
+    - Initialization method: kmeans
+    - Scale matrix of the inverse-Wishart prior Psi0: 1I
+    - Degrees of freedom of the inverse-Wishart prior n0: 1
+    - Number of MCMC burn-in iterations: 2000
+    - Number of MCMC posterior samples: 5000
+    - Potts interaction parameter estimation approach: fix
+      - Fix Potts interaction parameter to be: 1.5
+    - Concentration parameter of the Dirichlet prior alpha0: 1
+    - Minimum number of neighbors for each cell/spot based on the Euclidean distance: 4
+***************************************
+Loading required package: Rcpp
+Running PCA...
+Running Harmony batch correction...
+Transposing data matrix
+Initializing state using k-means centroids initialization
+Harmony 1/10
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Harmony 2/10
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Harmony 3/10
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Harmony converged after 3 iterations
+There were 12 warnings (use warnings() to see them)
+Custom preprocessing complete: 20 PCs across 284986 total spots
+Running BASS algorithm...
+Burnin iteration: 100/2000Burnin iteration: 200/2000Burnin iteration: 300/2000Burnin iteration: 400/2000Burnin iteration: 500/2000Burnin iteration: 600/2000Burnin iteration: 700/2000Burnin iteration: 800/2000Burnin iteration: 900/2000Burnin iteration: 1000/2000Burnin iteration: 1100/2000Burnin iteration: 1200/2000Burnin iteration: 1300/2000Burnin iteration: 1400/2000Burnin iteration: 1500/2000Burnin iteration: 1600/2000Burnin iteration: 1700/2000Burnin iteration: 1800/2000Burnin iteration: 1900/2000Burnin iteration: 2000/2000Sampling iteration: 100/5000Sampling iteration: 200/5000Sampling iteration: 300/5000Sampling iteration: 400/5000Sampling iteration: 500/5000Sampling iteration: 600/5000Sampling iteration: 700/5000Sampling iteration: 800/5000Sampling iteration: 900/5000Sampling iteration: 1000/5000Sampling iteration: 1100/5000Sampling iteration: 1200/5000Sampling iteration: 1300/5000Sampling iteration: 1400/5000Sampling iteration: 1500/5000Sampling iteration: 1600/5000Sampling iteration: 1700/5000Sampling iteration: 1800/5000Sampling iteration: 1900/5000Sampling iteration: 2000/5000Sampling iteration: 2100/5000Sampling iteration: 2200/5000Sampling iteration: 2300/5000Sampling iteration: 2400/5000Sampling iteration: 2500/5000Sampling iteration: 2600/5000Sampling iteration: 2700/5000Sampling iteration: 2800/5000Sampling iteration: 2900/5000Sampling iteration: 3000/5000Sampling iteration: 3100/5000Sampling iteration: 3200/5000Sampling iteration: 3300/5000Sampling iteration: 3400/5000Sampling iteration: 3500/5000Sampling iteration: 3600/5000Sampling iteration: 3700/5000Sampling iteration: 3800/5000Sampling iteration: 3900/5000Sampling iteration: 4000/5000Sampling iteration: 4100/5000Sampling iteration: 4200/5000Sampling iteration: 4300/5000Sampling iteration: 4400/5000Sampling iteration: 4500/5000Sampling iteration: 4600/5000Sampling iteration: 4700/5000Sampling iteration: 4800/5000Sampling iteration: 4900/5000Sampling iteration: 5000/5000
+done
+There were 50 or more warnings (use warnings() to see the first 50)
+BASS run complete.
+Post-processing...
+done
+**** Job ends ****
+Fri Feb 27 07:29:32 PM EST 2026

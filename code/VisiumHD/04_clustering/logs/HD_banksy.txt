@@ -1,0 +1,240 @@
+**** Job starts ****
+Thu Apr  2 02:30:10 AM EDT 2026
+**** JHPCE info ****
+User: mtotty
+Job id: 
+Job name: 
+Hostname: compute-168
+Loading conda_R/4.5
+
+Currently Loaded Modules:
+  1) JHPCE_ROCKY9_DEFAULT_ENV   3) conda/3-24.3.0
+  2) JHPCE_tools/3.0            4) conda_R/4.5
+
+ 
+
+
+Attaching package: ‘SpatialFeatureExperiment’
+
+The following object is masked from ‘package:base’:
+
+    scale
+
+Loading required package: SingleCellExperiment
+Loading required package: SummarizedExperiment
+Loading required package: MatrixGenerics
+Loading required package: matrixStats
+
+Attaching package: ‘MatrixGenerics’
+
+The following objects are masked from ‘package:matrixStats’:
+
+    colAlls, colAnyNAs, colAnys, colAvgsPerRowSet, colCollapse,
+    colCounts, colCummaxs, colCummins, colCumprods, colCumsums,
+    colDiffs, colIQRDiffs, colIQRs, colLogSumExps, colMadDiffs,
+    colMads, colMaxs, colMeans2, colMedians, colMins, colOrderStats,
+    colProds, colQuantiles, colRanges, colRanks, colSdDiffs, colSds,
+    colSums2, colTabulates, colVarDiffs, colVars, colWeightedMads,
+    colWeightedMeans, colWeightedMedians, colWeightedSds,
+    colWeightedVars, rowAlls, rowAnyNAs, rowAnys, rowAvgsPerColSet,
+    rowCollapse, rowCounts, rowCummaxs, rowCummins, rowCumprods,
+    rowCumsums, rowDiffs, rowIQRDiffs, rowIQRs, rowLogSumExps,
+    rowMadDiffs, rowMads, rowMaxs, rowMeans2, rowMedians, rowMins,
+    rowOrderStats, rowProds, rowQuantiles, rowRanges, rowRanks,
+    rowSdDiffs, rowSds, rowSums2, rowTabulates, rowVarDiffs, rowVars,
+    rowWeightedMads, rowWeightedMeans, rowWeightedMedians,
+    rowWeightedSds, rowWeightedVars
+
+Loading required package: GenomicRanges
+Loading required package: stats4
+Loading required package: BiocGenerics
+Loading required package: generics
+
+Attaching package: ‘generics’
+
+The following objects are masked from ‘package:base’:
+
+    as.difftime, as.factor, as.ordered, intersect, is.element, setdiff,
+    setequal, union
+
+
+Attaching package: ‘BiocGenerics’
+
+The following objects are masked from ‘package:stats’:
+
+    IQR, mad, sd, var, xtabs
+
+The following objects are masked from ‘package:base’:
+
+    anyDuplicated, aperm, append, as.data.frame, basename, cbind,
+    colnames, dirname, do.call, duplicated, eval, evalq, Filter, Find,
+    get, grep, grepl, is.unsorted, lapply, Map, mapply, match, mget,
+    order, paste, pmax, pmax.int, pmin, pmin.int, Position, rank,
+    rbind, Reduce, rownames, sapply, saveRDS, table, tapply, unique,
+    unsplit, which.max, which.min
+
+Loading required package: S4Vectors
+
+Attaching package: ‘S4Vectors’
+
+The following object is masked from ‘package:utils’:
+
+    findMatches
+
+The following objects are masked from ‘package:base’:
+
+    expand.grid, I, unname
+
+Loading required package: IRanges
+Loading required package: GenomeInfoDb
+Loading required package: Biobase
+Welcome to Bioconductor
+
+    Vignettes contain introductory material; view with
+    'browseVignettes()'. To cite Bioconductor, see
+    'citation("Biobase")', and for packages 'citation("pkgname")'.
+
+
+Attaching package: ‘Biobase’
+
+The following object is masked from ‘package:MatrixGenerics’:
+
+    rowMedians
+
+The following objects are masked from ‘package:matrixStats’:
+
+    anyMissing, rowMedians
+
+Loading required package: ggplot2
+
+Attaching package: ‘ggplot2’
+
+The following object is masked from ‘package:SpatialFeatureExperiment’:
+
+    unit
+
+here() starts at /dcs04/lieber/marmaypag/spatialAMY_LIBD4125/spatialAmygdala
+
+Attaching package: ‘dplyr’
+
+The following object is masked from ‘package:Biobase’:
+
+    combine
+
+The following objects are masked from ‘package:GenomicRanges’:
+
+    intersect, setdiff, union
+
+The following object is masked from ‘package:GenomeInfoDb’:
+
+    intersect
+
+The following objects are masked from ‘package:IRanges’:
+
+    collapse, desc, intersect, setdiff, slice, union
+
+The following objects are masked from ‘package:S4Vectors’:
+
+    first, intersect, rename, setdiff, setequal, union
+
+The following objects are masked from ‘package:BiocGenerics’:
+
+    combine, intersect, setdiff, setequal, union
+
+The following object is masked from ‘package:generics’:
+
+    explain
+
+The following object is masked from ‘package:matrixStats’:
+
+    count
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+Loading required package: Rcpp
+
+Attaching package: ‘data.table’
+
+The following objects are masked from ‘package:dplyr’:
+
+    between, first, last
+
+The following object is masked from ‘package:SummarizedExperiment’:
+
+    shift
+
+The following object is masked from ‘package:GenomicRanges’:
+
+    shift
+
+The following object is masked from ‘package:IRanges’:
+
+    shift
+
+The following objects are masked from ‘package:S4Vectors’:
+
+    first, second
+
+The following object is masked from ‘package:SpatialFeatureExperiment’:
+
+    transpose
+
+class: SpatialExperiment 
+dim: 37082 853636 
+metadata(0):
+assays(1): counts
+rownames(37082): MIR1302-2HG FAM138A ... DEPRECATED_ENSG00000284873
+  DEPRECATED_ENSG00000285687
+rowData names(3): ID Symbol subsets_Mito
+colnames(853636): s_016um_00000_00000-1 s_016um_00000_00002-1 ...
+  s_016um_00418_00417-1 s_016um_00418_00418-1
+colData names(15): barcode in_tissue ... log_detected qc_filter
+reducedDimNames(0):
+mainExpName: Gene Expression
+altExpNames(0):
+spatialCoords names(2) : pxl_col_in_fullres pxl_row_in_fullres
+imgData names(4): sample_id image_id data scaleFactor
+   group min_sdimx max_sdimx
+   <num>     <num>     <num>
+1:     3 120055.78 146713.76
+2:     2  80037.19 106605.80
+3:     1  40018.59  66657.22
+4:     4 160074.37 186753.44
+5:     5 200092.97 226611.93
+Computing neighbors...
+Spatial mode is kNN_median
+Parameters: k_geom=36
+Done
+Done
+Warning message:
+In asMethod(object) :
+  sparse->dense coercion: allocating vector of size 12.7 GiB
+Warning message:
+In asMethod(object) :
+  sparse->dense coercion: allocating vector of size 12.7 GiB
+class: SpatialExperiment 
+dim: 2000 853636 
+metadata(1): BANKSY_params
+assays(3): counts logcounts H0
+rownames(2000): PLP1 GFAP ... PGRMC2 KLF3
+rowData names(3): ID Symbol subsets_Mito
+colnames(853636): s_016um_00000_00000-1 s_016um_00000_00002-1 ...
+  s_016um_00418_00417-1 s_016um_00418_00418-1
+colData names(16): barcode in_tissue ... qc_filter sizeFactor
+reducedDimNames(1): PCA_M0_lam0.8
+mainExpName: Gene Expression
+altExpNames(0):
+spatialCoords names(2) : sdimx sdimy
+imgData names(4): sample_id image_id data scaleFactor
+Error in RunHarmony.SingleCellExperiment(spe.sub, "Sample", reduction.save = "HARMONY_M0_lam0.8") : 
+  Trying to integrate over variables missing in colData
+Calls: RunHarmony -> RunHarmony.SingleCellExperiment
+Execution halted
+**** Job ends ****
+Thu Apr  2 02:53:44 AM EDT 2026
