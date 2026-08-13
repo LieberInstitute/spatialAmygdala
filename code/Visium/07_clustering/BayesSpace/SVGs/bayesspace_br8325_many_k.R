@@ -25,6 +25,12 @@ spe <- spatialPreprocess(spe, platform="Visium", skip.PCA=TRUE)
 colData(spe)$row <- spe$array_row
 colData(spe)$col <- spe$array_col
 
+## -- 2026-08-13 update --
+## Note that the spatial coordinates were not offset and
+## that is ok in this case since the data was subset to one donor first.
+## See http://edward130603.github.io/BayesSpace/articles/joint_clustering.html#clustering-1
+## for more details.
+
 metadata(spe)$BayesSpace.data <- list(platform = "Visium", is.enhanced = FALSE)
 
 message("Running spatialCluster()")
