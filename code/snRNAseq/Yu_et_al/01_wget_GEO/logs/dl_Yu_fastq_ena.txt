@@ -1,0 +1,158 @@
+**** Job starts ****
+Mon Mar 30 02:04:44 PM EDT 2026
+**** JHPCE info ****
+User: mtotty
+Job id: 
+Job name: 
+Hostname: transfer-01
+
+======== Downloading AMH1 ========
+Mon Mar 30 02:04:45 PM EDT 2026
+  Querying ENA for SRR17762195 FASTQ URLs...
+  Downloading ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR177/095/SRR17762195/SRR17762195_1.fastq.gz...
+  Downloading ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR177/095/SRR17762195/SRR17762195_2.fastq.gz...
+  Done with SRR17762195
+  Querying ENA for SRR17762196 FASTQ URLs...
+  Downloading ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR177/096/SRR17762196/SRR17762196_1.fastq.gz...
+  Downloading ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR177/096/SRR17762196/SRR17762196_2.fastq.gz...
+  Done with SRR17762196
+  Querying ENA for SRR17762197 FASTQ URLs...
+  Downloading ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR177/097/SRR17762197/SRR17762197_1.fastq.gz...
+  Downloading ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR177/097/SRR17762197/SRR17762197_2.fastq.gz...
+  Done with SRR17762197
+  Querying ENA for SRR17762198 FASTQ URLs...
+  Downloading ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR177/098/SRR17762198/SRR17762198_1.fastq.gz...
+  Downloading ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR177/098/SRR17762198/SRR17762198_2.fastq.gz...
+  Done with SRR17762198
+  Querying ENA for SRR17762199 FASTQ URLs...
+  Downloading ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR177/099/SRR17762199/SRR17762199_1.fastq.gz...
+  Downloading ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR177/099/SRR17762199/SRR17762199_2.fastq.gz...
+  Done with SRR17762199
+  Querying ENA for SRR17762200 FASTQ URLs...
+  Downloading ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR177/000/SRR17762200/SRR17762200_1.fastq.gz...
+  Downloading ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR177/000/SRR17762200/SRR17762200_2.fastq.gz...
+  Done with SRR17762200
+  Querying ENA for SRR17762201 FASTQ URLs...
+  Downloading ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR177/001/SRR17762201/SRR17762201_1.fastq.gz...
+  Downloading ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR177/001/SRR17762201/SRR17762201_2.fastq.gz...
+  Done with SRR17762201
+  Querying ENA for SRR17762202 FASTQ URLs...
+  Downloading ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR177/002/SRR17762202/SRR17762202_1.fastq.gz...
+  Downloading ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR177/002/SRR17762202/SRR17762202_2.fastq.gz...
+  Done with SRR17762202
+  Files for AMH1:
+total 200G
+-rw-rw----+ 1 mtotty lieber_marmaypag 8.2G Mar 30 14:42 SRR17762195_1.fastq.gz
+-rw-rw----+ 1 mtotty lieber_marmaypag  19G Mar 30 16:11 SRR17762195_2.fastq.gz
+-rw-rw----+ 1 mtotty lieber_marmaypag 7.0G Mar 30 16:39 SRR17762196_1.fastq.gz
+-rw-rw----+ 1 mtotty lieber_marmaypag  16G Mar 30 17:31 SRR17762196_2.fastq.gz
+-rw-rw----+ 1 mtotty lieber_marmaypag 8.0G Mar 30 17:59 SRR17762197_1.fastq.gz
+-rw-rw----+ 1 mtotty lieber_marmaypag  19G Mar 30 18:42 SRR17762197_2.fastq.gz
+-rw-rw----+ 1 mtotty lieber_marmaypag 6.9G Mar 30 18:56 SRR17762198_1.fastq.gz
+-rw-rw----+ 1 mtotty lieber_marmaypag  16G Mar 30 19:22 SRR17762198_2.fastq.gz
+-rw-rw----+ 1 mtotty lieber_marmaypag 7.3G Mar 30 19:36 SRR17762199_1.fastq.gz
+-rw-rw----+ 1 mtotty lieber_marmaypag  17G Mar 30 20:15 SRR17762199_2.fastq.gz
+-rw-rw----+ 1 mtotty lieber_marmaypag 7.3G Mar 30 20:28 SRR17762200_1.fastq.gz
+-rw-rw----+ 1 mtotty lieber_marmaypag  17G Mar 30 20:52 SRR17762200_2.fastq.gz
+-rw-rw----+ 1 mtotty lieber_marmaypag 8.0G Mar 30 21:04 SRR17762201_1.fastq.gz
+-rw-rw----+ 1 mtotty lieber_marmaypag  18G Mar 30 21:23 SRR17762201_2.fastq.gz
+-rw-rw----+ 1 mtotty lieber_marmaypag 9.0G Mar 30 21:33 SRR17762202_1.fastq.gz
+-rw-rw----+ 1 mtotty lieber_marmaypag  20G Mar 30 22:03 SRR17762202_2.fastq.gz
+
+======== Downloading AMH2 ========
+Mon Mar 30 10:03:18 PM EDT 2026
+  Querying ENA for SRR17762203 FASTQ URLs...
+  Downloading ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR177/003/SRR17762203/SRR17762203_1.fastq.gz...
+  Downloading ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR177/003/SRR17762203/SRR17762203_2.fastq.gz...
+  Done with SRR17762203
+  Querying ENA for SRR17762204 FASTQ URLs...
+  Downloading ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR177/004/SRR17762204/SRR17762204_1.fastq.gz...
+  Downloading ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR177/004/SRR17762204/SRR17762204_2.fastq.gz...
+  Done with SRR17762204
+  Querying ENA for SRR17762205 FASTQ URLs...
+  Downloading ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR177/005/SRR17762205/SRR17762205_1.fastq.gz...
+  Downloading ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR177/005/SRR17762205/SRR17762205_2.fastq.gz...
+  Done with SRR17762205
+  Files for AMH2:
+total 74G
+-rw-rw----+ 1 mtotty lieber_marmaypag 7.8G Mar 30 22:15 SRR17762203_1.fastq.gz
+-rw-rw----+ 1 mtotty lieber_marmaypag  18G Mar 30 22:36 SRR17762203_2.fastq.gz
+-rw-rw----+ 1 mtotty lieber_marmaypag 6.8G Mar 30 22:46 SRR17762204_1.fastq.gz
+-rw-rw----+ 1 mtotty lieber_marmaypag  16G Mar 30 23:03 SRR17762204_2.fastq.gz
+-rw-rw----+ 1 mtotty lieber_marmaypag 7.8G Mar 30 23:11 SRR17762205_1.fastq.gz
+-rw-rw----+ 1 mtotty lieber_marmaypag  18G Mar 30 23:26 SRR17762205_2.fastq.gz
+
+======== Downloading AMH3 ========
+Mon Mar 30 11:26:58 PM EDT 2026
+  Querying ENA for SRR17762206 FASTQ URLs...
+  Downloading ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR177/006/SRR17762206/SRR17762206_1.fastq.gz...
+  Downloading ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR177/006/SRR17762206/SRR17762206_2.fastq.gz...
+  Done with SRR17762206
+  Querying ENA for SRR17762207 FASTQ URLs...
+  Downloading ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR177/007/SRR17762207/SRR17762207_1.fastq.gz...
+  Downloading ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR177/007/SRR17762207/SRR17762207_2.fastq.gz...
+  Done with SRR17762207
+  Querying ENA for SRR17762208 FASTQ URLs...
+  Downloading ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR177/008/SRR17762208/SRR17762208_1.fastq.gz...
+  Downloading ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR177/008/SRR17762208/SRR17762208_2.fastq.gz...
+  Done with SRR17762208
+  Files for AMH3:
+total 80G
+-rw-rw----+ 1 mtotty lieber_marmaypag 8.2G Mar 30 23:40 SRR17762206_1.fastq.gz
+-rw-rw----+ 1 mtotty lieber_marmaypag  20G Mar 31 00:16 SRR17762206_2.fastq.gz
+-rw-rw----+ 1 mtotty lieber_marmaypag 7.2G Mar 31 00:27 SRR17762207_1.fastq.gz
+-rw-rw----+ 1 mtotty lieber_marmaypag  17G Mar 31 00:47 SRR17762207_2.fastq.gz
+-rw-rw----+ 1 mtotty lieber_marmaypag 9.2G Mar 31 00:59 SRR17762208_1.fastq.gz
+-rw-rw----+ 1 mtotty lieber_marmaypag  21G Mar 31 01:33 SRR17762208_2.fastq.gz
+
+**** All downloads complete ****
+**** Final file listing ****
+../../../../processed-data/snRNAseq/Yu_et_al/:
+total 1.8G
+drwxrws---+ 2 mtotty lieber_marmaypag    2 Mar  9 20:40 01_wget_GEO
+drwxrws---+ 2 mtotty lieber_marmaypag   18 Mar 30 21:33 AMH1
+drwxrws---+ 2 mtotty lieber_marmaypag    8 Mar 30 23:11 AMH2
+drwxrws---+ 2 mtotty lieber_marmaypag    8 Mar 31 00:59 AMH3
+-rw-r-----+ 1 mtotty lieber_marmaypag 1.8G Jan  8  2024 yu_sce_gtf.rda
+
+../../../../processed-data/snRNAseq/Yu_et_al/01_wget_GEO:
+total 0
+
+../../../../processed-data/snRNAseq/Yu_et_al/AMH1:
+total 200G
+-rw-rw----+ 1 mtotty lieber_marmaypag 8.2G Mar 30 14:42 SRR17762195_1.fastq.gz
+-rw-rw----+ 1 mtotty lieber_marmaypag  19G Mar 30 16:11 SRR17762195_2.fastq.gz
+-rw-rw----+ 1 mtotty lieber_marmaypag 7.0G Mar 30 16:39 SRR17762196_1.fastq.gz
+-rw-rw----+ 1 mtotty lieber_marmaypag  16G Mar 30 17:31 SRR17762196_2.fastq.gz
+-rw-rw----+ 1 mtotty lieber_marmaypag 8.0G Mar 30 17:59 SRR17762197_1.fastq.gz
+-rw-rw----+ 1 mtotty lieber_marmaypag  19G Mar 30 18:42 SRR17762197_2.fastq.gz
+-rw-rw----+ 1 mtotty lieber_marmaypag 6.9G Mar 30 18:56 SRR17762198_1.fastq.gz
+-rw-rw----+ 1 mtotty lieber_marmaypag  16G Mar 30 19:22 SRR17762198_2.fastq.gz
+-rw-rw----+ 1 mtotty lieber_marmaypag 7.3G Mar 30 19:36 SRR17762199_1.fastq.gz
+-rw-rw----+ 1 mtotty lieber_marmaypag  17G Mar 30 20:15 SRR17762199_2.fastq.gz
+-rw-rw----+ 1 mtotty lieber_marmaypag 7.3G Mar 30 20:28 SRR17762200_1.fastq.gz
+-rw-rw----+ 1 mtotty lieber_marmaypag  17G Mar 30 20:52 SRR17762200_2.fastq.gz
+-rw-rw----+ 1 mtotty lieber_marmaypag 8.0G Mar 30 21:04 SRR17762201_1.fastq.gz
+-rw-rw----+ 1 mtotty lieber_marmaypag  18G Mar 30 21:23 SRR17762201_2.fastq.gz
+-rw-rw----+ 1 mtotty lieber_marmaypag 9.0G Mar 30 21:33 SRR17762202_1.fastq.gz
+-rw-rw----+ 1 mtotty lieber_marmaypag  20G Mar 30 22:03 SRR17762202_2.fastq.gz
+
+../../../../processed-data/snRNAseq/Yu_et_al/AMH2:
+total 74G
+-rw-rw----+ 1 mtotty lieber_marmaypag 7.8G Mar 30 22:15 SRR17762203_1.fastq.gz
+-rw-rw----+ 1 mtotty lieber_marmaypag  18G Mar 30 22:36 SRR17762203_2.fastq.gz
+-rw-rw----+ 1 mtotty lieber_marmaypag 6.8G Mar 30 22:46 SRR17762204_1.fastq.gz
+-rw-rw----+ 1 mtotty lieber_marmaypag  16G Mar 30 23:03 SRR17762204_2.fastq.gz
+-rw-rw----+ 1 mtotty lieber_marmaypag 7.8G Mar 30 23:11 SRR17762205_1.fastq.gz
+-rw-rw----+ 1 mtotty lieber_marmaypag  18G Mar 30 23:26 SRR17762205_2.fastq.gz
+
+../../../../processed-data/snRNAseq/Yu_et_al/AMH3:
+total 80G
+-rw-rw----+ 1 mtotty lieber_marmaypag 8.2G Mar 30 23:40 SRR17762206_1.fastq.gz
+-rw-rw----+ 1 mtotty lieber_marmaypag  20G Mar 31 00:16 SRR17762206_2.fastq.gz
+-rw-rw----+ 1 mtotty lieber_marmaypag 7.2G Mar 31 00:27 SRR17762207_1.fastq.gz
+-rw-rw----+ 1 mtotty lieber_marmaypag  17G Mar 31 00:47 SRR17762207_2.fastq.gz
+-rw-rw----+ 1 mtotty lieber_marmaypag 9.2G Mar 31 00:59 SRR17762208_1.fastq.gz
+-rw-rw----+ 1 mtotty lieber_marmaypag  21G Mar 31 01:33 SRR17762208_2.fastq.gz
+**** Job ends ****
+Tue Mar 31 01:33:16 AM EDT 2026
