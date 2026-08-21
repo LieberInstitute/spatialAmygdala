@@ -1,0 +1,60 @@
+**** Job starts ****
+Wed Apr  1 11:42:09 AM EDT 2026
+**** JHPCE info ****
+User: mtotty
+Job id: 30490361
+Job name: smoothing
+Node(s): compute-093
+Node memory requested: 32768
+n Tasks: 1
+gaussian_sd = 415.50 px (150.0 µm × 2.77)
+Storage for smoothed count matrix will be 1.74 GB.
+Checking dataset point density...
+Gaussian smoothing will run in 4 chunks.
+Smoothing chunk: 1, 2, 3, 4, 
+Total runtime for in-place Gaussian smoothing: 60.18 seconds.
+
+Br9192 (1/7): 28306 spots × 15381 genes
+Storage for smoothed count matrix will be 1.45 GB.
+Checking dataset point density...
+Gaussian smoothing will run in 4 chunks.
+Smoothing chunk: 1, 2, 3, 4, 
+Total runtime for in-place Gaussian smoothing: 39.92 seconds.
+
+Br9280 (2/7): 25834 spots × 14015 genes
+Storage for smoothed count matrix will be 2.02 GB.
+Checking dataset point density...
+Gaussian smoothing will run in 4 chunks.
+Smoothing chunk: 1, 2, 3, 4, 
+Total runtime for in-place Gaussian smoothing: 67.46 seconds.
+
+Br2743 (3/7): 32556 spots × 15474 genes
+Storage for smoothed count matrix will be 2.41 GB.
+Checking dataset point density...
+Gaussian smoothing will run in 4 chunks.
+Smoothing chunk: 1, 2, 3, 4, 
+Total runtime for in-place Gaussian smoothing: 80.94 seconds.
+
+Br6471 (4/7): 36875 spots × 16345 genes
+Storage for smoothed count matrix will be 1.96 GB.
+Checking dataset point density...
+Gaussian smoothing will run in 4 chunks.
+Smoothing chunk: 1, 2, 3, 4, 
+Total runtime for in-place Gaussian smoothing: 79.14 seconds.
+
+Br8325 (5/7): 29481 spots × 16602 genes
+Storage for smoothed count matrix will be 2.39 GB.
+Checking dataset point density...
+Gaussian smoothing will run in 4 chunks.
+Smoothing chunk: 1, 2, 3, 4, 
+Total runtime for in-place Gaussian smoothing: 111.57 seconds.
+
+Br6423 (6/7): 34207 spots × 17486 genes
+Storage for smoothed count matrix will be 2.54 GB.
+Checking dataset point density...
+Gaussian smoothing will run in 4 chunks.
+Smoothing chunk: 1, 2, 3, 4, 
+Total runtime for in-place Gaussian smoothing: 100.34 seconds.
+
+Br6660 (7/7): 36756 spots × 17265 genes
+Done: Wed Apr  1 11:52:55 AM EDT 2026

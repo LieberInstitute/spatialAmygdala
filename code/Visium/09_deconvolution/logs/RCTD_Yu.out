@@ -1,0 +1,323 @@
+**** Job starts ****
+Fri Feb 27 03:28:28 PM EST 2026
+**** SLURM info ****
+User: mtotty
+Job id: 29290419
+Job name: RCTD_Yu
+Hostname: compute-174
+Task id: 
+class: SingleCellExperiment 
+dim: 31908 91699 
+metadata(0):
+assays(2): counts logcounts
+rownames(31908): MIR1302-2HG FAM138A ... AC240274.1 AC213203.1
+rowData names(7): source type ... gene_type Symbol.uniq
+colnames(91699): AAACCCAAGTCGCCAC-1 AAACCCAGTCGAGATG-1 ...
+  TTTGTTGTCACTTCTA-14 TTTGTTGTCCAAATGC-14
+colData names(14): barcode library_id ... orig_anno ident
+reducedDimNames(2): PCA UMAP
+mainExpName: RNA
+altExpNames(0):
+
+Human_Oligo_5 OPALIN Human_Oligo_6 OPALIN  Human_Astro_2 FGFR3 
+                6932                 6342                 6097 
+ Human_LAMP5 COL25A1 Human_Oligo_4 OPALIN     Human_LAMP5 BDNF 
+                4388                 3897                 3854 
+  Human_OPC_3 PDGFRA     Human_LAMP5 NDNF     Human_VGLL3 MEPE 
+                3677                 2848                 2807 
+     Human_HGF NPSR1   Human_TSHZ1 CALCRL   Human_HGF C11orf87 
+                2769                 2751                 2676 
+   Human_VGLL3 CNGB1 Human_Oligo_1 OPALIN    Human_RXFP2 RSPO2 
+                2625                 2619                 2394 
+     Human_LAMP5 ABO        Human_SST HGF     Human_CALCR LHX8 
+                2384                 2185                 2098 
+    Human_VIP ABI3BP Human_Oligo_3 OPALIN      Human_DRD2 PAX6 
+                1924                 1910                 1882 
+ Human_Astro_3 FGFR3     Human_SATB2 IL15      Human_DRD2 ISL1 
+                1830                 1801                 1713 
+    Human_SOX11 EBF2  Human_SATB2 ST8SIA2     Human_Micro CTSS 
+                1677                 1387                 1337 
+ Human_Astro_1 FGFR3       Human_HGF ESR1   Human_Endo NOSTRIN 
+                1323                 1253                 1198 
+ Human_LAMP5 COL14A1       Human_VIP NDNF   Human_SATB2 CALCRL 
+                1188                 1062                 1061 
+  Human_TSHZ1 SEMA3C  Human_PVALB ADAMTS5  Human_Astro_4 FGFR3 
+                1052                  908                  710 
+         Human_PRKCD   Human_OPC_4 PDGFRA     Human_HTR3A DRD2 
+                 559                  539                  524 
+        Human_STRIP2 Human_Oligo_2 OPALIN   Human_OPC_2 PDGFRA 
+                 428                  352                  275 
+      Human_SST EPYC         Human_TFAP2C 
+                 250                  202 
+starting worker pid=3459583 on localhost:11616 at 15:30:55.414
+starting worker pid=3459599 on localhost:11616 at 15:30:55.521
+starting worker pid=3459614 on localhost:11616 at 15:30:55.627
+starting worker pid=3459629 on localhost:11616 at 15:30:55.733
+starting worker pid=3459644 on localhost:11616 at 15:30:55.842
+starting worker pid=3459659 on localhost:11616 at 15:30:55.949
+starting worker pid=3459674 on localhost:11616 at 15:30:56.052
+starting worker pid=3459689 on localhost:11616 at 15:30:56.161
+starting worker pid=3459704 on localhost:11616 at 15:30:56.263
+starting worker pid=3459719 on localhost:11616 at 15:30:56.366
+starting worker pid=3459734 on localhost:11616 at 15:30:56.471
+starting worker pid=3459749 on localhost:11616 at 15:30:56.574
+starting worker pid=3459764 on localhost:11616 at 15:30:56.678
+starting worker pid=3459779 on localhost:11616 at 15:30:56.783
+starting worker pid=3459794 on localhost:11616 at 15:30:56.887
+starting worker pid=3459809 on localhost:11616 at 15:30:56.992
+starting worker pid=3459824 on localhost:11616 at 15:30:57.097
+starting worker pid=3459839 on localhost:11616 at 15:30:57.200
+starting worker pid=3459854 on localhost:11616 at 15:30:57.306
+starting worker pid=3459869 on localhost:11616 at 15:30:57.413
+starting worker pid=3459884 on localhost:11616 at 15:30:57.518
+starting worker pid=3459899 on localhost:11616 at 15:30:57.620
+starting worker pid=3459914 on localhost:11616 at 15:30:57.888
+starting worker pid=3459929 on localhost:11616 at 15:30:58.002
+starting worker pid=3459944 on localhost:11616 at 15:30:58.108
+starting worker pid=3459959 on localhost:11616 at 15:30:58.213
+starting worker pid=3459974 on localhost:11616 at 15:30:58.319
+starting worker pid=3459989 on localhost:11616 at 15:30:58.424
+starting worker pid=3460004 on localhost:11616 at 15:30:58.530
+starting worker pid=3460019 on localhost:11616 at 15:30:58.635
+starting worker pid=3460080 on localhost:11616 at 15:31:28.916
+starting worker pid=3460095 on localhost:11616 at 15:31:29.021
+starting worker pid=3460110 on localhost:11616 at 15:31:29.125
+starting worker pid=3460125 on localhost:11616 at 15:31:29.230
+starting worker pid=3460140 on localhost:11616 at 15:31:29.333
+starting worker pid=3460155 on localhost:11616 at 15:31:29.440
+starting worker pid=3460170 on localhost:11616 at 15:31:29.544
+starting worker pid=3460185 on localhost:11616 at 15:31:29.647
+starting worker pid=3460200 on localhost:11616 at 15:31:29.751
+starting worker pid=3460215 on localhost:11616 at 15:31:29.855
+starting worker pid=3460230 on localhost:11616 at 15:31:29.959
+starting worker pid=3460245 on localhost:11616 at 15:31:30.062
+starting worker pid=3460260 on localhost:11616 at 15:31:30.167
+starting worker pid=3460275 on localhost:11616 at 15:31:30.271
+starting worker pid=3460290 on localhost:11616 at 15:31:30.376
+starting worker pid=3460305 on localhost:11616 at 15:31:30.481
+starting worker pid=3460320 on localhost:11616 at 15:31:30.585
+starting worker pid=3460335 on localhost:11616 at 15:31:30.689
+starting worker pid=3460351 on localhost:11616 at 15:31:30.795
+starting worker pid=3460366 on localhost:11616 at 15:31:30.899
+starting worker pid=3460381 on localhost:11616 at 15:31:31.005
+starting worker pid=3460396 on localhost:11616 at 15:31:31.108
+starting worker pid=3460411 on localhost:11616 at 15:31:31.213
+starting worker pid=3460426 on localhost:11616 at 15:31:31.315
+starting worker pid=3460441 on localhost:11616 at 15:31:31.420
+starting worker pid=3460456 on localhost:11616 at 15:31:31.526
+starting worker pid=3460471 on localhost:11616 at 15:31:31.631
+starting worker pid=3460486 on localhost:11616 at 15:31:31.739
+starting worker pid=3460501 on localhost:11616 at 15:31:31.843
+starting worker pid=3460516 on localhost:11616 at 15:31:31.944
+starting worker pid=3465997 on localhost:11616 at 15:32:02.089
+starting worker pid=3466012 on localhost:11616 at 15:32:02.195
+starting worker pid=3466027 on localhost:11616 at 15:32:02.300
+starting worker pid=3466042 on localhost:11616 at 15:32:02.404
+starting worker pid=3466057 on localhost:11616 at 15:32:02.509
+starting worker pid=3466072 on localhost:11616 at 15:32:02.614
+starting worker pid=3466087 on localhost:11616 at 15:32:02.718
+starting worker pid=3466102 on localhost:11616 at 15:32:02.822
+starting worker pid=3466117 on localhost:11616 at 15:32:02.929
+starting worker pid=3466132 on localhost:11616 at 15:32:03.035
+starting worker pid=3466147 on localhost:11616 at 15:32:03.142
+starting worker pid=3466162 on localhost:11616 at 15:32:03.245
+starting worker pid=3466177 on localhost:11616 at 15:32:03.350
+starting worker pid=3466192 on localhost:11616 at 15:32:03.455
+starting worker pid=3466207 on localhost:11616 at 15:32:03.561
+starting worker pid=3466222 on localhost:11616 at 15:32:03.676
+starting worker pid=3466237 on localhost:11616 at 15:32:03.796
+starting worker pid=3466252 on localhost:11616 at 15:32:03.909
+starting worker pid=3466267 on localhost:11616 at 15:32:04.016
+starting worker pid=3466282 on localhost:11616 at 15:32:04.122
+starting worker pid=3466297 on localhost:11616 at 15:32:04.226
+starting worker pid=3466312 on localhost:11616 at 15:32:04.410
+starting worker pid=3466327 on localhost:11616 at 15:32:04.516
+starting worker pid=3466342 on localhost:11616 at 15:32:04.622
+starting worker pid=3466357 on localhost:11616 at 15:32:04.748
+starting worker pid=3466372 on localhost:11616 at 15:32:04.878
+starting worker pid=3466387 on localhost:11616 at 15:32:04.995
+starting worker pid=3466402 on localhost:11616 at 15:32:05.104
+starting worker pid=3466418 on localhost:11616 at 15:32:05.207
+starting worker pid=3466433 on localhost:11616 at 15:32:05.309
+starting worker pid=3477328 on localhost:11616 at 15:32:35.425
+starting worker pid=3477343 on localhost:11616 at 15:32:35.530
+starting worker pid=3477358 on localhost:11616 at 15:32:35.633
+starting worker pid=3477373 on localhost:11616 at 15:32:35.737
+starting worker pid=3477388 on localhost:11616 at 15:32:35.841
+starting worker pid=3477403 on localhost:11616 at 15:32:35.945
+starting worker pid=3477418 on localhost:11616 at 15:32:36.048
+starting worker pid=3477433 on localhost:11616 at 15:32:36.153
+starting worker pid=3477448 on localhost:11616 at 15:32:36.258
+starting worker pid=3477463 on localhost:11616 at 15:32:36.365
+starting worker pid=3477478 on localhost:11616 at 15:32:36.474
+starting worker pid=3477493 on localhost:11616 at 15:32:36.580
+starting worker pid=3477508 on localhost:11616 at 15:32:36.685
+starting worker pid=3477523 on localhost:11616 at 15:32:36.789
+starting worker pid=3477538 on localhost:11616 at 15:32:36.892
+starting worker pid=3477553 on localhost:11616 at 15:32:36.996
+starting worker pid=3477568 on localhost:11616 at 15:32:37.101
+starting worker pid=3477583 on localhost:11616 at 15:32:37.206
+starting worker pid=3477598 on localhost:11616 at 15:32:37.311
+starting worker pid=3477613 on localhost:11616 at 15:32:37.417
+starting worker pid=3477628 on localhost:11616 at 15:32:37.519
+starting worker pid=3477643 on localhost:11616 at 15:32:37.622
+starting worker pid=3477658 on localhost:11616 at 15:32:37.726
+starting worker pid=3477673 on localhost:11616 at 15:32:37.829
+starting worker pid=3477688 on localhost:11616 at 15:32:37.931
+starting worker pid=3477703 on localhost:11616 at 15:32:38.034
+starting worker pid=3477718 on localhost:11616 at 15:32:38.138
+starting worker pid=3477733 on localhost:11616 at 15:32:38.239
+starting worker pid=3477748 on localhost:11616 at 15:32:38.338
+starting worker pid=3477763 on localhost:11616 at 15:32:38.444
+starting worker pid=3488672 on localhost:11616 at 15:33:07.883
+starting worker pid=3488690 on localhost:11616 at 15:33:07.988
+starting worker pid=3488707 on localhost:11616 at 15:33:08.093
+starting worker pid=3488725 on localhost:11616 at 15:33:08.195
+starting worker pid=3488744 on localhost:11616 at 15:33:08.297
+starting worker pid=3488763 on localhost:11616 at 15:33:08.402
+starting worker pid=3488789 on localhost:11616 at 15:33:08.504
+starting worker pid=3488816 on localhost:11616 at 15:33:08.607
+starting worker pid=3488831 on localhost:11616 at 15:33:08.712
+starting worker pid=3488846 on localhost:11616 at 15:33:08.814
+starting worker pid=3488867 on localhost:11616 at 15:33:08.919
+starting worker pid=3489394 on localhost:11616 at 15:33:09.023
+starting worker pid=3489415 on localhost:11616 at 15:33:09.127
+starting worker pid=3489445 on localhost:11616 at 15:33:09.232
+starting worker pid=3489460 on localhost:11616 at 15:33:09.336
+starting worker pid=3489591 on localhost:11616 at 15:33:09.439
+starting worker pid=3490008 on localhost:11616 at 15:33:09.543
+starting worker pid=3490023 on localhost:11616 at 15:33:09.647
+starting worker pid=3490059 on localhost:11616 at 15:33:09.750
+starting worker pid=3490074 on localhost:11616 at 15:33:09.853
+starting worker pid=3490095 on localhost:11616 at 15:33:09.959
+starting worker pid=3490366 on localhost:11616 at 15:33:10.063
+starting worker pid=3490637 on localhost:11616 at 15:33:10.166
+starting worker pid=3490670 on localhost:11616 at 15:33:10.268
+starting worker pid=3490688 on localhost:11616 at 15:33:10.371
+starting worker pid=3490709 on localhost:11616 at 15:33:10.474
+starting worker pid=3490961 on localhost:11616 at 15:33:10.576
+starting worker pid=3491251 on localhost:11616 at 15:33:10.682
+starting worker pid=3491280 on localhost:11616 at 15:33:10.786
+starting worker pid=3491304 on localhost:11616 at 15:33:10.905
+starting worker pid=3510830 on localhost:11616 at 15:33:40.815
+starting worker pid=3510845 on localhost:11616 at 15:33:40.919
+starting worker pid=3510860 on localhost:11616 at 15:33:41.022
+starting worker pid=3510875 on localhost:11616 at 15:33:41.127
+starting worker pid=3510890 on localhost:11616 at 15:33:41.232
+starting worker pid=3510905 on localhost:11616 at 15:33:41.339
+starting worker pid=3510920 on localhost:11616 at 15:33:41.443
+starting worker pid=3510935 on localhost:11616 at 15:33:41.548
+starting worker pid=3510950 on localhost:11616 at 15:33:41.687
+starting worker pid=3510965 on localhost:11616 at 15:33:41.791
+starting worker pid=3510980 on localhost:11616 at 15:33:41.896
+starting worker pid=3510995 on localhost:11616 at 15:33:41.999
+starting worker pid=3511010 on localhost:11616 at 15:33:42.102
+starting worker pid=3511025 on localhost:11616 at 15:33:42.209
+starting worker pid=3511040 on localhost:11616 at 15:33:42.313
+starting worker pid=3511055 on localhost:11616 at 15:33:42.416
+starting worker pid=3511070 on localhost:11616 at 15:33:42.521
+starting worker pid=3511085 on localhost:11616 at 15:33:42.625
+starting worker pid=3511100 on localhost:11616 at 15:33:42.728
+starting worker pid=3511115 on localhost:11616 at 15:33:42.831
+starting worker pid=3511130 on localhost:11616 at 15:33:42.935
+starting worker pid=3511145 on localhost:11616 at 15:33:43.040
+starting worker pid=3511160 on localhost:11616 at 15:33:43.143
+starting worker pid=3511175 on localhost:11616 at 15:33:43.247
+starting worker pid=3511190 on localhost:11616 at 15:33:43.355
+starting worker pid=3511205 on localhost:11616 at 15:33:43.458
+starting worker pid=3511221 on localhost:11616 at 15:33:43.562
+starting worker pid=3511236 on localhost:11616 at 15:33:43.667
+starting worker pid=3511251 on localhost:11616 at 15:33:43.774
+starting worker pid=3511266 on localhost:11616 at 15:33:43.878
+starting worker pid=3516754 on localhost:11616 at 15:34:13.833
+starting worker pid=3516769 on localhost:11616 at 15:34:13.941
+starting worker pid=3516784 on localhost:11616 at 15:34:14.048
+starting worker pid=3516799 on localhost:11616 at 15:34:14.153
+starting worker pid=3516814 on localhost:11616 at 15:34:14.258
+starting worker pid=3516829 on localhost:11616 at 15:34:14.361
+starting worker pid=3516844 on localhost:11616 at 15:34:14.467
+starting worker pid=3516859 on localhost:11616 at 15:34:14.569
+starting worker pid=3516874 on localhost:11616 at 15:34:14.675
+starting worker pid=3516889 on localhost:11616 at 15:34:14.779
+starting worker pid=3516904 on localhost:11616 at 15:34:14.884
+starting worker pid=3516919 on localhost:11616 at 15:34:14.988
+starting worker pid=3516934 on localhost:11616 at 15:34:15.093
+starting worker pid=3516949 on localhost:11616 at 15:34:15.200
+starting worker pid=3516964 on localhost:11616 at 15:34:15.302
+starting worker pid=3516979 on localhost:11616 at 15:34:15.406
+starting worker pid=3516994 on localhost:11616 at 15:34:15.508
+starting worker pid=3517009 on localhost:11616 at 15:34:15.612
+starting worker pid=3517024 on localhost:11616 at 15:34:15.716
+starting worker pid=3517039 on localhost:11616 at 15:34:15.820
+starting worker pid=3517054 on localhost:11616 at 15:34:15.924
+starting worker pid=3517069 on localhost:11616 at 15:34:16.027
+starting worker pid=3517084 on localhost:11616 at 15:34:16.133
+starting worker pid=3517099 on localhost:11616 at 15:34:16.239
+starting worker pid=3517114 on localhost:11616 at 15:34:16.344
+starting worker pid=3517129 on localhost:11616 at 15:34:16.447
+starting worker pid=3517144 on localhost:11616 at 15:34:16.549
+starting worker pid=3517159 on localhost:11616 at 15:34:16.654
+starting worker pid=3517174 on localhost:11616 at 15:34:16.758
+starting worker pid=3517189 on localhost:11616 at 15:34:16.862
+starting worker pid=3517455 on localhost:11616 at 15:34:46.847
+starting worker pid=3517474 on localhost:11616 at 15:34:46.952
+starting worker pid=3517489 on localhost:11616 at 15:34:47.054
+starting worker pid=3517504 on localhost:11616 at 15:34:47.159
+starting worker pid=3517519 on localhost:11616 at 15:34:47.260
+starting worker pid=3517534 on localhost:11616 at 15:34:47.362
+starting worker pid=3517549 on localhost:11616 at 15:34:47.464
+starting worker pid=3517564 on localhost:11616 at 15:34:47.565
+starting worker pid=3517579 on localhost:11616 at 15:34:47.666
+starting worker pid=3517594 on localhost:11616 at 15:34:47.766
+starting worker pid=3517609 on localhost:11616 at 15:34:47.867
+starting worker pid=3517628 on localhost:11616 at 15:34:47.969
+starting worker pid=3517643 on localhost:11616 at 15:34:48.070
+starting worker pid=3517658 on localhost:11616 at 15:34:48.245
+starting worker pid=3517673 on localhost:11616 at 15:34:48.349
+starting worker pid=3517688 on localhost:11616 at 15:34:48.449
+starting worker pid=3517703 on localhost:11616 at 15:34:48.548
+starting worker pid=3517718 on localhost:11616 at 15:34:48.649
+starting worker pid=3517733 on localhost:11616 at 15:34:48.750
+starting worker pid=3517748 on localhost:11616 at 15:34:48.851
+starting worker pid=3517763 on localhost:11616 at 15:34:48.954
+starting worker pid=3517778 on localhost:11616 at 15:34:49.055
+starting worker pid=3517793 on localhost:11616 at 15:34:49.158
+starting worker pid=3517808 on localhost:11616 at 15:34:49.262
+starting worker pid=3517823 on localhost:11616 at 15:34:49.364
+starting worker pid=3517838 on localhost:11616 at 15:34:49.466
+starting worker pid=3517853 on localhost:11616 at 15:34:49.568
+starting worker pid=3517868 on localhost:11616 at 15:34:49.670
+starting worker pid=3517883 on localhost:11616 at 15:34:49.773
+starting worker pid=3517898 on localhost:11616 at 15:34:49.872
+starting worker pid=3523373 on localhost:11616 at 15:35:22.632
+starting worker pid=3523388 on localhost:11616 at 15:35:22.743
+starting worker pid=3523403 on localhost:11616 at 15:35:22.849
+starting worker pid=3523418 on localhost:11616 at 15:35:22.953
+starting worker pid=3523433 on localhost:11616 at 15:35:23.057
+starting worker pid=3523448 on localhost:11616 at 15:35:23.162
+starting worker pid=3523463 on localhost:11616 at 15:35:23.266
+starting worker pid=3523478 on localhost:11616 at 15:35:23.373
+starting worker pid=3523493 on localhost:11616 at 15:35:23.479
+starting worker pid=3523508 on localhost:11616 at 15:35:23.583
+starting worker pid=3523523 on localhost:11616 at 15:35:23.689
+starting worker pid=3523538 on localhost:11616 at 15:35:23.793
+starting worker pid=3523553 on localhost:11616 at 15:35:23.897
+starting worker pid=3523568 on localhost:11616 at 15:35:24.002
+starting worker pid=3523583 on localhost:11616 at 15:35:24.106
+starting worker pid=3523598 on localhost:11616 at 15:35:24.211
+starting worker pid=3523613 on localhost:11616 at 15:35:24.316
+starting worker pid=3523628 on localhost:11616 at 15:35:24.420
+starting worker pid=3523643 on localhost:11616 at 15:35:24.522
+starting worker pid=3523658 on localhost:11616 at 15:35:24.626
+starting worker pid=3523673 on localhost:11616 at 15:35:24.732
+starting worker pid=3523688 on localhost:11616 at 15:35:24.834
+starting worker pid=3523703 on localhost:11616 at 15:35:24.936
+starting worker pid=3523718 on localhost:11616 at 15:35:25.043
+starting worker pid=3523733 on localhost:11616 at 15:35:25.147
+starting worker pid=3523748 on localhost:11616 at 15:35:25.253
+starting worker pid=3523763 on localhost:11616 at 15:35:25.355
+starting worker pid=3523778 on localhost:11616 at 15:35:25.459
+starting worker pid=3523793 on localhost:11616 at 15:35:25.562
+starting worker pid=3523808 on localhost:11616 at 15:35:25.666
+**** Job ends ****
+Fri Feb 27 04:04:43 PM EST 2026

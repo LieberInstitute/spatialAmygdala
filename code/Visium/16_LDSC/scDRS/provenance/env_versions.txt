@@ -1,0 +1,17 @@
+python   3.11.15
+scdrs        1.0.2
+scanpy       1.11.5
+anndata      0.12.19
+numpy        2.4.6
+pandas       2.3.3
+scipy        1.17.1
+statsmodels  0.14.6
+sklearn      1.9.0
+matplotlib   3.11.1
+
+--- REQUIRED PATCH (not captured by pip freeze) ---
+scdrs 1.0.2 calls np.float_, removed in NumPy 2.0. With numpy 2.4.6 the
+group analysis dies in gearys_c. Applied to the installed package:
+  sed -i 's/np\.float_/np.float64/g' $ENVDIR/lib/python3.11/site-packages/scdrs/method.py
+Unpatched original preserved alongside as method.py.orig-numpy1.
+A rebuilt env MUST reapply this, or pin numpy<2.

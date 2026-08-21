@@ -1,0 +1,8 @@
+# gsMap pilot GWAS config -- 3 traits, subset of the classic-LDSC brain GWAS set.
+# Files are the SAME sumstats used by ../LDSC/ldsc_h2_jobs.txt, so gsMap and classic
+# stratified LDSC are run on identical inputs and are directly comparable.
+# Header of each file is "SNP N Z A1 A2"; gsMap selects columns by NAME (usecols in
+# gsMap/utils/regression_read.py), so the column order does not matter.
+SCZ: /dcs04/lieber/marmaypag/spatialAMY_LIBD4125/spatialAmygdala/processed-data/Visium/16_LDSC/gsMap/GWAS/scz_PGC3_ldscore.gz
+MDD: /dcs04/lieber/marmaypag/spatialAMY_LIBD4125/spatialAmygdala/processed-data/Visium/16_LDSC/gsMap/GWAS/MDD_ldscore_PGC_UKB_23andme.gz
+Height: /dcs04/lieber/marmaypag/spatialAMY_LIBD4125/spatialAmygdala/processed-data/Visium/16_LDSC/gsMap/GWAS/height_ldscore.gz

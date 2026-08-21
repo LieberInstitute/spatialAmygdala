@@ -1,0 +1,22 @@
+**** Job starts ****
+Thu Apr  2 02:30:10 AM EDT 2026
+**** JHPCE info ****
+User: mtotty
+Job id: 30491201
+Job name: correlation
+Node(s): compute-168
+Node memory requested: 102400
+n Tasks: 1
+concatenate_smoothed_matrices running...
+Concatenated: (224015, 17963), 17963 shared genes
+compute_correlation_matrix running...
+Total runtime for compute_correlation_matrix: 547.24 seconds.
+
+Correlation matrix: (17963, 17963)
+Running network clustering with parameters:
+PCC hard cutoff: 0.3, clustering soft power: 1, 3, 5, 7, 9, 
+PCC hard cutoff: 0.4, clustering soft power: 1, 3, 5, 7, 9, 
+PCC hard cutoff: 0.5, clustering soft power: 1, 3, 5, 7, 9, 
+PCC hard cutoff: 0.6, clustering soft power: 1, 3, 5, 7, 9, 
+PCC hard cutoff: 0.7, clustering soft power: 1, 3, 5, 7, 9, 
+PCC hard cutoff: 0.8, clustering soft power: 1, 3, 5, 7, 9, 

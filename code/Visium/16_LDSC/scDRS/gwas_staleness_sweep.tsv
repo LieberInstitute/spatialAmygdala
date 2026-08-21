@@ -1,0 +1,41 @@
+trait	file	n_snp	n_bad_Z	max_absZ	gw_sig	max_N	power_tier	pgc_latest	pgc_status
+Epilepsy_Focal	epilepsyFocal.gz	890792	0	5.276	0	43803	A_none		not_PGC_check_manually
+PTSD	PTSD.gz	1169745	0	5.158	0	70238	A_none	ptsd2024	vintage_unknown
+OUD_MVP2	OUD_EA_MVP2_Mar12.gz	652052	0	4.659	0	7605	A_none		not_PGC_check_manually
+OUD_MVP1	OUD_EA_MVP1_Mar12.gz	650698	0	5.131	0	22843	A_none		not_PGC_check_manually
+OUD_META	OUD_EA_MVP1_MVP2_YP_SAGE_Mar12.gz	650698	0	5.661	1	33427	B_weak		not_PGC_check_manually
+Autism	autism_ldscore.gz	1112926	0	5.981	18	44367	B_weak	asd2019	vintage_unknown
+BIP	bp_ldscore.gz	1114546	0	7.538	50	49367	B_weak	bip2024	vintage_unknown
+Stroke_AIS_MEGASTROKE	MEGASTROKE.2.AIS.EUR_ldscore.gz	1163984	0	7.708	54	147590	B_weak		not_PGC_check_manually
+Epilepsy_All	epilepsyAll.gz	892710	0	6.837	61	65124	B_weak		not_PGC_check_manually
+AUD_EA_MVP	EA_aud_Jun07.txt_ldscore.gz	643155	0	8.265	62	114847	B_weak		not_PGC_check_manually
+Stroke_AS_MEGASTROKE	MEGASTROKE.1.AS.EUR_ldscore.gz	1163011	0	7.438	70	147590	B_weak		not_PGC_check_manually
+Anorexia	Anorexia_ldscore.gz	1111223	0	7.751	71	52041	B_weak	an_be2026	vintage_unknown
+T2D	PASS_Type_2_Diabetes.sumstats.gz	968509	0	8.21	72	69033	B_weak		not_PGC_check_manually
+Insomnia	insomnia.gz	1113944	0	9.739	121	314149	C_moderate		not_PGC_check_manually
+GSCAN_AgeSmk	GSCAN_AgeSmk_2022_ldscore.gz	1156202	0	8.65	144	323386	C_moderate		not_PGC_check_manually
+Stroke_2022_Any	stroke2022any.gz	1158042	0	9.229	150	278024	C_moderate		not_PGC_check_manually
+MDD_ex23andMe	mdd_ex23andMe_ldscore.gz	1141156	0	6.589	176	156582	C_moderate	mdd2025	vintage_unknown
+Epilepsy_GGE	epilepsyGGE.gz	888187	0	8.848	276	23363	C_moderate		not_PGC_check_manually
+Alzheimer	Alzheimer_ldscore.gz	1161072	0	52.518	309	429961	C_moderate	alz2021	vintage_unknown
+ADHD	adhd.gz	1114823	0	7.754	320	128213	C_moderate	adhd2022	vintage_unknown
+PD	PD_ldscore.gz	1124954	0	13.445	385	125299	C_moderate		not_PGC_check_manually
+Smoking	smoking_ldscore.gz	1161927	0	31.065	415	263954	C_moderate		not_PGC_check_manually
+Alzheimer_v2	Alzheimer_ldscore2.gz	1167507	2	39.626	422	762917	C_moderate	alz2021	vintage_unknown
+BIP_PGC3	bp3_ldscore.gz	1148653	0	8.925	479	150669	C_moderate	bip2024	vintage_unknown
+AUD_EUR_NatMed2023	AUD.EUR_META.NatMed2023.gz	1147117	0	13.169	585	352373	D_strong		not_PGC_check_manually
+GSCAN_SmkCes	GSCAN_SmkCes_2022_ldscore.gz	1155827	0	13.35	587	388313	D_strong		not_PGC_check_manually
+Alcohol	alcohol_ldscore.gz	1161773	0	14.283	703	537349	D_strong		not_PGC_check_manually
+Alzheimer_v3	Alzheimer_ldscore3.gz	1177594	0	19.159	755	487511	D_strong	alz2021	vintage_unknown
+MDD_2019_Edinburgh	mdd2019edinburgh_ldscore.gz	1139849	0	8.857	845	449855	D_strong	mdd2025	newer_exists (mdd2025)
+GSCAN_CigDay	GSCAN_CigDay_2022_ldscore.gz	1156604	0	32.933	1012	326497	D_strong		not_PGC_check_manually
+GSCAN_DrnkWk	GSCAN_DrnkWk_2022_ldscore.gz	1152884	0	13.95	1390	666978	D_strong		not_PGC_check_manually
+Neuroticism	UKB_460K.mental_NEUROTICISM.sumstats.gz	1187056	0	10.672	1484	372066	D_strong		not_PGC_check_manually
+MDD	MDD_ldscore_PGC_UKB_23andme.gz	1131508	0	10.333	1646	684817	D_strong	mdd2025	vintage_unknown
+SCZ_PGC2_CLOZUK	scz_PGC2_CLOZUK_ldscore.gz	1131148	0	9.151	1993	99863	D_strong	scz2022	newer_exists (scz2022)
+Intelligence	intelligence.gz	1152076	0	11.549	2718	269867	D_strong		not_PGC_check_manually
+GSCAN_SmkInit	GSCAN_SmkInit_2022_ldscore.gz	1153995	0	13.9	2753	805431	D_strong		not_PGC_check_manually
+SCZ	scz_PGC3_ldscore.gz	1150814	0	9.582	2872	126281	D_strong	scz2022	CURRENT
+EduYears	UKB_460K.cov_EDU_YEARS.sumstats.gz	1187056	0	13.174	3538	454813	D_strong		not_PGC_check_manually
+BMI	bmi_ldscore.gz	1003898	0	46.875	17641	795640	D_strong		not_PGC_check_manually
+Height	height_ldscore.gz	1002716	0	55.214	59460	709703	D_strong		not_PGC_check_manually

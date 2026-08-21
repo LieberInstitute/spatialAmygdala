@@ -1,0 +1,17 @@
+**** Job starts ****
+Wed Apr  1 10:56:00 AM EDT 2026
+**** JHPCE info ****
+User: mtotty
+Job id: 30490110
+Job name: qc_normalization
+Node(s): compute-092
+Node memory requested: 32768
+n Tasks: 1
+Br9192: 28306→28306 spots, 36601→15381 genes
+Br9280: 25835→25835 spots, 36601→14015 genes
+Br2743: 32556→32556 spots, 36601→15474 genes
+Br6471: 36876→36876 spots, 36601→16345 genes
+Br8325: 29481→29481 spots, 36601→16602 genes
+Br6423: 34211→34211 spots, 36601→17486 genes
+Br6660: 36756→36756 spots, 36601→17265 genes
+Done: Wed Apr  1 10:57:56 AM EDT 2026

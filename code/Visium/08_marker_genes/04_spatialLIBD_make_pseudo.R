@@ -139,14 +139,12 @@ dev.off()
 idx <- order(reducedDims(spe_pseudo)$PCA[,'PC01'], decreasing = TRUE)[1:6]
 id <- colData(spe_pseudo)[idx, c("sample_id", "layer")]
 # DataFrame with 6 rows and 2 columns
-#               sample_id    layer
-#             <character> <factor>
 # Br9192_CHAT      Br9192     CHAT
 # Br9280_HPC       Br9280     HPC 
 # Br9280_AI        Br9280     AI  
 # Br9280_CHAT      Br9280     CHAT
-# Br2743_CHAT      Br2743     CHAT
 # Br2743_HPC       Br2743     HPC 
+# Br2743_CHAT      Br2743     CHAT
 spe_pseudo <- spe_pseudo[, -idx]
 
 # rerun PCA

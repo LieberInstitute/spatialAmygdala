@@ -1,0 +1,273 @@
+=============================================================
+SPE inspection report for gsMap input prep
+generated: 2026-08-06 11:46:51 
+source rds: /dcs04/lieber/marmaypag/spatialAMY_LIBD4125/spatialAmygdala/processed-data/Visium/07_clustering/BayesSpace/MarkerGenes/spe_harmony_markers_BS_k16_Semisupervised_wAI.rds 
+=============================================================
+
+### class
+[1] "SpatialExperiment"
+attr(,"package")
+[1] "SpatialExperiment"
+
+### dim(spe)  [genes x spots]
+[1]  36601 224021
+
+### assayNames(spe)
+[1] "counts"    "logcounts"
+
+### names(colData(spe))
+ [1] "sample_id"                   "in_tissue"                  
+ [3] "X10x_graphclust"             "X10x_kmeans_10_clusters"    
+ [5] "X10x_kmeans_2_clusters"      "X10x_kmeans_3_clusters"     
+ [7] "X10x_kmeans_4_clusters"      "X10x_kmeans_5_clusters"     
+ [9] "X10x_kmeans_6_clusters"      "X10x_kmeans_7_clusters"     
+[11] "X10x_kmeans_8_clusters"      "X10x_kmeans_9_clusters"     
+[13] "key"                         "sum_umi"                    
+[15] "sum_gene"                    "expr_chrM"                  
+[17] "expr_chrM_ratio"             "ManualAnnotation"           
+[19] "capture_area"                "group"                      
+[21] "barcode"                     "array_row_original"         
+[23] "array_col_original"          "array_row"                  
+[25] "array_col"                   "pxl_col_in_fullres_rounded" 
+[27] "pxl_row_in_fullres_rounded"  "pxl_row_in_fullres_original"
+[29] "pxl_col_in_fullres_original" "overlap_key"                
+[31] "exclude_overlapping"         "sum_umi_log"                
+[33] "sum_umi_outliers"            "sum_umi_z"                  
+[35] "sum_gene_log"                "sum_gene_outliers"          
+[37] "sum_gene_z"                  "expr_chrM_ratio_outliers"   
+[39] "expr_chrM_ratio_z"           "local_outliers"             
+[41] "sizeFactor"                  "BS_k10"                     
+[43] "BS_k11"                      "BS_k12"                     
+[45] "BS_k13"                      "BS_k14"                     
+[47] "BS_k15"                      "BS_k16"                     
+[49] "BS_k17"                      "BS_k18"                     
+[51] "BS_k19"                      "BS_k20"                     
+[53] "BS_k16_relabel"              "BS_k16_relabel_merged"      
+[55] "ITC"                         "ITC_gmm2"                   
+[57] "BS_k16_relabel_ITC"          "ITC_gmm2_smooth"            
+[59] "BS_k16_Semisupervised_wAI"   "low_umi"                    
+[61] "low_gene"                   
+
+### candidate sample-id columns
+[1] "sample_id"          "capture_area"       "array_row_original"
+[4] "array_col_original" "array_row"          "array_col"         
+  sample_id                      n_unique = 7
+  capture_area                   n_unique = 51
+  array_row_original             n_unique = 78
+  array_col_original             n_unique = 128
+  array_row                      n_unique = 244
+  array_col                      n_unique = 481
+
+### chosen sample column: sample_id 
+
+### spots per capture area (sample_id)
+sid
+Br6471 Br6660 Br6423 Br2743 Br8325 Br9192 Br9280 
+ 36876  36756  34211  32556  29481  28306  25835 
+n capture areas = 7 
+total spots     = 224021 
+
+### annotation column: BS_k16_Semisupervised_wAI 
+class:
+[1] "factor"
+n NA in annotation = 0 
+
+### global spots per domain (BS_k16_Semisupervised_wAI), sorted
+ann
+         BL          LA        WM.1        WM.2         MeA         CoA 
+      49673       40228       27643       19502       13913       12183 
+        CeA         BLD          PL          BM         CLA         HPC 
+      11678       11331       10638       10363        4834        4774 
+       CHAT Endothelial          AI 
+       3075        2611        1575 
+n domains = 15 
+
+### domains with <70 spots globally (dropped by 01_aggregate.R convention)
+character(0)
+
+### domains RETAINED (>=70 spots globally)
+ [1] "AI"          "BL"          "BLD"         "BM"          "CeA"        
+ [6] "CHAT"        "CLA"         "CoA"         "Endothelial" "HPC"        
+[11] "LA"          "MeA"         "PL"          "WM.1"        "WM.2"       
+n retained = 15 
+
+### table(sample_id, BS_k16_Semisupervised_wAI)
+        ann
+sid         AI    BL   BLD    BM   CeA  CHAT   CLA   CoA Endothelial   HPC
+  Br2743   461  5535   588  2511  3045   212     0  1318         344   267
+  Br6423   282  7339  4110  1907  1496   691     0  2118         319  1896
+  Br6471   368  5889  2164  2281  2867   474     0  2640         269   187
+  Br6660   165 12249   418   448  1684  1063  4834  1755         566   394
+  Br8325   224  4185  2822  1750   861   300     0  2432         231  1246
+  Br9192     2  8111   306   704   530   101     0   345         465   679
+  Br9280    73  6365   923   762  1195   234     0  1575         417   105
+        ann
+sid         LA   MeA    PL  WM.1  WM.2
+  Br2743  8004  1261  1132  4463  3415
+  Br6423  5436  1574  1829  3898  1316
+  Br6471  9337  1550  1485  4401  2964
+  Br6660     0  5805  1522  4058  1795
+  Br8325  5476  1619  1953  3569  2813
+  Br9192  6736   740  1606  3888  4093
+  Br9280  5239  1364  1111  3366  3106
+
+### same table restricted to RETAINED domains (>=70 globally)
+        ann
+sid         AI    BL   BLD    BM   CeA  CHAT   CLA   CoA Endothelial   HPC
+  Br2743   461  5535   588  2511  3045   212     0  1318         344   267
+  Br6423   282  7339  4110  1907  1496   691     0  2118         319  1896
+  Br6471   368  5889  2164  2281  2867   474     0  2640         269   187
+  Br6660   165 12249   418   448  1684  1063  4834  1755         566   394
+  Br8325   224  4185  2822  1750   861   300     0  2432         231  1246
+  Br9192     2  8111   306   704   530   101     0   345         465   679
+  Br9280    73  6365   923   762  1195   234     0  1575         417   105
+        ann
+sid         LA   MeA    PL  WM.1  WM.2
+  Br2743  8004  1261  1132  4463  3415
+  Br6423  5436  1574  1829  3898  1316
+  Br6471  9337  1550  1485  4401  2964
+  Br6660     0  5805  1522  4058  1795
+  Br8325  5476  1619  1953  3569  2813
+  Br9192  6736   740  1606  3888  4093
+  Br9280  5239  1364  1111  3366  3106
+
+### per-sample coverage of retained domains
+(n_domains_present = retained domains with >0 spots;
+ n_domains_ge10    = retained domains with >=10 spots)
+ sample_id n_spots n_domains_present n_domains_ge10 min_domain_n
+    Br6471   36876                14             14            0
+    Br6660   36756                14             14            0
+    Br6423   34211                14             14            0
+    Br2743   32556                14             14            0
+    Br8325   29481                14             14            0
+    Br9192   28306                14             13            0
+    Br9280   25835                14             14            0
+
+### missing retained domains per sample
+  Br2743               missing(1): CLA
+  Br6423               missing(1): CLA
+  Br6471               missing(1): CLA
+  Br6660               missing(1): LA
+  Br8325               missing(1): CLA
+  Br9192               missing(1): CLA
+  Br9280               missing(1): CLA
+
+### colnames(spatialCoords(spe))
+[1] "pxl_col_in_fullres" "pxl_row_in_fullres"
+class:
+[1] "matrix" "array" 
+storage.mode: double 
+dim:
+[1] 224021      2
+head:
+                   pxl_col_in_fullres pxl_row_in_fullres
+AAACAAGTATCTCCCA-1              29982              23026
+AAACAATCTACTAGCA-1              32740               9314
+AAACACCAATAACTGC-1              41362              20241
+n NA in coords = 0 
+
+### names(rowData(spe))
+[1] "source"       "type"         "gene_id"      "gene_version" "gene_name"   
+[6] "gene_type"    "gene_search" 
+
+### head(rowData(spe), 5)
+            source type         gene_id gene_version   gene_name      gene_type
+MIR1302-2HG HAVANA gene ENSG00000243485            5 MIR1302-2HG         lncRNA
+FAM138A     HAVANA gene ENSG00000237613            2     FAM138A         lncRNA
+OR4F5       HAVANA gene ENSG00000186092            6       OR4F5 protein_coding
+AL627309.1  HAVANA gene ENSG00000238009            6  AL627309.1         lncRNA
+AL627309.3  HAVANA gene ENSG00000239945            1  AL627309.3         lncRNA
+                             gene_search
+MIR1302-2HG MIR1302-2HG; ENSG00000243485
+FAM138A         FAM138A; ENSG00000237613
+OR4F5             OR4F5; ENSG00000186092
+AL627309.1   AL627309.1; ENSG00000238009
+AL627309.3   AL627309.3; ENSG00000239945
+
+### table(rowData$gene_type) top 15
+
+ protein_coding          lncRNA IG_V_pseudogene       IG_V_gene       TR_V_gene 
+          19394           16562             188             144             106 
+      TR_J_gene       IG_D_gene TR_V_pseudogene       IG_J_gene       IG_C_gene 
+             79              37              33              18              14 
+IG_C_pseudogene       TR_C_gene       TR_D_gene TR_J_pseudogene IG_J_pseudogene 
+              9               6               4               4               3 
+n protein_coding = 19394 
+
+### gene_name summary
+n genes            = 36601 
+n unique gene_name = 36591 
+n NA gene_name     = 0 
+n duplicated       = 10 
+protein_coding genes                  = 19394 
+protein_coding after dedup(gene_name) = 19389 
+head:
+[1] "MIR1302-2HG" "FAM138A"     "OR4F5"       "AL627309.1"  "AL627309.3" 
+[6] "AL627309.2"  "AL627309.5"  "AL627309.4" 
+
+### head(rownames(spe))
+[1] "MIR1302-2HG" "FAM138A"     "OR4F5"       "AL627309.1"  "AL627309.3" 
+
+### counts assay
+class:
+[1] "dgCMatrix"
+attr(,"package")
+[1] "Matrix"
+dim:
+[1]  36601 224021
+range of nonzero values in a 2000x2000 corner:
+[1]  1 16
+all integer-valued in that corner: TRUE 
+total sum of that corner: 156235 
+
+### zellkonverter availability / smoke test
+zellkonverter installed: TRUE 
+version: 1.18.0 
+SMOKE TEST OK -- wrote 20528 bytes to /dcs04/lieber/marmaypag/spatialAMY_LIBD4125/spatialAmygdala/code/Visium/16_LDSC/gsMap/01a_zellkonverter_smoketest.h5ad 
+
+### sessionInfo()
+R version 4.5.0 Patched (2025-05-21 r88220)
+Platform: x86_64-conda-linux-gnu
+Running under: Rocky Linux 9.4 (Blue Onyx)
+
+Matrix products: default
+BLAS:   /jhpce/shared/community/core/conda_R/4.5/R/lib64/R/lib/libRblas.so 
+LAPACK: /jhpce/shared/community/core/conda_R/4.5/R/lib64/R/lib/libRlapack.so;  LAPACK version 3.12.1
+
+locale:
+ [1] LC_CTYPE=en_US.UTF-8       LC_NUMERIC=C              
+ [3] LC_TIME=en_US.UTF-8        LC_COLLATE=en_US.UTF-8    
+ [5] LC_MONETARY=en_US.UTF-8    LC_MESSAGES=en_US.UTF-8   
+ [7] LC_PAPER=en_US.UTF-8       LC_NAME=C                 
+ [9] LC_ADDRESS=C               LC_TELEPHONE=C            
+[11] LC_MEASUREMENT=en_US.UTF-8 LC_IDENTIFICATION=C       
+
+time zone: US/Eastern
+tzcode source: system (glibc)
+
+attached base packages:
+[1] stats4    stats     graphics  grDevices utils     datasets  methods  
+[8] base     
+
+other attached packages:
+ [1] SpatialExperiment_1.19.1    SingleCellExperiment_1.30.1
+ [3] SummarizedExperiment_1.38.1 Biobase_2.68.0             
+ [5] GenomicRanges_1.60.0        GenomeInfoDb_1.44.0        
+ [7] IRanges_2.42.0              S4Vectors_0.48.0           
+ [9] BiocGenerics_0.54.0         generics_0.1.4             
+[11] MatrixGenerics_1.20.0       matrixStats_1.5.0          
+
+loaded via a namespace (and not attached):
+ [1] Matrix_1.7-3            jsonlite_2.0.0          compiler_4.5.0         
+ [4] rjson_0.2.23            crayon_1.5.3            filelock_1.0.3         
+ [7] Rcpp_1.1.1-1.1          magick_2.8.6            parallel_4.5.0         
+[10] zellkonverter_1.18.0    png_0.1-8               reticulate_1.42.0      
+[13] lattice_0.22-7          R6_2.6.1                XVector_0.48.0         
+[16] S4Arrays_1.8.0          DelayedArray_0.34.1     GenomeInfoDbData_1.2.14
+[19] rlang_1.1.6             dir.expiry_1.16.0       cli_3.6.5              
+[22] SparseArray_1.8.0       withr_3.0.2             magrittr_2.0.3         
+[25] grid_4.5.0              basilisk_1.20.0         abind_1.4-8            
+[28] httr_1.4.7              basilisk.utils_1.20.0   tools_4.5.0            
+[31] UCSC.utils_1.4.0       
+
+=== END OF REPORT ===

@@ -1,0 +1,256 @@
+# gsMap — spatial GWAS enrichment for the Visium amygdala data
+
+Spot-level GWAS heritability enrichment with [gsMap](https://github.com/JianYang-Lab/gsMap)
+(Song et al., *Nature* 2025), run alongside the classic stratified-LDSC pipeline in `../LDSC/`.
+
+Both pipelines use the **same BayesSpace domains** (`BS_k16_Semisupervised_wAI`) and the
+**same GWAS sumstats** (`/dcs04/lieber/shared/statsgen/LDSC/base/gwas_brain/`), so results are
+directly comparable. The difference is the unit of analysis:
+
+| | `../LDSC/` (classic) | this directory (gsMap) |
+|---|---|---|
+| unit | domain pseudobulk | individual spot |
+| annotation | binary, top-10% specific genes ±100 kb | continuous gene specificity score (GSS) |
+| domain result | LDSC coefficient z / p | Cauchy combination of per-spot p-values |
+| scale | 15 domains × 40 traits | 36k spots/section × 40 traits, then aggregated |
+
+gsMap learns a latent representation of each spot with a graph VAE, derives a GSS from each
+spot's homogeneous neighbours, maps GSS onto SNPs, and runs stratified LDSC per spot. Domain
+labels enter **only** at the final Cauchy step — the per-spot statistics are annotation-free,
+so recovery of anatomical structure is an emergent result rather than an input.
+
+---
+
+## Layout
+
+    16_LDSC/
+    ├── LDSC/                      classic stratified-LDSC pipeline (pre-existing)
+    │   └── ldsc_results.csv       15 domains × 40 traits, the comparison target
+    └── gsMap/                     <- this directory
+        ├── 00_setup_env.sh              build the conda env (run once)
+        ├── 00_download_resources.sh     fetch + verify the gsMap resource bundle (run once)
+        ├── 01a_inspect_spe.R            read-only SPE audit -> 01a_spe_summary.txt
+        ├── 01_spe_to_h5ad.R             SPE -> one h5ad per capture area
+        ├── 01_check_h5ad.py             assert the gsMap input contract
+        ├── 02_gsmap_quick_mode.sh       PILOT: one section × 3 traits
+        ├── 03_create_slice_mean.sh      cross-section gene-rank normalisation
+        ├── 03b_stage_gwas_symlinks.sh   symlink the 40 sumstats into the workdir
+        ├── 04a_gsmap_cache_pass.sh      SWEEP stage 1: cache steps 1-3 + Height (7-way array)
+        ├── 04b_gsmap_trait_array.sh     SWEEP stage 2: step 4 per trait (40-way array)
+        ├── 04_gsmap_array.sh            SUPERSEDED single-stage sweep -- see note below
+        ├── 05_cauchy_across_samples.sh  domain p-values pooled over sections
+        ├── 06_pilot_figures.py          spot map + gsMap-vs-classic comparison
+        ├── gwas_config_pilot.yaml       3 traits (SCZ, MDD, Height)
+        ├── gwas_config_full.yaml        all 40 traits
+        └── samples.txt                  the 7 capture areas, one per line
+
+**Software and reference data live in scratch, not in the project tree** (`/dcs04/lieber` is
+~99% full):
+
+    /users/mtotty/claude_scratch/gsmap/envs/gsmap      conda env, gsMap 1.73.7, python 3.11 (CPU-only)
+    /users/mtotty/claude_scratch/gsmap/gsMap_resource  reference bundle (842 MB)
+
+Outputs go to `../../../processed-data/Visium/16_LDSC/gsMap/`:
+
+    ST/<sample>.h5ad                     gsMap inputs (7 sections)
+    GWAS/                                symlinks to the sumstats (never copies)
+    <sample>/find_latent_representations GVAE latent embedding
+    <sample>/latent_to_gene              gene specificity scores
+    <sample>/spatial_ldsc/<sample>_<trait>.csv.gz   per-spot beta/se/z/p
+    <sample>/cauchy_combination          domain-level p-values
+    <sample>/report                      HTML report with diagnostics
+
+Activate the environment with:
+
+    module load conda/3-24.3.0
+    source activate /users/mtotty/claude_scratch/gsmap/envs/gsmap
+
+---
+
+## Input conventions (why the h5ad looks the way it does)
+
+- **Gene universe**: protein-coding only, deduplicated on `gene_name`, symbols as `var_names`
+  (gsMap matches genes by symbol). 19,389 genes; gsMap retains ~17,717 after intersecting with
+  the GTF. This mirrors `../LDSC/01_aggregate.R`'s convention, minus `filterByExpr` — gsMap does
+  its own expression handling.
+- **Counts in `layers['count']`** (singular). gsMap's `--data_layer` default is `counts`
+  (plural), so **every command must pass `--data_layer count` explicitly.**
+- **Coordinates in `obsm['spatial']`** — stitched full-resolution pixel coordinates.
+- **Species is human**, so `--homolog_file` is never passed.
+- **Domain filter**: domains with <70 spots genome-wide are dropped, matching the classic
+  pipeline. 15 domains survive; `CLA` exists only in Br6660, so most sections carry 14.
+- **Genome build**: the bundle GTF is `gencode.v46lift37` = **hg19**, consistent with the
+  classic pipeline's `gene_meta_hg19.txt`.
+
+Capture areas and spot counts (`samples.txt`):
+
+    Br6471  36876      Br6660  36756      Br6423  34211      Br2743  32556
+    Br8325  29481      Br9192  28306      Br9280  25835
+
+---
+
+## How to run
+
+### Once, to set up
+
+    bash 00_setup_env.sh          # inside a compute session, not the login node
+    bash 00_download_resources.sh
+
+### Once, to build inputs
+
+    sbatch 01a_inspect_spe.R      # via a wrapper; login nodes force-quit Rscript
+    sbatch 01_spe_to_h5ad.R
+
+### Pilot (validated; see Results below)
+
+    sbatch 02_gsmap_quick_mode.sh
+
+### Full sweep — two stages
+
+Each stage must finish before the next starts.
+
+    bash   03b_stage_gwas_symlinks.sh              # light file op, no scheduler
+    sbatch 03_create_slice_mean.sh                 # cross-section gene-rank normalisation
+    sbatch 04a_gsmap_cache_pass.sh                 # stage 1: 7-way array, ~100 min each
+    sbatch --array=1-21,23-40 04b_gsmap_trait_array.sh   # stage 2: 40-way array, ~7.7 h each
+
+**Why two stages.** Steps 1–2 (GVAE latent + gene specificity scores) cost ~32 min per section
+and are identical for every trait, so `04a` pays them once per section and caches the result.
+`04b` then fans out over traits, running only step 4 (`run_spatial_ldsc`) against those caches.
+One trait × 7 sections is ~7.7 h, so the whole sweep finishes in about that time if your SLURM
+concurrency limit lets all 40 tasks run at once — versus ~45 h per job for the single-stage
+layout.
+
+**What `04a` actually costs.** It invokes `quick_mode`, which has no "stop after step 3" flag, so
+it necessarily runs step 4 for whichever trait drives it. That trait is Height — the sweep's
+negative control — so nothing is wasted, but the per-task cost is
+**~32 min (steps 1–2) + ~67 min (Height step 4) ≈ 100 min**, not the 32 min of caching alone.
+Because Height is therefore already complete, stage 2 skips task 22
+(`--array=1-21,23-40`); plain `--array=1-40` just recomputes an identical Height.
+
+Both stages skip sample-trait pairs whose output already exists, so re-running after a partial
+failure is safe. To re-run one trait: `sbatch --array=34 04b_gsmap_trait_array.sh` (34 = SCZ,
+per `traits.txt`).
+
+`05_cauchy_across_samples.sh` is only needed if you want to re-pool domain p-values separately —
+`04b` already runs the across-sample Cauchy combination per trait into
+`cauchy_across_samples/<trait>_cauchy.csv.gz`.
+
+**Concurrency safety** (verified against the gsMap 1.73.7 source, not assumed): step 4 writes
+only `{workdir}/{sample}/spatial_ldsc/{sample}_{trait}.csv.gz` — unique per trait — reads the
+shared per-sample intermediates read-only, and logs to stdout via `StreamHandler` rather than a
+shared file. 40 concurrent tasks over the same 7 sections therefore do not collide.
+
+**`04_gsmap_array.sh` is superseded.** It runs the sweep as 7 jobs of 40 traits (~45 h each,
+~4.5 days wall-clock with `%3` throttling). It is kept for reference and still works, but
+`04a` + `04b` is the recommended path.
+
+---
+
+## Runtime (measured on Br6471, 36,876 spots, 8 CPU, no GPU)
+
+| step | cost | scope |
+|---|---|---|
+| 1 find_latent_representations (GVAE) | 13 min | per sample |
+| 2 latent_to_gene (GSS) | 19 min | per sample |
+| 3 generate_ldscore | 0 min — quick_mode uses the pre-built SNP×gene matrix | — |
+| 4 spatial_ldsc | **66.6 min** | **per sample × trait** |
+
+Wall-clock for a job is roughly `(samples × traits) × 66 min`; steps 1–2 are a one-time
+32 min per sample and are cached for reuse across traits. Step 4 dominates everything.
+
+**Planning the sweep.** 40 traits × 7 sections = 280 sample-trait pairs ≈ 310 h of step-4
+compute. How that maps to wall-clock depends entirely on how it is split:
+
+| layout | jobs | per-job wall-clock |
+|---|---|---|
+| 7 samples × 40 traits (as `04_gsmap_array.sh` is written) | 7 | ~45 h |
+| 1 trait × 7 samples | 40 | ~7.7 h |
+| 1 trait × 3–4 samples | 80 | ~3.3–4.4 h |
+| 1 trait × 1 sample | 280 | ~1.1 h |
+
+Traits batched into one job share only the LD-score disk load, not the regression, so batching
+saves far less than it appears to. Match the job count to your SLURM concurrency limit —
+submitting more jobs than you have slots just queues them.
+
+Inside step 4, spots are processed in serial chunks of 1,000, parallelised *within* a chunk by
+`thread_map(max_workers=--max_processes)`. Because those are Python threads, scaling past ~8
+cores is unverified; the serial outer loop and its per-chunk disk reads do not benefit from
+more cores at all. Test with `--chunk_range` before assuming a larger allocation helps.
+
+---
+
+## Results — pilot (Br6471, SCZ)
+
+Domain-level Cauchy p-values (gsMap's own `run_cauchy_combination` output) against
+`../LDSC/ldsc_results.csv`:
+
+| trait | Spearman ρ | P | n domains | note |
+|---|---|---|---|---|
+| SCZ | +0.76 | 0.0024 | 13 | exact sumstats match |
+| MDD | +0.89 | 0.00011 | 12 | different GWAS (classic = mdd2019edinburgh) |
+| Height | +0.58 | 0.039 | 13 | non-brain comparator |
+
+Over the 13 domains shared with the classic table, the domains classic LDSC ranked highest are
+also gsMap's strongest, and both methods place white matter last:
+
+| domain | gsMap Cauchy P | gsMap −log₁₀P | classic z | classic FDR |
+|---|---|---|---|---|
+| BM | 3.00e-24 | 23.5 | +3.20 | 0.029 |
+| LA | 2.50e-22 | 21.6 | +2.86 | 0.054 |
+| BLD | 1.82e-19 | 18.7 | +2.35 | 0.126 |
+| PL | 3.96e-18 | 17.4 | +1.33 | 0.477 |
+| AI | 2.16e-16 | 15.7 | +0.89 | 0.651 |
+| MeA | 5.55e-16 | 15.3 | −1.36 | 0.477 |
+| BL | 1.67e-15 | 14.8 | +0.96 | 0.614 |
+| CeA | 1.88e-13 | 12.7 | +0.87 | 0.663 |
+| HPC | 3.53e-11 | 10.5 | +2.82 | 0.055 |
+| Endothelial | 2.02e-05 | 4.7 | −3.64 | 0.013 |
+| CHAT | 9.70e-01 | 0.0 | −0.69 | 0.725 |
+| WM.2 | 1.00e+00 | 0.0 | −1.14 | 0.562 |
+| WM.1 | 1.00e+00 | 0.0 | −2.62 | 0.077 |
+
+(CoA is gsMap's 3rd strongest domain at 4.28e-21 but has no row in the classic table, so it is
+absent from the merge.)
+
+
+Per-spot signal follows the anatomy — continuous across the basolateral complex and cortical-like
+nuclei, dropping sharply at white-matter boundaries — despite domain labels playing no part in
+the per-spot regression.
+
+### Interpretation caveats
+
+1. **Per-spot p-values are not independent.** Neighbouring spots share GSS through the spatial
+   KNN graph; 77% of Br6471 spots have p < 0.05 for SCZ. Rankings are meaningful; per-spot
+   "discoveries" are not.
+2. **The top domains span a wide range** (BM 3.0e-24 to HPC 3.5e-11), so they are not tied —
+   but the weakest domains floor at exactly p = 1, which is a boundary, not a measurement.
+3. **Depletion is signed in classic LDSC but not in gsMap.** Endothelial's classic z = −3.64 is
+   *significant depletion*; comparing it against an unsigned −log₁₀P misreads the disagreement.
+4. **Trait-specificity: resolved for the pilot.** SCZ enriches nearly every neuronal domain,
+   which could have been genuine polygenicity or a bias toward high-expression grey matter.
+   Height discriminates them: its basolateral values are p ≈ 0.004–0.016, nine to twenty orders
+   of magnitude weaker than SCZ, and its two strongest domains are Endothelial (1.4e-15) and
+   WM.1 (3.5e-08) — exactly the domains SCZ and MDD rank last. The grey/white contrast is
+   therefore not a generic expression artifact.
+5. **Trait-name mismatch with the classic table.** Classic "Depression" is `mdd2019edinburgh`;
+   the pilot's MDD is `MDD_ldscore_PGC_UKB_23andme`. Only **SCZ** and **Height** are exact
+   sumstats matches. `gwas_config_full.yaml` keeps both MDD variants under distinct names.
+6. **All values above come from gsMap's own `run_cauchy_combination`.** An earlier
+   hand-rolled Cauchy implementation gave the same domain *ranking* but different
+   magnitudes (e.g. SCZ/BM 1.0e-16 vs the official 3.0e-24, ρ = 0.79 vs the official
+   0.76); those numbers are superseded and should not be quoted.
+7. **Height is a non-brain comparator, not a null control.** It correlates with classic
+   LDSC (ρ = +0.58, P = 0.039), so it is not orthogonal to the classic results. What
+   distinguishes it is *which* domains it favours: Endothelial (1.4e-15) and WM.1
+   (3.5e-08) are its strongest, exactly the domains SCZ and MDD rank last.
+
+---
+
+## Guardrails observed
+
+- Everything written here stays in `code/Visium/16_LDSC/gsMap/`,
+  `processed-data/Visium/16_LDSC/gsMap/`, or `/users/mtotty/claude_scratch/gsmap/`.
+- GWAS sumstats are **symlinked, never copied**, and never modified.
+- No script deletes anything.
+- Array jobs are submitted manually, not dispatched programmatically.

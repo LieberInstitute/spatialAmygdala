@@ -1,0 +1,12 @@
+# 1. Create a new Conda environment (Choose favorite Python version)
+conda create -n smoothie_env python=3.10 -y
+
+# 2. Activate the environment
+conda activate smoothie_env
+
+# 3. Install the package directly from PyPI
+pip install smoothie-st
+
+# 4. (Optional) Make the environment available in Jupyter Lab
+conda install ipykernel -y
+python -m ipykernel install --user --name=smoothie_env --display-name="Python (smoothie_env)"

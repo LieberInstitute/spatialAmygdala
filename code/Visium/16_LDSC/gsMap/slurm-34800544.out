@@ -1,0 +1,60 @@
+**** cauchy start ****
+Mon Aug 10 07:45:44 PM EDT 2026
+ARM=functional TRAIT=GSCAN_AgeSmk host=compute-154.cm.cluster job=34800544
+                                   ___  ___            
+                                   |  \/  |            
+                          __ _ ___ | .  . | __ _ _ __  
+                         / _` / __|| |\/| |/ _` | '_ \ 
+                        | (_| \__ \| |  | | (_| | |_) |
+                         \__, |___/\_|  |_/\__,_| .__/ 
+                          __/ |                 | |    
+                         |___/                  |_|
+                                Version: 1.73.7                                 
+================================================================================
+[2026-08-10 19:45:44,743] INFO | gsMap - Running run_cauchy_combination...
+[2026-08-10 19:45:44,743] INFO | gsMap - Started at: 2026-08-10 19:45:44
+Using the following arguments for CauchyCombinationConfig:
+{   'annotation': 'BS_k16_Semisupervised_wAI',
+    'output_file': '/dcs04/lieber/marmaypag/spatialAMY_LIBD4125/spatialAmygdala/processed-data/Visium/16_LDSC/gsMap_cond_functional/cauchy_across_samples/GSCAN_AgeSmk_cauchy.csv.gz',
+    'sample_name': None,
+    'sample_name_list': [   'Br6471',
+                            'Br6660',
+                            'Br6423',
+                            'Br2743',
+                            'Br8325',
+                            'Br9192',
+                            'Br9280'],
+    'trait_name': 'GSCAN_AgeSmk',
+    'workdir': '/dcs04/lieber/marmaypag/spatialAMY_LIBD4125/spatialAmygdala/processed-data/Visium/16_LDSC/gsMap_cond_functional'}
+[2026-08-10 19:45:47,211] INFO | gsMap.cauchy_combination_test - ------Loading LDSC results for sample Br6471...
+[2026-08-10 19:45:47,297] INFO | gsMap.cauchy_combination_test - ------Loading ST data for sample Br6471...
+[2026-08-10 19:45:48,027] INFO | gsMap.cauchy_combination_test - ------Loading LDSC results for sample Br6660...
+[2026-08-10 19:45:48,112] INFO | gsMap.cauchy_combination_test - ------Loading ST data for sample Br6660...
+[2026-08-10 19:45:49,050] INFO | gsMap.cauchy_combination_test - ------Loading LDSC results for sample Br6423...
+[2026-08-10 19:45:49,132] INFO | gsMap.cauchy_combination_test - ------Loading ST data for sample Br6423...
+[2026-08-10 19:45:50,036] INFO | gsMap.cauchy_combination_test - ------Loading LDSC results for sample Br2743...
+[2026-08-10 19:45:50,142] INFO | gsMap.cauchy_combination_test - ------Loading ST data for sample Br2743...
+[2026-08-10 19:45:50,704] INFO | gsMap.cauchy_combination_test - ------Loading LDSC results for sample Br8325...
+[2026-08-10 19:45:50,848] INFO | gsMap.cauchy_combination_test - ------Loading ST data for sample Br8325...
+[2026-08-10 19:45:51,571] INFO | gsMap.cauchy_combination_test - ------Loading LDSC results for sample Br9192...
+[2026-08-10 19:45:51,658] INFO | gsMap.cauchy_combination_test - ------Loading ST data for sample Br9192...
+[2026-08-10 19:45:52,217] INFO | gsMap.cauchy_combination_test - ------Loading LDSC results for sample Br9280...
+[2026-08-10 19:45:52,295] INFO | gsMap.cauchy_combination_test - ------Loading ST data for sample Br9280...
+[2026-08-10 19:45:52,710] INFO | gsMap.cauchy_combination_test - Removed 3/12183 outliers (median + 3IQR) for CoA.
+[2026-08-10 19:45:52,730] INFO | gsMap.cauchy_combination_test - Removed 2/10363 outliers (median + 3IQR) for BM.
+[2026-08-10 19:45:52,755] INFO | gsMap.cauchy_combination_test - Removed 232/49673 outliers (median + 3IQR) for BL.
+[2026-08-10 19:45:52,842] INFO | gsMap.cauchy_combination_test - Removed 3/40228 outliers (median + 3IQR) for LA.
+[2026-08-10 19:45:52,991] INFO | gsMap.cauchy_combination_test - Removed 3/13913 outliers (median + 3IQR) for MeA.
+[2026-08-10 19:45:53,030] INFO | gsMap.cauchy_combination_test - Removed 2/10638 outliers (median + 3IQR) for PL.
+[2026-08-10 19:45:53,162] INFO | gsMap.cauchy_combination_test - Cauchy combination results saved at /dcs04/lieber/marmaypag/spatialAMY_LIBD4125/spatialAmygdala/processed-data/Visium/16_LDSC/gsMap_cond_functional/cauchy_across_samples/GSCAN_AgeSmk_cauchy.csv.gz.
+[2026-08-10 19:45:53,169] INFO | gsMap - Finished running run_cauchy_combination at: 2026-08-10 19:45:53.
+[2026-08-10 19:45:53,287] INFO | gsMap - Resource usage summary:
+[2026-08-10 19:45:53,287] INFO | gsMap -   • Wall clock time: 8.55 seconds
+[2026-08-10 19:45:53,287] INFO | gsMap -   • CPU time: 6.86 seconds
+[2026-08-10 19:45:53,287] INFO | gsMap -   • Average CPU utilization: 81.9%
+[2026-08-10 19:45:53,287] INFO | gsMap -   • Peak memory usage: 9.70 GB
+gsmap rc=0 (non-fatal; success judged by output file)
+OK GSCAN_AgeSmk -> /dcs04/lieber/marmaypag/spatialAMY_LIBD4125/spatialAmygdala/processed-data/Visium/16_LDSC/gsMap_cond_functional/cauchy_across_samples/GSCAN_AgeSmk_cauchy.csv.gz
+-rw-rw----+ 1 mtotty hickslab 456 Aug 10 19:45 /dcs04/lieber/marmaypag/spatialAMY_LIBD4125/spatialAmygdala/processed-data/Visium/16_LDSC/gsMap_cond_functional/cauchy_across_samples/GSCAN_AgeSmk_cauchy.csv.gz
+**** cauchy end ****
+Mon Aug 10 07:45:53 PM EDT 2026

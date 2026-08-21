@@ -1,0 +1,57 @@
+**** cauchy start ****
+Mon Aug 10 07:43:42 PM EDT 2026
+ARM=functional TRAIT=BIP host=compute-154.cm.cluster job=34800540
+                                   ___  ___            
+                                   |  \/  |            
+                          __ _ ___ | .  . | __ _ _ __  
+                         / _` / __|| |\/| |/ _` | '_ \ 
+                        | (_| \__ \| |  | | (_| | |_) |
+                         \__, |___/\_|  |_/\__,_| .__/ 
+                          __/ |                 | |    
+                         |___/                  |_|
+                                Version: 1.73.7                                 
+================================================================================
+[2026-08-10 19:43:43,075] INFO | gsMap - Running run_cauchy_combination...
+[2026-08-10 19:43:43,075] INFO | gsMap - Started at: 2026-08-10 19:43:43
+Using the following arguments for CauchyCombinationConfig:
+{   'annotation': 'BS_k16_Semisupervised_wAI',
+    'output_file': '/dcs04/lieber/marmaypag/spatialAMY_LIBD4125/spatialAmygdala/processed-data/Visium/16_LDSC/gsMap_cond_functional/cauchy_across_samples/BIP_cauchy.csv.gz',
+    'sample_name': None,
+    'sample_name_list': [   'Br6471',
+                            'Br6660',
+                            'Br6423',
+                            'Br2743',
+                            'Br8325',
+                            'Br9192',
+                            'Br9280'],
+    'trait_name': 'BIP',
+    'workdir': '/dcs04/lieber/marmaypag/spatialAMY_LIBD4125/spatialAmygdala/processed-data/Visium/16_LDSC/gsMap_cond_functional'}
+[2026-08-10 19:43:45,480] INFO | gsMap.cauchy_combination_test - ------Loading LDSC results for sample Br6471...
+[2026-08-10 19:43:45,565] INFO | gsMap.cauchy_combination_test - ------Loading ST data for sample Br6471...
+[2026-08-10 19:43:55,491] INFO | gsMap.cauchy_combination_test - ------Loading LDSC results for sample Br6660...
+[2026-08-10 19:43:55,588] INFO | gsMap.cauchy_combination_test - ------Loading ST data for sample Br6660...
+[2026-08-10 19:44:15,478] INFO | gsMap.cauchy_combination_test - ------Loading LDSC results for sample Br6423...
+[2026-08-10 19:44:15,594] INFO | gsMap.cauchy_combination_test - ------Loading ST data for sample Br6423...
+[2026-08-10 19:44:37,354] INFO | gsMap.cauchy_combination_test - ------Loading LDSC results for sample Br2743...
+[2026-08-10 19:44:37,455] INFO | gsMap.cauchy_combination_test - ------Loading ST data for sample Br2743...
+[2026-08-10 19:44:46,525] INFO | gsMap.cauchy_combination_test - ------Loading LDSC results for sample Br8325...
+[2026-08-10 19:44:46,615] INFO | gsMap.cauchy_combination_test - ------Loading ST data for sample Br8325...
+[2026-08-10 19:45:02,449] INFO | gsMap.cauchy_combination_test - ------Loading LDSC results for sample Br9192...
+[2026-08-10 19:45:02,530] INFO | gsMap.cauchy_combination_test - ------Loading ST data for sample Br9192...
+[2026-08-10 19:45:05,923] INFO | gsMap.cauchy_combination_test - ------Loading LDSC results for sample Br9280...
+[2026-08-10 19:45:06,010] INFO | gsMap.cauchy_combination_test - ------Loading ST data for sample Br9280...
+[2026-08-10 19:45:10,623] INFO | gsMap.cauchy_combination_test - Removed 47/49673 outliers (median + 3IQR) for BL.
+[2026-08-10 19:45:10,787] INFO | gsMap.cauchy_combination_test - Removed 55/11678 outliers (median + 3IQR) for CeA.
+[2026-08-10 19:45:10,872] INFO | gsMap.cauchy_combination_test - Removed 1/13913 outliers (median + 3IQR) for MeA.
+[2026-08-10 19:45:10,937] INFO | gsMap.cauchy_combination_test - Cauchy combination results saved at /dcs04/lieber/marmaypag/spatialAMY_LIBD4125/spatialAmygdala/processed-data/Visium/16_LDSC/gsMap_cond_functional/cauchy_across_samples/BIP_cauchy.csv.gz.
+[2026-08-10 19:45:10,947] INFO | gsMap - Finished running run_cauchy_combination at: 2026-08-10 19:45:10.
+[2026-08-10 19:45:11,160] INFO | gsMap - Resource usage summary:
+[2026-08-10 19:45:11,160] INFO | gsMap -   • Wall clock time: 1.47 minutes
+[2026-08-10 19:45:11,160] INFO | gsMap -   • CPU time: 9.58 seconds
+[2026-08-10 19:45:11,160] INFO | gsMap -   • Average CPU utilization: 10.9%
+[2026-08-10 19:45:11,161] INFO | gsMap -   • Peak memory usage: 9.71 GB
+gsmap rc=0 (non-fatal; success judged by output file)
+OK BIP -> /dcs04/lieber/marmaypag/spatialAMY_LIBD4125/spatialAmygdala/processed-data/Visium/16_LDSC/gsMap_cond_functional/cauchy_across_samples/BIP_cauchy.csv.gz
+-rw-rw----+ 1 mtotty hickslab 462 Aug 10 19:45 /dcs04/lieber/marmaypag/spatialAMY_LIBD4125/spatialAmygdala/processed-data/Visium/16_LDSC/gsMap_cond_functional/cauchy_across_samples/BIP_cauchy.csv.gz
+**** cauchy end ****
+Mon Aug 10 07:45:11 PM EDT 2026

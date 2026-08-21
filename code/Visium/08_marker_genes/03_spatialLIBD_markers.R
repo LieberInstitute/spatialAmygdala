@@ -14,7 +14,22 @@ out_dir <- here("processed-data", "Visium", "08_marker_genes")
 # load
 spe <- readRDS(here("processed-data","Visium", "07_clustering", "BayesSpace", "MarkerGenes", "spe_harmony_markers_BS_k16_Semisupervised_wAI.rds"))
 spe 
-
+# class: SpatialExperiment 
+# dim: 36601 226181 
+# metadata(0):
+# assays(2): counts logcounts
+# rownames(36601): MIR1302-2HG FAM138A ... AC007325.4 AC007325.2
+# rowData names(7): source type ... gene_type gene_search
+# colnames(226181): AAACAAGTATCTCCCA-1_V13Y24-346_A1
+#   AAACAATCTACTAGCA-1_V13Y24-346_A1 ... TTGTTTCATTAGTCTA-1_V13B23-407_C1
+#   TTGTTTCCATACAACT-1_V13B23-407_C1
+# colData names(59): sample_id in_tissue ... ITC_gmm2_smooth
+#   BS_k16_relabel_ITC_smooth
+# reducedDimNames(2): PCA PCA-HARMONY_sample
+# mainExpName: NULL
+# altExpNames(0):
+# spatialCoords names(2) : pxl_col_in_fullres pxl_row_in_fullres
+# imgData names(4): sample_id image_id data scaleFactor
 
 
 # ===== Pseudobulk marker genes using spatialLIBD ======

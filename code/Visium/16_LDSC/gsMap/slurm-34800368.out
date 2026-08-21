@@ -1,0 +1,44 @@
+**** cauchy start ****
+Mon Aug 10 07:40:39 PM EDT 2026
+ARM=functional TRAIT=GSCAN_SmkCes host=compute-105.cm.cluster job=34800368
+                                   ___  ___            
+                                   |  \/  |            
+                          __ _ ___ | .  . | __ _ _ __  
+                         / _` / __|| |\/| |/ _` | '_ \ 
+                        | (_| \__ \| |  | | (_| | |_) |
+                         \__, |___/\_|  |_/\__,_| .__/ 
+                          __/ |                 | |    
+                         |___/                  |_|
+                                Version: 1.73.7                                 
+================================================================================
+[2026-08-10 19:40:40,166] INFO | gsMap - Running run_cauchy_combination...
+[2026-08-10 19:40:40,166] INFO | gsMap - Started at: 2026-08-10 19:40:40
+Using the following arguments for CauchyCombinationConfig:
+{   'annotation': 'BS_k16_Semisupervised_wAI',
+    'output_file': '/dcs04/lieber/marmaypag/spatialAMY_LIBD4125/spatialAmygdala/processed-data/Visium/16_LDSC/gsMap_cond_functional/cauchy_across_samples/GSCAN_SmkCes_cauchy.csv.gz',
+    'sample_name': None,
+    'sample_name_list': [   'Br6471',
+                            'Br6660',
+                            'Br6423',
+                            'Br2743',
+                            'Br8325',
+                            'Br9192',
+                            'Br9280'],
+    'trait_name': 'GSCAN_SmkCes',
+    'workdir': '/dcs04/lieber/marmaypag/spatialAMY_LIBD4125/spatialAmygdala/processed-data/Visium/16_LDSC/gsMap_cond_functional'}
+[2026-08-10 19:40:43,542] INFO | gsMap.cauchy_combination_test - ------Loading LDSC results for sample Br6471...
+[2026-08-10 19:40:43,690] INFO | gsMap.cauchy_combination_test - ------Loading ST data for sample Br6471...
+[2026-08-10 19:40:50,147] INFO | gsMap.cauchy_combination_test - ------Loading LDSC results for sample Br6660...
+[2026-08-10 19:40:50,328] INFO | gsMap.cauchy_combination_test - ------Loading ST data for sample Br6660...
+[2026-08-10 19:41:02,320] INFO | gsMap.cauchy_combination_test - ------Loading LDSC results for sample Br6423...
+[2026-08-10 19:41:02,497] INFO | gsMap.cauchy_combination_test - ------Loading ST data for sample Br6423...
+[2026-08-10 19:41:10,916] INFO | gsMap.cauchy_combination_test - ------Loading LDSC results for sample Br2743...
+[2026-08-10 19:41:11,037] INFO | gsMap.cauchy_combination_test - ------Loading ST data for sample Br2743...
+[2026-08-10 19:41:15,294] INFO | gsMap.cauchy_combination_test - ------Loading LDSC results for sample Br8325...
+[2026-08-10 19:41:15,430] INFO | gsMap.cauchy_combination_test - ------Loading ST data for sample Br8325...
+[2026-08-10 19:41:24,377] INFO | gsMap.cauchy_combination_test - ------Loading LDSC results for sample Br9192...
+[2026-08-10 19:41:29,272] INFO | gsMap.cauchy_combination_test - ------Loading ST data for sample Br9192...
+/var/spool/slurm/d/job34800368/slurm_script: line 54: 2938880 Killed                  gsmap run_cauchy_combination --workdir "$WORKDIR" --trait_name "$TRAIT" --annotation "$ANNOT" --sample_name_list $SAMPLE_LIST --output_file "$OUT"
+gsmap rc=137 (non-fatal; success judged by output file)
+FAIL: no cross-sample Cauchy output for GSCAN_SmkCes (rc=137)
+slurmstepd: error: Detected 1 oom-kill event(s) in StepId=34800368.batch. Some of your processes may have been killed by the cgroup out-of-memory handler.

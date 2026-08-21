@@ -1,0 +1,111 @@
+#!/bin/bash
+#SBATCH --partition=shared
+#SBATCH --cpus-per-task=8
+#SBATCH --mem=36G
+#SBATCH --time=12:00:00
+#SBATCH --exclude=compute-058,compute-175,compute-053
+# -----------------------------------------------------------------------------
+# 12_cond_neuronal_unit.sh -- ONE (trait, sample) unit for ARM=neuronal (test 3).
+# Per-unit, not an array: on this cluster an array is a single job id and sits
+# behind every individually-submitted job in FIFO at equal priority. Submit with:
+#   sbatch --job-name=n_neuronal_<SAMPLE>_<TRAIT> \
+#          --output=$CODE/logs/n_neuronal_<SAMPLE>_<TRAIT>_%j.out \
+#          --export=ALL,TRAIT=<TRAIT>,SAMPLE=<SAMPLE> 12_cond_neuronal_unit.sh
+#
+# Guards (a false null is the worst outcome for this arm, so fail loudly):
+#   exit 3 = bad trait/sample/sumstats   exit 4 = additional_baseline missing/wrong count
+#   exit 5 = log did not confirm conditioning   exit 6 = output absent
+#   exit 7 = Cauchy's add_latent.h5ad prerequisite missing (checked BEFORE the 2.5 h run)
+# Success is judged by OUTPUT FILE existence + size, NEVER by exit code.
+# -----------------------------------------------------------------------------
+set -uo pipefail
+
+PROJ=/dcs04/lieber/marmaypag/spatialAMY_LIBD4125/spatialAmygdala
+CODE=$PROJ/code/Visium/16_LDSC/gsMap
+ARM=neuronal
+WORKDIR=$PROJ/processed-data/Visium/16_LDSC/gsMap_cond_${ARM}
+SCRATCH=/users/mtotty/claude_scratch/gsmap
+ANNOT=BS_k16_Semisupervised_wAI
+EXPECT_ANNOT=53
+
+TRAIT="${TRAIT:?set TRAIT}"
+SAMPLE="${SAMPLE:?set SAMPLE}"
+grep -qx "$TRAIT"  $CODE/traits.txt  || { echo "FATAL(3): $TRAIT not in traits.txt";  exit 3; }
+grep -qx "$SAMPLE" $CODE/samples.txt || { echo "FATAL(3): $SAMPLE not in samples.txt"; exit 3; }
+
+GWAS=$(grep -E "^${TRAIT}:[[:space:]]" $CODE/gwas_config_full.yaml | head -1 | sed 's/^[^:]*:[[:space:]]*//')
+[ -n "$GWAS" ] && [ -e "$GWAS" ] || { echo "FATAL(3): sumstats for $TRAIT not found ('$GWAS')"; exit 3; }
+
+CONFDIR=$WORKDIR/cond_confirm; mkdir -p "$CONFDIR" "$CODE/logs"
+CONF=$CONFDIR/${SAMPLE}_${TRAIT}.conf
+SPOT=$WORKDIR/$SAMPLE/spatial_ldsc/${SAMPLE}_${TRAIT}.csv.gz
+CAU=$WORKDIR/$SAMPLE/cauchy_combination/${SAMPLE}_${TRAIT}.Cauchy.csv.gz
+
+echo "**** Job starts ****"; date
+echo "ARM=$ARM TRAIT=$TRAIT SAMPLE=$SAMPLE job=${SLURM_JOB_ID:-NA}"
+echo "sumstats: $GWAS"
+echo "host: $(hostname)  cpus: ${SLURM_CPUS_PER_TASK:-NA}  mem: ${SLURM_MEM_PER_NODE:-NA}"
+
+# --- guard 1: conditioning inputs present AND carry THIS arm's 53 annotations ---
+ABDIR=$WORKDIR/$SAMPLE/generate_ldscore/additional_baseline
+[ -d "$ABDIR" ] || { echo "FATAL(4): $ABDIR absent -> gsMap would SILENTLY run unconditioned"; exit 4; }
+NM=0; NBAD=0
+for ch in $(seq 1 22); do
+    f=$ABDIR/baseline.${ch}.l2.M; g=$ABDIR/baseline.${ch}.l2.ldscore.feather
+    if [ -s "$f" ] && [ -s "$g" ]; then
+        NM=$((NM+1)); nf=$(awk '{print NF; exit}' "$f")
+        [ "$nf" = "$EXPECT_ANNOT" ] || { echo "chr$ch has $nf annotations, expected $EXPECT_ANNOT"; NBAD=$((NBAD+1)); }
+    else
+        echo "chr$ch missing .M or .ldscore.feather"; NBAD=$((NBAD+1))
+    fi
+done
+echo "additional_baseline: $NM/22 chroms, $NBAD bad"
+[ "$NM" -eq 22 ] && [ "$NBAD" -eq 0 ] || { echo "FATAL(4): additional_baseline incomplete/wrong count for ARM=$ARM"; exit 4; }
+
+# --- guard 1b: Cauchy prerequisite BEFORE the expensive regression ---
+LATENT=$WORKDIR/$SAMPLE/find_latent_representations/${SAMPLE}_add_latent.h5ad
+[ -e "$LATENT" ] || { echo "FATAL(7): $LATENT absent -> regression would succeed then Cauchy would die"; exit 7; }
+echo "cauchy prerequisite present: $(stat -Lc%s "$LATENT") bytes"
+
+module load conda/3-24.3.0
+source activate $SCRATCH/envs/gsmap
+export PATH="$SCRATCH/envs/gsmap/bin:$PATH"
+echo "gsmap: $(which gsmap)"
+
+RUNLOG=$WORKDIR/$SAMPLE/cond_${ARM}_${TRAIT}_run.log
+mkdir -p "$(dirname "$RUNLOG")"
+
+if [ -s "$SPOT" ]; then
+    echo "spatial_ldsc already present, skipping regression: $SPOT"; LDSC_RC=0
+else
+    gsmap run_spatial_ldsc \
+        --workdir "$WORKDIR" --sample_name "$SAMPLE" --trait_name "$TRAIT" \
+        --sumstats_file "$GWAS" --num_processes 8 \
+        --use_additional_baseline_annotation True 2>&1 | tee "$RUNLOG"
+    LDSC_RC=${PIPESTATUS[0]}
+    echo "run_spatial_ldsc rc=$LDSC_RC (non-fatal; outputs decide)"
+    if grep -Fq "Baseline annotation is not provided" "$RUNLOG"; then
+        echo "FATAL(5): log says baseline NOT provided -> UNCONDITIONED"; exit 5; fi
+    grep -Fq "Using additional baseline annotations" "$RUNLOG" || {
+        echo "FATAL(5): log never confirmed additional baseline -> UNCONDITIONED"; exit 5; }
+    echo "CONFIRMED: conditioning active"
+fi
+
+[ -s "$SPOT" ] || { echo "FATAL(6): no per-spot output $SPOT (rc=$LDSC_RC)"; exit 6; }
+echo "per-spot output present: $SPOT ($(stat -c%s "$SPOT") bytes)"
+
+CAU_RC=0
+if [ -s "$CAU" ]; then echo "per-sample Cauchy already present"; else
+    gsmap run_cauchy_combination --workdir "$WORKDIR" --sample_name "$SAMPLE" \
+        --trait_name "$TRAIT" --annotation "$ANNOT" || CAU_RC=$?
+fi
+[ -s "$CAU" ] || { echo "FATAL(6): no Cauchy output $CAU (rc=$CAU_RC)"; exit 6; }
+
+printf 'sample=%s\ttrait=%s\tarm=%s\tannot=%s\tchroms=%s\tconfirmed=%s\tspot_bytes=%s\tcauchy_bytes=%s\tldsc_rc=%s\tcauchy_rc=%s\tnode=%s\tjob=%s\n' \
+    "$SAMPLE" "$TRAIT" "$ARM" "$EXPECT_ANNOT" "$NM" \
+    "$(grep -Fq 'Using additional baseline annotations' "$RUNLOG" 2>/dev/null && echo yes || echo prior_run)" \
+    "$(stat -c%s "$SPOT")" "$(stat -c%s "$CAU")" "$LDSC_RC" "$CAU_RC" \
+    "$(hostname)" "${SLURM_JOB_ID:-NA}" > "$CONF"
+
+echo "OK  $SAMPLE / $TRAIT"
+echo "**** Job ends ****"; date

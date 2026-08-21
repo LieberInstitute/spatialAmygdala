@@ -1,0 +1,20 @@
+**** Job starts ****
+Fri Apr  3 07:58:15 AM EDT 2026
+**** JHPCE info ****
+User: mtotty
+Job id: 30555661
+Job name: 04c_hyperparameters
+Node(s): compute-177
+Node memory requested: 131072
+n Tasks: 1
+Using SpQN-corrected correlation matrix
+  17963 genes, matrix: (17963, 17963)
+Running network clustering with parameters:
+PCC hard cutoff: 0.6, clustering soft power: 7, 9, 11, 13, 
+PCC hard cutoff: 0.7, clustering soft power: 7, 9, 11, 13, 
+PCC hard cutoff: 0.8, clustering soft power: 7, 9, 11, 13, 
+PCC hard cutoff: 0.9, clustering soft power: 7, 9, 11, 13, 
+Plot saved to /dcs04/lieber/marmaypag/spatialAMY_LIBD4125/spatialAmygdala/processed-data/Visium/14_smoothie_coexpression/results/hyperparameter_selection/clustering_plots.png
+Hyperparameter plots -> /dcs04/lieber/marmaypag/spatialAMY_LIBD4125/spatialAmygdala/processed-data/Visium/14_smoothie_coexpression/results/hyperparameter_selection/
+*** Review plots, then run 04d_network.py ***
+Done: Fri Apr  3 08:12:01 AM EDT 2026

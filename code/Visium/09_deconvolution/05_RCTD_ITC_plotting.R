@@ -16,6 +16,8 @@ processed_dir <- here("processed-data", "Visium", "09_deconvolution")
 # load
 spe <- readRDS(here("processed-data","Visium", "07_clustering", "BayesSpace", "MarkerGenes", "spe_harmony_markers_BS_k16_Semisupervised_wAI.rds"))
 
+dir <- "your_directory"
+for (s in unique(spe$sample_id)) magick::image_write(magick::image_read(imgRaster(spe, sample_id = s, image_id = "lowres")), file.path(dir, paste0(s, "_lowres.tif")), format = "tiff")
 
 # load
 res <- readRDS(here(processed_dir, "rctd_Allen_ITCs_results.rds"))

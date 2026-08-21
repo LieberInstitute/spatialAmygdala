@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/dcs04/lieber/marmaypag/spatialAMY_LIBD4125/spatialAmygdala/code/Visium/14_Smoothie_coexpression/04_correlation.py", line 52, in <module>
+    smoothie.select_clustering_params(
+  File "/users/mtotty/.conda/envs/smoothie_env/lib/python3.10/site-packages/smoothie/choosing_hyperparameters.py", line 321, in select_clustering_params
+    plot_cutoff_grid(results, output_folder=output_folder, filename="clustering_plots.png")
+  File "/users/mtotty/.conda/envs/smoothie_env/lib/python3.10/site-packages/smoothie/choosing_hyperparameters.py", line 265, in plot_cutoff_grid
+    os.makedirs(output_folder, exist_ok=True)
+NameError: name 'os' is not defined

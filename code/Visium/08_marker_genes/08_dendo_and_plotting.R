@@ -13,13 +13,18 @@ suppressPackageStartupMessages({
 
 
 spe <- readRDS(here("processed-data","Visium", "07_clustering", "BayesSpace", "MarkerGenes", "spe_harmony_markers_BS_k16_Semisupervised_wAI.rds"))
-spe 
+spe
+
+# rename the "AI" domain to "IA"
+spe$BS_k16_Semisupervised_wAI <- factor(spe$BS_k16_Semisupervised_wAI)
+levels(spe$BS_k16_Semisupervised_wAI)[levels(spe$BS_k16_Semisupervised_wAI) == "AI"] <- "IA"
+table(spe$BS_k16_Semisupervised_wAI)
 
 
 # ======== Plotting domains =======
 
-pal <- c( 
-  AI        = "#D62728",  # strong red standout
+pal <- c(
+  IA        = "#D62728",  # strong red standout
   BM        = "#E67E22",  # burnt orange
   BLD      = "#9B59B6",  # violet
   PL     = "#f1e438ff",  # steel blue
@@ -229,7 +234,7 @@ dev.off()
 
 
 itc_prop <- domain_props_sample |>
-  filter(BS_k16_Semisupervised_wAI == "AI")
+  filter(BS_k16_Semisupervised_wAI == "IA")
 
 pdf(here("plots", "Visium", "08_marker_genes", "ITC_proportion_AP_axis_spot_jitter_boxplot.pdf"),
     width = 3.5, height = 3.5)

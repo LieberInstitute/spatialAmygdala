@@ -1,0 +1,221 @@
+=============================================================
+gsMap spatial input manifest -- per-capture-area h5ad
+generated: 2026-08-06 12:03:28
+source SPE: /dcs04/lieber/marmaypag/spatialAMY_LIBD4125/spatialAmygdala/processed-data/Visium/07_clustering/BayesSpace/MarkerGenes/spe_harmony_markers_BS_k16_Semisupervised_wAI.rds
+output dir: /dcs04/lieber/marmaypag/spatialAMY_LIBD4125/spatialAmygdala/processed-data/Visium/16_LDSC/gsMap/ST
+
+split column      : sample_id (visiumStitched section)
+annotation column : BS_k16_Semisupervised_wAI
+gene universe     : protein_coding, deduplicated on gene_name
+n genes           : 19389
+domain filter     : >= 70 spots globally
+domains dropped   : none
+domains retained  : 15 - AI, BL, BLD, BM, CeA, CHAT, CLA, CoA, Endothelial, HPC, LA, MeA, PL, WM.1, WM.2
+
+layout of each h5ad:
+  X                 = raw counts (same matrix as layers['count'])
+  layers['count']   = raw integer counts   (gsMap --data_layer count)
+  obsm['spatial']   = stitched fullres pixel coords (n_spots x 2)
+  obs['BS_k16_Semisupervised_wAI'] = domain label (no NA)
+  var_names         = gene symbols
+=============================================================
+
+### Br2743
+file       : /dcs04/lieber/marmaypag/spatialAMY_LIBD4125/spatialAmygdala/processed-data/Visium/16_LDSC/gsMap/ST/Br2743.h5ad
+size       : 200.4 Mb
+n_spots    : 32556
+n_genes    : 19389
+n_capture_areas: 7
+counts sum : 82339481
+n exclude_overlapping TRUE: 7536
+coord range: x [ 5033, 62284 ]  y [ 8578, 54625 ]
+domains present: 14 of 15
+  missing      : CLA
+  domain spot counts:
+    LA: 8004
+    BL: 5535
+    WM.1: 4463
+    WM.2: 3415
+    CeA: 3045
+    BM: 2511
+    CoA: 1318
+    MeA: 1261
+    PL: 1132
+    BLD: 588
+    AI: 461
+    Endothelial: 344
+    HPC: 267
+    CHAT: 212
+
+### Br6423
+file       : /dcs04/lieber/marmaypag/spatialAMY_LIBD4125/spatialAmygdala/processed-data/Visium/16_LDSC/gsMap/ST/Br6423.h5ad
+size       : 379.5 Mb
+n_spots    : 34211
+n_genes    : 19389
+n_capture_areas: 8
+counts sum : 184527654
+n exclude_overlapping TRUE: 8434
+coord range: x [ 6027, 43043 ]  y [ 5366, 61564 ]
+domains present: 14 of 15
+  missing      : CLA
+  domain spot counts:
+    BL: 7339
+    LA: 5436
+    BLD: 4110
+    WM.1: 3898
+    CoA: 2118
+    BM: 1907
+    HPC: 1896
+    PL: 1829
+    MeA: 1574
+    CeA: 1496
+    WM.2: 1316
+    CHAT: 691
+    Endothelial: 319
+    AI: 282
+
+### Br6471
+file       : /dcs04/lieber/marmaypag/spatialAMY_LIBD4125/spatialAmygdala/processed-data/Visium/16_LDSC/gsMap/ST/Br6471.h5ad
+size       : 269.3 Mb
+n_spots    : 36876
+n_genes    : 19389
+n_capture_areas: 8
+counts sum : 115690851
+n exclude_overlapping TRUE: 3759
+coord range: x [ 8425, 62449 ]  y [ 7766, 74499 ]
+domains present: 14 of 15
+  missing      : CLA
+  domain spot counts:
+    LA: 9337
+    BL: 5889
+    WM.1: 4401
+    WM.2: 2964
+    CeA: 2867
+    CoA: 2640
+    BM: 2281
+    BLD: 2164
+    MeA: 1550
+    PL: 1485
+    CHAT: 474
+    AI: 368
+    Endothelial: 269
+    HPC: 187
+
+### Br6660
+file       : /dcs04/lieber/marmaypag/spatialAMY_LIBD4125/spatialAmygdala/processed-data/Visium/16_LDSC/gsMap/ST/Br6660.h5ad
+size       : 367 Mb
+n_spots    : 36756
+n_genes    : 19389
+n_capture_areas: 8
+counts sum : 185590580
+n exclude_overlapping TRUE: 4893
+coord range: x [ 6884, 61463 ]  y [ 2811, 64008 ]
+domains present: 14 of 15
+  missing      : LA
+  domain spot counts:
+    BL: 12249
+    MeA: 5805
+    CLA: 4834
+    WM.1: 4058
+    WM.2: 1795
+    CoA: 1755
+    CeA: 1684
+    PL: 1522
+    CHAT: 1063
+    Endothelial: 566
+    BM: 448
+    BLD: 418
+    HPC: 394
+    AI: 165
+
+### Br8325
+file       : /dcs04/lieber/marmaypag/spatialAMY_LIBD4125/spatialAmygdala/processed-data/Visium/16_LDSC/gsMap/ST/Br8325.h5ad
+size       : 271.1 Mb
+n_spots    : 29481
+n_genes    : 19389
+n_capture_areas: 8
+counts sum : 132046030
+n exclude_overlapping TRUE: 6521
+coord range: x [ 5899, 50244 ]  y [ 6398, 55513 ]
+domains present: 14 of 15
+  missing      : CLA
+  domain spot counts:
+    LA: 5476
+    BL: 4185
+    WM.1: 3569
+    BLD: 2822
+    WM.2: 2813
+    CoA: 2432
+    PL: 1953
+    BM: 1750
+    MeA: 1619
+    HPC: 1246
+    CeA: 861
+    CHAT: 300
+    Endothelial: 231
+    AI: 224
+
+### Br9192
+file       : /dcs04/lieber/marmaypag/spatialAMY_LIBD4125/spatialAmygdala/processed-data/Visium/16_LDSC/gsMap/ST/Br9192.h5ad
+size       : 180.7 Mb
+n_spots    : 28306
+n_genes    : 19389
+n_capture_areas: 6
+counts sum : 80051576
+n exclude_overlapping TRUE: 5350
+coord range: x [ 3550, 60863 ]  y [ 2871, 38476 ]
+domains present: 14 of 15
+  missing      : CLA
+  domain spot counts:
+    BL: 8111
+    LA: 6736
+    WM.2: 4093
+    WM.1: 3888
+    PL: 1606
+    MeA: 740
+    BM: 704
+    HPC: 679
+    CeA: 530
+    Endothelial: 465
+    CoA: 345
+    BLD: 306
+    CHAT: 101
+    AI: 2
+
+### Br9280
+file       : /dcs04/lieber/marmaypag/spatialAMY_LIBD4125/spatialAmygdala/processed-data/Visium/16_LDSC/gsMap/ST/Br9280.h5ad
+size       : 109.8 Mb
+n_spots    : 25835
+n_genes    : 19389
+n_capture_areas: 6
+counts sum : 39875780
+n exclude_overlapping TRUE: 833
+coord range: x [ 3301, 42674 ]  y [ 2376, 53276 ]
+domains present: 14 of 15
+  missing      : CLA
+  domain spot counts:
+    BL: 6365
+    LA: 5239
+    WM.1: 3366
+    WM.2: 3106
+    CoA: 1575
+    MeA: 1364
+    CeA: 1195
+    PL: 1111
+    BLD: 923
+    BM: 762
+    Endothelial: 417
+    CHAT: 234
+    HPC: 105
+    AI: 73
+
+=============================================================
+wrote 7 h5ad files
+/dcs04/lieber/marmaypag/spatialAMY_LIBD4125/spatialAmygdala/processed-data/Visium/16_LDSC/gsMap/ST/Br2743.h5ad
+/dcs04/lieber/marmaypag/spatialAMY_LIBD4125/spatialAmygdala/processed-data/Visium/16_LDSC/gsMap/ST/Br6423.h5ad
+/dcs04/lieber/marmaypag/spatialAMY_LIBD4125/spatialAmygdala/processed-data/Visium/16_LDSC/gsMap/ST/Br6471.h5ad
+/dcs04/lieber/marmaypag/spatialAMY_LIBD4125/spatialAmygdala/processed-data/Visium/16_LDSC/gsMap/ST/Br6660.h5ad
+/dcs04/lieber/marmaypag/spatialAMY_LIBD4125/spatialAmygdala/processed-data/Visium/16_LDSC/gsMap/ST/Br8325.h5ad
+/dcs04/lieber/marmaypag/spatialAMY_LIBD4125/spatialAmygdala/processed-data/Visium/16_LDSC/gsMap/ST/Br9192.h5ad
+/dcs04/lieber/marmaypag/spatialAMY_LIBD4125/spatialAmygdala/processed-data/Visium/16_LDSC/gsMap/ST/Br9280.h5ad
+=== END OF MANIFEST ===

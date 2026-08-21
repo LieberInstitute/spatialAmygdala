@@ -1,0 +1,99 @@
+#!/bin/bash
+#SBATCH --job-name=scdrs_full
+#SBATCH --partition=shared
+#SBATCH --cpus-per-task=8
+#SBATCH --mem=32G
+#SBATCH --time=3-00:00:00
+#SBATCH --output=/dcs04/lieber/marmaypag/spatialAMY_LIBD4125/spatialAmygdala/code/Visium/16_LDSC/scDRS/logs/06_score_full.%j.log
+# -----------------------------------------------------------------------------
+# 06_score_full.sh -- FULL SWEEP. All 40 traits, then domain group analysis.
+#
+#   sbatch 06_score_full.sh        (only after the pilot looks right)
+#
+# WHY ONE JOB AND NOT AN ARRAY
+#   compute-score reads and normalises the 224k-spot matrix once and then
+#   loops over gene sets internally. Splitting by trait would repeat that
+#   setup 40 times. The per-trait marginal cost is the control-set sampling,
+#   which is the same work either way.
+#
+#   If the pilot shows per-trait cost is high enough that 40 traits would
+#   exceed the walltime, split the .gs file into chunks and submit this
+#   script per chunk with GS_CHUNK set -- compute-score appends per-trait
+#   files into --out-folder, so chunks compose without collision.
+#
+# RESOURCES: 8 CPU / 64 G -- 48 G as in the pilot plus headroom for holding 40
+# traits' results rather than 3. RIGHT-SIZE THIS from the pilot's
+# /usr/bin/time -v "Maximum resident set size" before submitting; if the pilot
+# peaked well under 48 G, drop this to 32 G and it will schedule faster.
+# Memory does NOT scale with trait count (traits are scored in sequence), so
+# the pilot's peak is a good predictor.
+#
+# Skips traits whose .score.gz already exists.
+# -----------------------------------------------------------------------------
+set -euo pipefail
+# NOTE: under sbatch, SLURM copies this script to a spool directory, so "$0"
+# does NOT resolve to this file's real location -- $(dirname $(readlink -f $0))
+# yields /var/spool/slurm/... and config.sh is not found there. Hardcode the
+# code directory instead. Override with CODE_DIR=... if you relocate the tree.
+CODE_DIR=${CODE_DIR:-/dcs04/lieber/marmaypag/spatialAMY_LIBD4125/spatialAmygdala/code/Visium/16_LDSC/scDRS}
+source "$CODE_DIR/config.sh"
+
+echo "**** Job starts ****"; date; hostname
+activate_env
+mkdir -p "$SCORE_DIR" "$DOWNSTREAM_DIR" "$CODE/logs"
+
+GS=${GS_CHUNK:-$GS_DIR/magma_top${GS_NMAX}.gs}
+
+# Build a .gs holding only the traits that do not yet have a score, so a
+# re-submission after a partial run picks up where it left off. The file goes
+# to scratch and is left in place afterwards -- this pipeline never deletes.
+mkdir -p "$SCRATCH/todo"
+TODO=$SCRATCH/todo/todo.${SLURM_JOB_ID:-manual}.gs
+
+head -1 "$GS" > "$TODO"
+while IFS=$'\t' read -r trait rest; do
+    [ -z "${trait:-}" ] && continue
+    if [ -f "$SCORE_DIR/$trait.score.gz" ]; then
+        echo "have  : $trait"
+    else
+        printf '%s\t%s\n' "$trait" "$rest" >> "$TODO"
+    fi
+done < <(tail -n +2 "$GS")
+
+N=$(( $(wc -l < "$TODO") - 1 ))
+echo "traits still to score: $N"
+cut -f1 "$TODO" | tail -n +2 | tr '\n' ' '; echo
+
+if [ "$N" -eq 0 ]; then
+    echo "nothing to do"
+else
+    echo
+    echo "[1/2] scdrs compute-score"
+    /usr/bin/time -v "$SCDRS" compute-score \
+        --h5ad-file "$H5AD_SCDRS" \
+        --h5ad-species human \
+        --gs-file "$TODO" \
+        --gs-species human \
+        --cov-file "$COV_FILE" \
+        --flag-filter-data True \
+        --flag-raw-count True \
+        --n-ctrl "$N_CTRL" \
+        --flag-return-ctrl-raw-score False \
+        --flag-return-ctrl-norm-score True \
+        --out-folder "$SCORE_DIR"
+fi
+
+ls -lh "$SCORE_DIR" | head -50
+
+echo
+echo "[2/2] scdrs perform-downstream -- group analysis over $ANNOT_COL"
+"$SCDRS" perform-downstream \
+    --h5ad-file "$H5AD_SCDRS" \
+    --score-file "$SCORE_DIR/@.full_score.gz" \
+    --out-folder "$DOWNSTREAM_DIR" \
+    --group-analysis "$ANNOT_COL" \
+    --flag-filter-data True \
+    --flag-raw-count True
+
+ls -lh "$DOWNSTREAM_DIR" | head -50
+echo "**** Job ends ****"; date

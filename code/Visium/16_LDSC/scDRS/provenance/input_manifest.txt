@@ -1,0 +1,90 @@
+captured: 2026-08-09 14:33:30 EDT
+
+== GWAS sumstats (/dcs04/lieber/shared/statsgen/LDSC/base/gwas_brain) ==
+ADHD	adhd.gz	bb28762437cbf47656828fe69e3a8e28
+Alcohol	alcohol_ldscore.gz	39a806f3f2f96c6c20b1db7ecdec4820
+Alzheimer	Alzheimer_ldscore.gz	dd93d912dbcc294466cc3e00d4ef637e
+Alzheimer_v2	Alzheimer_ldscore2.gz	fff908333e3c09a90a31f9102b9099fe
+Alzheimer_v3	Alzheimer_ldscore3.gz	7bd7493dc5bf9d15ad35ee76dc7c5f1b
+Anorexia	Anorexia_ldscore.gz	1ce86d3351b722fba6e00ff06bc0c549
+AUD_EUR_NatMed2023	AUD.EUR_META.NatMed2023.gz	70e240121f83558e9f94155770559b9a
+AUD_EA_MVP	EA_aud_Jun07.txt_ldscore.gz	6c7ed44ca33aa54e6b2a0b9846b9126c
+Autism	autism_ldscore.gz	2fdfb0cd32688bb60f79a48f5fd8107a
+BIP	bp_ldscore.gz	f806d44c1fe83f118dd7d15adcf3066f
+BIP_PGC3	bp3_ldscore.gz	a818d885cba749e3eafa73acaa30f836
+BMI	bmi_ldscore.gz	15e3be6f5aba815f78d0ae20f4384971
+EduYears	UKB_460K.cov_EDU_YEARS.sumstats.gz	acf406646164907a720d180aa4335a72
+Epilepsy_All	epilepsyAll.gz	d2d54099748772337f2737ada5e16d91
+Epilepsy_Focal	epilepsyFocal.gz	aca749046a19df74687c2ef957082f49
+Epilepsy_GGE	epilepsyGGE.gz	81ae4ac788bfd68d717d1a4e82972c74
+GSCAN_AgeSmk	GSCAN_AgeSmk_2022_ldscore.gz	88dbe1ef0bbe20c207b8d9fb53e50981
+GSCAN_CigDay	GSCAN_CigDay_2022_ldscore.gz	2efbfd2cbdc15fb8ca0eb05d4f64a3e9
+GSCAN_DrnkWk	GSCAN_DrnkWk_2022_ldscore.gz	18de238343e823e5fe94894b521be153
+GSCAN_SmkCes	GSCAN_SmkCes_2022_ldscore.gz	8d96111fc9833a51055bd580cd2f7ff7
+GSCAN_SmkInit	GSCAN_SmkInit_2022_ldscore.gz	2dac402b114a66034de43a08878ef37e
+Height	height_ldscore.gz	426cd523e2682c4c2ef18e44c5afba75
+Insomnia	insomnia.gz	e61bf23f06588a7365eb56eceffb6389
+Intelligence	intelligence.gz	4ccfb53ac7b41943b20b9d784e19e950
+MDD	MDD_ldscore_PGC_UKB_23andme.gz	cb41233524642cfbe9a65b89ad402b0d
+MDD_2019_Edinburgh	mdd2019edinburgh_ldscore.gz	f314f12d386d4a6b11f29d589e5ac721
+MDD_ex23andMe	mdd_ex23andMe_ldscore.gz	6859b543536d377ac45964d41155ab46
+Neuroticism	UKB_460K.mental_NEUROTICISM.sumstats.gz	7b7e3317292d7cdfcb2cca4517d546d6
+OUD_MVP1	OUD_EA_MVP1_Mar12.gz	fbca01a6d65193be7c5960533cba9932
+OUD_MVP2	OUD_EA_MVP2_Mar12.gz	ea0bd0019cb0e161774d9c49f349c0ee
+OUD_META	OUD_EA_MVP1_MVP2_YP_SAGE_Mar12.gz	b828642b3b5383d63cf2597fc77d29b8
+PD	PD_ldscore.gz	ea26e1b53f97d4047103d3010bfe68a6
+PTSD	PTSD.gz	65a345d090603930ae762cba81a1f772
+SCZ	scz_PGC3_ldscore.gz	15911d57f488bfe9098a4830fda8e5de
+SCZ_PGC2_CLOZUK	scz_PGC2_CLOZUK_ldscore.gz	d613a0a9e46c8b0d174507714ccc7585
+Smoking	smoking_ldscore.gz	c4486f505e88c82d7b0b4d1e629e0b95
+Stroke_AS_MEGASTROKE	MEGASTROKE.1.AS.EUR_ldscore.gz	b4e5489f034a2f93302a81b902d44b1a
+Stroke_AIS_MEGASTROKE	MEGASTROKE.2.AIS.EUR_ldscore.gz	3301dc9ff5da0acb54641ddbcc7e44f6
+Stroke_2022_Any	stroke2022any.gz	a6052db02c1b2cad9911eaaccdaf7f0a
+T2D	PASS_Type_2_Diabetes.sumstats.gz	c5dbe5ee582a5372580d81e8575a71e5
+PTSD_F3	/dcs04/lieber/marmaypag/spatialAMY_LIBD4125/spatialAmygdala/processed-data/Visium/16_LDSC/scDRS/gwas_new/eur_ptsd_pcs_v4_aug3_2021.vcf.gz	UNREADABLE
+BIP_2024	/dcs04/lieber/marmaypag/spatialAMY_LIBD4125/spatialAmygdala/processed-data/Visium/16_LDSC/scDRS/gwas_new/bip2024_eur_no23andMe.gz	UNREADABLE
+
+== MAGMA gene locations ==
+-rw-r----- 1 shan users 687719 2023-08-29 23:10 /dcs04/lieber/shared/statsgen/PRS/ref_EUR/NCBI37.3.gene.loc
+7f6ffd6abb0b02c94a629e74c036d5f6  /dcs04/lieber/shared/statsgen/PRS/ref_EUR/NCBI37.3.gene.loc
+
+== 1000G EUR Phase3 plink (source, per chromosome) ==
+chr1       28275179 bytes  9f9e79232e862fa3d6021181fe518384
+chr2       30526714 bytes  d75d23dc37593a8c2adaf84106b631fd
+chr3       25534427 bytes  ef440f068673f150e0ca35561957339d
+chr4       26430944 bytes  0b204ea72229d9dd7944c51c009786b7
+chr5       22852846 bytes  f519b86f237668a5781e96d657eeaa2b
+chr6       23876477 bytes  07a98ae97b76dc4df5672ca5ba2bcf19
+chr7       21254821 bytes  212b06815690b42ff7925558b5edbf6c
+chr8       19785515 bytes  0d1022096610fd65275ff94b83ef2f17
+chr9       15782741 bytes  df9adeab07759ffb55afc4446eabd80b
+chr10      18868827 bytes  2799c40bf6c9c57db6f54676a09daf7c
+chr11      18227746 bytes  8a12b2dbf01185eba9f8ed73ffd06c80
+chr12      17780312 bytes  d39795dc5cdd6c48466fbda0c4fa83b3
+chr13      13468730 bytes  0438aee389f16f01cb7e861fb7d5696d
+chr14      11972339 bytes  52478201eeea7ae740cec246cff80230
+chr15      10579179 bytes  d6e2f316946e213a20e411786acdb47d
+chr16      11605329 bytes  c77d1ee384f69334d60c99e0142c89b0
+chr17       9852114 bytes  bd204de2b605128e14d4920742bfb02b
+chr18      10427122 bytes  bc803b12ea0d66c62817ea2c7864ff7b
+chr19       8507727 bytes  23467ba10447d0feeec90c3acf33f016
+chr20       8060113 bytes  d403fb5034aaecdb028f14c64aae339b
+chr21       5081850 bytes  e2289c93cadd19df43d20a48666fcfe2
+chr22       5158116 bytes  c2143482c1d2cc370f33012ed77391c0
+
+== spatial inputs (gsMap ST h5ad) ==
+Br6471      282400653 bytes  2026-08-06  835aff900029e3853adf3b70b6ad48df
+Br6660      384809185 bytes  2026-08-06  b1abd640424e3c0fcaccceb5ecd56194
+Br6423      397889444 bytes  2026-08-06  b2293c18b916cb94f888693fa9f865ec
+Br2743      210117634 bytes  2026-08-06  39c20d1701809b4b03fbe16801c9d964
+Br8325      284282136 bytes  2026-08-06  62fd67be8ad1b42a3d4cfb7fd9efef6b
+Br9192      189456819 bytes  2026-08-06  8e18005838c92862716ab00b3110f3e1
+Br9280      115147971 bytes  2026-08-06  b509aa1f7d44be510329f96ab9c75bd8
+
+== source SPE that produced those h5ad ==
+-rw-rw----+ 1 mtotty hickslab 2060167728 2026-01-12 11:46 /dcs04/lieber/marmaypag/spatialAMY_LIBD4125/spatialAmygdala/processed-data/Visium/07_clustering/BayesSpace/MarkerGenes/spe_harmony_markers_BS_k16_Semisupervised_wAI.rds
+f859d13881fe71a0e9162eb9b7fb1117  /dcs04/lieber/marmaypag/spatialAMY_LIBD4125/spatialAmygdala/processed-data/Visium/07_clustering/BayesSpace/MarkerGenes/spe_harmony_markers_BS_k16_Semisupervised_wAI.rds
+
+== comparison target ==
+-rw-rw----+ 1 mtotty lieber_marmaypag 68318 2026-08-06 09:37 /dcs04/lieber/marmaypag/spatialAMY_LIBD4125/spatialAmygdala/code/Visium/16_LDSC/LDSC/ldsc_results.csv
+48053327ece99853367cfc4790ab02be  /dcs04/lieber/marmaypag/spatialAMY_LIBD4125/spatialAmygdala/code/Visium/16_LDSC/LDSC/ldsc_results.csv

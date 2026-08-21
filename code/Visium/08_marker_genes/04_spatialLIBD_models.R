@@ -137,20 +137,38 @@ repeated_genes <- sig_genes[duplicated(sig_genes$gene),]
 
 indices <- c()
 
-indices <- append(indices, which(sig_genes$gene == "FIBCD1")) #aBA
+indices <- append(indices, which(sig_genes$gene == "AGBL1")) #aBA
+indices <- append(indices, which(sig_genes$gene == "LINC01378")) #aBA
 indices <- append(indices, which(sig_genes$gene == "CNR1")) # known aBA
-indices <- append(indices, which(sig_genes$gene == "PEX5L")) #known BA marker
-indices <- append(indices, which(sig_genes$gene == "SLIT1")) # novel BA marker
-indices <- append(indices, which(sig_genes$gene == "MOXD1")) #known BLVM.1 marker, 
+indices <- append(indices, which(sig_genes$gene == "UNCX"))# known aBA
+indices <- append(indices, which(sig_genes$gene == "ETV1")) # known aBA
+
+indices <- append(indices, which(sig_genes$gene == "PEX5L")) #known BLD marker
+indices <- append(indices, which(sig_genes$gene == "RBBP8NL")) # novel BA marker
+indices <- append(indices, which(sig_genes$gene == "AC148477.2")) # novel BA marker
+indices <- append(indices, which(sig_genes$gene == "BHMT")) # novel BA marker
+indices <- append(indices, which(sig_genes$gene == "GAL")) # novel BA marker
+indices <- append(indices, which(sig_genes$gene == "GLYATL1")) # novel BA marker
+indices <- append(indices, which(sig_genes$gene == "MYRIP")) # novel BA marker
+
+indices <- append(indices, which(sig_genes$gene == "MOXD1")) #known PL marker, 
 indices <- append(indices, which(sig_genes$gene == "GJB3")) #novel BLVM.1 marker
-indices <- append(indices, which(sig_genes$gene == "FSHB")) #known BLVM.2 marker, 
+indices <- append(indices, which(sig_genes$gene == "DMRT3")) #novel BLVM.1 marker
+indices <- append(indices, which(sig_genes$gene == "RAET1L")) #novel BLVM.1 marker
+indices <- append(indices, which(sig_genes$gene == "GLP2R")) #novel BLVM.1 marker
+
+indices <- append(indices, which(sig_genes$gene == "FSHB")) #BL
 indices <- append(indices, which(sig_genes$gene == "MT3")) #novel BLVM.2 marker
+
 indices <- append(indices, which(sig_genes$gene == "PENK")) # novel CeA marker
 indices <- append(indices, which(sig_genes$gene == "GPR88")) # novel CeA marker
+
 indices <- append(indices, which(sig_genes$gene == "PTH")) # CLA marker?
 indices <- append(indices, which(sig_genes$gene == "RGS12")) # CLA marker in rodents
+
 indices <- append(indices, which(sig_genes$gene == "PDYN")) # CoA
 indices <- append(indices, which(sig_genes$gene == "GRP")) # known CoA marker
+
 indices <- append(indices, which(sig_genes$gene == "CABP7")) # HPC
 indices <- append(indices, which(sig_genes$gene == "POU3F1")) # HPC
 indices <- append(indices, which(sig_genes$gene == "TSHZ1")) # known ITC marker
@@ -188,6 +206,8 @@ for (i in indices) {
 }
 
 dev.off()
+
+library(EnhancedVolcano)
 
 #volcano plots
 thresh_fdr <- 0.05

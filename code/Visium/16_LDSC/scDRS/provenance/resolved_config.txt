@@ -1,0 +1,15 @@
+captured: 2026-08-09 14:33:30 EDT
+
+PROJ         = /dcs04/lieber/marmaypag/spatialAMY_LIBD4125/spatialAmygdala
+CODE         = /dcs04/lieber/marmaypag/spatialAMY_LIBD4125/spatialAmygdala/code/Visium/16_LDSC/scDRS
+WORKDIR      = /dcs04/lieber/marmaypag/spatialAMY_LIBD4125/spatialAmygdala/processed-data/Visium/16_LDSC/scDRS
+SCRATCH      = /users/mtotty/claude_scratch/scdrs
+ENVDIR       = /users/mtotty/claude_scratch/scdrs/envs/scdrs
+GWAS_SRC     = /dcs04/lieber/shared/statsgen/LDSC/base/gwas_brain
+GENE_LOC_SRC = /dcs04/lieber/shared/statsgen/PRS/ref_EUR/NCBI37.3.gene.loc
+PLINK_SRC    = /dcs04/lieber/shared/statsgen/LDSC/base/referencefiles/1000G_EUR_Phase3_plink
+ST_DIR       = /dcs04/lieber/marmaypag/spatialAMY_LIBD4125/spatialAmygdala/processed-data/Visium/16_LDSC/gsMap/ST
+ANNOT_COL    = BS_k16_Semisupervised_wAI
+MAGMA_WINDOW = 10,1.5
+N_CTRL       = 1000
+GS_NMAX      = 1000

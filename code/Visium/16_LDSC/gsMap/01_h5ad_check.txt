@@ -1,0 +1,95 @@
+/dcs04/lieber/marmaypag/spatialAMY_LIBD4125/spatialAmygdala/code/Visium/16_LDSC/gsMap/01_check_h5ad.py:9: FutureWarning: `__version__` is deprecated, use `importlib.metadata.version('anndata')` instead.
+  print("anndata", anndata.__version__, "| scanpy", sc.__version__)
+/dcs04/lieber/marmaypag/spatialAMY_LIBD4125/spatialAmygdala/code/Visium/16_LDSC/gsMap/01_check_h5ad.py:9: FutureWarning: `__version__` is deprecated, use `importlib.metadata.version('scanpy')` instead
+  print("anndata", anndata.__version__, "| scanpy", sc.__version__)
+anndata 0.12.19 | scanpy 1.11.5
+
+==============================================================
+PILOT: /dcs04/lieber/marmaypag/spatialAMY_LIBD4125/spatialAmygdala/processed-data/Visium/16_LDSC/gsMap/ST/Br6471.h5ad
+==============================================================
+
+### adata
+AnnData object with n_obs × n_vars = 36876 × 19389
+    obs: 'BS_k16_Semisupervised_wAI', 'sample_id', 'capture_area', 'exclude_overlapping', 'in_tissue', 'sum_umi', 'sum_gene', 'key'
+    var: 'gene_name', 'gene_id', 'gene_type'
+    uns: 'X_name'
+    obsm: 'spatial'
+    layers: 'count'
+
+### layers['count']
+  keys        : ['count']
+  shape       : (36876, 19389)
+  dtype       : float64
+  type        : csr_matrix
+  nonzero min : 1.0  max: 636.0
+  integer     : True
+  total counts: 115690851.0
+  n nonzero   : 58657093
+
+### obsm['spatial']
+  keys        : ['spatial']
+  python type : ndarray
+  shape       : (36876, 2)
+  dtype       : float64
+  x range     : 8425.0 - 62449.0
+  y range     : 7766.0 - 74499.0
+  n NaN       : 0
+
+### obs['BS_k16_Semisupervised_wAI'].value_counts()
+BS_k16_Semisupervised_wAI
+LA             9337
+BL             5889
+WM.1           4401
+WM.2           2964
+CeA            2867
+CoA            2640
+BM             2281
+BLD            2164
+MeA            1550
+PL             1485
+CHAT            474
+AI              368
+Endothelial     269
+HPC             187
+CLA               0
+Name: count, dtype: int64
+  dtype       : category
+  n NA        : 0
+  n categories: 15
+
+### obs (other)
+  columns     : ['BS_k16_Semisupervised_wAI', 'sample_id', 'capture_area', 'exclude_overlapping', 'in_tissue', 'sum_umi', 'sum_gene', 'key']
+  sample_id   : {'Br6471': 36876}
+  exclude_overlapping TRUE: 3759 of 36876
+
+### var
+  n_vars      : 19389
+  var_names[:8]: ['OR4F5', 'OR4F29', 'OR4F16', 'SAMD11', 'NOC2L', 'KLHL17', 'PLEKHN1', 'PERM1']
+  unique      : True
+
+### gsMap input contract -- PILOT
+  PASS  counts in layers['count']
+  PASS  counts integer-valued
+  PASS  coords in obsm['spatial']
+  PASS  obsm['spatial'] plain ndarray
+  PASS  obsm['spatial'] is n_obs x 2
+  PASS  obsm['spatial'] no NaN
+  PASS  annotation present
+  PASS  annotation has no NA
+  PASS  var_names unique (symbols)
+  PASS  obs_names unique
+  ALL PASS: True
+
+==============================================================
+ALL SECTIONS
+==============================================================
+sample      n_spots  n_genes  n_dom  contract
+Br2743        32556    19389     14      PASS
+Br6423        34211    19389     14      PASS
+Br6471        36876    19389     14      PASS
+Br6660        36756    19389     14      PASS
+Br8325        29481    19389     14      PASS
+Br9192        28306    19389     14      PASS
+Br9280        25835    19389     14      PASS
+
+ALL FILES PASS: True

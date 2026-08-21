@@ -1,0 +1,41 @@
+,group
+SCZ,Psychiatric
+SCZ_PGC2_CLOZUK,Psychiatric
+BIP,Psychiatric
+BIP_PGC3,Psychiatric
+MDD,Psychiatric
+MDD_2019_Edinburgh,Psychiatric
+MDD_ex23andMe,Psychiatric
+ADHD,Psychiatric
+Autism,Psychiatric
+Anorexia,Psychiatric
+PTSD,Psychiatric
+Alcohol,Substance use
+AUD_EA_MVP,Substance use
+AUD_EUR_NatMed2023,Substance use
+OUD_MVP1,Substance use
+OUD_MVP2,Substance use
+OUD_META,Substance use
+GSCAN_AgeSmk,Substance use
+GSCAN_CigDay,Substance use
+GSCAN_DrnkWk,Substance use
+GSCAN_SmkCes,Substance use
+GSCAN_SmkInit,Substance use
+Smoking,Substance use
+Alzheimer,Neurological
+Alzheimer_v2,Neurological
+Alzheimer_v3,Neurological
+Epilepsy_All,Neurological
+Epilepsy_Focal,Neurological
+Epilepsy_GGE,Neurological
+PD,Neurological
+Stroke_2022_Any,Neurological
+Stroke_AIS_MEGASTROKE,Neurological
+Stroke_AS_MEGASTROKE,Neurological
+EduYears,Cognitive/behavioral
+Intelligence,Cognitive/behavioral
+Neuroticism,Cognitive/behavioral
+Insomnia,Cognitive/behavioral
+Height,Non-brain control
+BMI,Non-brain control
+T2D,Non-brain control

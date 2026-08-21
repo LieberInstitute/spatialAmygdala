@@ -1,0 +1,304 @@
+**** Job starts ****
+Thu Feb 26 12:52:54 PM EST 2026
+**** SLURM info ****
+User: mtotty
+Job id: 29270281
+Job name: RCTD_human
+Hostname: compute-177
+Task id: 
+class: SingleCellExperiment 
+dim: 36601 14598 
+metadata(0):
+assays(2): counts logcounts
+rownames(36601): A1BG A1BG-AS1 ... ZYX ZZEF1
+rowData names(7): source type ... gene_type Symbol.uniq
+colnames(14598): cell_2 cell_4 ... cell_16967 cell_16969
+colData names(26): batch Sample ... broad_celltype fine_celltype
+reducedDimNames(1): umap
+mainExpName: NULL
+altExpNames(0):
+
+       SST_TAC1       SST_NXPH2    SST_TMEM132C   RELN_IL1RAPL2        CCK_CNR1 
+             59             117              76              49             136 
+     CALCR_PENK       VIP_NRXN1      VIP_SEMA5A      LAMP5_EGFR      LAMP5_NOS1 
+             95             237             392             753             278 
+    PVALB_UNC5B     PVALB_MYO5B      PVALB_ST18       PENK_DRD2     TSHZ1_CPNE4 
+            167             265             173              64             136 
+    TSHZ1_PRKG1      DLK1_ZFHX3    SLC17A6_SIM1     SATB2_RXFP1        aBA_ESR1 
+            287             118             120             164             592 
+       BA_MYRIP         LA_RORB          ADARB2        BA_MOXD1       LA_ZBTB20 
+           1023            2204            1006            1692            1294 
+      Ependymal       Astrocyte     Endothelial       Microglia Oligodendrocyte 
+            817            1023             136             713             366 
+starting worker pid=1223860 on localhost:11575 at 12:55:00.435
+starting worker pid=1223875 on localhost:11575 at 12:55:00.647
+starting worker pid=1223890 on localhost:11575 at 12:55:00.812
+starting worker pid=1223905 on localhost:11575 at 12:55:00.978
+starting worker pid=1223920 on localhost:11575 at 12:55:01.141
+starting worker pid=1223935 on localhost:11575 at 12:55:01.602
+starting worker pid=1223950 on localhost:11575 at 12:55:01.764
+starting worker pid=1223965 on localhost:11575 at 12:55:01.927
+starting worker pid=1223980 on localhost:11575 at 12:55:02.092
+starting worker pid=1223995 on localhost:11575 at 12:55:02.247
+starting worker pid=1224010 on localhost:11575 at 12:55:02.407
+starting worker pid=1224025 on localhost:11575 at 12:55:02.571
+starting worker pid=1224040 on localhost:11575 at 12:55:02.731
+starting worker pid=1224055 on localhost:11575 at 12:55:02.867
+starting worker pid=1224070 on localhost:11575 at 12:55:03.016
+starting worker pid=1224085 on localhost:11575 at 12:55:03.180
+starting worker pid=1224100 on localhost:11575 at 12:55:03.343
+starting worker pid=1224115 on localhost:11575 at 12:55:03.501
+starting worker pid=1224130 on localhost:11575 at 12:55:03.654
+starting worker pid=1224145 on localhost:11575 at 12:55:03.810
+starting worker pid=1224160 on localhost:11575 at 12:55:03.966
+starting worker pid=1224175 on localhost:11575 at 12:55:04.122
+starting worker pid=1224190 on localhost:11575 at 12:55:04.278
+starting worker pid=1224205 on localhost:11575 at 12:55:04.432
+starting worker pid=1224220 on localhost:11575 at 12:55:04.755
+starting worker pid=1224236 on localhost:11575 at 12:55:04.912
+starting worker pid=1224251 on localhost:11575 at 12:55:05.073
+starting worker pid=1224266 on localhost:11575 at 12:55:05.234
+starting worker pid=1224281 on localhost:11575 at 12:55:05.372
+starting worker pid=1224296 on localhost:11575 at 12:55:05.523
+starting worker pid=1225155 on localhost:11575 at 12:56:09.140
+starting worker pid=1225170 on localhost:11575 at 12:56:09.300
+starting worker pid=1225185 on localhost:11575 at 12:56:09.459
+starting worker pid=1225200 on localhost:11575 at 12:56:09.618
+starting worker pid=1225215 on localhost:11575 at 12:56:09.775
+starting worker pid=1225230 on localhost:11575 at 12:56:09.935
+starting worker pid=1225245 on localhost:11575 at 12:56:10.094
+starting worker pid=1225260 on localhost:11575 at 12:56:10.255
+starting worker pid=1225275 on localhost:11575 at 12:56:10.416
+starting worker pid=1225290 on localhost:11575 at 12:56:10.566
+starting worker pid=1225305 on localhost:11575 at 12:56:10.716
+starting worker pid=1225320 on localhost:11575 at 12:56:10.866
+starting worker pid=1225335 on localhost:11575 at 12:56:11.026
+starting worker pid=1225350 on localhost:11575 at 12:56:11.186
+starting worker pid=1225365 on localhost:11575 at 12:56:11.343
+starting worker pid=1225380 on localhost:11575 at 12:56:11.501
+starting worker pid=1225395 on localhost:11575 at 12:56:12.086
+starting worker pid=1225410 on localhost:11575 at 12:56:12.287
+starting worker pid=1225425 on localhost:11575 at 12:56:12.447
+starting worker pid=1225440 on localhost:11575 at 12:56:12.608
+starting worker pid=1225455 on localhost:11575 at 12:56:12.768
+starting worker pid=1225470 on localhost:11575 at 12:56:12.925
+starting worker pid=1225485 on localhost:11575 at 12:56:13.085
+starting worker pid=1225500 on localhost:11575 at 12:56:13.242
+starting worker pid=1225515 on localhost:11575 at 12:56:13.402
+starting worker pid=1225530 on localhost:11575 at 12:56:13.579
+starting worker pid=1225545 on localhost:11575 at 12:56:13.735
+starting worker pid=1225560 on localhost:11575 at 12:56:13.896
+starting worker pid=1225575 on localhost:11575 at 12:56:14.051
+starting worker pid=1225590 on localhost:11575 at 12:56:14.478
+starting worker pid=1225661 on localhost:11575 at 12:56:59.331
+starting worker pid=1225676 on localhost:11575 at 12:56:59.519
+starting worker pid=1225691 on localhost:11575 at 12:56:59.680
+starting worker pid=1225706 on localhost:11575 at 12:56:59.847
+starting worker pid=1225721 on localhost:11575 at 12:57:00.015
+starting worker pid=1225736 on localhost:11575 at 12:57:00.178
+starting worker pid=1225751 on localhost:11575 at 12:57:00.343
+starting worker pid=1225766 on localhost:11575 at 12:57:00.510
+starting worker pid=1225781 on localhost:11575 at 12:57:00.673
+starting worker pid=1225796 on localhost:11575 at 12:57:00.837
+starting worker pid=1225811 on localhost:11575 at 12:57:01.002
+starting worker pid=1225826 on localhost:11575 at 12:57:01.245
+starting worker pid=1225841 on localhost:11575 at 12:57:01.411
+starting worker pid=1225856 on localhost:11575 at 12:57:01.574
+starting worker pid=1225871 on localhost:11575 at 12:57:01.739
+starting worker pid=1225886 on localhost:11575 at 12:57:01.906
+starting worker pid=1225901 on localhost:11575 at 12:57:02.074
+starting worker pid=1225916 on localhost:11575 at 12:57:02.235
+starting worker pid=1225931 on localhost:11575 at 12:57:02.397
+starting worker pid=1225946 on localhost:11575 at 12:57:02.560
+starting worker pid=1225961 on localhost:11575 at 12:57:02.726
+starting worker pid=1225976 on localhost:11575 at 12:57:06.388
+starting worker pid=1225991 on localhost:11575 at 12:57:07.262
+starting worker pid=1226006 on localhost:11575 at 12:57:07.427
+starting worker pid=1226021 on localhost:11575 at 12:57:07.588
+starting worker pid=1226040 on localhost:11575 at 12:57:07.718
+starting worker pid=1226055 on localhost:11575 at 12:57:07.865
+starting worker pid=1226070 on localhost:11575 at 12:57:08.026
+starting worker pid=1226085 on localhost:11575 at 12:57:08.188
+starting worker pid=1226100 on localhost:11575 at 12:57:08.338
+starting worker pid=1226167 on localhost:11575 at 12:57:50.503
+starting worker pid=1226182 on localhost:11575 at 12:57:50.699
+starting worker pid=1226197 on localhost:11575 at 12:57:50.903
+starting worker pid=1226212 on localhost:11575 at 12:57:51.069
+starting worker pid=1226227 on localhost:11575 at 12:57:51.234
+starting worker pid=1226242 on localhost:11575 at 12:57:51.401
+starting worker pid=1226257 on localhost:11575 at 12:57:51.565
+starting worker pid=1226272 on localhost:11575 at 12:57:51.730
+starting worker pid=1226287 on localhost:11575 at 12:57:51.897
+starting worker pid=1226302 on localhost:11575 at 12:57:52.062
+starting worker pid=1226317 on localhost:11575 at 12:57:52.620
+starting worker pid=1226332 on localhost:11575 at 12:57:52.779
+starting worker pid=1226347 on localhost:11575 at 12:57:52.928
+starting worker pid=1226362 on localhost:11575 at 12:57:53.088
+starting worker pid=1226377 on localhost:11575 at 12:57:53.244
+starting worker pid=1226392 on localhost:11575 at 12:57:53.402
+starting worker pid=1226407 on localhost:11575 at 12:57:53.560
+starting worker pid=1226422 on localhost:11575 at 12:57:53.726
+starting worker pid=1226437 on localhost:11575 at 12:57:53.886
+starting worker pid=1226452 on localhost:11575 at 12:57:54.039
+starting worker pid=1226467 on localhost:11575 at 12:57:54.195
+starting worker pid=1226482 on localhost:11575 at 12:57:54.355
+starting worker pid=1226497 on localhost:11575 at 12:57:54.514
+starting worker pid=1226512 on localhost:11575 at 12:57:55.047
+starting worker pid=1226527 on localhost:11575 at 12:57:55.204
+starting worker pid=1226542 on localhost:11575 at 12:57:55.361
+starting worker pid=1226557 on localhost:11575 at 12:57:55.516
+starting worker pid=1226572 on localhost:11575 at 12:57:55.675
+starting worker pid=1226587 on localhost:11575 at 12:57:55.822
+starting worker pid=1226602 on localhost:11575 at 12:57:55.983
+starting worker pid=1226861 on localhost:11575 at 12:58:32.272
+starting worker pid=1226876 on localhost:11575 at 12:58:32.486
+starting worker pid=1226891 on localhost:11575 at 12:58:32.644
+starting worker pid=1226906 on localhost:11575 at 12:58:32.803
+starting worker pid=1226921 on localhost:11575 at 12:58:33.466
+starting worker pid=1226936 on localhost:11575 at 12:58:33.644
+starting worker pid=1226951 on localhost:11575 at 12:58:33.805
+starting worker pid=1226966 on localhost:11575 at 12:58:34.465
+starting worker pid=1226981 on localhost:11575 at 12:58:34.614
+starting worker pid=1226996 on localhost:11575 at 12:58:34.775
+starting worker pid=1227011 on localhost:11575 at 12:58:34.934
+starting worker pid=1227026 on localhost:11575 at 12:58:35.082
+starting worker pid=1227041 on localhost:11575 at 12:58:35.241
+starting worker pid=1227056 on localhost:11575 at 12:58:35.399
+starting worker pid=1227071 on localhost:11575 at 12:58:35.596
+starting worker pid=1227086 on localhost:11575 at 12:58:35.756
+starting worker pid=1227101 on localhost:11575 at 12:58:35.913
+starting worker pid=1227116 on localhost:11575 at 12:58:36.072
+starting worker pid=1227131 on localhost:11575 at 12:58:36.230
+starting worker pid=1227146 on localhost:11575 at 12:58:36.386
+starting worker pid=1227161 on localhost:11575 at 12:58:36.540
+starting worker pid=1227176 on localhost:11575 at 12:58:36.701
+starting worker pid=1227191 on localhost:11575 at 12:58:36.854
+starting worker pid=1227206 on localhost:11575 at 12:58:37.017
+starting worker pid=1227221 on localhost:11575 at 12:58:37.175
+starting worker pid=1227236 on localhost:11575 at 12:58:37.582
+starting worker pid=1227253 on localhost:11575 at 12:58:37.738
+starting worker pid=1227268 on localhost:11575 at 12:58:37.900
+starting worker pid=1227283 on localhost:11575 at 12:58:38.061
+starting worker pid=1227298 on localhost:11575 at 12:58:38.273
+starting worker pid=1227363 on localhost:11575 at 12:59:19.183
+starting worker pid=1227378 on localhost:11575 at 12:59:19.434
+starting worker pid=1227393 on localhost:11575 at 12:59:19.593
+starting worker pid=1227408 on localhost:11575 at 12:59:19.752
+starting worker pid=1227423 on localhost:11575 at 12:59:19.911
+starting worker pid=1227438 on localhost:11575 at 12:59:20.070
+starting worker pid=1227453 on localhost:11575 at 12:59:20.227
+starting worker pid=1227468 on localhost:11575 at 12:59:20.384
+starting worker pid=1227483 on localhost:11575 at 12:59:20.544
+starting worker pid=1227498 on localhost:11575 at 12:59:20.704
+starting worker pid=1227513 on localhost:11575 at 12:59:20.863
+starting worker pid=1227528 on localhost:11575 at 12:59:21.016
+starting worker pid=1227543 on localhost:11575 at 12:59:21.176
+starting worker pid=1227558 on localhost:11575 at 12:59:21.386
+starting worker pid=1227573 on localhost:11575 at 12:59:21.557
+starting worker pid=1227588 on localhost:11575 at 12:59:21.718
+starting worker pid=1227603 on localhost:11575 at 12:59:21.877
+starting worker pid=1227618 on localhost:11575 at 12:59:22.034
+starting worker pid=1227633 on localhost:11575 at 12:59:22.193
+starting worker pid=1227648 on localhost:11575 at 12:59:22.353
+starting worker pid=1227663 on localhost:11575 at 12:59:22.510
+starting worker pid=1227678 on localhost:11575 at 12:59:22.669
+starting worker pid=1227693 on localhost:11575 at 12:59:22.829
+starting worker pid=1227708 on localhost:11575 at 12:59:22.986
+starting worker pid=1227723 on localhost:11575 at 12:59:23.144
+starting worker pid=1227738 on localhost:11575 at 12:59:23.299
+starting worker pid=1227753 on localhost:11575 at 12:59:23.455
+starting worker pid=1227768 on localhost:11575 at 12:59:23.616
+starting worker pid=1227783 on localhost:11575 at 12:59:23.776
+starting worker pid=1227798 on localhost:11575 at 12:59:23.938
+starting worker pid=1227865 on localhost:11575 at 13:00:00.035
+starting worker pid=1227880 on localhost:11575 at 13:00:00.183
+starting worker pid=1227895 on localhost:11575 at 13:00:00.319
+starting worker pid=1227910 on localhost:11575 at 13:00:00.456
+starting worker pid=1227925 on localhost:11575 at 13:00:00.600
+starting worker pid=1227940 on localhost:11575 at 13:00:00.737
+starting worker pid=1227955 on localhost:11575 at 13:00:00.895
+starting worker pid=1227970 on localhost:11575 at 13:00:01.052
+starting worker pid=1227985 on localhost:11575 at 13:00:01.188
+starting worker pid=1228000 on localhost:11575 at 13:00:01.366
+starting worker pid=1228015 on localhost:11575 at 13:00:01.672
+starting worker pid=1228030 on localhost:11575 at 13:00:01.835
+starting worker pid=1228045 on localhost:11575 at 13:00:01.981
+starting worker pid=1228060 on localhost:11575 at 13:00:02.147
+starting worker pid=1228075 on localhost:11575 at 13:00:02.600
+starting worker pid=1228090 on localhost:11575 at 13:00:02.862
+starting worker pid=1228105 on localhost:11575 at 13:00:03.088
+starting worker pid=1228120 on localhost:11575 at 13:00:03.320
+starting worker pid=1228135 on localhost:11575 at 13:00:03.549
+starting worker pid=1228150 on localhost:11575 at 13:00:03.956
+starting worker pid=1228166 on localhost:11575 at 13:00:04.282
+starting worker pid=1228181 on localhost:11575 at 13:00:04.727
+starting worker pid=1228196 on localhost:11575 at 13:00:05.178
+starting worker pid=1228211 on localhost:11575 at 13:00:05.795
+starting worker pid=1228226 on localhost:11575 at 13:00:06.512
+starting worker pid=1228241 on localhost:11575 at 13:00:07.161
+starting worker pid=1228256 on localhost:11575 at 13:00:08.350
+starting worker pid=1228272 on localhost:11575 at 13:00:13.535
+starting worker pid=1228288 on localhost:11575 at 13:00:24.007
+starting worker pid=1228520 on localhost:11575 at 13:00:24.954
+starting worker pid=1228938 on localhost:11575 at 13:01:01.045
+starting worker pid=1228953 on localhost:11575 at 13:01:01.407
+starting worker pid=1228968 on localhost:11575 at 13:01:01.792
+starting worker pid=1228994 on localhost:11575 at 13:01:02.227
+starting worker pid=1229009 on localhost:11575 at 13:01:02.620
+starting worker pid=1229025 on localhost:11575 at 13:01:03.246
+starting worker pid=1229508 on localhost:11575 at 13:01:03.882
+starting worker pid=1230125 on localhost:11575 at 13:01:04.866
+starting worker pid=1230140 on localhost:11575 at 13:01:06.301
+starting worker pid=1230156 on localhost:11575 at 13:01:11.254
+starting worker pid=1230172 on localhost:11575 at 13:01:12.440
+starting worker pid=1230187 on localhost:11575 at 13:01:12.617
+starting worker pid=1230202 on localhost:11575 at 13:01:12.824
+starting worker pid=1230217 on localhost:11575 at 13:01:12.982
+starting worker pid=1230232 on localhost:11575 at 13:01:13.141
+starting worker pid=1230247 on localhost:11575 at 13:01:13.302
+starting worker pid=1230263 on localhost:11575 at 13:01:13.458
+starting worker pid=1230278 on localhost:11575 at 13:01:13.615
+starting worker pid=1230293 on localhost:11575 at 13:01:13.770
+starting worker pid=1230308 on localhost:11575 at 13:01:13.923
+starting worker pid=1230323 on localhost:11575 at 13:01:14.067
+starting worker pid=1230338 on localhost:11575 at 13:01:14.223
+starting worker pid=1230353 on localhost:11575 at 13:01:14.365
+starting worker pid=1230368 on localhost:11575 at 13:01:15.155
+starting worker pid=1230383 on localhost:11575 at 13:01:15.301
+starting worker pid=1230398 on localhost:11575 at 13:01:15.485
+starting worker pid=1230413 on localhost:11575 at 13:01:15.627
+starting worker pid=1230428 on localhost:11575 at 13:01:15.785
+starting worker pid=1230443 on localhost:11575 at 13:01:15.935
+starting worker pid=1230458 on localhost:11575 at 13:01:16.096
+starting worker pid=1231088 on localhost:11575 at 13:02:02.842
+starting worker pid=1231103 on localhost:11575 at 13:02:03.458
+starting worker pid=1231126 on localhost:11575 at 13:02:03.605
+starting worker pid=1231141 on localhost:11575 at 13:02:03.770
+starting worker pid=1231156 on localhost:11575 at 13:02:03.913
+starting worker pid=1231171 on localhost:11575 at 13:02:04.055
+starting worker pid=1231186 on localhost:11575 at 13:02:04.199
+starting worker pid=1231209 on localhost:11575 at 13:02:04.339
+starting worker pid=1231229 on localhost:11575 at 13:02:04.502
+starting worker pid=1231244 on localhost:11575 at 13:02:04.663
+starting worker pid=1231259 on localhost:11575 at 13:02:04.820
+starting worker pid=1231274 on localhost:11575 at 13:02:04.975
+starting worker pid=1231298 on localhost:11575 at 13:02:05.166
+starting worker pid=1231313 on localhost:11575 at 13:02:05.318
+starting worker pid=1231328 on localhost:11575 at 13:02:05.483
+starting worker pid=1231343 on localhost:11575 at 13:02:05.643
+starting worker pid=1231358 on localhost:11575 at 13:02:05.841
+starting worker pid=1231375 on localhost:11575 at 13:02:05.979
+starting worker pid=1231392 on localhost:11575 at 13:02:06.119
+starting worker pid=1231407 on localhost:11575 at 13:02:06.301
+starting worker pid=1231422 on localhost:11575 at 13:02:06.560
+starting worker pid=1231438 on localhost:11575 at 13:02:06.697
+starting worker pid=1231453 on localhost:11575 at 13:02:06.839
+starting worker pid=1231468 on localhost:11575 at 13:02:06.980
+starting worker pid=1231483 on localhost:11575 at 13:02:07.121
+starting worker pid=1231498 on localhost:11575 at 13:02:07.283
+starting worker pid=1231513 on localhost:11575 at 13:02:07.432
+starting worker pid=1231528 on localhost:11575 at 13:02:07.596
+starting worker pid=1231546 on localhost:11575 at 13:02:07.745
+starting worker pid=1231561 on localhost:11575 at 13:02:07.884
+**** Job ends ****
+Thu Feb 26 02:18:56 PM EST 2026

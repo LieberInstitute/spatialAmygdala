@@ -1,0 +1,46 @@
+Br6471: 36876 spots x 19389 genes
+Br6660: 36756 spots x 19389 genes
+Br6423: 34211 spots x 19389 genes
+Br2743: 32556 spots x 19389 genes
+Br8325: 29481 spots x 19389 genes
+Br9192: 28306 spots x 19389 genes
+Br9280: 25835 spots x 19389 genes
+
+gene universe: [19389, 19389, 19389, 19389, 19389, 19389, 19389] -> shared 19389
+
+combined: 224021 spots x 19389 genes
+total UMI  : 820,121,952
+n_genes    : min 69  median 1618  max 8189
+n_umi      : min 73  median 3049  max 45657
+
+spots per donor:
+donor
+Br6471    36876
+Br6660    36756
+Br6423    34211
+Br2743    32556
+Br8325    29481
+Br9192    28306
+Br9280    25835
+
+spots per BS_k16_Semisupervised_wAI:
+BS_k16_Semisupervised_wAI
+BL             49673
+LA             40228
+WM.1           27643
+WM.2           19502
+MeA            13913
+CoA            12183
+CeA            11678
+BLD            11331
+PL             10638
+BM             10363
+CLA             4834
+HPC             4774
+CHAT            3075
+Endothelial     2611
+AI              1575
+
+covariates : ['const', 'n_genes', 'log_umi', 'donor_Br6423', 'donor_Br6471', 'donor_Br6660', 'donor_Br8325', 'donor_Br9192', 'donor_Br9280']
+-> /dcs04/lieber/marmaypag/spatialAMY_LIBD4125/spatialAmygdala/processed-data/Visium/16_LDSC/scDRS/h5ad/visium_amygdala_scdrs.h5ad
+-> /dcs04/lieber/marmaypag/spatialAMY_LIBD4125/spatialAmygdala/processed-data/Visium/16_LDSC/scDRS/h5ad/cov.tsv

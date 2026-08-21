@@ -1,0 +1,3 @@
+scz_PGC3_ldscore.gz
+MDD_ldscore_PGC_UKB_23andme.gz
+height_ldscore.gz

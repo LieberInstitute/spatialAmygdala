@@ -1,0 +1,23 @@
+captured: 2026-08-09 14:33:30 EDT
+
+9e8b64031540754b892f42fe6ad08538  ./00_setup_env.sh
+dbff48bfbed010892697836430229a5a  ./01_prep_magma_ref.sh
+40b39de8b2a35272dd2551edee7c35e6  ./02_magma_array.sh
+f0818a60b2d6b6ce4263387c1e4b5102  ./03_munge_gs.sh
+1ccda6d1ac09ec61093f28444c2f7b87  ./04_prep_h5ad.sh
+ad784fdc663b6ea8bc0d3f0449dfcc65  ./05_score_pilot.sh
+5991054aeddf645ad1c4fa978ef84641  ./06b_score_array.sh
+e98641917eaaca22f593b7d08d48a2fc  ./06c_downstream_array.sh
+fd9a4ea9aef53fd797d19ffd3f2d6167  ./06_score_full.sh
+e69c3bacfff291615632c7ca75e56b6d  ./07_run_figures.sh
+ab0524f7fa27e50236e5d54709be4cc2  ./08_capture_provenance.sh
+efe39ed2768bcd890736268aa3a639ab  ./cmd.sh
+15ed59ee5a73c757dbb27b5b2b9ec10e  ./config.sh
+0a2e15e46a5b4d554b1296b38bab1017  ./job.sh
+1ecbf0739fb12b1f452fc4efd07a54dd  ./02a_sumstats_to_pval.py
+6a560e8083815a0a7f9d9063d0884a33  ./03a_build_zscore_matrix.py
+9f0bbb650bc37ce0bbc322b9a00b1aeb  ./04a_prep_h5ad.py
+d3269bdb343b977dc1d360782ec10652  ./07_figures.py
+9bed1d5d02703d85dd0ec19367b6044d  ./traits.tsv
+d44c51d20151172091fd11f226d23091  ./README.md
+44d50310c2dd14111b01f5a937a3b357  ./RUNLOG.md

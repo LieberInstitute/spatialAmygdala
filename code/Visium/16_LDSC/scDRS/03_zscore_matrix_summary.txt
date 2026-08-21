@@ -1,0 +1,49 @@
+traits written : 42
+genes (union)  : 18225
+genes complete : 15243
+
+per-trait non-missing genes and max Z:
+  ADHD                     n= 17422  maxZ=  7.348
+  Alcohol                  n= 17758  maxZ=  7.833
+  Alzheimer                n= 17742  maxZ=  7.839
+  Alzheimer_v2             n= 17759  maxZ=  8.210
+  Alzheimer_v3             n= 18004  maxZ=  7.973
+  Anorexia                 n= 17569  maxZ=  7.207
+  AUD_EUR_NatMed2023       n= 17705  maxZ=  7.709
+  AUD_EA_MVP               n= 17166  maxZ=  7.229
+  Autism                   n= 17629  maxZ=  5.542
+  BIP                      n= 17569  maxZ=  5.504
+  BIP_PGC3                 n= 17691  maxZ=  7.072
+  BMI                      n= 17611  maxZ= 14.659
+  EduYears                 n= 17790  maxZ=  8.126
+  Epilepsy_All             n= 16558  maxZ=  5.828
+  Epilepsy_Focal           n= 16565  maxZ=  4.806
+  Epilepsy_GGE             n= 16539  maxZ=  7.403
+  GSCAN_AgeSmk             n= 17696  maxZ=  6.963
+  GSCAN_CigDay             n= 17699  maxZ=  8.014
+  GSCAN_DrnkWk             n= 17692  maxZ=  8.014
+  GSCAN_SmkCes             n= 17696  maxZ=  7.727
+  GSCAN_SmkInit            n= 17695  maxZ=  8.988
+  Height                   n= 17600  maxZ= 14.933
+  Insomnia                 n= 17725  maxZ=  6.235
+  Intelligence             n= 17748  maxZ=  8.937
+  MDD                      n= 17597  maxZ=  8.740
+  MDD_2019_Edinburgh       n= 17774  maxZ=  8.027
+  MDD_ex23andMe            n= 17431  maxZ=  5.771
+  Neuroticism              n= 17790  maxZ=  9.567
+  OUD_MVP1                 n= 17193  maxZ=  4.057
+  OUD_MVP2                 n= 17242  maxZ=  4.339
+  OUD_META                 n= 17193  maxZ=  4.331
+  PD                       n= 17730  maxZ=  8.807
+  PTSD                     n= 17762  maxZ=  4.025
+  SCZ                      n= 17703  maxZ=  8.772
+  SCZ_PGC2_CLOZUK          n= 17437  maxZ=  7.848
+  Smoking                  n= 17758  maxZ=  7.787
+  Stroke_AS_MEGASTROKE     n= 17903  maxZ=  6.583
+  Stroke_AIS_MEGASTROKE    n= 17903  maxZ=  5.404
+  Stroke_2022_Any          n= 17747  maxZ=  7.367
+  T2D                      n= 17166  maxZ=  6.624
+  PTSD_F3                  n= 17916  maxZ=  7.911
+  BIP_2024                 n= 18216  maxZ=  7.173
+
+-> /dcs04/lieber/marmaypag/spatialAMY_LIBD4125/spatialAmygdala/processed-data/Visium/16_LDSC/scDRS/gs/magma_zscore_matrix.tsv
