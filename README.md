@@ -21,18 +21,18 @@ Thank you for your interest in our work!
 
 All of these interactive websites are powered by the [`Vitessce`](http://vitessce.io/) open source software:
 
-We provide the following interactive websites, organized by dataset with
+We provide the following [interactive websites](https://totty-amygdala-vitessce.s3.amazonaws.com/amygdala/index.html), organized by dataset with
 software labeled by emojis:
 
-- [Visium (n = 7)](TODO_URL)
+- [Visium (n = 7)](https://vitessce.io/#?url=https://totty-amygdala-vitessce.s3.amazonaws.com/amygdala/configs/visium.json)
     + Provides interactive spot-level visualization of full-transcriptome profiles, spatial domains, 
     and predicted cell type locations.
-- [Xenium (n = 4)](TODO_URL)
+- [Xenium (n = 4)](https://vitessce.io/#?url=https://totty-amygdala-vitessce.s3.amazonaws.com/amygdala/configs/xenium.json)
     + Provides interactive cell segmentations with a targeted gene panel, spatial domain, and transferred cell type labels.
-- [Visium HD (n = 5)](TODO_URL)
+- [Visium HD (n = 5)](https://vitessce.io/#?url=https://totty-amygdala-vitessce.s3.amazonaws.com/amygdala/configs/visium_hd.json)
     + Provides interactive cell segmentations with full-transcriptome profliling, spatial domains, and 
         transferred cell type labels.
-- [Br9280: Visium, VisiumHD, and Xenium](TODO_URL)
+- [Br9280: Visium, VisiumHD, and Xenium](https://vitessce.io/#?url=https://totty-amygdala-vitessce.s3.amazonaws.com/amygdala/configs/all_platforms.json)
     + Provides interactive visualize of the same donor across all three technologies.
 
 
