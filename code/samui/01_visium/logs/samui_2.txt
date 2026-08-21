@@ -1,0 +1,34 @@
+**** Job starts ****
+Wed Aug  5 02:09:00 PM EDT 2026
+**** JHPCE info ****
+User: rmiller
+Job id: 34682812
+Job name: 01-vis_create_samui
+Hostname: 
+Task id: 2
+Processing sample Br6423
+Wed Aug  5 02:09:00 PM EDT 2026
+Loading LIBD SLURM module for samui/1.0.0-next.45
+
+The following have been reloaded with a version change:
+  1) conda/3-24.3.0 => conda/3-23.3.1
+
+/jhpce/shared/libd/core/samui/1.0.0-next.45/samui_env/lib/python3.10/site-packages/pydantic/_internal/_config.py:261: UserWarning: Valid config keys have changed in V2:
+* 'allow_mutation' has been removed
+  warnings.warn(message, UserWarning)
+/jhpce/shared/libd/core/samui/1.0.0-next.45/samui_env/lib/python3.10/site-packages/anndata/_core/anndata.py:1832: UserWarning: Variable names are not unique. To make them unique, call `.var_names_make_unique`.
+  utils.warn_names_duplicates("var")
+Traceback (most recent call last):
+  File "/dcs04/lieber/marmaypag/spatialAMY_LIBD4125/spatialAmygdala/code/samui/01_visium/02-create_samui.py", line 125, in <module>
+    this_sample.add_image(tiff = img_path, channels = img_channels, scale = m_per_px)
+  File "/jhpce/shared/libd/core/samui/1.0.0-next.45/samui/loopy/sample.py", line 61, in wrapper
+    return func(self, *args, **kwargs)
+  File "/jhpce/shared/libd/core/samui/1.0.0-next.45/samui/loopy/sample.py", line 163, in add_image
+    geotiff = GeoTiff.from_tiff(tiff, scale=scale, translate=translate, rgb=channels == "rgb")
+  File "/jhpce/shared/libd/core/samui/1.0.0-next.45/samui/loopy/image.py", line 58, in from_tiff
+    return cls.from_img(imread(tif), scale=scale, translate=translate, rgb=rgb)
+  File "/jhpce/shared/libd/core/samui/1.0.0-next.45/samui/loopy/image.py", line 71, in from_img
+    assert chans == 3
+AssertionError
+**** Job ends ****
+Wed Aug  5 02:09:46 PM EDT 2026
