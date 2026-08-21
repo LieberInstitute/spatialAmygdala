@@ -19,9 +19,12 @@ spe
 # make colnames unique
 colnames(spe) <- make.unique(colnames(spe))
 
-# load the snRNA-seq data
-sce <- readRDS(here("processed-data", "snRNAseq", "sce_amy_macaque.rds"))
-sce
+load(here("processed-data", "snRNAseq","Yu_et_al", "yu_sce_gtf.rda"))
+sce.amy
+
+counts(sce.amy) <- round(expm1(counts(sce.amy)))
+
+sce <- sce.amy
 
 # --------------------------------------------------------------------------
 # Convert SPE to SpatialRNA (spacexr format)
@@ -69,17 +72,21 @@ puck <- SpatialRNA(coords, spatial_counts, nUMI_spatial)
 # --------------------------------------------------------------------------
 # Convert SCE to Reference (spacexr format)
 # --------------------------------------------------------------------------
-## Remove duplicate genes from reference
+## Drop cell types with < 25 cells to avoid issues with RCTD
+cell_type_counts <- table(sce$ident)
+keep_types <- names(cell_type_counts)[cell_type_counts >= 25]
+sce <- sce[, sce$ident %in% keep_types]
+
+## Remove duplicate genes from reference as well
 dup_ref <- duplicated(rownames(sce))
 if (any(dup_ref)) {
     message("Removing ", sum(dup_ref), " duplicated gene names from sce")
     sce <- sce[!dup_ref, ]
 }
-
 ref_counts <- counts(sce)
 
-## Cell type labels
-cell_types <- factor(sce$fine_celltype)
+## Cell type labels — adjust "ident" to match your colData column
+cell_types <- factor(sce$ident)
 names(cell_types) <- colnames(sce)
 
 ## nUMI per cell
@@ -89,8 +96,9 @@ names(nUMI_ref) <- colnames(sce)
 ## Create Reference object
 reference <- Reference(ref_counts, cell_types, nUMI_ref)
 
+
 # ========== RCTD ==========
-myRCTD <- create.RCTD(puck, reference, UMI_min = 10, MAX_MULTI_TYPES = 5, max_cores = 30)
+myRCTD <- create.RCTD(puck, reference, UMI_min = 10, MAX_MULTI_TYPES = 2, max_cores = 60)
 myRCTD <- run.RCTD(myRCTD, doublet_mode = "doublet")
 
 # save

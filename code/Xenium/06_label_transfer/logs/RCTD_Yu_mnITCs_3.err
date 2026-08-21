@@ -1,0 +1,424 @@
+Loading conda_R/4.4
+
+Currently Loaded Modules:
+  1) JHPCE_ROCKY9_DEFAULT_ENV   3) conda/3-24.3.0
+  2) JHPCE_tools/3.0            4) conda_R/4.4
+
+ 
+
+here() starts at /dcs04/lieber/marmaypag/spatialAMY_LIBD4125/spatialAmygdala
+
+Attaching package: ‘dplyr’
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+Loading required package: SingleCellExperiment
+Loading required package: SummarizedExperiment
+Loading required package: MatrixGenerics
+Loading required package: matrixStats
+
+Attaching package: ‘matrixStats’
+
+The following object is masked from ‘package:dplyr’:
+
+    count
+
+
+Attaching package: ‘MatrixGenerics’
+
+The following objects are masked from ‘package:matrixStats’:
+
+    colAlls, colAnyNAs, colAnys, colAvgsPerRowSet, colCollapse,
+    colCounts, colCummaxs, colCummins, colCumprods, colCumsums,
+    colDiffs, colIQRDiffs, colIQRs, colLogSumExps, colMadDiffs,
+    colMads, colMaxs, colMeans2, colMedians, colMins, colOrderStats,
+    colProds, colQuantiles, colRanges, colRanks, colSdDiffs, colSds,
+    colSums2, colTabulates, colVarDiffs, colVars, colWeightedMads,
+    colWeightedMeans, colWeightedMedians, colWeightedSds,
+    colWeightedVars, rowAlls, rowAnyNAs, rowAnys, rowAvgsPerColSet,
+    rowCollapse, rowCounts, rowCummaxs, rowCummins, rowCumprods,
+    rowCumsums, rowDiffs, rowIQRDiffs, rowIQRs, rowLogSumExps,
+    rowMadDiffs, rowMads, rowMaxs, rowMeans2, rowMedians, rowMins,
+    rowOrderStats, rowProds, rowQuantiles, rowRanges, rowRanks,
+    rowSdDiffs, rowSds, rowSums2, rowTabulates, rowVarDiffs, rowVars,
+    rowWeightedMads, rowWeightedMeans, rowWeightedMedians,
+    rowWeightedSds, rowWeightedVars
+
+Loading required package: GenomicRanges
+Loading required package: stats4
+Loading required package: BiocGenerics
+
+Attaching package: ‘BiocGenerics’
+
+The following objects are masked from ‘package:dplyr’:
+
+    combine, intersect, setdiff, union
+
+The following objects are masked from ‘package:stats’:
+
+    IQR, mad, sd, var, xtabs
+
+The following objects are masked from ‘package:base’:
+
+    anyDuplicated, aperm, append, as.data.frame, basename, cbind,
+    colnames, dirname, do.call, duplicated, eval, evalq, Filter, Find,
+    get, grep, grepl, intersect, is.unsorted, lapply, Map, mapply,
+    match, mget, order, paste, pmax, pmax.int, pmin, pmin.int,
+    Position, rank, rbind, Reduce, rownames, sapply, saveRDS, setdiff,
+    table, tapply, union, unique, unsplit, which.max, which.min
+
+Loading required package: S4Vectors
+
+Attaching package: ‘S4Vectors’
+
+The following objects are masked from ‘package:dplyr’:
+
+    first, rename
+
+The following object is masked from ‘package:utils’:
+
+    findMatches
+
+The following objects are masked from ‘package:base’:
+
+    expand.grid, I, unname
+
+Loading required package: IRanges
+
+Attaching package: ‘IRanges’
+
+The following objects are masked from ‘package:dplyr’:
+
+    collapse, desc, slice
+
+Loading required package: GenomeInfoDb
+Loading required package: Biobase
+Welcome to Bioconductor
+
+    Vignettes contain introductory material; view with
+    'browseVignettes()'. To cite Bioconductor, see
+    'citation("Biobase")', and for packages 'citation("pkgname")'.
+
+
+Attaching package: ‘Biobase’
+
+The following object is masked from ‘package:MatrixGenerics’:
+
+    rowMedians
+
+The following objects are masked from ‘package:matrixStats’:
+
+    anyMissing, rowMedians
+
+Warning message:
+replacing previous import ‘S4Arrays::read_block’ by ‘DelayedArray::read_block’ when loading ‘SummarizedExperiment’ 
+Processing sample: Br9206 (task 3 of 4)
+Cells in this sample: 250665
+Building Reference from scratch
+Yu ITC cells in ITC SCE: 3803
+Matched 3803 Yu ITC cells to SCE barcodes
+Original idents being replaced:
+Updated idents:
+Dropping cell types with < 25 cells: OPC_1 PDGFRA
+Reference cached to /dcs04/lieber/marmaypag/spatialAMY_LIBD4125/spatialAmygdala/processed-data/Xenium/06_label_transfer/rctd_reference_yu_itcmn.rds
+Running RCTD with 30 cores on 250665 spots
+Begin: process_cell_type_info
+process_cell_type_info: number of cells in reference: 91688
+process_cell_type_info: number of genes in reference: 31908
+End: process_cell_type_info
+create.RCTD: getting regression differentially expressed genes: 
+get_de_genes: Astro_1 FGFR3 found DE genes: 24
+get_de_genes: Astro_2 FGFR3 found DE genes: 18
+get_de_genes: Astro_3 FGFR3 found DE genes: 17
+get_de_genes: Astro_4 FGFR3 found DE genes: 16
+get_de_genes: CALCR LHX8 found DE genes: 5
+get_de_genes: DRD2 ISL1 found DE genes: 18
+get_de_genes: DRD2 PAX6 found DE genes: 21
+get_de_genes: Endo NOSTRIN found DE genes: 13
+get_de_genes: HGF C11orf87 found DE genes: 16
+get_de_genes: HGF ESR1 found DE genes: 12
+get_de_genes: HGF NPSR1 found DE genes: 17
+get_de_genes: HTR3A DRD2 found DE genes: 14
+get_de_genes: ITC_1 found DE genes: 22
+get_de_genes: ITC_2 found DE genes: 23
+get_de_genes: ITC_3 found DE genes: 21
+get_de_genes: LAMP5 ABO found DE genes: 9
+get_de_genes: LAMP5 BDNF found DE genes: 5
+get_de_genes: LAMP5 COL14A1 found DE genes: 24
+get_de_genes: LAMP5 COL25A1 found DE genes: 8
+get_de_genes: LAMP5 NDNF found DE genes: 27
+get_de_genes: Micro CTSS found DE genes: 15
+get_de_genes: Oligo_1 OPALIN found DE genes: 19
+get_de_genes: Oligo_2 OPALIN found DE genes: 15
+get_de_genes: Oligo_3 OPALIN found DE genes: 18
+get_de_genes: Oligo_4 OPALIN found DE genes: 19
+get_de_genes: Oligo_5 OPALIN found DE genes: 18
+get_de_genes: Oligo_6 OPALIN found DE genes: 17
+get_de_genes: OPC_2 PDGFRA found DE genes: 16
+get_de_genes: OPC_3 PDGFRA found DE genes: 21
+get_de_genes: OPC_4 PDGFRA found DE genes: 12
+get_de_genes: PRKCD found DE genes: 10
+get_de_genes: PVALB ADAMTS5 found DE genes: 28
+get_de_genes: RXFP2 RSPO2 found DE genes: 6
+get_de_genes: SATB2 CALCRL found DE genes: 6
+get_de_genes: SATB2 IL15 found DE genes: 6
+get_de_genes: SATB2 ST8SIA2 found DE genes: 16
+get_de_genes: SOX11 EBF2 found DE genes: 2
+get_de_genes: SST EPYC found DE genes: 21
+get_de_genes: SST HGF found DE genes: 15
+get_de_genes: STRIP2 found DE genes: 17
+get_de_genes: TFAP2C found DE genes: 21
+get_de_genes: VGLL3 CNGB1 found DE genes: 6
+get_de_genes: VGLL3 MEPE found DE genes: 4
+get_de_genes: VIP ABI3BP found DE genes: 19
+get_de_genes: VIP NDNF found DE genes: 12
+get_de_genes: total DE genes: 163
+create.RCTD: getting platform effect normalization differentially expressed genes: 
+get_de_genes: Astro_1 FGFR3 found DE genes: 31
+get_de_genes: Astro_2 FGFR3 found DE genes: 33
+get_de_genes: Astro_3 FGFR3 found DE genes: 34
+get_de_genes: Astro_4 FGFR3 found DE genes: 37
+get_de_genes: CALCR LHX8 found DE genes: 18
+get_de_genes: DRD2 ISL1 found DE genes: 35
+get_de_genes: DRD2 PAX6 found DE genes: 32
+get_de_genes: Endo NOSTRIN found DE genes: 26
+get_de_genes: HGF C11orf87 found DE genes: 28
+get_de_genes: HGF ESR1 found DE genes: 27
+get_de_genes: HGF NPSR1 found DE genes: 30
+get_de_genes: HTR3A DRD2 found DE genes: 28
+get_de_genes: ITC_1 found DE genes: 30
+get_de_genes: ITC_2 found DE genes: 32
+get_de_genes: ITC_3 found DE genes: 32
+get_de_genes: LAMP5 ABO found DE genes: 15
+get_de_genes: LAMP5 BDNF found DE genes: 16
+get_de_genes: LAMP5 COL14A1 found DE genes: 40
+get_de_genes: LAMP5 COL25A1 found DE genes: 21
+get_de_genes: LAMP5 NDNF found DE genes: 42
+get_de_genes: Micro CTSS found DE genes: 22
+get_de_genes: Oligo_1 OPALIN found DE genes: 28
+get_de_genes: Oligo_2 OPALIN found DE genes: 25
+get_de_genes: Oligo_3 OPALIN found DE genes: 24
+get_de_genes: Oligo_4 OPALIN found DE genes: 24
+get_de_genes: Oligo_5 OPALIN found DE genes: 22
+get_de_genes: Oligo_6 OPALIN found DE genes: 22
+get_de_genes: OPC_2 PDGFRA found DE genes: 31
+get_de_genes: OPC_3 PDGFRA found DE genes: 37
+get_de_genes: OPC_4 PDGFRA found DE genes: 29
+get_de_genes: PRKCD found DE genes: 17
+get_de_genes: PVALB ADAMTS5 found DE genes: 39
+get_de_genes: RXFP2 RSPO2 found DE genes: 15
+get_de_genes: SATB2 CALCRL found DE genes: 18
+get_de_genes: SATB2 IL15 found DE genes: 19
+get_de_genes: SATB2 ST8SIA2 found DE genes: 28
+get_de_genes: SOX11 EBF2 found DE genes: 16
+get_de_genes: SST EPYC found DE genes: 37
+get_de_genes: SST HGF found DE genes: 31
+get_de_genes: STRIP2 found DE genes: 29
+get_de_genes: TFAP2C found DE genes: 36
+get_de_genes: VGLL3 CNGB1 found DE genes: 12
+get_de_genes: VGLL3 MEPE found DE genes: 14
+get_de_genes: VIP ABI3BP found DE genes: 33
+get_de_genes: VIP NDNF found DE genes: 28
+get_de_genes: total DE genes: 220
+Warning messages:
+1: In asMethod(object) :
+  sparse->dense coercion: allocating vector of size 1.4 GiB
+2: In asMethod(object) :
+  sparse->dense coercion: allocating vector of size 1.0 GiB
+3: In asMethod(object) :
+  sparse->dense coercion: allocating vector of size 1.6 GiB
+4: In asMethod(object) :
+  sparse->dense coercion: allocating vector of size 1.5 GiB
+fitBulk: decomposing bulk
+chooseSigma: using initial Q_mat with sigma =  1
+Loading required package: spacexr
+loaded spacexr and set parent environment
+Loading required package: spacexr
+loaded spacexr and set parent environment
+Loading required package: spacexr
+loaded spacexr and set parent environment
+Loading required package: spacexr
+loaded spacexr and set parent environment
+Loading required package: spacexr
+loaded spacexr and set parent environment
+Loading required package: spacexr
+loaded spacexr and set parent environment
+Loading required package: spacexr
+loaded spacexr and set parent environment
+Loading required package: spacexr
+loaded spacexr and set parent environment
+Loading required package: spacexr
+loaded spacexr and set parent environment
+Loading required package: spacexr
+loaded spacexr and set parent environment
+Loading required package: spacexr
+loaded spacexr and set parent environment
+Loading required package: spacexr
+loaded spacexr and set parent environment
+Loading required package: spacexr
+loaded spacexr and set parent environment
+Loading required package: spacexr
+loaded spacexr and set parent environment
+Loading required package: spacexr
+loaded spacexr and set parent environment
+Loading required package: spacexr
+loaded spacexr and set parent environment
+Loading required package: spacexr
+loaded spacexr and set parent environment
+Loading required package: spacexr
+loaded spacexr and set parent environment
+Loading required package: spacexr
+loaded spacexr and set parent environment
+Loading required package: spacexr
+loaded spacexr and set parent environment
+Loading required package: spacexr
+loaded spacexr and set parent environment
+Loading required package: spacexr
+loaded spacexr and set parent environment
+Loading required package: spacexr
+loaded spacexr and set parent environment
+Loading required package: spacexr
+loaded spacexr and set parent environment
+Loading required package: spacexr
+loaded spacexr and set parent environment
+Loading required package: spacexr
+loaded spacexr and set parent environment
+Loading required package: spacexr
+loaded spacexr and set parent environment
+Loading required package: spacexr
+loaded spacexr and set parent environment
+Loading required package: spacexr
+loaded spacexr and set parent environment
+Loading required package: spacexr
+loaded spacexr and set parent environment
+Likelihood value: 143309.556268576
+Sigma value:  0.84
+Loading required package: spacexr
+loaded spacexr and set parent environment
+Loading required package: spacexr
+loaded spacexr and set parent environment
+Loading required package: spacexr
+loaded spacexr and set parent environment
+Loading required package: spacexr
+loaded spacexr and set parent environment
+Loading required package: spacexr
+loaded spacexr and set parent environment
+Loading required package: spacexr
+loaded spacexr and set parent environment
+Loading required package: spacexr
+loaded spacexr and set parent environment
+Loading required package: spacexr
+loaded spacexr and set parent environment
+Loading required package: spacexr
+loaded spacexr and set parent environment
+Loading required package: spacexr
+loaded spacexr and set parent environment
+Loading required package: spacexr
+loaded spacexr and set parent environment
+Loading required package: spacexr
+loaded spacexr and set parent environment
+Loading required package: spacexr
+loaded spacexr and set parent environment
+Loading required package: spacexr
+loaded spacexr and set parent environment
+Loading required package: spacexr
+loaded spacexr and set parent environment
+Loading required package: spacexr
+loaded spacexr and set parent environment
+Loading required package: spacexr
+loaded spacexr and set parent environment
+Loading required package: spacexr
+loaded spacexr and set parent environment
+Loading required package: spacexr
+loaded spacexr and set parent environment
+Loading required package: spacexr
+loaded spacexr and set parent environment
+Loading required package: spacexr
+loaded spacexr and set parent environment
+Loading required package: spacexr
+loaded spacexr and set parent environment
+Loading required package: spacexr
+loaded spacexr and set parent environment
+Loading required package: spacexr
+loaded spacexr and set parent environment
+Loading required package: spacexr
+loaded spacexr and set parent environment
+Loading required package: spacexr
+loaded spacexr and set parent environment
+Loading required package: spacexr
+loaded spacexr and set parent environment
+Loading required package: spacexr
+loaded spacexr and set parent environment
+Loading required package: spacexr
+loaded spacexr and set parent environment
+Loading required package: spacexr
+loaded spacexr and set parent environment
+Likelihood value: 142738.395595181
+Sigma value:  0.84
+Loading required package: spacexr
+loaded spacexr and set parent environment
+Loading required package: spacexr
+loaded spacexr and set parent environment
+Loading required package: spacexr
+loaded spacexr and set parent environment
+Loading required package: spacexr
+loaded spacexr and set parent environment
+Loading required package: spacexr
+loaded spacexr and set parent environment
+Loading required package: spacexr
+loaded spacexr and set parent environment
+Loading required package: spacexr
+loaded spacexr and set parent environment
+Loading required package: spacexr
+loaded spacexr and set parent environment
+Loading required package: spacexr
+loaded spacexr and set parent environment
+Loading required package: spacexr
+loaded spacexr and set parent environment
+Loading required package: spacexr
+loaded spacexr and set parent environment
+Loading required package: spacexr
+loaded spacexr and set parent environment
+Loading required package: spacexr
+loaded spacexr and set parent environment
+Loading required package: spacexr
+loaded spacexr and set parent environment
+Loading required package: spacexr
+loaded spacexr and set parent environment
+Loading required package: spacexr
+loaded spacexr and set parent environment
+Loading required package: spacexr
+loaded spacexr and set parent environment
+Loading required package: spacexr
+loaded spacexr and set parent environment
+Loading required package: spacexr
+loaded spacexr and set parent environment
+Loading required package: spacexr
+loaded spacexr and set parent environment
+Loading required package: spacexr
+loaded spacexr and set parent environment
+Loading required package: spacexr
+loaded spacexr and set parent environment
+Loading required package: spacexr
+loaded spacexr and set parent environment
+Loading required package: spacexr
+loaded spacexr and set parent environment
+Loading required package: spacexr
+loaded spacexr and set parent environment
+Loading required package: spacexr
+loaded spacexr and set parent environment
+Loading required package: spacexr
+loaded spacexr and set parent environment
+Loading required package: spacexr
+loaded spacexr and set parent environment
+Loading required package: spacexr
+loaded spacexr and set parent environment
+Loading required package: spacexr
+loaded spacexr and set parent environment
+Saved: /dcs04/lieber/marmaypag/spatialAMY_LIBD4125/spatialAmygdala/processed-data/Xenium/06_label_transfer/rctd_results_ITCmn_Br9206.rds

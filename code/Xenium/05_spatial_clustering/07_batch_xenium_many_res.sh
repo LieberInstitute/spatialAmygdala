@@ -15,7 +15,7 @@ date
 module load conda_R/4.4
 module list
 
-# Resolution sweep
+# Resolution sweep — one resolution per array task
 RESOLUTIONS=(0.6 0.8 1.0 1.2 1.4 1.6 1.8 2.0)
 RES=${RESOLUTIONS[$SLURM_ARRAY_TASK_ID]}
 

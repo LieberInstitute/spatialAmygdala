@@ -1,0 +1,438 @@
+**** Job starts ****
+Thu May  7 10:46:30 AM EDT 2026
+**** SLURM info ****
+User: mtotty
+Job id: 31814061
+Job name: RCTD_Xenium
+Hostname: compute-155
+Array task id: 2
+
+       SST_TAC1       SST_NXPH2    SST_TMEM132C   RELN_IL1RAPL2        CCK_CNR1 
+             59             117              76              49             136 
+     CALCR_PENK       VIP_NRXN1      VIP_SEMA5A      LAMP5_EGFR      LAMP5_NOS1 
+             95             237             392             753             278 
+    PVALB_UNC5B     PVALB_MYO5B      PVALB_ST18       PENK_DRD2     TSHZ1_CPNE4 
+            167             265             173              64             136 
+    TSHZ1_PRKG1      DLK1_ZFHX3    SLC17A6_SIM1     SATB2_RXFP1        aBA_ESR1 
+            287             118             120             164             592 
+       BA_MYRIP         LA_RORB          ADARB2        BA_MOXD1       LA_ZBTB20 
+           1023            2204            1006            1692            1294 
+      Ependymal       Astrocyte     Endothelial       Microglia Oligodendrocyte 
+            817            1023             136             713             366 
+starting worker pid=1516524 on localhost:11770 at 10:47:38.112
+starting worker pid=1516539 on localhost:11770 at 10:47:38.270
+starting worker pid=1516554 on localhost:11770 at 10:47:38.428
+starting worker pid=1516569 on localhost:11770 at 10:47:38.586
+starting worker pid=1516584 on localhost:11770 at 10:47:38.744
+starting worker pid=1516599 on localhost:11770 at 10:47:38.916
+starting worker pid=1516614 on localhost:11770 at 10:47:39.083
+starting worker pid=1516629 on localhost:11770 at 10:47:39.243
+starting worker pid=1516644 on localhost:11770 at 10:47:39.403
+starting worker pid=1516659 on localhost:11770 at 10:47:39.556
+starting worker pid=1516680 on localhost:11770 at 10:47:39.719
+starting worker pid=1516695 on localhost:11770 at 10:47:39.876
+starting worker pid=1516710 on localhost:11770 at 10:47:40.028
+starting worker pid=1516725 on localhost:11770 at 10:47:40.182
+starting worker pid=1516740 on localhost:11770 at 10:47:40.343
+starting worker pid=1516755 on localhost:11770 at 10:47:40.509
+starting worker pid=1516770 on localhost:11770 at 10:47:40.674
+starting worker pid=1516785 on localhost:11770 at 10:47:40.841
+starting worker pid=1516800 on localhost:11770 at 10:47:41.000
+starting worker pid=1516815 on localhost:11770 at 10:47:41.152
+starting worker pid=1516830 on localhost:11770 at 10:47:41.969
+starting worker pid=1516845 on localhost:11770 at 10:47:42.160
+starting worker pid=1516860 on localhost:11770 at 10:47:42.323
+starting worker pid=1516875 on localhost:11770 at 10:47:42.489
+starting worker pid=1516890 on localhost:11770 at 10:47:42.649
+starting worker pid=1516905 on localhost:11770 at 10:47:42.795
+starting worker pid=1516920 on localhost:11770 at 10:47:42.954
+starting worker pid=1516938 on localhost:11770 at 10:47:43.106
+starting worker pid=1516953 on localhost:11770 at 10:47:43.268
+starting worker pid=1516968 on localhost:11770 at 10:47:43.437
+starting worker pid=1517038 on localhost:11770 at 10:48:03.596
+starting worker pid=1517053 on localhost:11770 at 10:48:03.754
+starting worker pid=1517068 on localhost:11770 at 10:48:03.913
+starting worker pid=1517083 on localhost:11770 at 10:48:04.075
+starting worker pid=1517098 on localhost:11770 at 10:48:04.239
+starting worker pid=1517113 on localhost:11770 at 10:48:04.398
+starting worker pid=1517128 on localhost:11770 at 10:48:04.561
+starting worker pid=1517143 on localhost:11770 at 10:48:04.711
+starting worker pid=1517158 on localhost:11770 at 10:48:04.863
+starting worker pid=1517173 on localhost:11770 at 10:48:05.024
+starting worker pid=1517188 on localhost:11770 at 10:48:05.189
+starting worker pid=1517203 on localhost:11770 at 10:48:05.338
+starting worker pid=1517218 on localhost:11770 at 10:48:05.500
+starting worker pid=1517233 on localhost:11770 at 10:48:05.665
+starting worker pid=1517248 on localhost:11770 at 10:48:05.836
+starting worker pid=1517263 on localhost:11770 at 10:48:05.988
+starting worker pid=1517278 on localhost:11770 at 10:48:06.151
+starting worker pid=1517293 on localhost:11770 at 10:48:06.314
+starting worker pid=1517308 on localhost:11770 at 10:48:06.479
+starting worker pid=1517323 on localhost:11770 at 10:48:06.630
+starting worker pid=1517338 on localhost:11770 at 10:48:06.787
+starting worker pid=1517353 on localhost:11770 at 10:48:07.500
+starting worker pid=1517368 on localhost:11770 at 10:48:07.673
+starting worker pid=1517383 on localhost:11770 at 10:48:07.843
+starting worker pid=1517398 on localhost:11770 at 10:48:08.000
+starting worker pid=1517413 on localhost:11770 at 10:48:08.162
+starting worker pid=1517428 on localhost:11770 at 10:48:08.326
+starting worker pid=1517443 on localhost:11770 at 10:48:08.481
+starting worker pid=1517458 on localhost:11770 at 10:48:08.640
+starting worker pid=1517473 on localhost:11770 at 10:48:08.799
+starting worker pid=1517542 on localhost:11770 at 10:48:27.996
+starting worker pid=1517557 on localhost:11770 at 10:48:28.156
+starting worker pid=1517572 on localhost:11770 at 10:48:28.319
+starting worker pid=1517587 on localhost:11770 at 10:48:28.470
+starting worker pid=1517602 on localhost:11770 at 10:48:28.633
+starting worker pid=1517617 on localhost:11770 at 10:48:28.780
+starting worker pid=1517632 on localhost:11770 at 10:48:28.939
+starting worker pid=1517647 on localhost:11770 at 10:48:29.099
+starting worker pid=1517662 on localhost:11770 at 10:48:29.249
+starting worker pid=1517677 on localhost:11770 at 10:48:29.401
+starting worker pid=1517692 on localhost:11770 at 10:48:29.548
+starting worker pid=1517707 on localhost:11770 at 10:48:29.703
+starting worker pid=1517722 on localhost:11770 at 10:48:29.853
+starting worker pid=1517737 on localhost:11770 at 10:48:30.010
+starting worker pid=1517752 on localhost:11770 at 10:48:30.168
+starting worker pid=1517773 on localhost:11770 at 10:48:30.338
+starting worker pid=1517788 on localhost:11770 at 10:48:30.494
+starting worker pid=1517803 on localhost:11770 at 10:48:30.654
+starting worker pid=1517818 on localhost:11770 at 10:48:30.816
+starting worker pid=1517833 on localhost:11770 at 10:48:30.950
+starting worker pid=1517848 on localhost:11770 at 10:48:31.106
+starting worker pid=1517863 on localhost:11770 at 10:48:31.262
+starting worker pid=1517878 on localhost:11770 at 10:48:31.424
+starting worker pid=1517893 on localhost:11770 at 10:48:31.576
+starting worker pid=1517908 on localhost:11770 at 10:48:31.722
+starting worker pid=1517924 on localhost:11770 at 10:48:31.876
+starting worker pid=1517939 on localhost:11770 at 10:48:32.032
+starting worker pid=1517954 on localhost:11770 at 10:48:32.181
+starting worker pid=1517969 on localhost:11770 at 10:48:32.333
+starting worker pid=1517984 on localhost:11770 at 10:48:32.483
+starting worker pid=1518052 on localhost:11770 at 10:48:50.993
+starting worker pid=1518067 on localhost:11770 at 10:48:51.149
+starting worker pid=1518082 on localhost:11770 at 10:48:51.310
+starting worker pid=1518097 on localhost:11770 at 10:48:51.479
+starting worker pid=1518112 on localhost:11770 at 10:48:51.636
+starting worker pid=1518127 on localhost:11770 at 10:48:51.803
+starting worker pid=1518142 on localhost:11770 at 10:48:51.965
+starting worker pid=1518157 on localhost:11770 at 10:48:52.122
+starting worker pid=1518173 on localhost:11770 at 10:48:52.270
+starting worker pid=1518188 on localhost:11770 at 10:48:52.429
+starting worker pid=1518203 on localhost:11770 at 10:48:52.590
+starting worker pid=1518219 on localhost:11770 at 10:48:52.734
+starting worker pid=1518234 on localhost:11770 at 10:48:52.891
+starting worker pid=1518249 on localhost:11770 at 10:48:53.649
+starting worker pid=1518267 on localhost:11770 at 10:48:53.833
+starting worker pid=1518282 on localhost:11770 at 10:48:54.001
+starting worker pid=1518297 on localhost:11770 at 10:48:54.154
+starting worker pid=1518312 on localhost:11770 at 10:48:54.318
+starting worker pid=1518327 on localhost:11770 at 10:48:54.477
+starting worker pid=1518342 on localhost:11770 at 10:48:54.631
+starting worker pid=1518357 on localhost:11770 at 10:48:54.798
+starting worker pid=1518372 on localhost:11770 at 10:48:54.955
+starting worker pid=1518387 on localhost:11770 at 10:48:55.121
+starting worker pid=1518402 on localhost:11770 at 10:48:55.288
+starting worker pid=1518417 on localhost:11770 at 10:48:55.440
+starting worker pid=1518432 on localhost:11770 at 10:48:55.587
+starting worker pid=1518447 on localhost:11770 at 10:48:55.747
+starting worker pid=1518462 on localhost:11770 at 10:48:55.905
+starting worker pid=1518477 on localhost:11770 at 10:48:56.060
+starting worker pid=1518492 on localhost:11770 at 10:48:56.226
+starting worker pid=1518564 on localhost:11770 at 10:49:16.978
+starting worker pid=1518579 on localhost:11770 at 10:49:17.127
+starting worker pid=1518594 on localhost:11770 at 10:49:17.274
+starting worker pid=1518609 on localhost:11770 at 10:49:17.431
+starting worker pid=1518624 on localhost:11770 at 10:49:17.585
+starting worker pid=1518639 on localhost:11770 at 10:49:17.739
+starting worker pid=1518654 on localhost:11770 at 10:49:17.894
+starting worker pid=1518669 on localhost:11770 at 10:49:18.058
+starting worker pid=1518684 on localhost:11770 at 10:49:18.221
+starting worker pid=1518699 on localhost:11770 at 10:49:18.383
+starting worker pid=1518714 on localhost:11770 at 10:49:18.534
+starting worker pid=1518729 on localhost:11770 at 10:49:19.203
+starting worker pid=1518744 on localhost:11770 at 10:49:19.395
+starting worker pid=1518759 on localhost:11770 at 10:49:19.549
+starting worker pid=1518774 on localhost:11770 at 10:49:19.715
+starting worker pid=1518789 on localhost:11770 at 10:49:19.873
+starting worker pid=1518804 on localhost:11770 at 10:49:20.030
+starting worker pid=1518819 on localhost:11770 at 10:49:20.197
+starting worker pid=1518834 on localhost:11770 at 10:49:20.361
+starting worker pid=1518849 on localhost:11770 at 10:49:20.527
+starting worker pid=1518864 on localhost:11770 at 10:49:20.680
+starting worker pid=1518879 on localhost:11770 at 10:49:20.836
+starting worker pid=1518894 on localhost:11770 at 10:49:20.999
+starting worker pid=1518909 on localhost:11770 at 10:49:21.161
+starting worker pid=1518924 on localhost:11770 at 10:49:21.320
+starting worker pid=1518939 on localhost:11770 at 10:49:21.476
+starting worker pid=1518954 on localhost:11770 at 10:49:21.640
+starting worker pid=1518969 on localhost:11770 at 10:49:21.807
+starting worker pid=1518984 on localhost:11770 at 10:49:21.964
+starting worker pid=1518999 on localhost:11770 at 10:49:22.115
+[1] "gather_results: finished 1000"
+[1] "gather_results: finished 2000"
+[1] "gather_results: finished 3000"
+[1] "gather_results: finished 4000"
+[1] "gather_results: finished 5000"
+[1] "gather_results: finished 6000"
+[1] "gather_results: finished 7000"
+[1] "gather_results: finished 8000"
+[1] "gather_results: finished 9000"
+[1] "gather_results: finished 10000"
+[1] "gather_results: finished 11000"
+[1] "gather_results: finished 12000"
+[1] "gather_results: finished 13000"
+[1] "gather_results: finished 14000"
+[1] "gather_results: finished 15000"
+[1] "gather_results: finished 16000"
+[1] "gather_results: finished 17000"
+[1] "gather_results: finished 18000"
+[1] "gather_results: finished 19000"
+[1] "gather_results: finished 20000"
+[1] "gather_results: finished 21000"
+[1] "gather_results: finished 22000"
+[1] "gather_results: finished 23000"
+[1] "gather_results: finished 24000"
+[1] "gather_results: finished 25000"
+[1] "gather_results: finished 26000"
+[1] "gather_results: finished 27000"
+[1] "gather_results: finished 28000"
+[1] "gather_results: finished 29000"
+[1] "gather_results: finished 30000"
+[1] "gather_results: finished 31000"
+[1] "gather_results: finished 32000"
+[1] "gather_results: finished 33000"
+[1] "gather_results: finished 34000"
+[1] "gather_results: finished 35000"
+[1] "gather_results: finished 36000"
+[1] "gather_results: finished 37000"
+[1] "gather_results: finished 38000"
+[1] "gather_results: finished 39000"
+[1] "gather_results: finished 40000"
+[1] "gather_results: finished 41000"
+[1] "gather_results: finished 42000"
+[1] "gather_results: finished 43000"
+[1] "gather_results: finished 44000"
+[1] "gather_results: finished 45000"
+[1] "gather_results: finished 46000"
+[1] "gather_results: finished 47000"
+[1] "gather_results: finished 48000"
+[1] "gather_results: finished 49000"
+[1] "gather_results: finished 50000"
+[1] "gather_results: finished 51000"
+[1] "gather_results: finished 52000"
+[1] "gather_results: finished 53000"
+[1] "gather_results: finished 54000"
+[1] "gather_results: finished 55000"
+[1] "gather_results: finished 56000"
+[1] "gather_results: finished 57000"
+[1] "gather_results: finished 58000"
+[1] "gather_results: finished 59000"
+[1] "gather_results: finished 60000"
+[1] "gather_results: finished 61000"
+[1] "gather_results: finished 62000"
+[1] "gather_results: finished 63000"
+[1] "gather_results: finished 64000"
+[1] "gather_results: finished 65000"
+[1] "gather_results: finished 66000"
+[1] "gather_results: finished 67000"
+[1] "gather_results: finished 68000"
+[1] "gather_results: finished 69000"
+[1] "gather_results: finished 70000"
+[1] "gather_results: finished 71000"
+[1] "gather_results: finished 72000"
+[1] "gather_results: finished 73000"
+[1] "gather_results: finished 74000"
+[1] "gather_results: finished 75000"
+[1] "gather_results: finished 76000"
+[1] "gather_results: finished 77000"
+[1] "gather_results: finished 78000"
+[1] "gather_results: finished 79000"
+[1] "gather_results: finished 80000"
+[1] "gather_results: finished 81000"
+[1] "gather_results: finished 82000"
+[1] "gather_results: finished 83000"
+[1] "gather_results: finished 84000"
+[1] "gather_results: finished 85000"
+[1] "gather_results: finished 86000"
+[1] "gather_results: finished 87000"
+[1] "gather_results: finished 88000"
+[1] "gather_results: finished 89000"
+[1] "gather_results: finished 90000"
+[1] "gather_results: finished 91000"
+[1] "gather_results: finished 92000"
+[1] "gather_results: finished 93000"
+[1] "gather_results: finished 94000"
+[1] "gather_results: finished 95000"
+[1] "gather_results: finished 96000"
+[1] "gather_results: finished 97000"
+[1] "gather_results: finished 98000"
+[1] "gather_results: finished 99000"
+[1] "gather_results: finished 100000"
+[1] "gather_results: finished 101000"
+[1] "gather_results: finished 102000"
+[1] "gather_results: finished 103000"
+[1] "gather_results: finished 104000"
+[1] "gather_results: finished 105000"
+[1] "gather_results: finished 106000"
+[1] "gather_results: finished 107000"
+[1] "gather_results: finished 108000"
+[1] "gather_results: finished 109000"
+[1] "gather_results: finished 110000"
+[1] "gather_results: finished 111000"
+[1] "gather_results: finished 112000"
+[1] "gather_results: finished 113000"
+[1] "gather_results: finished 114000"
+[1] "gather_results: finished 115000"
+[1] "gather_results: finished 116000"
+[1] "gather_results: finished 117000"
+[1] "gather_results: finished 118000"
+[1] "gather_results: finished 119000"
+[1] "gather_results: finished 120000"
+[1] "gather_results: finished 121000"
+[1] "gather_results: finished 122000"
+[1] "gather_results: finished 123000"
+[1] "gather_results: finished 124000"
+[1] "gather_results: finished 125000"
+[1] "gather_results: finished 126000"
+[1] "gather_results: finished 127000"
+[1] "gather_results: finished 128000"
+[1] "gather_results: finished 129000"
+[1] "gather_results: finished 130000"
+[1] "gather_results: finished 131000"
+[1] "gather_results: finished 132000"
+[1] "gather_results: finished 133000"
+[1] "gather_results: finished 134000"
+[1] "gather_results: finished 135000"
+[1] "gather_results: finished 136000"
+[1] "gather_results: finished 137000"
+[1] "gather_results: finished 138000"
+[1] "gather_results: finished 139000"
+[1] "gather_results: finished 140000"
+[1] "gather_results: finished 141000"
+[1] "gather_results: finished 142000"
+[1] "gather_results: finished 143000"
+[1] "gather_results: finished 144000"
+[1] "gather_results: finished 145000"
+[1] "gather_results: finished 146000"
+[1] "gather_results: finished 147000"
+[1] "gather_results: finished 148000"
+[1] "gather_results: finished 149000"
+[1] "gather_results: finished 150000"
+[1] "gather_results: finished 151000"
+[1] "gather_results: finished 152000"
+[1] "gather_results: finished 153000"
+[1] "gather_results: finished 154000"
+[1] "gather_results: finished 155000"
+[1] "gather_results: finished 156000"
+[1] "gather_results: finished 157000"
+[1] "gather_results: finished 158000"
+[1] "gather_results: finished 159000"
+[1] "gather_results: finished 160000"
+[1] "gather_results: finished 161000"
+[1] "gather_results: finished 162000"
+[1] "gather_results: finished 163000"
+[1] "gather_results: finished 164000"
+[1] "gather_results: finished 165000"
+[1] "gather_results: finished 166000"
+[1] "gather_results: finished 167000"
+[1] "gather_results: finished 168000"
+[1] "gather_results: finished 169000"
+[1] "gather_results: finished 170000"
+[1] "gather_results: finished 171000"
+[1] "gather_results: finished 172000"
+[1] "gather_results: finished 173000"
+[1] "gather_results: finished 174000"
+[1] "gather_results: finished 175000"
+[1] "gather_results: finished 176000"
+[1] "gather_results: finished 177000"
+[1] "gather_results: finished 178000"
+[1] "gather_results: finished 179000"
+[1] "gather_results: finished 180000"
+[1] "gather_results: finished 181000"
+[1] "gather_results: finished 182000"
+[1] "gather_results: finished 183000"
+[1] "gather_results: finished 184000"
+[1] "gather_results: finished 185000"
+[1] "gather_results: finished 186000"
+[1] "gather_results: finished 187000"
+[1] "gather_results: finished 188000"
+[1] "gather_results: finished 189000"
+[1] "gather_results: finished 190000"
+[1] "gather_results: finished 191000"
+[1] "gather_results: finished 192000"
+[1] "gather_results: finished 193000"
+[1] "gather_results: finished 194000"
+[1] "gather_results: finished 195000"
+[1] "gather_results: finished 196000"
+[1] "gather_results: finished 197000"
+[1] "gather_results: finished 198000"
+[1] "gather_results: finished 199000"
+[1] "gather_results: finished 200000"
+[1] "gather_results: finished 201000"
+[1] "gather_results: finished 202000"
+[1] "gather_results: finished 203000"
+[1] "gather_results: finished 204000"
+[1] "gather_results: finished 205000"
+[1] "gather_results: finished 206000"
+[1] "gather_results: finished 207000"
+[1] "gather_results: finished 208000"
+[1] "gather_results: finished 209000"
+[1] "gather_results: finished 210000"
+[1] "gather_results: finished 211000"
+[1] "gather_results: finished 212000"
+[1] "gather_results: finished 213000"
+[1] "gather_results: finished 214000"
+[1] "gather_results: finished 215000"
+[1] "gather_results: finished 216000"
+[1] "gather_results: finished 217000"
+[1] "gather_results: finished 218000"
+[1] "gather_results: finished 219000"
+[1] "gather_results: finished 220000"
+[1] "gather_results: finished 221000"
+[1] "gather_results: finished 222000"
+[1] "gather_results: finished 223000"
+[1] "gather_results: finished 224000"
+[1] "gather_results: finished 225000"
+[1] "gather_results: finished 226000"
+[1] "gather_results: finished 227000"
+[1] "gather_results: finished 228000"
+[1] "gather_results: finished 229000"
+[1] "gather_results: finished 230000"
+[1] "gather_results: finished 231000"
+[1] "gather_results: finished 232000"
+[1] "gather_results: finished 233000"
+[1] "gather_results: finished 234000"
+[1] "gather_results: finished 235000"
+[1] "gather_results: finished 236000"
+[1] "gather_results: finished 237000"
+[1] "gather_results: finished 238000"
+[1] "gather_results: finished 239000"
+[1] "gather_results: finished 240000"
+[1] "gather_results: finished 241000"
+[1] "gather_results: finished 242000"
+[1] "gather_results: finished 243000"
+[1] "gather_results: finished 244000"
+[1] "gather_results: finished 245000"
+[1] "gather_results: finished 246000"
+[1] "gather_results: finished 247000"
+[1] "gather_results: finished 248000"
+[1] "gather_results: finished 249000"
+[1] "gather_results: finished 250000"
+[1] "gather_results: finished 251000"
+[1] "gather_results: finished 252000"
+[1] "gather_results: finished 253000"
+[1] "gather_results: finished 254000"
+[1] "gather_results: finished 255000"
+[1] "gather_results: finished 256000"
+[1] "gather_results: finished 257000"
+[1] "gather_results: finished 258000"
+[1] "gather_results: finished 259000"
+[1] "gather_results: finished 260000"
+[1] "gather_results: finished 261000"
+[1] "gather_results: finished 262000"
+[1] "gather_results: finished 263000"
+[1] "gather_results: finished 264000"
+[1] "gather_results: finished 265000"
+**** Job ends ****
+Thu May  7 03:35:03 PM EDT 2026

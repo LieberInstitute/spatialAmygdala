@@ -1,0 +1,460 @@
+**** Job starts ****
+Mon Jun  1 08:50:20 AM EDT 2026
+**** SLURM info ****
+User: mtotty
+Job id: 32322587
+Job name: RCTD_Xenium
+Hostname: compute-122
+Array task id: 4
+
+TSHZ1 CALCRL TSHZ1 SEMA3C 
+        2751         1052 
+
+ Astro_1 FGFR3  Astro_2 FGFR3  Astro_3 FGFR3  Astro_4 FGFR3     CALCR LHX8 
+          1323           6097           1830            710           2098 
+     DRD2 ISL1      DRD2 PAX6   Endo NOSTRIN   HGF C11orf87       HGF ESR1 
+          1713           1882           1198           2676           1253 
+     HGF NPSR1     HTR3A DRD2          ITC_1          ITC_2          ITC_3 
+          2769            524            455           2155           1193 
+     LAMP5 ABO     LAMP5 BDNF  LAMP5 COL14A1  LAMP5 COL25A1     LAMP5 NDNF 
+          2384           3854           1188           4388           2848 
+    Micro CTSS Oligo_1 OPALIN Oligo_2 OPALIN Oligo_3 OPALIN Oligo_4 OPALIN 
+          1337           2619            352           1910           3897 
+Oligo_5 OPALIN Oligo_6 OPALIN   OPC_1 PDGFRA   OPC_2 PDGFRA   OPC_3 PDGFRA 
+          6932           6342             11            275           3677 
+  OPC_4 PDGFRA          PRKCD  PVALB ADAMTS5    RXFP2 RSPO2   SATB2 CALCRL 
+           539            559            908           2394           1061 
+    SATB2 IL15  SATB2 ST8SIA2     SOX11 EBF2       SST EPYC        SST HGF 
+          1801           1387           1677            250           2185 
+        STRIP2         TFAP2C    VGLL3 CNGB1     VGLL3 MEPE     VIP ABI3BP 
+           428            202           2625           2807           1924 
+      VIP NDNF 
+          1062 
+
+ Astro_1 FGFR3  Astro_2 FGFR3  Astro_3 FGFR3  Astro_4 FGFR3     CALCR LHX8 
+          1323           6097           1830            710           2098 
+     DRD2 ISL1      DRD2 PAX6   Endo NOSTRIN   HGF C11orf87       HGF ESR1 
+          1713           1882           1198           2676           1253 
+     HGF NPSR1     HTR3A DRD2          ITC_1          ITC_2          ITC_3 
+          2769            524            455           2155           1193 
+     LAMP5 ABO     LAMP5 BDNF  LAMP5 COL14A1  LAMP5 COL25A1     LAMP5 NDNF 
+          2384           3854           1188           4388           2848 
+    Micro CTSS Oligo_1 OPALIN Oligo_2 OPALIN Oligo_3 OPALIN Oligo_4 OPALIN 
+          1337           2619            352           1910           3897 
+Oligo_5 OPALIN Oligo_6 OPALIN   OPC_2 PDGFRA   OPC_3 PDGFRA   OPC_4 PDGFRA 
+          6932           6342            275           3677            539 
+         PRKCD  PVALB ADAMTS5    RXFP2 RSPO2   SATB2 CALCRL     SATB2 IL15 
+           559            908           2394           1061           1801 
+ SATB2 ST8SIA2     SOX11 EBF2       SST EPYC        SST HGF         STRIP2 
+          1387           1677            250           2185            428 
+        TFAP2C    VGLL3 CNGB1     VGLL3 MEPE     VIP ABI3BP       VIP NDNF 
+           202           2625           2807           1924           1062 
+starting worker pid=2841211 on localhost:11751 at 08:57:42.085
+starting worker pid=2841226 on localhost:11751 at 08:57:42.282
+starting worker pid=2841241 on localhost:11751 at 08:57:42.482
+starting worker pid=2841256 on localhost:11751 at 08:57:42.681
+starting worker pid=2841271 on localhost:11751 at 08:57:42.879
+starting worker pid=2841287 on localhost:11751 at 08:57:43.081
+starting worker pid=2841339 on localhost:11751 at 08:57:43.284
+starting worker pid=2841385 on localhost:11751 at 08:57:43.488
+starting worker pid=2841430 on localhost:11751 at 08:57:43.691
+starting worker pid=2841475 on localhost:11751 at 08:57:43.892
+starting worker pid=2841523 on localhost:11751 at 08:57:44.095
+starting worker pid=2841570 on localhost:11751 at 08:57:44.298
+starting worker pid=2841615 on localhost:11751 at 08:57:44.501
+starting worker pid=2841661 on localhost:11751 at 08:57:44.708
+starting worker pid=2841706 on localhost:11751 at 08:57:44.916
+starting worker pid=2841751 on localhost:11751 at 08:57:45.126
+starting worker pid=2841797 on localhost:11751 at 08:57:45.333
+starting worker pid=2841843 on localhost:11751 at 08:57:45.545
+starting worker pid=2841888 on localhost:11751 at 08:57:45.755
+starting worker pid=2841932 on localhost:11751 at 08:57:45.966
+starting worker pid=2841978 on localhost:11751 at 08:57:46.177
+starting worker pid=2842022 on localhost:11751 at 08:57:46.391
+starting worker pid=2842067 on localhost:11751 at 08:57:46.604
+starting worker pid=2842114 on localhost:11751 at 08:57:46.815
+starting worker pid=2842159 on localhost:11751 at 08:57:47.028
+starting worker pid=2842204 on localhost:11751 at 08:57:47.239
+starting worker pid=2842247 on localhost:11751 at 08:57:47.450
+starting worker pid=2842293 on localhost:11751 at 08:57:47.664
+starting worker pid=2842339 on localhost:11751 at 08:57:47.877
+starting worker pid=2842384 on localhost:11751 at 08:57:48.089
+starting worker pid=2843178 on localhost:11751 at 08:58:23.026
+starting worker pid=2843193 on localhost:11751 at 08:58:23.226
+starting worker pid=2843208 on localhost:11751 at 08:58:23.426
+starting worker pid=2843224 on localhost:11751 at 08:58:23.626
+starting worker pid=2843239 on localhost:11751 at 08:58:23.826
+starting worker pid=2843254 on localhost:11751 at 08:58:24.026
+starting worker pid=2843305 on localhost:11751 at 08:58:24.228
+starting worker pid=2843352 on localhost:11751 at 08:58:24.431
+starting worker pid=2843401 on localhost:11751 at 08:58:24.634
+starting worker pid=2843446 on localhost:11751 at 08:58:24.834
+starting worker pid=2843491 on localhost:11751 at 08:58:25.035
+starting worker pid=2843536 on localhost:11751 at 08:58:25.237
+starting worker pid=2843581 on localhost:11751 at 08:58:25.438
+starting worker pid=2843626 on localhost:11751 at 08:58:25.636
+starting worker pid=2843671 on localhost:11751 at 08:58:25.837
+starting worker pid=2843716 on localhost:11751 at 08:58:26.038
+starting worker pid=2843761 on localhost:11751 at 08:58:26.238
+starting worker pid=2843806 on localhost:11751 at 08:58:26.440
+starting worker pid=2843851 on localhost:11751 at 08:58:26.649
+starting worker pid=2843899 on localhost:11751 at 08:58:26.862
+starting worker pid=2843945 on localhost:11751 at 08:58:27.079
+starting worker pid=2843990 on localhost:11751 at 08:58:27.290
+starting worker pid=2844035 on localhost:11751 at 08:58:27.500
+starting worker pid=2844078 on localhost:11751 at 08:58:27.710
+starting worker pid=2844124 on localhost:11751 at 08:58:27.924
+starting worker pid=2844169 on localhost:11751 at 08:58:28.136
+starting worker pid=2844215 on localhost:11751 at 08:58:28.346
+starting worker pid=2844261 on localhost:11751 at 08:58:28.555
+starting worker pid=2844304 on localhost:11751 at 08:58:28.764
+starting worker pid=2844350 on localhost:11751 at 08:58:28.973
+starting worker pid=2845514 on localhost:11751 at 08:59:01.089
+starting worker pid=2845531 on localhost:11751 at 08:59:01.290
+starting worker pid=2845548 on localhost:11751 at 08:59:01.491
+starting worker pid=2845568 on localhost:11751 at 08:59:01.691
+starting worker pid=2845587 on localhost:11751 at 08:59:01.893
+starting worker pid=2845606 on localhost:11751 at 08:59:02.092
+starting worker pid=2845623 on localhost:11751 at 08:59:02.293
+starting worker pid=2845646 on localhost:11751 at 08:59:02.495
+starting worker pid=2845679 on localhost:11751 at 08:59:02.705
+starting worker pid=2845730 on localhost:11751 at 08:59:02.914
+starting worker pid=2845778 on localhost:11751 at 08:59:03.123
+starting worker pid=2845826 on localhost:11751 at 08:59:03.334
+starting worker pid=2845873 on localhost:11751 at 08:59:03.544
+starting worker pid=2845924 on localhost:11751 at 08:59:03.753
+starting worker pid=2845972 on localhost:11751 at 08:59:03.961
+starting worker pid=2846019 on localhost:11751 at 08:59:04.173
+starting worker pid=2846067 on localhost:11751 at 08:59:04.387
+starting worker pid=2846114 on localhost:11751 at 08:59:04.598
+starting worker pid=2846164 on localhost:11751 at 08:59:04.808
+starting worker pid=2846211 on localhost:11751 at 08:59:05.017
+starting worker pid=2846257 on localhost:11751 at 08:59:05.226
+starting worker pid=2846306 on localhost:11751 at 08:59:05.435
+starting worker pid=2846355 on localhost:11751 at 08:59:05.646
+starting worker pid=2846402 on localhost:11751 at 08:59:05.859
+starting worker pid=2846447 on localhost:11751 at 08:59:06.074
+starting worker pid=2846494 on localhost:11751 at 08:59:06.284
+starting worker pid=2846544 on localhost:11751 at 08:59:06.495
+starting worker pid=2846592 on localhost:11751 at 08:59:06.707
+starting worker pid=2846637 on localhost:11751 at 08:59:06.916
+starting worker pid=2846684 on localhost:11751 at 08:59:07.127
+starting worker pid=2847474 on localhost:11751 at 08:59:39.166
+starting worker pid=2847489 on localhost:11751 at 08:59:39.369
+starting worker pid=2847504 on localhost:11751 at 08:59:39.572
+starting worker pid=2847519 on localhost:11751 at 08:59:39.773
+starting worker pid=2847534 on localhost:11751 at 08:59:39.974
+starting worker pid=2847549 on localhost:11751 at 08:59:40.175
+starting worker pid=2847564 on localhost:11751 at 08:59:40.376
+starting worker pid=2847579 on localhost:11751 at 08:59:40.577
+starting worker pid=2847594 on localhost:11751 at 08:59:40.778
+starting worker pid=2847609 on localhost:11751 at 08:59:40.978
+starting worker pid=2847628 on localhost:11751 at 08:59:41.181
+starting worker pid=2847660 on localhost:11751 at 08:59:41.384
+starting worker pid=2847690 on localhost:11751 at 08:59:41.588
+starting worker pid=2847723 on localhost:11751 at 08:59:41.795
+starting worker pid=2847753 on localhost:11751 at 08:59:42.006
+starting worker pid=2847783 on localhost:11751 at 08:59:42.215
+starting worker pid=2847814 on localhost:11751 at 08:59:42.427
+starting worker pid=2847844 on localhost:11751 at 08:59:42.636
+starting worker pid=2847873 on localhost:11751 at 08:59:42.845
+starting worker pid=2847904 on localhost:11751 at 08:59:43.052
+starting worker pid=2847933 on localhost:11751 at 08:59:43.260
+starting worker pid=2847963 on localhost:11751 at 08:59:43.468
+starting worker pid=2847993 on localhost:11751 at 08:59:43.674
+starting worker pid=2848024 on localhost:11751 at 08:59:43.882
+starting worker pid=2848054 on localhost:11751 at 08:59:44.090
+starting worker pid=2848083 on localhost:11751 at 08:59:44.298
+starting worker pid=2848114 on localhost:11751 at 08:59:44.507
+starting worker pid=2848143 on localhost:11751 at 08:59:44.716
+starting worker pid=2848174 on localhost:11751 at 08:59:44.922
+starting worker pid=2848204 on localhost:11751 at 08:59:45.127
+starting worker pid=2849434 on localhost:11751 at 09:00:17.263
+starting worker pid=2849453 on localhost:11751 at 09:00:17.471
+starting worker pid=2849471 on localhost:11751 at 09:00:17.681
+starting worker pid=2849488 on localhost:11751 at 09:00:17.891
+starting worker pid=2849505 on localhost:11751 at 09:00:18.103
+starting worker pid=2849522 on localhost:11751 at 09:00:18.316
+starting worker pid=2849541 on localhost:11751 at 09:00:18.528
+starting worker pid=2849561 on localhost:11751 at 09:00:18.738
+starting worker pid=2849578 on localhost:11751 at 09:00:18.947
+starting worker pid=2849597 on localhost:11751 at 09:00:19.155
+starting worker pid=2849614 on localhost:11751 at 09:00:20.154
+starting worker pid=2849660 on localhost:11751 at 09:00:21.136
+starting worker pid=2849711 on localhost:11751 at 09:00:22.179
+starting worker pid=2849745 on localhost:11751 at 09:00:22.392
+starting worker pid=2849776 on localhost:11751 at 09:00:22.605
+starting worker pid=2849808 on localhost:11751 at 09:00:22.819
+starting worker pid=2849841 on localhost:11751 at 09:00:23.034
+starting worker pid=2849876 on localhost:11751 at 09:00:23.249
+starting worker pid=2849908 on localhost:11751 at 09:00:23.466
+starting worker pid=2849941 on localhost:11751 at 09:00:23.679
+starting worker pid=2849975 on localhost:11751 at 09:00:23.891
+starting worker pid=2850007 on localhost:11751 at 09:00:24.103
+starting worker pid=2850040 on localhost:11751 at 09:00:24.318
+starting worker pid=2850071 on localhost:11751 at 09:00:24.538
+starting worker pid=2850106 on localhost:11751 at 09:00:24.760
+starting worker pid=2850137 on localhost:11751 at 09:00:24.983
+starting worker pid=2850169 on localhost:11751 at 09:00:25.194
+starting worker pid=2850203 on localhost:11751 at 09:00:25.422
+starting worker pid=2850235 on localhost:11751 at 09:00:25.649
+starting worker pid=2850267 on localhost:11751 at 09:00:26.019
+[1] "gather_results: finished 1000"
+[1] "gather_results: finished 2000"
+[1] "gather_results: finished 3000"
+[1] "gather_results: finished 4000"
+[1] "gather_results: finished 5000"
+[1] "gather_results: finished 6000"
+[1] "gather_results: finished 7000"
+[1] "gather_results: finished 8000"
+[1] "gather_results: finished 9000"
+[1] "gather_results: finished 10000"
+[1] "gather_results: finished 11000"
+[1] "gather_results: finished 12000"
+[1] "gather_results: finished 13000"
+[1] "gather_results: finished 14000"
+[1] "gather_results: finished 15000"
+[1] "gather_results: finished 16000"
+[1] "gather_results: finished 17000"
+[1] "gather_results: finished 18000"
+[1] "gather_results: finished 19000"
+[1] "gather_results: finished 20000"
+[1] "gather_results: finished 21000"
+[1] "gather_results: finished 22000"
+[1] "gather_results: finished 23000"
+[1] "gather_results: finished 24000"
+[1] "gather_results: finished 25000"
+[1] "gather_results: finished 26000"
+[1] "gather_results: finished 27000"
+[1] "gather_results: finished 28000"
+[1] "gather_results: finished 29000"
+[1] "gather_results: finished 30000"
+[1] "gather_results: finished 31000"
+[1] "gather_results: finished 32000"
+[1] "gather_results: finished 33000"
+[1] "gather_results: finished 34000"
+[1] "gather_results: finished 35000"
+[1] "gather_results: finished 36000"
+[1] "gather_results: finished 37000"
+[1] "gather_results: finished 38000"
+[1] "gather_results: finished 39000"
+[1] "gather_results: finished 40000"
+[1] "gather_results: finished 41000"
+[1] "gather_results: finished 42000"
+[1] "gather_results: finished 43000"
+[1] "gather_results: finished 44000"
+[1] "gather_results: finished 45000"
+[1] "gather_results: finished 46000"
+[1] "gather_results: finished 47000"
+[1] "gather_results: finished 48000"
+[1] "gather_results: finished 49000"
+[1] "gather_results: finished 50000"
+[1] "gather_results: finished 51000"
+[1] "gather_results: finished 52000"
+[1] "gather_results: finished 53000"
+[1] "gather_results: finished 54000"
+[1] "gather_results: finished 55000"
+[1] "gather_results: finished 56000"
+[1] "gather_results: finished 57000"
+[1] "gather_results: finished 58000"
+[1] "gather_results: finished 59000"
+[1] "gather_results: finished 60000"
+[1] "gather_results: finished 61000"
+[1] "gather_results: finished 62000"
+[1] "gather_results: finished 63000"
+[1] "gather_results: finished 64000"
+[1] "gather_results: finished 65000"
+[1] "gather_results: finished 66000"
+[1] "gather_results: finished 67000"
+[1] "gather_results: finished 68000"
+[1] "gather_results: finished 69000"
+[1] "gather_results: finished 70000"
+[1] "gather_results: finished 71000"
+[1] "gather_results: finished 72000"
+[1] "gather_results: finished 73000"
+[1] "gather_results: finished 74000"
+[1] "gather_results: finished 75000"
+[1] "gather_results: finished 76000"
+[1] "gather_results: finished 77000"
+[1] "gather_results: finished 78000"
+[1] "gather_results: finished 79000"
+[1] "gather_results: finished 80000"
+[1] "gather_results: finished 81000"
+[1] "gather_results: finished 82000"
+[1] "gather_results: finished 83000"
+[1] "gather_results: finished 84000"
+[1] "gather_results: finished 85000"
+[1] "gather_results: finished 86000"
+[1] "gather_results: finished 87000"
+[1] "gather_results: finished 88000"
+[1] "gather_results: finished 89000"
+[1] "gather_results: finished 90000"
+[1] "gather_results: finished 91000"
+[1] "gather_results: finished 92000"
+[1] "gather_results: finished 93000"
+[1] "gather_results: finished 94000"
+[1] "gather_results: finished 95000"
+[1] "gather_results: finished 96000"
+[1] "gather_results: finished 97000"
+[1] "gather_results: finished 98000"
+[1] "gather_results: finished 99000"
+[1] "gather_results: finished 100000"
+[1] "gather_results: finished 101000"
+[1] "gather_results: finished 102000"
+[1] "gather_results: finished 103000"
+[1] "gather_results: finished 104000"
+[1] "gather_results: finished 105000"
+[1] "gather_results: finished 106000"
+[1] "gather_results: finished 107000"
+[1] "gather_results: finished 108000"
+[1] "gather_results: finished 109000"
+[1] "gather_results: finished 110000"
+[1] "gather_results: finished 111000"
+[1] "gather_results: finished 112000"
+[1] "gather_results: finished 113000"
+[1] "gather_results: finished 114000"
+[1] "gather_results: finished 115000"
+[1] "gather_results: finished 116000"
+[1] "gather_results: finished 117000"
+[1] "gather_results: finished 118000"
+[1] "gather_results: finished 119000"
+[1] "gather_results: finished 120000"
+[1] "gather_results: finished 121000"
+[1] "gather_results: finished 122000"
+[1] "gather_results: finished 123000"
+[1] "gather_results: finished 124000"
+[1] "gather_results: finished 125000"
+[1] "gather_results: finished 126000"
+[1] "gather_results: finished 127000"
+[1] "gather_results: finished 128000"
+[1] "gather_results: finished 129000"
+[1] "gather_results: finished 130000"
+[1] "gather_results: finished 131000"
+[1] "gather_results: finished 132000"
+[1] "gather_results: finished 133000"
+[1] "gather_results: finished 134000"
+[1] "gather_results: finished 135000"
+[1] "gather_results: finished 136000"
+[1] "gather_results: finished 137000"
+[1] "gather_results: finished 138000"
+[1] "gather_results: finished 139000"
+[1] "gather_results: finished 140000"
+[1] "gather_results: finished 141000"
+[1] "gather_results: finished 142000"
+[1] "gather_results: finished 143000"
+[1] "gather_results: finished 144000"
+[1] "gather_results: finished 145000"
+[1] "gather_results: finished 146000"
+[1] "gather_results: finished 147000"
+[1] "gather_results: finished 148000"
+[1] "gather_results: finished 149000"
+[1] "gather_results: finished 150000"
+[1] "gather_results: finished 151000"
+[1] "gather_results: finished 152000"
+[1] "gather_results: finished 153000"
+[1] "gather_results: finished 154000"
+[1] "gather_results: finished 155000"
+[1] "gather_results: finished 156000"
+[1] "gather_results: finished 157000"
+[1] "gather_results: finished 158000"
+[1] "gather_results: finished 159000"
+[1] "gather_results: finished 160000"
+[1] "gather_results: finished 161000"
+[1] "gather_results: finished 162000"
+[1] "gather_results: finished 163000"
+[1] "gather_results: finished 164000"
+[1] "gather_results: finished 165000"
+[1] "gather_results: finished 166000"
+[1] "gather_results: finished 167000"
+[1] "gather_results: finished 168000"
+[1] "gather_results: finished 169000"
+[1] "gather_results: finished 170000"
+[1] "gather_results: finished 171000"
+[1] "gather_results: finished 172000"
+[1] "gather_results: finished 173000"
+[1] "gather_results: finished 174000"
+[1] "gather_results: finished 175000"
+[1] "gather_results: finished 176000"
+[1] "gather_results: finished 177000"
+[1] "gather_results: finished 178000"
+[1] "gather_results: finished 179000"
+[1] "gather_results: finished 180000"
+[1] "gather_results: finished 181000"
+[1] "gather_results: finished 182000"
+[1] "gather_results: finished 183000"
+[1] "gather_results: finished 184000"
+[1] "gather_results: finished 185000"
+─ Session info ───────────────────────────────────────────────────────────────
+ setting  value
+ version  R version 4.4.0 Patched (2024-05-22 r86590)
+ os       Rocky Linux 9.4 (Blue Onyx)
+ system   x86_64, linux-gnu
+ ui       X11
+ language (EN)
+ collate  en_US.UTF-8
+ ctype    en_US.UTF-8
+ tz       US/Eastern
+ date     2026-06-01
+ pandoc   3.1.13 @ /jhpce/shared/community/core/conda_R/4.4/bin/pandoc
+
+─ Packages ───────────────────────────────────────────────────────────────────
+ package              * version   date (UTC) lib source
+ abind                  1.4-8     2024-09-12 [1] CRAN (R 4.4.0)
+ Biobase              * 2.66.0    2024-10-29 [1] Bioconductor 3.20 (R 4.4.0)
+ BiocGenerics         * 0.52.0    2024-10-29 [1] Bioconductor 3.20 (R 4.4.0)
+ cli                    3.6.3     2024-06-21 [1] CRAN (R 4.4.0)
+ codetools              0.2-20    2024-03-31 [3] CRAN (R 4.4.0)
+ crayon                 1.5.3     2024-06-20 [1] CRAN (R 4.4.0)
+ DelayedArray           0.30.1    2024-05-07 [2] Bioconductor 3.19 (R 4.4.0)
+ doParallel             1.0.17    2022-02-07 [1] CRAN (R 4.4.0)
+ dplyr                * 1.1.4     2023-11-17 [1] CRAN (R 4.4.0)
+ fansi                  1.0.6     2023-12-08 [1] CRAN (R 4.4.0)
+ foreach                1.5.2     2022-02-02 [1] CRAN (R 4.4.0)
+ generics               0.1.3     2022-07-05 [1] CRAN (R 4.4.0)
+ GenomeInfoDb         * 1.40.1    2024-05-24 [2] Bioconductor 3.19 (R 4.4.0)
+ GenomeInfoDbData       1.2.13    2024-11-18 [1] Bioconductor
+ GenomicRanges        * 1.58.0    2024-10-29 [1] Bioconductor 3.20 (R 4.4.0)
+ glue                   1.8.0     2024-09-30 [1] CRAN (R 4.4.0)
+ here                 * 1.0.1     2020-12-13 [1] CRAN (R 4.4.0)
+ httr                   1.4.7     2023-08-15 [1] CRAN (R 4.4.0)
+ IRanges              * 2.40.0    2024-10-29 [1] Bioconductor 3.20 (R 4.4.0)
+ iterators              1.0.14    2022-02-05 [1] CRAN (R 4.4.0)
+ jsonlite               1.8.9     2024-09-20 [1] CRAN (R 4.4.0)
+ lattice                0.22-6    2024-03-20 [3] CRAN (R 4.4.0)
+ lifecycle              1.0.4     2023-11-07 [1] CRAN (R 4.4.0)
+ magick                 2.8.5     2024-09-20 [1] CRAN (R 4.4.0)
+ magrittr               2.0.3     2022-03-30 [1] CRAN (R 4.4.0)
+ Matrix                 1.7-1     2024-10-18 [1] CRAN (R 4.4.0)
+ MatrixGenerics       * 1.18.0    2024-10-29 [1] Bioconductor 3.20 (R 4.4.0)
+ matrixStats          * 1.4.1     2024-09-08 [1] CRAN (R 4.4.0)
+ pillar                 1.9.0     2023-03-22 [1] CRAN (R 4.4.0)
+ pkgconfig              2.0.3     2019-09-22 [1] CRAN (R 4.4.0)
+ quadprog               1.5-8     2019-11-20 [2] CRAN (R 4.4.0)
+ R6                     2.5.1     2021-08-19 [1] CRAN (R 4.4.0)
+ Rcpp                   1.1.1-1.1 2026-04-24 [1] CRAN (R 4.4.0)
+ rjson                  0.2.23    2024-09-16 [1] CRAN (R 4.4.0)
+ rlang                  1.1.4     2024-06-04 [1] CRAN (R 4.4.0)
+ rprojroot              2.0.4     2023-11-05 [1] CRAN (R 4.4.0)
+ S4Arrays               1.6.0     2024-10-29 [1] Bioconductor 3.20 (R 4.4.0)
+ S4Vectors            * 0.44.0    2024-10-29 [1] Bioconductor 3.20 (R 4.4.0)
+ sessioninfo            1.2.2     2021-12-06 [2] CRAN (R 4.4.0)
+ SingleCellExperiment * 1.26.0    2024-04-30 [2] Bioconductor 3.19 (R 4.4.0)
+ spacexr              * 2.2.1     2026-02-12 [1] Github (dmcable/spacexr@9f5dc33)
+ SparseArray            1.6.2     2025-02-20 [1] Bioconductor 3.20 (R 4.4.0)
+ SpatialExperiment    * 1.14.0    2024-05-01 [2] Bioconductor 3.19 (R 4.4.0)
+ SummarizedExperiment * 1.34.0    2024-05-01 [2] Bioconductor 3.19 (R 4.4.0)
+ tibble                 3.2.1     2023-03-20 [1] CRAN (R 4.4.0)
+ tidyselect             1.2.1     2024-03-11 [1] CRAN (R 4.4.0)
+ UCSC.utils             1.0.0     2024-04-30 [2] Bioconductor 3.19 (R 4.4.0)
+ utf8                   1.2.4     2023-10-22 [1] CRAN (R 4.4.0)
+ vctrs                  0.6.5     2023-12-01 [1] CRAN (R 4.4.0)
+ XVector                0.44.0    2024-04-30 [2] Bioconductor 3.19 (R 4.4.0)
+ zlibbioc               1.52.0    2024-10-29 [1] Bioconductor 3.20 (R 4.4.0)
+
+ [1] /users/mtotty/R/4.4
+ [2] /jhpce/shared/community/core/conda_R/4.4/R/lib64/R/site-library
+ [3] /jhpce/shared/community/core/conda_R/4.4/R/lib64/R/library
+
+──────────────────────────────────────────────────────────────────────────────
+**** Job ends ****
+Mon Jun  1 02:26:49 PM EDT 2026

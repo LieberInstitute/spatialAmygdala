@@ -14,12 +14,13 @@ suppressPackageStartupMessages({
 })
 
 # ========================
-# Parse resolution argument
+# Parse resolution argument (one resolution per array task)
 # ========================
 args <- commandArgs(trailingOnly = TRUE)
-if (length(args) != 1) stop("Usage: Rscript 02_banksy_many_harmony_many_lambda_resSweep.R <resolution>")
+if (length(args) != 1) stop("Usage: Rscript 07_batch_xenium_many_res.R <resolution>")
 res <- as.numeric(args[[1]])
 res_label <- gsub("\\.", "_", as.character(res))  # for filenames
+cat("Resolution:", res, "\n")
 
 # ============== Setup ==============
 
@@ -46,33 +47,36 @@ spatialCoords(spe.gex) <- locs
 
 # ======= BANKSY Parameters =======
 lambda <- 0.8
-k_geom <- 36
+k_geom <- c(25, 50)
 npcs <- 50
 aname <- "nucleus_normcounts"
 
 # ======= Run BANKSY and Harmony =======
 set.seed(1000)
-spe.gex <- Banksy::computeBanksy(spe.gex, assay_name = aname, k_geom = k_geom)
-spe.gex <- Banksy::runBanksyPCA(spe.gex, lambda = lambda, npcs = npcs)
+spe.gex <- Banksy::computeBanksy(spe.gex, assay_name = aname,
+                                 compute_agf = TRUE, k_geom = k_geom)
+spe.gex <- Banksy::runBanksyPCA(spe.gex, use_agf = TRUE, lambda = lambda, npcs = npcs)
 
 # rename PCA
-reducedDim(spe.gex, "PCA") <- reducedDim(spe.gex, "PCA_M0_lam0.8")
-reducedDim(spe.gex, "PCA_M0_lam0.8") <- NULL
+reducedDim(spe.gex, "PCA") <- reducedDim(spe.gex, "PCA_M1_lam0.8")
+reducedDim(spe.gex, "PCA_M1_lam0.8") <- NULL
 
 # Harmony
-spe.gex <- RunHarmony(spe.gex, "brnum", reduction.save = "HARMONY_M0_lam0.8")
+spe.gex <- RunHarmony(spe.gex, "brnum", reduction.save = "HARMONY_M1_lam0.8")
 
-# ========== Clustering ==========
+# ========== Clustering (single resolution for this array task) ==========
 spe.gex <- Banksy::clusterBanksy(
   spe.gex,
+  use_agf = TRUE,
   lambda = lambda,
   npcs = npcs,
   resolution = res,
-  dimred = "HARMONY_M0_lam0.8"
+  dimred = "HARMONY_M1_lam0.8"
 )
 
 # Transfer cluster labels to original spe
-clust_col <- paste0("clust_Banksy_k", k_geom, "_res", res_label, "_lam", lambda)
+clust_col <- grep("^clust_", colnames(colData(spe.gex)), value = TRUE)
+stopifnot(length(clust_col) == 1)
 spe[[clust_col]] <- spe.gex[[clust_col]]
 
 # ========== Save ==========

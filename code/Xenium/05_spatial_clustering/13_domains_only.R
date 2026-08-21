@@ -16,6 +16,8 @@ output_dir <- here("plots", "Xenium", "05_spatial_clustering")
 spe <- readRDS(file.path("processed-data", "Xenium", "04_clustering", "Banksy", "Banksy_integrated_res2.0_collapsed_v6.rds"))
 spe
 
+
+
 # === Subset to Cluster 16 using grep - Mea + ITCs ===
 clusters_of_interest <- c("16")
 spe_subset <- spe[, grepl(paste(clusters_of_interest, collapse = "|"), spe$Banksy_res2.0_collapsed_v6)]

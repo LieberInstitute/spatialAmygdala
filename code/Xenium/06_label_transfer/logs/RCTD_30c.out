@@ -1,0 +1,962 @@
+**** Job starts ****
+Thu Apr  9 09:36:47 AM EDT 2026
+**** SLURM info ****
+User: mtotty
+Job id: 30722515
+Job name: RCTD_Xenium_30
+Hostname: compute-121
+Task id: 
+class: SpatialExperiment 
+dim: 366 946896 
+metadata(9): polygons technology ... technology BANKSY_params
+assays(4): counts nucleus_normcounts cell_normcounts H0
+rownames(366): ABCC9 ADAMTS12 ... ZIC2 ZNF536
+rowData names(3): ID Symbol Type
+colnames(946896): aaaaeomf-1 aaaajkhp-1 ... oimbboka-1 oimbcgpk-1
+colData names(32): cell_id transcript_counts ...
+  clust_HARMONY_M0_lam0.8_k50_res2 Banksy_res2.0_collapsed_v6
+reducedDimNames(4): PCA HARMONY UMAP HARMONY_M0_lam0.8
+mainExpName: NULL
+altExpNames(0):
+spatialCoords names(2) : x_centroid y_centroid
+imgData names(1): sample_id
+class: SingleCellExperiment 
+dim: 31908 91699 
+metadata(0):
+assays(2): counts logcounts
+rownames(31908): MIR1302-2HG FAM138A ... AC240274.1 AC213203.1
+rowData names(7): source type ... gene_type Symbol.uniq
+colnames(91699): AAACCCAAGTCGCCAC-1 AAACCCAGTCGAGATG-1 ...
+  TTTGTTGTCACTTCTA-14 TTTGTTGTCCAAATGC-14
+colData names(14): barcode library_id ... orig_anno ident
+reducedDimNames(2): PCA UMAP
+mainExpName: RNA
+altExpNames(0):
+
+Human_Oligo_5 OPALIN Human_Oligo_6 OPALIN  Human_Astro_2 FGFR3 
+                6932                 6342                 6097 
+ Human_LAMP5 COL25A1 Human_Oligo_4 OPALIN     Human_LAMP5 BDNF 
+                4388                 3897                 3854 
+  Human_OPC_3 PDGFRA     Human_LAMP5 NDNF     Human_VGLL3 MEPE 
+                3677                 2848                 2807 
+     Human_HGF NPSR1   Human_TSHZ1 CALCRL   Human_HGF C11orf87 
+                2769                 2751                 2676 
+   Human_VGLL3 CNGB1 Human_Oligo_1 OPALIN    Human_RXFP2 RSPO2 
+                2625                 2619                 2394 
+     Human_LAMP5 ABO        Human_SST HGF     Human_CALCR LHX8 
+                2384                 2185                 2098 
+    Human_VIP ABI3BP Human_Oligo_3 OPALIN      Human_DRD2 PAX6 
+                1924                 1910                 1882 
+ Human_Astro_3 FGFR3     Human_SATB2 IL15      Human_DRD2 ISL1 
+                1830                 1801                 1713 
+    Human_SOX11 EBF2  Human_SATB2 ST8SIA2     Human_Micro CTSS 
+                1677                 1387                 1337 
+ Human_Astro_1 FGFR3       Human_HGF ESR1   Human_Endo NOSTRIN 
+                1323                 1253                 1198 
+ Human_LAMP5 COL14A1       Human_VIP NDNF   Human_SATB2 CALCRL 
+                1188                 1062                 1061 
+  Human_TSHZ1 SEMA3C  Human_PVALB ADAMTS5  Human_Astro_4 FGFR3 
+                1052                  908                  710 
+         Human_PRKCD   Human_OPC_4 PDGFRA     Human_HTR3A DRD2 
+                 559                  539                  524 
+        Human_STRIP2 Human_Oligo_2 OPALIN   Human_OPC_2 PDGFRA 
+                 428                  352                  275 
+      Human_SST EPYC         Human_TFAP2C 
+                 250                  202 
+starting worker pid=320229 on localhost:11293 at 10:32:30.421
+starting worker pid=320244 on localhost:11293 at 10:32:33.503
+starting worker pid=320260 on localhost:11293 at 10:33:09.397
+starting worker pid=320290 on localhost:11293 at 10:33:12.156
+starting worker pid=320306 on localhost:11293 at 10:33:13.781
+starting worker pid=320321 on localhost:11293 at 10:33:16.477
+starting worker pid=320340 on localhost:11293 at 10:33:17.564
+starting worker pid=320356 on localhost:11293 at 10:33:18.432
+starting worker pid=320371 on localhost:11293 at 10:33:19.222
+starting worker pid=320386 on localhost:11293 at 10:33:19.981
+starting worker pid=320401 on localhost:11293 at 10:33:20.925
+starting worker pid=320416 on localhost:11293 at 10:33:23.065
+starting worker pid=320434 on localhost:11293 at 10:33:23.704
+starting worker pid=320449 on localhost:11293 at 10:33:24.176
+starting worker pid=320464 on localhost:11293 at 10:33:24.661
+starting worker pid=320479 on localhost:11293 at 10:33:25.283
+starting worker pid=320494 on localhost:11293 at 10:33:25.644
+starting worker pid=320509 on localhost:11293 at 10:33:26.057
+starting worker pid=320524 on localhost:11293 at 10:33:26.678
+starting worker pid=320539 on localhost:11293 at 10:33:27.199
+starting worker pid=320554 on localhost:11293 at 10:33:27.474
+starting worker pid=320569 on localhost:11293 at 10:33:27.839
+starting worker pid=320584 on localhost:11293 at 10:33:28.177
+starting worker pid=320599 on localhost:11293 at 10:33:28.620
+starting worker pid=320614 on localhost:11293 at 10:33:29.222
+starting worker pid=320629 on localhost:11293 at 10:33:30.347
+starting worker pid=320646 on localhost:11293 at 10:33:31.051
+starting worker pid=320661 on localhost:11293 at 10:33:33.039
+starting worker pid=320679 on localhost:11293 at 10:33:33.834
+starting worker pid=320694 on localhost:11293 at 10:33:34.482
+starting worker pid=320709 on localhost:11293 at 10:33:34.878
+starting worker pid=320724 on localhost:11293 at 10:33:35.294
+starting worker pid=320739 on localhost:11293 at 10:33:35.838
+starting worker pid=320754 on localhost:11293 at 10:33:36.314
+starting worker pid=320769 on localhost:11293 at 10:33:37.137
+starting worker pid=320784 on localhost:11293 at 10:33:38.212
+starting worker pid=320799 on localhost:11293 at 10:33:41.230
+starting worker pid=320815 on localhost:11293 at 10:33:46.726
+starting worker pid=320831 on localhost:11293 at 10:33:50.269
+starting worker pid=320847 on localhost:11293 at 10:33:51.575
+starting worker pid=320865 on localhost:11293 at 10:33:52.505
+starting worker pid=320880 on localhost:11293 at 10:33:54.099
+starting worker pid=320895 on localhost:11293 at 10:33:55.111
+starting worker pid=320910 on localhost:11293 at 10:33:55.623
+starting worker pid=320925 on localhost:11293 at 10:33:56.200
+starting worker pid=320940 on localhost:11293 at 10:33:56.811
+starting worker pid=320959 on localhost:11293 at 10:33:57.427
+starting worker pid=320974 on localhost:11293 at 10:33:58.384
+starting worker pid=320989 on localhost:11293 at 10:33:59.276
+starting worker pid=321004 on localhost:11293 at 10:34:00.084
+starting worker pid=321019 on localhost:11293 at 10:34:00.454
+starting worker pid=321034 on localhost:11293 at 10:34:00.884
+starting worker pid=321049 on localhost:11293 at 10:34:01.696
+starting worker pid=321067 on localhost:11293 at 10:34:02.084
+starting worker pid=321082 on localhost:11293 at 10:34:02.465
+starting worker pid=321097 on localhost:11293 at 10:34:05.644
+starting worker pid=321112 on localhost:11293 at 10:34:07.050
+starting worker pid=321127 on localhost:11293 at 10:34:07.716
+starting worker pid=321142 on localhost:11293 at 10:34:08.818
+starting worker pid=321157 on localhost:11293 at 10:34:09.908
+starting worker pid=321281 on localhost:11293 at 10:35:43.084
+starting worker pid=321299 on localhost:11293 at 10:35:46.407
+starting worker pid=321315 on localhost:11293 at 10:35:47.939
+starting worker pid=321330 on localhost:11293 at 10:35:48.191
+starting worker pid=321345 on localhost:11293 at 10:35:48.705
+starting worker pid=321360 on localhost:11293 at 10:35:49.129
+starting worker pid=321375 on localhost:11293 at 10:35:49.792
+starting worker pid=321390 on localhost:11293 at 10:35:50.492
+starting worker pid=321405 on localhost:11293 at 10:35:51.317
+starting worker pid=321420 on localhost:11293 at 10:35:53.678
+starting worker pid=321438 on localhost:11293 at 10:35:58.921
+starting worker pid=321457 on localhost:11293 at 10:36:01.235
+starting worker pid=321472 on localhost:11293 at 10:36:03.862
+starting worker pid=321490 on localhost:11293 at 10:36:06.789
+starting worker pid=321505 on localhost:11293 at 10:36:09.841
+starting worker pid=321520 on localhost:11293 at 10:36:11.928
+starting worker pid=321536 on localhost:11293 at 10:36:13.206
+starting worker pid=321551 on localhost:11293 at 10:36:14.658
+starting worker pid=321566 on localhost:11293 at 10:36:16.549
+starting worker pid=321581 on localhost:11293 at 10:36:17.115
+starting worker pid=321596 on localhost:11293 at 10:36:18.134
+starting worker pid=321611 on localhost:11293 at 10:36:19.101
+starting worker pid=321626 on localhost:11293 at 10:36:19.682
+starting worker pid=321641 on localhost:11293 at 10:36:20.493
+starting worker pid=321659 on localhost:11293 at 10:36:22.108
+starting worker pid=321679 on localhost:11293 at 10:36:23.840
+starting worker pid=321694 on localhost:11293 at 10:36:27.548
+starting worker pid=321709 on localhost:11293 at 10:36:29.031
+starting worker pid=321724 on localhost:11293 at 10:36:29.965
+starting worker pid=321739 on localhost:11293 at 10:36:30.690
+starting worker pid=321754 on localhost:11293 at 10:36:31.985
+starting worker pid=321770 on localhost:11293 at 10:36:37.937
+starting worker pid=321785 on localhost:11293 at 10:36:40.822
+starting worker pid=321800 on localhost:11293 at 10:36:42.148
+starting worker pid=321818 on localhost:11293 at 10:36:45.944
+starting worker pid=321835 on localhost:11293 at 10:36:48.854
+starting worker pid=321850 on localhost:11293 at 10:36:50.512
+starting worker pid=321865 on localhost:11293 at 10:36:51.557
+starting worker pid=321881 on localhost:11293 at 10:36:52.522
+starting worker pid=321896 on localhost:11293 at 10:36:53.524
+starting worker pid=321913 on localhost:11293 at 10:36:54.341
+starting worker pid=321928 on localhost:11293 at 10:36:55.072
+starting worker pid=321943 on localhost:11293 at 10:36:55.899
+starting worker pid=321962 on localhost:11293 at 10:36:56.884
+starting worker pid=321977 on localhost:11293 at 10:36:58.050
+starting worker pid=321992 on localhost:11293 at 10:37:00.226
+starting worker pid=322007 on localhost:11293 at 10:37:01.285
+starting worker pid=322022 on localhost:11293 at 10:37:01.930
+starting worker pid=322040 on localhost:11293 at 10:37:02.469
+starting worker pid=322055 on localhost:11293 at 10:37:03.011
+starting worker pid=322072 on localhost:11293 at 10:37:03.446
+starting worker pid=322087 on localhost:11293 at 10:37:03.926
+starting worker pid=322102 on localhost:11293 at 10:37:04.453
+starting worker pid=322117 on localhost:11293 at 10:37:05.105
+starting worker pid=322132 on localhost:11293 at 10:37:05.689
+starting worker pid=322147 on localhost:11293 at 10:37:06.391
+starting worker pid=322162 on localhost:11293 at 10:37:06.928
+starting worker pid=322177 on localhost:11293 at 10:37:07.231
+starting worker pid=322192 on localhost:11293 at 10:37:07.735
+starting worker pid=322207 on localhost:11293 at 10:37:08.777
+starting worker pid=322330 on localhost:11293 at 10:38:43.122
+starting worker pid=322345 on localhost:11293 at 10:38:44.053
+starting worker pid=322360 on localhost:11293 at 10:38:44.799
+starting worker pid=322375 on localhost:11293 at 10:38:45.338
+starting worker pid=322390 on localhost:11293 at 10:38:46.150
+starting worker pid=322405 on localhost:11293 at 10:38:46.740
+starting worker pid=322420 on localhost:11293 at 10:38:47.158
+starting worker pid=322435 on localhost:11293 at 10:38:47.764
+starting worker pid=322450 on localhost:11293 at 10:38:48.650
+starting worker pid=322465 on localhost:11293 at 10:38:57.799
+starting worker pid=322488 on localhost:11293 at 10:39:01.018
+starting worker pid=322503 on localhost:11293 at 10:39:01.742
+starting worker pid=322521 on localhost:11293 at 10:39:02.530
+starting worker pid=322536 on localhost:11293 at 10:39:03.469
+starting worker pid=322551 on localhost:11293 at 10:39:06.957
+starting worker pid=322566 on localhost:11293 at 10:39:27.238
+starting worker pid=322590 on localhost:11293 at 10:39:29.076
+starting worker pid=322605 on localhost:11293 at 10:39:30.418
+starting worker pid=322620 on localhost:11293 at 10:39:31.480
+starting worker pid=322636 on localhost:11293 at 10:39:32.523
+starting worker pid=322651 on localhost:11293 at 10:39:34.194
+starting worker pid=322666 on localhost:11293 at 10:39:39.222
+starting worker pid=322681 on localhost:11293 at 10:39:41.382
+starting worker pid=322698 on localhost:11293 at 10:39:42.779
+starting worker pid=322718 on localhost:11293 at 10:39:46.174
+starting worker pid=322733 on localhost:11293 at 10:39:47.437
+starting worker pid=322748 on localhost:11293 at 10:39:49.653
+starting worker pid=322763 on localhost:11293 at 10:39:53.217
+starting worker pid=322779 on localhost:11293 at 10:39:53.801
+starting worker pid=322794 on localhost:11293 at 10:39:54.283
+starting worker pid=322809 on localhost:11293 at 10:39:54.734
+starting worker pid=322824 on localhost:11293 at 10:39:55.207
+starting worker pid=322839 on localhost:11293 at 10:39:55.628
+starting worker pid=322854 on localhost:11293 at 10:39:56.163
+starting worker pid=322873 on localhost:11293 at 10:39:56.676
+starting worker pid=322888 on localhost:11293 at 10:39:57.225
+starting worker pid=322903 on localhost:11293 at 10:39:57.555
+starting worker pid=322923 on localhost:11293 at 10:39:57.980
+starting worker pid=322938 on localhost:11293 at 10:39:58.416
+starting worker pid=322953 on localhost:11293 at 10:39:58.792
+starting worker pid=322968 on localhost:11293 at 10:39:59.188
+starting worker pid=322983 on localhost:11293 at 10:39:59.703
+starting worker pid=322998 on localhost:11293 at 10:40:00.335
+starting worker pid=323016 on localhost:11293 at 10:40:00.910
+starting worker pid=323031 on localhost:11293 at 10:40:01.255
+starting worker pid=323046 on localhost:11293 at 10:40:01.821
+starting worker pid=323064 on localhost:11293 at 10:40:03.134
+starting worker pid=323079 on localhost:11293 at 10:40:04.821
+starting worker pid=323095 on localhost:11293 at 10:40:06.001
+starting worker pid=323110 on localhost:11293 at 10:40:06.961
+starting worker pid=323125 on localhost:11293 at 10:40:07.862
+starting worker pid=323140 on localhost:11293 at 10:40:08.376
+starting worker pid=323155 on localhost:11293 at 10:40:09.251
+starting worker pid=323170 on localhost:11293 at 10:40:11.241
+starting worker pid=323185 on localhost:11293 at 10:40:12.340
+starting worker pid=323203 on localhost:11293 at 10:40:13.813
+starting worker pid=323218 on localhost:11293 at 10:40:19.434
+starting worker pid=323234 on localhost:11293 at 10:40:20.807
+starting worker pid=323249 on localhost:11293 at 10:40:23.491
+starting worker pid=323265 on localhost:11293 at 10:40:25.949
+starting worker pid=323381 on localhost:11293 at 10:41:36.686
+starting worker pid=323396 on localhost:11293 at 10:41:37.255
+starting worker pid=323411 on localhost:11293 at 10:41:37.997
+starting worker pid=323426 on localhost:11293 at 10:41:38.585
+starting worker pid=323441 on localhost:11293 at 10:41:39.149
+starting worker pid=323456 on localhost:11293 at 10:41:40.294
+starting worker pid=323471 on localhost:11293 at 10:41:42.623
+starting worker pid=323489 on localhost:11293 at 10:41:45.584
+starting worker pid=323504 on localhost:11293 at 10:41:53.992
+starting worker pid=323525 on localhost:11293 at 10:41:57.955
+starting worker pid=323544 on localhost:11293 at 10:41:59.138
+starting worker pid=323559 on localhost:11293 at 10:42:00.100
+starting worker pid=323574 on localhost:11293 at 10:42:00.606
+starting worker pid=323591 on localhost:11293 at 10:42:01.161
+starting worker pid=323606 on localhost:11293 at 10:42:01.795
+starting worker pid=323624 on localhost:11293 at 10:42:02.097
+starting worker pid=323640 on localhost:11293 at 10:42:02.652
+starting worker pid=323655 on localhost:11293 at 10:42:03.212
+starting worker pid=323671 on localhost:11293 at 10:42:03.884
+starting worker pid=323686 on localhost:11293 at 10:42:04.626
+starting worker pid=323701 on localhost:11293 at 10:42:05.455
+starting worker pid=323716 on localhost:11293 at 10:42:05.943
+starting worker pid=323731 on localhost:11293 at 10:42:06.801
+starting worker pid=323746 on localhost:11293 at 10:42:07.029
+starting worker pid=323761 on localhost:11293 at 10:42:07.370
+starting worker pid=323776 on localhost:11293 at 10:42:07.904
+starting worker pid=323791 on localhost:11293 at 10:42:08.267
+starting worker pid=323806 on localhost:11293 at 10:42:08.822
+starting worker pid=323821 on localhost:11293 at 10:42:09.348
+starting worker pid=323836 on localhost:11293 at 10:42:10.741
+starting worker pid=323851 on localhost:11293 at 10:42:19.207
+starting worker pid=323868 on localhost:11293 at 10:42:23.450
+starting worker pid=323886 on localhost:11293 at 10:42:27.885
+starting worker pid=323901 on localhost:11293 at 10:42:28.926
+starting worker pid=323916 on localhost:11293 at 10:42:29.514
+starting worker pid=323935 on localhost:11293 at 10:42:30.182
+starting worker pid=323950 on localhost:11293 at 10:42:30.962
+starting worker pid=323965 on localhost:11293 at 10:42:32.085
+starting worker pid=323983 on localhost:11293 at 10:42:32.755
+starting worker pid=323998 on localhost:11293 at 10:42:33.427
+starting worker pid=324013 on localhost:11293 at 10:42:34.505
+starting worker pid=324028 on localhost:11293 at 10:42:36.512
+starting worker pid=324043 on localhost:11293 at 10:42:40.340
+starting worker pid=324059 on localhost:11293 at 10:42:42.246
+starting worker pid=324075 on localhost:11293 at 10:42:44.828
+starting worker pid=324090 on localhost:11293 at 10:42:47.332
+starting worker pid=324105 on localhost:11293 at 10:42:48.731
+starting worker pid=324120 on localhost:11293 at 10:42:52.641
+starting worker pid=324138 on localhost:11293 at 10:42:53.427
+starting worker pid=324153 on localhost:11293 at 10:42:54.167
+starting worker pid=324168 on localhost:11293 at 10:42:54.647
+starting worker pid=324183 on localhost:11293 at 10:42:55.504
+starting worker pid=324198 on localhost:11293 at 10:42:56.379
+starting worker pid=324217 on localhost:11293 at 10:42:58.120
+starting worker pid=324232 on localhost:11293 at 10:42:58.488
+starting worker pid=324247 on localhost:11293 at 10:42:59.487
+starting worker pid=324262 on localhost:11293 at 10:42:59.927
+starting worker pid=324277 on localhost:11293 at 10:43:00.523
+starting worker pid=324292 on localhost:11293 at 10:43:01.124
+starting worker pid=324307 on localhost:11293 at 10:43:01.649
+[1] "gather_results: finished 1000"
+[1] "gather_results: finished 2000"
+[1] "gather_results: finished 3000"
+[1] "gather_results: finished 4000"
+[1] "gather_results: finished 5000"
+[1] "gather_results: finished 6000"
+[1] "gather_results: finished 7000"
+[1] "gather_results: finished 8000"
+[1] "gather_results: finished 9000"
+[1] "gather_results: finished 10000"
+[1] "gather_results: finished 11000"
+[1] "gather_results: finished 12000"
+[1] "gather_results: finished 13000"
+[1] "gather_results: finished 14000"
+[1] "gather_results: finished 15000"
+[1] "gather_results: finished 16000"
+[1] "gather_results: finished 17000"
+[1] "gather_results: finished 18000"
+[1] "gather_results: finished 19000"
+[1] "gather_results: finished 20000"
+[1] "gather_results: finished 21000"
+[1] "gather_results: finished 22000"
+[1] "gather_results: finished 23000"
+[1] "gather_results: finished 24000"
+[1] "gather_results: finished 25000"
+[1] "gather_results: finished 26000"
+[1] "gather_results: finished 27000"
+[1] "gather_results: finished 28000"
+[1] "gather_results: finished 29000"
+[1] "gather_results: finished 30000"
+[1] "gather_results: finished 31000"
+[1] "gather_results: finished 32000"
+[1] "gather_results: finished 33000"
+[1] "gather_results: finished 34000"
+[1] "gather_results: finished 35000"
+[1] "gather_results: finished 36000"
+[1] "gather_results: finished 37000"
+[1] "gather_results: finished 38000"
+[1] "gather_results: finished 39000"
+[1] "gather_results: finished 40000"
+[1] "gather_results: finished 41000"
+[1] "gather_results: finished 42000"
+[1] "gather_results: finished 43000"
+[1] "gather_results: finished 44000"
+[1] "gather_results: finished 45000"
+[1] "gather_results: finished 46000"
+[1] "gather_results: finished 47000"
+[1] "gather_results: finished 48000"
+[1] "gather_results: finished 49000"
+[1] "gather_results: finished 50000"
+[1] "gather_results: finished 51000"
+[1] "gather_results: finished 52000"
+[1] "gather_results: finished 53000"
+[1] "gather_results: finished 54000"
+[1] "gather_results: finished 55000"
+[1] "gather_results: finished 56000"
+[1] "gather_results: finished 57000"
+[1] "gather_results: finished 58000"
+[1] "gather_results: finished 59000"
+[1] "gather_results: finished 60000"
+[1] "gather_results: finished 61000"
+[1] "gather_results: finished 62000"
+[1] "gather_results: finished 63000"
+[1] "gather_results: finished 64000"
+[1] "gather_results: finished 65000"
+[1] "gather_results: finished 66000"
+[1] "gather_results: finished 67000"
+[1] "gather_results: finished 68000"
+[1] "gather_results: finished 69000"
+[1] "gather_results: finished 70000"
+[1] "gather_results: finished 71000"
+[1] "gather_results: finished 72000"
+[1] "gather_results: finished 73000"
+[1] "gather_results: finished 74000"
+[1] "gather_results: finished 75000"
+[1] "gather_results: finished 76000"
+[1] "gather_results: finished 77000"
+[1] "gather_results: finished 78000"
+[1] "gather_results: finished 79000"
+[1] "gather_results: finished 80000"
+[1] "gather_results: finished 81000"
+[1] "gather_results: finished 82000"
+[1] "gather_results: finished 83000"
+[1] "gather_results: finished 84000"
+[1] "gather_results: finished 85000"
+[1] "gather_results: finished 86000"
+[1] "gather_results: finished 87000"
+[1] "gather_results: finished 88000"
+[1] "gather_results: finished 89000"
+[1] "gather_results: finished 90000"
+[1] "gather_results: finished 91000"
+[1] "gather_results: finished 92000"
+[1] "gather_results: finished 93000"
+[1] "gather_results: finished 94000"
+[1] "gather_results: finished 95000"
+[1] "gather_results: finished 96000"
+[1] "gather_results: finished 97000"
+[1] "gather_results: finished 98000"
+[1] "gather_results: finished 99000"
+[1] "gather_results: finished 100000"
+[1] "gather_results: finished 101000"
+[1] "gather_results: finished 102000"
+[1] "gather_results: finished 103000"
+[1] "gather_results: finished 104000"
+[1] "gather_results: finished 105000"
+[1] "gather_results: finished 106000"
+[1] "gather_results: finished 107000"
+[1] "gather_results: finished 108000"
+[1] "gather_results: finished 109000"
+[1] "gather_results: finished 110000"
+[1] "gather_results: finished 111000"
+[1] "gather_results: finished 112000"
+[1] "gather_results: finished 113000"
+[1] "gather_results: finished 114000"
+[1] "gather_results: finished 115000"
+[1] "gather_results: finished 116000"
+[1] "gather_results: finished 117000"
+[1] "gather_results: finished 118000"
+[1] "gather_results: finished 119000"
+[1] "gather_results: finished 120000"
+[1] "gather_results: finished 121000"
+[1] "gather_results: finished 122000"
+[1] "gather_results: finished 123000"
+[1] "gather_results: finished 124000"
+[1] "gather_results: finished 125000"
+[1] "gather_results: finished 126000"
+[1] "gather_results: finished 127000"
+[1] "gather_results: finished 128000"
+[1] "gather_results: finished 129000"
+[1] "gather_results: finished 130000"
+[1] "gather_results: finished 131000"
+[1] "gather_results: finished 132000"
+[1] "gather_results: finished 133000"
+[1] "gather_results: finished 134000"
+[1] "gather_results: finished 135000"
+[1] "gather_results: finished 136000"
+[1] "gather_results: finished 137000"
+[1] "gather_results: finished 138000"
+[1] "gather_results: finished 139000"
+[1] "gather_results: finished 140000"
+[1] "gather_results: finished 141000"
+[1] "gather_results: finished 142000"
+[1] "gather_results: finished 143000"
+[1] "gather_results: finished 144000"
+[1] "gather_results: finished 145000"
+[1] "gather_results: finished 146000"
+[1] "gather_results: finished 147000"
+[1] "gather_results: finished 148000"
+[1] "gather_results: finished 149000"
+[1] "gather_results: finished 150000"
+[1] "gather_results: finished 151000"
+[1] "gather_results: finished 152000"
+[1] "gather_results: finished 153000"
+[1] "gather_results: finished 154000"
+[1] "gather_results: finished 155000"
+[1] "gather_results: finished 156000"
+[1] "gather_results: finished 157000"
+[1] "gather_results: finished 158000"
+[1] "gather_results: finished 159000"
+[1] "gather_results: finished 160000"
+[1] "gather_results: finished 161000"
+[1] "gather_results: finished 162000"
+[1] "gather_results: finished 163000"
+[1] "gather_results: finished 164000"
+[1] "gather_results: finished 165000"
+[1] "gather_results: finished 166000"
+[1] "gather_results: finished 167000"
+[1] "gather_results: finished 168000"
+[1] "gather_results: finished 169000"
+[1] "gather_results: finished 170000"
+[1] "gather_results: finished 171000"
+[1] "gather_results: finished 172000"
+[1] "gather_results: finished 173000"
+[1] "gather_results: finished 174000"
+[1] "gather_results: finished 175000"
+[1] "gather_results: finished 176000"
+[1] "gather_results: finished 177000"
+[1] "gather_results: finished 178000"
+[1] "gather_results: finished 179000"
+[1] "gather_results: finished 180000"
+[1] "gather_results: finished 181000"
+[1] "gather_results: finished 182000"
+[1] "gather_results: finished 183000"
+[1] "gather_results: finished 184000"
+[1] "gather_results: finished 185000"
+[1] "gather_results: finished 186000"
+[1] "gather_results: finished 187000"
+[1] "gather_results: finished 188000"
+[1] "gather_results: finished 189000"
+[1] "gather_results: finished 190000"
+[1] "gather_results: finished 191000"
+[1] "gather_results: finished 192000"
+[1] "gather_results: finished 193000"
+[1] "gather_results: finished 194000"
+[1] "gather_results: finished 195000"
+[1] "gather_results: finished 196000"
+[1] "gather_results: finished 197000"
+[1] "gather_results: finished 198000"
+[1] "gather_results: finished 199000"
+[1] "gather_results: finished 200000"
+[1] "gather_results: finished 201000"
+[1] "gather_results: finished 202000"
+[1] "gather_results: finished 203000"
+[1] "gather_results: finished 204000"
+[1] "gather_results: finished 205000"
+[1] "gather_results: finished 206000"
+[1] "gather_results: finished 207000"
+[1] "gather_results: finished 208000"
+[1] "gather_results: finished 209000"
+[1] "gather_results: finished 210000"
+[1] "gather_results: finished 211000"
+[1] "gather_results: finished 212000"
+[1] "gather_results: finished 213000"
+[1] "gather_results: finished 214000"
+[1] "gather_results: finished 215000"
+[1] "gather_results: finished 216000"
+[1] "gather_results: finished 217000"
+[1] "gather_results: finished 218000"
+[1] "gather_results: finished 219000"
+[1] "gather_results: finished 220000"
+[1] "gather_results: finished 221000"
+[1] "gather_results: finished 222000"
+[1] "gather_results: finished 223000"
+[1] "gather_results: finished 224000"
+[1] "gather_results: finished 225000"
+[1] "gather_results: finished 226000"
+[1] "gather_results: finished 227000"
+[1] "gather_results: finished 228000"
+[1] "gather_results: finished 229000"
+[1] "gather_results: finished 230000"
+[1] "gather_results: finished 231000"
+[1] "gather_results: finished 232000"
+[1] "gather_results: finished 233000"
+[1] "gather_results: finished 234000"
+[1] "gather_results: finished 235000"
+[1] "gather_results: finished 236000"
+[1] "gather_results: finished 237000"
+[1] "gather_results: finished 238000"
+[1] "gather_results: finished 239000"
+[1] "gather_results: finished 240000"
+[1] "gather_results: finished 241000"
+[1] "gather_results: finished 242000"
+[1] "gather_results: finished 243000"
+[1] "gather_results: finished 244000"
+[1] "gather_results: finished 245000"
+[1] "gather_results: finished 246000"
+[1] "gather_results: finished 247000"
+[1] "gather_results: finished 248000"
+[1] "gather_results: finished 249000"
+[1] "gather_results: finished 250000"
+[1] "gather_results: finished 251000"
+[1] "gather_results: finished 252000"
+[1] "gather_results: finished 253000"
+[1] "gather_results: finished 254000"
+[1] "gather_results: finished 255000"
+[1] "gather_results: finished 256000"
+[1] "gather_results: finished 257000"
+[1] "gather_results: finished 258000"
+[1] "gather_results: finished 259000"
+[1] "gather_results: finished 260000"
+[1] "gather_results: finished 261000"
+[1] "gather_results: finished 262000"
+[1] "gather_results: finished 263000"
+[1] "gather_results: finished 264000"
+[1] "gather_results: finished 265000"
+[1] "gather_results: finished 266000"
+[1] "gather_results: finished 267000"
+[1] "gather_results: finished 268000"
+[1] "gather_results: finished 269000"
+[1] "gather_results: finished 270000"
+[1] "gather_results: finished 271000"
+[1] "gather_results: finished 272000"
+[1] "gather_results: finished 273000"
+[1] "gather_results: finished 274000"
+[1] "gather_results: finished 275000"
+[1] "gather_results: finished 276000"
+[1] "gather_results: finished 277000"
+[1] "gather_results: finished 278000"
+[1] "gather_results: finished 279000"
+[1] "gather_results: finished 280000"
+[1] "gather_results: finished 281000"
+[1] "gather_results: finished 282000"
+[1] "gather_results: finished 283000"
+[1] "gather_results: finished 284000"
+[1] "gather_results: finished 285000"
+[1] "gather_results: finished 286000"
+[1] "gather_results: finished 287000"
+[1] "gather_results: finished 288000"
+[1] "gather_results: finished 289000"
+[1] "gather_results: finished 290000"
+[1] "gather_results: finished 291000"
+[1] "gather_results: finished 292000"
+[1] "gather_results: finished 293000"
+[1] "gather_results: finished 294000"
+[1] "gather_results: finished 295000"
+[1] "gather_results: finished 296000"
+[1] "gather_results: finished 297000"
+[1] "gather_results: finished 298000"
+[1] "gather_results: finished 299000"
+[1] "gather_results: finished 300000"
+[1] "gather_results: finished 301000"
+[1] "gather_results: finished 302000"
+[1] "gather_results: finished 303000"
+[1] "gather_results: finished 304000"
+[1] "gather_results: finished 305000"
+[1] "gather_results: finished 306000"
+[1] "gather_results: finished 307000"
+[1] "gather_results: finished 308000"
+[1] "gather_results: finished 309000"
+[1] "gather_results: finished 310000"
+[1] "gather_results: finished 311000"
+[1] "gather_results: finished 312000"
+[1] "gather_results: finished 313000"
+[1] "gather_results: finished 314000"
+[1] "gather_results: finished 315000"
+[1] "gather_results: finished 316000"
+[1] "gather_results: finished 317000"
+[1] "gather_results: finished 318000"
+[1] "gather_results: finished 319000"
+[1] "gather_results: finished 320000"
+[1] "gather_results: finished 321000"
+[1] "gather_results: finished 322000"
+[1] "gather_results: finished 323000"
+[1] "gather_results: finished 324000"
+[1] "gather_results: finished 325000"
+[1] "gather_results: finished 326000"
+[1] "gather_results: finished 327000"
+[1] "gather_results: finished 328000"
+[1] "gather_results: finished 329000"
+[1] "gather_results: finished 330000"
+[1] "gather_results: finished 331000"
+[1] "gather_results: finished 332000"
+[1] "gather_results: finished 333000"
+[1] "gather_results: finished 334000"
+[1] "gather_results: finished 335000"
+[1] "gather_results: finished 336000"
+[1] "gather_results: finished 337000"
+[1] "gather_results: finished 338000"
+[1] "gather_results: finished 339000"
+[1] "gather_results: finished 340000"
+[1] "gather_results: finished 341000"
+[1] "gather_results: finished 342000"
+[1] "gather_results: finished 343000"
+[1] "gather_results: finished 344000"
+[1] "gather_results: finished 345000"
+[1] "gather_results: finished 346000"
+[1] "gather_results: finished 347000"
+[1] "gather_results: finished 348000"
+[1] "gather_results: finished 349000"
+[1] "gather_results: finished 350000"
+[1] "gather_results: finished 351000"
+[1] "gather_results: finished 352000"
+[1] "gather_results: finished 353000"
+[1] "gather_results: finished 354000"
+[1] "gather_results: finished 355000"
+[1] "gather_results: finished 356000"
+[1] "gather_results: finished 357000"
+[1] "gather_results: finished 358000"
+[1] "gather_results: finished 359000"
+[1] "gather_results: finished 360000"
+[1] "gather_results: finished 361000"
+[1] "gather_results: finished 362000"
+[1] "gather_results: finished 363000"
+[1] "gather_results: finished 364000"
+[1] "gather_results: finished 365000"
+[1] "gather_results: finished 366000"
+[1] "gather_results: finished 367000"
+[1] "gather_results: finished 368000"
+[1] "gather_results: finished 369000"
+[1] "gather_results: finished 370000"
+[1] "gather_results: finished 371000"
+[1] "gather_results: finished 372000"
+[1] "gather_results: finished 373000"
+[1] "gather_results: finished 374000"
+[1] "gather_results: finished 375000"
+[1] "gather_results: finished 376000"
+[1] "gather_results: finished 377000"
+[1] "gather_results: finished 378000"
+[1] "gather_results: finished 379000"
+[1] "gather_results: finished 380000"
+[1] "gather_results: finished 381000"
+[1] "gather_results: finished 382000"
+[1] "gather_results: finished 383000"
+[1] "gather_results: finished 384000"
+[1] "gather_results: finished 385000"
+[1] "gather_results: finished 386000"
+[1] "gather_results: finished 387000"
+[1] "gather_results: finished 388000"
+[1] "gather_results: finished 389000"
+[1] "gather_results: finished 390000"
+[1] "gather_results: finished 391000"
+[1] "gather_results: finished 392000"
+[1] "gather_results: finished 393000"
+[1] "gather_results: finished 394000"
+[1] "gather_results: finished 395000"
+[1] "gather_results: finished 396000"
+[1] "gather_results: finished 397000"
+[1] "gather_results: finished 398000"
+[1] "gather_results: finished 399000"
+[1] "gather_results: finished 400000"
+[1] "gather_results: finished 401000"
+[1] "gather_results: finished 402000"
+[1] "gather_results: finished 403000"
+[1] "gather_results: finished 404000"
+[1] "gather_results: finished 405000"
+[1] "gather_results: finished 406000"
+[1] "gather_results: finished 407000"
+[1] "gather_results: finished 408000"
+[1] "gather_results: finished 409000"
+[1] "gather_results: finished 410000"
+[1] "gather_results: finished 411000"
+[1] "gather_results: finished 412000"
+[1] "gather_results: finished 413000"
+[1] "gather_results: finished 414000"
+[1] "gather_results: finished 415000"
+[1] "gather_results: finished 416000"
+[1] "gather_results: finished 417000"
+[1] "gather_results: finished 418000"
+[1] "gather_results: finished 419000"
+[1] "gather_results: finished 420000"
+[1] "gather_results: finished 421000"
+[1] "gather_results: finished 422000"
+[1] "gather_results: finished 423000"
+[1] "gather_results: finished 424000"
+[1] "gather_results: finished 425000"
+[1] "gather_results: finished 426000"
+[1] "gather_results: finished 427000"
+[1] "gather_results: finished 428000"
+[1] "gather_results: finished 429000"
+[1] "gather_results: finished 430000"
+[1] "gather_results: finished 431000"
+[1] "gather_results: finished 432000"
+[1] "gather_results: finished 433000"
+[1] "gather_results: finished 434000"
+[1] "gather_results: finished 435000"
+[1] "gather_results: finished 436000"
+[1] "gather_results: finished 437000"
+[1] "gather_results: finished 438000"
+[1] "gather_results: finished 439000"
+[1] "gather_results: finished 440000"
+[1] "gather_results: finished 441000"
+[1] "gather_results: finished 442000"
+[1] "gather_results: finished 443000"
+[1] "gather_results: finished 444000"
+[1] "gather_results: finished 445000"
+[1] "gather_results: finished 446000"
+[1] "gather_results: finished 447000"
+[1] "gather_results: finished 448000"
+[1] "gather_results: finished 449000"
+[1] "gather_results: finished 450000"
+[1] "gather_results: finished 451000"
+[1] "gather_results: finished 452000"
+[1] "gather_results: finished 453000"
+[1] "gather_results: finished 454000"
+[1] "gather_results: finished 455000"
+[1] "gather_results: finished 456000"
+[1] "gather_results: finished 457000"
+[1] "gather_results: finished 458000"
+[1] "gather_results: finished 459000"
+[1] "gather_results: finished 460000"
+[1] "gather_results: finished 461000"
+[1] "gather_results: finished 462000"
+[1] "gather_results: finished 463000"
+[1] "gather_results: finished 464000"
+[1] "gather_results: finished 465000"
+[1] "gather_results: finished 466000"
+[1] "gather_results: finished 467000"
+[1] "gather_results: finished 468000"
+[1] "gather_results: finished 469000"
+[1] "gather_results: finished 470000"
+[1] "gather_results: finished 471000"
+[1] "gather_results: finished 472000"
+[1] "gather_results: finished 473000"
+[1] "gather_results: finished 474000"
+[1] "gather_results: finished 475000"
+[1] "gather_results: finished 476000"
+[1] "gather_results: finished 477000"
+[1] "gather_results: finished 478000"
+[1] "gather_results: finished 479000"
+[1] "gather_results: finished 480000"
+[1] "gather_results: finished 481000"
+[1] "gather_results: finished 482000"
+[1] "gather_results: finished 483000"
+[1] "gather_results: finished 484000"
+[1] "gather_results: finished 485000"
+[1] "gather_results: finished 486000"
+[1] "gather_results: finished 487000"
+[1] "gather_results: finished 488000"
+[1] "gather_results: finished 489000"
+[1] "gather_results: finished 490000"
+[1] "gather_results: finished 491000"
+[1] "gather_results: finished 492000"
+[1] "gather_results: finished 493000"
+[1] "gather_results: finished 494000"
+[1] "gather_results: finished 495000"
+[1] "gather_results: finished 496000"
+[1] "gather_results: finished 497000"
+[1] "gather_results: finished 498000"
+[1] "gather_results: finished 499000"
+[1] "gather_results: finished 500000"
+[1] "gather_results: finished 501000"
+[1] "gather_results: finished 502000"
+[1] "gather_results: finished 503000"
+[1] "gather_results: finished 504000"
+[1] "gather_results: finished 505000"
+[1] "gather_results: finished 506000"
+[1] "gather_results: finished 507000"
+[1] "gather_results: finished 508000"
+[1] "gather_results: finished 509000"
+[1] "gather_results: finished 510000"
+[1] "gather_results: finished 511000"
+[1] "gather_results: finished 512000"
+[1] "gather_results: finished 513000"
+[1] "gather_results: finished 514000"
+[1] "gather_results: finished 515000"
+[1] "gather_results: finished 516000"
+[1] "gather_results: finished 517000"
+[1] "gather_results: finished 518000"
+[1] "gather_results: finished 519000"
+[1] "gather_results: finished 520000"
+[1] "gather_results: finished 521000"
+[1] "gather_results: finished 522000"
+[1] "gather_results: finished 523000"
+[1] "gather_results: finished 524000"
+[1] "gather_results: finished 525000"
+[1] "gather_results: finished 526000"
+[1] "gather_results: finished 527000"
+[1] "gather_results: finished 528000"
+[1] "gather_results: finished 529000"
+[1] "gather_results: finished 530000"
+[1] "gather_results: finished 531000"
+[1] "gather_results: finished 532000"
+[1] "gather_results: finished 533000"
+[1] "gather_results: finished 534000"
+[1] "gather_results: finished 535000"
+[1] "gather_results: finished 536000"
+[1] "gather_results: finished 537000"
+[1] "gather_results: finished 538000"
+[1] "gather_results: finished 539000"
+[1] "gather_results: finished 540000"
+[1] "gather_results: finished 541000"
+[1] "gather_results: finished 542000"
+[1] "gather_results: finished 543000"
+[1] "gather_results: finished 544000"
+[1] "gather_results: finished 545000"
+[1] "gather_results: finished 546000"
+[1] "gather_results: finished 547000"
+[1] "gather_results: finished 548000"
+[1] "gather_results: finished 549000"
+[1] "gather_results: finished 550000"
+[1] "gather_results: finished 551000"
+[1] "gather_results: finished 552000"
+[1] "gather_results: finished 553000"
+[1] "gather_results: finished 554000"
+[1] "gather_results: finished 555000"
+[1] "gather_results: finished 556000"
+[1] "gather_results: finished 557000"
+[1] "gather_results: finished 558000"
+[1] "gather_results: finished 559000"
+[1] "gather_results: finished 560000"
+[1] "gather_results: finished 561000"
+[1] "gather_results: finished 562000"
+[1] "gather_results: finished 563000"
+[1] "gather_results: finished 564000"
+[1] "gather_results: finished 565000"
+[1] "gather_results: finished 566000"
+[1] "gather_results: finished 567000"
+[1] "gather_results: finished 568000"
+[1] "gather_results: finished 569000"
+[1] "gather_results: finished 570000"
+[1] "gather_results: finished 571000"
+[1] "gather_results: finished 572000"
+[1] "gather_results: finished 573000"
+[1] "gather_results: finished 574000"
+[1] "gather_results: finished 575000"
+[1] "gather_results: finished 576000"
+[1] "gather_results: finished 577000"
+[1] "gather_results: finished 578000"
+[1] "gather_results: finished 579000"
+[1] "gather_results: finished 580000"
+[1] "gather_results: finished 581000"
+[1] "gather_results: finished 582000"
+[1] "gather_results: finished 583000"
+[1] "gather_results: finished 584000"
+[1] "gather_results: finished 585000"
+[1] "gather_results: finished 586000"
+[1] "gather_results: finished 587000"
+[1] "gather_results: finished 588000"
+[1] "gather_results: finished 589000"
+[1] "gather_results: finished 590000"
+[1] "gather_results: finished 591000"
+[1] "gather_results: finished 592000"
+[1] "gather_results: finished 593000"
+[1] "gather_results: finished 594000"
+[1] "gather_results: finished 595000"
+[1] "gather_results: finished 596000"
+[1] "gather_results: finished 597000"
+[1] "gather_results: finished 598000"
+[1] "gather_results: finished 599000"
+[1] "gather_results: finished 600000"
+[1] "gather_results: finished 601000"
+[1] "gather_results: finished 602000"
+[1] "gather_results: finished 603000"
+[1] "gather_results: finished 604000"
+[1] "gather_results: finished 605000"
+[1] "gather_results: finished 606000"
+[1] "gather_results: finished 607000"
+[1] "gather_results: finished 608000"
+[1] "gather_results: finished 609000"
+[1] "gather_results: finished 610000"
+[1] "gather_results: finished 611000"
+[1] "gather_results: finished 612000"
+[1] "gather_results: finished 613000"
+[1] "gather_results: finished 614000"
+[1] "gather_results: finished 615000"
+[1] "gather_results: finished 616000"
+[1] "gather_results: finished 617000"
+[1] "gather_results: finished 618000"
+[1] "gather_results: finished 619000"
+[1] "gather_results: finished 620000"
+[1] "gather_results: finished 621000"
+[1] "gather_results: finished 622000"
+[1] "gather_results: finished 623000"
+[1] "gather_results: finished 624000"
+[1] "gather_results: finished 625000"
+[1] "gather_results: finished 626000"
+[1] "gather_results: finished 627000"
+[1] "gather_results: finished 628000"
+[1] "gather_results: finished 629000"
+[1] "gather_results: finished 630000"
+[1] "gather_results: finished 631000"
+[1] "gather_results: finished 632000"
+[1] "gather_results: finished 633000"
+[1] "gather_results: finished 634000"
+[1] "gather_results: finished 635000"
+[1] "gather_results: finished 636000"
+[1] "gather_results: finished 637000"
+[1] "gather_results: finished 638000"
+[1] "gather_results: finished 639000"
+[1] "gather_results: finished 640000"
+[1] "gather_results: finished 641000"
+[1] "gather_results: finished 642000"
+[1] "gather_results: finished 643000"
+[1] "gather_results: finished 644000"
+[1] "gather_results: finished 645000"
+[1] "gather_results: finished 646000"
+[1] "gather_results: finished 647000"
+[1] "gather_results: finished 648000"
+[1] "gather_results: finished 649000"
+[1] "gather_results: finished 650000"
+[1] "gather_results: finished 651000"
+[1] "gather_results: finished 652000"
+[1] "gather_results: finished 653000"
+[1] "gather_results: finished 654000"
+[1] "gather_results: finished 655000"
+[1] "gather_results: finished 656000"
+[1] "gather_results: finished 657000"

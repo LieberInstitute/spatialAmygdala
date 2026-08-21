@@ -97,6 +97,69 @@ dev.off()
 
 
 
+
+
+
+
+
+
+library(scattermore)
+library(patchwork)
+library(here)
+
+cd <- as.data.frame(colData(spe))
+
+make_violin <- function(df, y_col, thresh = NULL, log_y = FALSE, title = NULL) {
+  p <- ggplot(df, aes(x = brnum, y = .data[[y_col]], colour = brnum, fill = brnum)) +
+    geom_violin(alpha = 0.3, scale = "width") +
+    geom_scattermore(
+      position = position_jitter(width = 0.4, height = 0),
+      pointsize = 0.5,
+      pixels = c(1024, 1024)
+    ) +
+    labs(x = "brnum", y = y_col, colour = "brnum", fill = "brnum", title = title) +
+    theme_bw(base_size = 12) +
+    theme(
+      axis.text.x = element_text(angle = 90, hjust = 1),
+      panel.grid.major = element_blank(),
+      panel.grid.minor = element_blank()
+    )
+
+  # red dashed cutoff line
+  if (!is.null(thresh)) {
+    p <- p + geom_hline(yintercept = thresh, linetype = "dashed", colour = "red")
+  }
+  if (log_y) p <- p + scale_y_log10()
+  p
+}
+
+p1 <- make_violin(cd, "sum",       thresh = 10,  log_y = TRUE,  title = "Counts per cell")
+p2 <- make_violin(cd, "detected",  thresh = 10,  log_y = TRUE,  title = "Detected genes per cell")
+p3 <- make_violin(cd, "QC_score",  thresh = 0.5, log_y = FALSE, title = "QC score")
+p4 <- make_violin(cd, "Area_um",   thresh = NULL, log_y = TRUE, title = "Cell area (um^2)")
+
+png(here(plot_dir, "violins_xenium_qc_metrics.png"), width = 12, height = 3.5, units = "in", res = 300)
+(p1 + p2 + p3 + p4) + plot_layout(ncol = 4, guides = "collect")
+dev.off()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # ====== Normalization =======
 
 # make cell and nucleus area scaling factors

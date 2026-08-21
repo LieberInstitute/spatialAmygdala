@@ -1,0 +1,201 @@
+**** Job starts ****
+Mon Apr  6 01:28:54 PM EDT 2026
+**** JHPCE info ****
+User: mtotty
+Job id: 
+Job name: 
+Hostname: compute-160
+Unloading conda_R/4.4
+Loading conda_R/4.4
+
+Currently Loaded Modules:
+  1) JHPCE_ROCKY9_DEFAULT_ENV   3) git-status-size/github   5) conda_R/4.4
+  2) JHPCE_tools/3.0            4) conda/3-24.3.0
+
+ 
+
+Loading required package: SingleCellExperiment
+Loading required package: SummarizedExperiment
+Loading required package: MatrixGenerics
+Loading required package: matrixStats
+
+Attaching package: ‘MatrixGenerics’
+
+The following objects are masked from ‘package:matrixStats’:
+
+    colAlls, colAnyNAs, colAnys, colAvgsPerRowSet, colCollapse,
+    colCounts, colCummaxs, colCummins, colCumprods, colCumsums,
+    colDiffs, colIQRDiffs, colIQRs, colLogSumExps, colMadDiffs,
+    colMads, colMaxs, colMeans2, colMedians, colMins, colOrderStats,
+    colProds, colQuantiles, colRanges, colRanks, colSdDiffs, colSds,
+    colSums2, colTabulates, colVarDiffs, colVars, colWeightedMads,
+    colWeightedMeans, colWeightedMedians, colWeightedSds,
+    colWeightedVars, rowAlls, rowAnyNAs, rowAnys, rowAvgsPerColSet,
+    rowCollapse, rowCounts, rowCummaxs, rowCummins, rowCumprods,
+    rowCumsums, rowDiffs, rowIQRDiffs, rowIQRs, rowLogSumExps,
+    rowMadDiffs, rowMads, rowMaxs, rowMeans2, rowMedians, rowMins,
+    rowOrderStats, rowProds, rowQuantiles, rowRanges, rowRanks,
+    rowSdDiffs, rowSds, rowSums2, rowTabulates, rowVarDiffs, rowVars,
+    rowWeightedMads, rowWeightedMeans, rowWeightedMedians,
+    rowWeightedSds, rowWeightedVars
+
+Loading required package: GenomicRanges
+Loading required package: stats4
+Loading required package: BiocGenerics
+
+Attaching package: ‘BiocGenerics’
+
+The following objects are masked from ‘package:stats’:
+
+    IQR, mad, sd, var, xtabs
+
+The following objects are masked from ‘package:base’:
+
+    anyDuplicated, aperm, append, as.data.frame, basename, cbind,
+    colnames, dirname, do.call, duplicated, eval, evalq, Filter, Find,
+    get, grep, grepl, intersect, is.unsorted, lapply, Map, mapply,
+    match, mget, order, paste, pmax, pmax.int, pmin, pmin.int,
+    Position, rank, rbind, Reduce, rownames, sapply, saveRDS, setdiff,
+    table, tapply, union, unique, unsplit, which.max, which.min
+
+Loading required package: S4Vectors
+
+Attaching package: ‘S4Vectors’
+
+The following object is masked from ‘package:utils’:
+
+    findMatches
+
+The following objects are masked from ‘package:base’:
+
+    expand.grid, I, unname
+
+Loading required package: IRanges
+Loading required package: GenomeInfoDb
+Loading required package: Biobase
+Welcome to Bioconductor
+
+    Vignettes contain introductory material; view with
+    'browseVignettes()'. To cite Bioconductor, see
+    'citation("Biobase")', and for packages 'citation("pkgname")'.
+
+
+Attaching package: ‘Biobase’
+
+The following object is masked from ‘package:MatrixGenerics’:
+
+    rowMedians
+
+The following objects are masked from ‘package:matrixStats’:
+
+    anyMissing, rowMedians
+
+Warning message:
+replacing previous import ‘S4Arrays::read_block’ by ‘DelayedArray::read_block’ when loading ‘SummarizedExperiment’ 
+Loading required package: ggplot2
+here() starts at /dcs04/lieber/marmaypag/spatialAMY_LIBD4125/spatialAmygdala
+
+Attaching package: ‘dplyr’
+
+The following object is masked from ‘package:Biobase’:
+
+    combine
+
+The following objects are masked from ‘package:GenomicRanges’:
+
+    intersect, setdiff, union
+
+The following object is masked from ‘package:GenomeInfoDb’:
+
+    intersect
+
+The following objects are masked from ‘package:IRanges’:
+
+    collapse, desc, intersect, setdiff, slice, union
+
+The following objects are masked from ‘package:S4Vectors’:
+
+    first, intersect, rename, setdiff, setequal, union
+
+The following objects are masked from ‘package:BiocGenerics’:
+
+    combine, intersect, setdiff, union
+
+The following object is masked from ‘package:matrixStats’:
+
+    count
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+class: SpatialExperiment 
+dim: 366 946896 
+metadata(9): polygons technology ... technology BANKSY_params
+assays(4): counts nucleus_normcounts cell_normcounts H0
+rownames(366): ABCC9 ADAMTS12 ... ZIC2 ZNF536
+rowData names(3): ID Symbol Type
+colnames(946896): aaaaeomf-1 aaaajkhp-1 ... oimbboka-1 oimbcgpk-1
+colData names(32): cell_id transcript_counts ...
+  clust_HARMONY_M0_lam0.8_k50_res2 Banksy_res2.0_collapsed_v6
+reducedDimNames(4): PCA HARMONY UMAP HARMONY_M0_lam0.8
+mainExpName: NULL
+altExpNames(0):
+spatialCoords names(2) : x_centroid y_centroid
+imgData names(1): sample_id
+class: SingleCellExperiment 
+dim: 31908 91699 
+metadata(0):
+assays(2): counts logcounts
+rownames(31908): MIR1302-2HG FAM138A ... AC240274.1 AC213203.1
+rowData names(7): source type ... gene_type Symbol.uniq
+colnames(91699): AAACCCAAGTCGCCAC-1 AAACCCAGTCGAGATG-1 ...
+  TTTGTTGTCACTTCTA-14 TTTGTTGTCCAAATGC-14
+colData names(14): barcode library_id ... orig_anno ident
+reducedDimNames(2): PCA UMAP
+mainExpName: RNA
+altExpNames(0):
+[1]    366 946896
+[1]   366 91699
+
+      Astrocyte     Endothelial             ExN             InN       Microglia 
+          95383          286981           67770           32317           37368 
+Oligodendrocyte             OPC 
+         381313           45764 
+
+ Human_Astro_1 FGFR3  Human_Astro_2 FGFR3  Human_Astro_3 FGFR3 
+               22834                75201                 4437 
+ Human_Astro_4 FGFR3     Human_CALCR LHX8      Human_DRD2 ISL1 
+                3781                  576                 1559 
+     Human_DRD2 PAX6   Human_Endo NOSTRIN   Human_HGF C11orf87 
+                4372               196603                24221 
+      Human_HGF ESR1      Human_HGF NPSR1     Human_HTR3A DRD2 
+               16691                  765                 1564 
+     Human_LAMP5 ABO     Human_LAMP5 BDNF  Human_LAMP5 COL14A1 
+                4694                30826                 2378 
+ Human_LAMP5 COL25A1     Human_LAMP5 NDNF     Human_Micro CTSS 
+                2162                 7304                33831 
+Human_Oligo_1 OPALIN Human_Oligo_2 OPALIN Human_Oligo_3 OPALIN 
+                4740                64324                86167 
+Human_Oligo_4 OPALIN Human_Oligo_5 OPALIN Human_Oligo_6 OPALIN 
+               43877               205902                 2152 
+  Human_OPC_1 PDGFRA   Human_OPC_2 PDGFRA   Human_OPC_3 PDGFRA 
+                5003                  844                32089 
+  Human_OPC_4 PDGFRA          Human_PRKCD  Human_PVALB ADAMTS5 
+               11198                 2706                 2575 
+   Human_RXFP2 RSPO2   Human_SATB2 CALCRL     Human_SATB2 IL15 
+                1793                 3043                 3924 
+ Human_SATB2 ST8SIA2     Human_SOX11 EBF2       Human_SST EPYC 
+                2463                  474                 6221 
+       Human_SST HGF         Human_STRIP2         Human_TFAP2C 
+                3976                 2601                 1299 
+  Human_TSHZ1 CALCRL   Human_TSHZ1 SEMA3C    Human_VGLL3 CNGB1 
+                6737                 7145                 1456 
+    Human_VGLL3 MEPE     Human_VIP ABI3BP       Human_VIP NDNF 
+                  81                 6443                 3864 
+**** Job ends ****
+Mon Apr  6 03:33:16 PM EDT 2026

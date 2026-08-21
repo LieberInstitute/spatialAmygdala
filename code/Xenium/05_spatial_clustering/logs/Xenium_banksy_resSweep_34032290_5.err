@@ -1,0 +1,59 @@
+Loading conda_R/4.4
+
+Currently Loaded Modules:
+  1) JHPCE_ROCKY9_DEFAULT_ENV   3) conda/3-24.3.0
+  2) JHPCE_tools/3.0            4) conda_R/4.4
+
+ 
+
+Warning message:
+replacing previous import ‘S4Arrays::read_block’ by ‘DelayedArray::read_block’ when loading ‘SummarizedExperiment’ 
+Computing neighbors...
+Spatial mode is kNN_median
+Parameters: k_geom=25
+Done
+Computing neighbors...
+Spatial mode is kNN_median
+Parameters: k_geom=50
+Done
+Computing harmonic m = 0
+Using 25 neighbors
+Done
+Computing harmonic m = 1
+Using 50 neighbors
+Centering
+Done
+Warning message:
+In asMethod(object) :
+  sparse->dense coercion: allocating vector of size 2.6 GiB
+Warning message:
+In asMethod(object) :
+  sparse->dense coercion: allocating vector of size 2.6 GiB
+Transposing data matrix
+Initializing state using k-means centroids initialization
+Harmony 1/10
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Harmony 2/10
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+0%   10   20   30   40   50   60   70   80   90   100%
+[----|----|----|----|----|----|----|----|----|----|
+**************************************************|
+Harmony converged after 2 iterations
+Warning messages:
+1: Quick-TRANSfer stage steps exceeded maximum (= 47344800) 
+2: Quick-TRANSfer stage steps exceeded maximum (= 47344800) 
+3: Quick-TRANSfer stage steps exceeded maximum (= 47344800) 
+4: Quick-TRANSfer stage steps exceeded maximum (= 47344800) 
+5: Quick-TRANSfer stage steps exceeded maximum (= 47344800) 
+6: Quick-TRANSfer stage steps exceeded maximum (= 47344800) 
+7: Quick-TRANSfer stage steps exceeded maximum (= 47344800) 
+8: Quick-TRANSfer stage steps exceeded maximum (= 47344800) 
+9: Quick-TRANSfer stage steps exceeded maximum (= 47344800) 
+10: Quick-TRANSfer stage steps exceeded maximum (= 47344800) 

@@ -18,20 +18,6 @@ The following objects are masked from ‘package:base’:
 
     intersect, setdiff, setequal, union
 
-
-Attaching package: ‘SpatialFeatureExperiment’
-
-The following object is masked from ‘package:ggplot2’:
-
-    unit
-
-The following object is masked from ‘package:base’:
-
-    scale
-
-Warning messages:
-1: replacing previous import ‘S4Arrays::read_block’ by ‘DelayedArray::read_block’ when loading ‘SummarizedExperiment’ 
-2: replacing previous import ‘S4Arrays::read_block’ by ‘DelayedArray::read_block’ when loading ‘HDF5Array’ 
 Loading required package: SingleCellExperiment
 Loading required package: SummarizedExperiment
 Loading required package: MatrixGenerics
@@ -69,10 +55,6 @@ Loading required package: stats4
 Loading required package: BiocGenerics
 
 Attaching package: ‘BiocGenerics’
-
-The following object is masked from ‘package:SpatialFeatureExperiment’:
-
-    saveRDS
 
 The following objects are masked from ‘package:dplyr’:
 
@@ -134,116 +116,125 @@ The following objects are masked from ‘package:matrixStats’:
 
     anyMissing, rowMedians
 
-Loading required package: scuttle
-Registered S3 method overwritten by 'ggside':
-  method from   
-  +.gg   ggplot2
-Loading required package: Rcpp
+Warning message:
+replacing previous import ‘S4Arrays::read_block’ by ‘DelayedArray::read_block’ when loading ‘SummarizedExperiment’ 
+Processing sample: Br9280 (task 4 of 4)
+Cells in this sample: 186632
+Building Reference from scratch
+Yu ITC cells in ITC SCE: 3803
+Matched 3803 Yu ITC cells to SCE barcodes
+Original idents being replaced:
+Updated idents:
+Dropping cell types with < 25 cells: OPC_1 PDGFRA
+Reference cached to /dcs04/lieber/marmaypag/spatialAMY_LIBD4125/spatialAmygdala/processed-data/Xenium/06_label_transfer/rctd_reference_yu_itcmn.rds
+Running RCTD with 30 cores on 186632 spots
 Begin: process_cell_type_info
 process_cell_type_info: number of cells in reference: 91688
 process_cell_type_info: number of genes in reference: 31908
 End: process_cell_type_info
 create.RCTD: getting regression differentially expressed genes: 
-get_de_genes: Human_Oligo_5 OPALIN found DE genes: 18
-get_de_genes: Human_Oligo_6 OPALIN found DE genes: 17
-get_de_genes: Human_Astro_2 FGFR3 found DE genes: 18
-get_de_genes: Human_LAMP5 COL25A1 found DE genes: 8
-get_de_genes: Human_Oligo_4 OPALIN found DE genes: 18
-get_de_genes: Human_LAMP5 BDNF found DE genes: 6
-get_de_genes: Human_OPC_3 PDGFRA found DE genes: 21
-get_de_genes: Human_LAMP5 NDNF found DE genes: 27
-get_de_genes: Human_VGLL3 MEPE found DE genes: 4
-get_de_genes: Human_HGF NPSR1 found DE genes: 17
-get_de_genes: Human_TSHZ1 CALCRL found DE genes: 25
-get_de_genes: Human_HGF C11orf87 found DE genes: 16
-get_de_genes: Human_VGLL3 CNGB1 found DE genes: 6
-get_de_genes: Human_Oligo_1 OPALIN found DE genes: 19
-get_de_genes: Human_RXFP2 RSPO2 found DE genes: 6
-get_de_genes: Human_LAMP5 ABO found DE genes: 9
-get_de_genes: Human_SST HGF found DE genes: 15
-get_de_genes: Human_CALCR LHX8 found DE genes: 5
-get_de_genes: Human_VIP ABI3BP found DE genes: 19
-get_de_genes: Human_Oligo_3 OPALIN found DE genes: 18
-get_de_genes: Human_DRD2 PAX6 found DE genes: 21
-get_de_genes: Human_Astro_3 FGFR3 found DE genes: 17
-get_de_genes: Human_SATB2 IL15 found DE genes: 6
-get_de_genes: Human_DRD2 ISL1 found DE genes: 18
-get_de_genes: Human_SOX11 EBF2 found DE genes: 2
-get_de_genes: Human_SATB2 ST8SIA2 found DE genes: 16
-get_de_genes: Human_Micro CTSS found DE genes: 15
-get_de_genes: Human_Astro_1 FGFR3 found DE genes: 24
-get_de_genes: Human_HGF ESR1 found DE genes: 12
-get_de_genes: Human_Endo NOSTRIN found DE genes: 12
-get_de_genes: Human_LAMP5 COL14A1 found DE genes: 24
-get_de_genes: Human_VIP NDNF found DE genes: 12
-get_de_genes: Human_SATB2 CALCRL found DE genes: 6
-get_de_genes: Human_TSHZ1 SEMA3C found DE genes: 24
-get_de_genes: Human_PVALB ADAMTS5 found DE genes: 28
-get_de_genes: Human_Astro_4 FGFR3 found DE genes: 16
-get_de_genes: Human_PRKCD found DE genes: 11
-get_de_genes: Human_OPC_4 PDGFRA found DE genes: 12
-get_de_genes: Human_HTR3A DRD2 found DE genes: 14
-get_de_genes: Human_STRIP2 found DE genes: 18
-get_de_genes: Human_Oligo_2 OPALIN found DE genes: 15
-get_de_genes: Human_OPC_2 PDGFRA found DE genes: 17
-get_de_genes: Human_SST EPYC found DE genes: 21
-get_de_genes: Human_TFAP2C found DE genes: 22
-get_de_genes: total DE genes: 162
+get_de_genes: Astro_1 FGFR3 found DE genes: 24
+get_de_genes: Astro_2 FGFR3 found DE genes: 18
+get_de_genes: Astro_3 FGFR3 found DE genes: 17
+get_de_genes: Astro_4 FGFR3 found DE genes: 16
+get_de_genes: CALCR LHX8 found DE genes: 5
+get_de_genes: DRD2 ISL1 found DE genes: 18
+get_de_genes: DRD2 PAX6 found DE genes: 21
+get_de_genes: Endo NOSTRIN found DE genes: 13
+get_de_genes: HGF C11orf87 found DE genes: 16
+get_de_genes: HGF ESR1 found DE genes: 12
+get_de_genes: HGF NPSR1 found DE genes: 17
+get_de_genes: HTR3A DRD2 found DE genes: 14
+get_de_genes: ITC_1 found DE genes: 22
+get_de_genes: ITC_2 found DE genes: 23
+get_de_genes: ITC_3 found DE genes: 21
+get_de_genes: LAMP5 ABO found DE genes: 9
+get_de_genes: LAMP5 BDNF found DE genes: 5
+get_de_genes: LAMP5 COL14A1 found DE genes: 24
+get_de_genes: LAMP5 COL25A1 found DE genes: 8
+get_de_genes: LAMP5 NDNF found DE genes: 27
+get_de_genes: Micro CTSS found DE genes: 15
+get_de_genes: Oligo_1 OPALIN found DE genes: 19
+get_de_genes: Oligo_2 OPALIN found DE genes: 15
+get_de_genes: Oligo_3 OPALIN found DE genes: 18
+get_de_genes: Oligo_4 OPALIN found DE genes: 19
+get_de_genes: Oligo_5 OPALIN found DE genes: 18
+get_de_genes: Oligo_6 OPALIN found DE genes: 17
+get_de_genes: OPC_2 PDGFRA found DE genes: 16
+get_de_genes: OPC_3 PDGFRA found DE genes: 21
+get_de_genes: OPC_4 PDGFRA found DE genes: 12
+get_de_genes: PRKCD found DE genes: 10
+get_de_genes: PVALB ADAMTS5 found DE genes: 28
+get_de_genes: RXFP2 RSPO2 found DE genes: 6
+get_de_genes: SATB2 CALCRL found DE genes: 6
+get_de_genes: SATB2 IL15 found DE genes: 6
+get_de_genes: SATB2 ST8SIA2 found DE genes: 16
+get_de_genes: SOX11 EBF2 found DE genes: 2
+get_de_genes: SST EPYC found DE genes: 21
+get_de_genes: SST HGF found DE genes: 15
+get_de_genes: STRIP2 found DE genes: 17
+get_de_genes: TFAP2C found DE genes: 21
+get_de_genes: VGLL3 CNGB1 found DE genes: 6
+get_de_genes: VGLL3 MEPE found DE genes: 4
+get_de_genes: VIP ABI3BP found DE genes: 19
+get_de_genes: VIP NDNF found DE genes: 12
+get_de_genes: total DE genes: 163
 create.RCTD: getting platform effect normalization differentially expressed genes: 
-get_de_genes: Human_Oligo_5 OPALIN found DE genes: 22
-get_de_genes: Human_Oligo_6 OPALIN found DE genes: 22
-get_de_genes: Human_Astro_2 FGFR3 found DE genes: 33
-get_de_genes: Human_LAMP5 COL25A1 found DE genes: 21
-get_de_genes: Human_Oligo_4 OPALIN found DE genes: 24
-get_de_genes: Human_LAMP5 BDNF found DE genes: 16
-get_de_genes: Human_OPC_3 PDGFRA found DE genes: 37
-get_de_genes: Human_LAMP5 NDNF found DE genes: 42
-get_de_genes: Human_VGLL3 MEPE found DE genes: 14
-get_de_genes: Human_HGF NPSR1 found DE genes: 30
-get_de_genes: Human_TSHZ1 CALCRL found DE genes: 35
-get_de_genes: Human_HGF C11orf87 found DE genes: 28
-get_de_genes: Human_VGLL3 CNGB1 found DE genes: 13
-get_de_genes: Human_Oligo_1 OPALIN found DE genes: 28
-get_de_genes: Human_RXFP2 RSPO2 found DE genes: 15
-get_de_genes: Human_LAMP5 ABO found DE genes: 15
-get_de_genes: Human_SST HGF found DE genes: 31
-get_de_genes: Human_CALCR LHX8 found DE genes: 18
-get_de_genes: Human_VIP ABI3BP found DE genes: 33
-get_de_genes: Human_Oligo_3 OPALIN found DE genes: 24
-get_de_genes: Human_DRD2 PAX6 found DE genes: 32
-get_de_genes: Human_Astro_3 FGFR3 found DE genes: 34
-get_de_genes: Human_SATB2 IL15 found DE genes: 19
-get_de_genes: Human_DRD2 ISL1 found DE genes: 35
-get_de_genes: Human_SOX11 EBF2 found DE genes: 15
-get_de_genes: Human_SATB2 ST8SIA2 found DE genes: 27
-get_de_genes: Human_Micro CTSS found DE genes: 22
-get_de_genes: Human_Astro_1 FGFR3 found DE genes: 31
-get_de_genes: Human_HGF ESR1 found DE genes: 27
-get_de_genes: Human_Endo NOSTRIN found DE genes: 26
-get_de_genes: Human_LAMP5 COL14A1 found DE genes: 40
-get_de_genes: Human_VIP NDNF found DE genes: 27
-get_de_genes: Human_SATB2 CALCRL found DE genes: 19
-get_de_genes: Human_TSHZ1 SEMA3C found DE genes: 35
-get_de_genes: Human_PVALB ADAMTS5 found DE genes: 39
-get_de_genes: Human_Astro_4 FGFR3 found DE genes: 38
-get_de_genes: Human_PRKCD found DE genes: 18
-get_de_genes: Human_OPC_4 PDGFRA found DE genes: 29
-get_de_genes: Human_HTR3A DRD2 found DE genes: 29
-get_de_genes: Human_STRIP2 found DE genes: 29
-get_de_genes: Human_Oligo_2 OPALIN found DE genes: 25
-get_de_genes: Human_OPC_2 PDGFRA found DE genes: 32
-get_de_genes: Human_SST EPYC found DE genes: 37
-get_de_genes: Human_TFAP2C found DE genes: 37
+get_de_genes: Astro_1 FGFR3 found DE genes: 31
+get_de_genes: Astro_2 FGFR3 found DE genes: 33
+get_de_genes: Astro_3 FGFR3 found DE genes: 34
+get_de_genes: Astro_4 FGFR3 found DE genes: 37
+get_de_genes: CALCR LHX8 found DE genes: 18
+get_de_genes: DRD2 ISL1 found DE genes: 35
+get_de_genes: DRD2 PAX6 found DE genes: 32
+get_de_genes: Endo NOSTRIN found DE genes: 26
+get_de_genes: HGF C11orf87 found DE genes: 28
+get_de_genes: HGF ESR1 found DE genes: 27
+get_de_genes: HGF NPSR1 found DE genes: 30
+get_de_genes: HTR3A DRD2 found DE genes: 28
+get_de_genes: ITC_1 found DE genes: 30
+get_de_genes: ITC_2 found DE genes: 32
+get_de_genes: ITC_3 found DE genes: 32
+get_de_genes: LAMP5 ABO found DE genes: 15
+get_de_genes: LAMP5 BDNF found DE genes: 16
+get_de_genes: LAMP5 COL14A1 found DE genes: 40
+get_de_genes: LAMP5 COL25A1 found DE genes: 21
+get_de_genes: LAMP5 NDNF found DE genes: 42
+get_de_genes: Micro CTSS found DE genes: 22
+get_de_genes: Oligo_1 OPALIN found DE genes: 28
+get_de_genes: Oligo_2 OPALIN found DE genes: 25
+get_de_genes: Oligo_3 OPALIN found DE genes: 24
+get_de_genes: Oligo_4 OPALIN found DE genes: 24
+get_de_genes: Oligo_5 OPALIN found DE genes: 22
+get_de_genes: Oligo_6 OPALIN found DE genes: 22
+get_de_genes: OPC_2 PDGFRA found DE genes: 31
+get_de_genes: OPC_3 PDGFRA found DE genes: 37
+get_de_genes: OPC_4 PDGFRA found DE genes: 29
+get_de_genes: PRKCD found DE genes: 17
+get_de_genes: PVALB ADAMTS5 found DE genes: 39
+get_de_genes: RXFP2 RSPO2 found DE genes: 15
+get_de_genes: SATB2 CALCRL found DE genes: 18
+get_de_genes: SATB2 IL15 found DE genes: 19
+get_de_genes: SATB2 ST8SIA2 found DE genes: 28
+get_de_genes: SOX11 EBF2 found DE genes: 16
+get_de_genes: SST EPYC found DE genes: 37
+get_de_genes: SST HGF found DE genes: 31
+get_de_genes: STRIP2 found DE genes: 29
+get_de_genes: TFAP2C found DE genes: 36
+get_de_genes: VGLL3 CNGB1 found DE genes: 12
+get_de_genes: VGLL3 MEPE found DE genes: 14
+get_de_genes: VIP ABI3BP found DE genes: 33
+get_de_genes: VIP NDNF found DE genes: 28
 get_de_genes: total DE genes: 220
 Warning messages:
 1: In asMethod(object) :
-  sparse->dense coercion: allocating vector of size 1.6 GiB
-2: In asMethod(object) :
-  sparse->dense coercion: allocating vector of size 1.5 GiB
-3: In asMethod(object) :
   sparse->dense coercion: allocating vector of size 1.4 GiB
-4: In asMethod(object) :
+2: In asMethod(object) :
   sparse->dense coercion: allocating vector of size 1.0 GiB
+3: In asMethod(object) :
+  sparse->dense coercion: allocating vector of size 1.6 GiB
+4: In asMethod(object) :
+  sparse->dense coercion: allocating vector of size 1.5 GiB
 fitBulk: decomposing bulk
 chooseSigma: using initial Q_mat with sigma =  1
 Loading required package: spacexr
@@ -277,16 +268,6 @@ loaded spacexr and set parent environment
 Loading required package: spacexr
 loaded spacexr and set parent environment
 Loading required package: spacexr
-Loading required package: spacexr
-Loading required package: spacexr
-Loading required package: spacexr
-Loading required package: spacexr
-Loading required package: spacexr
-loaded spacexr and set parent environment
-loaded spacexr and set parent environment
-loaded spacexr and set parent environment
-loaded spacexr and set parent environment
-loaded spacexr and set parent environment
 loaded spacexr and set parent environment
 Loading required package: spacexr
 loaded spacexr and set parent environment
@@ -316,57 +297,7 @@ Loading required package: spacexr
 loaded spacexr and set parent environment
 Loading required package: spacexr
 loaded spacexr and set parent environment
-Loading required package: spacexr
-loaded spacexr and set parent environment
-Loading required package: spacexr
-loaded spacexr and set parent environment
-Loading required package: spacexr
-loaded spacexr and set parent environment
-Loading required package: spacexr
-loaded spacexr and set parent environment
-Loading required package: spacexr
-Loading required package: spacexr
-loaded spacexr and set parent environment
-loaded spacexr and set parent environment
-Loading required package: spacexr
-loaded spacexr and set parent environment
-Loading required package: spacexr
-loaded spacexr and set parent environment
-Loading required package: spacexr
-loaded spacexr and set parent environment
-Loading required package: spacexr
-loaded spacexr and set parent environment
-Loading required package: spacexr
-loaded spacexr and set parent environment
-Loading required package: spacexr
-loaded spacexr and set parent environment
-Loading required package: spacexr
-loaded spacexr and set parent environment
-Loading required package: spacexr
-loaded spacexr and set parent environment
-Loading required package: spacexr
-loaded spacexr and set parent environment
-Loading required package: spacexr
-loaded spacexr and set parent environment
-Loading required package: spacexr
-loaded spacexr and set parent environment
-Loading required package: spacexr
-loaded spacexr and set parent environment
-Loading required package: spacexr
-loaded spacexr and set parent environment
-Loading required package: spacexr
-loaded spacexr and set parent environment
-Loading required package: spacexr
-loaded spacexr and set parent environment
-Loading required package: spacexr
-loaded spacexr and set parent environment
-Loading required package: spacexr
-loaded spacexr and set parent environment
-Loading required package: spacexr
-loaded spacexr and set parent environment
-Loading required package: spacexr
-loaded spacexr and set parent environment
-Likelihood value: 151104.213594693
+Likelihood value: 151851.835339606
 Sigma value:  0.84
 Loading required package: spacexr
 loaded spacexr and set parent environment
@@ -387,109 +318,7 @@ loaded spacexr and set parent environment
 Loading required package: spacexr
 loaded spacexr and set parent environment
 Loading required package: spacexr
-Loading required package: spacexr
-Loading required package: spacexr
-Loading required package: spacexr
-Loading required package: spacexr
-Loading required package: spacexr
-Loading required package: spacexr
-Loading required package: spacexr
-Loading required package: spacexr
-Loading required package: spacexr
-Loading required package: spacexr
-Loading required package: spacexr
-Loading required package: spacexr
-Loading required package: spacexr
-Loading required package: spacexr
-Loading required package: spacexr
-Loading required package: spacexr
-Loading required package: spacexr
-Loading required package: spacexr
-Loading required package: spacexr
-Loading required package: spacexr
-Loading required package: spacexr
-Loading required package: spacexr
-Loading required package: spacexr
-Loading required package: spacexr
-Loading required package: spacexr
-Loading required package: spacexr
-Loading required package: spacexr
-Loading required package: spacexr
-Loading required package: spacexr
-Loading required package: spacexr
-Loading required package: spacexr
-Loading required package: spacexr
-Loading required package: spacexr
-Loading required package: spacexr
-Loading required package: spacexr
-Loading required package: spacexr
-Loading required package: spacexr
-Loading required package: spacexr
-Loading required package: spacexr
-Loading required package: spacexr
-Loading required package: spacexr
-Loading required package: spacexr
-Loading required package: spacexr
-Loading required package: spacexr
-Loading required package: spacexr
-Loading required package: spacexr
-Loading required package: spacexr
-Loading required package: spacexr
-Loading required package: spacexr
-Loading required package: spacexr
-loaded spacexr and set parent environment
-loaded spacexr and set parent environment
-loaded spacexr and set parent environment
-loaded spacexr and set parent environment
-loaded spacexr and set parent environment
-loaded spacexr and set parent environment
-loaded spacexr and set parent environment
-loaded spacexr and set parent environment
-loaded spacexr and set parent environment
-loaded spacexr and set parent environment
-loaded spacexr and set parent environment
-loaded spacexr and set parent environment
-loaded spacexr and set parent environment
-loaded spacexr and set parent environment
-loaded spacexr and set parent environment
-loaded spacexr and set parent environment
-loaded spacexr and set parent environment
-loaded spacexr and set parent environment
-loaded spacexr and set parent environment
-loaded spacexr and set parent environment
-loaded spacexr and set parent environment
-loaded spacexr and set parent environment
-loaded spacexr and set parent environment
-loaded spacexr and set parent environment
-loaded spacexr and set parent environment
-loaded spacexr and set parent environment
-loaded spacexr and set parent environment
-loaded spacexr and set parent environment
-loaded spacexr and set parent environment
-loaded spacexr and set parent environment
 loaded spacexr and set parent environment
-loaded spacexr and set parent environment
-loaded spacexr and set parent environment
-loaded spacexr and set parent environment
-loaded spacexr and set parent environment
-loaded spacexr and set parent environment
-loaded spacexr and set parent environment
-loaded spacexr and set parent environment
-loaded spacexr and set parent environment
-loaded spacexr and set parent environment
-loaded spacexr and set parent environment
-loaded spacexr and set parent environment
-loaded spacexr and set parent environment
-loaded spacexr and set parent environment
-loaded spacexr and set parent environment
-loaded spacexr and set parent environment
-loaded spacexr and set parent environment
-loaded spacexr and set parent environment
-loaded spacexr and set parent environment
-loaded spacexr and set parent environment
-loaded spacexr and set parent environment
-Likelihood value: 149910.482365273
-Sigma value:  0.72
 Loading required package: spacexr
 loaded spacexr and set parent environment
 Loading required package: spacexr
@@ -530,6 +359,8 @@ Loading required package: spacexr
 loaded spacexr and set parent environment
 Loading required package: spacexr
 loaded spacexr and set parent environment
+Likelihood value: 150214.422051982
+Sigma value:  0.69
 Loading required package: spacexr
 loaded spacexr and set parent environment
 Loading required package: spacexr
@@ -590,44 +421,20 @@ Loading required package: spacexr
 loaded spacexr and set parent environment
 Loading required package: spacexr
 loaded spacexr and set parent environment
+Likelihood value: 149464.804592591
+Sigma value:  0.67
 Loading required package: spacexr
-Loading required package: spacexr
-Loading required package: spacexr
-Loading required package: spacexr
-Loading required package: spacexr
-Loading required package: spacexr
-Loading required package: spacexr
-Loading required package: spacexr
-Loading required package: spacexr
-Loading required package: spacexr
-loaded spacexr and set parent environment
 loaded spacexr and set parent environment
-loaded spacexr and set parent environment
-loaded spacexr and set parent environment
-loaded spacexr and set parent environment
-loaded spacexr and set parent environment
-loaded spacexr and set parent environment
-loaded spacexr and set parent environment
-loaded spacexr and set parent environment
-loaded spacexr and set parent environment
-Likelihood value: 149633.107102586
-Sigma value:  0.72
 Loading required package: spacexr
 loaded spacexr and set parent environment
 Loading required package: spacexr
 loaded spacexr and set parent environment
 Loading required package: spacexr
 loaded spacexr and set parent environment
-Loading required package: spacexr
-Loading required package: spacexr
 Loading required package: spacexr
 loaded spacexr and set parent environment
-loaded spacexr and set parent environment
-loaded spacexr and set parent environment
 Loading required package: spacexr
-Loading required package: spacexr
 loaded spacexr and set parent environment
-loaded spacexr and set parent environment
 Loading required package: spacexr
 loaded spacexr and set parent environment
 Loading required package: spacexr
@@ -664,18 +471,8 @@ Loading required package: spacexr
 loaded spacexr and set parent environment
 Loading required package: spacexr
 loaded spacexr and set parent environment
-Loading required package: spacexr
 Loading required package: spacexr
-Loading required package: spacexr
-Loading required package: spacexr
-Loading required package: spacexr
-Loading required package: spacexr
-loaded spacexr and set parent environment
 loaded spacexr and set parent environment
-loaded spacexr and set parent environment
-loaded spacexr and set parent environment
-loaded spacexr and set parent environment
-loaded spacexr and set parent environment
 Loading required package: spacexr
 loaded spacexr and set parent environment
 Loading required package: spacexr
@@ -686,6 +483,8 @@ Loading required package: spacexr
 loaded spacexr and set parent environment
 Loading required package: spacexr
 loaded spacexr and set parent environment
+Likelihood value: 149444.287992533
+Sigma value:  0.67
 Loading required package: spacexr
 loaded spacexr and set parent environment
 Loading required package: spacexr
@@ -698,33 +497,47 @@ Loading required package: spacexr
 loaded spacexr and set parent environment
 Loading required package: spacexr
 loaded spacexr and set parent environment
-Loading required package: spacexr
-Loading required package: spacexr
-Loading required package: spacexr
-Loading required package: spacexr
-Loading required package: spacexr
-Loading required package: spacexr
 Loading required package: spacexr
+loaded spacexr and set parent environment
 Loading required package: spacexr
+loaded spacexr and set parent environment
 Loading required package: spacexr
+loaded spacexr and set parent environment
 Loading required package: spacexr
+loaded spacexr and set parent environment
 Loading required package: spacexr
+loaded spacexr and set parent environment
 Loading required package: spacexr
+loaded spacexr and set parent environment
 Loading required package: spacexr
+loaded spacexr and set parent environment
 Loading required package: spacexr
 loaded spacexr and set parent environment
+Loading required package: spacexr
 loaded spacexr and set parent environment
+Loading required package: spacexr
 loaded spacexr and set parent environment
+Loading required package: spacexr
 loaded spacexr and set parent environment
+Loading required package: spacexr
 loaded spacexr and set parent environment
+Loading required package: spacexr
 loaded spacexr and set parent environment
+Loading required package: spacexr
 loaded spacexr and set parent environment
+Loading required package: spacexr
 loaded spacexr and set parent environment
+Loading required package: spacexr
 loaded spacexr and set parent environment
+Loading required package: spacexr
 loaded spacexr and set parent environment
+Loading required package: spacexr
 loaded spacexr and set parent environment
+Loading required package: spacexr
 loaded spacexr and set parent environment
+Loading required package: spacexr
 loaded spacexr and set parent environment
+Loading required package: spacexr
 loaded spacexr and set parent environment
 Loading required package: spacexr
 loaded spacexr and set parent environment
@@ -732,4 +545,4 @@ Loading required package: spacexr
 loaded spacexr and set parent environment
 Loading required package: spacexr
 loaded spacexr and set parent environment
-slurmstepd: error: *** JOB 30722515 ON compute-121 CANCELLED AT 2026-04-12T09:37:08 DUE TO TIME LIMIT ***
+Saved: /dcs04/lieber/marmaypag/spatialAMY_LIBD4125/spatialAmygdala/processed-data/Xenium/06_label_transfer/rctd_results_ITCmn_Br9280.rds

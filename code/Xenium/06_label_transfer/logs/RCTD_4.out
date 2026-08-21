@@ -1,0 +1,418 @@
+**** Job starts ****
+Thu May  7 03:35:35 PM EDT 2026
+**** SLURM info ****
+User: mtotty
+Job id: 31814059
+Job name: RCTD_Xenium
+Hostname: compute-155
+Array task id: 4
+
+       SST_TAC1       SST_NXPH2    SST_TMEM132C   RELN_IL1RAPL2        CCK_CNR1 
+             59             117              76              49             136 
+     CALCR_PENK       VIP_NRXN1      VIP_SEMA5A      LAMP5_EGFR      LAMP5_NOS1 
+             95             237             392             753             278 
+    PVALB_UNC5B     PVALB_MYO5B      PVALB_ST18       PENK_DRD2     TSHZ1_CPNE4 
+            167             265             173              64             136 
+    TSHZ1_PRKG1      DLK1_ZFHX3    SLC17A6_SIM1     SATB2_RXFP1        aBA_ESR1 
+            287             118             120             164             592 
+       BA_MYRIP         LA_RORB          ADARB2        BA_MOXD1       LA_ZBTB20 
+           1023            2204            1006            1692            1294 
+      Ependymal       Astrocyte     Endothelial       Microglia Oligodendrocyte 
+            817            1023             136             713             366 
+starting worker pid=1699859 on localhost:11542 at 15:36:41.104
+starting worker pid=1699876 on localhost:11542 at 15:36:41.272
+starting worker pid=1699895 on localhost:11542 at 15:36:41.438
+starting worker pid=1699912 on localhost:11542 at 15:36:41.610
+starting worker pid=1699927 on localhost:11542 at 15:36:41.786
+starting worker pid=1699942 on localhost:11542 at 15:36:41.953
+starting worker pid=1699957 on localhost:11542 at 15:36:42.124
+starting worker pid=1699972 on localhost:11542 at 15:36:42.294
+starting worker pid=1699987 on localhost:11542 at 15:36:42.467
+starting worker pid=1700005 on localhost:11542 at 15:36:42.636
+starting worker pid=1700023 on localhost:11542 at 15:36:42.810
+starting worker pid=1700040 on localhost:11542 at 15:36:42.982
+starting worker pid=1700056 on localhost:11542 at 15:36:43.153
+starting worker pid=1700071 on localhost:11542 at 15:36:43.325
+starting worker pid=1700086 on localhost:11542 at 15:36:43.496
+starting worker pid=1700101 on localhost:11542 at 15:36:43.664
+starting worker pid=1700116 on localhost:11542 at 15:36:43.835
+starting worker pid=1700133 on localhost:11542 at 15:36:44.005
+starting worker pid=1700158 on localhost:11542 at 15:36:44.174
+starting worker pid=1700173 on localhost:11542 at 15:36:44.346
+starting worker pid=1700188 on localhost:11542 at 15:36:44.517
+starting worker pid=1700203 on localhost:11542 at 15:36:44.690
+starting worker pid=1700218 on localhost:11542 at 15:36:44.857
+starting worker pid=1700233 on localhost:11542 at 15:36:45.022
+starting worker pid=1700248 on localhost:11542 at 15:36:45.193
+starting worker pid=1700263 on localhost:11542 at 15:36:45.364
+starting worker pid=1700278 on localhost:11542 at 15:36:45.535
+starting worker pid=1700297 on localhost:11542 at 15:36:45.703
+starting worker pid=1700313 on localhost:11542 at 15:36:45.869
+starting worker pid=1700329 on localhost:11542 at 15:36:46.042
+starting worker pid=1701052 on localhost:11542 at 15:37:08.538
+starting worker pid=1701070 on localhost:11542 at 15:37:08.733
+starting worker pid=1701090 on localhost:11542 at 15:37:08.901
+starting worker pid=1701109 on localhost:11542 at 15:37:09.072
+starting worker pid=1701128 on localhost:11542 at 15:37:09.244
+starting worker pid=1701146 on localhost:11542 at 15:37:09.415
+starting worker pid=1701164 on localhost:11542 at 15:37:09.583
+starting worker pid=1701182 on localhost:11542 at 15:37:09.749
+starting worker pid=1701201 on localhost:11542 at 15:37:09.905
+starting worker pid=1701219 on localhost:11542 at 15:37:10.067
+starting worker pid=1701238 on localhost:11542 at 15:37:10.240
+starting worker pid=1701257 on localhost:11542 at 15:37:10.398
+starting worker pid=1701274 on localhost:11542 at 15:37:10.559
+starting worker pid=1701292 on localhost:11542 at 15:37:10.721
+starting worker pid=1701309 on localhost:11542 at 15:37:10.888
+starting worker pid=1701326 on localhost:11542 at 15:37:11.040
+starting worker pid=1701343 on localhost:11542 at 15:37:11.203
+starting worker pid=1701360 on localhost:11542 at 15:37:11.370
+starting worker pid=1701377 on localhost:11542 at 15:37:11.531
+starting worker pid=1701394 on localhost:11542 at 15:37:11.689
+starting worker pid=1701410 on localhost:11542 at 15:37:11.846
+starting worker pid=1701428 on localhost:11542 at 15:37:12.010
+starting worker pid=1701443 on localhost:11542 at 15:37:12.182
+starting worker pid=1701458 on localhost:11542 at 15:37:12.354
+starting worker pid=1701473 on localhost:11542 at 15:37:12.514
+starting worker pid=1701488 on localhost:11542 at 15:37:12.669
+starting worker pid=1701503 on localhost:11542 at 15:37:12.839
+starting worker pid=1701520 on localhost:11542 at 15:37:12.998
+starting worker pid=1701540 on localhost:11542 at 15:37:13.157
+starting worker pid=1701557 on localhost:11542 at 15:37:13.320
+starting worker pid=1701730 on localhost:11542 at 15:37:32.982
+starting worker pid=1701750 on localhost:11542 at 15:37:33.154
+starting worker pid=1701765 on localhost:11542 at 15:37:33.325
+starting worker pid=1701782 on localhost:11542 at 15:37:33.498
+starting worker pid=1701797 on localhost:11542 at 15:37:33.667
+starting worker pid=1701812 on localhost:11542 at 15:37:33.839
+starting worker pid=1701829 on localhost:11542 at 15:37:37.706
+starting worker pid=1701869 on localhost:11542 at 15:37:38.034
+starting worker pid=1701884 on localhost:11542 at 15:37:38.201
+starting worker pid=1701902 on localhost:11542 at 15:37:38.369
+starting worker pid=1701919 on localhost:11542 at 15:37:38.527
+starting worker pid=1701934 on localhost:11542 at 15:37:38.695
+starting worker pid=1701949 on localhost:11542 at 15:37:38.866
+starting worker pid=1701966 on localhost:11542 at 15:37:39.028
+starting worker pid=1701983 on localhost:11542 at 15:37:39.197
+starting worker pid=1701998 on localhost:11542 at 15:37:39.368
+starting worker pid=1702013 on localhost:11542 at 15:37:39.528
+starting worker pid=1702034 on localhost:11542 at 15:37:39.684
+starting worker pid=1702049 on localhost:11542 at 15:37:39.853
+starting worker pid=1702064 on localhost:11542 at 15:37:40.024
+starting worker pid=1702079 on localhost:11542 at 15:37:40.190
+starting worker pid=1702094 on localhost:11542 at 15:37:40.362
+starting worker pid=1702109 on localhost:11542 at 15:37:40.532
+starting worker pid=1702124 on localhost:11542 at 15:37:40.700
+starting worker pid=1702141 on localhost:11542 at 15:37:40.869
+starting worker pid=1702158 on localhost:11542 at 15:37:41.027
+starting worker pid=1702173 on localhost:11542 at 15:37:41.208
+starting worker pid=1702189 on localhost:11542 at 15:37:41.377
+starting worker pid=1702205 on localhost:11542 at 15:37:41.533
+starting worker pid=1702220 on localhost:11542 at 15:37:41.701
+starting worker pid=1702399 on localhost:11542 at 15:38:01.529
+starting worker pid=1702414 on localhost:11542 at 15:38:01.700
+starting worker pid=1702431 on localhost:11542 at 15:38:01.867
+starting worker pid=1702446 on localhost:11542 at 15:38:02.037
+starting worker pid=1702461 on localhost:11542 at 15:38:02.204
+starting worker pid=1702478 on localhost:11542 at 15:38:02.371
+starting worker pid=1702496 on localhost:11542 at 15:38:02.545
+starting worker pid=1702518 on localhost:11542 at 15:38:02.720
+starting worker pid=1702534 on localhost:11542 at 15:38:02.889
+starting worker pid=1702551 on localhost:11542 at 15:38:03.065
+starting worker pid=1702567 on localhost:11542 at 15:38:07.117
+starting worker pid=1702764 on localhost:11542 at 15:38:07.456
+starting worker pid=1702781 on localhost:11542 at 15:38:07.620
+starting worker pid=1702799 on localhost:11542 at 15:38:07.786
+starting worker pid=1702815 on localhost:11542 at 15:38:07.957
+starting worker pid=1702830 on localhost:11542 at 15:38:08.122
+starting worker pid=1702848 on localhost:11542 at 15:38:08.291
+starting worker pid=1702863 on localhost:11542 at 15:38:08.464
+starting worker pid=1702887 on localhost:11542 at 15:38:08.629
+starting worker pid=1702902 on localhost:11542 at 15:38:08.789
+starting worker pid=1702917 on localhost:11542 at 15:38:08.938
+starting worker pid=1702934 on localhost:11542 at 15:38:09.089
+starting worker pid=1702949 on localhost:11542 at 15:38:09.238
+starting worker pid=1702965 on localhost:11542 at 15:38:09.388
+starting worker pid=1702981 on localhost:11542 at 15:38:09.544
+starting worker pid=1702996 on localhost:11542 at 15:38:09.701
+starting worker pid=1703011 on localhost:11542 at 15:38:09.857
+starting worker pid=1703026 on localhost:11542 at 15:38:10.015
+starting worker pid=1703043 on localhost:11542 at 15:38:10.172
+starting worker pid=1703060 on localhost:11542 at 15:38:10.333
+starting worker pid=1703356 on localhost:11542 at 15:38:30.806
+starting worker pid=1703375 on localhost:11542 at 15:38:30.980
+starting worker pid=1703391 on localhost:11542 at 15:38:31.138
+starting worker pid=1703407 on localhost:11542 at 15:38:31.308
+starting worker pid=1703422 on localhost:11542 at 15:38:31.477
+starting worker pid=1703437 on localhost:11542 at 15:38:31.635
+starting worker pid=1703453 on localhost:11542 at 15:38:31.804
+starting worker pid=1703471 on localhost:11542 at 15:38:31.965
+starting worker pid=1703486 on localhost:11542 at 15:38:32.134
+starting worker pid=1703501 on localhost:11542 at 15:38:32.304
+starting worker pid=1703520 on localhost:11542 at 15:38:32.472
+starting worker pid=1703535 on localhost:11542 at 15:38:32.642
+starting worker pid=1703550 on localhost:11542 at 15:38:32.818
+starting worker pid=1703567 on localhost:11542 at 15:38:32.990
+starting worker pid=1703585 on localhost:11542 at 15:38:33.161
+starting worker pid=1703602 on localhost:11542 at 15:38:33.332
+starting worker pid=1703617 on localhost:11542 at 15:38:33.500
+starting worker pid=1703634 on localhost:11542 at 15:38:33.661
+starting worker pid=1703651 on localhost:11542 at 15:38:33.830
+starting worker pid=1703666 on localhost:11542 at 15:38:33.987
+starting worker pid=1703681 on localhost:11542 at 15:38:34.144
+starting worker pid=1703696 on localhost:11542 at 15:38:34.309
+starting worker pid=1703711 on localhost:11542 at 15:38:34.466
+starting worker pid=1703728 on localhost:11542 at 15:38:34.628
+starting worker pid=1703745 on localhost:11542 at 15:38:34.797
+starting worker pid=1703760 on localhost:11542 at 15:38:34.966
+starting worker pid=1703777 on localhost:11542 at 15:38:35.128
+starting worker pid=1703794 on localhost:11542 at 15:38:35.299
+starting worker pid=1703809 on localhost:11542 at 15:38:35.454
+starting worker pid=1703824 on localhost:11542 at 15:38:35.624
+starting worker pid=1704175 on localhost:11542 at 15:38:55.100
+starting worker pid=1704198 on localhost:11542 at 15:38:55.270
+starting worker pid=1704215 on localhost:11542 at 15:38:55.428
+starting worker pid=1704233 on localhost:11542 at 15:38:55.593
+starting worker pid=1704251 on localhost:11542 at 15:38:55.756
+starting worker pid=1704270 on localhost:11542 at 15:38:55.926
+starting worker pid=1704289 on localhost:11542 at 15:38:56.091
+starting worker pid=1704306 on localhost:11542 at 15:38:56.251
+starting worker pid=1704325 on localhost:11542 at 15:38:56.420
+starting worker pid=1704346 on localhost:11542 at 15:38:56.589
+starting worker pid=1704363 on localhost:11542 at 15:38:56.749
+starting worker pid=1704383 on localhost:11542 at 15:38:56.917
+starting worker pid=1704400 on localhost:11542 at 15:38:57.087
+starting worker pid=1704417 on localhost:11542 at 15:38:57.253
+starting worker pid=1704436 on localhost:11542 at 15:38:57.413
+starting worker pid=1704453 on localhost:11542 at 15:38:57.583
+starting worker pid=1704471 on localhost:11542 at 15:38:57.754
+starting worker pid=1704490 on localhost:11542 at 15:38:57.926
+starting worker pid=1704510 on localhost:11542 at 15:38:58.083
+starting worker pid=1704529 on localhost:11542 at 15:38:58.247
+starting worker pid=1704546 on localhost:11542 at 15:38:58.412
+starting worker pid=1704565 on localhost:11542 at 15:38:58.568
+starting worker pid=1704583 on localhost:11542 at 15:38:58.729
+starting worker pid=1704600 on localhost:11542 at 15:38:58.893
+starting worker pid=1704617 on localhost:11542 at 15:38:59.056
+starting worker pid=1704634 on localhost:11542 at 15:38:59.224
+starting worker pid=1704654 on localhost:11542 at 15:38:59.390
+starting worker pid=1704673 on localhost:11542 at 15:38:59.552
+starting worker pid=1704693 on localhost:11542 at 15:38:59.716
+starting worker pid=1704710 on localhost:11542 at 15:38:59.882
+starting worker pid=1704904 on localhost:11542 at 15:39:19.535
+starting worker pid=1704919 on localhost:11542 at 15:39:19.693
+starting worker pid=1704936 on localhost:11542 at 15:39:19.860
+starting worker pid=1704951 on localhost:11542 at 15:39:20.028
+starting worker pid=1704968 on localhost:11542 at 15:39:22.043
+starting worker pid=1704995 on localhost:11542 at 15:39:22.294
+starting worker pid=1705010 on localhost:11542 at 15:39:22.459
+starting worker pid=1705027 on localhost:11542 at 15:39:25.508
+starting worker pid=1705062 on localhost:11542 at 15:39:25.794
+starting worker pid=1705077 on localhost:11542 at 15:39:25.960
+starting worker pid=1705094 on localhost:11542 at 15:39:26.129
+starting worker pid=1705109 on localhost:11542 at 15:39:26.288
+starting worker pid=1705128 on localhost:11542 at 15:39:26.445
+starting worker pid=1705143 on localhost:11542 at 15:39:26.599
+starting worker pid=1705158 on localhost:11542 at 15:39:26.764
+starting worker pid=1705175 on localhost:11542 at 15:39:26.933
+starting worker pid=1705190 on localhost:11542 at 15:39:27.101
+starting worker pid=1705205 on localhost:11542 at 15:39:27.270
+starting worker pid=1705221 on localhost:11542 at 15:39:27.438
+starting worker pid=1705237 on localhost:11542 at 15:39:27.588
+starting worker pid=1705255 on localhost:11542 at 15:39:27.754
+starting worker pid=1705271 on localhost:11542 at 15:39:27.924
+starting worker pid=1705286 on localhost:11542 at 15:39:28.092
+starting worker pid=1705303 on localhost:11542 at 15:39:28.260
+starting worker pid=1705320 on localhost:11542 at 15:39:28.430
+starting worker pid=1705335 on localhost:11542 at 15:39:28.593
+starting worker pid=1705350 on localhost:11542 at 15:39:28.758
+starting worker pid=1705365 on localhost:11542 at 15:39:28.928
+starting worker pid=1705380 on localhost:11542 at 15:39:29.099
+starting worker pid=1705396 on localhost:11542 at 15:39:29.272
+[1] "gather_results: finished 1000"
+[1] "gather_results: finished 2000"
+[1] "gather_results: finished 3000"
+[1] "gather_results: finished 4000"
+[1] "gather_results: finished 5000"
+[1] "gather_results: finished 6000"
+[1] "gather_results: finished 7000"
+[1] "gather_results: finished 8000"
+[1] "gather_results: finished 9000"
+[1] "gather_results: finished 10000"
+[1] "gather_results: finished 11000"
+[1] "gather_results: finished 12000"
+[1] "gather_results: finished 13000"
+[1] "gather_results: finished 14000"
+[1] "gather_results: finished 15000"
+[1] "gather_results: finished 16000"
+[1] "gather_results: finished 17000"
+[1] "gather_results: finished 18000"
+[1] "gather_results: finished 19000"
+[1] "gather_results: finished 20000"
+[1] "gather_results: finished 21000"
+[1] "gather_results: finished 22000"
+[1] "gather_results: finished 23000"
+[1] "gather_results: finished 24000"
+[1] "gather_results: finished 25000"
+[1] "gather_results: finished 26000"
+[1] "gather_results: finished 27000"
+[1] "gather_results: finished 28000"
+[1] "gather_results: finished 29000"
+[1] "gather_results: finished 30000"
+[1] "gather_results: finished 31000"
+[1] "gather_results: finished 32000"
+[1] "gather_results: finished 33000"
+[1] "gather_results: finished 34000"
+[1] "gather_results: finished 35000"
+[1] "gather_results: finished 36000"
+[1] "gather_results: finished 37000"
+[1] "gather_results: finished 38000"
+[1] "gather_results: finished 39000"
+[1] "gather_results: finished 40000"
+[1] "gather_results: finished 41000"
+[1] "gather_results: finished 42000"
+[1] "gather_results: finished 43000"
+[1] "gather_results: finished 44000"
+[1] "gather_results: finished 45000"
+[1] "gather_results: finished 46000"
+[1] "gather_results: finished 47000"
+[1] "gather_results: finished 48000"
+[1] "gather_results: finished 49000"
+[1] "gather_results: finished 50000"
+[1] "gather_results: finished 51000"
+[1] "gather_results: finished 52000"
+[1] "gather_results: finished 53000"
+[1] "gather_results: finished 54000"
+[1] "gather_results: finished 55000"
+[1] "gather_results: finished 56000"
+[1] "gather_results: finished 57000"
+[1] "gather_results: finished 58000"
+[1] "gather_results: finished 59000"
+[1] "gather_results: finished 60000"
+[1] "gather_results: finished 61000"
+[1] "gather_results: finished 62000"
+[1] "gather_results: finished 63000"
+[1] "gather_results: finished 64000"
+[1] "gather_results: finished 65000"
+[1] "gather_results: finished 66000"
+[1] "gather_results: finished 67000"
+[1] "gather_results: finished 68000"
+[1] "gather_results: finished 69000"
+[1] "gather_results: finished 70000"
+[1] "gather_results: finished 71000"
+[1] "gather_results: finished 72000"
+[1] "gather_results: finished 73000"
+[1] "gather_results: finished 74000"
+[1] "gather_results: finished 75000"
+[1] "gather_results: finished 76000"
+[1] "gather_results: finished 77000"
+[1] "gather_results: finished 78000"
+[1] "gather_results: finished 79000"
+[1] "gather_results: finished 80000"
+[1] "gather_results: finished 81000"
+[1] "gather_results: finished 82000"
+[1] "gather_results: finished 83000"
+[1] "gather_results: finished 84000"
+[1] "gather_results: finished 85000"
+[1] "gather_results: finished 86000"
+[1] "gather_results: finished 87000"
+[1] "gather_results: finished 88000"
+[1] "gather_results: finished 89000"
+[1] "gather_results: finished 90000"
+[1] "gather_results: finished 91000"
+[1] "gather_results: finished 92000"
+[1] "gather_results: finished 93000"
+[1] "gather_results: finished 94000"
+[1] "gather_results: finished 95000"
+[1] "gather_results: finished 96000"
+[1] "gather_results: finished 97000"
+[1] "gather_results: finished 98000"
+[1] "gather_results: finished 99000"
+[1] "gather_results: finished 100000"
+[1] "gather_results: finished 101000"
+[1] "gather_results: finished 102000"
+[1] "gather_results: finished 103000"
+[1] "gather_results: finished 104000"
+[1] "gather_results: finished 105000"
+[1] "gather_results: finished 106000"
+[1] "gather_results: finished 107000"
+[1] "gather_results: finished 108000"
+[1] "gather_results: finished 109000"
+[1] "gather_results: finished 110000"
+[1] "gather_results: finished 111000"
+[1] "gather_results: finished 112000"
+[1] "gather_results: finished 113000"
+[1] "gather_results: finished 114000"
+[1] "gather_results: finished 115000"
+[1] "gather_results: finished 116000"
+[1] "gather_results: finished 117000"
+[1] "gather_results: finished 118000"
+[1] "gather_results: finished 119000"
+[1] "gather_results: finished 120000"
+[1] "gather_results: finished 121000"
+[1] "gather_results: finished 122000"
+[1] "gather_results: finished 123000"
+[1] "gather_results: finished 124000"
+[1] "gather_results: finished 125000"
+[1] "gather_results: finished 126000"
+[1] "gather_results: finished 127000"
+[1] "gather_results: finished 128000"
+[1] "gather_results: finished 129000"
+[1] "gather_results: finished 130000"
+[1] "gather_results: finished 131000"
+[1] "gather_results: finished 132000"
+[1] "gather_results: finished 133000"
+[1] "gather_results: finished 134000"
+[1] "gather_results: finished 135000"
+[1] "gather_results: finished 136000"
+[1] "gather_results: finished 137000"
+[1] "gather_results: finished 138000"
+[1] "gather_results: finished 139000"
+[1] "gather_results: finished 140000"
+[1] "gather_results: finished 141000"
+[1] "gather_results: finished 142000"
+[1] "gather_results: finished 143000"
+[1] "gather_results: finished 144000"
+[1] "gather_results: finished 145000"
+[1] "gather_results: finished 146000"
+[1] "gather_results: finished 147000"
+[1] "gather_results: finished 148000"
+[1] "gather_results: finished 149000"
+[1] "gather_results: finished 150000"
+[1] "gather_results: finished 151000"
+[1] "gather_results: finished 152000"
+[1] "gather_results: finished 153000"
+[1] "gather_results: finished 154000"
+[1] "gather_results: finished 155000"
+[1] "gather_results: finished 156000"
+[1] "gather_results: finished 157000"
+[1] "gather_results: finished 158000"
+[1] "gather_results: finished 159000"
+[1] "gather_results: finished 160000"
+[1] "gather_results: finished 161000"
+[1] "gather_results: finished 162000"
+[1] "gather_results: finished 163000"
+[1] "gather_results: finished 164000"
+[1] "gather_results: finished 165000"
+[1] "gather_results: finished 166000"
+[1] "gather_results: finished 167000"
+[1] "gather_results: finished 168000"
+[1] "gather_results: finished 169000"
+[1] "gather_results: finished 170000"
+[1] "gather_results: finished 171000"
+[1] "gather_results: finished 172000"
+[1] "gather_results: finished 173000"
+[1] "gather_results: finished 174000"
+[1] "gather_results: finished 175000"
+[1] "gather_results: finished 176000"
+[1] "gather_results: finished 177000"
+[1] "gather_results: finished 178000"
+[1] "gather_results: finished 179000"
+[1] "gather_results: finished 180000"
+[1] "gather_results: finished 181000"
+[1] "gather_results: finished 182000"
+[1] "gather_results: finished 183000"
+[1] "gather_results: finished 184000"
+[1] "gather_results: finished 185000"
+**** Job ends ****
+Thu May  7 06:00:19 PM EDT 2026
