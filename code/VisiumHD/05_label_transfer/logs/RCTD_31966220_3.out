@@ -1,0 +1,320 @@
+**** Job starts ****
+Mon May 18 09:52:12 AM EDT 2026
+**** SLURM info ****
+User: mtotty
+Job id: 31966223
+Array job id: 31966220
+Array task id: 3
+Job name: RCTD_HD_array
+Hostname: compute-127
+
+ Astro_1 FGFR3  Astro_2 FGFR3  Astro_3 FGFR3  Astro_4 FGFR3     CALCR LHX8 
+          1323           6097           1830            710           2098 
+     DRD2 ISL1      DRD2 PAX6   Endo NOSTRIN   HGF C11orf87       HGF ESR1 
+          1713           1882           1198           2676           1253 
+     HGF NPSR1     HTR3A DRD2          ITC_1          ITC_2          ITC_3 
+          2769            524            455           2155           1193 
+     LAMP5 ABO     LAMP5 BDNF  LAMP5 COL14A1  LAMP5 COL25A1     LAMP5 NDNF 
+          2384           3854           1188           4388           2848 
+    Micro CTSS Oligo_1 OPALIN Oligo_2 OPALIN Oligo_3 OPALIN Oligo_4 OPALIN 
+          1337           2619            352           1910           3897 
+Oligo_5 OPALIN Oligo_6 OPALIN   OPC_2 PDGFRA   OPC_3 PDGFRA   OPC_4 PDGFRA 
+          6932           6342            275           3677            539 
+         PRKCD  PVALB ADAMTS5    RXFP2 RSPO2   SATB2 CALCRL     SATB2 IL15 
+           559            908           2394           1061           1801 
+ SATB2 ST8SIA2     SOX11 EBF2       SST EPYC        SST HGF         STRIP2 
+          1387           1677            250           2185            428 
+        TFAP2C    VGLL3 CNGB1     VGLL3 MEPE     VIP ABI3BP       VIP NDNF 
+           202           2625           2807           1924           1062 
+starting worker pid=2092791 on localhost:11151 at 09:59:47.003
+starting worker pid=2092806 on localhost:11151 at 09:59:47.295
+starting worker pid=2092821 on localhost:11151 at 09:59:47.578
+starting worker pid=2092836 on localhost:11151 at 09:59:47.870
+starting worker pid=2092851 on localhost:11151 at 09:59:48.161
+starting worker pid=2092866 on localhost:11151 at 09:59:48.446
+starting worker pid=2092881 on localhost:11151 at 09:59:48.728
+starting worker pid=2092896 on localhost:11151 at 09:59:49.010
+starting worker pid=2092911 on localhost:11151 at 09:59:49.278
+starting worker pid=2092943 on localhost:11151 at 09:59:49.540
+starting worker pid=2092974 on localhost:11151 at 09:59:49.815
+starting worker pid=2093004 on localhost:11151 at 09:59:50.097
+starting worker pid=2093034 on localhost:11151 at 09:59:50.362
+starting worker pid=2093064 on localhost:11151 at 09:59:50.638
+starting worker pid=2093094 on localhost:11151 at 09:59:50.922
+starting worker pid=2093124 on localhost:11151 at 09:59:51.200
+starting worker pid=2093154 on localhost:11151 at 09:59:51.473
+starting worker pid=2093184 on localhost:11151 at 09:59:51.750
+starting worker pid=2093216 on localhost:11151 at 09:59:52.018
+starting worker pid=2093248 on localhost:11151 at 09:59:52.301
+starting worker pid=2093278 on localhost:11151 at 09:59:52.554
+starting worker pid=2093310 on localhost:11151 at 09:59:52.820
+starting worker pid=2093340 on localhost:11151 at 09:59:53.075
+starting worker pid=2093369 on localhost:11151 at 09:59:53.340
+starting worker pid=2093418 on localhost:11151 at 09:59:53.615
+starting worker pid=2093463 on localhost:11151 at 09:59:53.904
+starting worker pid=2093511 on localhost:11151 at 09:59:54.170
+starting worker pid=2093556 on localhost:11151 at 09:59:54.425
+starting worker pid=2093603 on localhost:11151 at 09:59:54.705
+starting worker pid=2093666 on localhost:11151 at 09:59:54.999
+starting worker pid=2094795 on localhost:11151 at 10:01:08.088
+starting worker pid=2094814 on localhost:11151 at 10:01:08.358
+starting worker pid=2094829 on localhost:11151 at 10:01:08.617
+starting worker pid=2094844 on localhost:11151 at 10:01:08.868
+starting worker pid=2094859 on localhost:11151 at 10:01:09.118
+starting worker pid=2094874 on localhost:11151 at 10:01:09.403
+starting worker pid=2094902 on localhost:11151 at 10:01:09.637
+starting worker pid=2094927 on localhost:11151 at 10:01:10.063
+starting worker pid=2094961 on localhost:11151 at 10:01:10.351
+starting worker pid=2094991 on localhost:11151 at 10:01:10.627
+starting worker pid=2095021 on localhost:11151 at 10:01:10.901
+starting worker pid=2095051 on localhost:11151 at 10:01:11.163
+starting worker pid=2095079 on localhost:11151 at 10:01:11.431
+starting worker pid=2095111 on localhost:11151 at 10:01:11.688
+starting worker pid=2095141 on localhost:11151 at 10:01:11.963
+starting worker pid=2095170 on localhost:11151 at 10:01:12.231
+starting worker pid=2095201 on localhost:11151 at 10:01:12.505
+starting worker pid=2095252 on localhost:11151 at 10:01:12.767
+starting worker pid=2095315 on localhost:11151 at 10:01:13.035
+starting worker pid=2095379 on localhost:11151 at 10:01:13.303
+starting worker pid=2095439 on localhost:11151 at 10:01:13.568
+starting worker pid=2095499 on localhost:11151 at 10:01:13.819
+starting worker pid=2095562 on localhost:11151 at 10:01:14.087
+starting worker pid=2095621 on localhost:11151 at 10:01:14.344
+starting worker pid=2095693 on localhost:11151 at 10:01:14.583
+starting worker pid=2095745 on localhost:11151 at 10:01:14.856
+starting worker pid=2095807 on localhost:11151 at 10:01:15.110
+starting worker pid=2095865 on localhost:11151 at 10:01:15.363
+starting worker pid=2095925 on localhost:11151 at 10:01:15.637
+starting worker pid=2095995 on localhost:11151 at 10:01:15.900
+starting worker pid=2096788 on localhost:11151 at 10:02:24.061
+starting worker pid=2096803 on localhost:11151 at 10:02:24.337
+starting worker pid=2096821 on localhost:11151 at 10:02:24.607
+starting worker pid=2096836 on localhost:11151 at 10:02:24.899
+starting worker pid=2096851 on localhost:11151 at 10:02:25.174
+starting worker pid=2096866 on localhost:11151 at 10:02:25.457
+starting worker pid=2096881 on localhost:11151 at 10:02:25.740
+starting worker pid=2096896 on localhost:11151 at 10:02:26.009
+starting worker pid=2096928 on localhost:11151 at 10:02:26.293
+starting worker pid=2096958 on localhost:11151 at 10:02:26.579
+starting worker pid=2096988 on localhost:11151 at 10:02:26.865
+starting worker pid=2097019 on localhost:11151 at 10:02:27.142
+starting worker pid=2097049 on localhost:11151 at 10:02:27.420
+starting worker pid=2097079 on localhost:11151 at 10:02:27.694
+starting worker pid=2097126 on localhost:11151 at 10:02:27.972
+starting worker pid=2097188 on localhost:11151 at 10:02:28.240
+starting worker pid=2097248 on localhost:11151 at 10:02:28.491
+starting worker pid=2097308 on localhost:11151 at 10:02:28.739
+starting worker pid=2097368 on localhost:11151 at 10:02:29.019
+starting worker pid=2097430 on localhost:11151 at 10:02:29.308
+starting worker pid=2097490 on localhost:11151 at 10:02:29.576
+starting worker pid=2097554 on localhost:11151 at 10:02:29.843
+starting worker pid=2097619 on localhost:11151 at 10:02:30.112
+starting worker pid=2097679 on localhost:11151 at 10:02:30.388
+starting worker pid=2097743 on localhost:11151 at 10:02:30.648
+starting worker pid=2097803 on localhost:11151 at 10:02:30.906
+starting worker pid=2097865 on localhost:11151 at 10:02:31.177
+starting worker pid=2097928 on localhost:11151 at 10:02:31.437
+starting worker pid=2097987 on localhost:11151 at 10:02:31.696
+starting worker pid=2098045 on localhost:11151 at 10:02:31.946
+starting worker pid=2098762 on localhost:11151 at 10:03:37.042
+starting worker pid=2098777 on localhost:11151 at 10:03:37.337
+starting worker pid=2098792 on localhost:11151 at 10:03:37.632
+starting worker pid=2098807 on localhost:11151 at 10:03:37.928
+starting worker pid=2098822 on localhost:11151 at 10:03:38.222
+starting worker pid=2098837 on localhost:11151 at 10:03:38.516
+starting worker pid=2098852 on localhost:11151 at 10:03:38.789
+starting worker pid=2098867 on localhost:11151 at 10:03:39.079
+starting worker pid=2098883 on localhost:11151 at 10:03:39.372
+starting worker pid=2098898 on localhost:11151 at 10:03:39.664
+starting worker pid=2098913 on localhost:11151 at 10:03:39.949
+starting worker pid=2098928 on localhost:11151 at 10:03:40.238
+starting worker pid=2098943 on localhost:11151 at 10:03:40.527
+starting worker pid=2098958 on localhost:11151 at 10:03:40.810
+starting worker pid=2098973 on localhost:11151 at 10:03:41.081
+starting worker pid=2099005 on localhost:11151 at 10:03:41.350
+starting worker pid=2099035 on localhost:11151 at 10:03:41.624
+starting worker pid=2099065 on localhost:11151 at 10:03:41.877
+starting worker pid=2099095 on localhost:11151 at 10:03:42.132
+starting worker pid=2099125 on localhost:11151 at 10:03:42.395
+starting worker pid=2099155 on localhost:11151 at 10:03:42.659
+starting worker pid=2099185 on localhost:11151 at 10:03:42.935
+starting worker pid=2099215 on localhost:11151 at 10:03:43.206
+starting worker pid=2099245 on localhost:11151 at 10:03:43.484
+starting worker pid=2099275 on localhost:11151 at 10:03:43.761
+starting worker pid=2099305 on localhost:11151 at 10:03:44.031
+starting worker pid=2099327 on localhost:11151 at 10:03:44.276
+starting worker pid=2099391 on localhost:11151 at 10:03:44.522
+starting worker pid=2099454 on localhost:11151 at 10:03:44.767
+starting worker pid=2099514 on localhost:11151 at 10:03:45.017
+starting worker pid=2100799 on localhost:11151 at 10:04:51.514
+starting worker pid=2100814 on localhost:11151 at 10:04:51.810
+starting worker pid=2100829 on localhost:11151 at 10:04:52.099
+starting worker pid=2100844 on localhost:11151 at 10:04:52.391
+starting worker pid=2100859 on localhost:11151 at 10:04:52.685
+starting worker pid=2100874 on localhost:11151 at 10:04:52.974
+starting worker pid=2100889 on localhost:11151 at 10:04:53.263
+starting worker pid=2100904 on localhost:11151 at 10:04:53.559
+starting worker pid=2100919 on localhost:11151 at 10:04:53.829
+starting worker pid=2100934 on localhost:11151 at 10:04:54.123
+starting worker pid=2100949 on localhost:11151 at 10:04:54.404
+starting worker pid=2100966 on localhost:11151 at 10:04:54.691
+starting worker pid=2100981 on localhost:11151 at 10:04:54.986
+starting worker pid=2100999 on localhost:11151 at 10:04:55.284
+starting worker pid=2101032 on localhost:11151 at 10:04:55.578
+starting worker pid=2101062 on localhost:11151 at 10:04:55.851
+starting worker pid=2101093 on localhost:11151 at 10:04:56.120
+starting worker pid=2101125 on localhost:11151 at 10:04:56.386
+starting worker pid=2101154 on localhost:11151 at 10:04:56.653
+starting worker pid=2101182 on localhost:11151 at 10:04:56.912
+starting worker pid=2101213 on localhost:11151 at 10:04:57.178
+starting worker pid=2101243 on localhost:11151 at 10:04:57.462
+starting worker pid=2101274 on localhost:11151 at 10:04:57.724
+starting worker pid=2101302 on localhost:11151 at 10:04:57.989
+starting worker pid=2101334 on localhost:11151 at 10:04:58.261
+starting worker pid=2101363 on localhost:11151 at 10:04:58.531
+starting worker pid=2101393 on localhost:11151 at 10:04:58.798
+starting worker pid=2101423 on localhost:11151 at 10:04:59.073
+starting worker pid=2101479 on localhost:11151 at 10:04:59.332
+starting worker pid=2101541 on localhost:11151 at 10:04:59.600
+starting worker pid=2103439 on localhost:11151 at 10:06:07.264
+starting worker pid=2103454 on localhost:11151 at 10:06:07.563
+starting worker pid=2103469 on localhost:11151 at 10:06:07.858
+starting worker pid=2103484 on localhost:11151 at 10:06:08.154
+starting worker pid=2103505 on localhost:11151 at 10:06:08.407
+starting worker pid=2103540 on localhost:11151 at 10:06:08.641
+starting worker pid=2103555 on localhost:11151 at 10:06:08.885
+starting worker pid=2103570 on localhost:11151 at 10:06:09.159
+starting worker pid=2103585 on localhost:11151 at 10:06:09.446
+starting worker pid=2103600 on localhost:11151 at 10:06:09.720
+starting worker pid=2103615 on localhost:11151 at 10:06:09.998
+starting worker pid=2103630 on localhost:11151 at 10:06:10.268
+starting worker pid=2103645 on localhost:11151 at 10:06:10.541
+starting worker pid=2103660 on localhost:11151 at 10:06:10.817
+starting worker pid=2103675 on localhost:11151 at 10:06:11.096
+starting worker pid=2103690 on localhost:11151 at 10:06:11.373
+starting worker pid=2103705 on localhost:11151 at 10:06:11.666
+starting worker pid=2103720 on localhost:11151 at 10:06:11.963
+starting worker pid=2103735 on localhost:11151 at 10:06:12.238
+starting worker pid=2103750 on localhost:11151 at 10:06:12.521
+starting worker pid=2103765 on localhost:11151 at 10:06:12.775
+starting worker pid=2103804 on localhost:11151 at 10:06:13.050
+starting worker pid=2103834 on localhost:11151 at 10:06:13.329
+starting worker pid=2103866 on localhost:11151 at 10:06:13.592
+starting worker pid=2103895 on localhost:11151 at 10:06:13.875
+starting worker pid=2103926 on localhost:11151 at 10:06:14.138
+starting worker pid=2103956 on localhost:11151 at 10:06:14.425
+starting worker pid=2103989 on localhost:11151 at 10:06:14.701
+starting worker pid=2104018 on localhost:11151 at 10:06:14.970
+starting worker pid=2104049 on localhost:11151 at 10:06:15.251
+[1] "gather_results: finished 1000"
+[1] "gather_results: finished 2000"
+[1] "gather_results: finished 3000"
+[1] "gather_results: finished 4000"
+[1] "gather_results: finished 5000"
+[1] "gather_results: finished 6000"
+[1] "gather_results: finished 7000"
+[1] "gather_results: finished 8000"
+[1] "gather_results: finished 9000"
+[1] "gather_results: finished 10000"
+[1] "gather_results: finished 11000"
+[1] "gather_results: finished 12000"
+[1] "gather_results: finished 13000"
+[1] "gather_results: finished 14000"
+[1] "gather_results: finished 15000"
+[1] "gather_results: finished 16000"
+[1] "gather_results: finished 17000"
+[1] "gather_results: finished 18000"
+[1] "gather_results: finished 19000"
+[1] "gather_results: finished 20000"
+[1] "gather_results: finished 21000"
+[1] "gather_results: finished 22000"
+[1] "gather_results: finished 23000"
+[1] "gather_results: finished 24000"
+[1] "gather_results: finished 25000"
+[1] "gather_results: finished 26000"
+[1] "gather_results: finished 27000"
+[1] "gather_results: finished 28000"
+[1] "gather_results: finished 29000"
+[1] "gather_results: finished 30000"
+[1] "gather_results: finished 31000"
+[1] "gather_results: finished 32000"
+[1] "gather_results: finished 33000"
+[1] "gather_results: finished 34000"
+[1] "gather_results: finished 35000"
+[1] "gather_results: finished 36000"
+[1] "gather_results: finished 37000"
+[1] "gather_results: finished 38000"
+[1] "gather_results: finished 39000"
+[1] "gather_results: finished 40000"
+[1] "gather_results: finished 41000"
+[1] "gather_results: finished 42000"
+[1] "gather_results: finished 43000"
+[1] "gather_results: finished 44000"
+[1] "gather_results: finished 45000"
+[1] "gather_results: finished 46000"
+[1] "gather_results: finished 47000"
+[1] "gather_results: finished 48000"
+[1] "gather_results: finished 49000"
+[1] "gather_results: finished 50000"
+─ Session info ───────────────────────────────────────────────────────────────
+ setting  value
+ version  R version 4.4.0 Patched (2024-05-22 r86590)
+ os       Rocky Linux 9.4 (Blue Onyx)
+ system   x86_64, linux-gnu
+ ui       X11
+ language (EN)
+ collate  en_US.UTF-8
+ ctype    en_US.UTF-8
+ tz       US/Eastern
+ date     2026-05-18
+ pandoc   3.1.13 @ /jhpce/shared/community/core/conda_R/4.4/bin/pandoc
+
+─ Packages ───────────────────────────────────────────────────────────────────
+ package              * version   date (UTC) lib source
+ abind                  1.4-8     2024-09-12 [1] CRAN (R 4.4.0)
+ Biobase              * 2.66.0    2024-10-29 [1] Bioconductor 3.20 (R 4.4.0)
+ BiocGenerics         * 0.52.0    2024-10-29 [1] Bioconductor 3.20 (R 4.4.0)
+ cli                    3.6.3     2024-06-21 [1] CRAN (R 4.4.0)
+ codetools              0.2-20    2024-03-31 [3] CRAN (R 4.4.0)
+ crayon                 1.5.3     2024-06-20 [1] CRAN (R 4.4.0)
+ DelayedArray           0.30.1    2024-05-07 [2] Bioconductor 3.19 (R 4.4.0)
+ doParallel             1.0.17    2022-02-07 [1] CRAN (R 4.4.0)
+ foreach                1.5.2     2022-02-02 [1] CRAN (R 4.4.0)
+ GenomeInfoDb         * 1.40.1    2024-05-24 [2] Bioconductor 3.19 (R 4.4.0)
+ GenomeInfoDbData       1.2.13    2024-11-18 [1] Bioconductor
+ GenomicRanges        * 1.58.0    2024-10-29 [1] Bioconductor 3.20 (R 4.4.0)
+ here                 * 1.0.1     2020-12-13 [1] CRAN (R 4.4.0)
+ httr                   1.4.7     2023-08-15 [1] CRAN (R 4.4.0)
+ IRanges              * 2.40.0    2024-10-29 [1] Bioconductor 3.20 (R 4.4.0)
+ iterators              1.0.14    2022-02-05 [1] CRAN (R 4.4.0)
+ jsonlite               1.8.9     2024-09-20 [1] CRAN (R 4.4.0)
+ lattice                0.22-6    2024-03-20 [3] CRAN (R 4.4.0)
+ magick                 2.8.5     2024-09-20 [1] CRAN (R 4.4.0)
+ magrittr               2.0.3     2022-03-30 [1] CRAN (R 4.4.0)
+ Matrix                 1.7-1     2024-10-18 [1] CRAN (R 4.4.0)
+ MatrixGenerics       * 1.18.0    2024-10-29 [1] Bioconductor 3.20 (R 4.4.0)
+ matrixStats          * 1.4.1     2024-09-08 [1] CRAN (R 4.4.0)
+ quadprog               1.5-8     2019-11-20 [2] CRAN (R 4.4.0)
+ R6                     2.5.1     2021-08-19 [1] CRAN (R 4.4.0)
+ Rcpp                   1.1.1-1.1 2026-04-24 [1] CRAN (R 4.4.0)
+ rjson                  0.2.23    2024-09-16 [1] CRAN (R 4.4.0)
+ rprojroot              2.0.4     2023-11-05 [1] CRAN (R 4.4.0)
+ S4Arrays               1.6.0     2024-10-29 [1] Bioconductor 3.20 (R 4.4.0)
+ S4Vectors            * 0.44.0    2024-10-29 [1] Bioconductor 3.20 (R 4.4.0)
+ sessioninfo            1.2.2     2021-12-06 [2] CRAN (R 4.4.0)
+ SingleCellExperiment * 1.26.0    2024-04-30 [2] Bioconductor 3.19 (R 4.4.0)
+ spacexr              * 2.2.1     2026-02-12 [1] Github (dmcable/spacexr@9f5dc33)
+ SparseArray            1.6.2     2025-02-20 [1] Bioconductor 3.20 (R 4.4.0)
+ SpatialExperiment    * 1.14.0    2024-05-01 [2] Bioconductor 3.19 (R 4.4.0)
+ SummarizedExperiment * 1.34.0    2024-05-01 [2] Bioconductor 3.19 (R 4.4.0)
+ UCSC.utils             1.0.0     2024-04-30 [2] Bioconductor 3.19 (R 4.4.0)
+ XVector                0.44.0    2024-04-30 [2] Bioconductor 3.19 (R 4.4.0)
+ zlibbioc               1.52.0    2024-10-29 [1] Bioconductor 3.20 (R 4.4.0)
+
+ [1] /users/mtotty/R/4.4
+ [2] /jhpce/shared/community/core/conda_R/4.4/R/lib64/R/site-library
+ [3] /jhpce/shared/community/core/conda_R/4.4/R/lib64/R/library
+
+──────────────────────────────────────────────────────────────────────────────
+**** Job ends ****
+Mon May 18 10:41:03 AM EDT 2026

@@ -53,7 +53,7 @@ default_labels <- c(
     "11" = "Neuropil",
     "12" = "BM",
     "13" = "AI",
-    "14" = "14",
+    "14" = "Vascular",
     "15" = "DELETE",
     "16" = "BM",
     "17" = "BM",
@@ -100,35 +100,47 @@ spe[[label_col]] <- factor(new_labels)
 cat("Final spatial domains:\n")
 print(table(spe[[label_col]]))
 
-# ======= Determine colors =======
-domain_levels <- sort(unique(new_labels))
-num_groups <- length(domain_levels)
-cat("Number of spatial domains:", num_groups, "\n")
+# ======= Rotate specific samples (if needed) =======
 
-colors <- scCustomize_Palette(
-    num_groups,
-    ggplot_default_colors = FALSE,
-    color_seed = 123
+samples_to_rotate <- c("Br9280_CeA", "Br9280_ITC", "Br9280_MeA")
+
+for (s in samples_to_rotate) {
+    idx <- which(spe$sample_id == s)
+    coords <- spatialCoords(spe)[idx, ]
+    # 90° clockwise: (x, y) -> (y, -x)
+    new_x <- coords[, 2]
+    new_y <- -coords[, 1]
+    spatialCoords(spe)[idx, 1] <- new_x
+    spatialCoords(spe)[idx, 2] <- new_y
+}
+
+# ======= Color palette (consistent with other dataset) =======
+colors <- c(
+    AI = "#D62728", BM = "#E67E22", BLD = "#9B59B6",
+    LA = "#F4B400", CoA = "#5DA5DA", CeA = "#197d43ff",
+    MeA = "#baf739ff", CHAT = "#A0522D",
+    Ventricle = "#666666", Vascular = "#333333",
+    WM = "#BBBBBB", Neuropil = "#DDDDDD"
 )
-names(colors) <- domain_levels
 
 # ======= Plot (same style as original holistic plot) =======
 plots_dir <- here("plots", "VisiumHD", "04_clustering", "016_wAI_markers")
 dir.create(plots_dir, recursive = TRUE, showWarnings = FALSE)
 
-pdf_path <- file.path(plots_dir, "Banksy_integrated_lambda_0.8_res0.6_renamed.pdf")
+pdf_path <- file.path(plots_dir, "Banksy_integrated_lambda_0.8_res0.6_renamed_v2.pdf")
 pdf(file = pdf_path, width = 40, height = 10)
 
 p <- plotCoords(spe, annotate = label_col, in_tissue = NULL, sample_id = "sample_id") +
     scale_color_manual(values = colors) +
-    ggtitle(paste0("Banksy Integrated Clustering (lambda=0.8, res=0.6, ", num_groups, " spatial domains)")) +
+    ggtitle(paste0("Banksy Integrated Clustering (lambda=0.8, res=0.6, ", length(unique(new_labels)), " spatial domains)")) +
     theme(legend.position = "bottom",
           legend.title = element_blank(),
+          legend.text = element_text(size = 14),
           plot.title = element_text(hjust = 0.5, size = 20),
           axis.title = element_blank(),
           axis.text = element_blank(),
           axis.ticks = element_blank()) +
-    guides(color = guide_legend(nrow = 2, byrow = TRUE))
+    guides(color = guide_legend(nrow = 2, byrow = TRUE, override.aes = list(size = 5)))
 
 print(p)
 dev.off()

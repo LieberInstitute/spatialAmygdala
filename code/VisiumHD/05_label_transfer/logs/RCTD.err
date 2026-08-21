@@ -1,0 +1,391 @@
+Loading conda_R/4.4
+
+Currently Loaded Modules:
+  1) JHPCE_ROCKY9_DEFAULT_ENV   3) conda/3-24.3.0
+  2) JHPCE_tools/3.0            4) conda_R/4.4
+
+ 
+
+here() starts at /dcs04/lieber/marmaypag/spatialAMY_LIBD4125/spatialAmygdala
+Loading required package: SingleCellExperiment
+Loading required package: SummarizedExperiment
+Loading required package: MatrixGenerics
+Loading required package: matrixStats
+
+Attaching package: ‘MatrixGenerics’
+
+The following objects are masked from ‘package:matrixStats’:
+
+    colAlls, colAnyNAs, colAnys, colAvgsPerRowSet, colCollapse,
+    colCounts, colCummaxs, colCummins, colCumprods, colCumsums,
+    colDiffs, colIQRDiffs, colIQRs, colLogSumExps, colMadDiffs,
+    colMads, colMaxs, colMeans2, colMedians, colMins, colOrderStats,
+    colProds, colQuantiles, colRanges, colRanks, colSdDiffs, colSds,
+    colSums2, colTabulates, colVarDiffs, colVars, colWeightedMads,
+    colWeightedMeans, colWeightedMedians, colWeightedSds,
+    colWeightedVars, rowAlls, rowAnyNAs, rowAnys, rowAvgsPerColSet,
+    rowCollapse, rowCounts, rowCummaxs, rowCummins, rowCumprods,
+    rowCumsums, rowDiffs, rowIQRDiffs, rowIQRs, rowLogSumExps,
+    rowMadDiffs, rowMads, rowMaxs, rowMeans2, rowMedians, rowMins,
+    rowOrderStats, rowProds, rowQuantiles, rowRanges, rowRanks,
+    rowSdDiffs, rowSds, rowSums2, rowTabulates, rowVarDiffs, rowVars,
+    rowWeightedMads, rowWeightedMeans, rowWeightedMedians,
+    rowWeightedSds, rowWeightedVars
+
+Loading required package: GenomicRanges
+Loading required package: stats4
+Loading required package: BiocGenerics
+
+Attaching package: ‘BiocGenerics’
+
+The following objects are masked from ‘package:stats’:
+
+    IQR, mad, sd, var, xtabs
+
+The following objects are masked from ‘package:base’:
+
+    anyDuplicated, aperm, append, as.data.frame, basename, cbind,
+    colnames, dirname, do.call, duplicated, eval, evalq, Filter, Find,
+    get, grep, grepl, intersect, is.unsorted, lapply, Map, mapply,
+    match, mget, order, paste, pmax, pmax.int, pmin, pmin.int,
+    Position, rank, rbind, Reduce, rownames, sapply, saveRDS, setdiff,
+    table, tapply, union, unique, unsplit, which.max, which.min
+
+Loading required package: S4Vectors
+
+Attaching package: ‘S4Vectors’
+
+The following object is masked from ‘package:utils’:
+
+    findMatches
+
+The following objects are masked from ‘package:base’:
+
+    expand.grid, I, unname
+
+Loading required package: IRanges
+Loading required package: GenomeInfoDb
+Loading required package: Biobase
+Welcome to Bioconductor
+
+    Vignettes contain introductory material; view with
+    'browseVignettes()'. To cite Bioconductor, see
+    'citation("Biobase")', and for packages 'citation("pkgname")'.
+
+
+Attaching package: ‘Biobase’
+
+The following object is masked from ‘package:MatrixGenerics’:
+
+    rowMedians
+
+The following objects are masked from ‘package:matrixStats’:
+
+    anyMissing, rowMedians
+
+Warning message:
+replacing previous import ‘S4Arrays::read_block’ by ‘DelayedArray::read_block’ when loading ‘SummarizedExperiment’ 
+Begin: process_cell_type_info
+process_cell_type_info: number of cells in reference: 91688
+process_cell_type_info: number of genes in reference: 31908
+End: process_cell_type_info
+create.RCTD: getting regression differentially expressed genes: 
+get_de_genes: Human_Oligo_5 OPALIN found DE genes: 342
+get_de_genes: Human_Oligo_6 OPALIN found DE genes: 323
+get_de_genes: Human_Astro_2 FGFR3 found DE genes: 270
+get_de_genes: Human_LAMP5 COL25A1 found DE genes: 49
+get_de_genes: Human_Oligo_4 OPALIN found DE genes: 326
+get_de_genes: Human_LAMP5 BDNF found DE genes: 31
+get_de_genes: Human_OPC_3 PDGFRA found DE genes: 198
+get_de_genes: Human_LAMP5 NDNF found DE genes: 103
+get_de_genes: Human_VGLL3 MEPE found DE genes: 16
+get_de_genes: Human_HGF NPSR1 found DE genes: 64
+get_de_genes: Human_TSHZ1 CALCRL found DE genes: 75
+get_de_genes: Human_HGF C11orf87 found DE genes: 50
+get_de_genes: Human_VGLL3 CNGB1 found DE genes: 14
+get_de_genes: Human_Oligo_1 OPALIN found DE genes: 262
+get_de_genes: Human_RXFP2 RSPO2 found DE genes: 23
+get_de_genes: Human_LAMP5 ABO found DE genes: 38
+get_de_genes: Human_SST HGF found DE genes: 61
+get_de_genes: Human_CALCR LHX8 found DE genes: 11
+get_de_genes: Human_VIP ABI3BP found DE genes: 78
+get_de_genes: Human_Oligo_3 OPALIN found DE genes: 204
+get_de_genes: Human_DRD2 PAX6 found DE genes: 88
+get_de_genes: Human_Astro_3 FGFR3 found DE genes: 255
+get_de_genes: Human_SATB2 IL15 found DE genes: 40
+get_de_genes: Human_DRD2 ISL1 found DE genes: 95
+get_de_genes: Human_SOX11 EBF2 found DE genes: 10
+get_de_genes: Human_SATB2 ST8SIA2 found DE genes: 77
+get_de_genes: Human_Micro CTSS found DE genes: 291
+get_de_genes: Human_Astro_1 FGFR3 found DE genes: 338
+get_de_genes: Human_HGF ESR1 found DE genes: 49
+get_de_genes: Human_Endo NOSTRIN found DE genes: 138
+get_de_genes: Human_LAMP5 COL14A1 found DE genes: 108
+get_de_genes: Human_VIP NDNF found DE genes: 70
+get_de_genes: Human_SATB2 CALCRL found DE genes: 30
+get_de_genes: Human_TSHZ1 SEMA3C found DE genes: 74
+get_de_genes: Human_PVALB ADAMTS5 found DE genes: 144
+get_de_genes: Human_Astro_4 FGFR3 found DE genes: 184
+get_de_genes: Human_PRKCD found DE genes: 92
+get_de_genes: Human_OPC_4 PDGFRA found DE genes: 139
+get_de_genes: Human_HTR3A DRD2 found DE genes: 71
+get_de_genes: Human_STRIP2 found DE genes: 66
+get_de_genes: Human_Oligo_2 OPALIN found DE genes: 297
+get_de_genes: Human_OPC_2 PDGFRA found DE genes: 166
+get_de_genes: Human_SST EPYC found DE genes: 100
+get_de_genes: Human_TFAP2C found DE genes: 82
+get_de_genes: total DE genes: 1751
+create.RCTD: getting platform effect normalization differentially expressed genes: 
+get_de_genes: Human_Oligo_5 OPALIN found DE genes: 680
+get_de_genes: Human_Oligo_6 OPALIN found DE genes: 638
+get_de_genes: Human_Astro_2 FGFR3 found DE genes: 587
+get_de_genes: Human_LAMP5 COL25A1 found DE genes: 226
+get_de_genes: Human_Oligo_4 OPALIN found DE genes: 655
+get_de_genes: Human_LAMP5 BDNF found DE genes: 170
+get_de_genes: Human_OPC_3 PDGFRA found DE genes: 420
+get_de_genes: Human_LAMP5 NDNF found DE genes: 291
+get_de_genes: Human_VGLL3 MEPE found DE genes: 146
+get_de_genes: Human_HGF NPSR1 found DE genes: 208
+get_de_genes: Human_TSHZ1 CALCRL found DE genes: 230
+get_de_genes: Human_HGF C11orf87 found DE genes: 195
+get_de_genes: Human_VGLL3 CNGB1 found DE genes: 92
+get_de_genes: Human_Oligo_1 OPALIN found DE genes: 633
+get_de_genes: Human_RXFP2 RSPO2 found DE genes: 118
+get_de_genes: Human_LAMP5 ABO found DE genes: 179
+get_de_genes: Human_SST HGF found DE genes: 190
+get_de_genes: Human_CALCR LHX8 found DE genes: 65
+get_de_genes: Human_VIP ABI3BP found DE genes: 232
+get_de_genes: Human_Oligo_3 OPALIN found DE genes: 516
+get_de_genes: Human_DRD2 PAX6 found DE genes: 288
+get_de_genes: Human_Astro_3 FGFR3 found DE genes: 605
+get_de_genes: Human_SATB2 IL15 found DE genes: 163
+get_de_genes: Human_DRD2 ISL1 found DE genes: 347
+get_de_genes: Human_SOX11 EBF2 found DE genes: 87
+get_de_genes: Human_SATB2 ST8SIA2 found DE genes: 240
+get_de_genes: Human_Micro CTSS found DE genes: 625
+get_de_genes: Human_Astro_1 FGFR3 found DE genes: 662
+get_de_genes: Human_HGF ESR1 found DE genes: 226
+get_de_genes: Human_Endo NOSTRIN found DE genes: 440
+get_de_genes: Human_LAMP5 COL14A1 found DE genes: 291
+get_de_genes: Human_VIP NDNF found DE genes: 218
+get_de_genes: Human_SATB2 CALCRL found DE genes: 147
+get_de_genes: Human_TSHZ1 SEMA3C found DE genes: 231
+get_de_genes: Human_PVALB ADAMTS5 found DE genes: 349
+get_de_genes: Human_Astro_4 FGFR3 found DE genes: 498
+get_de_genes: Human_PRKCD found DE genes: 325
+get_de_genes: Human_OPC_4 PDGFRA found DE genes: 394
+get_de_genes: Human_HTR3A DRD2 found DE genes: 215
+get_de_genes: Human_STRIP2 found DE genes: 204
+get_de_genes: Human_Oligo_2 OPALIN found DE genes: 617
+get_de_genes: Human_OPC_2 PDGFRA found DE genes: 444
+get_de_genes: Human_SST EPYC found DE genes: 253
+get_de_genes: Human_TFAP2C found DE genes: 217
+get_de_genes: total DE genes: 3459
+Warning messages:
+1: In asMethod(object) :
+  sparse->dense coercion: allocating vector of size 1.6 GiB
+2: In asMethod(object) :
+  sparse->dense coercion: allocating vector of size 1.5 GiB
+3: In asMethod(object) :
+  sparse->dense coercion: allocating vector of size 1.4 GiB
+4: In asMethod(object) :
+  sparse->dense coercion: allocating vector of size 1.0 GiB
+fitBulk: decomposing bulk
+chooseSigma: using initial Q_mat with sigma =  1
+Loading required package: spacexr
+loaded spacexr and set parent environment
+Loading required package: spacexr
+loaded spacexr and set parent environment
+Loading required package: spacexr
+loaded spacexr and set parent environment
+Loading required package: spacexr
+loaded spacexr and set parent environment
+Loading required package: spacexr
+loaded spacexr and set parent environment
+Loading required package: spacexr
+loaded spacexr and set parent environment
+Loading required package: spacexr
+loaded spacexr and set parent environment
+Loading required package: spacexr
+loaded spacexr and set parent environment
+Loading required package: spacexr
+loaded spacexr and set parent environment
+Loading required package: spacexr
+loaded spacexr and set parent environment
+Likelihood value: 425247.609365603
+Sigma value:  0.84
+Loading required package: spacexr
+loaded spacexr and set parent environment
+Loading required package: spacexr
+loaded spacexr and set parent environment
+Loading required package: spacexr
+loaded spacexr and set parent environment
+Loading required package: spacexr
+loaded spacexr and set parent environment
+Loading required package: spacexr
+loaded spacexr and set parent environment
+Loading required package: spacexr
+loaded spacexr and set parent environment
+Loading required package: spacexr
+loaded spacexr and set parent environment
+Loading required package: spacexr
+loaded spacexr and set parent environment
+Loading required package: spacexr
+loaded spacexr and set parent environment
+Loading required package: spacexr
+loaded spacexr and set parent environment
+Likelihood value: 422267.67252056
+Sigma value:  0.69
+Loading required package: spacexr
+loaded spacexr and set parent environment
+Loading required package: spacexr
+loaded spacexr and set parent environment
+Loading required package: spacexr
+loaded spacexr and set parent environment
+Loading required package: spacexr
+loaded spacexr and set parent environment
+Loading required package: spacexr
+loaded spacexr and set parent environment
+Loading required package: spacexr
+loaded spacexr and set parent environment
+Loading required package: spacexr
+loaded spacexr and set parent environment
+Loading required package: spacexr
+loaded spacexr and set parent environment
+Loading required package: spacexr
+loaded spacexr and set parent environment
+Loading required package: spacexr
+loaded spacexr and set parent environment
+Likelihood value: 420527.503342977
+Sigma value:  0.61
+Loading required package: spacexr
+loaded spacexr and set parent environment
+Loading required package: spacexr
+loaded spacexr and set parent environment
+Loading required package: spacexr
+loaded spacexr and set parent environment
+Loading required package: spacexr
+loaded spacexr and set parent environment
+Loading required package: spacexr
+loaded spacexr and set parent environment
+Loading required package: spacexr
+loaded spacexr and set parent environment
+Loading required package: spacexr
+loaded spacexr and set parent environment
+Loading required package: spacexr
+loaded spacexr and set parent environment
+Loading required package: spacexr
+loaded spacexr and set parent environment
+Loading required package: spacexr
+loaded spacexr and set parent environment
+Likelihood value: 420073.101011877
+Sigma value:  0.58
+Loading required package: spacexr
+loaded spacexr and set parent environment
+Loading required package: spacexr
+loaded spacexr and set parent environment
+Loading required package: spacexr
+loaded spacexr and set parent environment
+Loading required package: spacexr
+loaded spacexr and set parent environment
+Loading required package: spacexr
+loaded spacexr and set parent environment
+Loading required package: spacexr
+loaded spacexr and set parent environment
+Loading required package: spacexr
+loaded spacexr and set parent environment
+Loading required package: spacexr
+loaded spacexr and set parent environment
+Loading required package: spacexr
+loaded spacexr and set parent environment
+Loading required package: spacexr
+loaded spacexr and set parent environment
+Likelihood value: 419993.538126569
+Sigma value:  0.57
+Loading required package: spacexr
+loaded spacexr and set parent environment
+Loading required package: spacexr
+loaded spacexr and set parent environment
+Loading required package: spacexr
+loaded spacexr and set parent environment
+Loading required package: spacexr
+loaded spacexr and set parent environment
+Loading required package: spacexr
+loaded spacexr and set parent environment
+Loading required package: spacexr
+loaded spacexr and set parent environment
+Loading required package: spacexr
+loaded spacexr and set parent environment
+Loading required package: spacexr
+loaded spacexr and set parent environment
+Loading required package: spacexr
+loaded spacexr and set parent environment
+Loading required package: spacexr
+loaded spacexr and set parent environment
+Likelihood value: 419978.253877535
+Sigma value:  0.56
+Loading required package: spacexr
+loaded spacexr and set parent environment
+Loading required package: spacexr
+loaded spacexr and set parent environment
+Loading required package: spacexr
+loaded spacexr and set parent environment
+Loading required package: spacexr
+loaded spacexr and set parent environment
+Loading required package: spacexr
+loaded spacexr and set parent environment
+Loading required package: spacexr
+loaded spacexr and set parent environment
+Loading required package: spacexr
+loaded spacexr and set parent environment
+Loading required package: spacexr
+loaded spacexr and set parent environment
+Loading required package: spacexr
+loaded spacexr and set parent environment
+Loading required package: spacexr
+loaded spacexr and set parent environment
+Likelihood value: 419968.688521856
+Sigma value:  0.55
+Loading required package: spacexr
+loaded spacexr and set parent environment
+Loading required package: spacexr
+loaded spacexr and set parent environment
+Loading required package: spacexr
+loaded spacexr and set parent environment
+Loading required package: spacexr
+loaded spacexr and set parent environment
+Loading required package: spacexr
+loaded spacexr and set parent environment
+Loading required package: spacexr
+loaded spacexr and set parent environment
+Loading required package: spacexr
+loaded spacexr and set parent environment
+Loading required package: spacexr
+loaded spacexr and set parent environment
+Loading required package: spacexr
+loaded spacexr and set parent environment
+Loading required package: spacexr
+loaded spacexr and set parent environment
+Likelihood value: 419964.797884649
+Sigma value:  0.55
+Loading required package: spacexr
+loaded spacexr and set parent environment
+Loading required package: spacexr
+loaded spacexr and set parent environment
+Loading required package: spacexr
+loaded spacexr and set parent environment
+Loading required package: spacexr
+loaded spacexr and set parent environment
+Loading required package: spacexr
+loaded spacexr and set parent environment
+Loading required package: spacexr
+loaded spacexr and set parent environment
+Loading required package: spacexr
+loaded spacexr and set parent environment
+Loading required package: spacexr
+loaded spacexr and set parent environment
+Loading required package: spacexr
+loaded spacexr and set parent environment
+Loading required package: spacexr
+loaded spacexr and set parent environment
+slurmstepd: error: *** JOB 30541851 ON compute-054 CANCELLED AT 2026-04-03T18:33:50 DUE TO TIME LIMIT ***

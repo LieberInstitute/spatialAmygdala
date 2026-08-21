@@ -1,9 +1,10 @@
 #!/bin/bash
 #SBATCH --mem=80G
-#SBATCH -n 8
+#SBATCH -n 50
 #SBATCH --job-name=AMY-HD_spaceranger
 #SBATCH --output=logs/HD-spaceranger-2509-%a.txt
-#SBATCH --array=1-4
+#SBATCH --array=1
+#SBATCH --time=36:00:00
 
 
 echo "**** Job starts ****"
@@ -52,7 +53,7 @@ spaceranger count \
     --cytaimage=/dcs04/lieber/marmaypag/spatialAMY_LIBD4125/spatialAmygdala/raw-data/images/VisiumHD/${IMGCYT}.tif \
     --image=/dcs04/lieber/marmaypag/spatialAMY_LIBD4125/spatialAmygdala/raw-data/images/VisiumHD/${IMAGE}.tif \
     --create-bam=false \
-    --localcores=8 \
+    --localcores=50 \
     --localmem=64 
 
 

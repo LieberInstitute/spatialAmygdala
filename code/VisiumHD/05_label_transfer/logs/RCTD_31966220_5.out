@@ -1,0 +1,410 @@
+**** Job starts ****
+Mon May 18 09:52:12 AM EDT 2026
+**** SLURM info ****
+User: mtotty
+Job id: 31966220
+Array job id: 31966220
+Array task id: 5
+Job name: RCTD_HD_array
+Hostname: compute-176
+
+ Astro_1 FGFR3  Astro_2 FGFR3  Astro_3 FGFR3  Astro_4 FGFR3     CALCR LHX8 
+          1323           6097           1830            710           2098 
+     DRD2 ISL1      DRD2 PAX6   Endo NOSTRIN   HGF C11orf87       HGF ESR1 
+          1713           1882           1198           2676           1253 
+     HGF NPSR1     HTR3A DRD2          ITC_1          ITC_2          ITC_3 
+          2769            524            455           2155           1193 
+     LAMP5 ABO     LAMP5 BDNF  LAMP5 COL14A1  LAMP5 COL25A1     LAMP5 NDNF 
+          2384           3854           1188           4388           2848 
+    Micro CTSS Oligo_1 OPALIN Oligo_2 OPALIN Oligo_3 OPALIN Oligo_4 OPALIN 
+          1337           2619            352           1910           3897 
+Oligo_5 OPALIN Oligo_6 OPALIN   OPC_2 PDGFRA   OPC_3 PDGFRA   OPC_4 PDGFRA 
+          6932           6342            275           3677            539 
+         PRKCD  PVALB ADAMTS5    RXFP2 RSPO2   SATB2 CALCRL     SATB2 IL15 
+           559            908           2394           1061           1801 
+ SATB2 ST8SIA2     SOX11 EBF2       SST EPYC        SST HGF         STRIP2 
+          1387           1677            250           2185            428 
+        TFAP2C    VGLL3 CNGB1     VGLL3 MEPE     VIP ABI3BP       VIP NDNF 
+           202           2625           2807           1924           1062 
+starting worker pid=563180 on localhost:11666 at 09:58:50.914
+starting worker pid=563204 on localhost:11666 at 09:58:51.052
+starting worker pid=563219 on localhost:11666 at 09:58:51.192
+starting worker pid=563234 on localhost:11666 at 09:58:51.330
+starting worker pid=563249 on localhost:11666 at 09:58:51.478
+starting worker pid=563268 on localhost:11666 at 09:58:51.645
+starting worker pid=563309 on localhost:11666 at 09:58:51.794
+starting worker pid=563324 on localhost:11666 at 09:58:51.953
+starting worker pid=563341 on localhost:11666 at 09:58:52.115
+starting worker pid=563363 on localhost:11666 at 09:58:52.272
+starting worker pid=563382 on localhost:11666 at 09:58:52.429
+starting worker pid=563397 on localhost:11666 at 09:58:52.568
+starting worker pid=563412 on localhost:11666 at 09:58:52.724
+starting worker pid=563427 on localhost:11666 at 09:58:52.912
+starting worker pid=563442 on localhost:11666 at 09:58:53.072
+starting worker pid=563457 on localhost:11666 at 09:58:53.234
+starting worker pid=563472 on localhost:11666 at 09:58:53.412
+starting worker pid=563487 on localhost:11666 at 09:58:53.574
+starting worker pid=563502 on localhost:11666 at 09:58:53.762
+starting worker pid=563519 on localhost:11666 at 09:58:53.935
+starting worker pid=563545 on localhost:11666 at 09:58:54.109
+starting worker pid=563560 on localhost:11666 at 09:58:54.287
+starting worker pid=563575 on localhost:11666 at 09:58:54.463
+starting worker pid=563590 on localhost:11666 at 09:58:54.607
+starting worker pid=563606 on localhost:11666 at 09:58:54.755
+starting worker pid=563626 on localhost:11666 at 09:58:54.917
+starting worker pid=563651 on localhost:11666 at 09:58:55.081
+starting worker pid=563671 on localhost:11666 at 09:58:55.251
+starting worker pid=563687 on localhost:11666 at 09:58:55.414
+starting worker pid=563703 on localhost:11666 at 09:58:55.569
+starting worker pid=563767 on localhost:11666 at 09:59:34.504
+starting worker pid=563782 on localhost:11666 at 09:59:34.683
+starting worker pid=563800 on localhost:11666 at 09:59:34.863
+starting worker pid=563815 on localhost:11666 at 09:59:35.031
+starting worker pid=563830 on localhost:11666 at 09:59:35.207
+starting worker pid=563845 on localhost:11666 at 09:59:35.383
+starting worker pid=563860 on localhost:11666 at 09:59:35.559
+starting worker pid=563875 on localhost:11666 at 09:59:35.733
+starting worker pid=563890 on localhost:11666 at 09:59:35.908
+starting worker pid=563905 on localhost:11666 at 09:59:36.078
+starting worker pid=563920 on localhost:11666 at 09:59:36.255
+starting worker pid=563935 on localhost:11666 at 09:59:36.430
+starting worker pid=563950 on localhost:11666 at 09:59:36.602
+starting worker pid=563965 on localhost:11666 at 09:59:36.781
+starting worker pid=563980 on localhost:11666 at 09:59:36.958
+starting worker pid=563995 on localhost:11666 at 09:59:37.137
+starting worker pid=564010 on localhost:11666 at 09:59:37.315
+starting worker pid=564025 on localhost:11666 at 09:59:37.494
+starting worker pid=564040 on localhost:11666 at 09:59:37.669
+starting worker pid=564055 on localhost:11666 at 09:59:37.847
+starting worker pid=564070 on localhost:11666 at 09:59:38.025
+starting worker pid=564085 on localhost:11666 at 09:59:38.203
+starting worker pid=564100 on localhost:11666 at 09:59:38.381
+starting worker pid=564115 on localhost:11666 at 09:59:38.563
+starting worker pid=564130 on localhost:11666 at 09:59:38.743
+starting worker pid=564145 on localhost:11666 at 09:59:38.923
+starting worker pid=564160 on localhost:11666 at 09:59:39.103
+starting worker pid=564175 on localhost:11666 at 09:59:39.282
+starting worker pid=564190 on localhost:11666 at 09:59:39.463
+starting worker pid=564205 on localhost:11666 at 09:59:39.640
+starting worker pid=564332 on localhost:11666 at 10:00:17.858
+starting worker pid=564348 on localhost:11666 at 10:00:18.041
+starting worker pid=564363 on localhost:11666 at 10:00:18.221
+starting worker pid=564379 on localhost:11666 at 10:00:18.403
+starting worker pid=564394 on localhost:11666 at 10:00:18.574
+starting worker pid=564409 on localhost:11666 at 10:00:18.755
+starting worker pid=564424 on localhost:11666 at 10:00:18.936
+starting worker pid=564439 on localhost:11666 at 10:00:19.118
+starting worker pid=564454 on localhost:11666 at 10:00:19.290
+starting worker pid=564469 on localhost:11666 at 10:00:19.467
+starting worker pid=564484 on localhost:11666 at 10:00:19.637
+starting worker pid=564499 on localhost:11666 at 10:00:19.808
+starting worker pid=564514 on localhost:11666 at 10:00:19.989
+starting worker pid=564529 on localhost:11666 at 10:00:20.168
+starting worker pid=564544 on localhost:11666 at 10:00:20.326
+starting worker pid=564559 on localhost:11666 at 10:00:20.492
+starting worker pid=564574 on localhost:11666 at 10:00:20.670
+starting worker pid=564589 on localhost:11666 at 10:00:20.840
+starting worker pid=564604 on localhost:11666 at 10:00:21.005
+starting worker pid=564619 on localhost:11666 at 10:00:21.181
+starting worker pid=564635 on localhost:11666 at 10:00:21.360
+starting worker pid=564650 on localhost:11666 at 10:00:21.542
+starting worker pid=564665 on localhost:11666 at 10:00:21.718
+starting worker pid=564680 on localhost:11666 at 10:00:21.896
+starting worker pid=564695 on localhost:11666 at 10:00:22.079
+starting worker pid=564710 on localhost:11666 at 10:00:22.260
+starting worker pid=564725 on localhost:11666 at 10:00:22.442
+starting worker pid=564740 on localhost:11666 at 10:00:22.624
+starting worker pid=564755 on localhost:11666 at 10:00:22.803
+starting worker pid=564770 on localhost:11666 at 10:00:22.979
+starting worker pid=564832 on localhost:11666 at 10:01:01.403
+starting worker pid=564858 on localhost:11666 at 10:01:01.589
+starting worker pid=564873 on localhost:11666 at 10:01:01.768
+starting worker pid=564888 on localhost:11666 at 10:01:01.940
+starting worker pid=564903 on localhost:11666 at 10:01:02.113
+starting worker pid=564918 on localhost:11666 at 10:01:02.278
+starting worker pid=564933 on localhost:11666 at 10:01:02.459
+starting worker pid=564948 on localhost:11666 at 10:01:02.624
+starting worker pid=564963 on localhost:11666 at 10:01:02.797
+starting worker pid=564978 on localhost:11666 at 10:01:02.972
+starting worker pid=564993 on localhost:11666 at 10:01:03.135
+starting worker pid=565019 on localhost:11666 at 10:01:03.314
+starting worker pid=565037 on localhost:11666 at 10:01:03.477
+starting worker pid=565056 on localhost:11666 at 10:01:03.620
+starting worker pid=565071 on localhost:11666 at 10:01:03.794
+starting worker pid=565086 on localhost:11666 at 10:01:03.951
+starting worker pid=565101 on localhost:11666 at 10:01:04.125
+starting worker pid=565116 on localhost:11666 at 10:01:04.280
+starting worker pid=565131 on localhost:11666 at 10:01:04.437
+starting worker pid=565146 on localhost:11666 at 10:01:04.586
+starting worker pid=565161 on localhost:11666 at 10:01:04.745
+starting worker pid=565179 on localhost:11666 at 10:01:04.906
+starting worker pid=565194 on localhost:11666 at 10:01:05.057
+starting worker pid=565209 on localhost:11666 at 10:01:05.232
+starting worker pid=565224 on localhost:11666 at 10:01:05.386
+starting worker pid=565239 on localhost:11666 at 10:01:05.552
+starting worker pid=565254 on localhost:11666 at 10:01:05.722
+starting worker pid=565269 on localhost:11666 at 10:01:05.888
+starting worker pid=565284 on localhost:11666 at 10:01:06.058
+starting worker pid=565299 on localhost:11666 at 10:01:06.223
+starting worker pid=565370 on localhost:11666 at 10:01:44.860
+starting worker pid=565385 on localhost:11666 at 10:01:45.012
+starting worker pid=565400 on localhost:11666 at 10:01:45.170
+starting worker pid=565415 on localhost:11666 at 10:01:45.324
+starting worker pid=565430 on localhost:11666 at 10:01:45.485
+starting worker pid=565445 on localhost:11666 at 10:01:45.639
+starting worker pid=565460 on localhost:11666 at 10:01:45.793
+starting worker pid=565475 on localhost:11666 at 10:01:45.953
+starting worker pid=565490 on localhost:11666 at 10:01:46.128
+starting worker pid=565505 on localhost:11666 at 10:01:46.300
+starting worker pid=565520 on localhost:11666 at 10:01:46.467
+starting worker pid=565535 on localhost:11666 at 10:01:46.632
+starting worker pid=565550 on localhost:11666 at 10:01:46.802
+starting worker pid=565565 on localhost:11666 at 10:01:46.968
+starting worker pid=565580 on localhost:11666 at 10:01:47.135
+starting worker pid=565595 on localhost:11666 at 10:01:47.294
+starting worker pid=565610 on localhost:11666 at 10:01:47.455
+starting worker pid=565625 on localhost:11666 at 10:01:47.612
+starting worker pid=565640 on localhost:11666 at 10:01:47.771
+starting worker pid=565655 on localhost:11666 at 10:01:47.934
+starting worker pid=565670 on localhost:11666 at 10:01:48.099
+starting worker pid=565685 on localhost:11666 at 10:01:48.272
+starting worker pid=565700 on localhost:11666 at 10:01:48.434
+starting worker pid=565715 on localhost:11666 at 10:01:48.596
+starting worker pid=565730 on localhost:11666 at 10:01:48.764
+starting worker pid=565745 on localhost:11666 at 10:01:48.934
+starting worker pid=565760 on localhost:11666 at 10:01:49.093
+starting worker pid=565775 on localhost:11666 at 10:01:49.254
+starting worker pid=565790 on localhost:11666 at 10:01:49.421
+starting worker pid=565805 on localhost:11666 at 10:01:49.582
+starting worker pid=565887 on localhost:11666 at 10:02:28.662
+starting worker pid=565902 on localhost:11666 at 10:02:28.838
+starting worker pid=565917 on localhost:11666 at 10:02:29.014
+starting worker pid=565932 on localhost:11666 at 10:02:29.190
+starting worker pid=565947 on localhost:11666 at 10:02:29.364
+starting worker pid=565962 on localhost:11666 at 10:02:29.538
+starting worker pid=565977 on localhost:11666 at 10:02:29.709
+starting worker pid=565993 on localhost:11666 at 10:02:29.886
+starting worker pid=566008 on localhost:11666 at 10:02:30.045
+starting worker pid=566023 on localhost:11666 at 10:02:30.222
+starting worker pid=566038 on localhost:11666 at 10:02:30.386
+starting worker pid=566053 on localhost:11666 at 10:02:30.557
+starting worker pid=566068 on localhost:11666 at 10:02:30.734
+starting worker pid=566083 on localhost:11666 at 10:02:30.906
+starting worker pid=566098 on localhost:11666 at 10:02:31.080
+starting worker pid=566113 on localhost:11666 at 10:02:31.245
+starting worker pid=566128 on localhost:11666 at 10:02:31.421
+starting worker pid=566143 on localhost:11666 at 10:02:31.595
+starting worker pid=566158 on localhost:11666 at 10:02:31.768
+starting worker pid=566173 on localhost:11666 at 10:02:31.929
+starting worker pid=566188 on localhost:11666 at 10:02:32.086
+starting worker pid=566205 on localhost:11666 at 10:02:32.224
+starting worker pid=566220 on localhost:11666 at 10:02:32.383
+starting worker pid=566235 on localhost:11666 at 10:02:32.544
+starting worker pid=566250 on localhost:11666 at 10:02:32.675
+starting worker pid=566266 on localhost:11666 at 10:02:32.839
+starting worker pid=566281 on localhost:11666 at 10:02:33.003
+starting worker pid=566296 on localhost:11666 at 10:02:33.160
+starting worker pid=566311 on localhost:11666 at 10:02:33.324
+starting worker pid=566326 on localhost:11666 at 10:02:33.460
+starting worker pid=566386 on localhost:11666 at 10:03:11.762
+starting worker pid=566401 on localhost:11666 at 10:03:11.931
+starting worker pid=566416 on localhost:11666 at 10:03:12.108
+starting worker pid=566431 on localhost:11666 at 10:03:12.286
+starting worker pid=566446 on localhost:11666 at 10:03:12.462
+starting worker pid=566461 on localhost:11666 at 10:03:12.634
+starting worker pid=566476 on localhost:11666 at 10:03:12.809
+starting worker pid=566491 on localhost:11666 at 10:03:12.973
+starting worker pid=566510 on localhost:11666 at 10:03:13.144
+starting worker pid=566525 on localhost:11666 at 10:03:13.315
+starting worker pid=566540 on localhost:11666 at 10:03:13.487
+starting worker pid=566555 on localhost:11666 at 10:03:13.654
+starting worker pid=566570 on localhost:11666 at 10:03:13.817
+starting worker pid=566585 on localhost:11666 at 10:03:13.967
+starting worker pid=566600 on localhost:11666 at 10:03:14.129
+starting worker pid=566615 on localhost:11666 at 10:03:14.293
+starting worker pid=566630 on localhost:11666 at 10:03:14.453
+starting worker pid=566645 on localhost:11666 at 10:03:14.615
+starting worker pid=566660 on localhost:11666 at 10:03:14.771
+starting worker pid=566678 on localhost:11666 at 10:03:14.945
+starting worker pid=566693 on localhost:11666 at 10:03:15.105
+starting worker pid=566708 on localhost:11666 at 10:03:15.266
+starting worker pid=566723 on localhost:11666 at 10:03:15.421
+starting worker pid=566738 on localhost:11666 at 10:03:15.586
+starting worker pid=566753 on localhost:11666 at 10:03:15.764
+starting worker pid=566768 on localhost:11666 at 10:03:15.926
+starting worker pid=566783 on localhost:11666 at 10:03:16.091
+starting worker pid=566798 on localhost:11666 at 10:03:16.253
+starting worker pid=566813 on localhost:11666 at 10:03:16.418
+starting worker pid=566828 on localhost:11666 at 10:03:16.579
+starting worker pid=566890 on localhost:11666 at 10:03:54.601
+starting worker pid=566905 on localhost:11666 at 10:03:54.757
+starting worker pid=566923 on localhost:11666 at 10:03:54.916
+starting worker pid=566938 on localhost:11666 at 10:03:55.080
+starting worker pid=566953 on localhost:11666 at 10:03:55.240
+starting worker pid=566968 on localhost:11666 at 10:03:55.392
+starting worker pid=566983 on localhost:11666 at 10:03:55.550
+starting worker pid=566998 on localhost:11666 at 10:03:55.715
+starting worker pid=567013 on localhost:11666 at 10:03:55.889
+starting worker pid=567028 on localhost:11666 at 10:03:56.049
+starting worker pid=567043 on localhost:11666 at 10:03:56.215
+starting worker pid=567058 on localhost:11666 at 10:03:56.379
+starting worker pid=567073 on localhost:11666 at 10:03:56.543
+starting worker pid=567088 on localhost:11666 at 10:03:56.711
+starting worker pid=567103 on localhost:11666 at 10:03:56.889
+starting worker pid=567118 on localhost:11666 at 10:03:57.052
+starting worker pid=567133 on localhost:11666 at 10:03:57.215
+starting worker pid=567148 on localhost:11666 at 10:03:57.386
+starting worker pid=567163 on localhost:11666 at 10:03:57.548
+starting worker pid=567178 on localhost:11666 at 10:03:57.720
+starting worker pid=567193 on localhost:11666 at 10:03:57.897
+starting worker pid=567208 on localhost:11666 at 10:03:58.052
+starting worker pid=567223 on localhost:11666 at 10:03:58.229
+starting worker pid=567238 on localhost:11666 at 10:03:58.399
+starting worker pid=567253 on localhost:11666 at 10:03:58.552
+starting worker pid=567268 on localhost:11666 at 10:03:58.708
+starting worker pid=567283 on localhost:11666 at 10:03:58.863
+starting worker pid=567298 on localhost:11666 at 10:03:59.021
+starting worker pid=567313 on localhost:11666 at 10:03:59.175
+starting worker pid=567328 on localhost:11666 at 10:03:59.325
+starting worker pid=567397 on localhost:11666 at 10:04:38.116
+starting worker pid=567412 on localhost:11666 at 10:04:38.298
+starting worker pid=567427 on localhost:11666 at 10:04:38.465
+starting worker pid=567442 on localhost:11666 at 10:04:38.629
+starting worker pid=567457 on localhost:11666 at 10:04:38.789
+starting worker pid=567472 on localhost:11666 at 10:04:38.971
+starting worker pid=567487 on localhost:11666 at 10:04:39.138
+starting worker pid=567502 on localhost:11666 at 10:04:39.308
+starting worker pid=567518 on localhost:11666 at 10:04:39.481
+starting worker pid=567533 on localhost:11666 at 10:04:39.658
+starting worker pid=567548 on localhost:11666 at 10:04:39.824
+starting worker pid=567563 on localhost:11666 at 10:04:39.993
+starting worker pid=567578 on localhost:11666 at 10:04:40.155
+starting worker pid=567593 on localhost:11666 at 10:04:40.336
+starting worker pid=567608 on localhost:11666 at 10:04:40.501
+starting worker pid=567623 on localhost:11666 at 10:04:40.672
+starting worker pid=567638 on localhost:11666 at 10:04:40.844
+starting worker pid=567653 on localhost:11666 at 10:04:41.016
+starting worker pid=567668 on localhost:11666 at 10:04:41.184
+starting worker pid=567683 on localhost:11666 at 10:04:41.349
+starting worker pid=567698 on localhost:11666 at 10:04:41.506
+starting worker pid=567713 on localhost:11666 at 10:04:41.673
+starting worker pid=567728 on localhost:11666 at 10:04:41.845
+starting worker pid=567743 on localhost:11666 at 10:04:42.016
+starting worker pid=567758 on localhost:11666 at 10:04:42.184
+starting worker pid=567773 on localhost:11666 at 10:04:42.348
+starting worker pid=567788 on localhost:11666 at 10:04:42.513
+starting worker pid=567803 on localhost:11666 at 10:04:42.684
+starting worker pid=567818 on localhost:11666 at 10:04:42.858
+starting worker pid=567833 on localhost:11666 at 10:04:43.026
+[1] "gather_results: finished 1000"
+[1] "gather_results: finished 2000"
+[1] "gather_results: finished 3000"
+[1] "gather_results: finished 4000"
+[1] "gather_results: finished 5000"
+[1] "gather_results: finished 6000"
+[1] "gather_results: finished 7000"
+[1] "gather_results: finished 8000"
+[1] "gather_results: finished 9000"
+[1] "gather_results: finished 10000"
+[1] "gather_results: finished 11000"
+[1] "gather_results: finished 12000"
+[1] "gather_results: finished 13000"
+[1] "gather_results: finished 14000"
+[1] "gather_results: finished 15000"
+[1] "gather_results: finished 16000"
+[1] "gather_results: finished 17000"
+[1] "gather_results: finished 18000"
+[1] "gather_results: finished 19000"
+[1] "gather_results: finished 20000"
+[1] "gather_results: finished 21000"
+[1] "gather_results: finished 22000"
+[1] "gather_results: finished 23000"
+[1] "gather_results: finished 24000"
+[1] "gather_results: finished 25000"
+[1] "gather_results: finished 26000"
+[1] "gather_results: finished 27000"
+[1] "gather_results: finished 28000"
+[1] "gather_results: finished 29000"
+[1] "gather_results: finished 30000"
+[1] "gather_results: finished 31000"
+[1] "gather_results: finished 32000"
+[1] "gather_results: finished 33000"
+[1] "gather_results: finished 34000"
+[1] "gather_results: finished 35000"
+[1] "gather_results: finished 36000"
+[1] "gather_results: finished 37000"
+[1] "gather_results: finished 38000"
+[1] "gather_results: finished 39000"
+[1] "gather_results: finished 40000"
+[1] "gather_results: finished 41000"
+[1] "gather_results: finished 42000"
+[1] "gather_results: finished 43000"
+[1] "gather_results: finished 44000"
+[1] "gather_results: finished 45000"
+[1] "gather_results: finished 46000"
+[1] "gather_results: finished 47000"
+[1] "gather_results: finished 48000"
+[1] "gather_results: finished 49000"
+[1] "gather_results: finished 50000"
+─ Session info ───────────────────────────────────────────────────────────────
+ setting  value
+ version  R version 4.4.0 Patched (2024-05-22 r86590)
+ os       Rocky Linux 9.4 (Blue Onyx)
+ system   x86_64, linux-gnu
+ ui       X11
+ language (EN)
+ collate  en_US.UTF-8
+ ctype    en_US.UTF-8
+ tz       US/Eastern
+ date     2026-05-18
+ pandoc   3.1.13 @ /jhpce/shared/community/core/conda_R/4.4/bin/pandoc
+
+─ Packages ───────────────────────────────────────────────────────────────────
+ package              * version   date (UTC) lib source
+ abind                  1.4-8     2024-09-12 [1] CRAN (R 4.4.0)
+ Biobase              * 2.66.0    2024-10-29 [1] Bioconductor 3.20 (R 4.4.0)
+ BiocGenerics         * 0.52.0    2024-10-29 [1] Bioconductor 3.20 (R 4.4.0)
+ cli                    3.6.3     2024-06-21 [1] CRAN (R 4.4.0)
+ codetools              0.2-20    2024-03-31 [3] CRAN (R 4.4.0)
+ crayon                 1.5.3     2024-06-20 [1] CRAN (R 4.4.0)
+ DelayedArray           0.30.1    2024-05-07 [2] Bioconductor 3.19 (R 4.4.0)
+ doParallel             1.0.17    2022-02-07 [1] CRAN (R 4.4.0)
+ foreach                1.5.2     2022-02-02 [1] CRAN (R 4.4.0)
+ GenomeInfoDb         * 1.40.1    2024-05-24 [2] Bioconductor 3.19 (R 4.4.0)
+ GenomeInfoDbData       1.2.13    2024-11-18 [1] Bioconductor
+ GenomicRanges        * 1.58.0    2024-10-29 [1] Bioconductor 3.20 (R 4.4.0)
+ here                 * 1.0.1     2020-12-13 [1] CRAN (R 4.4.0)
+ httr                   1.4.7     2023-08-15 [1] CRAN (R 4.4.0)
+ IRanges              * 2.40.0    2024-10-29 [1] Bioconductor 3.20 (R 4.4.0)
+ iterators              1.0.14    2022-02-05 [1] CRAN (R 4.4.0)
+ jsonlite               1.8.9     2024-09-20 [1] CRAN (R 4.4.0)
+ lattice                0.22-6    2024-03-20 [3] CRAN (R 4.4.0)
+ magick                 2.8.5     2024-09-20 [1] CRAN (R 4.4.0)
+ magrittr               2.0.3     2022-03-30 [1] CRAN (R 4.4.0)
+ Matrix                 1.7-1     2024-10-18 [1] CRAN (R 4.4.0)
+ MatrixGenerics       * 1.18.0    2024-10-29 [1] Bioconductor 3.20 (R 4.4.0)
+ matrixStats          * 1.4.1     2024-09-08 [1] CRAN (R 4.4.0)
+ quadprog               1.5-8     2019-11-20 [2] CRAN (R 4.4.0)
+ R6                     2.5.1     2021-08-19 [1] CRAN (R 4.4.0)
+ Rcpp                   1.1.1-1.1 2026-04-24 [1] CRAN (R 4.4.0)
+ rjson                  0.2.23    2024-09-16 [1] CRAN (R 4.4.0)
+ rprojroot              2.0.4     2023-11-05 [1] CRAN (R 4.4.0)
+ S4Arrays               1.6.0     2024-10-29 [1] Bioconductor 3.20 (R 4.4.0)
+ S4Vectors            * 0.44.0    2024-10-29 [1] Bioconductor 3.20 (R 4.4.0)
+ sessioninfo            1.2.2     2021-12-06 [2] CRAN (R 4.4.0)
+ SingleCellExperiment * 1.26.0    2024-04-30 [2] Bioconductor 3.19 (R 4.4.0)
+ spacexr              * 2.2.1     2026-02-12 [1] Github (dmcable/spacexr@9f5dc33)
+ SparseArray            1.6.2     2025-02-20 [1] Bioconductor 3.20 (R 4.4.0)
+ SpatialExperiment    * 1.14.0    2024-05-01 [2] Bioconductor 3.19 (R 4.4.0)
+ SummarizedExperiment * 1.34.0    2024-05-01 [2] Bioconductor 3.19 (R 4.4.0)
+ UCSC.utils             1.0.0     2024-04-30 [2] Bioconductor 3.19 (R 4.4.0)
+ XVector                0.44.0    2024-04-30 [2] Bioconductor 3.19 (R 4.4.0)
+ zlibbioc               1.52.0    2024-10-29 [1] Bioconductor 3.20 (R 4.4.0)
+
+ [1] /users/mtotty/R/4.4
+ [2] /jhpce/shared/community/core/conda_R/4.4/R/lib64/R/site-library
+ [3] /jhpce/shared/community/core/conda_R/4.4/R/lib64/R/library
+
+──────────────────────────────────────────────────────────────────────────────
+**** Job ends ****
+Mon May 18 10:31:56 AM EDT 2026
