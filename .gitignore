@@ -12,28 +12,24 @@
 *.Rdata
 *.rds
 *.csv
+*.csv.gz
+*.jar
 *trakem2*
 git-filter-repo.py
 
 # Data directories
 /raw-data/
-/processed-data/Images/
+/processed-data/
+/plots/
+/my_h5_se/
 
-# visium files
-/processed-data/Visium/01_spaceranger/
+# processing and other files
+/code/Visium/16_LDSC/gsMap/figures/
+/code/Visium/16_LDSC/gsMap/logs/
+/code/Visium/16_LDSC/scDRS/logs/
+/code/Visium/16_LDSC/LDSC/
+/code/VisiumHD/01_spaceranger/logs/
+
 
 # xenium files
 /code/Xenium/sopa/
-/processed-data/Xenium/01_resegment/
-
-# visium hd files
-/processed-data/VisiumHD/01_spaceranger/
-
-# visium stitcher files
-/processed-data/visium_stitching/Br8325/
-/processed-data/visium_stitching/combined_Br8325/
-
-# misc files
-/code/snRNAseq/
-/processed-data/snRNA-seq/
-/plots/snRNAseq/
