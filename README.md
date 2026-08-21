@@ -6,7 +6,7 @@
 
 Welcome to the `spatialAmygdala` project! In this study, we generated
 spatially-resolved transcriptomics (SRT) data from postmortem tissue sections of the human amygdala across  adult neurotypical donors. SRT data was generated using
-[10x Genomics **Visium**](https://www.10xgenomics.com/products/spatial-gene-expression), [10x Genomics **Visium HD**](https://www.10xgenomics.com/products/visium-hd-spatial-gene-expression), and [10x Genomics **Xenium**](https://www.10xgenomics.com/platforms/xenium). 
+[10x Genomics **Visium**](https://www.10xgenomics.com/products/spatial-gene-expression) (n=7 donors), [10x Genomics **Xenium**](https://www.10xgenomics.com/platforms/xenium) (n=4 donors), and [10x Genomics **Visium HD**](https://www.10xgenomics.com/products/visium-hd-spatial-gene-expression) (n=5 capture areas). 
 
 Thank you for your interest in our work!
 
@@ -38,12 +38,10 @@ software labeled by emojis:
 
 ## Data Access
 
-All data, including raw FASTQ files and `SpaceRanger` + `XeniumRanger`
-processed data outputs, can be accessed via Gene Expression Omnibus (GEO) under
-accessions [TODO_GSE](TODO_URL).
+All raw FASTQ files can be accessed via Gene Expression Omnibus (GEO) under
+accessions [GSE342709 (Visium)](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE342709), [GSE342289 (Xenium)](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE342289), and [GSE342738 (VisiumHD)](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE342738).
 
-TODO — if the Zarr stores backing the Vitessce apps are hosted separately
-(e.g. data.libd.org), add a line pointing there.
+TODO — create globus links for the processed data files. 
 
 ## Contact
 
