@@ -1,4 +1,4 @@
-
+[![DOI](https://zenodo.org/badge/683097860.svg)](https://doi.org/10.5281/zenodo.22051663)
 
 # Multiscale spatial transcriptomics resolves the cellular and molecular architecture of the human amygdala
 
