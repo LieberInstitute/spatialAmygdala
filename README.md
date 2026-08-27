@@ -41,7 +41,7 @@ software labeled by emojis:
 All raw FASTQ files can be accessed via Gene Expression Omnibus (GEO) under
 accessions [GSE342709 (Visium)](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE342709), [GSE342289 (Xenium)](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE342289), and [GSE342738 (VisiumHD)](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE342738).
 
-TODO — create globus links for the processed data files. 
+COMING SOON — globus links for the processed data files. 
 
 ## Contact
 
@@ -52,7 +52,7 @@ and refrain from emailing us. Thank you again for your interest in our work!
 
 ## How to Cite
 
-Totty, M. S., Bach, S. V., Valentine, M. R., Tippani, M., Maguire, S. E., Del Rosario Alvia, I., Miller, R. A., Kleinman, J. E., Maynard, K. R., Page, S. C., Hyde, T. M., Hicks, S. C., & Martinowich, K. Multiscale spatial transcriptomics resolves the cellular and molecular architecture of the human amygdala. bioRxiv (TODO_YEAR) doi:TODO_DOI.
+Totty, M. S., Bach, S. V., Valentine, M. R., Tippani, M., Maguire, S. E., Del Rosario Alvia, I., Miller, R. A., Kleinman, J. E., Maynard, K. R., Page, S. C., Hyde, T. M., Hicks, S. C., & Martinowich, K. Multiscale spatial transcriptomics resolves the cellular and molecular architecture of the human amygdala. bioRxiv doi:10.64898/2026.08.22.746381.
 
 ## Internal
 
