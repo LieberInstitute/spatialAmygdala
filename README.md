@@ -41,7 +41,7 @@ software labeled by emojis:
 All raw FASTQ files can be accessed via Gene Expression Omnibus (GEO) under
 accessions [GSE342709 (Visium)](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE342709), [GSE342289 (Xenium)](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE342289), and [GSE342738 (VisiumHD)](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE342738).
 
-Processed [SpatialExperiment](https://github.com/drighelli/SpatialExperiment) objects can be downloaded directly via [Globus](https://www.globus.org/):
+Processed [SpatialExperiment](https://github.com/drighelli/SpatialExperiment) objects can be downloaded directly via Globus link below:
  - [Link to processed data](https://app.globus.org/file-manager?origin_id=1e55be8f-3d91-4e30-917a-59ae8b2aecfb&origin_path=%2F)
 
 ## Contact
